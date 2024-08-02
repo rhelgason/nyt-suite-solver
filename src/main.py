@@ -1,6 +1,6 @@
 from display_utils import use_main_menu, use_sudoku_menu
 from menu_options import MainMenuOptions, SudokuDifficultyOptions
-from solvers.SudokuSolver import SudokuSolver
+from solvers import SudokuSolver
 
 import os
 
