@@ -3,36 +3,40 @@ Represents a single cell in the Sudoku board, which generally can hold
 a value from 1 to 9. We support a doubly linked list for the dancing
 links algorithm.
 """
-class Cell:
+class CellParent:
+    def __init__(self) -> None:
+        return
+
+class Cell(CellParent):
     # linked list pointers
-    left: Cell = None
-    right: Cell = None
-    up: Cell = None
-    down: Cell = None
-    col_head: Cell = None
+    left: CellParent = None
+    right: CellParent = None
+    up: CellParent = None
+    down: CellParent = None
+    col_head: CellParent = None
 
     cand: int = -1
     row: int = -1
 
     def __init__(
         self,
-        left: Cell = self,
-        right: Cell = self,
-        up: Cell = self,
-        down: Cell = self,
-        col_head: Cell = self,
+        left: CellParent,
+        right: CellParent,
+        up: CellParent,
+        down: CellParent,
+        col_head: CellParent,
         row: int = -1,
     ) -> None:
-        self.left = left
-        self.right = right
-        self.up = up
-        self.down = down
-        self.col_head = col_head
+        self.left = left or self
+        self.right = right or self
+        self.up = up or self
+        self.down = down or self
+        self.col_head = col_head or self
         self.row = row # MAYBE THIS SHIT
 
-        if (left is self):
+        if (self.left is self):
             self.cand = -1
-        elif (up is self):
+        elif (self.up is self):
             self.cand = 0
         else:
             self.cand = 1

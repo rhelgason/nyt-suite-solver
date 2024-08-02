@@ -1,7 +1,11 @@
 from MenuListener import MenuListener
 from menu_options import MainMenuOptions, SudokuDifficultyOptions
 
+import math
 import os
+
+SECONDS_PER_MINUTE = 60
+SECONDS_PER_HOUR = 3600
 
 def clear_terminal():
     os.system('clear')
@@ -21,3 +25,18 @@ def use_sudoku_menu():
         "Please select a difficulty:"
     )
     return sudoku_menu.use_menu()
+
+def solve_time_to_string(start: float, end: float) -> str:
+    seconds = end - start
+    if seconds < SECONDS_PER_MINUTE:
+        return f"{seconds:.2f} seconds"
+    elif seconds < SECONDS_PER_HOUR:
+        minutes = math.floor(seconds / SECONDS_PER_MINUTE)
+        seconds = seconds - (minutes * SECONDS_PER_MINUTE)
+        return f"{minutes} minutes and {seconds:.2f} seconds"
+    else:
+        hours = math.floor(seconds / SECONDS_PER_HOUR)
+        seconds = seconds - (hours * SECONDS_PER_HOUR)
+        minutes = math.floor(seconds / SECONDS_PER_MINUTE)
+        seconds = seconds - (minutes * SECONDS_PER_MINUTE)
+        return f"{hours} hours, {minutes} minutes, and {seconds:.2f} seconds"

@@ -1,6 +1,6 @@
 from display_utils import use_main_menu, use_sudoku_menu
 from menu_options import MainMenuOptions, SudokuDifficultyOptions
-from solvers import SudokuSolver
+from solvers.sudoku.SudokuSolver import SudokuSolver
 
 import os
 
@@ -24,6 +24,7 @@ def sudoku() -> int:
         return 0
     
     solver = SudokuSolver(option)
+    solver.solve_verbose()
 
 def exit_program():
     os.system('tput cnorm')

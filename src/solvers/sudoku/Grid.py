@@ -1,5 +1,5 @@
-from Box import Box
-from Cell import Cell
+from solvers.sudoku.Box import Box
+from solvers.sudoku.Cell import Cell
 from typing import List
 
 import math
@@ -50,7 +50,7 @@ class Grid:
                 if board[i][j] == 0:
                     self.board[i][j] = Box(self.dim)
                 else:
-                    if self.is_valid():
+                    if self.is_valid(i, j, board[i][j]):
                         self.board[i][j] = Box(self.dim, board[i][j])
                         self.track_value(i, j, board[i][j])
                     else:
@@ -68,10 +68,10 @@ class Grid:
 
         self.dim = int(sqrt)
         board = []
-        for i in range(0, dim):
+        for i in range(0, self.dim):
             row = []
-            for j in range(0, dim):
-                row.append(values[i * dim + j])
+            for j in range(0, self.dim):
+                row.append(values[i * self.dim + j])
             board.append(row)
         return board
 
@@ -79,17 +79,53 @@ class Grid:
     Given a potential placement of a value, check if that value has
     already been placed in the same row, column, or box.
     """
-    def is_valid(row: int, col: int, val: int) -> bool:
-        return not self.rows[row][val - 1]
-        and not self.cols[col][val - 1]
-        and not self.divs[row // self.box_height][col // self.box_width][val - 1]
+    def is_valid(self, row: int, col: int, val: int) -> bool:
+        if self.rows[row][val - 1]:
+            return False
+        if self.cols[col][val - 1]:
+            return False
+        if self.divs[row // self.box_height][col // self.box_width][val - 1]:
+            return False
+        return True
     
-    def track_value(row: int, col: int, val: int) -> None:
+    def track_value(self, row: int, col: int, val: int) -> None:
         self.rows[row][val - 1] = True
         self.cols[col][val - 1] = True
         self.divs[row // self.box_height][col // self.box_width][val - 1] = True
     
-    def untrack_value(row: int, col: int, val: int) -> None:
+    def untrack_value(self, row: int, col: int, val: int) -> None:
         self.rows[row][val - 1] = False
         self.cols[col][val - 1] = False
         self.divs[row // self.box_height][col // self.box_width][val - 1] = False
+
+    """
+    The NYT crossword always uses a 9x9 board, but this method will use hex
+    characters to support up to 16x16 boards.
+    """
+    def to_string(self) -> str:
+        # print each row
+        res = ""
+        for i in range(self.dim):
+            for j in range(self.dim):
+                res += "." if self.board[i][j].value == -1 else ('%x' % self.board[i][j].value)
+                if j != self.dim - 1:
+                    res += " "
+                else:
+                    break
+                if (j + 1) % self.box_width == 0:
+                    res += "| "
+            
+            if i != self.dim - 1:
+                res += "\n"
+            
+            if (i + 1) % self.box_height == 0 and i != self.dim - 1:
+                for j in range(self.dim):
+                    res += "-"
+                    if j != self.dim - 1:
+                        res += "-"
+                    else:
+                        break
+                    if (j + 1) % self.box_width == 0:
+                        res += "+-"
+                res += "\n"
+        return res
