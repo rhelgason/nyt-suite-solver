@@ -1,5 +1,5 @@
 from solvers.sudoku.Box import Box
-from solvers.sudoku.Cell import Cell
+from solvers.sudoku.Cell import Cell, SELF
 from typing import List
 
 import math
@@ -43,18 +43,74 @@ class Grid:
         ]
 
         # initialize board
-        board = self.reshape_input_board(values)
+        input_board = self.reshape_input_board(values)
         self.board = [[None for _ in range(self.dim)] for _ in range(self.dim)]
         for i in range(self.dim):
             for j in range(self.dim):
-                if board[i][j] == 0:
+                val = input_board[i][j]
+                if val == 0:
                     self.board[i][j] = Box(self.dim)
                 else:
-                    if self.is_valid(i, j, board[i][j]):
-                        self.board[i][j] = Box(self.dim, board[i][j])
-                        self.track_value(i, j, board[i][j])
+                    if self.is_valid(i, j, val):
+                        self.board[i][j] = Box(self.dim, val)
+                        self.track_value(i, j, val)
                     else:
                         raise ValueError(f"Invalid input board at row {i} and column {j}.")
+        
+        # initialize dancing links header row
+        self.head = Cell(SELF, SELF, SELF, SELF, SELF)
+        self.col_heads = [None for _ in range(self.dim * self.dim * 4)]
+        curr = self.head
+        for i in range(len(self.col_heads)):
+            curr.right = Cell(curr, self.head, SELF, SELF, SELF, 0)
+            curr = curr.right
+            self.head.left = curr
+            self.col_heads[i] = curr
+        
+        # initialize dancing links matrix
+        curr = self.head.right
+        for i in range(self.dim ** 3):
+            # determine if value is known
+            row = i // (self.dim ** 2)
+            col = (i % (self.dim ** 2)) // self.dim
+            val = ((i % (self.dim ** 2)) % self.dim) + 1
+            if input_board[row][col] == 0 or input_board[row][col] == val:
+                self.links_row(row, col, val, i)
+    
+    def links_row(self, row: int, col: int, num: int, r: int) -> None:
+        # cell constraint
+        val = row * self.dim + col
+        col_head = self.col_heads[val]
+        col_head.up = Cell(None, None, col_head.up, col_head, col_head, r)
+        curr = col_head.up
+        curr.up.down = curr
+        first = curr
+
+        # row constraint
+        val = (self.dim ** 2) + (row * self.dim) + (num - 1)
+        col_head = self.col_heads[val]
+        col_head.up = Cell(curr, None, col_head.up, col_head, col_head, r)
+        curr = col_head.up
+        curr.left.right = curr
+        curr.up.down = curr
+
+        # column constraint
+        val = (self.dim * self.dim * 2) + (col * self.dim) + (num - 1)
+        col_head = self.col_heads[val]
+        col_head.up = Cell(curr, None, col_head.up, col_head, col_head, r)
+        curr = col_head.up
+        curr.left.right = curr
+        curr.up.down = curr
+
+        # box constraint
+        box = (col // self.box_width) + (row // self.box_height) * self.box_height
+        val = (self.dim * self.dim * 3) + (box * self.dim) + (num - 1)
+        col_head = self.col_heads[val]
+        col_head.up = Cell(curr, first, col_head.up, col_head, col_head, r)
+        curr = col_head.up
+        curr.left.right = curr
+        curr.up.down = curr
+        first.left = curr
 
     """
     The input after scraping the NYT website is a list of 81 integers, and

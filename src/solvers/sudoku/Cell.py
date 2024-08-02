@@ -1,12 +1,16 @@
+# sentinel for initializing cell with pointer to itself
+SELF = object()
+
+# dummy class to allow instantiation of Cell attributes
+class CellParent:
+    def __init__(self) -> None:
+        return
+
 """
 Represents a single cell in the Sudoku board, which generally can hold
 a value from 1 to 9. We support a doubly linked list for the dancing
 links algorithm.
 """
-class CellParent:
-    def __init__(self) -> None:
-        return
-
 class Cell(CellParent):
     # linked list pointers
     left: CellParent = None
@@ -25,21 +29,20 @@ class Cell(CellParent):
         up: CellParent,
         down: CellParent,
         col_head: CellParent,
-        row: int = -1,
+        cand: int = -1,
+        row: int = 0,
     ) -> None:
-        self.left = left or self
-        self.right = right or self
-        self.up = up or self
-        self.down = down or self
-        self.col_head = col_head or self
-        self.row = row # MAYBE THIS SHIT
+        self.left = self.resolve_init(left)
+        self.right = self.resolve_init(right)
+        self.up = self.resolve_init(up)
+        self.down = self.resolve_init(down)
+        self.col_head = self.resolve_init(col_head)
+        # THESE TWO ARE STILL WEIRD TO ME
+        self.cand = cand
+        self.row = row
 
-        if (self.left is self):
-            self.cand = -1
-        elif (self.up is self):
-            self.cand = 0
-        else:
-            self.cand = 1
+    def resolve_init(self, ptr: CellParent) -> None:
+        return self if ptr == SELF else ptr
     
     def cover(self) -> None:
         # cover header node
