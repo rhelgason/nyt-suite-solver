@@ -1,15 +1,19 @@
 from datetime import datetime
 from display_utils import clear_terminal, solve_time_to_string
-from solvers.sudoku.Grid import Grid
 from menu_options import SudokuDifficultyOptions
 
 import json
+import os
 import re
 import requests
 import time
 
 BASE_URL = "https://www.nytimes.com/puzzles/sudoku/"
 HTML_DATA_REGEX = r'<script type="text\/javascript">window\.gameData = (.+)<\/script><\/div><div id="portal-editorial-content">'
+DANCING_LINKS_PATH = "src/solvers/sudoku/DancingLinks.so"
+
+from ctypes import cdll
+lib = cdll.LoadLibrary('./' + DANCING_LINKS_PATH)
 
 """
 Scrapes the NYT Sudoku puzzle and solves it using Donald
@@ -48,7 +52,7 @@ class SudokuSolver:
 
         start_time = time.time()
         print("\nSolving...")
-        if self.solve():
+        if self.puzzle.solve():
             end_time = time.time()
             print(f"\nSolved in {solve_time_to_string(start_time, end_time)}:\n")
             print(self.puzzle.to_string())
@@ -56,7 +60,3 @@ class SudokuSolver:
             input()
         else:
             raise Exception("Failed to solve puzzle.")
-    
-    def solve(self) -> bool:
-        ## TODO: solve the puzzle
-        return True
