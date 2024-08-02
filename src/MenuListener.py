@@ -29,7 +29,7 @@ class MenuListener(Generic[E]):
 
     def print_menu(self) -> None:
         os.system('clear')
-        print(f"{self.message} Select one of the following options:\n")
+        print(f"{self.message}\n")
         for i, value in enumerate(self.menu_options.list()):
             if i == self.selected_idx:
                 print(f">  {i+1}. {value}")
