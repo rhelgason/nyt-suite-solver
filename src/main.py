@@ -5,15 +5,8 @@ import ctypes
 import sys
 import os 
 
-dir_path = os.path.dirname(os.path.realpath(__file__))
-handle = ctypes.CDLL(dir_path + "/solvers/sudoku/libTest.so")     
-
-handle.My_Function.argtypes = [ctypes.c_int]
-
 def main() -> int:
     os.system('tput civis')
-    return handle.My_Function(23)
-
     option = use_main_menu()
     while option != MainMenuOptions.QUIT:
         res = 0
