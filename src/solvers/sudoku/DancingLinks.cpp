@@ -7,11 +7,9 @@
 Grid* grid;
 
 void dancing_links_init(int** inBoard, int dim, int subHeight, int subWidth) {
-    cout << "Initializing board..." << endl;
     // initialize game board
     try {
         grid = new Grid(inBoard, dim, subHeight, subWidth);
-        cout << "blalkdfas" << grid->toString() << endl;
         grid->dancingLinks(inBoard);
     } catch (invalid_argument const &e) {
         cout << endl << e.what() << endl;

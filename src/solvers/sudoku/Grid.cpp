@@ -5,6 +5,7 @@ Grid::Grid(int**& inBoard, int dim, int subHeight, int subWidth) {
     this->dim = dim;
     this->subHeight = subHeight;
     this->subWidth = subWidth;
+    
     // initialize tracking sets
     rows = new bool*[dim];
     cols = new bool*[dim];

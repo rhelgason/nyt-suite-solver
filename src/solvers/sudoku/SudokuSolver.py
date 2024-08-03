@@ -44,7 +44,7 @@ class SudokuSolver:
         return
 
     def scrape_puzzle(self) -> None:
-        fetching_str = f"\nFetching {self.difficulty.value.lower()} puzzle from NYT website..."
+        fetching_str = f"Fetching {self.difficulty.value.lower()} puzzle from NYT website..."
         clear_terminal()
         print(fetching_str)
 

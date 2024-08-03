@@ -21,12 +21,6 @@ class Grid {
         bool*** divs;
         Box*** board;
 
-        // algorithm x data structures
-        bool** matrix;
-        int* cand;
-        bool* validRow;
-        bool* validCol;
-
         // dancing links data structures
         Node* head;
         Node** colHeads;
@@ -44,18 +38,6 @@ class Grid {
         // remove a number from the tracking sets
         void untrack(int row, int col, int num);
 
-        // recursive function for solving with backtracking
-        bool solveBacktrack(int row, int col);
-
-        // constructor helper for algorithm x method
-        void algorithmX(int** inBoard);
-
-        // add a row to the matrix
-        void matrixRow(int index, int row, int col, int num);
-
-        // recursive function for solving with algorithm x
-        bool solveAlgorithmX();
-
         // constructor helper for dancing links method
         void dancingLinks(int** inBoard);
 
@@ -70,9 +52,6 @@ class Grid {
 
         // destructor for Grid class
         ~Grid();
-
-        // destructor helper for algorithm x
-        void destructAlgorithmX();
 
         // destructor helper for dancing links
         void destructDancingLinks();
