@@ -1,60 +1,13 @@
 #include "Grid.h"
 
-Grid::Grid(ifstream& inFile, int**& inBoard, int& dim) {
-    string curr;
-    try {
-        inFile >> curr;
-        dim = stoi(curr);
-        if (dim > 16) throw out_of_range("");
-        this->dim = dim;
-        inFile >> curr;
-        subHeight = stoi(curr);
-        inFile >> curr;
-        subWidth = stoi(curr);
-        inFile >> curr;
-        if (curr != "---") throw invalid_argument("");
-        if (dim < 1 || subHeight < 1 || subWidth < 1 || subHeight * subWidth != dim) throw out_of_range("");
-    } catch (invalid_argument const &e) {
-        throw invalid_argument("Error: there was a mistake in the dimension input.");
-    } catch (out_of_range const &e) {
-        throw invalid_argument("Error: the input dimensions are not valid.");
-    }
-
-    // read the board contents
-    inBoard = new int*[dim];
-    for (int i = 0; i < dim; i++) inBoard[i] = new int[dim];
-    for (int i = 0; i < dim; i++) {
-        for (int j = 0; j < dim; j++) {
-            // error checking for single input
-            if (!(inFile >> curr)) throw invalid_argument("Error: the input board did not contain enough information.");
-            if (curr == ".") {
-                inBoard[i][j] = -1;
-            }
-            else {
-                int temp;
-                try {
-                    temp = stoi(curr, 0, 16);
-                } catch (out_of_range const &e) {
-                    throw invalid_argument("Error: inputs must be between 1 and " + to_string(dim) + ", inclusive.");
-                } catch (invalid_argument const &e) {
-                    throw invalid_argument("Error: some input in the board was invalid.");
-                }
-                if (dim == 16) {
-                    if (temp > dim || temp < 0) throw invalid_argument("Error: inputs must be between 0 and " + to_string(dim) + ", inclusive.");
-                } else {
-                    if (temp > dim || temp < 1) throw invalid_argument("Error: inputs must be between 1 and " + to_string(dim) + ", inclusive.");
-                }
-                if (temp == 0) temp = 16;
-                inBoard[i][j] = temp;
-            }
-        }
-    }
-    if (inFile >> curr) throw invalid_argument("Error: the input file contained too much information.");
-
+Grid::Grid(int**& inBoard, int dim, int subHeight, int subWidth) {
+    // initialize dimensions
+    this->dim = dim;
+    this->subHeight = subHeight;
+    this->subWidth = subWidth;
     // initialize tracking sets
     rows = new bool*[dim];
     cols = new bool*[dim];
-    divs = new bool**[subWidth];
     for (int i = 0; i < dim; i++) {
         rows[i] = new bool[dim];
         cols[i] = new bool[dim];
@@ -63,6 +16,8 @@ Grid::Grid(ifstream& inFile, int**& inBoard, int& dim) {
             cols[i][j] = false;
         }
     }
+
+    divs = new bool**[subWidth];
     for (int i = 0; i < subWidth; i++) {
         divs[i] = new bool*[subHeight];
         for (int j = 0; j < subHeight; j++) {

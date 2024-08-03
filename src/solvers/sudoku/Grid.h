@@ -33,7 +33,7 @@ class Grid {
 
     public:
         // basic constructor for the Grid
-        Grid(ifstream& inFile, int**& inBoard, int& dim);
+        Grid(int**& inBoard, int dim, int subHeight, int subWidth);
         
         // determine if a number is valid in a position
         bool valid(int row, int col, int num);

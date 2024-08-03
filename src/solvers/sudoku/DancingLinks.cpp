@@ -4,33 +4,17 @@
 #include "Grid.h"
 #include "Box.h"
 
-bool dancing_links_main(int** input_board, int dim) {
+void dancing_links_init(int** inBoard, int dim, int subHeight, int subWidth) {
     // initialize game board
     Grid* grid;
-    for (int i = 0; i < 9; i++) {
-        for (int j = 0; j < 9; j++) {
-            cout << input_board[i][j] << " ";
-        }
-        cout << endl;
-    }
-    return true;
-    /*
-    int** inBoard = NULL;
-    int dim = 0;
     try {
-        grid = new Grid(inFile, inBoard, dim);
+        grid = new Grid(inBoard, dim, subHeight, subWidth);
         grid->dancingLinks(inBoard);
     } catch (invalid_argument const &e) {
         cout << endl << e.what() << endl;
-        return 1;
+        return;
     }
-    inFile.close();
-    for (int i = 0; i < dim; i++) {
-        delete[] inBoard[i];
-    }
-    delete[] inBoard;
-    inBoard = NULL;
-
+/*
     // solve the board
     chrono::steady_clock::time_point begin = chrono::steady_clock::now();
     cout << "\nSolving this board:\n\n" << grid->toString() << "\n\nWorking..." << endl;
@@ -52,11 +36,19 @@ bool dancing_links_main(int** input_board, int dim) {
     grid->destructDancingLinks();
     delete grid;
     grid = NULL;
-    */
+*/
+}
+
+bool dancing_links_solve() {
+    return true;
 }
 
 extern "C" {
-    bool _dancing_links_main(int** input_board, int dim) {
-        return dancing_links_main(input_board, dim);
+    void _dancing_links_init(int** inBoard, int dim, int subHeight, int subWidth) {
+        return dancing_links_init(inBoard, dim, subHeight, subWidth);
+    }
+
+    bool _dancing_links_solve() {
+        return dancing_links_solve();
     }
 }

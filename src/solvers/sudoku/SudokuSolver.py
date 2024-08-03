@@ -30,7 +30,7 @@ class SudokuSolver:
     ds: datetime = None
 
     # puzzle attributes
-    puzzle: npt.NDArray[npt.NDArray[np.int16]] = None
+    puzzle: npt.NDArray[npt.NDArray[np.int32]] = None
     dim: int = NYT_DIM
     box_width: int = NYT_BOX_WIDTH
     box_height: int = NYT_BOX_HEIGHT
@@ -63,16 +63,18 @@ class SudokuSolver:
     the board is a 9x9 grid of cells. This function reshapes the input list
     into a 9x9 grid.
     """
-    def reshape_input_board(self, values: List[int], ) -> npt.NDArray[npt.NDArray[np.int16]]:
+    def reshape_input_board(self, values: List[int], ) -> npt.NDArray[npt.NDArray[np.int32]]:
         sqrt = math.sqrt(len(values))
         if sqrt != int(sqrt):
             raise ValueError("Input board must be a square.")
 
         self.dim = int(sqrt)
-        board = np.empty([self.dim, self.dim], dtype=np.int16)
+        board = np.empty([self.dim, self.dim], dtype=np.int32)
         for i in range(0, self.dim):
             for j in range(0, self.dim):
                 board[i][j] = values[i * self.dim + j]
+                if board[i][j] == 0:
+                    board[i][j] = -1
         return board
     
     """
@@ -125,26 +127,18 @@ class SudokuSolver:
             raise Exception("Failed to solve puzzle.")
 
     def solve(self) -> bool:
-        #cdll = ctypes.CDLL(os.path.join('./', DANCING_LINKS_PATH))
-        #_dancing_links_main = cdll._dancing_links_main
-        #_dancing_links_main.argtypes = (ctypes.POINTER(ctypes.POINTER(ctypes.c_int * GRID_HEIGHT) * GRID_WIDTH), ctypes.c_int)
-        #_dancing_links_main.restype = ctypes.c_bool
+        int_ptr = ct.POINTER(ct.c_int)
+        int_ptr_ptr = ct.POINTER(int_ptr)
 
-        UI16Ptr = ct.POINTER(ct.c_int)
-        UI16PtrPtr = ct.POINTER(UI16Ptr)
+        cdll = ct.CDLL(os.path.join('./', DANCING_LINKS_PATH))
+        _dancing_links_init = cdll._dancing_links_init
+        _dancing_links_init.argtypes = [int_ptr_ptr, ct.c_int, ct.c_int, ct.c_int]
+        _dancing_links_init.restype = ct.c_bool
 
-        dll00 = ct.CDLL(os.path.join('./', DANCING_LINKS_PATH))
-        dll00Func00 = dll00._dancing_links_main
-        dll00Func00.argtypes = [UI16PtrPtr]
-        dll00Func00.restype = ct.c_uint
+        ct_arr = np.ctypeslib.as_ctypes(self.puzzle)
+        int_ptr_arr = int_ptr * ct_arr._length_
+        ct_ptr = ct.cast(int_ptr_arr(*(ct.cast(row, int_ptr) for row in ct_arr)), int_ptr_ptr)
 
-        dim0 = GRID_HEIGHT
-        dim1 = GRID_WIDTH
-
-        # The "magic" happens in the following lines of code
-        ct_arr = np.ctypeslib.as_ctypes(np_arr_2d)
-        UI16PtrArr = UI16Ptr * ct_arr._length_
-        ct_ptr = ct.cast(UI16PtrArr(*(ct.cast(row, UI16Ptr) for row in ct_arr)), UI16PtrPtr)
-        res = dll00Func00(ct_ptr, GRID_HEIGHT)
-
-        print("\n{0:s} returned: {1:d}".format(dll00Func00.__name__, res))
+        # print board
+        res = _dancing_links_init(ct_ptr, self.dim, self.box_height, self.box_width)
+        return True
