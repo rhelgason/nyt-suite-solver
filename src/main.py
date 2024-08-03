@@ -25,7 +25,7 @@ def sudoku() -> int:
         return 0
     
     solver = SudokuSolver(option)
-    solver.solve_verbose()
+    solver.solve()
 
 def exit_program():
     os.system('tput cnorm')

@@ -25,6 +25,7 @@ Scrapes the NYT Sudoku puzzle and solves it using Donald
 Knuth's dancing links algorithm.
 """
 class SudokuSolver:
+    cdll: ct.CDLL = None
     difficulty: SudokuDifficultyOptions = None
     # TODO: allow solving of archived boards
     ds: datetime = None
@@ -36,14 +37,16 @@ class SudokuSolver:
     box_height: int = NYT_BOX_HEIGHT
 
     def __init__(self, difficulty: SudokuDifficultyOptions) -> None:
+        self.cdll = ct.CDLL(os.path.join('./', DANCING_LINKS_PATH))
         self.difficulty = difficulty
         self.ds = datetime.today()
         self.scrape_puzzle()
         return
 
     def scrape_puzzle(self) -> None:
+        fetching_str = f"\nFetching {self.difficulty.value.lower()} puzzle from NYT website..."
         clear_terminal()
-        print("\nFetching puzzle from NYT website...")
+        print(fetching_str)
 
         difficulty_str = self.difficulty.value.lower()
         url = BASE_URL + difficulty_str
@@ -54,6 +57,9 @@ class SudokuSolver:
             data = json.loads(match.group(1))
             puzzle_data = data[difficulty_str]['puzzle_data']['puzzle']
             self.puzzle = self.reshape_input_board(puzzle_data)
+            self.dancing_links_init()
+            clear_terminal()
+            print(fetching_str + " done!")
 
         else:
             raise Exception("Failed to find game data.")
@@ -63,7 +69,7 @@ class SudokuSolver:
     the board is a 9x9 grid of cells. This function reshapes the input list
     into a 9x9 grid.
     """
-    def reshape_input_board(self, values: List[int], ) -> npt.NDArray[npt.NDArray[np.int32]]:
+    def reshape_input_board(self, values: List[int]) -> npt.NDArray[npt.NDArray[np.int32]]:
         sqrt = math.sqrt(len(values))
         if sqrt != int(sqrt):
             raise ValueError("Input board must be a square.")
@@ -76,69 +82,26 @@ class SudokuSolver:
                 if board[i][j] == 0:
                     board[i][j] = -1
         return board
-    
-    """
-    The NYT crossword always uses a 9x9 board, but this method will use hex
-    characters to support up to 16x16 boards.
-    """
-    def puzzle_to_string(self) -> str:
-        # print each row
-        res = ""
-        for i in range(self.dim):
-            for j in range(self.dim):
-                res += "." if self.puzzle[i][j] == -1 else ('%x' % self.puzzle[i][j])
-                if j != self.dim - 1:
-                    res += " "
-                else:
-                    break
-                if (j + 1) % self.box_width == 0:
-                    res += "| "
 
-            if i != self.dim - 1:
-                res += "\n"
-
-            if (i + 1) % self.box_height == 0 and i != self.dim - 1:
-                for j in range(self.dim):
-                    res += "-"
-                    if j != self.dim - 1:
-                        res += "-"
-                    else:
-                        break
-                    if (j + 1) % self.box_width == 0:
-                        res += "+-"
-                res += "\n"
-        return res
-
-    def solve_verbose(self) -> None:
-        print(f"Solving today's {self.difficulty.value.lower()} Sudoku board:\n")
-        print(self.puzzle_to_string())
-
-        start_time = time.time()
-        print("\nSolving...")
-        if self.solve():
-            end_time = time.time()
-            print(f"\nSolved in {solve_time_to_string(start_time, end_time)}:\n")
-            """
-            print(self.puzzle.to_string())
-            """
-            print("\nPress any key to return to the main menu.")
-            input()
-        else:
-            raise Exception("Failed to solve puzzle.")
-
-    def solve(self) -> bool:
+    def dancing_links_init(self) -> None:
         int_ptr = ct.POINTER(ct.c_int)
         int_ptr_ptr = ct.POINTER(int_ptr)
 
-        cdll = ct.CDLL(os.path.join('./', DANCING_LINKS_PATH))
-        _dancing_links_init = cdll._dancing_links_init
+        _dancing_links_init = self.cdll._dancing_links_init
         _dancing_links_init.argtypes = [int_ptr_ptr, ct.c_int, ct.c_int, ct.c_int]
         _dancing_links_init.restype = ct.c_bool
 
         ct_arr = np.ctypeslib.as_ctypes(self.puzzle)
         int_ptr_arr = int_ptr * ct_arr._length_
         ct_ptr = ct.cast(int_ptr_arr(*(ct.cast(row, int_ptr) for row in ct_arr)), int_ptr_ptr)
+        _dancing_links_init(ct_ptr, self.dim, self.box_height, self.box_width)
 
-        # print board
-        res = _dancing_links_init(ct_ptr, self.dim, self.box_height, self.box_width)
-        return True
+    def solve(self) -> None:
+        print(f"Solving today's {self.difficulty.value.lower()} puzzle:")
+        _dancing_links_solve = self.cdll._dancing_links_solve
+        _dancing_links_solve.argtypes = []
+        _dancing_links_solve.restype = ct.c_bool
+        res = _dancing_links_solve()
+
+        print("\nPress ENTER to return to the main menu.")
+        input()

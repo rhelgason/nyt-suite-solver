@@ -4,43 +4,37 @@
 #include "Grid.h"
 #include "Box.h"
 
+Grid* grid;
+
 void dancing_links_init(int** inBoard, int dim, int subHeight, int subWidth) {
+    cout << "Initializing board..." << endl;
     // initialize game board
-    Grid* grid;
     try {
         grid = new Grid(inBoard, dim, subHeight, subWidth);
+        cout << "blalkdfas" << grid->toString() << endl;
         grid->dancingLinks(inBoard);
     } catch (invalid_argument const &e) {
         cout << endl << e.what() << endl;
         return;
     }
-/*
+}
+
+void dancing_links_solve() {
     // solve the board
     chrono::steady_clock::time_point begin = chrono::steady_clock::now();
-    cout << "\nSolving this board:\n\n" << grid->toString() << "\n\nWorking..." << endl;
+    cout << endl << grid->toString() << endl << endl;
+
     if (grid->solveDancingLinks()) {
         chrono::steady_clock::time_point end = chrono::steady_clock::now();
-        auto duration = (chrono::duration_cast<chrono::milliseconds>(end - begin).count() / 1000.0);
-        double seconds = static_cast<double>(duration);
-        if (seconds < 60) {
-            cout << "Board has been solved in " << seconds << " seconds:\n\n" << grid->toString() << endl;
-        } else  {
-            int minutes = seconds / 60;
-            seconds = seconds - (minutes * 60);
-            cout << "Board has been solved in " << minutes << " minute" << (minutes == 1 ? "" : "s") <<
-                " and " << seconds << " seconds:\n\n" << grid->toString() << endl << endl;
-        }
+        auto duration = (chrono::duration_cast<chrono::nanoseconds>(end - begin).count() / 1000000.0);
+        double milliseconds = static_cast<double>(duration);
+        cout << "Puzzle has been solved in " << setprecision(3) << milliseconds << " milliseconds:\n\n" << grid->toString() << endl;
     } else {
-        cout << "\nThe board could not be solved." << endl << endl;
+        cout << "\nThe puzzle could not be solved." << endl << endl;
     }
     grid->destructDancingLinks();
     delete grid;
     grid = NULL;
-*/
-}
-
-bool dancing_links_solve() {
-    return true;
 }
 
 extern "C" {
@@ -48,7 +42,7 @@ extern "C" {
         return dancing_links_init(inBoard, dim, subHeight, subWidth);
     }
 
-    bool _dancing_links_solve() {
+    void _dancing_links_solve() {
         return dancing_links_solve();
     }
 }
