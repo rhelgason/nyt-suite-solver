@@ -13,8 +13,8 @@ import requests
 BASE_URL = "https://www.nytimes.com/puzzles/spelling-bee"
 HTML_DATA_REGEX = r'<script type="text\/javascript">window\.gameData = (.+)<\/script><\/div><div id="portal-editorial-content">'
 
-WORDS_FILE_PATH = "all_words.txt"
-OUTPUT_DIRECTORY_PATH = "./solutions/spelling_bee"
+WORDS_FILE_PATH = "wordlist.txt"
+OUTPUT_DIRECTORY_PATH = "solutions/spelling_bee"
 NUM_LETTERS = 7
 MIN_LENGTH = 4
 
@@ -120,16 +120,19 @@ class SpellingBeeSolver:
                 if should_update_progress_bar():
                     progress = int((line_num / num_lines) * MAX_PERCENTAGE)
                     use_progress_bar(progress, start, time())
-        
-        # print results
         end = time()
         use_progress_bar(MAX_PERCENTAGE, start, end)
-        print(f"\n\n{len(self.words) + len(self.pangrams)} words found:")
-        for word in self.pangrams:
-            space = " " * (self.max_length - len(word) + 1)
-            print("\t- " + word + space + "(PANGRAM)")
-        for word in self.words:
-            print("\t- " + word)
+
+        # print condensed results
+        self.words.sort(key=lambda x: (-len(x), x))
+        self.pangrams.sort(key=lambda x: (-len(x), x))
+        print(f"\n\n{len(self.words) + len(self.pangrams)} possible words found:")
+        print(f"\t- Pangrams: " + ', '.join(self.pangrams))
+        low = 0
+        for i, word in enumerate(self.words):
+            if len(word) < len(self.words[low]):
+                print(f"\t- {len(self.words[low])}-letter words: " + ', '.join(self.words[low:i]))
+                low = i
 
         # output results to file
         self.write_solved_puzzle(start, end)
@@ -169,7 +172,7 @@ class SpellingBeeSolver:
         }
 
         # set up file path
-        output_path = os.path.join(OUTPUT_DIRECTORY_PATH)
+        output_path = os.path.join('./', OUTPUT_DIRECTORY_PATH)
         if not os.path.exists(output_path):
             os.makedirs(output_path)
         output_file_path = os.path.join(output_path, f"{self.ds}.json")
