@@ -1,6 +1,7 @@
 from datetime import datetime, timedelta
 from display_utils import clear_terminal, MAX_PERCENTAGE, should_update_progress_bar, solve_time_to_string, use_progress_bar, use_spelling_bee_menu
 from menu_options import gen_date_enum, MenuOptions, SpellingBeeDateOptions
+from Spinner import Spinner
 from time import time
 from typing import List, Set
 
@@ -41,45 +42,37 @@ class SpellingBeeSolver:
 
     @staticmethod
     def use_date_options(option: SpellingBeeDateOptions) -> MenuOptions:
-        fetching_str = f"Fetching dates from NYT website..."
         clear_terminal()
-        print(fetching_str)
+        with Spinner("Fetching dates from NYT website..."):
+            response = requests.get(BASE_URL)
+            match = re.search(HTML_DATA_REGEX, response.text)
+            if not match:
+                raise Exception("Failed to find game data.")
+            data = json.loads(match.group(1))['pastPuzzles']
+            puzzle_data = None
+            if option == SpellingBeeDateOptions.THIS_WEEK:
+                puzzle_data = data['thisWeek']
+            elif option == SpellingBeeDateOptions.LAST_WEEK:
+                puzzle_data = data['lastWeek']
 
-        response = requests.get(BASE_URL)
-        match = re.search(HTML_DATA_REGEX, response.text)
-        if not match:
-            raise Exception("Failed to find game data.")
-        data = json.loads(match.group(1))['pastPuzzles']
-        puzzle_data = None
-        if option == SpellingBeeDateOptions.THIS_WEEK:
-            puzzle_data = data['thisWeek']
-        elif option == SpellingBeeDateOptions.LAST_WEEK:
-            puzzle_data = data['lastWeek']
-
-        dates = []
-        if puzzle_data != None:
-            dates = {x['printDate']: x['displayDate'] for x in puzzle_data}
-        temp = gen_date_enum(dates)
-        return temp
+            dates = []
+            if puzzle_data != None:
+                dates = {x['printDate']: x['displayDate'] for x in puzzle_data}
+            return gen_date_enum(dates)
     
     def scrape_puzzle(self) -> None:
         fetching_str = f"Fetching puzzle from NYT website..."
         clear_terminal()
-        print(fetching_str)
-
-        response = requests.get(os.path.join(BASE_URL, self.ds))
-        match = re.search(HTML_DATA_REGEX, response.text)
-        if match:
-            data = json.loads(match.group(1))
-            puzzle_data = data['today']
-            self.center = puzzle_data['centerLetter']
-            self.letters = set(puzzle_data['validLetters'])
-            clear_terminal()
-            print(fetching_str + " done!")
-        else:
-            raise Exception("Failed to find game data.")
-
-        clear_terminal()
+        with Spinner(fetching_str):
+            response = requests.get(os.path.join(BASE_URL, self.ds))
+            match = re.search(HTML_DATA_REGEX, response.text)
+            if match:
+                data = json.loads(match.group(1))
+                puzzle_data = data['today']
+                self.center = puzzle_data['centerLetter']
+                self.letters = set(puzzle_data['validLetters'])
+            else:
+                raise Exception("Failed to find game data.")
         print(fetching_str + " done!")
     
     def puzzle_to_string(self) -> str:

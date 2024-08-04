@@ -5,6 +5,7 @@ from typing import Callable, Generic, Optional, Type, TypeVar, Union
 
 import os
 
+MAX_ENTRIES = 9
 ASCII_1 = 49
 
 E = TypeVar("E", bound=MenuOptions)
@@ -18,6 +19,8 @@ class MenuListener(Generic[E]):
     def __init__(self, menu_options: Type[E], message: str) -> None:
         self.is_key_already_pressed = False
         self.selected_idx = 0
+        if (len(menu_options) >= MAX_ENTRIES):
+            raise Exception("Menu listener only currently supports 9 options.")
         self.menu_options = menu_options
         self.message = message
 

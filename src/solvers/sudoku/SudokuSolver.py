@@ -1,6 +1,7 @@
 from datetime import datetime
 from display_utils import clear_terminal, use_sudoku_menu
 from menu_options import SudokuDifficultyOptions
+from Spinner import Spinner
 from typing import List
 
 import ctypes as ct
@@ -46,22 +47,20 @@ class SudokuSolver:
     def scrape_puzzle(self) -> None:
         fetching_str = f"Fetching {self.difficulty.value.lower()} puzzle from NYT website..."
         clear_terminal()
-        print(fetching_str)
+        with Spinner(fetching_str):
+            difficulty_str = self.difficulty.value.lower()
+            url = BASE_URL + difficulty_str
+            response = requests.get(url)
+            match = re.search(HTML_DATA_REGEX, response.text)
 
-        difficulty_str = self.difficulty.value.lower()
-        url = BASE_URL + difficulty_str
-        response = requests.get(url)
-        match = re.search(HTML_DATA_REGEX, response.text)
-
-        if match:
-            data = json.loads(match.group(1))
-            puzzle_data = data[difficulty_str]['puzzle_data']['puzzle']
-            self.puzzle = self.reshape_input_board(puzzle_data)
-            self.dancing_links_init()
-            clear_terminal()
-            print(fetching_str + " done!")
-        else:
-            raise Exception("Failed to find game data.")
+            if match:
+                data = json.loads(match.group(1))
+                puzzle_data = data[difficulty_str]['puzzle_data']['puzzle']
+                self.puzzle = self.reshape_input_board(puzzle_data)
+                self.dancing_links_init()
+            else:
+                raise Exception("Failed to find game data.")
+        print(fetching_str + " done!")
     
     """
     The input after scraping the NYT website is a list of 81 integers, and

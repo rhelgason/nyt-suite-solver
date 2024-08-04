@@ -81,14 +81,6 @@ def should_update_progress_bar() -> bool:
         return True
     return False
 
-def use_loading_spinner(message: str = "Loading...") -> None:
-    spinner = "|/-\\"
-    i = 0
-    while True:
-        print(f"{message} {spinner[i]}", end="\r")
-        i = (i + 1) % len(i)
-        sleep(SECONDS_PER_UPDATE)
-
 def solve_time_to_string(start: float, end: float) -> str:
     seconds = int(end - start)
     if seconds < SECONDS_PER_MINUTE:
