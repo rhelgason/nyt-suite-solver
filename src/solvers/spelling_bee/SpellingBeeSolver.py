@@ -5,7 +5,7 @@ from typing import List, Set
 
 import os
 
-WORDS_FILE_PATH = "src/solvers/spelling_bee/all_words.txt"
+WORDS_FILE_PATH = "all_words.txt"
 NUM_LETTERS = 7
 MIN_LENGTH = 4
 
