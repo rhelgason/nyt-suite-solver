@@ -1,5 +1,5 @@
 from enum import Enum
-from typing import List
+from typing import Dict
 
 class MenuOptions(Enum):
     @classmethod
@@ -29,7 +29,7 @@ class SudokuDifficultyOptions(MenuOptions):
     HARD = "Hard"
     RETURN = "Return"
 
-def gen_date_enum(dates: Dict[str]) -> MenuOptions:
+def gen_date_enum(dates: Dict[str, str]) -> MenuOptions:
     dates["RETURN"] = "Return"
     DateOptions = Enum("DateOptions", dates, type=MenuOptions)
     return DateOptions

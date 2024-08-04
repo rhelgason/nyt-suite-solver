@@ -24,7 +24,7 @@ def use_main_menu():
     )
     return main_menu.use_menu()
 
-def use_spelling_bee_menu(DateOptions: Optional[MenuOptions] = None):
+def use_spelling_bee_menu(DateOptions: Optional[MenuOptions] = None) -> MenuOptions:
     if DateOptions == None:
         spelling_bee_menu = MenuListener[SpellingBeeDateOptions](
             menu_options=SpellingBeeDateOptions,

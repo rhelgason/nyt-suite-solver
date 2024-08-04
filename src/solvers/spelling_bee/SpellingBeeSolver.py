@@ -31,16 +31,25 @@ class SpellingBeeSolver:
 
     def __init__(self, ds: str = None) -> None:
         self.ds = ds or datetime.today().date().strftime("%Y-%m-%d")
+        self.letters = set()
+        self.center = None
+        self.words = []
+        self.pangrams = []
+        self.max_length = 0
         self.scrape_puzzle()
         return
 
     @staticmethod
-    def use_date_options(self, option: SpellingBeeDateOptions) -> MenuOptions:
+    def use_date_options(option: SpellingBeeDateOptions) -> MenuOptions:
+        fetching_str = f"Fetching dates from NYT website..."
+        clear_terminal()
+        print(fetching_str)
+
         response = requests.get(BASE_URL)
         match = re.search(HTML_DATA_REGEX, response.text)
         if not match:
             raise Exception("Failed to find game data.")
-        data = json.loads(match.group(1))
+        data = json.loads(match.group(1))['pastPuzzles']
         puzzle_data = None
         if option == SpellingBeeDateOptions.THIS_WEEK:
             puzzle_data = data['thisWeek']
@@ -49,8 +58,9 @@ class SpellingBeeSolver:
 
         dates = []
         if puzzle_data != None:
-            dates = {x['displayDate']: x['printDate'] for x in puzzle_data}
-        return gen_date_enum(dates)
+            dates = {x['printDate']: x['displayDate'] for x in puzzle_data}
+        temp = gen_date_enum(dates)
+        return temp
     
     def scrape_puzzle(self) -> None:
         fetching_str = f"Fetching puzzle from NYT website..."
@@ -98,7 +108,8 @@ class SpellingBeeSolver:
         return res
     
     def solve(self) -> None:
-        print(f"Solving today's puzzle:")
+        date = datetime.strptime(self.ds, "%Y-%m-%d")
+        print(f"Solving puzzle for {date.strftime('%B %d, %Y')}:")
         print(self.puzzle_to_string())
 
         # get all valid words
@@ -159,11 +170,11 @@ def spelling_bee() -> int:
             ds = (datetime.today().date() - timedelta(days=1)).strftime("%Y-%m-%d")
             solver = SpellingBeeSolver(ds)
             solver.solve()
-        
-        DateOptions = SpellingBeeSolver.use_date_options(option)
-        while True:
-            date = use_spelling_bee_menu(DateOptions)
-            if date == DateOptions.RETURN:
-                break
-            solver = SpellingBeeSolver(date.value)
-            solver.solve()
+        else:
+            DateOptions = SpellingBeeSolver.use_date_options(option)
+            while True:
+                date = use_spelling_bee_menu(DateOptions)
+                if date == DateOptions.RETURN:
+                    break
+                solver = SpellingBeeSolver(date._name_)
+                solver.solve()

@@ -26,8 +26,6 @@ Knuth's dancing links algorithm.
 class SudokuSolver:
     cdll: ct.CDLL = None
     difficulty: SudokuDifficultyOptions = None
-    # TODO: allow solving of archived boards
-    ds: datetime = None
 
     # puzzle attributes
     puzzle: npt.NDArray[npt.NDArray[np.int32]] = None
@@ -38,7 +36,10 @@ class SudokuSolver:
     def __init__(self, difficulty: SudokuDifficultyOptions) -> None:
         self.cdll = ct.CDLL(os.path.join('./', DANCING_LINKS_PATH))
         self.difficulty = difficulty
-        self.ds = datetime.today()
+        self.puzzle = None
+        self.dim = NYT_DIM
+        self.box_width = NYT_BOX_WIDTH
+        self.box_height = NYT_BOX_HEIGHT
         self.scrape_puzzle()
         return
 

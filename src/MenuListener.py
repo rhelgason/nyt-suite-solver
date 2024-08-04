@@ -5,7 +5,7 @@ from typing import Callable, Generic, Optional, Type, TypeVar, Union
 
 import os
 
-VK_NUMPAD_1 = 18
+ASCII_1 = 49
 
 E = TypeVar("E", bound=MenuOptions)
 
@@ -41,6 +41,7 @@ class MenuListener(Generic[E]):
         if self.is_key_already_pressed:
             return
         self.is_key_already_pressed = True
+        ascii_key = ord(key.char) if hasattr(key, 'char') else None
 
         if key == keyboard.Key.down:
             self.selected_idx = (self.selected_idx + 1) % len(self.menu_options)
@@ -51,8 +52,8 @@ class MenuListener(Generic[E]):
         elif key == keyboard.Key.esc or key == keyboard.KeyCode.from_char('q'):
             self.selected_idx = len(self.menu_options) - 1
             return False
-        elif hasattr(key, 'vk') and key.vk >= VK_NUMPAD_1 and key.vk < VK_NUMPAD_1 + len(self.menu_options):
-            self.selected_idx = key.vk - VK_NUMPAD_1
+        elif ascii_key and ascii_key >= ASCII_1 and ascii_key < ASCII_1 + len(self.menu_options):
+            self.selected_idx = ascii_key - ASCII_1
             return False
 
         self.print_menu()
