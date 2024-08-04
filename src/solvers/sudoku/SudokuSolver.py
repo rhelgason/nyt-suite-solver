@@ -1,5 +1,5 @@
 from datetime import datetime
-from display_utils import clear_terminal, solve_time_to_string
+from display_utils import clear_terminal
 from menu_options import SudokuDifficultyOptions
 from typing import List
 
@@ -11,7 +11,6 @@ import numpy.typing as npt
 import os
 import re
 import requests
-import time
 
 BASE_URL = "https://www.nytimes.com/puzzles/sudoku/"
 HTML_DATA_REGEX = r'<script type="text\/javascript">window\.gameData = (.+)<\/script><\/div><div id="portal-editorial-content">'
