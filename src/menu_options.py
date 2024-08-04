@@ -11,7 +11,8 @@ class MenuOptions(Enum):
         return cls._value2member_map_[val]
 
 class MainMenuOptions(MenuOptions):
-    SUDOKU = "Sudoku solver"
+    SPELLING_BEE = "Spelling Bee"
+    SUDOKU = "Sudoku"
     QUIT = "Quit"
 
 class SudokuDifficultyOptions(MenuOptions):
