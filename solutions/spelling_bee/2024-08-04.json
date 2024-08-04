@@ -3,13 +3,13 @@
     "ds": "2024-08-04",
     "center": "t",
     "letters": [
-        "n",
-        "h",
-        "o",
         "r",
+        "i",
+        "n",
         "b",
+        "h",
         "t",
-        "i"
+        "o"
     ],
     "pangrams": [
         "inhibitor"
@@ -63,5 +63,5 @@
         "triton",
         "trot"
     ],
-    "solve_time": "0:00:00.014"
+    "solve_time": "0:00:33.239"
 }

@@ -1,3 +1,4 @@
+from datetime import timedelta
 from MenuListener import MenuListener
 from menu_options import MainMenuOptions, MenuOptions, SpellingBeeDateOptions, SudokuDifficultyOptions
 from time import sleep, time
@@ -58,16 +59,15 @@ def use_progress_bar(progress: int, start: float, end: float) -> None:
     pct_spaces = " " * (len(str(MAX_PERCENTAGE)) - len(str(progress)))
     pct_str = f"{pct_spaces}{progress}%"
 
-    elapsed = int(end - start)
-    minutes = elapsed // SECONDS_PER_MINUTE
-    seconds = elapsed - (minutes * SECONDS_PER_MINUTE)
-    time_str = "[elapsed: " + "{:02d}".format(minutes) + ":" + "{:02d}".format(seconds)
+    elapsed = timedelta(seconds=end - start)
+    elapsed_str = str(elapsed).split('.')[0]
+    time_str = f"[elapsed: {str(elapsed_str)}"
 
     if progress > 1:
-        remaining = int((end - start) * (MAX_PERCENTAGE / progress - 1))
-        minutes = remaining // SECONDS_PER_MINUTE
-        seconds = remaining - (minutes * SECONDS_PER_MINUTE)
-        time_str += ", remaining: " + "{:02d}".format(minutes) + ":" + "{:02d}".format(seconds) + "]"
+        remaining = timedelta(seconds=int((end - start) * (MAX_PERCENTAGE / progress - 1)))
+        remaining_str = str(remaining).split('.')[0]
+        # remaining = int((end - start) * (MAX_PERCENTAGE / progress - 1))
+        time_str += f", remaining: {remaining_str}]"
     else:
         time_str += "]"
 
