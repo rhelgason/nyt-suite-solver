@@ -5,9 +5,10 @@ Provides a number of algorithms to solve each of the New York Times games every 
 - [ ] Spelling Bee
   - [X] Functional algorithm
   - [ ] Upload solved puzzles
-  - [ ] Solve archived puzzles
+  - [X] Solve archived puzzles
 - [ ] Sudoku
   - [X] Functional algorithm
   - [ ] Upload solved puzzles
-  - [ ] Solve archived puzzles
+- [ ] Stat tracking
+- [ ] Chron job for automatically solving puzzles every day
 - [ ] Web UI
