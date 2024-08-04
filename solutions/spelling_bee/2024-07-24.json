@@ -3,27 +3,57 @@
     "ds": "2024-07-24",
     "center": "n",
     "letters": [
-        "n",
         "l",
-        "u",
+        "k",
+        "n",
         "d",
-        "y",
+        "u",
         "i",
-        "k"
+        "y"
     ],
-    "pangrams": [],
-    "answers": [
-        "dunk",
-        "dunn",
-        "indy",
-        "kind",
-        "kink",
-        "kinky",
-        "lind",
+    "pangrams": [
+        "unkindly"
+    ],
+    "valid_answers": [
         "link",
-        "lund",
-        "lynn",
-        "null"
+        "kinkily",
+        "unkind",
+        "nudnik",
+        "unkink",
+        "unduly",
+        "dink",
+        "null",
+        "undid",
+        "ninny",
+        "lunk",
+        "dinky",
+        "inky",
+        "kinky",
+        "unlink",
+        "kind",
+        "kiln",
+        "kindly",
+        "unkindly",
+        "kink",
+        "dunk"
     ],
-    "solve_time": "0:00:00.012"
+    "invalid_answers": [
+        "luny",
+        "indulin",
+        "liny",
+        "linin",
+        "linky",
+        "lindy",
+        "inulin",
+        "undy",
+        "nill",
+        "linn",
+        "kinin",
+        "dunlin",
+        "dinkly",
+        "inly",
+        "nidi"
+    ],
+    "missed_answers": [],
+    "solve_time": "0:00:00.086"
 }

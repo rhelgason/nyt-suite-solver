@@ -24,6 +24,7 @@ a trie data structure.
 """
 class SpellingBeeSolver:
     puzzle_id: int = None
+    answers: List[str] = []
     ds: str = None
 
     letters: Set[str] = set()
@@ -72,6 +73,7 @@ class SpellingBeeSolver:
                 data = json.loads(match.group(1))
                 puzzle_data = data['today']
                 self.puzzle_id = puzzle_data['id']
+                self.answers = puzzle_data['answers']
                 self.center = puzzle_data['centerLetter']
                 self.letters = set(puzzle_data['validLetters'])
             else:
@@ -161,13 +163,16 @@ class SpellingBeeSolver:
     
     def write_solved_puzzle(self, start: float, end: float) -> None:
         # set up output data
+        all_words = self.words + self.pangrams
         data = {
             "puzzle_id": self.puzzle_id,
             "ds": self.ds,
             "center": self.center,
             "letters": list(self.letters),
             "pangrams": self.pangrams,
-            "answers": self.words,
+            "valid_answers": list(set(all_words) - (set(all_words) - set(self.answers))),
+            "invalid_answers": list(set(all_words) - set(self.answers)),
+            "missed_answers": list(set(self.answers) - set(all_words)),
             "solve_time": str(timedelta(seconds=end - start))[:-3],
         }
 
