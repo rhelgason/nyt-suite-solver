@@ -1,5 +1,5 @@
-from datetime import datetime
-from display_utils import clear_terminal, MAX_PERCENTAGE, should_update_progress_bar, solve_time_to_string, use_progress_bar
+from datetime import datetime, timedelta
+from display_utils import clear_terminal, MAX_PERCENTAGE, should_update_progress_bar, solve_time_to_string, use_progress_bar, use_spelling_bee_menu
 from menu_options import gen_date_enum, MenuOptions, SpellingBeeDateOptions
 from time import time
 from typing import List, Set
@@ -49,8 +49,7 @@ class SpellingBeeSolver:
 
         dates = []
         if puzzle_data != None:
-            dates = [x['printDate'] for x in puzzle_data]
-            sorted(dates, reverse=True)
+            dates = {x['displayDate']: x['printDate'] for x in puzzle_data}
         return gen_date_enum(dates)
     
     def scrape_puzzle(self) -> None:
@@ -147,3 +146,24 @@ class SpellingBeeSolver:
             self.pangrams.append(word)
         else:
             self.words.append(word)
+
+def spelling_bee() -> int:
+    while True:
+        option = use_spelling_bee_menu(None)
+        if option == SpellingBeeDateOptions.RETURN:
+            return 0
+        elif option == SpellingBeeDateOptions.TODAY:
+            solver = SpellingBeeSolver()
+            solver.solve()
+        elif option == SpellingBeeDateOptions.YESTERDAY:
+            ds = (datetime.today().date() - timedelta(days=1)).strftime("%Y-%m-%d")
+            solver = SpellingBeeSolver(ds)
+            solver.solve()
+        
+        DateOptions = SpellingBeeSolver.use_date_options(option)
+        while True:
+            date = use_spelling_bee_menu(DateOptions)
+            if date == DateOptions.RETURN:
+                break
+            solver = SpellingBeeSolver(date.value)
+            solver.solve()

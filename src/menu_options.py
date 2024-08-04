@@ -29,8 +29,7 @@ class SudokuDifficultyOptions(MenuOptions):
     HARD = "Hard"
     RETURN = "Return"
 
-def gen_date_enum(dates: List[str]) -> MenuOptions:
-    dates_dict = {d: d for d in dates}
-    dates_dict["RETURN"] = "Return"
-    DateOptions = Enum("DateOptions", dates_dict, type=MenuOptions)
+def gen_date_enum(dates: Dict[str]) -> MenuOptions:
+    dates["RETURN"] = "Return"
+    DateOptions = Enum("DateOptions", dates, type=MenuOptions)
     return DateOptions

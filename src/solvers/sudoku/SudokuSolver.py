@@ -1,5 +1,5 @@
 from datetime import datetime
-from display_utils import clear_terminal
+from display_utils import clear_terminal, use_sudoku_menu
 from menu_options import SudokuDifficultyOptions
 from typing import List
 
@@ -103,3 +103,11 @@ class SudokuSolver:
 
         print("\nPress ENTER to return to the previous menu.")
         input()
+
+def sudoku() -> int:
+    while True:
+        option = use_sudoku_menu()
+        if option == SudokuDifficultyOptions.RETURN:
+            return 0
+        solver = SudokuSolver(option)
+        solver.solve()
