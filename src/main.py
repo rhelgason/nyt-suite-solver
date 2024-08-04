@@ -1,10 +1,13 @@
+from datetime import datetime, timedelta
 from display_utils import use_main_menu, use_spelling_bee_menu, use_sudoku_menu
 from menu_options import MainMenuOptions, SpellingBeeDateOptions, SudokuDifficultyOptions
 from solvers.spelling_bee.SpellingBeeSolver import SpellingBeeSolver
 from solvers.sudoku.SudokuSolver import SudokuSolver
+
 import ctypes
 import sys
-import os 
+import os
+from time import sleep
 
 def main() -> int:
     os.system('tput civis')
@@ -27,11 +30,20 @@ def spelling_bee() -> int:
         option = use_spelling_bee_menu(None)
         if option == SpellingBeeDateOptions.RETURN:
             return 0
+        elif option == SpellingBeeDateOptions.TODAY:
+            solver = SpellingBeeSolver()
+            solver.solve()
+        elif option == SpellingBeeDateOptions.YESTERDAY:
+            ds = (datetime.today().date() - timedelta(days=1)).strftime("%Y-%m-%d")
+            solver = SpellingBeeSolver(ds)
+            solver.solve()
+        
+        DateOptions = SpellingBeeSolver.use_date_options(option)
         while True:
-            option = use_spelling_bee_menu(option)
-            if option == SpellingBeeDateOptions.RETURN:
+            date = use_spelling_bee_menu(DateOptions)
+            if date == DateOptions.RETURN:
                 break
-            solver = SpellingBeeSolver(option)
+            solver = SpellingBeeSolver(date)
             solver.solve()
 
 def sudoku() -> int:

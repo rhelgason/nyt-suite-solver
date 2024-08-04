@@ -1,5 +1,6 @@
 from datetime import datetime
 from display_utils import clear_terminal, MAX_PERCENTAGE, should_update_progress_bar, solve_time_to_string, use_progress_bar
+from menu_options import gen_date_enum, MenuOptions, SpellingBeeDateOptions
 from time import time
 from typing import List, Set
 
@@ -8,7 +9,7 @@ import os
 import re
 import requests
 
-BASE_URL = "https://www.nytimes.com/puzzles/spelling-bee/"
+BASE_URL = "https://www.nytimes.com/puzzles/spelling-bee"
 HTML_DATA_REGEX = r'<script type="text\/javascript">window\.gameData = (.+)<\/script><\/div><div id="portal-editorial-content">'
 WORDS_FILE_PATH = "all_words.txt"
 NUM_LETTERS = 7
@@ -19,27 +20,30 @@ Scrapes the NYT Spelling Bee puzzle and solves it using
 a trie data structure.
 """
 class SpellingBeeSolver:
-    # TODO: allow solving of archived boards
-    ds: datetime = None
+    ds: str = None
 
-    # puzzle attributes
     letters: Set[str] = set()
     center: str = None
     words: List[str] = []
     pangrams: List[str] = []
     max_length: int = 0
 
-    def __init__(self) -> None:
-        self.ds = datetime.today()
+    def __init__(self, ds: str = None) -> None:
+        self.ds = ds or datetime.today().date().strftime("%Y-%m-%d")
         self.scrape_puzzle()
         return
+
+    @staticmethod
+    def use_date_options(self, option: SpellingBeeDateOptions) -> MenuOptions:
+        dates = ['2024-08-03']
+        return gen_date_enum(dates)
     
     def scrape_puzzle(self) -> None:
         fetching_str = f"Fetching puzzle from NYT website..."
         clear_terminal()
         print(fetching_str)
 
-        response = requests.get(BASE_URL)
+        response = requests.get(BASE_URL, self.ds)
         match = re.search(HTML_DATA_REGEX, response.text)
         if match:
             data = json.loads(match.group(1))

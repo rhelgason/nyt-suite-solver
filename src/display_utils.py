@@ -1,5 +1,5 @@
 from MenuListener import MenuListener
-from menu_options import define_dynamic_date_enum, MainMenuOptions, SpellingBeeDateOptions, SudokuDifficultyOptions
+from menu_options import MainMenuOptions, MenuOptions, SpellingBeeDateOptions, SudokuDifficultyOptions
 from time import time
 from typing import Optional
 
@@ -24,17 +24,15 @@ def use_main_menu():
     )
     return main_menu.use_menu()
 
-def use_spelling_bee_menu(option: Optional[SpellingBeeDateOptions]):
-    if option == None:
+def use_spelling_bee_menu(DateOptions: Optional[MenuOptions] = None):
+    if DateOptions == None:
         spelling_bee_menu = MenuListener[SpellingBeeDateOptions](
             menu_options=SpellingBeeDateOptions,
             message="Please select a date for the Spelling Bee puzzle:",
         )
     else:
-        # TODO: use actual dates from API scrape
-        DynamicDateEnum = define_dynamic_date_enum(["2024-08-02"])
-        spelling_bee_menu = MenuListener[DynamicDateEnum](
-            menu_options=DynamicDateEnum,
+        spelling_bee_menu = MenuListener[DateOptions](
+            menu_options=DateOptions,
             message="Please select a date for the Spelling Bee puzzle:",
         )
     return spelling_bee_menu.use_menu()

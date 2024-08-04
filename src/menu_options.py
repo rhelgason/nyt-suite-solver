@@ -29,8 +29,8 @@ class SudokuDifficultyOptions(MenuOptions):
     HARD = "Hard"
     RETURN = "Return"
 
-def define_dynamic_date_enum(dates: List[str]) -> MenuOptions:
+def gen_date_enum(dates: List[str]) -> MenuOptions:
     dates_dict = {d: d for d in dates}
     dates_dict["RETURN"] = "Return"
-    DynamicDateOptions = Enum("DynamicDateOptions", dates_dict, type=MenuOptions)
-    return DynamicDateOptions
+    DateOptions = Enum("DateOptions", dates_dict, type=MenuOptions)
+    return DateOptions
