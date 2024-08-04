@@ -1,6 +1,6 @@
 from MenuListener import MenuListener
 from menu_options import MainMenuOptions, MenuOptions, SpellingBeeDateOptions, SudokuDifficultyOptions
-from time import time
+from time import sleep, time
 from typing import Optional
 
 import os
@@ -9,7 +9,7 @@ SECONDS_PER_MINUTE = 60
 SECONDS_PER_HOUR = 3600
 MAX_PERCENTAGE = 100
 NUM_PROGRESS_BAR_DIVISIONS = 20
-SECONDS_PER_PROGRESS_BAR_UPDATE = 0.25
+SECONDS_PER_UPDATE = 0.25
 
 last_update = 0
 
@@ -48,7 +48,7 @@ def use_sudoku_menu():
 Takes in a progress percentage between 0 and 100, inclusive,
 and runtime info to display a progress bar.
 """
-def use_progress_bar(progress: int, start: float, end: float):
+def use_progress_bar(progress: int, start: float, end: float) -> None:
     if progress < 0 or progress > MAX_PERCENTAGE:
         raise Exception("Progress percentage must be between 0 and 100.")
     
@@ -76,10 +76,18 @@ def use_progress_bar(progress: int, start: float, end: float):
 def should_update_progress_bar() -> bool:
     global last_update
     curr_time = time()
-    if curr_time - last_update > SECONDS_PER_PROGRESS_BAR_UPDATE:
+    if curr_time - last_update > SECONDS_PER_UPDATE:
         last_update = curr_time
         return True
     return False
+
+def use_loading_spinner(message: str = "Loading...") -> None:
+    spinner = "|/-\\"
+    i = 0
+    while True:
+        print(f"{message} {spinner[i]}", end="\r")
+        i = (i + 1) % len(i)
+        sleep(SECONDS_PER_UPDATE)
 
 def solve_time_to_string(start: float, end: float) -> str:
     seconds = int(end - start)
