@@ -1,5 +1,5 @@
-from display_utils import use_main_menu, use_sudoku_menu
-from menu_options import MainMenuOptions, SudokuDifficultyOptions
+from display_utils import use_main_menu, use_spelling_bee_menu, use_sudoku_menu
+from menu_options import MainMenuOptions, SpellingBeeDateOptions, SudokuDifficultyOptions
 from solvers.spelling_bee.SpellingBeeSolver import SpellingBeeSolver
 from solvers.sudoku.SudokuSolver import SudokuSolver
 import ctypes
@@ -23,18 +23,24 @@ def main() -> int:
     return exit_program()
 
 def spelling_bee() -> int:
-    solver = SpellingBeeSolver()
-    solver.solve()
-    return 0
+    while True:
+        option = use_spelling_bee_menu(None)
+        if option == SpellingBeeDateOptions.RETURN:
+            return 0
+        while True:
+            option = use_spelling_bee_menu(option)
+            if option == SpellingBeeDateOptions.RETURN:
+                break
+            solver = SpellingBeeSolver(option)
+            solver.solve()
 
 def sudoku() -> int:
-    option = use_sudoku_menu()
-    if option == SudokuDifficultyOptions.RETURN:
-        return 0
-    
-    solver = SudokuSolver(option)
-    solver.solve()
-    return 0
+    while True:
+        option = use_sudoku_menu()
+        if option == SudokuDifficultyOptions.RETURN:
+            return 0
+        solver = SudokuSolver(option)
+        solver.solve()
 
 def exit_program():
     os.system('tput cnorm')

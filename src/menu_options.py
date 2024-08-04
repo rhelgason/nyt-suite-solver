@@ -1,4 +1,5 @@
 from enum import Enum
+from typing import List
 
 class MenuOptions(Enum):
     @classmethod
@@ -15,8 +16,21 @@ class MainMenuOptions(MenuOptions):
     SUDOKU = "Sudoku"
     QUIT = "Quit"
 
+class SpellingBeeDateOptions(MenuOptions):
+    TODAY = "Today"
+    YESTERDAY = "Yesterday"
+    THIS_WEEK = "This Week"
+    LAST_WEEK = "Last Week"
+    RETURN = "Return"
+
 class SudokuDifficultyOptions(MenuOptions):
     EASY = "Easy"
     MEDIUM = "Medium"
     HARD = "Hard"
     RETURN = "Return"
+
+def define_dynamic_date_enum(dates: List[str]) -> MenuOptions:
+    dates_dict = {d: d for d in dates}
+    dates_dict["RETURN"] = "Return"
+    DynamicDateOptions = Enum("DynamicDateOptions", dates_dict, type=MenuOptions)
+    return DynamicDateOptions

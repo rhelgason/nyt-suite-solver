@@ -101,5 +101,5 @@ class SudokuSolver:
         _dancing_links_solve.restype = ct.c_bool
         res = _dancing_links_solve()
 
-        print("\nPress ENTER to return to the main menu.")
+        print("\nPress ENTER to return to the previous menu.")
         input()
