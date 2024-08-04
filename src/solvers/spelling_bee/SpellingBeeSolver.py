@@ -1,9 +1,10 @@
 from datetime import datetime, timedelta
 from display_utils import clear_terminal, MAX_PERCENTAGE, should_update_progress_bar, use_progress_bar, use_spelling_bee_menu
+from enum import Enum
 from menu_options import gen_date_enum, MenuOptions, SpellingBeeDateOptions
 from Spinner import Spinner
 from time import time
-from typing import List, Set
+from typing import Any, Dict, List, Set
 
 import json
 import os
@@ -18,9 +19,22 @@ OUTPUT_DIRECTORY_PATH = "solutions/spelling_bee"
 NUM_LETTERS = 7
 MIN_LENGTH = 4
 
+# defines ranks by percentage of completion
+class SpellingBeeRanks(Enum):
+    QUEEN_BEE = 100
+    GENIUS = 70
+    AMAZING = 50
+    GREAT = 40
+    NICE = 25
+    SOLID = 15
+    GOOD = 8
+    MOVING_UP = 5
+    GOOD_START = 2
+    BEGINNER = 0
+
 """
-Scrapes the NYT Spelling Bee puzzle and solves it using
-a trie data structure.
+Scrapes the NYT Spelling Bee puzzle and solves it, all backed
+by a trie data structure.
 """
 class SpellingBeeSolver:
     puzzle_id: int = None
@@ -31,7 +45,6 @@ class SpellingBeeSolver:
     center: str = None
     words: List[str] = []
     pangrams: List[str] = []
-    max_length: int = 0
 
     def __init__(self, ds: str = None) -> None:
         self.ds = ds or datetime.today().date().strftime("%Y-%m-%d")
@@ -39,7 +52,6 @@ class SpellingBeeSolver:
         self.center = None
         self.words = []
         self.pangrams = []
-        self.max_length = 0
         self.scrape_puzzle()
         return
 
@@ -153,8 +165,6 @@ class SpellingBeeSolver:
             if letter not in self.letters:
                 return
             used_letters.add(letter)
-        if (len(word) > self.max_length):
-            self.max_length = len(word)
 
         if len(used_letters) == NUM_LETTERS:
             self.pangrams.append(word)
@@ -175,6 +185,7 @@ class SpellingBeeSolver:
             "missed_answers": list(set(self.answers) - set(all_words)),
             "solve_time": str(timedelta(seconds=end - start))[:-3],
         }
+        self.write_performance(data)
 
         # set up file path
         output_path = os.path.join('./', OUTPUT_DIRECTORY_PATH)
@@ -184,6 +195,30 @@ class SpellingBeeSolver:
 
         with open(output_file_path, 'w', encoding='utf-8') as f:
             json.dump(data, f, ensure_ascii=False, indent=4)
+    
+    def write_performance(self, data: Dict[str, Any]) -> None:
+        score = 0
+        for answer in data['valid_answers']:
+            score += self.score_word(answer)
+        data['score'] = score
+
+        missed_score = 0
+        for answer in data['missed_answers']:
+            missed_score += self.score_word(answer)
+        percentage = score / (score + missed_score) * 100
+        data['percentage'] = percentage
+
+        ranks = list(map(lambda c: c.value, SpellingBeeRanks))
+        for i, value in enumerate(ranks):
+            if percentage >= value:
+                data['rank'] = SpellingBeeRanks._value2member_map_[value]._name_
+                return
+    
+    def score_word(self, word: str) -> int:
+        score = len(word) - MIN_LENGTH + 1
+        if word in self.pangrams:
+            score += 7
+        return score
 
 def spelling_bee() -> int:
     while True:
