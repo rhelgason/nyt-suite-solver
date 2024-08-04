@@ -1,5 +1,5 @@
 from datetime import datetime
-from display_utils import clear_terminal, solve_time_to_string
+from display_utils import clear_terminal, MAX_PERCENTAGE, should_update_progress_bar, solve_time_to_string, use_progress_bar
 from time import time
 from typing import List, Set
 
@@ -85,15 +85,21 @@ class SpellingBeeSolver:
 
         # get all valid words
         start = time()
+        last_update = start
         file_path = os.path.join('./', WORDS_FILE_PATH)
+        with open(file_path, "rb") as f:
+            num_lines = sum(1 for _ in f)
         with open(file_path, 'r') as f:
-            for line in f:
+            for line_num, line in enumerate(f, start=1):
                 self.validate_word(line.strip())
+                if should_update_progress_bar():
+                    progress = int((line_num / num_lines) * MAX_PERCENTAGE)
+                    use_progress_bar(progress, start, time())
         
         # print results
         end = time()
-        print(f"Puzzle solved in {solve_time_to_string(start, end)}.")
-        print(f"{len(self.words) + len(self.pangrams)} words found:")
+        use_progress_bar(MAX_PERCENTAGE, start, end)
+        print(f"\n\n{len(self.words) + len(self.pangrams)} words found:")
         for word in self.pangrams:
             space = " " * (self.max_length - len(word) + 1)
             print("\t- " + word + space + "(PANGRAM)")

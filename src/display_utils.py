@@ -1,5 +1,6 @@
 from MenuListener import MenuListener
 from menu_options import MainMenuOptions, SudokuDifficultyOptions
+from time import time
 
 import os
 
@@ -7,6 +8,9 @@ SECONDS_PER_MINUTE = 60
 SECONDS_PER_HOUR = 3600
 MAX_PERCENTAGE = 100
 NUM_PROGRESS_BAR_DIVISIONS = 20
+SECONDS_PER_PROGRESS_BAR_UPDATE = 0.25
+
+last_update = 0
 
 def clear_terminal():
     os.system('clear')
@@ -44,14 +48,25 @@ def use_progress_bar(progress: int, start: float, end: float):
     elapsed = int(end - start)
     minutes = elapsed // SECONDS_PER_MINUTE
     seconds = elapsed - (minutes * SECONDS_PER_MINUTE)
-    time_str = "[elapsed: " + "{:02d}".format(minutes) + ":" + "{:02d}".format(seconds) + ", "
+    time_str = "[elapsed: " + "{:02d}".format(minutes) + ":" + "{:02d}".format(seconds)
 
-    remaining = int((end - start) * (MAX_PERCENTAGE / progress - 1))
-    minutes = remaining // SECONDS_PER_MINUTE
-    seconds = remaining - (minutes * SECONDS_PER_MINUTE)
-    time_str += "remaining: " + "{:02d}".format(minutes) + ":" + "{:02d}".format(seconds) + "]"
+    if progress > 1:
+        remaining = int((end - start) * (MAX_PERCENTAGE / progress - 1))
+        minutes = remaining // SECONDS_PER_MINUTE
+        seconds = remaining - (minutes * SECONDS_PER_MINUTE)
+        time_str += ", remaining: " + "{:02d}".format(minutes) + ":" + "{:02d}".format(seconds) + "]"
+    else:
+        time_str += "]"
 
     print(f"Progress: {progress_str} {pct_str} {time_str}", end="\r")
+
+def should_update_progress_bar() -> bool:
+    global last_update
+    curr_time = time()
+    if curr_time - last_update > SECONDS_PER_PROGRESS_BAR_UPDATE:
+        last_update = curr_time
+        return True
+    return False
 
 def solve_time_to_string(start: float, end: float) -> str:
     seconds = int(end - start)
