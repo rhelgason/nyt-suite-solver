@@ -80,18 +80,3 @@ def should_update_progress_bar() -> bool:
         last_update = curr_time
         return True
     return False
-
-def solve_time_to_string(start: float, end: float) -> str:
-    seconds = int(end - start)
-    if seconds < SECONDS_PER_MINUTE:
-        return f"{seconds:.2f} seconds"
-    elif seconds < SECONDS_PER_HOUR:
-        minutes = int(seconds // SECONDS_PER_MINUTE)
-        seconds = seconds - (minutes * SECONDS_PER_MINUTE)
-        return f"{minutes} minutes and {seconds:.2f} seconds"
-    else:
-        hours = int(seconds // SECONDS_PER_HOUR)
-        seconds = seconds - (hours * SECONDS_PER_HOUR)
-        minutes = int(seconds // SECONDS_PER_MINUTE)
-        seconds = seconds - (minutes * SECONDS_PER_MINUTE)
-        return f"{hours} hours, {minutes} minutes, and {seconds:.2f} seconds"

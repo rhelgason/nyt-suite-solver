@@ -1,0 +1,42 @@
+{
+    "puzzle_id": 9696,
+    "ds": "2024-08-01",
+    "center": "p",
+    "letters": [
+        "n",
+        "o",
+        "l",
+        "p",
+        "g",
+        "f",
+        "i"
+    ],
+    "pangrams": [],
+    "answers": [
+        "filipino",
+        "fillip",
+        "flip",
+        "flipflop",
+        "flop",
+        "lollipop",
+        "loop",
+        "nippon",
+        "opinion",
+        "pigging",
+        "pill",
+        "ping",
+        "pinion",
+        "pion",
+        "plop",
+        "pogo",
+        "polio",
+        "poll",
+        "polloi",
+        "polo",
+        "pong",
+        "pool",
+        "poop",
+        "poplin"
+    ],
+    "solve_time": "0:00:00.011"
+}

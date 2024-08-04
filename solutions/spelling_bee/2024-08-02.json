@@ -1,0 +1,45 @@
+{
+    "puzzle_id": 1989,
+    "ds": "2024-08-02",
+    "center": "h",
+    "letters": [
+        "c",
+        "e",
+        "n",
+        "y",
+        "h",
+        "a",
+        "k"
+    ],
+    "pangrams": [
+        "hackney"
+    ],
+    "answers": [
+        "achaean",
+        "ache",
+        "cache",
+        "chance",
+        "chancy",
+        "check",
+        "cheek",
+        "cheeky",
+        "chen",
+        "cheney",
+        "cheyenne",
+        "each",
+        "enhance",
+        "hack",
+        "hahn",
+        "haney",
+        "hank",
+        "hanna",
+        "hannah",
+        "heck",
+        "hence",
+        "hyena",
+        "kahn",
+        "khan",
+        "yeah"
+    ],
+    "solve_time": "0:00:00.012"
+}

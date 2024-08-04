@@ -1,5 +1,5 @@
 from datetime import datetime, timedelta
-from display_utils import clear_terminal, MAX_PERCENTAGE, should_update_progress_bar, solve_time_to_string, use_progress_bar, use_spelling_bee_menu
+from display_utils import clear_terminal, MAX_PERCENTAGE, should_update_progress_bar, use_progress_bar, use_spelling_bee_menu
 from menu_options import gen_date_enum, MenuOptions, SpellingBeeDateOptions
 from Spinner import Spinner
 from time import time
@@ -14,6 +14,7 @@ BASE_URL = "https://www.nytimes.com/puzzles/spelling-bee"
 HTML_DATA_REGEX = r'<script type="text\/javascript">window\.gameData = (.+)<\/script><\/div><div id="portal-editorial-content">'
 
 WORDS_FILE_PATH = "all_words.txt"
+OUTPUT_DIRECTORY_PATH = "./solutions/spelling_bee"
 NUM_LETTERS = 7
 MIN_LENGTH = 4
 
@@ -22,6 +23,7 @@ Scrapes the NYT Spelling Bee puzzle and solves it using
 a trie data structure.
 """
 class SpellingBeeSolver:
+    puzzle_id: int = None
     ds: str = None
 
     letters: Set[str] = set()
@@ -69,6 +71,7 @@ class SpellingBeeSolver:
             if match:
                 data = json.loads(match.group(1))
                 puzzle_data = data['today']
+                self.puzzle_id = puzzle_data['id']
                 self.center = puzzle_data['centerLetter']
                 self.letters = set(puzzle_data['validLetters'])
             else:
@@ -128,6 +131,8 @@ class SpellingBeeSolver:
         for word in self.words:
             print("\t- " + word)
 
+        # output results to file
+        self.write_solved_puzzle(start, end)
         print("\nPress ENTER to return to the main menu.")
         input()
 
@@ -150,6 +155,27 @@ class SpellingBeeSolver:
             self.pangrams.append(word)
         else:
             self.words.append(word)
+    
+    def write_solved_puzzle(self, start: float, end: float) -> None:
+        # set up output data
+        data = {
+            "puzzle_id": self.puzzle_id,
+            "ds": self.ds,
+            "center": self.center,
+            "letters": list(self.letters),
+            "pangrams": self.pangrams,
+            "answers": self.words,
+            "solve_time": str(timedelta(seconds=end - start))[:-3],
+        }
+
+        # set up file path
+        output_path = os.path.join(OUTPUT_DIRECTORY_PATH)
+        if not os.path.exists(output_path):
+            os.makedirs(output_path)
+        output_file_path = os.path.join(output_path, f"{self.ds}.json")
+
+        with open(output_file_path, 'w', encoding='utf-8') as f:
+            json.dump(data, f, ensure_ascii=False, indent=4)
 
 def spelling_bee() -> int:
     while True:

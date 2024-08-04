@@ -1,0 +1,45 @@
+{
+    "puzzle_id": 25195,
+    "ds": "2024-07-30",
+    "center": "o",
+    "letters": [
+        "l",
+        "u",
+        "w",
+        "t",
+        "o",
+        "a",
+        "k"
+    ],
+    "pangrams": [
+        "walkout"
+    ],
+    "answers": [
+        "allot",
+        "allow",
+        "alto",
+        "atoll",
+        "auto",
+        "koala",
+        "kola",
+        "lola",
+        "loll",
+        "look",
+        "lookout",
+        "loot",
+        "ottawa",
+        "otto",
+        "tallow",
+        "tattoo",
+        "toll",
+        "took",
+        "tool",
+        "toot",
+        "total",
+        "toto",
+        "tout",
+        "wallow",
+        "wool"
+    ],
+    "solve_time": "0:00:00.013"
+}

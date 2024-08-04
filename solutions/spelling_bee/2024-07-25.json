@@ -1,0 +1,52 @@
+{
+    "puzzle_id": 23965,
+    "ds": "2024-07-25",
+    "center": "h",
+    "letters": [
+        "e",
+        "i",
+        "l",
+        "g",
+        "d",
+        "t",
+        "h"
+    ],
+    "pangrams": [
+        "delight"
+    ],
+    "answers": [
+        "delhi",
+        "edith",
+        "eight",
+        "eighth",
+        "eightieth",
+        "ethel",
+        "hedge",
+        "heed",
+        "heel",
+        "heigh",
+        "height",
+        "held",
+        "hell",
+        "hettie",
+        "hide",
+        "high",
+        "highlight",
+        "hill",
+        "hillel",
+        "hilt",
+        "lehigh",
+        "leigh",
+        "lethe",
+        "light",
+        "lithe",
+        "teeth",
+        "teethe",
+        "thee",
+        "thigh",
+        "tight",
+        "tilth",
+        "tithe"
+    ],
+    "solve_time": "0:00:00.012"
+}

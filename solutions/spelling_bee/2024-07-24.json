@@ -1,0 +1,29 @@
+{
+    "puzzle_id": 7970,
+    "ds": "2024-07-24",
+    "center": "n",
+    "letters": [
+        "n",
+        "l",
+        "u",
+        "d",
+        "y",
+        "i",
+        "k"
+    ],
+    "pangrams": [],
+    "answers": [
+        "dunk",
+        "dunn",
+        "indy",
+        "kind",
+        "kink",
+        "kinky",
+        "lind",
+        "link",
+        "lund",
+        "lynn",
+        "null"
+    ],
+    "solve_time": "0:00:00.012"
+}
