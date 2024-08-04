@@ -11,6 +11,7 @@ import requests
 
 BASE_URL = "https://www.nytimes.com/puzzles/spelling-bee"
 HTML_DATA_REGEX = r'<script type="text\/javascript">window\.gameData = (.+)<\/script><\/div><div id="portal-editorial-content">'
+
 WORDS_FILE_PATH = "all_words.txt"
 NUM_LETTERS = 7
 MIN_LENGTH = 4
@@ -35,7 +36,21 @@ class SpellingBeeSolver:
 
     @staticmethod
     def use_date_options(self, option: SpellingBeeDateOptions) -> MenuOptions:
-        dates = ['2024-08-03']
+        response = requests.get(BASE_URL)
+        match = re.search(HTML_DATA_REGEX, response.text)
+        if not match:
+            raise Exception("Failed to find game data.")
+        data = json.loads(match.group(1))
+        puzzle_data = None
+        if option == SpellingBeeDateOptions.THIS_WEEK:
+            puzzle_data = data['thisWeek']
+        elif option == SpellingBeeDateOptions.LAST_WEEK:
+            puzzle_data = data['lastWeek']
+
+        dates = []
+        if puzzle_data != None:
+            dates = [x['printDate'] for x in puzzle_data]
+            sorted(dates, reverse=True)
         return gen_date_enum(dates)
     
     def scrape_puzzle(self) -> None:
@@ -43,7 +58,7 @@ class SpellingBeeSolver:
         clear_terminal()
         print(fetching_str)
 
-        response = requests.get(BASE_URL, self.ds)
+        response = requests.get(os.path.join(BASE_URL, self.ds))
         match = re.search(HTML_DATA_REGEX, response.text)
         if match:
             data = json.loads(match.group(1))
