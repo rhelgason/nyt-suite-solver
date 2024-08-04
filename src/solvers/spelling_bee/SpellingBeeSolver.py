@@ -1,5 +1,6 @@
 from datetime import datetime
-from display_utils import clear_terminal
+from display_utils import clear_terminal, solve_time_to_string
+from time import time
 from typing import List, Set
 
 import os
@@ -70,13 +71,16 @@ class SpellingBeeSolver:
         print(self.puzzle_to_string())
 
         # get all valid words
+        start = time()
         file_path = os.path.join('./', WORDS_FILE_PATH)
         with open(file_path, 'r') as f:
             for line in f:
                 self.validate_word(line.strip())
         
         # print results
-        print(f"\n{len(self.words) + len(self.pangrams)} words found:")
+        end = time()
+        print(f"Puzzle solved in {solve_time_to_string(start, end)}.")
+        print(f"{len(self.words) + len(self.pangrams)} words found:")
         for word in self.pangrams:
             space = " " * (self.max_length - len(word) + 1)
             print("\t- " + word + space + "(PANGRAM)")
