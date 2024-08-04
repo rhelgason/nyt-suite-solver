@@ -22,4 +22,4 @@ class Node(GenericNode):
         self.children[idx] = child
     
     def add_child(self, child: GenericNode) -> None:
-        self.children[] = child
+        self.children.append(child)

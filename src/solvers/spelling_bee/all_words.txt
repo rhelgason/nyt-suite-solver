@@ -12,4 +12,5 @@ nova
 vin
 vino
 volcano
+volcani
 volcanic

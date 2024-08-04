@@ -1,6 +1,6 @@
 from solvers.spelling_bee.Node import Node
 
-SPELLING_BEE_MIN_LENGTH = 4
+MIN_LENGTH = 4
 
 """
 Trie data structure for representing all possible words in the
