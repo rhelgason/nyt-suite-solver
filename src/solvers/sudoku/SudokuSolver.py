@@ -59,7 +59,6 @@ class SudokuSolver:
             self.dancing_links_init()
             clear_terminal()
             print(fetching_str + " done!")
-
         else:
             raise Exception("Failed to find game data.")
     

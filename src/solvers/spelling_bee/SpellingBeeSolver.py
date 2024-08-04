@@ -3,8 +3,13 @@ from display_utils import clear_terminal, solve_time_to_string
 from time import time
 from typing import List, Set
 
+import json
 import os
+import re
+import requests
 
+BASE_URL = "https://www.nytimes.com/puzzles/spelling-bee/"
+HTML_DATA_REGEX = r'<script type="text\/javascript">window\.gameData = (.+)<\/script><\/div><div id="portal-editorial-content">'
 WORDS_FILE_PATH = "all_words.txt"
 NUM_LETTERS = 7
 MIN_LENGTH = 4
@@ -34,9 +39,17 @@ class SpellingBeeSolver:
         clear_terminal()
         print(fetching_str)
 
-        # TODO: scrape puzzle from NYT site
-        self.letters = set(["n", "a", "c", "i", "l", "o", "v"])
-        self.center = "v"
+        response = requests.get(BASE_URL)
+        match = re.search(HTML_DATA_REGEX, response.text)
+        if match:
+            data = json.loads(match.group(1))
+            puzzle_data = data['today']
+            self.center = puzzle_data['centerLetter']
+            self.letters = set(puzzle_data['validLetters'])
+            clear_terminal()
+            print(fetching_str + " done!")
+        else:
+            raise Exception("Failed to find game data.")
 
         clear_terminal()
         print(fetching_str + " done!")
