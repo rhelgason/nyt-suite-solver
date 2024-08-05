@@ -1,7 +1,7 @@
 from trie.Node import Node
 from typing import List
 
-END_OF_WORD = '\n'
+END_OF_WORD = '{'
 
 """
 Trie data structure for representing all valid words in the
