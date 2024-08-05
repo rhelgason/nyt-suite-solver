@@ -21,17 +21,17 @@ class Trie:
 
     def add_word_helper(self, curr: Node, word: str) -> Node:
         # reached end of word
-        if curr.depth == len(word) - 1:
+        if len(word) == 0:
             self.size += 1
             return curr
         
         # recurse to child node
-        i = ord(word[curr.depth + 1]) - ord('a')
+        i = ord(word[0]) - ord('a')
         if curr.children[i] is None:
-            curr.children[i] = Node(word[curr.depth + 1], curr.depth + 1)
-        elif curr.depth == len(word) - 2:
+            curr.children[i] = Node(word[0], curr.depth + 1)
+        elif len(word) == 1:
             raise Exception('Word already present in trie.')
-        curr.children[i] = self.add_word_helper(curr.children[i], word)
+        curr.children[i] = self.add_word_helper(curr.children[i], word[1:])
         return curr
 
     def remove_word(self, word: str) -> None:
@@ -39,15 +39,15 @@ class Trie:
 
     def remove_word_helper(self, curr: Node, word: str) -> Node:
         # reached end of word
-        if curr.depth == len(word) - 1:
+        if len(word) == 0:
             self.size -= 1
             return None
         
         # recurse to child node
-        i = ord(word[curr.depth + 1]) - ord('a')
+        i = ord(word[0]) - ord('a')
         if curr.children[i] is None:
             raise Exception('Word not present in trie.')
-        curr.children[i] = self.remove_word_helper(curr.children[i], word)
+        curr.children[i] = self.remove_word_helper(curr.children[i], word[1:])
 
         # if child was deleted, possibly delete curr node
         return curr if any(child is not None for child in curr.children) else None
@@ -57,14 +57,14 @@ class Trie:
     
     def contains_helper(self, curr: Node, word: str) -> bool:
         # reached end of word
-        if curr.depth == len(word) - 1:
+        if len(word) == 0:
             return True
 
         # recurse to child node
-        i = ord(word[curr.depth + 1]) - ord('a')
+        i = ord(word[0]) - ord('a')
         if curr.children[i] is None:
             return False
-        return self.contains_helper(curr.children[i], word)
+        return self.contains_helper(curr.children[i], word[1:])
 
     def to_list(self) -> List[str]:
         res = []
