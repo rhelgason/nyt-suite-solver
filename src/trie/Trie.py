@@ -27,10 +27,9 @@ class Trie:
         
         # recurse to child node
         i = ord(word[curr.depth + 1]) - ord('a')
-        child = curr.children[i]
-        if child is None:
-            child = Node(word[curr.depth + 1], curr.depth + 1)
-        child = self.add_word_helper(child, word)
+        if curr.children[i] is None:
+            curr.children[i] = Node(word[curr.depth + 1], curr.depth + 1)
+        curr.children[i] = self.add_word_helper(curr.children[i], word)
         return curr
 
     def remove_word(self, word: str) -> None:
@@ -44,10 +43,9 @@ class Trie:
         
         # recurse to child node
         i = ord(word[curr.depth + 1]) - ord('a')
-        child = curr.children[i]
-        if child is None:
+        if curr.children[i] is None:
             raise Exception('Word not present in trie.')
-        child = self.remove_word_helper(child, word)
+        curr.children[i] = self.remove_word_helper(curr.children[i], word)
 
         # if child was deleted, possibly delete curr node
         return curr if any(child is not None for child in curr.children) else None

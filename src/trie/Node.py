@@ -1,4 +1,4 @@
-from typing import Optional
+from typing import List, Optional
 
 # generic parent class for typing the recursive Node structure
 class GenericNode:

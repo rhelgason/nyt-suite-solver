@@ -79,21 +79,17 @@ class SpellingBeeSolver:
         fetching_str = f"Fetching puzzle from NYT website..."
         clear_terminal()
         with Spinner(fetching_str):
-            self.puzzle_id = 19027
-            self.center = "t"
-            self.letters = set(["r","h","b","o","n","t","i"])
-            self.answers = ["north","inhibition","roti","root","broth","torn","booth","bonito","thin","biotin","onto","notion","torii","thorn","birth","into","ninth","toro","inhibitor","hobbit","trot","tinhorn","nitro","riot","tort","throb","tooth","tint","trio","both","toot","tori","triton","orbit","rotor","toon","obit","hint","troth","inhibit","boot","tortoni","robot","intro","hoot","rotini","ribbit"]
-            #response = requests.get(os.path.join(BASE_URL, self.ds))
-            #match = re.search(HTML_DATA_REGEX, response.text)
-            #if match:
-            #    data = json.loads(match.group(1))
-            #    puzzle_data = data['today']
-            #    self.puzzle_id = puzzle_data['id']
-            #    self.answers = puzzle_data['answers']
-            #    self.center = puzzle_data['centerLetter']
-            #    self.letters = set(puzzle_data['validLetters'])
-            #else:
-            #    raise Exception("Failed to find game data.")
+            response = requests.get(os.path.join(BASE_URL, self.ds))
+            match = re.search(HTML_DATA_REGEX, response.text)
+            if match:
+                data = json.loads(match.group(1))
+                puzzle_data = data['today']
+                self.puzzle_id = puzzle_data['id']
+                self.answers = puzzle_data['answers']
+                self.center = puzzle_data['centerLetter']
+                self.letters = set(puzzle_data['validLetters'])
+            else:
+                raise Exception("Failed to find game data.")
         print(fetching_str + " done!")
     
     def puzzle_to_string(self) -> str:
