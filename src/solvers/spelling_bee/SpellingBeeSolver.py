@@ -4,6 +4,7 @@ from enum import Enum
 from menu_options import gen_date_enum, MenuOptions, SpellingBeeDateOptions
 from Spinner import Spinner
 from time import time
+from trie.Trie import Trie
 from typing import Any, Dict, List, Set
 
 import json
@@ -38,20 +39,21 @@ by a trie data structure.
 """
 class SpellingBeeSolver:
     puzzle_id: int = None
-    answers: List[str] = []
+    answers: Trie = []
     ds: str = None
 
     letters: Set[str] = set()
     center: str = None
-    words: List[str] = []
-    pangrams: List[str] = []
+    words: Trie = []
+    pangrams: Trie = []
 
     def __init__(self, ds: str = None) -> None:
+        self.answers = Trie()
         self.ds = ds or datetime.today().date().strftime("%Y-%m-%d")
         self.letters = set()
         self.center = None
-        self.words = []
-        self.pangrams = []
+        self.words = Trie()
+        self.pangrams = Trie()
         self.scrape_puzzle()
         return
 
@@ -85,9 +87,10 @@ class SpellingBeeSolver:
                 data = json.loads(match.group(1))
                 puzzle_data = data['today']
                 self.puzzle_id = puzzle_data['id']
-                self.answers = puzzle_data['answers']
                 self.center = puzzle_data['centerLetter']
                 self.letters = set(puzzle_data['validLetters'])
+                for answer in puzzle_data['answers']:
+                    self.answers.add_word(answer)
             else:
                 raise Exception("Failed to find game data.")
         print(fetching_str + " done!")
@@ -138,14 +141,17 @@ class SpellingBeeSolver:
         use_progress_bar(MAX_PERCENTAGE, start, end)
 
         # print condensed results
-        self.words.sort(key=lambda x: (-len(x), x))
-        self.pangrams.sort(key=lambda x: (-len(x), x))
-        print(f"\n\n{len(self.words) + len(self.pangrams)} possible words found:")
-        print(f"\t- Pangrams: " + ', '.join(self.pangrams))
+        words = self.words.to_list()
+        pangrams = self.pangrams.to_list()
+        words.sort(key=lambda x: (-len(x), x))
+        pangrams.sort(key=lambda x: (-len(x), x))
+
+        print(f"\n\n{len(words) + len(pangrams)} possible words found:")
+        print(f"\t- Pangrams: " + ', '.join(pangrams))
         low = 0
-        for i, word in enumerate(self.words):
-            if len(word) < len(self.words[low]):
-                print(f"\t- {len(self.words[low])}-letter words: " + ', '.join(self.words[low:i]))
+        for i, word in enumerate(words):
+            if len(word) < len(words[low]):
+                print(f"\t- {len(words[low])}-letter words: " + ', '.join(words[low:i]))
                 low = i
 
         # output results to file
@@ -167,22 +173,26 @@ class SpellingBeeSolver:
             used_letters.add(letter)
 
         if len(used_letters) == NUM_LETTERS:
-            self.pangrams.append(word)
+            self.pangrams.add_word(word)
         else:
-            self.words.append(word)
+            self.words.add_word(word)
     
     def write_solved_puzzle(self, start: float, end: float) -> None:
         # set up output data
-        all_words = self.words + self.pangrams
+        words = self.words.to_list()
+        pangrams = self.pangrams.to_list()
+        answers = self.answers.to_list()
+        all_words = words + pangrams
+
         data = {
             "puzzle_id": self.puzzle_id,
             "ds": self.ds,
             "center": self.center,
             "letters": list(self.letters),
-            "pangrams": self.pangrams,
-            "valid_answers": list(set(all_words) - (set(all_words) - set(self.answers))),
-            "invalid_answers": list(set(all_words) - set(self.answers)),
-            "missed_answers": list(set(self.answers) - set(all_words)),
+            "pangrams": pangrams,
+            "valid_answers": list(set(all_words) - (set(all_words) - set(answers))),
+            "invalid_answers": list(set(all_words) - set(answers)),
+            "missed_answers": list(set(answers) - set(all_words)),
             "solve_time": str(timedelta(seconds=end - start))[:-3],
         }
         self.write_performance(data)
@@ -216,7 +226,7 @@ class SpellingBeeSolver:
     
     def score_word(self, word: str) -> int:
         score = len(word) - MIN_LENGTH + 1
-        if word in self.pangrams:
+        if self.pangrams.contains(word):
             score += 7
         return score
 

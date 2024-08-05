@@ -29,6 +29,8 @@ class Trie:
         i = ord(word[curr.depth + 1]) - ord('a')
         if curr.children[i] is None:
             curr.children[i] = Node(word[curr.depth + 1], curr.depth + 1)
+        elif curr.depth == len(word) - 2:
+            raise Exception('Word already present in trie.')
         curr.children[i] = self.add_word_helper(curr.children[i], word)
         return curr
 
@@ -49,6 +51,20 @@ class Trie:
 
         # if child was deleted, possibly delete curr node
         return curr if any(child is not None for child in curr.children) else None
+    
+    def contains(self, word: str) -> bool:
+        return self.contains_helper(self.root, word + END_OF_WORD)
+    
+    def contains_helper(self, curr: Node, word: str) -> bool:
+        # reached end of word
+        if curr.depth == len(word) - 1:
+            return True
+
+        # recurse to child node
+        i = ord(word[curr.depth + 1]) - ord('a')
+        if curr.children[i] is None:
+            return False
+        return self.contains_helper(curr.children[i], word)
 
     def to_list(self) -> List[str]:
         res = []
