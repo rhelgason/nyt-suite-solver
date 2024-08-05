@@ -1,3 +1,5 @@
+from typing import Optional
+
 # generic parent class for typing the recursive Node structure
 class GenericNode:
     def __init__(self) -> None:
@@ -11,12 +13,13 @@ English words.
 class Node(GenericNode):
     letter: str = None
     depth: int = -1
-    children: List[GenericNode] = []
+    children: List[Optional[GenericNode]] = []
 
     def __init__(self, letter: str, depth: int) -> None:
         self.letter = letter
         self.depth = depth
-        self.children = []
+        # NOTE: we add an additional child for signalling end of word
+        self.children = [None] * (ord('z') - ord('a') + 2)
 
     def set_child(self, idx: int, child: GenericNode) -> None:
         self.children[idx] = child
