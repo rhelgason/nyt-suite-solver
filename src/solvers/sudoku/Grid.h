@@ -47,8 +47,8 @@ class Grid {
         // recursive function for solving with dancing links
         bool solveDancingLinks();
 
-        // returns a string version of the Grid for output
-        string toString();
+        // returns a simple string version for Python output
+        void toString(char* out);
 
         // destructor for Grid class
         ~Grid();

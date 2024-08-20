@@ -35,7 +35,7 @@ Grid::Grid(int**& inBoard, int dim, int subHeight, int subWidth) {
         board[i] = new Box*[dim];
 
         for (int j = 0; j < dim; j++) {
-            if (inBoard[i][j] == -1) {
+            if (inBoard[i][j] == 0) {
                 board[i][j] = new Box(dim);
             } else {
                 if (valid(i, j, inBoard[i][j])) {
@@ -103,7 +103,7 @@ void Grid::dancingLinks(int** inBoard) {
         int row = i / (dim * dim);
         int col = (i % (dim * dim)) / dim;
         int num = ((i % (dim * dim)) % dim) + 1;
-        if (inBoard[row][col] == -1 || inBoard[row][col] == num) {
+        if (inBoard[row][col] == 0 || inBoard[row][col] == num) {
             linksRow(row, col, num, i);
         }
     }
@@ -201,29 +201,16 @@ bool Grid::solveDancingLinks() {
     return false;
 }
 
-string Grid::toString() {
-    char hex[16] = {'1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F', '0'};
-    string out = "";
+void Grid::toString(char* out) {
+    char hex[16] = {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F'};
     for (int i = 0; i < dim; i++) {
         for (int j = 0; j < dim; j++) {
+            int k = (i * dim + j) * 2;
             int val = board[i][j]->getValue();
-            out += (val == -1) ? '.' : hex[val - 1];
-            if (j != dim - 1) out += " ";
-            else break;
-            if ((j + 1) % subWidth == 0) out += "| ";
-        }
-        if (i != dim - 1) out += "\n";
-        if ((i + 1) % subHeight == 0 && i + 1 != dim) {
-            for (int j = 0; j < dim; j++) {
-                out += '-';
-                if (j != dim - 1) out += "-";
-                else break;
-                if ((j + 1) % subWidth == 0) out += "+-";
-            }
-            out += "\n";
+            out[k] = hex[val];
+            out[k + 1] = ' ';
         }
     }
-    return out;
 }
 
 Grid::~Grid() {

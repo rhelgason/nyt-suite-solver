@@ -1,7 +1,8 @@
-from datetime import datetime
+from datetime import datetime, timedelta
 from display_utils import clear_terminal, use_sudoku_menu
 from menu_options import SudokuDifficultyOptions
 from Spinner import Spinner
+from time import time
 from typing import List
 
 import ctypes as ct
@@ -30,6 +31,7 @@ class SudokuSolver:
 
     # puzzle attributes
     puzzle: npt.NDArray[npt.NDArray[np.int32]] = None
+    solved_puzzle: npt.NDArray[npt.NDArray[np.int32]] = None
     dim: int = NYT_DIM
     box_width: int = NYT_BOX_WIDTH
     box_height: int = NYT_BOX_HEIGHT
@@ -38,6 +40,7 @@ class SudokuSolver:
         self.cdll = ct.CDLL(os.path.join('./', DANCING_LINKS_PATH))
         self.difficulty = difficulty
         self.puzzle = None
+        self.solved_puzzle = None
         self.dim = NYT_DIM
         self.box_width = NYT_BOX_WIDTH
         self.box_height = NYT_BOX_HEIGHT
@@ -45,8 +48,8 @@ class SudokuSolver:
         return
 
     def scrape_puzzle(self) -> None:
-        fetching_str = f"Fetching {self.difficulty.value.lower()} puzzle from NYT website..."
         clear_terminal()
+        fetching_str = f"Fetching {self.difficulty.value.lower()} puzzle from NYT website..."
         with Spinner(fetching_str):
             difficulty_str = self.difficulty.value.lower()
             url = BASE_URL + difficulty_str
@@ -77,8 +80,6 @@ class SudokuSolver:
         for i in range(0, self.dim):
             for j in range(0, self.dim):
                 board[i][j] = values[i * self.dim + j]
-                if board[i][j] == 0:
-                    board[i][j] = -1
         return board
 
     def dancing_links_init(self) -> None:
@@ -95,14 +96,57 @@ class SudokuSolver:
         _dancing_links_init(ct_ptr, self.dim, self.box_height, self.box_width)
 
     def solve(self) -> None:
-        print(f"Solving today's {self.difficulty.value.lower()} puzzle:")
+        print(f"Solving today's {self.difficulty.value.lower()} puzzle:\n")
+        print(self.puzzle_to_string(self.puzzle), "\n")
         _dancing_links_solve = self.cdll._dancing_links_solve
         _dancing_links_solve.argtypes = []
-        _dancing_links_solve.restype = ct.c_bool
-        res = _dancing_links_solve()
+        _dancing_links_solve.restype = ct.c_char_p
 
-        print("\nPress ENTER to return to the previous menu.")
+        res = ct.create_string_buffer(self.dim * self.dim * 2 - 1)
+        start = time()
+        _dancing_links_solve(res)
+        end = time()
+
+        # print condensed results
+        if len(res.value.decode()) != self.dim * self.dim * 2 - 1:
+            print("Puzzle could not be solved.")
+        else:
+            self.solved_puzzle = np.fromstring(res.value.decode(), dtype=int, sep=" ").reshape(self.dim, self.dim)
+            if (np.any(self.solved_puzzle)):
+                td = timedelta(seconds=end - start) / timedelta(milliseconds=1)
+                print("Puzzle has been solved in " + str(td) + " milliseconds:\n")
+                print(self.puzzle_to_string(self.solved_puzzle))
+
+        # output results to file
+        print("\nPress ENTER to return to the main menu.")
         input()
+
+    def puzzle_to_string(self, puzzle: npt.NDArray[npt.NDArray[np.int32]]) -> str:
+        hex_set = ['1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F', '0']
+        out = ""
+        for i in range (self.dim):
+            for j in range (self.dim):
+                val = puzzle[i][j]
+                out += '.' if val == 0 else hex_set[val - 1]
+                if (j != self.dim - 1):
+                    out += " "
+                else:
+                    break
+                if ((j + 1) % self.box_width == 0):
+                    out += "| "
+            if (i != self.dim - 1):
+                out += "\n"
+            if ((i + 1) % self.box_height == 0 and i + 1 != self.dim):
+                for j in range (self.dim):
+                    out += '-'
+                    if (j != self.dim - 1):
+                        out += "-"
+                    else:
+                        break
+                    if ((j + 1) % self.box_width == 0):
+                        out += "+-"
+                out += "\n"
+        return out
 
 def sudoku() -> int:
     while True:

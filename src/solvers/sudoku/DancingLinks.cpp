@@ -17,19 +17,9 @@ void dancing_links_init(int** inBoard, int dim, int subHeight, int subWidth) {
     }
 }
 
-void dancing_links_solve() {
-    // solve the board
-    chrono::steady_clock::time_point begin = chrono::steady_clock::now();
-    cout << endl << grid->toString() << endl << endl;
-
-    if (grid->solveDancingLinks()) {
-        chrono::steady_clock::time_point end = chrono::steady_clock::now();
-        auto duration = (chrono::duration_cast<chrono::nanoseconds>(end - begin).count() / 1000000.0);
-        double milliseconds = static_cast<double>(duration);
-        cout << "Puzzle has been solved in " << setprecision(3) << milliseconds << " milliseconds:\n\n" << grid->toString() << endl;
-    } else {
-        cout << "\nThe puzzle could not be solved." << endl << endl;
-    }
+void dancing_links_solve(char* solvedBoard) {
+    grid->solveDancingLinks();
+    grid->toString(solvedBoard);
     grid->destructDancingLinks();
     delete grid;
     grid = NULL;
@@ -40,7 +30,7 @@ extern "C" {
         return dancing_links_init(inBoard, dim, subHeight, subWidth);
     }
 
-    void _dancing_links_solve() {
-        return dancing_links_solve();
+    void _dancing_links_solve(char* solvedBoard) {
+        return dancing_links_solve(solvedBoard);
     }
 }
