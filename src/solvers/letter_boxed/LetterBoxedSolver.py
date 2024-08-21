@@ -48,7 +48,6 @@ class LetterBoxedSolver:
         with Spinner(fetching_str):
             response = requests.get(BASE_URL)
             match = re.search(HTML_DATA_REGEX, response.text)
-            print(match)
             if match:
                 puzzle_data = json.loads(match.group(1))
                 self.puzzle_id = puzzle_data['id']
@@ -102,8 +101,7 @@ class LetterBoxedSolver:
                     use_progress_bar(progress, start, time())
         end = time()
         use_progress_bar(MAX_PERCENTAGE, start, end)
-
-        # TODO: get all valid solutions
+        self.get_valid_solutions()
 
         print("\nPress ENTER to return to the main menu.")
         input()
@@ -130,6 +128,9 @@ class LetterBoxedSolver:
             if i != exclude_set and letter in side:
                 return i
         return -1
+    
+    def get_valid_solutions(self) -> None:
+        pass
 
 def letter_boxed() -> int:
     solver = LetterBoxedSolver()
