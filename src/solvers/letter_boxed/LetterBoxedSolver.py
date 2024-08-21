@@ -52,7 +52,7 @@ class LetterBoxedSolver:
                 puzzle_data = json.loads(match.group(1))
                 self.puzzle_id = puzzle_data['id']
                 for side in puzzle_data['sides']:
-                    self.letters.append(dict.fromkeys(side))
+                    self.letters.append(dict.fromkeys(side.lower()))
             else:
                 raise Exception("Failed to find game data.")
         clear_terminal()
@@ -67,7 +67,7 @@ class LetterBoxedSolver:
 
         letters = []
         for side in self.letters:
-            letters.append(list(side.keys()))
+            letters.append([x.upper() for x in list(side.keys())])
         res = f"""
             {letters[0][0]}      {letters[0][1]}      {letters[0][2]}
            _________________
@@ -87,8 +87,46 @@ class LetterBoxedSolver:
         print(f"Solving puzzle for {date.strftime('%B %d, %Y')}:")
         print(self.puzzle_to_string())
 
+        # get all valid words
+        start = time()
+        last_update = start
+        file_path = os.path.join('./', WORDS_FILE_PATH)
+        with open(file_path, "rb") as f:
+            num_lines = sum(1 for _ in f)
+        with open(file_path, 'r') as f:
+            for line_num, line in enumerate(f, start=1):
+                self.validate_word(line.strip())
+                if should_update_progress_bar():
+                    progress = int((line_num / num_lines) * MAX_PERCENTAGE)
+                    use_progress_bar(progress, start, time())
+        end = time()
+        use_progress_bar(MAX_PERCENTAGE, start, end)
+
         print("\nPress ENTER to return to the main menu.")
         input()
+    
+    def validate_word(self, word: str) -> None:
+        word = word.lower()
+        if len(word) < MIN_LENGTH:
+            return
+        
+        curr_side = -1
+        for letter in word:
+
+            next_side = self.get_next_side(letter, curr_side)
+            if next_side == -1:
+                return
+            curr_side = next_side
+        self.words.add_word(word)
+    
+    def get_next_side(self, letter: str, exclude_set: int) -> int:
+        if (exclude_set >= NUM_SIDES):
+            raise Exception("Invalid side index for exclusion.")
+        
+        for i, side in enumerate(self.letters):
+            if i != exclude_set and letter in side:
+                return i
+        return -1
 
 def letter_boxed() -> int:
     solver = LetterBoxedSolver()
