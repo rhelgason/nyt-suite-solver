@@ -10,11 +10,9 @@ the END_OF_WORD character.
 """
 class Trie:
     root: Node = None
-    size: int = 0
 
     def __init__(self) -> None:
         self.root = Node("", -1)
-        self.size = 0
 
     def add_word(self, word: str) -> None:
         self.root = self.add_word_helper(self.root, word + END_OF_WORD)
@@ -22,7 +20,6 @@ class Trie:
     def add_word_helper(self, curr: Node, word: str) -> Node:
         # reached end of word
         if len(word) == 0:
-            self.size += 1
             return curr
         
         # recurse to child node
@@ -32,6 +29,7 @@ class Trie:
         elif len(word) == 1:
             raise Exception('Word already present in trie.')
         curr.children[i] = self.add_word_helper(curr.children[i], word[1:])
+        curr.size += 1
         return curr
 
     def remove_word(self, word: str) -> None:
@@ -40,7 +38,6 @@ class Trie:
     def remove_word_helper(self, curr: Node, word: str) -> Node:
         # reached end of word
         if len(word) == 0:
-            self.size -= 1
             return None
         
         # recurse to child node
@@ -48,6 +45,7 @@ class Trie:
         if curr.children[i] is None:
             raise Exception('Word not present in trie.')
         curr.children[i] = self.remove_word_helper(curr.children[i], word[1:])
+        curr.size -= 1
 
         # if child was deleted, possibly delete curr node
         return curr if any(child is not None for child in curr.children) else None

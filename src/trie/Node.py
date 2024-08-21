@@ -13,11 +13,13 @@ English words.
 class Node(GenericNode):
     letter: str = None
     depth: int = -1
+    size: int = 0
     children: List[Optional[GenericNode]] = []
 
     def __init__(self, letter: str, depth: int) -> None:
         self.letter = letter
         self.depth = depth
+        self.size = 0
         # NOTE: we add an additional child for signalling end of word
         self.children = [None] * (ord('z') - ord('a') + 2)
 

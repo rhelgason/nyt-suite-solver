@@ -20,6 +20,7 @@ OUTPUT_DIRECTORY_PATH = "solutions/letter_boxed"
 NUM_SIDES = 4
 NUM_LETTERS_PER_SIDE = 3
 MIN_LENGTH = 3
+MAX_WORDS = 5
 
 """
 Scrapes the NYT Letter Boxed puzzle and solves it, all backed
@@ -101,6 +102,8 @@ class LetterBoxedSolver:
                     use_progress_bar(progress, start, time())
         end = time()
         use_progress_bar(MAX_PERCENTAGE, start, end)
+
+        # TODO: get all valid solutions
 
         print("\nPress ENTER to return to the main menu.")
         input()
