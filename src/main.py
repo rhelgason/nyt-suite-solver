@@ -1,5 +1,6 @@
 from display_utils import use_main_menu
 from menu_options import MainMenuOptions
+from solvers.letter_boxed.LetterBoxedSolver import letter_boxed
 from solvers.spelling_bee.SpellingBeeSolver import spelling_bee
 from solvers.sudoku.SudokuSolver import sudoku
 
@@ -10,7 +11,9 @@ def main() -> int:
     option = use_main_menu()
     while option != MainMenuOptions.QUIT:
         res = 0
-        if option == MainMenuOptions.SPELLING_BEE:
+        if option == MainMenuOptions.LETTER_BOXED:
+            res = letter_boxed()
+        elif option == MainMenuOptions.SPELLING_BEE:
             res = spelling_bee()
         elif option == MainMenuOptions.SUDOKU:
             res = sudoku()

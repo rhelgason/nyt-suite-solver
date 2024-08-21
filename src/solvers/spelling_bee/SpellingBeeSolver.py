@@ -93,6 +93,7 @@ class SpellingBeeSolver:
                     self.answers.add_word(answer)
             else:
                 raise Exception("Failed to find game data.")
+        clear_terminal()
         print(fetching_str + " done!")
     
     def puzzle_to_string(self) -> str:
