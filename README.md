@@ -3,7 +3,7 @@ Provides a number of algorithms to solve each of the New York Times games every 
 
 ## Upcoming Milestones
 - [ ] Letter Boxed
-  - [ ] Functional algorithm
+  - [X] Functional algorithm
   - [ ] Upload solved puzzles
 - [ ] Spelling Bee
   - [X] Functional algorithm
