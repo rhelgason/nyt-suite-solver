@@ -11,12 +11,13 @@ import json
 import os
 import re
 import requests
+import sys
 
 BASE_URL = "https://www.nytimes.com/puzzles/letter-boxed"
 HTML_DATA_REGEX = r'<script type="text\/javascript">window\.gameData = (.+)<\/script><\/div><div id="portal-editorial-content">'
-
 WORDS_FILE_PATH = "wordlist_small.txt"
 OUTPUT_DIRECTORY_PATH = "solutions/letter_boxed"
+
 NUM_SIDES = 4
 NUM_LETTERS_PER_SIDE = 3
 MIN_LENGTH = 3
@@ -33,13 +34,16 @@ class LetterBoxedSolver:
     ds: str = None
 
     letters: List[Dict[str, None]] = set()
-    words: Trie = []
+    words: Trie = None
+    valid_words: Trie = None
 
     def __init__(self, ds: str = None) -> None:
+        self.puzzle_id = None
         self.answers = [[] for _ in range(MAX_WORDS)]
         self.ds = datetime.today().date().strftime("%Y-%m-%d")
         self.letters = []
         self.words = Trie()
+        self.valid_words = Trie()
         self.scrape_puzzle()
         return
     
@@ -54,6 +58,8 @@ class LetterBoxedSolver:
                 self.puzzle_id = puzzle_data['id']
                 for side in puzzle_data['sides']:
                     self.letters.append(dict.fromkeys(side.lower()))
+                for word in puzzle_data['dictionary']:
+                    self.valid_words.add_word(word.lower())
             else:
                 raise Exception("Failed to find game data.")
         clear_terminal()
@@ -105,8 +111,12 @@ class LetterBoxedSolver:
         # print condensed results
         print(f"\n\n{sum([len(i) for i in self.answers])} possible words found:")
         for i, answers in enumerate(self.answers):
+            if len(answers) == 0:
+                continue
             print(f"\t- {i + 1} word solutions: " + str(answers))
 
+        # output results to file
+        self.write_solved_puzzle(start, end)
         print("\nPress ENTER to return to the main menu.")
         input()
     
@@ -160,6 +170,42 @@ class LetterBoxedSolver:
 
             next_word = next_words[i]
             self.get_valid_solutions_helper(words + [next_word], used_letters | set(next_word), start)
+        
+    def write_solved_puzzle(self, start: float, end: float) -> None:
+        valid_answers = []
+        invalid_answers = []
+        shortest_answer_length = sys.maxsize
+        for answers in self.answers:
+            for answer in answers:
+                is_valid = True
+                for word in answer:
+                    if not self.valid_words.contains(word):
+                        is_valid = False
+                        break
+                if is_valid:
+                    valid_answers.append(answer)
+                    shortest_answer_length = min(shortest_answer_length, len(answer))
+                else:
+                    invalid_answers.append(answer)
+
+        data = {
+            "puzzle_id": self.puzzle_id,
+            "ds": self.ds,
+            "sides": str([list(x.keys()) for x in self.letters]),
+            "valid_answers": str(valid_answers),
+            "invalid_answers": str(invalid_answers),
+            "shortest_answer_length": shortest_answer_length,
+            "solve_time": str(timedelta(seconds=end - start))[:-3],
+        }
+
+        # set up file path
+        output_path = os.path.join('./', OUTPUT_DIRECTORY_PATH)
+        if not os.path.exists(output_path):
+            os.makedirs(output_path)
+        output_file_path = os.path.join(output_path, f"{self.ds}.json")
+
+        with open(output_file_path, 'w', encoding='utf-8') as f:
+            json.dump(data, f, ensure_ascii=False, indent=4)
 
 def letter_boxed() -> int:
     solver = LetterBoxedSolver()

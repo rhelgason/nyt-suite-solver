@@ -1,0 +1,9 @@
+{
+    "puzzle_id": 2088,
+    "ds": "2024-08-22",
+    "sides": "[['a', 'n', 'l'], ['r', 'g', 'd'], ['h', 'w', 'e'], ['t', 'i', 'b']]",
+    "valid_answers": "[['bedight', 'trawling'], ['benighted', 'dawdler'], ['brawl', 'lightened'], ['brawler', 'rethreading'], ['brawnier', 'relighted'], ['brightened', 'dawdle'], ['brightened', 'dawdled'], ['brightened', 'dawdler'], ['brightened', 'dawdling'], ['thawing', 'garbled'], ['wadable', 'earthing'], ['wadable', 'earthling'], ['wadeable', 'earthing'], ['wadeable', 'earthling'], ['wainwright', 'tabled'], ['wainwright', 'tradable'], ['wainwright', 'tradeable'], ['wainwright', 'trebled'], ['warbler', 'rethreading'], ['winglet', 'threadbare'], ['wreathing', 'gabled'], ['wreathing', 'garbled']]",
+    "invalid_answers": "[['bawler', 'rethreading'], ['bednighted', 'dawdler'], ['blighted', 'darwin'], ['brawlier', 'rethreading'], ['breathable', 'enwinding'], ['dwight', 'tenderable'], ['twilight', 'tenderable'], ['twinight', 'tenderable'], ['twinight', 'tradable'], ['twinight', 'tradeable'], ['twinighter', 'readable'], ['twinighter', 'ridable'], ['twinighter', 'rideable'], ['wainwright', 'tenderable'], ['wight', 'tenderable'], ['windable', 'earthing'], ['windable', 'earthling'], ['wrathing', 'gabled'], ['wrathing', 'garbled'], ['wright', 'tenderable']]",
+    "shortest_answer_length": 2,
+    "solve_time": "0:00:00.672"
+}
