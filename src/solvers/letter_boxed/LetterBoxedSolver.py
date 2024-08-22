@@ -5,7 +5,7 @@ from menu_options import gen_date_enum, MenuOptions, SpellingBeeDateOptions
 from Spinner import Spinner
 from time import time
 from trie.Trie import Trie
-from typing import Any, Dict, List
+from typing import Any, Dict, List, Set
 
 import json
 import os
@@ -20,7 +20,8 @@ OUTPUT_DIRECTORY_PATH = "solutions/letter_boxed"
 NUM_SIDES = 4
 NUM_LETTERS_PER_SIDE = 3
 MIN_LENGTH = 3
-MAX_WORDS = 5
+# the max length is actually 5, but we can almost always do better
+MAX_WORDS = 2
 
 """
 Scrapes the NYT Letter Boxed puzzle and solves it, all backed
@@ -28,14 +29,14 @@ by a trie data structure.
 """
 class LetterBoxedSolver:
     puzzle_id: int = None
-    answers: List[str] = []
+    answers: List[List[List[str]]] = []
     ds: str = None
 
     letters: List[Dict[str, None]] = set()
     words: Trie = []
 
     def __init__(self, ds: str = None) -> None:
-        self.answers = []
+        self.answers = [[] for _ in range(MAX_WORDS)]
         self.ds = datetime.today().date().strftime("%Y-%m-%d")
         self.letters = []
         self.words = Trie()
@@ -96,12 +97,10 @@ class LetterBoxedSolver:
         with open(file_path, 'r') as f:
             for line_num, line in enumerate(f, start=1):
                 self.validate_word(line.strip())
-                if should_update_progress_bar():
-                    progress = int((line_num / num_lines) * MAX_PERCENTAGE)
-                    use_progress_bar(progress, start, time())
+        
+        self.get_valid_solutions(start)
         end = time()
         use_progress_bar(MAX_PERCENTAGE, start, end)
-        self.get_valid_solutions()
 
         print("\nPress ENTER to return to the main menu.")
         input()
@@ -128,9 +127,34 @@ class LetterBoxedSolver:
             if i != exclude_set and letter in side:
                 return i
         return -1
+
+    def get_valid_solutions(self, start: float) -> None:
+        self.answers = [[] for _ in range(MAX_WORDS)]
+        self.get_valid_solutions_helper([], set(), start)
     
-    def get_valid_solutions(self) -> None:
-        pass
+    def get_valid_solutions_helper(self, words: List[str], used_letters: Set[str], start: float) -> None:
+        # if used all letters
+        curr_length = -1 if len(self.answers) == 0 else len(self.answers[0])
+        if len(used_letters) == NUM_LETTERS_PER_SIDE * NUM_SIDES:
+            self.answers[len(words) - 1].append(words)
+            return
+        
+        # end early if we have more words than best answer
+        if len(words) >= MAX_WORDS:
+            return
+
+        # recurse on each possible next word
+        next_words = self.words.root if len(words) == 0 else self.words.root.children[ord(words[-1][-1]) - ord('a') + 1]
+        if next_words is None:
+            return
+        for i in range(next_words.size):
+            # update progress bar
+            if len(words) == 0 and should_update_progress_bar():
+                progress = int((i / next_words.size) * MAX_PERCENTAGE)
+                use_progress_bar(progress, start, time())
+
+            next_word = next_words[i]
+            self.get_valid_solutions_helper(words + [next_word], used_letters | set(next_word), start)
 
 def letter_boxed() -> int:
     solver = LetterBoxedSolver()

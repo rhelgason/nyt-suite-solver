@@ -1,7 +1,6 @@
-from trie.Node import Node
+from trie.Node import END_OF_WORD, Node
 from typing import List
 
-END_OF_WORD = '`'
 
 """
 Trie data structure for representing all valid words in the
@@ -15,23 +14,7 @@ class Trie:
         self.root = Node("", -1)
 
     def __getitem__(self, key: int) -> str:
-        if key >= self.root.size:
-            raise IndexError("Index out of range.")
-        return self.get_item_helper(self.root, key)
-        
-    def get_item_helper(self, curr: Node, key: int) -> str:
-        # found word at index
-        print(curr.letter, curr.size, key)
-        if (key == 0 and curr.letter == END_OF_WORD):
-            return ""
-        
-        curr_size = 0
-        for i, child in enumerate(curr.children):
-            if child is None:
-                continue
-            curr_size += child.size
-            if curr_size > key:
-                return curr.letter + self.get_item_helper(child, key - (curr_size - child.size))
+        return self.root[key]
 
     def add_word(self, word: str) -> None:
         self.root = self.add_word_helper(self.root, word + END_OF_WORD)

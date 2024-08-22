@@ -1,0 +1,61 @@
+{
+    "puzzle_id": 24818,
+    "ds": "2024-08-15",
+    "center": "u",
+    "letters": [
+        "u",
+        "l",
+        "i",
+        "y",
+        "p",
+        "c",
+        "b"
+    ],
+    "pangrams": [
+        "publicly"
+    ],
+    "valid_answers": [
+        "cull",
+        "public",
+        "club",
+        "puppy",
+        "cubic",
+        "pulp",
+        "puli",
+        "clubby",
+        "lull",
+        "bull",
+        "bubbly",
+        "bully",
+        "publicly",
+        "bulb",
+        "pubic",
+        "pull",
+        "lulu",
+        "pupil",
+        "cubby",
+        "pulpy"
+    ],
+    "invalid_answers": [
+        "pullup",
+        "bubby",
+        "upby",
+        "picul",
+        "bubu",
+        "buppy",
+        "cuppy",
+        "cubicly",
+        "pupu",
+        "blub",
+        "pulpily",
+        "yuppy",
+        "bulbil",
+        "bulbul",
+        "cully"
+    ],
+    "missed_answers": [],
+    "solve_time": "0:00:00.096",
+    "score": 44,
+    "percentage": 100.0,
+    "rank": "QUEEN_BEE"
+}
