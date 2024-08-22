@@ -15,7 +15,7 @@ import requests
 BASE_URL = "https://www.nytimes.com/puzzles/letter-boxed"
 HTML_DATA_REGEX = r'<script type="text\/javascript">window\.gameData = (.+)<\/script><\/div><div id="portal-editorial-content">'
 
-WORDS_FILE_PATH = "wordlist.txt"
+WORDS_FILE_PATH = "wordlist_small.txt"
 OUTPUT_DIRECTORY_PATH = "solutions/letter_boxed"
 NUM_SIDES = 4
 NUM_LETTERS_PER_SIDE = 3
@@ -101,6 +101,11 @@ class LetterBoxedSolver:
         self.get_valid_solutions(start)
         end = time()
         use_progress_bar(MAX_PERCENTAGE, start, end)
+
+        # print condensed results
+        print(f"\n\n{sum([len(i) for i in self.answers])} possible words found:")
+        for i, answers in enumerate(self.answers):
+            print(f"\t- {i + 1} word solutions: " + str(answers))
 
         print("\nPress ENTER to return to the main menu.")
         input()
