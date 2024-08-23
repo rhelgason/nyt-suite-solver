@@ -1,0 +1,9 @@
+{
+    "puzzle_id": 2089,
+    "ds": "2024-08-23",
+    "sides": "[['a', 't', 'b'], ['r', 'l', 'c'], ['e', 'h', 'i'], ['f', 's', 'p']]",
+    "valid_answers": "[['afterbirths', 'scalp'], ['afterbirths', 'scalpel'], ['afterbirths', 'scalpels'], ['afterbirths', 'scalper'], ['afterbirths', 'scalpers'], ['afterbirths', 'schlep'], ['afterbirths', 'slipcase'], ['afterbirths', 'slipcases'], ['alpaca', 'afterbirths'], ['birthplace', 'efts'], ['birthplace', 'elfish'], ['birthplaces', 'safari'], ['birthplaces', 'safaris'], ['birthplaces', 'safe'], ['birthplaces', 'safer'], ['birthplaces', 'safes'], ['birthplaces', 'safest'], ['birthplaces', 'sailfish'], ['birthplaces', 'scarf'], ['birthplaces', 'seafarer'], ['birthplaces', 'seafarers'], ['birthplaces', 'self'], ['birthplaces', 'selfish'], ['birthplaces', 'serf'], ['birthplaces', 'serif'], ['birthplaces', 'shaft'], ['birthplaces', 'shafts'], ['birthplaces', 'sharif'], ['birthplaces', 'shrift'], ['birthplaces', 'shrifts'], ['birthplaces', 'sift'], ['birthplaces', 'sifter'], ['birthplaces', 'sifters'], ['birthplaces', 'sifts'], ['birthplaces', 'stifle'], ['birthplaces', 'stifler'], ['birthplaces', 'stiflers'], ['birthplaces', 'stifles'], ['birthplaces', 'strafe'], ['birthplaces', 'strafer'], ['birthplaces', 'strafers'], ['birthplaces', 'strafes'], ['birthplaces', 'strife'], ['blepharitis', 'scarf'], ['perfectible', 'earths'], ['phlebitis', 'scarf'], ['plebiscites', 'sharif'], ['plectra', 'afterbirths'], ['replica', 'afterbirths'], ['sharp', 'perfectible']]",
+    "invalid_answers": "[['afterbirths', 'sceptral'], ['afterbirths', 'septical'], ['birthplaces', 'serfish'], ['birthplaces', 'strifes'], ['perfectible', 'earthsets']]",
+    "shortest_answer_length": 2,
+    "solve_time": "0:00:01.390"
+}
