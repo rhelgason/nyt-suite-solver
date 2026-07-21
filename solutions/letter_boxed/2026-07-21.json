@@ -1,0 +1,39 @@
+{
+    "puzzle_id": 2786,
+    "ds": "2026-07-21",
+    "sides": [
+        [
+            "w",
+            "r",
+            "k"
+        ],
+        [
+            "u",
+            "n",
+            "c"
+        ],
+        [
+            "i",
+            "q",
+            "s"
+        ],
+        [
+            "f",
+            "a",
+            "d"
+        ]
+    ],
+    "valid_answers": [
+        [
+            "quicksand",
+            "dwarf"
+        ],
+        [
+            "quicksand",
+            "dwarfs"
+        ]
+    ],
+    "invalid_answers": [],
+    "shortest_answer_length": 2,
+    "solve_time": "0:00:00.125"
+}
