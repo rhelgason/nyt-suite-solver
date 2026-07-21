@@ -2,21 +2,18 @@ from datetime import datetime, timedelta
 from display_utils import clear_terminal, MAX_PERCENTAGE, should_update_progress_bar, use_progress_bar, use_spelling_bee_menu
 from enum import Enum
 from menu_options import gen_date_enum, MenuOptions, SpellingBeeDateOptions
+from solvers.BaseSolver import BaseSolver
+from solvers.scraping import fetch_game_data
 from Spinner import Spinner
 from time import time
 from trie.Trie import Trie
 from typing import Any, Dict, List, Set
 
-import json
 import os
-import re
-import requests
 
 BASE_URL = "https://www.nytimes.com/puzzles/spelling-bee"
-HTML_DATA_REGEX = r'<script type="text\/javascript">window\.gameData = (.+)<\/script><\/div><div id="portal-editorial-content">'
 
 WORDS_FILE_PATH = "wordlist.txt"
-OUTPUT_DIRECTORY_PATH = "solutions/spelling_bee"
 NUM_LETTERS = 7
 MIN_LENGTH = 4
 
@@ -37,35 +34,29 @@ class SpellingBeeRanks(Enum):
 Scrapes the NYT Spelling Bee puzzle and solves it, all backed
 by a trie data structure.
 """
-class SpellingBeeSolver:
-    puzzle_id: int = None
-    answers: Trie = []
-    ds: str = None
+class SpellingBeeSolver(BaseSolver):
+    OUTPUT_DIRECTORY_PATH = "solutions/spelling_bee"
 
+    answers: Trie = []
     letters: Set[str] = set()
     center: str = None
     words: Trie = []
     pangrams: Trie = []
 
     def __init__(self, ds: str = None) -> None:
+        super().__init__(ds)
         self.answers = Trie()
-        self.ds = ds or datetime.today().date().strftime("%Y-%m-%d")
         self.letters = set()
         self.center = None
         self.words = Trie()
         self.pangrams = Trie()
         self.scrape_puzzle()
-        return
 
     @staticmethod
     def use_date_options(option: SpellingBeeDateOptions) -> MenuOptions:
         clear_terminal()
         with Spinner("Fetching dates from NYT website..."):
-            response = requests.get(BASE_URL)
-            match = re.search(HTML_DATA_REGEX, response.text)
-            if not match:
-                raise Exception("Failed to find game data.")
-            data = json.loads(match.group(1))['pastPuzzles']
+            data = fetch_game_data(BASE_URL)['pastPuzzles']
             puzzle_data = None
             if option == SpellingBeeDateOptions.THIS_WEEK:
                 puzzle_data = data['thisWeek']
@@ -81,18 +72,13 @@ class SpellingBeeSolver:
         fetching_str = f"Fetching puzzle from NYT website..."
         clear_terminal()
         with Spinner(fetching_str):
-            response = requests.get(os.path.join(BASE_URL, self.ds))
-            match = re.search(HTML_DATA_REGEX, response.text)
-            if match:
-                data = json.loads(match.group(1))
-                puzzle_data = data['today']
-                self.puzzle_id = puzzle_data['id']
-                self.center = puzzle_data['centerLetter']
-                self.letters = set(puzzle_data['validLetters'])
-                for answer in puzzle_data['answers']:
-                    self.answers.add_word(answer)
-            else:
-                raise Exception("Failed to find game data.")
+            data = fetch_game_data(f"{BASE_URL}/{self.ds}")
+            puzzle_data = data['today']
+            self.puzzle_id = puzzle_data['id']
+            self.center = puzzle_data['centerLetter']
+            self.letters = set(puzzle_data['validLetters'])
+            for answer in puzzle_data['answers']:
+                self.answers.add_word(answer)
         clear_terminal()
         print(fetching_str + " done!")
     
@@ -109,14 +95,14 @@ class SpellingBeeSolver:
           _____/   {letters[0]}   \\_____
          /     \\       /     \\
         /   {letters[1]}   \\_____/   {letters[2]}   \\
-        \       /     \\       /
-         \_____/   {self.center.upper()}   \\_____/
+        \\       /     \\       /
+         \\_____/   {self.center.upper()}   \\_____/
          /     \\       /     \\
         /   {letters[3]}   \\_____/   {letters[4]}   \\
-        \       /     \\       /
-         \_____/   {letters[5]}   \\_____/
-               \       /
-                \_____/
+        \\       /     \\       /
+         \\_____/   {letters[5]}   \\_____/
+               \\       /
+                \\_____/
         """
         self.letters.add(self.center)
         return res
@@ -196,15 +182,7 @@ class SpellingBeeSolver:
             "solve_time": str(timedelta(seconds=end - start))[:-3],
         }
         self.write_performance(data)
-
-        # set up file path
-        output_path = os.path.join('./', OUTPUT_DIRECTORY_PATH)
-        if not os.path.exists(output_path):
-            os.makedirs(output_path)
-        output_file_path = os.path.join(output_path, f"{self.ds}.json")
-
-        with open(output_file_path, 'w', encoding='utf-8') as f:
-            json.dump(data, f, ensure_ascii=False, indent=4)
+        self.write_solution(data)
     
     def write_performance(self, data: Dict[str, Any]) -> None:
         score = 0

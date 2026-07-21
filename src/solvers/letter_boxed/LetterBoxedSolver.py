@@ -1,20 +1,17 @@
 from datetime import datetime, timedelta
 from display_utils import clear_terminal, MAX_PERCENTAGE, should_update_progress_bar, use_progress_bar
+from solvers.BaseSolver import BaseSolver
+from solvers.scraping import fetch_game_data
 from Spinner import Spinner
 from time import time
 from trie.Trie import Trie
 from typing import Dict, List, Set
 
-import json
 import os
-import re
-import requests
 import sys
 
 BASE_URL = "https://www.nytimes.com/puzzles/letter-boxed"
-HTML_DATA_REGEX = r'<script type="text\/javascript">window\.gameData = (.+)<\/script><\/div><div id="portal-editorial-content">'
 WORDS_FILE_PATH = "wordlist_small.txt"
-OUTPUT_DIRECTORY_PATH = "solutions/letter_boxed"
 
 NUM_SIDES = 4
 NUM_LETTERS_PER_SIDE = 3
@@ -26,40 +23,32 @@ MAX_WORDS = 2
 Scrapes the NYT Letter Boxed puzzle and solves it, all backed
 by a trie data structure.
 """
-class LetterBoxedSolver:
-    puzzle_id: int = None
-    answers: List[List[List[str]]] = []
-    ds: str = None
+class LetterBoxedSolver(BaseSolver):
+    OUTPUT_DIRECTORY_PATH = "solutions/letter_boxed"
 
+    answers: List[List[List[str]]] = []
     letters: List[Dict[str, None]] = set()
     words: Trie = None
     valid_words: Trie = None
 
     def __init__(self, ds: str = None) -> None:
-        self.puzzle_id = None
+        super().__init__(ds)
         self.answers = [[] for _ in range(MAX_WORDS)]
-        self.ds = datetime.today().date().strftime("%Y-%m-%d")
         self.letters = []
         self.words = Trie()
         self.valid_words = Trie()
         self.scrape_puzzle()
-        return
-    
+
     def scrape_puzzle(self) -> None:
         fetching_str = f"Fetching puzzle from NYT website..."
         clear_terminal()
         with Spinner(fetching_str):
-            response = requests.get(BASE_URL)
-            match = re.search(HTML_DATA_REGEX, response.text)
-            if match:
-                puzzle_data = json.loads(match.group(1))
-                self.puzzle_id = puzzle_data['id']
-                for side in puzzle_data['sides']:
-                    self.letters.append(dict.fromkeys(side.lower()))
-                for word in puzzle_data['dictionary']:
-                    self.valid_words.add_word(word.lower())
-            else:
-                raise Exception("Failed to find game data.")
+            puzzle_data = fetch_game_data(BASE_URL)
+            self.puzzle_id = puzzle_data['id']
+            for side in puzzle_data['sides']:
+                self.letters.append(dict.fromkeys(side.lower()))
+            for word in puzzle_data['dictionary']:
+                self.valid_words.add_word(word.lower())
         clear_terminal()
         print(fetching_str + " done!")
     
@@ -193,15 +182,7 @@ class LetterBoxedSolver:
             "shortest_answer_length": shortest_answer_length,
             "solve_time": str(timedelta(seconds=end - start))[:-3],
         }
-
-        # set up file path
-        output_path = os.path.join('./', OUTPUT_DIRECTORY_PATH)
-        if not os.path.exists(output_path):
-            os.makedirs(output_path)
-        output_file_path = os.path.join(output_path, f"{self.ds}.json")
-
-        with open(output_file_path, 'w', encoding='utf-8') as f:
-            json.dump(data, f, ensure_ascii=False, indent=4)
+        self.write_solution(data)
 
 def letter_boxed() -> int:
     solver = LetterBoxedSolver()

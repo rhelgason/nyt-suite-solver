@@ -1,23 +1,20 @@
 from datetime import datetime, timedelta
 from display_utils import clear_terminal, use_sudoku_menu
 from menu_options import SudokuDifficultyOptions
+from solvers.BaseSolver import BaseSolver
+from solvers.scraping import fetch_game_data
 from Spinner import Spinner
 from time import time
 from typing import List
 
 import ctypes as ct
-import json
 import math
 import numpy as np
 import numpy.typing as npt
 import os
-import re
-import requests
 
 BASE_URL = "https://www.nytimes.com/puzzles/sudoku/"
-HTML_DATA_REGEX = r'<script type="text\/javascript">window\.gameData = (.+)<\/script><\/div><div id="portal-editorial-content">'
 DANCING_LINKS_PATH = "src/solvers/sudoku/DancingLinks.so"
-OUTPUT_DIRECTORY_PATH = "solutions/sudoku"
 
 NYT_DIM = 9
 NYT_BOX_WIDTH = 3
@@ -27,11 +24,11 @@ NYT_BOX_HEIGHT = 3
 Scrapes the NYT Sudoku puzzle and solves it using Donald
 Knuth's dancing links algorithm.
 """
-class SudokuSolver:
+class SudokuSolver(BaseSolver):
+    OUTPUT_DIRECTORY_PATH = "solutions/sudoku"
+
     cdll: ct.CDLL = None
-    puzzle_id: int = None
     difficulty: SudokuDifficultyOptions = None
-    ds: str = None
 
     # puzzle attributes
     puzzle: npt.NDArray[npt.NDArray[np.int32]] = None
@@ -41,17 +38,18 @@ class SudokuSolver:
     box_height: int = NYT_BOX_HEIGHT
 
     def __init__(self, difficulty: SudokuDifficultyOptions) -> None:
+        super().__init__()
         self.cdll = ct.CDLL(os.path.join('./', DANCING_LINKS_PATH))
-        self.puzzle_id = None
         self.difficulty = difficulty
-        self.ds = datetime.today().date().strftime("%Y-%m-%d")
         self.puzzle = None
         self.solved_puzzle = None
         self.dim = NYT_DIM
         self.box_width = NYT_BOX_WIDTH
         self.box_height = NYT_BOX_HEIGHT
         self.scrape_puzzle()
-        return
+
+    def output_file_name(self) -> str:
+        return f"{self.ds}_{self.difficulty.value.lower()}.json"
 
     def scrape_puzzle(self) -> None:
         clear_terminal()
@@ -59,18 +57,12 @@ class SudokuSolver:
         with Spinner(fetching_str):
             difficulty_str = self.difficulty.value.lower()
             url = BASE_URL + difficulty_str
-            response = requests.get(url)
-            match = re.search(HTML_DATA_REGEX, response.text)
-
-            if match:
-                data = json.loads(match.group(1))
-                self.puzzle_id = data[self.difficulty.value.lower()]['puzzle_id']
-                puzzle_data = data[difficulty_str]['puzzle_data']['puzzle']
-                self.puzzle = self.reshape_input_board(puzzle_data)
-                if not self.dancing_links_init():
-                    raise Exception("The scraped puzzle board was not valid.")
-            else:
-                raise Exception("Failed to find game data.")
+            data = fetch_game_data(url)
+            self.puzzle_id = data[difficulty_str]['puzzle_id']
+            puzzle_data = data[difficulty_str]['puzzle_data']['puzzle']
+            self.puzzle = self.reshape_input_board(puzzle_data)
+            if not self.dancing_links_init():
+                raise Exception("The scraped puzzle board was not valid.")
         print(fetching_str + " done!")
     
     """
@@ -171,14 +163,7 @@ class SudokuSolver:
         if (self.solved_puzzle is not None):
             data['solved_puzzle'] = ','.join(','.join(str(x) for x in y) for y in self.solved_puzzle)
 
-        # set up file path
-        output_path = os.path.join('./', OUTPUT_DIRECTORY_PATH)
-        if not os.path.exists(output_path):
-            os.makedirs(output_path)
-        output_file_path = os.path.join(output_path, f"{self.ds}_{self.difficulty.value.lower()}.json")
-
-        with open(output_file_path, 'w', encoding='utf-8') as f:
-            json.dump(data, f, ensure_ascii=False, indent=4)
+        self.write_solution(data)
 
 def sudoku() -> int:
     while True:
