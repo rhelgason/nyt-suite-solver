@@ -1,49 +1,90 @@
 # nyt-suite-solver
-Provides a number of algorithms to solve each of the New York Times games every day.
+
+Algorithms that solve the daily New York Times puzzle suite and log how
+effectively each puzzle was solved. It runs every day on its own via GitHub
+Actions — no server required — and can also be used interactively or headlessly.
+
+## Games & solvers
+
+| Game | Approach | Word source |
+|------|----------|-------------|
+| Letter Boxed | Trie-backed search for 1–2 word solutions covering all sides | `wordlist_small.txt` |
+| Spelling Bee | Trie word search, scored to a rank (Beginner → Queen Bee) | `wordlist.txt` |
+| Sudoku | Donald Knuth's Dancing Links / Algorithm X exact cover (C++) | scraped board |
+
+All solvers are **fully algorithmic — no AI/LLM calls.** Puzzles are scraped from
+the NYT site (`window.gameData`) and results are written to `solutions/<game>/`.
+
+## Design philosophy
+
+See [`CLAUDE.md`](CLAUDE.md) for the full rationale. In short:
+
+1. **Assess realistic human solving.** Solvers use a local human-realistic
+   wordlist and use NYT's official answer/dictionary lists only to score and
+   validate — never to solve. (Solving from the answer list would trivially win
+   and measure nothing.)
+2. **Prefer deterministic algorithms over AI.** Reach for an LLM only for a
+   puzzle that genuinely can't be solved otherwise (e.g. a future Crossword).
+3. **Solvers stay pure and headless**, decoupled from the interactive TUI.
 
 ## Usage
 
-Interactive terminal UI:
+Interactive terminal UI (arrow-key menus):
 ```
 make run
 ```
 
-Headless (no menu — used by the daily automation and for backfilling):
+Headless — used by the daily automation, and for backfilling:
 ```
-python3 src/cli.py                              # all games, today
-python3 src/cli.py --game spelling-bee --date 2024-08-20
+python3 src/cli.py                                   # all games, today
+python3 src/cli.py --game spelling-bee --date 2026-07-20
 python3 src/cli.py --game sudoku --difficulty hard
-python3 src/cli.py --game spelling-bee --backfill   # every archived date
+python3 src/cli.py --game spelling-bee --backfill    # every archived date
 ```
 
-Run the tests:
+Run the offline test suite:
 ```
 make test
 ```
 
+## Output & stats
+
+Each solved puzzle writes a JSON file under `solutions/<game>/` capturing the
+puzzle, the solution(s), and performance metrics:
+
+- **Spelling Bee**: `score`, `percentage`, `rank`, `pangrams`, `missed_answers`, `solve_time`
+- **Letter Boxed**: `valid_answers`, `invalid_answers`, `shortest_answer_length`, `solve_time`
+- **Sudoku**: `input_puzzle`, `solved_puzzle`, `solve_time`
+
+> An aggregated stats dashboard / Web UI is not built yet (see Milestones). For
+> now, stats live per-puzzle in the JSON files and are printed by the TUI as each
+> game is solved.
+
 ## Automation
-A scheduled GitHub Actions workflow (`.github/workflows/daily.yml`) solves every
-game each morning and commits the results under `solutions/`, so puzzles are
-solved and logged daily without a running server. Unit tests run on every push
-via `.github/workflows/tests.yml`.
+
+- **`.github/workflows/daily.yml`** — solves every game each morning and commits
+  the results, so puzzles are solved and logged daily with no server.
+- **`.github/workflows/tests.yml`** — runs the unit tests on every push and PR.
 
 ## Data availability
-The NYT only exposes today's puzzle for Letter Boxed and Sudoku, so those
-accumulate going forward. Spelling Bee serves a short (~1 week) public archive,
-which `--backfill` captures; deeper Spelling Bee history requires a logged-in
-subscription session.
 
-## Upcoming Milestones
-- [X] Letter Boxed
-  - [X] Functional algorithm
-  - [X] Upload solved puzzles
-- [X] Spelling Bee
-  - [X] Functional algorithm
-  - [X] Upload solved puzzles
-  - [X] Solve archived puzzles
-- [X] Sudoku
-  - [X] Functional algorithm
-  - [X] Upload solved puzzles
-- [X] Stat tracking
-- [X] Cron job for automatically solving puzzles every day
-- [ ] Web UI
+NYT only serves today's puzzle for Letter Boxed and Sudoku, so those accumulate
+going forward. Spelling Bee exposes a ~1-week public archive (captured by
+`--backfill`); deeper history requires a logged-in subscription session.
+
+## Project layout
+
+- `src/solvers/<game>/` — solver classes (pure logic + scraping)
+- `src/solvers/scraping.py`, `src/solvers/BaseSolver.py` — shared helpers
+- `src/cli.py` — headless entrypoint
+- `src/main.py`, `src/menus.py`, `src/game_runner.py` — interactive TUI
+- `tests/` — offline pytest suite
+
+## Milestones
+
+- [X] Letter Boxed — solver + daily upload
+- [X] Spelling Bee — solver + daily upload + archive backfill
+- [X] Sudoku — solver + daily upload
+- [X] Stat tracking (per-puzzle)
+- [X] Daily automation (GitHub Actions cron)
+- [ ] Aggregated stats / Web UI
