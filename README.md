@@ -29,23 +29,30 @@ See [`CLAUDE.md`](CLAUDE.md) for the full rationale. In short:
 
 ## Usage
 
+The `make` targets create and use an isolated virtualenv (`.venv`) on first run
+and install dependencies there, so nothing touches your system Python.
+
 Interactive terminal UI (arrow-key menus):
 ```
 make run
-```
-
-Headless — used by the daily automation, and for backfilling:
-```
-python3 src/cli.py                                   # all games, today
-python3 src/cli.py --game spelling-bee --date 2026-07-20
-python3 src/cli.py --game sudoku --difficulty hard
-python3 src/cli.py --game spelling-bee --backfill    # every archived date
 ```
 
 Run the offline test suite:
 ```
 make test
 ```
+
+Headless — used by the daily automation, and for backfilling. Run through the
+venv (created by `make setup`):
+```
+.venv/bin/python src/cli.py                                # all games, today
+.venv/bin/python src/cli.py --game spelling-bee --date 2026-07-20
+.venv/bin/python src/cli.py --game sudoku --difficulty hard
+.venv/bin/python src/cli.py --game spelling-bee --backfill # every archived date
+```
+
+> On macOS the interactive TUI needs Accessibility permission for your terminal
+> (pynput's global key listener). The headless CLI has no such requirement.
 
 ## Output & stats
 

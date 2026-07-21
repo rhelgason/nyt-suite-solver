@@ -1,11 +1,31 @@
-setup: requirements.txt
-	pip3 install -r requirements.txt
+VENV := .venv
+PYTHON := $(VENV)/bin/python
+PIP := $(VENV)/bin/pip
 
-run: build-sudoku
-	python3 src/main.py
+.PHONY: setup setup-dev run test clean build-sudoku
 
-test: build-sudoku
-	python3 -m pytest
+# create the virtualenv and install runtime dependencies (isolated from the
+# system Python, which is externally managed and rejects pip installs)
+$(VENV)/.stamp: requirements.txt
+	python3 -m venv $(VENV)
+	$(PIP) install -r requirements.txt
+	touch $@
+
+setup: $(VENV)/.stamp
+
+# additionally install dev/test dependencies
+$(VENV)/.stamp-dev: requirements-dev.txt requirements.txt
+	python3 -m venv $(VENV)
+	$(PIP) install -r requirements-dev.txt
+	touch $@
+
+setup-dev: $(VENV)/.stamp-dev
+
+run: setup build-sudoku
+	$(PYTHON) src/main.py
+
+test: setup-dev build-sudoku
+	$(PYTHON) -m pytest
 
 clean:
 	rm -rf __pycache__

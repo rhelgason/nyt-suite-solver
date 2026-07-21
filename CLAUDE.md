@@ -44,8 +44,10 @@ layer from a solver.
 - `.github/workflows/` — `daily.yml` (scheduled solve) + `tests.yml` (CI)
 
 ## Working on this repo
+- `make` targets create/use an isolated `.venv` (system Python is externally
+  managed and rejects `pip install`). `make run`, `make test`, `make setup`.
 - Run tests: `make test` (builds the Sudoku extension, then pytest)
-- Solve headlessly: `python3 src/cli.py --game all`
+- Solve headlessly: `.venv/bin/python src/cli.py --game all`
 - Data availability: NYT serves only today's puzzle for Letter Boxed & Sudoku;
   a ~1-week public archive for Spelling Bee. Deeper backfill needs a subscriber
   login.
