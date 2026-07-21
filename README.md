@@ -29,10 +29,22 @@ _Auto-generated from `solutions/` · **43** puzzles solved across 3 games (throu
 
 ```mermaid
 xychart-beta
-    title "Spelling Bee puzzles by rank achieved (lifetime)"
-    x-axis ["Queen Bee", "Genius"]
-    y-axis "Puzzles" 0 --> 13
-    bar [9, 13]
+    title "Cumulative puzzles solved"
+    x-axis ["24-07-22", "24-07-23", "24-07-25", "24-07-26", "24-07-28", "24-07-29", "24-07-31", "24-08-01", "24-08-02", "24-08-04", "24-08-05", "24-08-13", "24-08-14", "24-08-16", "24-08-19", "24-08-21", "24-08-22", "24-08-23", "26-07-14", "26-07-15", "26-07-17", "26-07-18", "26-07-20", "26-07-21"]
+    y-axis "Puzzles solved" 0 --> 33
+    line [1, 2, 4, 5, 7, 8, 10, 11, 12, 14, 15, 17, 18, 20, 21, 23, 23, 24, 26, 27, 29, 30, 32, 33]
+    line [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 2, 2, 2, 2, 2, 2, 3]
+    line [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 3, 4, 4, 4, 4, 4, 4, 7]
+```
+
+_Lines, in plotting order: Spelling Bee, Letter Boxed, Sudoku (Sudoku climbs fastest at 3 puzzles/day)._
+
+```mermaid
+xychart-beta
+    title "Spelling Bee score distribution (lifetime)"
+    x-axis ["80-89", "90-94", "95-99", "100"]
+    y-axis "Puzzles" 0 --> 10
+    bar [2, 1, 10, 9]
 ```
 <!-- STATS:END -->
 

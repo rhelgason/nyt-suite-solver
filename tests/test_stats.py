@@ -33,16 +33,32 @@ def test_build_section_summarizes_each_game(tmp_path):
     assert "avg score **75.0%**" in section                 # (100 + 50) / 2
     assert "Queen Bee on **50%** of puzzles" in section      # 1 of 2
     assert "**100%** solved" in section                      # letter boxed + sudoku
-    assert "```mermaid" in section                           # rank distribution (2 ranks)
+    # cumulative multi-line chart: one line per game (2 distinct dates present)
+    assert "Cumulative puzzles solved" in section
+    assert section.count("    line [") == 3
+    # score histogram replaces the rank chart
+    assert "Spelling Bee score distribution" in section
 
 
-def test_rank_chart_omitted_for_single_rank(tmp_path):
+def test_cumulative_chart_omitted_for_single_date(tmp_path):
     root = str(tmp_path)
     _write(root, "spelling_bee", "2026-01-01.json", {"ds": "2026-01-01", "percentage": 100, "rank": "QUEEN_BEE"})
-    _write(root, "spelling_bee", "2026-01-02.json", {"ds": "2026-01-02", "percentage": 100, "rank": "QUEEN_BEE"})
     section = build_section(root)
-    assert "Queen Bee on **100%** of puzzles" in section
-    assert "```mermaid" not in section  # only one rank present -> no chart
+    # only one date and one score -> neither chart is drawn
+    assert "    line [" not in section
+    assert "```mermaid" not in section
+
+
+def test_score_histogram_buckets(tmp_path):
+    root = str(tmp_path)
+    scores = {"2026-01-01": 100, "2026-01-02": 97, "2026-01-03": 92, "2026-01-04": 100}
+    for ds, pct in scores.items():
+        _write(root, "spelling_bee", f"{ds}.json", {"ds": ds, "percentage": pct, "rank": "GENIUS"})
+    section = build_section(root)
+    assert "Spelling Bee score distribution" in section
+    # leading empty buckets (<80, 80-89) are trimmed; range starts at 90-94
+    assert '"90-94", "95-99", "100"' in section
+    assert "bar [1, 1, 2]" in section  # 92 | 97 | (100, 100)
 
 
 def test_build_section_empty(tmp_path):

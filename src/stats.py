@@ -7,6 +7,7 @@ without any hosted service.
 from typing import Dict, List, Optional, Tuple
 
 import ast
+import bisect
 import glob
 import json
 import os
@@ -58,18 +59,35 @@ def as_list(value) -> list:
     return []
 
 
-def mermaid_bar(title: str, labels: List[str], values: List[float], y_label: str, y_max: int) -> str:
+def _mermaid_chart(title: str, labels: List[str], y_label: str, y_max: int, plots: List[str]) -> str:
     xs = ", ".join(f'"{label}"' for label in labels)
-    ys = ", ".join(str(v) for v in values)
+    body = "".join(f"    {plot}\n" for plot in plots)
     return (
         "```mermaid\n"
         "xychart-beta\n"
         f'    title "{title}"\n'
         f"    x-axis [{xs}]\n"
         f'    y-axis "{y_label}" 0 --> {y_max}\n'
-        f"    bar [{ys}]\n"
-        "```"
+        f"{body}```"
     )
+
+
+def mermaid_bar(title: str, labels: List[str], values: List[float], y_label: str, y_max: int) -> str:
+    return _mermaid_chart(title, labels, y_label, y_max, [f"bar [{', '.join(str(v) for v in values)}]"])
+
+
+def mermaid_multiline(title: str, labels: List[str], series: List[List[float]], y_label: str, y_max: int) -> str:
+    plots = [f"line [{', '.join(str(v) for v in values)}]" for values in series]
+    return _mermaid_chart(title, labels, y_label, y_max, plots)
+
+
+def _downsample(items: list, max_points: int) -> list:
+    """Evenly thin a list to at most max_points, always keeping first and last."""
+    if len(items) <= max_points:
+        return items
+    step = (len(items) - 1) / (max_points - 1)
+    indices = sorted({round(i * step) for i in range(max_points)})
+    return [items[i] for i in indices]
 
 
 # canonical Spelling Bee ranks, best to worst
@@ -91,6 +109,7 @@ def summarize_spelling_bee(records: List[Record]) -> dict:
     rank_counts = {r: ranks.count(r) for r in RANK_ORDER if r in ranks}
     return {
         "count": len(dates),
+        "percentages": pcts,
         "avg_pct": sum(pcts) / len(pcts) if pcts else None,
         "best_pct": max(pcts) if pcts else None,
         "queen_bee_rate": ranks.count("QUEEN_BEE") / len(ranks) * 100 if ranks else None,
@@ -162,17 +181,69 @@ def _sudoku_headline(s: dict) -> str:
     return " · ".join(parts)
 
 
-def rank_distribution_chart(s: dict) -> Optional[str]:
-    counts = s.get("rank_counts") or {}
-    ranks = [r for r in RANK_ORDER if counts.get(r)]
-    if len(ranks) < 2:  # a single-bar chart adds nothing over the table
+# game order used consistently for the cumulative chart's overlaid lines
+CUMULATIVE_GAMES = [
+    ("spelling_bee", "Spelling Bee"),
+    ("letter_boxed", "Letter Boxed"),
+    ("sudoku", "Sudoku"),
+]
+
+
+def cumulative_solves_chart(games: Dict[str, List[Record]]) -> Optional[str]:
+    per_game = {
+        key: sorted(data.get("ds") for _, data in games[key] if data.get("ds"))
+        for key, _ in CUMULATIVE_GAMES
+    }
+    all_dates = sorted({d for dates in per_game.values() for d in dates})
+    if len(all_dates) < 2:  # need at least two points to draw a line
         return None
+
+    sample = _downsample(all_dates, 24)
+    series = [[bisect.bisect_right(per_game[key], d) for d in sample] for key, _ in CUMULATIVE_GAMES]
+
+    multiyear = len({d[:4] for d in sample}) > 1
+    labels = [d[2:] if multiyear else d[5:] for d in sample]
+    y_max = max(max(line) for line in series)
+    return mermaid_multiline(
+        "Cumulative puzzles solved",
+        labels,
+        series,
+        "Puzzles solved",
+        y_max,
+    )
+
+
+SCORE_BUCKETS = ["<80", "80-89", "90-94", "95-99", "100"]
+
+
+def _score_bucket(pct: float) -> int:
+    if pct >= 100:
+        return 4
+    if pct >= 95:
+        return 3
+    if pct >= 90:
+        return 2
+    if pct >= 80:
+        return 1
+    return 0
+
+
+def score_histogram_chart(s: dict) -> Optional[str]:
+    pcts = s.get("percentages") or []
+    if len(pcts) < 2:
+        return None
+    counts = [0] * len(SCORE_BUCKETS)
+    for pct in pcts:
+        counts[_score_bucket(pct)] += 1
+    # trim leading empty buckets so the chart focuses on the range in use
+    first = next((i for i, c in enumerate(counts) if c > 0), 0)
+    labels, counts = SCORE_BUCKETS[first:], counts[first:]
     return mermaid_bar(
-        "Spelling Bee puzzles by rank achieved (lifetime)",
-        [_pretty_rank(r) for r in ranks],
-        [counts[r] for r in ranks],
+        "Spelling Bee score distribution (lifetime)",
+        labels,
+        counts,
         "Puzzles",
-        max(counts[r] for r in ranks),
+        max(counts),
     )
 
 
@@ -198,10 +269,19 @@ def build_section(root: str = SOLUTIONS_ROOT) -> str:
     lines.append(f"| Letter Boxed | {lb['count']} | {_letter_boxed_headline(lb)} |")
     lines.append(f"| Sudoku | {sk['count']} | {_sudoku_headline(sk)} |")
 
-    chart = rank_distribution_chart(sb)
-    if chart:
+    cumulative = cumulative_solves_chart(games)
+    if cumulative:
         lines.append("")
-        lines.append(chart)
+        lines.append(cumulative)
+        # Mermaid xychart has no legend, so name the overlaid lines here
+        lines.append("")
+        lines.append("_Lines, in plotting order: Spelling Bee, Letter Boxed, Sudoku "
+                     "(Sudoku climbs fastest at 3 puzzles/day)._")
+
+    histogram = score_histogram_chart(sb)
+    if histogram:
+        lines.append("")
+        lines.append(histogram)
     return "\n".join(lines)
 
 
