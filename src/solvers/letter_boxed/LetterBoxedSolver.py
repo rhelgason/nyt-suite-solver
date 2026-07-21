@@ -83,13 +83,8 @@ class LetterBoxedSolver(BaseSolver):
 
         # get all valid words
         start = time()
-        file_path = os.path.join('./', WORDS_FILE_PATH)
-        with open(file_path, "rb") as f:
-            num_lines = sum(1 for _ in f)
-        with open(file_path, 'r') as f:
-            for line_num, line in enumerate(f, start=1):
-                self.validate_word(line.strip())
-        
+        self.load_solving_words()
+
         self.get_valid_solutions(start)
         end = time()
         use_progress_bar(MAX_PERCENTAGE, start, end)
@@ -103,6 +98,17 @@ class LetterBoxedSolver(BaseSolver):
 
         # output results to file
         self.write_solved_puzzle(start, end)
+
+    def load_solving_words(self) -> None:
+        # build the pool of board-playable words to search over
+        file_path = os.path.join('./', WORDS_FILE_PATH)
+        with open(file_path, 'r') as f:
+            for line in f:
+                self.validate_word(line.strip())
+        # also include NYT's own accepted dictionary so a valid solution is
+        # never missed just because a word is absent from the local wordlist
+        for word in self.valid_words.to_list():
+            self.validate_word(word)
 
     def validate_word(self, word: str) -> None:
         word = word.lower()

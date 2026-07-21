@@ -41,3 +41,17 @@ def test_solves_full_board_with_single_word(solver):
     solver.validate_word("adgjbehkcfil")
     solver.get_valid_solutions(time.time())
     assert ["adgjbehkcfil"] in solver.answers[0]
+
+
+def test_load_solving_words_includes_nyt_dictionary(solver, monkeypatch, tmp_path):
+    # point the wordlist at an empty file so the ONLY source of solving words is
+    # NYT's accepted dictionary; the solution must still be found and be valid
+    empty = tmp_path / "empty.txt"
+    empty.write_text("")
+    # WORDS_FILE_PATH is absolute, so os.path.join('./', it) yields it verbatim
+    monkeypatch.setattr(lb_module, "WORDS_FILE_PATH", str(empty))
+
+    solver.load_solving_words()
+    solver.get_valid_solutions(time.time())
+    assert ["adgjbehkcfil"] in solver.answers[0]
+    assert solver.valid_words.contains("adgjbehkcfil")
