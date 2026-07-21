@@ -2,7 +2,7 @@ VENV := .venv
 PYTHON := $(VENV)/bin/python
 PIP := $(VENV)/bin/pip
 
-.PHONY: setup setup-dev run test clean build-sudoku
+.PHONY: setup setup-dev run test stats clean build-sudoku
 
 # create the virtualenv and install runtime dependencies (isolated from the
 # system Python, which is externally managed and rejects pip installs)
@@ -26,6 +26,10 @@ run: setup build-sudoku
 
 test: setup-dev build-sudoku
 	$(PYTHON) -m pytest
+
+# regenerate the auto-updated stats section of the README from solutions/
+stats:
+	$(PYTHON) src/stats.py
 
 clean:
 	rm -rf __pycache__

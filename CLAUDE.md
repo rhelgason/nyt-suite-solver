@@ -33,6 +33,15 @@ Solver classes contain solving + scraping only. All interactive/terminal
 headlessly (CI, cron) with no display. Keep it that way — never import the menu
 layer from a solver.
 
+### 4. Surface results without a hosted service
+Historical results live in the committed `solutions/*.json` and are rendered into
+an auto-generated `## Latest results` section of the README (between
+`<!-- STATS:START -->` / `<!-- STATS:END -->` markers) by `src/stats.py`, using
+GitHub-native Mermaid charts (no committed images). The daily workflow
+regenerates it on every run. Deliberately **no hosted Web UI** — the README is
+the dashboard. If you add metrics, extend `stats.py` and keep it dependency-free
+(standard library only) so it runs anywhere.
+
 ## Layout
 - `src/solvers/<game>/` — one solver class per game (pure logic + scraping)
 - `src/solvers/BaseSolver.py` — shared date/id state + solution writing
