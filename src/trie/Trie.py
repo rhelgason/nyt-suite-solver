@@ -17,6 +17,10 @@ class Trie:
         return self.root[key]
 
     def add_word(self, word: str) -> None:
+        # adding is idempotent: silently ignore words already present so that
+        # duplicate entries in a wordlist do not abort the whole solve
+        if self.contains(word):
+            return
         self.root = self.add_word_helper(self.root, word + END_OF_WORD)
 
     def add_word_helper(self, curr: Node, word: str) -> Node:
