@@ -28,17 +28,26 @@ def test_build_section_summarizes_each_game(tmp_path):
            {"ds": "2026-01-01", "solved_puzzle": "1,2", "solve_time": "0:00:00.000200"})
 
     section = build_section(root)
-    assert "## Latest results" in section
-    assert "Puzzles solved: **2**" in section       # spelling bee count
-    assert "avg **75.0%**" in section                # (100 + 50) / 2
-    assert "```mermaid" in section                   # trend chart rendered
-    assert "Solved successfully: **1/1**" in section  # sudoku
+    assert "## Lifetime results" in section
+    assert "**4** puzzles solved across 3 games (through 2026-01-02)" in section
+    assert "avg score **75.0%**" in section                 # (100 + 50) / 2
+    assert "Queen Bee on **50%** of puzzles" in section      # 1 of 2
+    assert "**100%** solved" in section                      # letter boxed + sudoku
+    assert "```mermaid" in section                           # rank distribution (2 ranks)
+
+
+def test_rank_chart_omitted_for_single_rank(tmp_path):
+    root = str(tmp_path)
+    _write(root, "spelling_bee", "2026-01-01.json", {"ds": "2026-01-01", "percentage": 100, "rank": "QUEEN_BEE"})
+    _write(root, "spelling_bee", "2026-01-02.json", {"ds": "2026-01-02", "percentage": 100, "rank": "QUEEN_BEE"})
+    section = build_section(root)
+    assert "Queen Bee on **100%** of puzzles" in section
+    assert "```mermaid" not in section  # only one rank present -> no chart
 
 
 def test_build_section_empty(tmp_path):
     section = build_section(str(tmp_path))
-    assert "no puzzles yet" in section
-    assert section.count("_No puzzles solved yet._") == 3
+    assert "_No puzzles solved yet._" in section
 
 
 def test_update_readme_replaces_between_markers():
