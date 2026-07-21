@@ -1,5 +1,5 @@
 from datetime import datetime, timedelta
-from display_utils import clear_terminal, use_sudoku_menu
+from display_utils import clear_terminal
 from menu_options import SudokuDifficultyOptions
 from solvers.BaseSolver import BaseSolver
 from solvers.scraping import fetch_game_data
@@ -121,8 +121,6 @@ class SudokuSolver(BaseSolver):
 
         # output results to file
         self.write_solved_puzzle(start, end)
-        print("\nPress ENTER to return to the main menu.")
-        input()
 
     def puzzle_to_string(self, puzzle: npt.NDArray[npt.NDArray[np.int32]]) -> str:
         hex_set = ['1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F', '0']
@@ -164,11 +162,3 @@ class SudokuSolver(BaseSolver):
             data['solved_puzzle'] = ','.join(','.join(str(x) for x in y) for y in self.solved_puzzle)
 
         self.write_solution(data)
-
-def sudoku() -> int:
-    while True:
-        option = use_sudoku_menu()
-        if option == SudokuDifficultyOptions.RETURN:
-            return 0
-        solver = SudokuSolver(option)
-        solver.solve()

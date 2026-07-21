@@ -1,8 +1,6 @@
-from display_utils import use_main_menu
+from game_runner import letter_boxed, spelling_bee, sudoku
 from menu_options import MainMenuOptions
-from solvers.letter_boxed.LetterBoxedSolver import letter_boxed
-from solvers.spelling_bee.SpellingBeeSolver import spelling_bee
-from solvers.sudoku.SudokuSolver import sudoku
+from menus import use_main_menu
 
 import os
 

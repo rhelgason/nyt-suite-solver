@@ -1,7 +1,6 @@
 from datetime import datetime, timedelta
-from display_utils import clear_terminal, MAX_PERCENTAGE, should_update_progress_bar, use_progress_bar, use_spelling_bee_menu
+from display_utils import clear_terminal, MAX_PERCENTAGE, should_update_progress_bar, use_progress_bar
 from enum import Enum
-from menu_options import gen_date_enum, MenuOptions, SpellingBeeDateOptions
 from solvers.BaseSolver import BaseSolver
 from solvers.scraping import fetch_game_data
 from Spinner import Spinner
@@ -52,22 +51,6 @@ class SpellingBeeSolver(BaseSolver):
         self.pangrams = Trie()
         self.scrape_puzzle()
 
-    @staticmethod
-    def use_date_options(option: SpellingBeeDateOptions) -> MenuOptions:
-        clear_terminal()
-        with Spinner("Fetching dates from NYT website..."):
-            data = fetch_game_data(BASE_URL)['pastPuzzles']
-            puzzle_data = None
-            if option == SpellingBeeDateOptions.THIS_WEEK:
-                puzzle_data = data['thisWeek']
-            elif option == SpellingBeeDateOptions.LAST_WEEK:
-                puzzle_data = data['lastWeek']
-
-            dates = []
-            if puzzle_data != None:
-                dates = {x['printDate']: x['displayDate'] for x in puzzle_data}
-            return gen_date_enum(dates)
-    
     def scrape_puzzle(self) -> None:
         fetching_str = f"Fetching puzzle from NYT website..."
         clear_terminal()
@@ -142,8 +125,6 @@ class SpellingBeeSolver(BaseSolver):
 
         # output results to file
         self.write_solved_puzzle(start, end)
-        print("\nPress ENTER to return to the main menu.")
-        input()
 
     def validate_word(self, word: str) -> None:
         word = word.lower()
@@ -208,24 +189,3 @@ class SpellingBeeSolver(BaseSolver):
         if self.pangrams.contains(word):
             score += 7
         return score
-
-def spelling_bee() -> int:
-    while True:
-        option = use_spelling_bee_menu(None)
-        if option == SpellingBeeDateOptions.RETURN:
-            return 0
-        elif option == SpellingBeeDateOptions.TODAY:
-            solver = SpellingBeeSolver()
-            solver.solve()
-        elif option == SpellingBeeDateOptions.YESTERDAY:
-            ds = (datetime.today().date() - timedelta(days=1)).strftime("%Y-%m-%d")
-            solver = SpellingBeeSolver(ds)
-            solver.solve()
-        else:
-            DateOptions = SpellingBeeSolver.use_date_options(option)
-            while True:
-                date = use_spelling_bee_menu(DateOptions)
-                if date == DateOptions.RETURN:
-                    break
-                solver = SpellingBeeSolver(date._name_)
-                solver.solve()

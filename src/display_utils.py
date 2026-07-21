@@ -1,8 +1,5 @@
 from datetime import timedelta
-from MenuListener import MenuListener
-from menu_options import MainMenuOptions, MenuOptions, SpellingBeeDateOptions, SudokuDifficultyOptions
-from time import sleep, time
-from typing import Optional
+from time import time
 
 import os
 
@@ -17,34 +14,6 @@ last_update = 0
 def clear_terminal():
     os.system('clear')
 
-def use_main_menu():
-    main_menu = MenuListener[MainMenuOptions](
-        menu_options=MainMenuOptions,
-        message="Welcome to the New York Times Suite Solver! " +
-        "Select one of the following options:"
-    )
-    return main_menu.use_menu()
-
-def use_spelling_bee_menu(DateOptions: Optional[MenuOptions] = None) -> MenuOptions:
-    if DateOptions == None:
-        spelling_bee_menu = MenuListener[SpellingBeeDateOptions](
-            menu_options=SpellingBeeDateOptions,
-            message="Please select a date for the Spelling Bee puzzle:",
-        )
-    else:
-        spelling_bee_menu = MenuListener[DateOptions](
-            menu_options=DateOptions,
-            message="Please select a date for the Spelling Bee puzzle:",
-        )
-    return spelling_bee_menu.use_menu()
-
-def use_sudoku_menu():
-    sudoku_menu = MenuListener[SudokuDifficultyOptions](
-        menu_options=SudokuDifficultyOptions,
-        message="Please select a difficulty for the Sudoku puzzle:"
-    )
-    return sudoku_menu.use_menu()
-
 """
 Takes in a progress percentage between 0 and 100, inclusive,
 and runtime info to display a progress bar.
@@ -52,8 +21,8 @@ and runtime info to display a progress bar.
 def use_progress_bar(progress: int, start: float, end: float) -> None:
     if progress < 0 or progress > MAX_PERCENTAGE:
         raise Exception("Progress percentage must be between 0 and 100.")
-    
-    loaded = "\u25A0" * (progress // (MAX_PERCENTAGE // NUM_PROGRESS_BAR_DIVISIONS))
+
+    loaded = "■" * (progress // (MAX_PERCENTAGE // NUM_PROGRESS_BAR_DIVISIONS))
     not_loaded = "-" * (NUM_PROGRESS_BAR_DIVISIONS - len(loaded))
     progress_str = f"|{loaded}{not_loaded}|"
     pct_spaces = " " * (len(str(MAX_PERCENTAGE)) - len(str(progress)))
@@ -66,7 +35,6 @@ def use_progress_bar(progress: int, start: float, end: float) -> None:
     if progress > 1:
         remaining = timedelta(seconds=int((end - start) * (MAX_PERCENTAGE / progress - 1)))
         remaining_str = str(remaining).split('.')[0]
-        # remaining = int((end - start) * (MAX_PERCENTAGE / progress - 1))
         time_str += f", remaining: {remaining_str}]"
     else:
         time_str += "]"

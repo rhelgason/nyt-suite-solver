@@ -103,9 +103,7 @@ class LetterBoxedSolver(BaseSolver):
 
         # output results to file
         self.write_solved_puzzle(start, end)
-        print("\nPress ENTER to return to the main menu.")
-        input()
-    
+
     def validate_word(self, word: str) -> None:
         word = word.lower()
         if len(word) < MIN_LENGTH:
@@ -183,7 +181,3 @@ class LetterBoxedSolver(BaseSolver):
             "solve_time": str(timedelta(seconds=end - start))[:-3],
         }
         self.write_solution(data)
-
-def letter_boxed() -> int:
-    solver = LetterBoxedSolver()
-    solver.solve()
