@@ -100,15 +100,14 @@ class LetterBoxedSolver(BaseSolver):
         self.write_solved_puzzle(start, end)
 
     def load_solving_words(self) -> None:
-        # build the pool of board-playable words to search over
+        # search only within a realistic human vocabulary (wordlist_small), NOT
+        # NYT's full accepted dictionary. The dictionary is used afterwards only
+        # to classify found solutions as valid/invalid, mirroring how Spelling
+        # Bee scores against but never solves from the official answer list.
         file_path = os.path.join('./', WORDS_FILE_PATH)
         with open(file_path, 'r') as f:
             for line in f:
                 self.validate_word(line.strip())
-        # also include NYT's own accepted dictionary so a valid solution is
-        # never missed just because a word is absent from the local wordlist
-        for word in self.valid_words.to_list():
-            self.validate_word(word)
 
     def validate_word(self, word: str) -> None:
         word = word.lower()

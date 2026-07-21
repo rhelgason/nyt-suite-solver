@@ -43,9 +43,9 @@ def test_solves_full_board_with_single_word(solver):
     assert ["adgjbehkcfil"] in solver.answers[0]
 
 
-def test_load_solving_words_includes_nyt_dictionary(solver, monkeypatch, tmp_path):
-    # point the wordlist at an empty file so the ONLY source of solving words is
-    # NYT's accepted dictionary; the solution must still be found and be valid
+def test_solving_uses_wordlist_not_nyt_dictionary(solver, monkeypatch, tmp_path):
+    # a word present only in NYT's dictionary (not the human wordlist) must NOT
+    # become a solution: we assess realistic human solving, not the answer list
     empty = tmp_path / "empty.txt"
     empty.write_text("")
     # WORDS_FILE_PATH is absolute, so os.path.join('./', it) yields it verbatim
@@ -53,5 +53,4 @@ def test_load_solving_words_includes_nyt_dictionary(solver, monkeypatch, tmp_pat
 
     solver.load_solving_words()
     solver.get_valid_solutions(time.time())
-    assert ["adgjbehkcfil"] in solver.answers[0]
-    assert solver.valid_words.contains("adgjbehkcfil")
+    assert all(len(bucket) == 0 for bucket in solver.answers)
