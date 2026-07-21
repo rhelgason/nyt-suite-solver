@@ -64,6 +64,9 @@ Grid::Grid(int**& inBoard, int dim, int subHeight, int subWidth) {
     }
 }
 
+// NOTE: the sub-box tracking (divs) and box indexing below assume square-ish
+// boxes as used by the NYT (9x9 with 3x3 boxes, subHeight == subWidth). Boards
+// with subHeight != subWidth are not currently supported.
 bool Grid::valid(int row, int col, int num) {
     // check if already used
     if (rows[row][num - 1]) return false;
@@ -205,10 +208,15 @@ void Grid::toString(char* out) {
     char hex[16] = {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F'};
     for (int i = 0; i < dim; i++) {
         for (int j = 0; j < dim; j++) {
-            int k = (i * dim + j) * 2;
+            int c = i * dim + j;
+            int k = c * 2;
             int val = board[i][j]->getValue();
-            out[k] = hex[val];
-            out[k + 1] = ' ';
+            // unsolved cells (value out of range) are written as a sentinel so
+            // that hex[val] is never read out of bounds
+            out[k] = (val >= 1 && val <= 15) ? hex[val] : '.';
+            // no trailing separator after the final cell: the buffer holds
+            // exactly dim*dim*2 - 1 chars, leaving room for a null terminator
+            if (c != dim * dim - 1) out[k + 1] = ' ';
         }
     }
 }

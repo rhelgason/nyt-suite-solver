@@ -67,7 +67,8 @@ class SudokuSolver:
                 self.puzzle_id = data[self.difficulty.value.lower()]['puzzle_id']
                 puzzle_data = data[difficulty_str]['puzzle_data']['puzzle']
                 self.puzzle = self.reshape_input_board(puzzle_data)
-                self.dancing_links_init()
+                if not self.dancing_links_init():
+                    raise Exception("The scraped puzzle board was not valid.")
             else:
                 raise Exception("Failed to find game data.")
         print(fetching_str + " done!")
@@ -89,7 +90,7 @@ class SudokuSolver:
                 board[i][j] = values[i * self.dim + j]
         return board
 
-    def dancing_links_init(self) -> None:
+    def dancing_links_init(self) -> bool:
         int_ptr = ct.POINTER(ct.c_int)
         int_ptr_ptr = ct.POINTER(int_ptr)
 
@@ -100,25 +101,27 @@ class SudokuSolver:
         ct_arr = np.ctypeslib.as_ctypes(self.puzzle)
         int_ptr_arr = int_ptr * ct_arr._length_
         ct_ptr = ct.cast(int_ptr_arr(*(ct.cast(row, int_ptr) for row in ct_arr)), int_ptr_ptr)
-        _dancing_links_init(ct_ptr, self.dim, self.box_height, self.box_width)
+        return _dancing_links_init(ct_ptr, self.dim, self.box_height, self.box_width)
 
     def solve(self) -> None:
         print(f"Solving today's {self.difficulty.value.lower()} puzzle:\n")
         print(self.puzzle_to_string(self.puzzle), "\n")
         _dancing_links_solve = self.cdll._dancing_links_solve
-        _dancing_links_solve.argtypes = []
-        _dancing_links_solve.restype = ct.c_char_p
+        _dancing_links_solve.argtypes = [ct.c_char_p]
+        _dancing_links_solve.restype = ct.c_bool
 
-        res = ct.create_string_buffer(self.dim * self.dim * 2 - 1)
+        # buffer holds dim*dim*2 - 1 chars plus room for a null terminator
+        res = ct.create_string_buffer(self.dim * self.dim * 2)
         start = time()
-        _dancing_links_solve(res)
+        solved = _dancing_links_solve(res)
         end = time()
 
         # print condensed results
-        if len(res.value.decode()) != self.dim * self.dim * 2 - 1:
+        if not solved:
             print("Puzzle could not be solved.")
         else:
-            self.solved_puzzle = np.fromstring(res.value.decode(), dtype=int, sep=" ").reshape(self.dim, self.dim)
+            values = np.array(res.value.decode().split(), dtype=int)
+            self.solved_puzzle = values.reshape(self.dim, self.dim)
             if (np.any(self.solved_puzzle)):
                 td = timedelta(seconds=end - start) / timedelta(milliseconds=1)
                 print("Puzzle has been solved in " + str(td) + " milliseconds:\n")
