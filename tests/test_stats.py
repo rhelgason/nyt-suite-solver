@@ -33,9 +33,8 @@ def test_build_section_summarizes_each_game(tmp_path):
     assert "avg score **75.0%**" in section                 # (100 + 50) / 2
     assert "Queen Bee on **50%** of puzzles" in section      # 1 of 2
     assert "**100%** solved" in section                      # letter boxed + sudoku
-    # cumulative multi-line chart: one line per game (2 distinct dates present)
-    assert "Cumulative puzzles solved" in section
-    assert section.count("    line [") == 3
+    # cumulative chart is referenced as a committed SVG image (2 distinct dates)
+    assert "![Cumulative puzzles solved by game](stats/cumulative_solves.svg)" in section
     # score histogram replaces the rank chart
     assert "Spelling Bee score distribution" in section
 
@@ -45,8 +44,24 @@ def test_cumulative_chart_omitted_for_single_date(tmp_path):
     _write(root, "spelling_bee", "2026-01-01.json", {"ds": "2026-01-01", "percentage": 100, "rank": "QUEEN_BEE"})
     section = build_section(root)
     # only one date and one score -> neither chart is drawn
-    assert "    line [" not in section
+    assert "cumulative_solves.svg" not in section
     assert "```mermaid" not in section
+
+
+def test_write_assets_emits_valid_svg(tmp_path):
+    import xml.etree.ElementTree as ET
+
+    from stats import cumulative_solves_svg, load_game
+
+    root = str(tmp_path)
+    _write(root, "spelling_bee", "2026-01-01.json", {"ds": "2026-01-01", "percentage": 100, "rank": "QUEEN_BEE"})
+    _write(root, "sudoku", "2026-01-02_hard.json", {"ds": "2026-01-02", "solved_puzzle": "1", "solve_time": "0:00:00.0001"})
+    games = {g: load_game(root, g) for g in ("spelling_bee", "letter_boxed", "sudoku")}
+
+    svg = cumulative_solves_svg(games)
+    ET.fromstring(svg)  # must be well-formed XML
+    assert "Spelling Bee" in svg and "Letter Boxed" in svg and "Sudoku" in svg  # legend labels
+    assert svg.count("<polyline") == 3  # one line per game
 
 
 def test_score_histogram_buckets(tmp_path):

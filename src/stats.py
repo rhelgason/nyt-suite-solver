@@ -12,6 +12,8 @@ import glob
 import json
 import os
 
+import svg_charts
+
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SOLUTIONS_ROOT = os.path.join(REPO_ROOT, "solutions")
 README_PATH = os.path.join(REPO_ROOT, "README.md")
@@ -76,18 +78,6 @@ def mermaid_bar(title: str, labels: List[str], values: List[float], y_label: str
     return _mermaid_chart(title, labels, y_label, y_max, [f"bar [{', '.join(str(v) for v in values)}]"])
 
 
-def mermaid_multiline(title: str, labels: List[str], series: List[List[float]], y_label: str, y_max: int) -> str:
-    plots = [f"line [{', '.join(str(v) for v in values)}]" for values in series]
-    return _mermaid_chart(title, labels, y_label, y_max, plots)
-
-
-def _downsample(items: list, max_points: int) -> list:
-    """Evenly thin a list to at most max_points, always keeping first and last."""
-    if len(items) <= max_points:
-        return items
-    step = (len(items) - 1) / (max_points - 1)
-    indices = sorted({round(i * step) for i in range(max_points)})
-    return [items[i] for i in indices]
 
 
 # canonical Spelling Bee ranks, best to worst
@@ -181,36 +171,33 @@ def _sudoku_headline(s: dict) -> str:
     return " · ".join(parts)
 
 
-# game order used consistently for the cumulative chart's overlaid lines
+# game order and colors used for the cumulative chart's legend/lines
 CUMULATIVE_GAMES = [
-    ("spelling_bee", "Spelling Bee"),
-    ("letter_boxed", "Letter Boxed"),
-    ("sudoku", "Sudoku"),
+    ("spelling_bee", "Spelling Bee", "#eab308"),
+    ("letter_boxed", "Letter Boxed", "#2563eb"),
+    ("sudoku", "Sudoku", "#dc2626"),
 ]
 
+ASSETS_DIR = os.path.join(REPO_ROOT, "stats")
+CUMULATIVE_SVG_REL = "stats/cumulative_solves.svg"
 
-def cumulative_solves_chart(games: Dict[str, List[Record]]) -> Optional[str]:
+
+def cumulative_solves_svg(games: Dict[str, List[Record]]) -> Optional[str]:
     per_game = {
         key: sorted(data.get("ds") for _, data in games[key] if data.get("ds"))
-        for key, _ in CUMULATIVE_GAMES
+        for key, _, _ in CUMULATIVE_GAMES
     }
     all_dates = sorted({d for dates in per_game.values() for d in dates})
     if len(all_dates) < 2:  # need at least two points to draw a line
         return None
 
-    sample = _downsample(all_dates, 24)
-    series = [[bisect.bisect_right(per_game[key], d) for d in sample] for key, _ in CUMULATIVE_GAMES]
-
-    multiyear = len({d[:4] for d in sample}) > 1
-    labels = [d[2:] if multiyear else d[5:] for d in sample]
-    y_max = max(max(line) for line in series)
-    return mermaid_multiline(
-        "Cumulative puzzles solved",
-        labels,
-        series,
-        "Puzzles solved",
-        y_max,
-    )
+    multiyear = len({d[:4] for d in all_dates}) > 1
+    labels = [d[2:] if multiyear else d[5:] for d in all_dates]
+    series = [
+        (name, color, [bisect.bisect_right(per_game[key], d) for d in all_dates])
+        for key, name, color in CUMULATIVE_GAMES
+    ]
+    return svg_charts.line_chart("Cumulative puzzles solved", labels, series, "Puzzles solved")
 
 
 SCORE_BUCKETS = ["<80", "80-89", "90-94", "95-99", "100"]
@@ -269,20 +256,26 @@ def build_section(root: str = SOLUTIONS_ROOT) -> str:
     lines.append(f"| Letter Boxed | {lb['count']} | {_letter_boxed_headline(lb)} |")
     lines.append(f"| Sudoku | {sk['count']} | {_sudoku_headline(sk)} |")
 
-    cumulative = cumulative_solves_chart(games)
-    if cumulative:
+    if cumulative_solves_svg(games) is not None:
         lines.append("")
-        lines.append(cumulative)
-        # Mermaid xychart has no legend, so name the overlaid lines here
-        lines.append("")
-        lines.append("_Lines, in plotting order: Spelling Bee, Letter Boxed, Sudoku "
-                     "(Sudoku climbs fastest at 3 puzzles/day)._")
+        lines.append(f"![Cumulative puzzles solved by game]({CUMULATIVE_SVG_REL})")
 
     histogram = score_histogram_chart(sb)
     if histogram:
         lines.append("")
         lines.append(histogram)
     return "\n".join(lines)
+
+
+def write_assets(root: str = SOLUTIONS_ROOT, assets_dir: str = ASSETS_DIR) -> None:
+    """Write the committed chart image(s) referenced by the README section."""
+    games = {g: load_game(root, g) for g in ("spelling_bee", "letter_boxed", "sudoku")}
+    svg = cumulative_solves_svg(games)
+    if svg is None:
+        return
+    os.makedirs(assets_dir, exist_ok=True)
+    with open(os.path.join(assets_dir, "cumulative_solves.svg"), "w", encoding="utf-8") as f:
+        f.write(svg)
 
 
 def update_readme(readme_text: str, section: str) -> str:
@@ -295,6 +288,7 @@ def update_readme(readme_text: str, section: str) -> str:
 
 
 def main() -> None:
+    write_assets()
     section = build_section()
     with open(README_PATH) as f:
         text = f.read()

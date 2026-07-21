@@ -16,7 +16,7 @@ pytestmark = pytest.mark.skipif(
 
 
 def _load_fixture():
-    with open(os.path.join("solutions", "sudoku", "2024-08-23_hard.json")) as f:
+    with open(os.path.join("solutions", "sudoku", "2026-07-21_hard.json")) as f:
         d = json.load(f)
     puzzle = [int(x) for x in d["input_puzzle"].split(",")]
     return puzzle, d["solved_puzzle"], d["puzzle_id"]
