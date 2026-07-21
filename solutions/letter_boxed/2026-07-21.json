@@ -31,9 +31,13 @@
         [
             "quicksand",
             "dwarfs"
+        ],
+        [
+            "quicksands",
+            "swarf"
         ]
     ],
     "invalid_answers": [],
     "shortest_answer_length": 2,
-    "solve_time": "0:00:00.125"
+    "solve_time": "0:00:00.246"
 }
