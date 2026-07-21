@@ -17,11 +17,6 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Install system dependencies
-        # xvfb provides a virtual display so pynput (pulled in via the menu
-        # layer) can be imported on the headless runner
-        run: sudo apt-get update && sudo apt-get install -y xvfb
-
       - name: Install Python dependencies
         run: pip install -r requirements-dev.txt
 
@@ -29,4 +24,5 @@ jobs:
         run: make build-sudoku
 
       - name: Run tests
-        run: xvfb-run -a python -m pytest
+        # conftest.py forces pynput's dummy backend, so no display is needed
+        run: python -m pytest
