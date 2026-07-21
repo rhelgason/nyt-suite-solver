@@ -40,13 +40,6 @@ def solve_time_ms(value: str) -> Optional[float]:
         return None
 
 
-def date_range(dates: List[str]) -> str:
-    dates = sorted(d for d in dates if d)
-    if not dates:
-        return "—"
-    return dates[0] if dates[0] == dates[-1] else f"{dates[0]} → {dates[-1]}"
-
-
 def _by_date(records: List[Record]) -> Dict[str, dict]:
     return {data["ds"]: data for _, data in records if data.get("ds")}
 
@@ -140,18 +133,18 @@ def summarize_sudoku(records: List[Record]) -> dict:
 
 def _spelling_bee_headline(s: dict) -> str:
     if not s["count"]:
-        return "—"
+        return "no puzzles yet"
     parts = []
     if s["avg_pct"] is not None:
         parts.append(f"avg score **{s['avg_pct']:.1f}%**")
     if s["queen_bee_rate"] is not None:
         parts.append(f"Queen Bee on **{s['queen_bee_rate']:.0f}%** of puzzles")
-    return " · ".join(parts) if parts else "—"
+    return " · ".join(parts) if parts else "no puzzles yet"
 
 
 def _letter_boxed_headline(s: dict) -> str:
     if not s["count"]:
-        return "—"
+        return "no puzzles yet"
     parts = []
     if s["avg_valid"] is not None:
         parts.append(f"avg **{s['avg_valid']:.1f}** valid solutions")
@@ -162,7 +155,7 @@ def _letter_boxed_headline(s: dict) -> str:
 
 def _sudoku_headline(s: dict) -> str:
     if not s["count"]:
-        return "—"
+        return "no puzzles yet"
     parts = [f"**{s['solved_rate']:.0f}%** solved"]
     if s["avg_ms"] is not None:
         parts.append(f"avg **{s['avg_ms']:.2f} ms**")
