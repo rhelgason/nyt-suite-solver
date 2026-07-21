@@ -4,6 +4,9 @@ setup: requirements.txt
 run: build-sudoku
 	python3 src/main.py
 
+test: build-sudoku
+	python3 -m pytest
+
 clean:
 	rm -rf __pycache__
 	rm -rf src/solvers/sudoku/*.so
