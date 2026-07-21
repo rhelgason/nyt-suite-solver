@@ -1,11 +1,9 @@
 from datetime import datetime, timedelta
-from display_utils import clear_terminal, MAX_PERCENTAGE, should_update_progress_bar, use_progress_bar, use_spelling_bee_menu
-from enum import Enum
-from menu_options import gen_date_enum, MenuOptions, SpellingBeeDateOptions
+from display_utils import clear_terminal, MAX_PERCENTAGE, should_update_progress_bar, use_progress_bar
 from Spinner import Spinner
 from time import time
 from trie.Trie import Trie
-from typing import Any, Dict, List, Set
+from typing import Dict, List, Set
 
 import json
 import os
@@ -81,7 +79,7 @@ class LetterBoxedSolver:
           |                 |
         {letters[3][0]} |                 | {letters[1][0]}
           |                 |
-        {letters[3][1]} |                 | {letters[1][2]}
+        {letters[3][1]} |                 | {letters[1][1]}
           |                 |
         {letters[3][2]} |                 | {letters[1][2]}
           |_________________|
@@ -96,7 +94,6 @@ class LetterBoxedSolver:
 
         # get all valid words
         start = time()
-        last_update = start
         file_path = os.path.join('./', WORDS_FILE_PATH)
         with open(file_path, "rb") as f:
             num_lines = sum(1 for _ in f)
@@ -149,7 +146,6 @@ class LetterBoxedSolver:
     
     def get_valid_solutions_helper(self, words: List[str], used_letters: Set[str], start: float) -> None:
         # if used all letters
-        curr_length = -1 if len(self.answers) == 0 else len(self.answers[0])
         if len(used_letters) == NUM_LETTERS_PER_SIDE * NUM_SIDES:
             self.answers[len(words) - 1].append(words)
             return
@@ -191,9 +187,9 @@ class LetterBoxedSolver:
         data = {
             "puzzle_id": self.puzzle_id,
             "ds": self.ds,
-            "sides": str([list(x.keys()) for x in self.letters]),
-            "valid_answers": str(valid_answers),
-            "invalid_answers": str(invalid_answers),
+            "sides": [list(x.keys()) for x in self.letters],
+            "valid_answers": valid_answers,
+            "invalid_answers": invalid_answers,
             "shortest_answer_length": shortest_answer_length,
             "solve_time": str(timedelta(seconds=end - start))[:-3],
         }
