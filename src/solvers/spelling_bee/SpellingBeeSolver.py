@@ -128,7 +128,6 @@ class SpellingBeeSolver:
 
         # get all valid words
         start = time()
-        last_update = start
         file_path = os.path.join('./', WORDS_FILE_PATH)
         with open(file_path, "rb") as f:
             num_lines = sum(1 for _ in f)
@@ -191,7 +190,7 @@ class SpellingBeeSolver:
             "center": self.center,
             "letters": list(self.letters),
             "pangrams": pangrams,
-            "valid_answers": list(set(all_words) - (set(all_words) - set(answers))),
+            "valid_answers": list(set(all_words) & set(answers)),
             "invalid_answers": list(set(all_words) - set(answers)),
             "missed_answers": list(set(answers) - set(all_words)),
             "solve_time": str(timedelta(seconds=end - start))[:-3],
@@ -216,7 +215,8 @@ class SpellingBeeSolver:
         missed_score = 0
         for answer in data['missed_answers']:
             missed_score += self.score_word(answer)
-        percentage = score / (score + missed_score) * 100
+        total_score = score + missed_score
+        percentage = (score / total_score * 100) if total_score > 0 else 0
         data['percentage'] = percentage
 
         ranks = list(map(lambda c: c.value, SpellingBeeRanks))
