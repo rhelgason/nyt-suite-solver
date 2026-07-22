@@ -1,0 +1,20 @@
+{
+    "puzzle_id": 21,
+    "ds": "2024-04-28",
+    "clue": "Coming clean",
+    "theme_words": [
+        "conditioner",
+        "razor",
+        "shampoo",
+        "soap",
+        "sponge",
+        "washcloth"
+    ],
+    "spangram": "shower",
+    "solved": true,
+    "theme_words_found": 6,
+    "theme_words_total": 6,
+    "candidates": 88,
+    "truncated": false,
+    "solve_time": "0:00:00.988"
+}

@@ -1,0 +1,21 @@
+{
+    "puzzle_id": 74,
+    "ds": "2024-04-22",
+    "clue": "Character class",
+    "theme_words": [
+        "assassin",
+        "bard",
+        "hunter",
+        "knight",
+        "mage",
+        "rogue",
+        "sorcerer"
+    ],
+    "spangram": "fantasy",
+    "solved": false,
+    "theme_words_found": 3,
+    "theme_words_total": 7,
+    "candidates": 16940,
+    "truncated": true,
+    "solve_time": "0:01:05.329"
+}

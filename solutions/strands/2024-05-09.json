@@ -1,0 +1,20 @@
+{
+    "puzzle_id": 86,
+    "ds": "2024-05-09",
+    "clue": "Tap to play",
+    "theme_words": [
+        "boulder",
+        "castle",
+        "ramp",
+        "tunnel",
+        "waterfall",
+        "windmill"
+    ],
+    "spangram": "minigolf",
+    "solved": false,
+    "theme_words_found": 2,
+    "theme_words_total": 6,
+    "candidates": 38,
+    "truncated": true,
+    "solve_time": "0:01:01.744"
+}

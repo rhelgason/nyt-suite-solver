@@ -1,0 +1,20 @@
+{
+    "puzzle_id": 69,
+    "ds": "2024-04-14",
+    "clue": "Join the club!",
+    "theme_words": [
+        "bacon",
+        "lettuce",
+        "mayonnaise",
+        "pickle",
+        "tomato",
+        "turkey"
+    ],
+    "spangram": "sandwich",
+    "solved": true,
+    "theme_words_found": 6,
+    "theme_words_total": 6,
+    "candidates": 1,
+    "truncated": false,
+    "solve_time": "0:00:00.296"
+}

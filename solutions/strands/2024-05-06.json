@@ -1,0 +1,20 @@
+{
+    "puzzle_id": 119,
+    "ds": "2024-05-06",
+    "clue": "Signed, Sealed, Delivered",
+    "theme_words": [
+        "bill",
+        "invite",
+        "letter",
+        "magazine",
+        "package",
+        "postcard"
+    ],
+    "spangram": "snailmail",
+    "solved": false,
+    "theme_words_found": 3,
+    "theme_words_total": 6,
+    "candidates": 40,
+    "truncated": true,
+    "solve_time": "0:01:04.161"
+}

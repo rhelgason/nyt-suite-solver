@@ -1,0 +1,22 @@
+{
+    "puzzle_id": 97,
+    "ds": "2024-04-15",
+    "clue": "This and that",
+    "theme_words": [
+        "error",
+        "give",
+        "mirrors",
+        "peace",
+        "quiet",
+        "smoke",
+        "take",
+        "trial"
+    ],
+    "spangram": "partners",
+    "solved": true,
+    "theme_words_found": 8,
+    "theme_words_total": 8,
+    "candidates": 124,
+    "truncated": false,
+    "solve_time": "0:00:03.806"
+}

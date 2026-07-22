@@ -1,0 +1,19 @@
+{
+    "puzzle_id": 92,
+    "ds": "2024-05-04",
+    "clue": "The horror",
+    "theme_words": [
+        "halloween",
+        "hostel",
+        "poltergeist",
+        "psycho",
+        "scream"
+    ],
+    "spangram": "scarymovie",
+    "solved": false,
+    "theme_words_found": 2,
+    "theme_words_total": 5,
+    "candidates": 18953,
+    "truncated": true,
+    "solve_time": "0:01:05.674"
+}

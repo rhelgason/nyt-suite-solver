@@ -1,0 +1,21 @@
+{
+    "puzzle_id": 63,
+    "ds": "2024-04-19",
+    "clue": "Get to work!",
+    "theme_words": [
+        "comedy",
+        "music",
+        "news",
+        "sports",
+        "talk",
+        "traffic",
+        "weather"
+    ],
+    "spangram": "drivetime",
+    "solved": false,
+    "theme_words_found": 0,
+    "theme_words_total": 7,
+    "candidates": 0,
+    "truncated": true,
+    "solve_time": "0:01:05.348"
+}

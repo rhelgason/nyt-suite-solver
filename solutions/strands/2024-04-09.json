@@ -1,0 +1,20 @@
+{
+    "puzzle_id": 22,
+    "ds": "2024-04-09",
+    "clue": "Can I have my quarter back?",
+    "theme_words": [
+        "cowboy",
+        "dolphin",
+        "panther",
+        "patriot",
+        "raven",
+        "titan"
+    ],
+    "spangram": "teamplayers",
+    "solved": false,
+    "theme_words_found": 4,
+    "theme_words_total": 6,
+    "candidates": 19909,
+    "truncated": true,
+    "solve_time": "0:01:05.386"
+}

@@ -1,0 +1,20 @@
+{
+    "puzzle_id": 107,
+    "ds": "2024-05-03",
+    "clue": "A shade envious?",
+    "theme_words": [
+        "artichoke",
+        "emerald",
+        "forest",
+        "jungle",
+        "olive",
+        "pistachio"
+    ],
+    "spangram": "greens",
+    "solved": true,
+    "theme_words_found": 6,
+    "theme_words_total": 6,
+    "candidates": 2,
+    "truncated": false,
+    "solve_time": "0:00:00.252"
+}

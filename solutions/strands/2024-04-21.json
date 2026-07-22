@@ -1,0 +1,21 @@
+{
+    "puzzle_id": 59,
+    "ds": "2024-04-21",
+    "clue": "That’s life!",
+    "theme_words": [
+        "crawl",
+        "drive",
+        "graduate",
+        "marry",
+        "retire",
+        "speak",
+        "vote"
+    ],
+    "spangram": "milestones",
+    "solved": false,
+    "theme_words_found": 5,
+    "theme_words_total": 7,
+    "candidates": 26738,
+    "truncated": true,
+    "solve_time": "0:01:05.361"
+}

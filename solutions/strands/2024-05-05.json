@@ -1,0 +1,21 @@
+{
+    "puzzle_id": 87,
+    "ds": "2024-05-05",
+    "clue": "Tools for the job",
+    "theme_words": [
+        "edger",
+        "gloves",
+        "rake",
+        "shears",
+        "shovel",
+        "trimmer",
+        "trowel"
+    ],
+    "spangram": "yardwork",
+    "solved": true,
+    "theme_words_found": 7,
+    "theme_words_total": 7,
+    "candidates": 170,
+    "truncated": false,
+    "solve_time": "0:00:00.985"
+}

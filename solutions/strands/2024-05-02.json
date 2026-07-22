@@ -1,0 +1,20 @@
+{
+    "puzzle_id": 105,
+    "ds": "2024-05-02",
+    "clue": "What's my line?",
+    "theme_words": [
+        "bumblebee",
+        "chipmunk",
+        "clownfish",
+        "skunk",
+        "tiger",
+        "zebra"
+    ],
+    "spangram": "striped",
+    "solved": true,
+    "theme_words_found": 5,
+    "theme_words_total": 6,
+    "candidates": 8,
+    "truncated": false,
+    "solve_time": "0:00:00.297"
+}

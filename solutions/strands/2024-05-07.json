@@ -1,0 +1,20 @@
+{
+    "puzzle_id": 54,
+    "ds": "2024-05-07",
+    "clue": "Can you dig it?",
+    "theme_words": [
+        "antimony",
+        "arsenic",
+        "bismuth",
+        "copper",
+        "gold",
+        "silver"
+    ],
+    "spangram": "heavymetal",
+    "solved": false,
+    "theme_words_found": 3,
+    "theme_words_total": 6,
+    "candidates": 15271,
+    "truncated": true,
+    "solve_time": "0:01:03.118"
+}

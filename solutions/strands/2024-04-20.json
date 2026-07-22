@@ -1,0 +1,21 @@
+{
+    "puzzle_id": 68,
+    "ds": "2024-04-20",
+    "clue": "Walk this way",
+    "theme_words": [
+        "amble",
+        "march",
+        "saunter",
+        "stroll",
+        "strut",
+        "trek",
+        "trudge"
+    ],
+    "spangram": "pedestrian",
+    "solved": false,
+    "theme_words_found": 4,
+    "theme_words_total": 7,
+    "candidates": 68342,
+    "truncated": true,
+    "solve_time": "0:01:05.406"
+}

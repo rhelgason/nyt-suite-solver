@@ -1,0 +1,19 @@
+{
+    "puzzle_id": 52,
+    "ds": "2024-04-24",
+    "clue": "This is a puzzle",
+    "theme_words": [
+        "conundrum",
+        "enigma",
+        "mystery",
+        "quandary",
+        "riddle"
+    ],
+    "spangram": "brainteasers",
+    "solved": true,
+    "theme_words_found": 5,
+    "theme_words_total": 5,
+    "candidates": 1,
+    "truncated": false,
+    "solve_time": "0:00:00.232"
+}

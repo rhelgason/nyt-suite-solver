@@ -1,0 +1,21 @@
+{
+    "puzzle_id": 71,
+    "ds": "2024-04-13",
+    "clue": "Group think",
+    "theme_words": [
+        "heart",
+        "journey",
+        "nirvana",
+        "oasis",
+        "poison",
+        "queen",
+        "rush"
+    ],
+    "spangram": "rockbands",
+    "solved": false,
+    "theme_words_found": 3,
+    "theme_words_total": 7,
+    "candidates": 11034,
+    "truncated": true,
+    "solve_time": "0:01:01.209"
+}

@@ -1,0 +1,20 @@
+{
+    "puzzle_id": 104,
+    "ds": "2024-05-01",
+    "clue": "A token of our appreciation",
+    "theme_words": [
+        "iron",
+        "penguin",
+        "racecar",
+        "ship",
+        "thimble",
+        "wheelbarrow"
+    ],
+    "spangram": "monopoly",
+    "solved": true,
+    "theme_words_found": 5,
+    "theme_words_total": 6,
+    "candidates": 4466,
+    "truncated": false,
+    "solve_time": "0:00:02.014"
+}

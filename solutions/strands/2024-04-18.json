@@ -1,0 +1,21 @@
+{
+    "puzzle_id": 64,
+    "ds": "2024-04-18",
+    "clue": "Sew what?",
+    "theme_words": [
+        "cloth",
+        "needle",
+        "patch",
+        "seam",
+        "stitch",
+        "thimble",
+        "thread"
+    ],
+    "spangram": "tailoring",
+    "solved": false,
+    "theme_words_found": 6,
+    "theme_words_total": 7,
+    "candidates": 28047,
+    "truncated": true,
+    "solve_time": "0:01:05.317"
+}

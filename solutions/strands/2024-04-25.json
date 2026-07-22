@@ -1,0 +1,21 @@
+{
+    "puzzle_id": 55,
+    "ds": "2024-04-25",
+    "clue": "That’s cap!",
+    "theme_words": [
+        "beanie",
+        "beret",
+        "bonnet",
+        "crown",
+        "fedora",
+        "helmet",
+        "turban"
+    ],
+    "spangram": "headwear",
+    "solved": false,
+    "theme_words_found": 4,
+    "theme_words_total": 7,
+    "candidates": 22605,
+    "truncated": true,
+    "solve_time": "0:01:05.327"
+}

@@ -1,0 +1,20 @@
+{
+    "puzzle_id": 140,
+    "ds": "2024-05-11",
+    "clue": "It's a date!",
+    "theme_words": [
+        "boutonniere",
+        "corsage",
+        "court",
+        "dance",
+        "dress",
+        "tuxedo"
+    ],
+    "spangram": "promnight",
+    "solved": true,
+    "theme_words_found": 6,
+    "theme_words_total": 6,
+    "candidates": 3,
+    "truncated": false,
+    "solve_time": "0:00:00.349"
+}

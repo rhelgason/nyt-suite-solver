@@ -1,0 +1,21 @@
+{
+    "puzzle_id": 300,
+    "ds": "2024-04-23",
+    "clue": "As easy as pie",
+    "theme_words": [
+        "butter",
+        "flour",
+        "pecan",
+        "salt",
+        "sugar",
+        "syrup",
+        "vanilla"
+    ],
+    "spangram": "ingredients",
+    "solved": true,
+    "theme_words_found": 7,
+    "theme_words_total": 7,
+    "candidates": 1,
+    "truncated": false,
+    "solve_time": "0:00:00.947"
+}

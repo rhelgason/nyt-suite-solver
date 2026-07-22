@@ -1,0 +1,21 @@
+{
+    "puzzle_id": 4,
+    "ds": "2024-05-08",
+    "clue": "Can you digit?",
+    "theme_words": [
+        "bacon",
+        "binary",
+        "dance",
+        "lucky",
+        "serial",
+        "telephone",
+        "whole"
+    ],
+    "spangram": "numbers",
+    "solved": true,
+    "theme_words_found": 7,
+    "theme_words_total": 7,
+    "candidates": 154,
+    "truncated": false,
+    "solve_time": "0:00:02.671"
+}
