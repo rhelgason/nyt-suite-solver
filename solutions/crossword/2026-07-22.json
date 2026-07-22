@@ -4,14 +4,71 @@
     "width": 5,
     "height": 5,
     "solved": false,
-    "cells_correct": 10,
+    "cells_correct": 11,
     "cells_total": 19,
     "grid": [
         "# # H E N",
-        "# B O D Y",
-        "B A D D Y",
-        "A B L Y #",
-        "R A W # #"
+        "# E D G E",
+        "G R A V Y",
+        "A I D Y #",
+        "D R Y # #"
     ],
-    "solve_time": "0:00:02.696"
+    "llm_answers": {
+        "A1": [
+            "HEN",
+            "MOM",
+            "DAM"
+        ],
+        "A4": [
+            "EDGE",
+            "ROLE",
+            "ACTS",
+            "LADY"
+        ],
+        "A5": [
+            "GRAVY",
+            "PEACH",
+            "IDEAL",
+            "SUPER"
+        ],
+        "A6": [
+            "AIDY",
+            "KOBE",
+            "BRYN",
+            "ABBY"
+        ],
+        "A7": [
+            "DRY",
+            "BAD",
+            "OFF",
+            "TOO"
+        ],
+        "D1": [
+            "USFUL",
+            "NURSE",
+            "ASSET",
+            "AIDED"
+        ],
+        "D2": [
+            "EDDY",
+            "GYRE",
+            "WHIR",
+            "SWIR"
+        ],
+        "D3": [
+            "NYY"
+        ],
+        "D4": [
+            "LAIR",
+            "BASE",
+            "HIDE"
+        ],
+        "D5": [
+            "BAD",
+            "DRY",
+            "OFF",
+            "TOO"
+        ]
+    },
+    "solve_time": "0:00:03.309"
 }

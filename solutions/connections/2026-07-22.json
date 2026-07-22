@@ -58,49 +58,64 @@
         }
     ],
     "solved": false,
-    "groups_found": 0,
+    "groups_found": 1,
     "mistakes": 4,
     "guesses": [
         {
             "guess": [
+                "HIVES",
                 "HOLE",
-                "PINS",
-                "SNAPS",
-                "STROKES"
+                "STROKES",
+                "WHITE STRIPES"
             ],
             "result": "wrong",
+            "connection": "Rock bands",
             "one_away": false
         },
         {
             "guess": [
                 "HIVES",
-                "HOOVES",
+                "ITCHING",
+                "RASH",
+                "REDNESS"
+            ],
+            "result": "correct",
+            "group": "SYMPTOMS OF AN ALLERGIC REACTION",
+            "connection": "Symptoms of an allergic reaction"
+        },
+        {
+            "guess": [
+                "HOLE",
+                "STROKES",
                 "VINES",
                 "WHITE STRIPES"
             ],
             "result": "wrong",
+            "connection": "Rock bands",
             "one_away": false
         },
         {
             "guess": [
-                "ITCHING",
+                "HOOVES",
                 "MANE",
-                "RASH",
-                "REDNESS"
+                "PINS",
+                "TAIL"
             ],
             "result": "wrong",
+            "connection": "Parts of animals",
             "one_away": true
         },
         {
             "guess": [
-                "ITCHING",
+                "HOOVES",
                 "MANE",
-                "RASH",
+                "SNAPS",
                 "TAIL"
             ],
             "result": "wrong",
-            "one_away": false
+            "connection": "Parts or actions associated with animals",
+            "one_away": true
         }
     ],
-    "solve_time": "0:00:06.644"
+    "solve_time": "0:00:11.530"
 }
