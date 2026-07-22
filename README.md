@@ -1,9 +1,11 @@
 # nyt-suite-solver
 
 Algorithms that solve the daily New York Times puzzle suite and log how
-effectively each puzzle was solved. Every solver is a real algorithm with no AI
-or LLM calls. It runs every day on its own via GitHub Actions, with no server
-required, and can also be used interactively or headlessly.
+effectively each puzzle was solved. Solvers are algorithmic wherever possible
+(no AI); the two games with no clean algorithm, Connections and the Mini
+crossword, use an LLM, and even the Mini keeps its grid fill deterministic. It
+runs every day on its own via GitHub Actions, with no server required, and can
+also be used interactively or headlessly.
 
 <!-- STATS:START -->
 ## Lifetime results
@@ -19,6 +21,8 @@ _Auto-generated from `solutions/` · **3927** puzzles solved across 5 games (thr
 <tr><td>Wordle (easy)</td><td>1860</td><td>3.8 guesses</td><td>7.10 s</td></tr>
 <tr><td>Wordle (hard)</td><td>1860</td><td>3.9 guesses</td><td>492 ms</td></tr>
 <tr><td>Strands</td><td>189</td><td>76% words</td><td>65.37 s</td></tr>
+<tr><td>Connections</td><td>0</td><td>n/a</td><td>n/a</td></tr>
+<tr><td>Mini Crossword</td><td>0</td><td>n/a</td><td>n/a</td></tr>
 </table>
 </div>
 <!-- STATS:END -->
@@ -96,6 +100,34 @@ fun of it.
 
 <p align="center"><img src="stats/strands_outcomes.svg" alt="Strands outcomes" width="520"></p>
 
+### Connections
+
+Connections splits 16 words into 4 hidden groups joined by wordplay, trivia, or a
+shared prefix, which has no clean algorithm, so this is a deliberate LLM solver.
+It never sees the answer key while solving: the model is shown only the remaining
+words and asked for its most confident group, and the solver plays the real game
+against the secret categories with the actual four-mistake budget and "one away"
+feedback. The LLM runs on GitHub Models using the daily workflow's built-in token,
+so it stays free with no API key to manage; if the model is unavailable the game
+is simply recorded as unsolved. The score reflects realistic play rather than a
+trivial win, since a wrong group costs a mistake just as it would for a person.
+
+<p align="center"><img src="stats/connections_outcomes.svg" alt="Connections outcomes" width="520"></p>
+
+### Mini crossword
+
+The Mini is the project's clearest hybrid: an LLM answers the clues, but a
+deterministic search fills the grid. In one batched call the model proposes a few
+candidate answers per clue at the exact required length; a backtracking
+constraint solver then tiles the 5x5 so every crossing letter agrees, using a
+human wordlist as backup, so a wrong clue answer is corrected by its crossings
+instead of poisoning the grid. Any slot it still cannot place is re-queried once
+with the known letters shown, then the search runs again. Only the Mini is free
+to fetch; the full-size Daily and Sunday crosswords are locked behind a NYT
+subscription, so they are intentionally left out.
+
+<p align="center"><img src="stats/crossword_outcomes.svg" alt="Mini crossword outcomes" width="520"></p>
+
 ## Running it yourself
 
 The `make` targets create an isolated virtualenv on first run, so nothing
@@ -106,9 +138,20 @@ Interactive terminal UI:
 make run
 ```
 
-Solve headlessly (all games today, a specific Spelling Bee date, or a backfill):
+Solve headlessly (all games today, a specific date, or a backfill):
 ```
 .venv/bin/python src/cli.py
 .venv/bin/python src/cli.py --game spelling-bee --date 2026-07-20
 .venv/bin/python src/cli.py --game spelling-bee --backfill
+```
+
+Connections and the Mini crossword call an LLM. In GitHub Actions this is free
+via GitHub Models (the workflow's `GITHUB_TOKEN` with `models: read`). To run
+them locally, export a provider credential first, otherwise they record an
+unsolved result:
+```
+export GITHUB_TOKEN=...   # a PAT with the Models permission
+# or: export GEMINI_API_KEY=...   # free-tier fallback
+.venv/bin/python src/cli.py --game connections
+.venv/bin/python src/cli.py --game crossword
 ```

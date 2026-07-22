@@ -22,6 +22,8 @@ import time
 import traceback
 
 from menu_options import SudokuDifficultyOptions
+from solvers.connections.ConnectionsSolver import ConnectionsSolver
+from solvers.crossword.MiniCrosswordSolver import MiniCrosswordSolver
 from solvers.letter_boxed.LetterBoxedSolver import LetterBoxedSolver
 from solvers.scraping import fetch_game_data
 from solvers.spelling_bee.SpellingBeeSolver import SpellingBeeSolver, BASE_URL as SPELLING_BEE_BASE_URL
@@ -29,12 +31,12 @@ from solvers.strands.StrandsSolver import StrandsSolver
 from solvers.sudoku.SudokuSolver import SudokuSolver
 from solvers.wordle.WordleSolver import WordleSolver
 
-GAMES = ["letter-boxed", "spelling-bee", "sudoku", "wordle", "strands"]
+GAMES = ["letter-boxed", "spelling-bee", "sudoku", "wordle", "strands", "connections", "crossword"]
 DATE_FORMAT = "%Y-%m-%d"
 
 # Letter Boxed and Sudoku only expose today's puzzle; Spelling Bee serves a short
-# archive, and Wordle and Strands serve their full history, so a non-today date
-# works for those.
+# archive, and Wordle, Strands, Connections and the Mini crossword serve their
+# full history, so a non-today date works for those.
 TODAY_ONLY_GAMES = {"letter-boxed", "sudoku"}
 
 # Games with a full date-addressable history and the earliest date NYT serves.
@@ -157,6 +159,10 @@ def build_jobs(args) -> List:
                 jobs.append((f"wordle {mode} {ds}", lambda ds=ds, hard=hard: WordleSolver(ds, hard=hard).solve()))
         elif game == "strands":
             jobs.append((f"strands {ds}", lambda ds=ds: StrandsSolver(ds).solve()))
+        elif game == "connections":
+            jobs.append((f"connections {ds}", lambda ds=ds: ConnectionsSolver(ds).solve()))
+        elif game == "crossword":
+            jobs.append((f"crossword {ds}", lambda ds=ds: MiniCrosswordSolver(ds).solve()))
 
     return jobs
 

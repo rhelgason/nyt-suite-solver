@@ -6,9 +6,12 @@ on:
     - cron: "30 8 * * *"
   workflow_dispatch:
 
-# allow the workflow to commit the day's solutions back to the repo
+# allow the workflow to commit the day's solutions back to the repo, and to call
+# GitHub Models (the free, token-authenticated LLM used by Connections and the
+# Mini crossword -- no external API key required)
 permissions:
   contents: write
+  models: read
 
 concurrency:
   group: daily-solve
@@ -36,6 +39,11 @@ jobs:
       - name: Solve today's puzzles
         id: solve
         continue-on-error: true
+        env:
+          # GitHub Models authenticates with the built-in workflow token; the
+          # optional GEMINI_API_KEY secret, if set, is used as a fallback.
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: python src/cli.py --game all
 
       - name: Regenerate README stats

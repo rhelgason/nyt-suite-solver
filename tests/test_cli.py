@@ -24,6 +24,8 @@ def test_build_jobs_all_today(monkeypatch):
         "wordle easy 2026-01-01",
         "wordle hard 2026-01-01",
         "strands 2026-01-01",
+        "connections 2026-01-01",
+        "crossword 2026-01-01",
     ]
 
 
@@ -36,6 +38,8 @@ def test_build_jobs_past_date_skips_today_only_games(monkeypatch):
         "wordle easy 2025-12-01",
         "wordle hard 2025-12-01",
         "strands 2025-12-01",
+        "connections 2025-12-01",
+        "crossword 2025-12-01",
     ]
 
 
@@ -107,12 +111,15 @@ def _stub_solvers(monkeypatch, sudoku=_FakeSolver):
     monkeypatch.setattr(cli, "SudokuSolver", sudoku)
     monkeypatch.setattr(cli, "WordleSolver", _FakeSolver)
     monkeypatch.setattr(cli, "StrandsSolver", _FakeSolver)
+    monkeypatch.setattr(cli, "ConnectionsSolver", _FakeSolver)
+    monkeypatch.setattr(cli, "MiniCrosswordSolver", _FakeSolver)
 
 
 def test_run_all_ok(monkeypatch, capsys):
     _stub_solvers(monkeypatch)
     assert cli.run(["--game", "all"]) == 0
-    assert "8/8 solved" in capsys.readouterr().out  # LB + SB + 3 sudoku + 2 wordle + strands
+    # LB + SB + 3 sudoku + 2 wordle + strands + connections + crossword
+    assert "10/10 solved" in capsys.readouterr().out
 
 
 def test_run_reports_failures_with_nonzero_exit(monkeypatch, capsys):
@@ -120,4 +127,4 @@ def test_run_reports_failures_with_nonzero_exit(monkeypatch, capsys):
     assert cli.run(["--game", "all"]) == 1
     out = capsys.readouterr().out
     assert "FAIL" in out
-    assert "5/8 solved" in out  # LB + SB + 2 wordle + strands succeed, 3 sudoku fail
+    assert "7/10 solved" in out  # all but the 3 sudoku jobs succeed

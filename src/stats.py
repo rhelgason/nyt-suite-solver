@@ -179,11 +179,59 @@ def summarize_strands(records: List[Record]) -> dict:
     }
 
 
+def summarize_connections(records: List[Record]) -> dict:
+    by_ds = _by_date(records)
+    dates = sorted(by_ds)
+    solved = perfect = with_mistakes = failed = 0
+    for d in dates:
+        rec = by_ds[d]
+        if rec.get("solved"):
+            solved += 1
+            if (rec.get("mistakes") or 0) == 0:
+                perfect += 1
+            else:
+                with_mistakes += 1
+        else:
+            failed += 1
+    solve_rate = solved / len(dates) * 100 if dates else None
+    return {
+        "count": len(dates),
+        "solve_rate": solve_rate,
+        "outcome": {"perfect": perfect, "with_mistakes": with_mistakes, "failed": failed},
+        "p90_ms": _percentile(_runtimes_ms(records), 90),
+        "score_cell": f"{solve_rate:.0f}%" if solve_rate is not None else "n/a",
+    }
+
+
+def summarize_crossword(records: List[Record]) -> dict:
+    by_ds = _by_date(records)
+    dates = sorted(by_ds)
+    accuracies, solved = [], 0
+    for d in dates:
+        rec = by_ds[d]
+        total = rec.get("cells_total") or 0
+        correct = rec.get("cells_correct") or 0
+        if total:
+            accuracies.append(correct / total * 100)
+        if rec.get("solved"):
+            solved += 1
+    avg_accuracy = sum(accuracies) / len(accuracies) if accuracies else None
+    return {
+        "count": len(dates),
+        "avg_accuracy": avg_accuracy,
+        "outcome": {"solved": solved, "partial": len(dates) - solved},
+        "p90_ms": _percentile(_runtimes_ms(records), 90),
+        "score_cell": f"{avg_accuracy:.0f}% cells" if avg_accuracy is not None else "n/a",
+    }
+
+
 ASSETS_DIR = os.path.join(REPO_ROOT, "stats")
 SCORES_SVG_REL = "stats/spelling_bee_scores.svg"
 WORDS_SVG_REL = "stats/letter_boxed_words.svg"
 WORDLE_SVG_REL = "stats/wordle_guesses.svg"
 STRANDS_SVG_REL = "stats/strands_outcomes.svg"
+CONNECTIONS_SVG_REL = "stats/connections_outcomes.svg"
+CROSSWORD_SVG_REL = "stats/crossword_outcomes.svg"
 
 
 # score buckets for the pie, with a red-to-green (worse-to-better) palette
@@ -265,7 +313,32 @@ def strands_outcomes_pie_svg(s: dict) -> Optional[str]:
     return svg_charts.pie_chart("Strands Outcomes", slices)
 
 
-GAMES = ("spelling_bee", "letter_boxed", "sudoku", "wordle", "strands")
+def connections_outcomes_pie_svg(s: dict) -> Optional[str]:
+    outcome = s.get("outcome") or {}
+    slices = [
+        ("Solved, no mistakes", outcome.get("perfect", 0), "#16a34a"),
+        ("Solved with mistakes", outcome.get("with_mistakes", 0), "#f59e0b"),
+        ("Failed", outcome.get("failed", 0), "#dc2626"),
+    ]
+    slices = [(label, value, color) for label, value, color in slices if value > 0]
+    if not slices:
+        return None
+    return svg_charts.pie_chart("Connections Outcomes", slices)
+
+
+def crossword_outcomes_pie_svg(s: dict) -> Optional[str]:
+    outcome = s.get("outcome") or {}
+    slices = [
+        ("Fully solved", outcome.get("solved", 0), "#16a34a"),
+        ("Partial", outcome.get("partial", 0), "#f59e0b"),
+    ]
+    slices = [(label, value, color) for label, value, color in slices if value > 0]
+    if not slices:
+        return None
+    return svg_charts.pie_chart("Mini Crossword Outcomes", slices)
+
+
+GAMES = ("spelling_bee", "letter_boxed", "sudoku", "wordle", "strands", "connections", "crossword")
 
 
 def build_section(root: str = SOLUTIONS_ROOT) -> str:
@@ -279,6 +352,8 @@ def build_section(root: str = SOLUTIONS_ROOT) -> str:
     wd_easy = summarize_wordle(games["wordle"], "easy")
     wd_hard = summarize_wordle(games["wordle"], "hard")
     st = summarize_strands(games["strands"])
+    cn = summarize_connections(games["connections"])
+    cw = summarize_crossword(games["crossword"])
     rows = [
         ("Spelling Bee", sb),
         ("Letter Boxed", lb),
@@ -286,6 +361,8 @@ def build_section(root: str = SOLUTIONS_ROOT) -> str:
         ("Wordle (easy)", wd_easy),
         ("Wordle (hard)", wd_hard),
         ("Strands", st),
+        ("Connections", cn),
+        ("Mini Crossword", cw),
     ]
     total = sum(s["count"] for _, s in rows)
     played = sum(1 for g in GAMES if games[g])
@@ -318,6 +395,8 @@ def write_assets(root: str = SOLUTIONS_ROOT, assets_dir: str = ASSETS_DIR) -> No
             summarize_wordle(games["wordle"], "easy"), summarize_wordle(games["wordle"], "hard")
         ),
         "strands_outcomes.svg": strands_outcomes_pie_svg(summarize_strands(games["strands"])),
+        "connections_outcomes.svg": connections_outcomes_pie_svg(summarize_connections(games["connections"])),
+        "crossword_outcomes.svg": crossword_outcomes_pie_svg(summarize_crossword(games["crossword"])),
     }
     os.makedirs(assets_dir, exist_ok=True)
     for name, svg in assets.items():
