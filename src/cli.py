@@ -22,12 +22,13 @@ from solvers.letter_boxed.LetterBoxedSolver import LetterBoxedSolver
 from solvers.scraping import fetch_game_data
 from solvers.spelling_bee.SpellingBeeSolver import SpellingBeeSolver, BASE_URL as SPELLING_BEE_BASE_URL
 from solvers.sudoku.SudokuSolver import SudokuSolver
+from solvers.wordle.WordleSolver import WordleSolver
 
-GAMES = ["letter-boxed", "spelling-bee", "sudoku"]
+GAMES = ["letter-boxed", "spelling-bee", "sudoku", "wordle"]
 DATE_FORMAT = "%Y-%m-%d"
 
-# Letter Boxed and Sudoku only expose today's puzzle; only Spelling Bee serves a
-# (short) archive, so a non-today date is only meaningful there.
+# Letter Boxed and Sudoku only expose today's puzzle; Spelling Bee serves a short
+# archive and Wordle serves its full history, so a non-today date works for those.
 TODAY_ONLY_GAMES = {"letter-boxed", "sudoku"}
 
 
@@ -86,6 +87,8 @@ def build_jobs(args) -> List:
             for diff in _difficulties(args.difficulty):
                 label = f"sudoku {diff.value.lower()} {ds}"
                 jobs.append((label, lambda diff=diff: SudokuSolver(diff).solve()))
+        elif game == "wordle":
+            jobs.append((f"wordle {ds}", lambda ds=ds: WordleSolver(ds).solve()))
 
     return jobs
 

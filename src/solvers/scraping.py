@@ -34,18 +34,32 @@ def parse_game_data(html: str, source: str = "") -> Dict[str, Any]:
     return json.loads(match.group(1))
 
 
+def _get_with_retries(url: str):
+    """GET a URL with browser-like headers, a timeout, and a few retries."""
+    last_error = None
+    for _ in range(MAX_ATTEMPTS):
+        try:
+            response = requests.get(url, headers=DEFAULT_HEADERS, timeout=REQUEST_TIMEOUT)
+            response.raise_for_status()
+            return response
+        except requests.RequestException as e:
+            last_error = e
+    raise PuzzleDataNotFound(f"Failed to fetch {url}: {last_error}")
+
+
 def fetch_game_data(url: str) -> Dict[str, Any]:
     """Fetch a NYT puzzle page and return its parsed gameData dict.
 
     Retries transient request failures a few times before giving up so that a
     single flaky network moment does not fail an automated daily run.
     """
-    last_error = None
-    for _ in range(MAX_ATTEMPTS):
-        try:
-            response = requests.get(url, headers=DEFAULT_HEADERS, timeout=REQUEST_TIMEOUT)
-            response.raise_for_status()
-            return parse_game_data(response.text, url)
-        except requests.RequestException as e:
-            last_error = e
-    raise PuzzleDataNotFound(f"Failed to fetch game data from {url}: {last_error}")
+    return parse_game_data(_get_with_retries(url).text, url)
+
+
+def fetch_json(url: str) -> Dict[str, Any]:
+    """Fetch a NYT JSON API endpoint (e.g. Wordle) and return the decoded dict."""
+    response = _get_with_retries(url)
+    try:
+        return response.json()
+    except ValueError as e:
+        raise PuzzleDataNotFound(f"Response from {url} was not valid JSON: {e}")
