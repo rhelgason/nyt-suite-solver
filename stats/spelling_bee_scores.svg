@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="560" height="320" viewBox="0 0 560 320" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="12">
 <rect width="560" height="320" fill="#ffffff"/>
-<text x="280" y="26" text-anchor="middle" font-size="16" font-weight="600" fill="#1a1a1a">Spelling Bee score distribution (lifetime)</text>
+<text x="280" y="26" text-anchor="middle" font-size="16" font-weight="600" fill="#1a1a1a">Spelling Bee Score Distribution</text>
 <path d="M 165 178 L 165.0 60.0 A 118 118 0 0 1 267.2 237.0 Z" fill="#84cc16"/>
 <path d="M 165 178 L 267.2 237.0 A 118 118 0 1 1 165.0 60.0 Z" fill="#16a34a"/>
 <rect x="330" y="85" width="14" height="14" rx="2" fill="#84cc16"/>

@@ -1,40 +1,65 @@
 # nyt-suite-solver
 
 Algorithms that solve the daily New York Times puzzle suite and log how
-effectively each puzzle was solved. It runs every day on its own via GitHub
-Actions, with no server required, and can also be used interactively or
-headlessly.
-
-## Games & solvers
-
-| Game | Approach | Word source |
-|------|----------|-------------|
-| Letter Boxed | Trie-backed search for 1 or 2 word solutions covering all sides | `wordlist_small.txt` |
-| Spelling Bee | Trie word search, scored to a rank (Beginner to Queen Bee) | `wordlist.txt` |
-| Sudoku | Donald Knuth's Dancing Links / Algorithm X exact cover (C++) | scraped board |
-
-All solvers are **fully algorithmic, with no AI or LLM calls.** Puzzles are
-scraped from the NYT site and results are written to `solutions/<game>/`.
+effectively each puzzle was solved. Every solver is a real algorithm with no AI
+or LLM calls. It runs every day on its own via GitHub Actions, with no server
+required, and can also be used interactively or headlessly.
 
 <!-- STATS:START -->
 ## Lifetime results
 
 _Auto-generated from `solutions/` · **13** puzzles solved across 3 games (through 2026-07-21)._
 
-| Game | Puzzles | Lifetime performance |
-| --- | ---: | --- |
-| Spelling Bee | 9 | avg score **99.5%** · Queen Bee on **67%** of puzzles |
-| Letter Boxed | 1 | avg **2.0** valid solutions · **100%** solved |
-| Sudoku | 3 | **100%** solved · avg **0.18 ms** |
+| Game | Puzzles | Avg score | p90 runtime |
+| --- | ---: | ---: | ---: |
+| Spelling Bee | 9 | 99.5% | 92 ms |
+| Letter Boxed | 1 | 2.0 words | 110 ms |
+| Sudoku | 3 | 100% | 0.23 ms |
 
-![Cumulative puzzles solved by game](stats/cumulative_solves.svg)
-
-![Spelling Bee score distribution](stats/spelling_bee_scores.svg)
+<p align="center"><img src="stats/cumulative_solves.svg" alt="Cumulative Puzzles Solved" width="720"></p>
 <!-- STATS:END -->
 
 The results above refresh automatically: a scheduled GitHub Actions workflow
 solves every game each morning and commits the new results, so this page stays
 up to date with no hosted service.
+
+## How the solvers work
+
+### Spelling Bee
+
+Spelling Bee shows seven letters, one of them required, and asks for every word
+that uses only those letters and includes the required one. The solver loads a
+human wordlist into a trie and walks it to collect the valid words and pangrams,
+scoring each by length with a bonus for pangrams. That score is compared against
+the puzzle's official answer list to produce a percentage and a rank from
+Beginner up to Queen Bee. Because it searches a realistic vocabulary rather than
+the official answers, the result reflects how well that vocabulary covers each
+day's puzzle.
+
+<p align="center"><img src="stats/spelling_bee_scores.svg" alt="Spelling Bee score distribution" width="520"></p>
+
+### Letter Boxed
+
+Letter Boxed puts twelve letters on the four sides of a square and asks you to
+spell a chain of words that uses every letter, where each word begins with the
+previous word's last letter and no two consecutive letters share a side. The
+solver builds a trie of board-legal words from a human wordlist and runs a
+depth-first search for the shortest chain, capped at two words, that covers all
+twelve letters. Candidate solutions are then checked against NYT's accepted
+dictionary. The chart below shows how often the puzzle is solvable in a single
+word versus two.
+
+<p align="center"><img src="stats/letter_boxed_words.svg" alt="Letter Boxed words per solution" width="520"></p>
+
+### Sudoku
+
+Sudoku is treated as an exact-cover problem and solved with Donald Knuth's
+Algorithm X using the Dancing Links technique, written as a C++ extension. Every
+cell, row, column, and box rule becomes a column in a sparse matrix of
+doubly-linked nodes, and the algorithm repeatedly covers the most-constrained
+column and backtracks until each rule is satisfied exactly once. It finds the
+unique solution in well under a millisecond on every difficulty, so there is no
+chart here; the p90 runtime above tells the whole story.
 
 ## Running it yourself
 

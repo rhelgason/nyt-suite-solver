@@ -18,7 +18,7 @@ def test_as_list_handles_list_and_legacy_string():
     assert as_list(None) == []
 
 
-def test_build_section_summarizes_each_game(tmp_path):
+def test_build_section_table_and_chart(tmp_path):
     root = str(tmp_path)
     _write(root, "spelling_bee", "2026-01-01.json", {"ds": "2026-01-01", "percentage": 100, "rank": "QUEEN_BEE"})
     _write(root, "spelling_bee", "2026-01-02.json", {"ds": "2026-01-02", "percentage": 50, "rank": "AMAZING"})
@@ -30,22 +30,19 @@ def test_build_section_summarizes_each_game(tmp_path):
     section = build_section(root)
     assert "## Lifetime results" in section
     assert "**4** puzzles solved across 3 games (through 2026-01-02)" in section
-    assert "avg score **75.0%**" in section                 # (100 + 50) / 2
-    assert "Queen Bee on **50%** of puzzles" in section      # 1 of 2
-    assert "**100%** solved" in section                      # letter boxed + sudoku
-    # both charts are referenced as committed SVG images; no Mermaid remains
-    assert "![Cumulative puzzles solved by game](stats/cumulative_solves.svg)" in section
-    assert "![Spelling Bee score distribution](stats/spelling_bee_scores.svg)" in section
-    assert "```mermaid" not in section
+    assert "| Game | Puzzles | Avg score | p90 runtime |" in section
+    assert "| Spelling Bee | 2 | 75.0% | n/a |" in section          # (100 + 50) / 2, no timings
+    assert "| Letter Boxed | 1 | 2.0 words | n/a |" in section
+    assert "| Sudoku | 1 | 100% | 0.20 ms |" in section
+    # cumulative line chart is a centered SVG image
+    assert '<p align="center"><img src="stats/cumulative_solves.svg"' in section
 
 
-def test_charts_omitted_for_single_date(tmp_path):
+def test_cumulative_chart_omitted_for_single_date(tmp_path):
     root = str(tmp_path)
     _write(root, "spelling_bee", "2026-01-01.json", {"ds": "2026-01-01", "percentage": 100, "rank": "QUEEN_BEE"})
     section = build_section(root)
-    # one date and one score -> neither the line nor the pie is drawn
-    assert "cumulative_solves.svg" not in section
-    assert "spelling_bee_scores.svg" not in section
+    assert "cumulative_solves.svg" not in section  # need >= 2 dates to draw the line
 
 
 def test_cumulative_svg_is_valid_and_time_scaled(tmp_path):
@@ -99,6 +96,23 @@ def test_score_pie_svg(tmp_path):
     # three non-empty buckets (90-94, 95-99, 100) -> three pie slices + legend rows
     assert svg.count("<path") == 3
     assert "100: 2 (50%)" in svg  # two perfect scores of four puzzles
+
+
+def test_word_count_pie_svg(tmp_path):
+    import xml.etree.ElementTree as ET
+
+    from stats import load_game, summarize_letter_boxed, word_count_pie_svg
+
+    root = str(tmp_path)
+    _write(root, "letter_boxed", "2026-01-01.json", {"ds": "2026-01-01", "shortest_answer_length": 1})
+    _write(root, "letter_boxed", "2026-01-02.json", {"ds": "2026-01-02", "shortest_answer_length": 2})
+    _write(root, "letter_boxed", "2026-01-03.json", {"ds": "2026-01-03", "shortest_answer_length": 2})
+
+    svg = word_count_pie_svg(summarize_letter_boxed(load_game(root, "letter_boxed")))
+    ET.fromstring(svg)  # well-formed XML
+    assert svg.count("<path") == 2               # "1 word" and "2 words" slices
+    assert "1 word: 1 (33%)" in svg
+    assert "2 words: 2 (67%)" in svg
 
 
 def test_build_section_empty(tmp_path):

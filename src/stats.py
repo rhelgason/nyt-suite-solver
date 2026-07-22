@@ -61,82 +61,72 @@ def as_list(value) -> list:
             return []
     return []
 
+def _ceil_div(a: int, b: int) -> int:
+    return -(-a // b)
+
+
+def _percentile(values: List[float], p: int) -> Optional[float]:
+    if not values:
+        return None
+    ordered = sorted(values)
+    rank = max(1, _ceil_div(p * len(ordered), 100))  # nearest-rank method
+    return ordered[min(rank, len(ordered)) - 1]
+
+
+def _runtimes_ms(records: List[Record]) -> List[float]:
+    times = [solve_time_ms(data.get("solve_time", "")) for _, data in records]
+    return [t for t in times if t is not None]
+
+
+def _format_runtime(ms: Optional[float]) -> str:
+    if ms is None:
+        return "n/a"
+    if ms >= 1000:
+        return f"{ms / 1000:.2f} s"
+    if ms >= 1:
+        return f"{ms:.0f} ms"
+    return f"{ms:.2f} ms"
+
+
 def summarize_spelling_bee(records: List[Record]) -> dict:
     by_ds = _by_date(records)
     dates = sorted(by_ds)
     pcts = [by_ds[d]["percentage"] for d in dates if isinstance(by_ds[d].get("percentage"), (int, float))]
-    ranks = [by_ds[d]["rank"] for d in dates if by_ds[d].get("rank")]
     return {
         "count": len(dates),
         "percentages": pcts,
         "avg_pct": sum(pcts) / len(pcts) if pcts else None,
-        "best_pct": max(pcts) if pcts else None,
-        "queen_bee_rate": ranks.count("QUEEN_BEE") / len(ranks) * 100 if ranks else None,
-        "total_pangrams": sum(len(as_list(by_ds[d].get("pangrams"))) for d in dates),
+        "p90_ms": _percentile(_runtimes_ms(records), 90),
+        "score_cell": f"{sum(pcts) / len(pcts):.1f}%" if pcts else "n/a",
     }
 
 
 def summarize_letter_boxed(records: List[Record]) -> dict:
     by_ds = _by_date(records)
     dates = sorted(by_ds)
-    valids = [len(as_list(by_ds[d].get("valid_answers"))) for d in dates]
     shortest = [by_ds[d]["shortest_answer_length"] for d in dates if isinstance(by_ds[d].get("shortest_answer_length"), int)]
+    word_counts: Dict[int, int] = {}
+    for n in shortest:
+        word_counts[n] = word_counts.get(n, 0) + 1
+    avg_shortest = sum(shortest) / len(shortest) if shortest else None
     return {
         "count": len(dates),
-        "avg_valid": sum(valids) / len(valids) if valids else None,
-        "avg_shortest": sum(shortest) / len(shortest) if shortest else None,
-        "solved_rate": sum(1 for v in valids if v > 0) / len(valids) * 100 if valids else None,
+        "avg_shortest": avg_shortest,
+        "word_counts": word_counts,
+        "p90_ms": _percentile(_runtimes_ms(records), 90),
+        "score_cell": f"{avg_shortest:.1f} words" if avg_shortest is not None else "n/a",
     }
 
 
 def summarize_sudoku(records: List[Record]) -> dict:
-    by_difficulty: Dict[str, int] = {}
-    times, solved = [], 0
-    for name, data in records:
-        diff = name.rsplit("_", 1)[-1].split(".")[0] if "_" in name else "unknown"
-        by_difficulty[diff] = by_difficulty.get(diff, 0) + 1
-        if data.get("solved_puzzle"):
-            solved += 1
-        ms = solve_time_ms(data.get("solve_time", ""))
-        if ms is not None:
-            times.append(ms)
+    solved = sum(1 for _, data in records if data.get("solved_puzzle"))
+    solved_rate = solved / len(records) * 100 if records else None
     return {
         "count": len(records),
-        "by_difficulty": by_difficulty,
-        "solved_rate": solved / len(records) * 100 if records else None,
-        "avg_ms": sum(times) / len(times) if times else None,
+        "solved_rate": solved_rate,
+        "p90_ms": _percentile(_runtimes_ms(records), 90),
+        "score_cell": f"{solved_rate:.0f}%" if solved_rate is not None else "n/a",
     }
-
-
-def _spelling_bee_headline(s: dict) -> str:
-    if not s["count"]:
-        return "no puzzles yet"
-    parts = []
-    if s["avg_pct"] is not None:
-        parts.append(f"avg score **{s['avg_pct']:.1f}%**")
-    if s["queen_bee_rate"] is not None:
-        parts.append(f"Queen Bee on **{s['queen_bee_rate']:.0f}%** of puzzles")
-    return " · ".join(parts) if parts else "no puzzles yet"
-
-
-def _letter_boxed_headline(s: dict) -> str:
-    if not s["count"]:
-        return "no puzzles yet"
-    parts = []
-    if s["avg_valid"] is not None:
-        parts.append(f"avg **{s['avg_valid']:.1f}** valid solutions")
-    if s["solved_rate"] is not None:
-        parts.append(f"**{s['solved_rate']:.0f}%** solved")
-    return " · ".join(parts)
-
-
-def _sudoku_headline(s: dict) -> str:
-    if not s["count"]:
-        return "no puzzles yet"
-    parts = [f"**{s['solved_rate']:.0f}%** solved"]
-    if s["avg_ms"] is not None:
-        parts.append(f"avg **{s['avg_ms']:.2f} ms**")
-    return " · ".join(parts)
 
 
 # game order and colors used for the cumulative chart's legend/lines
@@ -149,6 +139,7 @@ CUMULATIVE_GAMES = [
 ASSETS_DIR = os.path.join(REPO_ROOT, "stats")
 CUMULATIVE_SVG_REL = "stats/cumulative_solves.svg"
 SCORES_SVG_REL = "stats/spelling_bee_scores.svg"
+WORDS_SVG_REL = "stats/letter_boxed_words.svg"
 
 
 def _parse_date(value: str) -> date:
@@ -158,10 +149,6 @@ def _parse_date(value: str) -> date:
 def _add_months(base: date, months: int) -> date:
     total = base.month - 1 + months
     return date(base.year + total // 12, total % 12 + 1, 1)
-
-
-def _ceil_div(a: int, b: int) -> int:
-    return -(-a // b)
 
 
 def time_axis_ticks(dmin: date, dmax: date, target: int = 7) -> List[Tuple[float, str]]:
@@ -220,7 +207,7 @@ def cumulative_solves_svg(games: Dict[str, List[Record]]) -> Optional[str]:
         (name, color, [bisect.bisect_right(per_game[key], d) for d in all_dates])
         for key, name, color in CUMULATIVE_GAMES
     ]
-    return svg_charts.line_chart("Cumulative puzzles solved", x_values, series, "Puzzles solved", ticks)
+    return svg_charts.line_chart("Cumulative Puzzles Solved", x_values, series, "Puzzles solved", ticks)
 
 
 # score buckets for the pie, with a red-to-green (worse-to-better) palette
@@ -247,13 +234,28 @@ def _score_bucket(pct: float) -> int:
 
 def score_pie_svg(s: dict) -> Optional[str]:
     pcts = s.get("percentages") or []
-    if len(pcts) < 2:
+    if not pcts:
         return None
     counts = [0] * len(SCORE_BUCKETS)
     for pct in pcts:
         counts[_score_bucket(pct)] += 1
     slices = [(label, counts[i], color) for i, (label, color) in enumerate(SCORE_BUCKETS) if counts[i] > 0]
-    return svg_charts.pie_chart("Spelling Bee score distribution (lifetime)", slices)
+    return svg_charts.pie_chart("Spelling Bee Score Distribution", slices)
+
+
+# colors for the Letter Boxed words-per-solution pie (fewer words is better)
+WORD_COUNT_COLORS = {1: "#16a34a", 2: "#2563eb", 3: "#f59e0b"}
+
+
+def word_count_pie_svg(s: dict) -> Optional[str]:
+    counts = s.get("word_counts") or {}
+    if not counts:
+        return None
+    slices = []
+    for n in sorted(counts):
+        label = f"{n} word" if n == 1 else f"{n} words"
+        slices.append((label, counts[n], WORD_COUNT_COLORS.get(n, "#6b7280")))
+    return svg_charts.pie_chart("Letter Boxed Words per Solution", slices)
 
 
 def build_section(root: str = SOLUTIONS_ROOT) -> str:
@@ -272,28 +274,25 @@ def build_section(root: str = SOLUTIONS_ROOT) -> str:
 
     lines.append(f"_Auto-generated from `solutions/` · **{total}** puzzles solved across 3 games (through {latest})._")
     lines.append("")
-    lines.append("| Game | Puzzles | Lifetime performance |")
-    lines.append("| --- | ---: | --- |")
-    lines.append(f"| Spelling Bee | {sb['count']} | {_spelling_bee_headline(sb)} |")
-    lines.append(f"| Letter Boxed | {lb['count']} | {_letter_boxed_headline(lb)} |")
-    lines.append(f"| Sudoku | {sk['count']} | {_sudoku_headline(sk)} |")
+    lines.append("| Game | Puzzles | Avg score | p90 runtime |")
+    lines.append("| --- | ---: | ---: | ---: |")
+    lines.append(f"| Spelling Bee | {sb['count']} | {sb['score_cell']} | {_format_runtime(sb['p90_ms'])} |")
+    lines.append(f"| Letter Boxed | {lb['count']} | {lb['score_cell']} | {_format_runtime(lb['p90_ms'])} |")
+    lines.append(f"| Sudoku | {sk['count']} | {sk['score_cell']} | {_format_runtime(sk['p90_ms'])} |")
 
     if cumulative_solves_svg(games) is not None:
         lines.append("")
-        lines.append(f"![Cumulative puzzles solved by game]({CUMULATIVE_SVG_REL})")
-
-    if score_pie_svg(sb) is not None:
-        lines.append("")
-        lines.append(f"![Spelling Bee score distribution]({SCORES_SVG_REL})")
+        lines.append(f'<p align="center"><img src="{CUMULATIVE_SVG_REL}" alt="Cumulative Puzzles Solved" width="720"></p>')
     return "\n".join(lines)
 
 
 def write_assets(root: str = SOLUTIONS_ROOT, assets_dir: str = ASSETS_DIR) -> None:
-    """Write the committed chart image(s) referenced by the README section."""
+    """Write the committed chart images referenced by the README."""
     games = {g: load_game(root, g) for g in ("spelling_bee", "letter_boxed", "sudoku")}
     assets = {
         "cumulative_solves.svg": cumulative_solves_svg(games),
         "spelling_bee_scores.svg": score_pie_svg(summarize_spelling_bee(games["spelling_bee"])),
+        "letter_boxed_words.svg": word_count_pie_svg(summarize_letter_boxed(games["letter_boxed"])),
     }
     os.makedirs(assets_dir, exist_ok=True)
     for name, svg in assets.items():

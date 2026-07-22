@@ -34,14 +34,17 @@ headlessly (CI, cron) with no display. Keep it that way — never import the men
 layer from a solver.
 
 ### 4. Surface results without a hosted service
-Historical results live in the committed `solutions/*.json` and are rendered into
-an auto-generated `## Lifetime results` section of the README (between
-`<!-- STATS:START -->` / `<!-- STATS:END -->` markers) by `src/stats.py`. It
-emphasizes **lifetime aggregates** (totals/averages across all runs), not recent
-trends: an at-a-glance per-game table plus a GitHub-native Mermaid rank
-distribution (no committed images). The daily workflow regenerates it on every
-run. Deliberately **no hosted Web UI** — the README is the dashboard. If you add
-metrics, extend `stats.py` and keep it dependency-free (standard library only).
+Historical results live in the committed `solutions/*.json` and are rendered by
+`src/stats.py` into an auto-generated `## Lifetime results` section of the README
+(between `<!-- STATS:START -->` / `<!-- STATS:END -->` markers). It emphasizes
+**lifetime aggregates** (totals/averages across all runs), not recent trends: an
+at-a-glance per-game table (puzzles, avg score, p90 runtime) plus charts rendered
+as committed SVGs (`stats/*.svg`) via the dependency-free `src/svg_charts.py`
+(there is no Mermaid). Charts are centered with `<p align="center">` and the
+per-game write-ups in "How the solvers work" reference them. The daily workflow
+regenerates everything on every run. Deliberately **no hosted Web UI** — the
+README is the dashboard. If you add metrics, extend `stats.py` and keep both it
+and `svg_charts.py` standard-library only.
 
 ## Layout
 - `src/solvers/<game>/` — one solver class per game (pure logic + scraping)
