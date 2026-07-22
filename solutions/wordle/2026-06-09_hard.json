@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 4552,
+    "ds": "2026-06-09",
+    "mode": "hard",
+    "solution": "wharf",
+    "guesses": [
+        "tares",
+        "drain",
+        "clary",
+        "quark",
+        "wharf"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:00.095"
+}

@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 937,
+    "ds": "2026-07-01",
+    "mode": "hard",
+    "solution": "demur",
+    "guesses": [
+        "tares",
+        "pride",
+        "redox",
+        "decry",
+        "demur"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:00.078"
+}

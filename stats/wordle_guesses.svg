@@ -17,20 +17,20 @@
 <rect x="165.0" y="346.2" width="31.0" height="1.8" rx="1.5" fill="#a78bfa"/>
 <rect x="199.4" y="340.9" width="31.0" height="7.1" rx="1.5" fill="#7c3aed"/>
 <text x="199.4" y="366.0" text-anchor="middle" fill="#888">2</text>
-<rect x="263.3" y="267.0" width="31.0" height="81.0" rx="1.5" fill="#a78bfa"/>
-<rect x="297.7" y="267.7" width="31.0" height="80.3" rx="1.5" fill="#7c3aed"/>
+<rect x="263.3" y="265.5" width="31.0" height="82.5" rx="1.5" fill="#a78bfa"/>
+<rect x="297.7" y="265.6" width="31.0" height="82.4" rx="1.5" fill="#7c3aed"/>
 <text x="297.7" y="366.0" text-anchor="middle" fill="#888">3</text>
-<rect x="361.6" y="186.0" width="31.0" height="162.0" rx="1.5" fill="#a78bfa"/>
-<rect x="396.0" y="225.9" width="31.0" height="122.1" rx="1.5" fill="#7c3aed"/>
+<rect x="361.6" y="182.5" width="31.0" height="165.5" rx="1.5" fill="#a78bfa"/>
+<rect x="396.0" y="223.7" width="31.0" height="124.3" rx="1.5" fill="#7c3aed"/>
 <text x="396.0" y="366.0" text-anchor="middle" fill="#888">4</text>
-<rect x="459.9" y="317.1" width="31.0" height="30.9" rx="1.5" fill="#a78bfa"/>
-<rect x="494.3" y="299.8" width="31.0" height="48.2" rx="1.5" fill="#7c3aed"/>
+<rect x="459.9" y="316.5" width="31.0" height="31.5" rx="1.5" fill="#a78bfa"/>
+<rect x="494.3" y="298.8" width="31.0" height="49.2" rx="1.5" fill="#7c3aed"/>
 <text x="494.3" y="366.0" text-anchor="middle" fill="#888">5</text>
 <rect x="558.2" y="347.1" width="31.0" height="0.9" rx="1.5" fill="#a78bfa"/>
-<rect x="592.6" y="334.9" width="31.0" height="13.1" rx="1.5" fill="#7c3aed"/>
+<rect x="592.6" y="334.8" width="31.0" height="13.2" rx="1.5" fill="#7c3aed"/>
 <text x="592.6" y="366.0" text-anchor="middle" fill="#888">6</text>
-<rect x="656.5" y="347.7" width="31.0" height="0.3" rx="1.5" fill="#a78bfa"/>
-<rect x="690.9" y="341.8" width="31.0" height="6.2" rx="1.5" fill="#7c3aed"/>
+<rect x="656.5" y="347.5" width="31.0" height="0.5" rx="1.5" fill="#a78bfa"/>
+<rect x="690.9" y="341.6" width="31.0" height="6.4" rx="1.5" fill="#7c3aed"/>
 <text x="690.9" y="366.0" text-anchor="middle" fill="#888">X</text>
 <line x1="52" y1="348" x2="740" y2="348" stroke="#bbb"/>
 <line x1="52" y1="44" x2="52" y2="348" stroke="#bbb"/>

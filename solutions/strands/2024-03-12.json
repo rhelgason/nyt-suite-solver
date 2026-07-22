@@ -1,0 +1,21 @@
+{
+    "puzzle_id": 9,
+    "ds": "2024-03-12",
+    "clue": "Ruler’s decree",
+    "theme_words": [
+        "fathom",
+        "foot",
+        "furlong",
+        "inch",
+        "league",
+        "meter",
+        "yard"
+    ],
+    "spangram": "measurements",
+    "solved": true,
+    "theme_words_found": 7,
+    "theme_words_total": 7,
+    "candidates": 1,
+    "truncated": false,
+    "solve_time": "0:00:00.361"
+}

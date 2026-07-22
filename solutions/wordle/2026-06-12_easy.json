@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 2664,
+    "ds": "2026-06-12",
+    "mode": "easy",
+    "solution": "break",
+    "guesses": [
+        "tares",
+        "craal",
+        "bowed",
+        "break"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:01.486"
+}

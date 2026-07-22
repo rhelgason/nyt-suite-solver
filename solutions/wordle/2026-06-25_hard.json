@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1609,
+    "ds": "2026-06-25",
+    "mode": "hard",
+    "solution": "unity",
+    "guesses": [
+        "tares",
+        "litho",
+        "cubit",
+        "unity"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.100"
+}

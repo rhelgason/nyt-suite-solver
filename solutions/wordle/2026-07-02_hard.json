@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 2395,
+    "ds": "2026-07-02",
+    "mode": "hard",
+    "solution": "maven",
+    "guesses": [
+        "tares",
+        "laden",
+        "maven"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:00.080"
+}

@@ -1,0 +1,20 @@
+{
+    "puzzle_id": 14,
+    "ds": "2024-03-05",
+    "clue": "She’ll have a ball",
+    "theme_words": [
+        "dance",
+        "midnight",
+        "prince",
+        "pumpkin",
+        "slipper",
+        "spell"
+    ],
+    "spangram": "cinderella",
+    "solved": false,
+    "theme_words_found": 3,
+    "theme_words_total": 6,
+    "candidates": 1891,
+    "truncated": true,
+    "solve_time": "0:01:01.298"
+}

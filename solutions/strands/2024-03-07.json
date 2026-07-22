@@ -1,0 +1,21 @@
+{
+    "puzzle_id": 42,
+    "ds": "2024-03-07",
+    "clue": "Don’t do it!",
+    "theme_words": [
+        "envy",
+        "gluttony",
+        "greed",
+        "lust",
+        "pride",
+        "sloth",
+        "wrath"
+    ],
+    "spangram": "cardinalsins",
+    "solved": false,
+    "theme_words_found": 2,
+    "theme_words_total": 7,
+    "candidates": 17974,
+    "truncated": true,
+    "solve_time": "0:01:05.312"
+}

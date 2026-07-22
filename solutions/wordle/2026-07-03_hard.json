@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 2559,
+    "ds": "2026-07-03",
+    "mode": "hard",
+    "solution": "baton",
+    "guesses": [
+        "tares",
+        "haint",
+        "canto",
+        "baton"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.065"
+}

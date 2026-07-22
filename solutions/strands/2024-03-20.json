@@ -1,0 +1,21 @@
+{
+    "puzzle_id": 10,
+    "ds": "2024-03-20",
+    "clue": "Back and forth",
+    "theme_words": [
+        "civic",
+        "kayak",
+        "level",
+        "madam",
+        "noon",
+        "racecar",
+        "rotator"
+    ],
+    "spangram": "palindrome",
+    "solved": false,
+    "theme_words_found": 4,
+    "theme_words_total": 7,
+    "candidates": 23558,
+    "truncated": true,
+    "solve_time": "0:01:03.199"
+}

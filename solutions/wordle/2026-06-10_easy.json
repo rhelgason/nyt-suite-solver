@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 1114,
+    "ds": "2026-06-10",
+    "mode": "easy",
+    "solution": "align",
+    "guesses": [
+        "tares",
+        "colin",
+        "align"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:04.896"
+}

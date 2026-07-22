@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1760,
+    "ds": "2026-07-12",
+    "mode": "easy",
+    "solution": "clack",
+    "guesses": [
+        "tares",
+        "colin",
+        "chalk",
+        "clack"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:04.887"
+}

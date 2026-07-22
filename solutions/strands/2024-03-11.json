@@ -1,0 +1,21 @@
+{
+    "puzzle_id": 83,
+    "ds": "2024-03-11",
+    "clue": "To put it mildly",
+    "theme_words": [
+        "darn",
+        "fudge",
+        "gadzooks",
+        "golly",
+        "heck",
+        "jeepers",
+        "shoot"
+    ],
+    "spangram": "euphemisms",
+    "solved": true,
+    "theme_words_found": 7,
+    "theme_words_total": 7,
+    "candidates": 1,
+    "truncated": false,
+    "solve_time": "0:00:00.257"
+}

@@ -1,0 +1,20 @@
+{
+    "puzzle_id": 17,
+    "ds": "2024-03-21",
+    "clue": "What’s the issue?",
+    "theme_words": [
+        "highlights",
+        "people",
+        "seventeen",
+        "time",
+        "vogue",
+        "wired"
+    ],
+    "spangram": "magazines",
+    "solved": true,
+    "theme_words_found": 6,
+    "theme_words_total": 6,
+    "candidates": 1197,
+    "truncated": false,
+    "solve_time": "0:00:04.313"
+}

@@ -1,0 +1,22 @@
+{
+    "puzzle_id": 75,
+    "ds": "2024-03-16",
+    "clue": "Grow up!",
+    "theme_words": [
+        "adult",
+        "baby",
+        "foal",
+        "frog",
+        "horse",
+        "lamb",
+        "sheep",
+        "tadpole"
+    ],
+    "spangram": "parenthood",
+    "solved": true,
+    "theme_words_found": 8,
+    "theme_words_total": 8,
+    "candidates": 7,
+    "truncated": false,
+    "solve_time": "0:00:00.441"
+}

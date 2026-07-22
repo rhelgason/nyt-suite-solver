@@ -1,0 +1,20 @@
+{
+    "puzzle_id": 15,
+    "ds": "2024-03-15",
+    "clue": "Old haunts",
+    "theme_words": [
+        "ghost",
+        "phantom",
+        "shade",
+        "specter",
+        "spirit",
+        "wraith"
+    ],
+    "spangram": "supernatural",
+    "solved": true,
+    "theme_words_found": 6,
+    "theme_words_total": 6,
+    "candidates": 1,
+    "truncated": false,
+    "solve_time": "0:00:01.632"
+}

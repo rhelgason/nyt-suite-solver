@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1506,
+    "ds": "2026-07-10",
+    "mode": "hard",
+    "solution": "canal",
+    "guesses": [
+        "tares",
+        "manly",
+        "banal",
+        "canal"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.149"
+}

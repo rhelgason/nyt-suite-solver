@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 2664,
+    "ds": "2026-06-12",
+    "mode": "hard",
+    "solution": "break",
+    "guesses": [
+        "tares",
+        "beard",
+        "break"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:00.074"
+}

@@ -1,0 +1,21 @@
+{
+    "puzzle_id": 30,
+    "ds": "2024-03-13",
+    "clue": "One thousand followers",
+    "theme_words": [
+        "canyon",
+        "central",
+        "jury",
+        "piano",
+        "prize",
+        "rapids",
+        "slam"
+    ],
+    "spangram": "grandfinale",
+    "solved": false,
+    "theme_words_found": 3,
+    "theme_words_total": 7,
+    "candidates": 34700,
+    "truncated": true,
+    "solve_time": "0:01:03.554"
+}

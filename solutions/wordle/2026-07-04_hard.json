@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 1212,
+    "ds": "2026-07-04",
+    "mode": "hard",
+    "solution": "pizza",
+    "guesses": [
+        "tares",
+        "aloin",
+        "khadi",
+        "umiac",
+        "pizza"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:00.266"
+}

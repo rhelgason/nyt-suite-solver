@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 856,
+    "ds": "2026-06-16",
+    "mode": "hard",
+    "solution": "amaze",
+    "guesses": [
+        "tares",
+        "plane",
+        "agave",
+        "amaze"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.125"
+}

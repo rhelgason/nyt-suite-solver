@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 2559,
+    "ds": "2026-07-03",
+    "mode": "easy",
+    "solution": "baton",
+    "guesses": [
+        "tares",
+        "cutin",
+        "baton"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:00.930"
+}

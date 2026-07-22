@@ -1,0 +1,21 @@
+{
+    "puzzle_id": 41,
+    "ds": "2024-03-09",
+    "clue": "FRAGILE: handle with care",
+    "theme_words": [
+        "bread",
+        "heart",
+        "mold",
+        "promise",
+        "record",
+        "silence",
+        "sweat"
+    ],
+    "spangram": "breakable",
+    "solved": false,
+    "theme_words_found": 4,
+    "theme_words_total": 7,
+    "candidates": 28087,
+    "truncated": true,
+    "solve_time": "0:01:05.372"
+}

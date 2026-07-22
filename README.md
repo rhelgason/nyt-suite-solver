@@ -8,7 +8,7 @@ required, and can also be used interactively or headlessly.
 <!-- STATS:START -->
 ## Lifetime results
 
-_Auto-generated from `solutions/` · **3672** puzzles solved across 5 games (through 2026-07-22)._
+_Auto-generated from `solutions/` · **3767** puzzles solved across 5 games (through 2026-07-22)._
 
 <div align="center">
 <table>
@@ -16,9 +16,9 @@ _Auto-generated from `solutions/` · **3672** puzzles solved across 5 games (thr
 <tr><td>Spelling Bee</td><td>10</td><td>99.3%</td><td>107 ms</td></tr>
 <tr><td>Letter Boxed</td><td>2</td><td>2.0 words</td><td>155 ms</td></tr>
 <tr><td>Sudoku</td><td>6</td><td>100%</td><td>0.23 ms</td></tr>
-<tr><td>Wordle (easy)</td><td>1822</td><td>3.8 guesses</td><td>7.24 s</td></tr>
-<tr><td>Wordle (hard)</td><td>1822</td><td>3.9 guesses</td><td>500 ms</td></tr>
-<tr><td>Strands</td><td>10</td><td>83% words</td><td>61.41 s</td></tr>
+<tr><td>Wordle (easy)</td><td>1860</td><td>3.8 guesses</td><td>7.10 s</td></tr>
+<tr><td>Wordle (hard)</td><td>1860</td><td>3.9 guesses</td><td>492 ms</td></tr>
+<tr><td>Strands</td><td>29</td><td>83% words</td><td>65.31 s</td></tr>
 </table>
 </div>
 <!-- STATS:END -->

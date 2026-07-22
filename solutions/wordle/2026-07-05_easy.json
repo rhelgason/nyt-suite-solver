@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1108,
+    "ds": "2026-07-05",
+    "mode": "easy",
+    "solution": "swami",
+    "guesses": [
+        "tares",
+        "milch",
+        "agism",
+        "swami"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:01.476"
+}

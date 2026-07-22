@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1094,
+    "ds": "2026-06-28",
+    "mode": "easy",
+    "solution": "emcee",
+    "guesses": [
+        "tares",
+        "indol",
+        "chape",
+        "emcee"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:03.900"
+}

@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 1620,
+    "ds": "2026-07-08",
+    "mode": "easy",
+    "solution": "demon",
+    "guesses": [
+        "tares",
+        "colin",
+        "demon"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:05.152"
+}

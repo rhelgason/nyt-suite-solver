@@ -1,0 +1,21 @@
+{
+    "puzzle_id": 1,
+    "ds": "2024-03-18",
+    "clue": "World piece",
+    "theme_words": [
+        "desert",
+        "forest",
+        "marsh",
+        "mountain",
+        "plain",
+        "swamp",
+        "tundra"
+    ],
+    "spangram": "terrain",
+    "solved": true,
+    "theme_words_found": 7,
+    "theme_words_total": 7,
+    "candidates": 35,
+    "truncated": false,
+    "solve_time": "0:00:03.489"
+}

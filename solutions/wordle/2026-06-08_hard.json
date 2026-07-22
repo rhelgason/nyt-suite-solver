@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1093,
+    "ds": "2026-06-08",
+    "mode": "hard",
+    "solution": "mafia",
+    "guesses": [
+        "tares",
+        "manly",
+        "magma",
+        "mafia"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.140"
+}

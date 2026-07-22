@@ -1,0 +1,21 @@
+{
+    "puzzle_id": 27,
+    "ds": "2024-03-17",
+    "clue": "Outside interests",
+    "theme_words": [
+        "blizzard",
+        "hail",
+        "rain",
+        "snow",
+        "storm",
+        "sunshine",
+        "tornado"
+    ],
+    "spangram": "forecast",
+    "solved": true,
+    "theme_words_found": 7,
+    "theme_words_total": 7,
+    "candidates": 659,
+    "truncated": false,
+    "solve_time": "0:00:01.340"
+}

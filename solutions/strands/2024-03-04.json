@@ -1,0 +1,20 @@
+{
+    "puzzle_id": 7,
+    "ds": "2024-03-04",
+    "clue": "Mark my words",
+    "theme_words": [
+        "apostrophe",
+        "colon",
+        "comma",
+        "hyphen",
+        "period",
+        "slash"
+    ],
+    "spangram": "punctuation",
+    "solved": true,
+    "theme_words_found": 6,
+    "theme_words_total": 6,
+    "candidates": 422,
+    "truncated": false,
+    "solve_time": "0:00:00.229"
+}

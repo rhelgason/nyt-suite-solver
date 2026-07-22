@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 1653,
+    "ds": "2026-06-27",
+    "mode": "hard",
+    "solution": "scoop",
+    "guesses": [
+        "tares",
+        "spoil",
+        "scoop"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:00.118"
+}

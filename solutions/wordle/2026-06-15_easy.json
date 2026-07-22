@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1230,
+    "ds": "2026-06-15",
+    "mode": "easy",
+    "solution": "broil",
+    "guesses": [
+        "tares",
+        "coign",
+        "droid",
+        "broil"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:02.498"
+}

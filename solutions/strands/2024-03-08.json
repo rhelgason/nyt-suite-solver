@@ -1,0 +1,20 @@
+{
+    "puzzle_id": 16,
+    "ds": "2024-03-08",
+    "clue": "Do the do",
+    "theme_words": [
+        "beehive",
+        "braid",
+        "dreads",
+        "mohawk",
+        "ponytail",
+        "topknot"
+    ],
+    "spangram": "hairstyle",
+    "solved": true,
+    "theme_words_found": 6,
+    "theme_words_total": 6,
+    "candidates": 1,
+    "truncated": false,
+    "solve_time": "0:00:00.173"
+}

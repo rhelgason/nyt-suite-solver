@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1945,
+    "ds": "2026-07-11",
+    "mode": "easy",
+    "solution": "avian",
+    "guesses": [
+        "tares",
+        "colin",
+        "divan",
+        "avian"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:04.902"
+}

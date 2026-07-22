@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 1184,
+    "ds": "2026-06-30",
+    "mode": "easy",
+    "solution": "puppy",
+    "guesses": [
+        "tares",
+        "colin",
+        "pygmy",
+        "puffy",
+        "puppy"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:08.126"
+}

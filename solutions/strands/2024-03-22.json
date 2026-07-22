@@ -1,0 +1,21 @@
+{
+    "puzzle_id": 18,
+    "ds": "2024-03-22",
+    "clue": "Animal sounds",
+    "theme_words": [
+        "choral",
+        "dear",
+        "grisly",
+        "hoarse",
+        "mousse",
+        "muscle",
+        "wail"
+    ],
+    "spangram": "homophones",
+    "solved": true,
+    "theme_words_found": 7,
+    "theme_words_total": 7,
+    "candidates": 2,
+    "truncated": false,
+    "solve_time": "0:00:00.278"
+}
