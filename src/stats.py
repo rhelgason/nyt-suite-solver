@@ -129,8 +129,11 @@ def summarize_sudoku(records: List[Record]) -> dict:
     }
 
 
-def summarize_wordle(records: List[Record]) -> dict:
-    by_ds = _by_date(records)
+def summarize_wordle(records: List[Record], mode: str) -> dict:
+    """Summarize one Wordle mode ('easy' or 'hard'). Records of both modes share
+    a date, so filter by the stored mode rather than keying on the date alone."""
+    mode_records = [(name, data) for name, data in records if data.get("mode") == mode]
+    by_ds = _by_date(mode_records)
     dates = sorted(by_ds)
     guesses = [by_ds[d]["num_guesses"] for d in dates
                if by_ds[d].get("solved") and isinstance(by_ds[d].get("num_guesses"), int)]
@@ -146,7 +149,7 @@ def summarize_wordle(records: List[Record]) -> dict:
         "count": len(dates),
         "avg_guesses": avg,
         "guess_dist": dist,
-        "p90_ms": _percentile(_runtimes_ms(records), 90),
+        "p90_ms": _percentile(_runtimes_ms(mode_records), 90),
         "score_cell": f"{avg:.1f} guesses" if avg is not None else "n/a",
     }
 
@@ -282,16 +285,22 @@ def word_count_pie_svg(s: dict) -> Optional[str]:
     return svg_charts.pie_chart("Letter Boxed Words per Solution", slices)
 
 
-def wordle_guesses_svg(s: dict) -> Optional[str]:
-    dist = s.get("guess_dist") or {}
-    if not dist:
+def wordle_guesses_svg(easy: dict, hard: dict) -> Optional[str]:
+    easy_dist = easy.get("guess_dist") or {}
+    hard_dist = hard.get("guess_dist") or {}
+    if not easy_dist and not hard_dist:
         return None
-    labels = [str(i) for i in range(1, 7)]
-    values = [dist.get(i, 0) for i in range(1, 7)]
-    if dist.get("X"):  # failed puzzles
-        labels.append("X")
-        values.append(dist["X"])
-    return svg_charts.bar_chart("Wordle Guess Distribution", labels, values, "#7c3aed", "Puzzles")
+    has_fail = bool(easy_dist.get("X") or hard_dist.get("X"))
+    labels = [str(i) for i in range(1, 7)] + (["X"] if has_fail else [])
+
+    def values(dist: Dict[object, int]) -> List[int]:
+        vals = [dist.get(i, 0) for i in range(1, 7)]
+        if has_fail:
+            vals.append(dist.get("X", 0))
+        return vals
+
+    series = [("Easy", "#a78bfa", values(easy_dist)), ("Hard", "#7c3aed", values(hard_dist))]
+    return svg_charts.grouped_bar_chart("Wordle Guess Distribution", labels, series, "Puzzles")
 
 
 GAMES = ("spelling_bee", "letter_boxed", "sudoku", "wordle")
@@ -305,10 +314,17 @@ def build_section(root: str = SOLUTIONS_ROOT) -> str:
     sb = summarize_spelling_bee(games["spelling_bee"])
     lb = summarize_letter_boxed(games["letter_boxed"])
     sk = summarize_sudoku(games["sudoku"])
-    wd = summarize_wordle(games["wordle"])
-    rows = [("Spelling Bee", sb), ("Letter Boxed", lb), ("Sudoku", sk), ("Wordle", wd)]
+    wd_easy = summarize_wordle(games["wordle"], "easy")
+    wd_hard = summarize_wordle(games["wordle"], "hard")
+    rows = [
+        ("Spelling Bee", sb),
+        ("Letter Boxed", lb),
+        ("Sudoku", sk),
+        ("Wordle (easy)", wd_easy),
+        ("Wordle (hard)", wd_hard),
+    ]
     total = sum(s["count"] for _, s in rows)
-    played = sum(1 for _, s in rows if s["count"] > 0)
+    played = sum(1 for g in GAMES if games[g])
 
     lines = ["## Lifetime results", ""]
     if total == 0:
@@ -334,7 +350,9 @@ def write_assets(root: str = SOLUTIONS_ROOT, assets_dir: str = ASSETS_DIR) -> No
         "cumulative_solves.svg": cumulative_solves_svg(games),
         "spelling_bee_scores.svg": score_pie_svg(summarize_spelling_bee(games["spelling_bee"])),
         "letter_boxed_words.svg": word_count_pie_svg(summarize_letter_boxed(games["letter_boxed"])),
-        "wordle_guesses.svg": wordle_guesses_svg(summarize_wordle(games["wordle"])),
+        "wordle_guesses.svg": wordle_guesses_svg(
+            summarize_wordle(games["wordle"], "easy"), summarize_wordle(games["wordle"], "hard")
+        ),
     }
     os.makedirs(assets_dir, exist_ok=True)
     for name, svg in assets.items():

@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 1575,
+    "ds": "2026-07-19",
+    "mode": "hard",
+    "solution": "churn",
+    "guesses": [
+        "tares",
+        "prion",
+        "churn"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:00.102"
+}

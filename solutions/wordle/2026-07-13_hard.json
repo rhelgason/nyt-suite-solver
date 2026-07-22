@@ -1,0 +1,17 @@
+{
+    "puzzle_id": 4269,
+    "ds": "2026-07-13",
+    "mode": "hard",
+    "solution": "stout",
+    "guesses": [
+        "tares",
+        "shout",
+        "scout",
+        "snout",
+        "spout",
+        "stout"
+    ],
+    "num_guesses": 6,
+    "solved": true,
+    "solve_time": "0:00:00.061"
+}

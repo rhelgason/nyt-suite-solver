@@ -1,14 +1,14 @@
 {
     "puzzle_id": 2350,
     "ds": "2026-07-21",
+    "mode": "hard",
     "solution": "shill",
     "guesses": [
-        "slate",
-        "silos",
-        "skill",
+        "tares",
+        "spoil",
         "shill"
     ],
-    "num_guesses": 4,
+    "num_guesses": 3,
     "solved": true,
-    "solve_time": "0:00:00.045"
+    "solve_time": "0:00:00.111"
 }

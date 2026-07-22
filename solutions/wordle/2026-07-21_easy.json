@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 2350,
+    "ds": "2026-07-21",
+    "mode": "easy",
+    "solution": "shill",
+    "guesses": [
+        "tares",
+        "noily",
+        "hawks",
+        "shill"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:02.885"
+}

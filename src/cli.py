@@ -88,7 +88,9 @@ def build_jobs(args) -> List:
                 label = f"sudoku {diff.value.lower()} {ds}"
                 jobs.append((label, lambda diff=diff: SudokuSolver(diff).solve()))
         elif game == "wordle":
-            jobs.append((f"wordle {ds}", lambda ds=ds: WordleSolver(ds).solve()))
+            for hard in (False, True):
+                mode = "hard" if hard else "easy"
+                jobs.append((f"wordle {mode} {ds}", lambda ds=ds, hard=hard: WordleSolver(ds, hard=hard).solve()))
 
     return jobs
 

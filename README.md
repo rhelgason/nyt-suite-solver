@@ -8,14 +8,15 @@ required, and can also be used interactively or headlessly.
 <!-- STATS:START -->
 ## Lifetime results
 
-_Auto-generated from `solutions/` · **14** puzzles solved across 4 games (through 2026-07-21)._
+_Auto-generated from `solutions/` · **31** puzzles solved across 4 games (through 2026-07-21)._
 
 | Game | Puzzles | Avg score | p90 runtime |
 | --- | ---: | ---: | ---: |
 | Spelling Bee | 9 | 99.5% | 92 ms |
 | Letter Boxed | 1 | 2.0 words | 110 ms |
 | Sudoku | 3 | 100% | 0.23 ms |
-| Wordle | 1 | 4.0 guesses | 45 ms |
+| Wordle (easy) | 9 | 3.9 guesses | 3.37 s |
+| Wordle (hard) | 9 | 4.0 guesses | 124 ms |
 
 <p align="center"><img src="stats/cumulative_solves.svg" alt="Cumulative Puzzles Solved" width="720"></p>
 <!-- STATS:END -->
@@ -64,16 +65,19 @@ chart here; the p90 runtime above tells the whole story.
 
 ### Wordle
 
-Wordle gives six tries to guess a hidden five-letter word, coloring each guess
-green, yellow, or gray. The solver opens with a fixed, letter-diverse word, then
-after each result keeps only the words still consistent with every clue and picks
-the next guess that splits those remaining words most evenly (minimizing the
-expected number left). It plays from a human five-letter vocabulary rather than
-the official answer list, treating the scraped solution purely as the feedback
-oracle, so a day is only solvable if that vocabulary contains the answer. The
-chart shows how many guesses it typically needs, with X marking the rare misses.
+Wordle gives six tries to guess a hidden five-letter word. The solver treats each
+turn as an information-theory question: it scores every candidate by the expected
+information (Shannon entropy) its feedback would reveal and plays the guess that,
+on average, eliminates the most remaining words. The opening guess is therefore
+the same every day (`tares`, the highest-entropy word in the vocabulary), after
+which it recomputes the best next guess from the feedback so far. Two modes are
+tracked: **hard** may only guess words still consistent with every clue, while
+**easy** may play any word (even one it knows cannot be the answer) purely to
+extract more information, so it tends to solve in fewer guesses. Like the other
+games it plays from a human vocabulary, not the official answer list, and the
+chart compares how many guesses each mode needs (X marks a miss).
 
-<p align="center"><img src="stats/wordle_guesses.svg" alt="Wordle guess distribution" width="520"></p>
+<p align="center"><img src="stats/wordle_guesses.svg" alt="Wordle guess distribution by mode" width="720"></p>
 
 ## Running it yourself
 

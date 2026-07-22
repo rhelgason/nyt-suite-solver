@@ -26,16 +26,18 @@ def test_build_section_table_and_chart(tmp_path):
            {"ds": "2026-01-01", "valid_answers": [["a", "b"], ["c", "d"]], "shortest_answer_length": 2})
     _write(root, "sudoku", "2026-01-01_hard.json",
            {"ds": "2026-01-01", "solved_puzzle": "1,2", "solve_time": "0:00:00.000200"})
-    _write(root, "wordle", "2026-01-02.json", {"ds": "2026-01-02", "solved": True, "num_guesses": 3})
+    _write(root, "wordle", "2026-01-02_easy.json", {"ds": "2026-01-02", "mode": "easy", "solved": True, "num_guesses": 3})
+    _write(root, "wordle", "2026-01-02_hard.json", {"ds": "2026-01-02", "mode": "hard", "solved": True, "num_guesses": 4})
 
     section = build_section(root)
     assert "## Lifetime results" in section
-    assert "**5** puzzles solved across 4 games (through 2026-01-02)" in section
+    assert "**6** puzzles solved across 4 games (through 2026-01-02)" in section
     assert "| Game | Puzzles | Avg score | p90 runtime |" in section
     assert "| Spelling Bee | 2 | 75.0% | n/a |" in section          # (100 + 50) / 2, no timings
     assert "| Letter Boxed | 1 | 2.0 words | n/a |" in section
     assert "| Sudoku | 1 | 100% | 0.20 ms |" in section
-    assert "| Wordle | 1 | 3.0 guesses | n/a |" in section
+    assert "| Wordle (easy) | 1 | 3.0 guesses | n/a |" in section
+    assert "| Wordle (hard) | 1 | 4.0 guesses | n/a |" in section
     # cumulative line chart is a centered SVG image
     assert '<p align="center"><img src="stats/cumulative_solves.svg"' in section
 
@@ -118,26 +120,28 @@ def test_word_count_pie_svg(tmp_path):
     assert "2 words: 2 (67%)" in svg
 
 
-def test_summarize_wordle_and_chart(tmp_path):
+def test_summarize_wordle_splits_by_mode(tmp_path):
     import xml.etree.ElementTree as ET
 
     from stats import load_game, summarize_wordle, wordle_guesses_svg
 
     root = str(tmp_path)
-    _write(root, "wordle", "2026-01-01.json", {"ds": "2026-01-01", "solved": True, "num_guesses": 3})
-    _write(root, "wordle", "2026-01-02.json", {"ds": "2026-01-02", "solved": True, "num_guesses": 4})
-    _write(root, "wordle", "2026-01-03.json", {"ds": "2026-01-03", "solved": False, "num_guesses": None})
+    # same date appears in both modes; hard needs more guesses than easy
+    _write(root, "wordle", "2026-01-01_easy.json", {"ds": "2026-01-01", "mode": "easy", "solved": True, "num_guesses": 3})
+    _write(root, "wordle", "2026-01-01_hard.json", {"ds": "2026-01-01", "mode": "hard", "solved": True, "num_guesses": 4})
+    _write(root, "wordle", "2026-01-02_hard.json", {"ds": "2026-01-02", "mode": "hard", "solved": False, "num_guesses": None})
 
-    s = summarize_wordle(load_game(root, "wordle"))
-    assert s["count"] == 3
-    assert abs(s["avg_guesses"] - 3.5) < 1e-9        # mean of solved (3, 4)
-    assert s["guess_dist"] == {3: 1, 4: 1, "X": 1}
-    assert s["score_cell"] == "3.5 guesses"
+    records = load_game(root, "wordle")
+    easy = summarize_wordle(records, "easy")
+    hard = summarize_wordle(records, "hard")
+    assert easy["count"] == 1 and easy["avg_guesses"] == 3.0
+    assert hard["count"] == 2 and hard["avg_guesses"] == 4.0  # one solved (4), one failed
+    assert hard["guess_dist"] == {4: 1, "X": 1}
 
-    svg = wordle_guesses_svg(s)
+    svg = wordle_guesses_svg(easy, hard)
     ET.fromstring(svg)  # well-formed XML
     assert "Wordle Guess Distribution" in svg
-    assert svg.count("<rect") >= 7  # background + a bar per bucket (1-6 and X)
+    assert "Easy" in svg and "Hard" in svg  # grouped legend
 
 
 def test_build_section_empty(tmp_path):

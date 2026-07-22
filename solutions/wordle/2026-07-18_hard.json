@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1737,
+    "ds": "2026-07-18",
+    "mode": "hard",
+    "solution": "booth",
+    "guesses": [
+        "tares",
+        "litho",
+        "mouth",
+        "booth"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.099"
+}

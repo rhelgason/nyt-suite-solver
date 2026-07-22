@@ -98,14 +98,17 @@ def line_chart(title: str, x_values: List[float], series: List[Series],
     return "\n".join(out)
 
 
-def bar_chart(title: str, labels: List[str], values: List[float],
-              color: str = "#2563eb", y_label: str = "") -> str:
-    """A simple single-series vertical bar chart (e.g. Wordle guess counts)."""
-    y_max = _nice_max(max(values) if values else 0)
+def grouped_bar_chart(title: str, labels: List[str], series: List[Series], y_label: str = "") -> str:
+    """A grouped (side-by-side) vertical bar chart with a legend, for comparing a
+    few series across the same buckets (e.g. Wordle easy vs hard guess counts)."""
+    all_values = [v for _, _, values in series for v in values]
+    y_max = _nice_max(max(all_values) if all_values else 0)
     baseline = M_TOP + PLOT_H
     n = max(1, len(labels))
+    k = max(1, len(series))
     slot = PLOT_W / n
-    bar_w = slot * 0.6
+    group_w = slot * 0.7
+    bar_w = group_w / k
 
     out = [
         f'<svg xmlns="http://www.w3.org/2000/svg" width="{WIDTH}" height="{HEIGHT}" '
@@ -120,13 +123,14 @@ def bar_chart(title: str, labels: List[str], values: List[float],
         out.append(f'<line x1="{M_LEFT}" y1="{yy:.1f}" x2="{M_LEFT + PLOT_W}" y2="{yy:.1f}" stroke="#eaeaea"/>')
         out.append(f'<text x="{M_LEFT - 8}" y="{yy + 4:.1f}" text-anchor="end" fill="#888">{value:.0f}</text>')
 
-    for i, (label, value) in enumerate(zip(labels, values)):
-        cx = M_LEFT + slot * i + slot / 2
-        height = PLOT_H * value / y_max
-        out.append(f'<rect x="{cx - bar_w / 2:.1f}" y="{baseline - height:.1f}" width="{bar_w:.1f}" height="{height:.1f}" rx="2" fill="{color}"/>')
-        if value:
-            out.append(f'<text x="{cx:.1f}" y="{baseline - height - 5:.1f}" text-anchor="middle" fill="#555">{value:.0f}</text>')
-        out.append(f'<text x="{cx:.1f}" y="{baseline + 18:.1f}" text-anchor="middle" fill="#888">{_escape(label)}</text>')
+    for i, label in enumerate(labels):
+        group_x = M_LEFT + slot * i + (slot - group_w) / 2
+        for j, (_, color, values) in enumerate(series):
+            value = values[i]
+            height = PLOT_H * value / y_max
+            x = group_x + bar_w * j
+            out.append(f'<rect x="{x:.1f}" y="{baseline - height:.1f}" width="{bar_w * 0.9:.1f}" height="{height:.1f}" rx="1.5" fill="{color}"/>')
+        out.append(f'<text x="{M_LEFT + slot * i + slot / 2:.1f}" y="{baseline + 18:.1f}" text-anchor="middle" fill="#888">{_escape(label)}</text>')
 
     out.append(f'<line x1="{M_LEFT}" y1="{baseline}" x2="{M_LEFT + PLOT_W}" y2="{baseline}" stroke="#bbb"/>')
     out.append(f'<line x1="{M_LEFT}" y1="{M_TOP}" x2="{M_LEFT}" y2="{baseline}" stroke="#bbb"/>')
@@ -135,6 +139,12 @@ def bar_chart(title: str, labels: List[str], values: List[float],
             f'<text x="14" y="{M_TOP + PLOT_H / 2:.0f}" text-anchor="middle" fill="#888" '
             f'transform="rotate(-90 14 {M_TOP + PLOT_H / 2:.0f})">{_escape(y_label)}</text>'
         )
+
+    lx, ly = M_LEFT + PLOT_W - 96, M_TOP + 8
+    for j, (name, color, _) in enumerate(series):
+        yy = ly + j * 18
+        out.append(f'<rect x="{lx}" y="{yy - 9}" width="12" height="12" rx="2" fill="{color}"/>')
+        out.append(f'<text x="{lx + 18}" y="{yy + 1}" fill="#333">{_escape(name)}</text>')
 
     out.append("</svg>")
     return "\n".join(out)
