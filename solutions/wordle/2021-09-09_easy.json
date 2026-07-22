@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 83,
+    "ds": "2021-09-09",
+    "mode": "easy",
+    "solution": "biome",
+    "guesses": [
+        "tares",
+        "colin",
+        "oxide",
+        "biome"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:05.189"
+}

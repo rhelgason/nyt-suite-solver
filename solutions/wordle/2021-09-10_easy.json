@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 84,
+    "ds": "2021-09-10",
+    "mode": "easy",
+    "solution": "lapel",
+    "guesses": [
+        "tares",
+        "lynch",
+        "kudzu",
+        "label",
+        "lapel"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:01.493"
+}

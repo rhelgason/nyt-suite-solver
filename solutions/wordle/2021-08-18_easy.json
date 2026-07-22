@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 61,
+    "ds": "2021-08-18",
+    "mode": "easy",
+    "solution": "seedy",
+    "guesses": [
+        "tares",
+        "seine",
+        "abled",
+        "seedy"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:01.879"
+}

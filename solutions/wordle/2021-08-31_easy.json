@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 74,
+    "ds": "2021-08-31",
+    "mode": "easy",
+    "solution": "argue",
+    "guesses": [
+        "tares",
+        "craal",
+        "arene",
+        "argue"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:01.411"
+}

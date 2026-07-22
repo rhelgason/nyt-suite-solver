@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 67,
+    "ds": "2021-08-24",
+    "mode": "hard",
+    "solution": "panel",
+    "guesses": [
+        "tares",
+        "laden",
+        "navel",
+        "panel"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.069"
+}

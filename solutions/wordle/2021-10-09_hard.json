@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 113,
+    "ds": "2021-10-09",
+    "mode": "hard",
+    "solution": "alone",
+    "guesses": [
+        "tares",
+        "plane",
+        "aline",
+        "alone"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.108"
+}

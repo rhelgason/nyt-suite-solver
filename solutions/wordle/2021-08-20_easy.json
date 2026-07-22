@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 63,
+    "ds": "2021-08-20",
+    "mode": "easy",
+    "solution": "yearn",
+    "guesses": [
+        "tares",
+        "craal",
+        "deary",
+        "yearn"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:01.517"
+}

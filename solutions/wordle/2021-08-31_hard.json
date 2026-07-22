@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 74,
+    "ds": "2021-08-31",
+    "mode": "hard",
+    "solution": "argue",
+    "guesses": [
+        "tares",
+        "beard",
+        "areca",
+        "argle",
+        "argue"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:00.064"
+}

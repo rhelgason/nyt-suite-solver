@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 122,
+    "ds": "2021-10-18",
+    "mode": "hard",
+    "solution": "tweed",
+    "guesses": [
+        "tares",
+        "toned",
+        "tided",
+        "tewed",
+        "tweed"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:00.055"
+}

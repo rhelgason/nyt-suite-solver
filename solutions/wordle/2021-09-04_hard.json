@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 78,
+    "ds": "2021-09-04",
+    "mode": "hard",
+    "solution": "totem",
+    "guesses": [
+        "tares",
+        "toned",
+        "topee",
+        "totem"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.047"
+}

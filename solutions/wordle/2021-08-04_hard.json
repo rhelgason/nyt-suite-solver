@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 47,
+    "ds": "2021-08-04",
+    "mode": "hard",
+    "solution": "cluck",
+    "guesses": [
+        "tares",
+        "colin",
+        "cluck"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:00.586"
+}

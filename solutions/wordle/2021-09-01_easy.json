@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 75,
+    "ds": "2021-09-01",
+    "mode": "easy",
+    "solution": "bleed",
+    "guesses": [
+        "tares",
+        "indol",
+        "buggy",
+        "bleed"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:03.952"
+}

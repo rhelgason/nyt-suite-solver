@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 92,
+    "ds": "2021-09-18",
+    "mode": "easy",
+    "solution": "audit",
+    "guesses": [
+        "tares",
+        "aloin",
+        "admit",
+        "audit"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:01.120"
+}

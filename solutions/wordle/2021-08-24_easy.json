@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 67,
+    "ds": "2021-08-24",
+    "mode": "easy",
+    "solution": "panel",
+    "guesses": [
+        "tares",
+        "lynch",
+        "panel"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:01.356"
+}

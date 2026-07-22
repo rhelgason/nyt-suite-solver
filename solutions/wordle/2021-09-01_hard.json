@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 75,
+    "ds": "2021-09-01",
+    "mode": "hard",
+    "solution": "bleed",
+    "guesses": [
+        "tares",
+        "loden",
+        "filed",
+        "bleed"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.172"
+}

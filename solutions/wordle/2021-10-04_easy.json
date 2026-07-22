@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 108,
+    "ds": "2021-10-04",
+    "mode": "easy",
+    "solution": "spend",
+    "guesses": [
+        "tares",
+        "seine",
+        "ached",
+        "spend"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:01.864"
+}

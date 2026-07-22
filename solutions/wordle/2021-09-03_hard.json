@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 77,
+    "ds": "2021-09-03",
+    "mode": "hard",
+    "solution": "flick",
+    "guesses": [
+        "tares",
+        "colin",
+        "flick"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:00.595"
+}

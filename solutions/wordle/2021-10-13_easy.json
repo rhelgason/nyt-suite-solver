@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 117,
+    "ds": "2021-10-13",
+    "mode": "easy",
+    "solution": "dowry",
+    "guesses": [
+        "tares",
+        "coign",
+        "duomo",
+        "dowry"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:02.563"
+}

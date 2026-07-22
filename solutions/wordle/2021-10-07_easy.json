@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 111,
+    "ds": "2021-10-07",
+    "mode": "easy",
+    "solution": "aback",
+    "guesses": [
+        "tares",
+        "colin",
+        "bulky",
+        "aback"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:05.022"
+}

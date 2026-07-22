@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 60,
+    "ds": "2021-08-17",
+    "mode": "easy",
+    "solution": "ivory",
+    "guesses": [
+        "tares",
+        "coign",
+        "droid",
+        "ivory"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:02.505"
+}

@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 100,
+    "ds": "2021-09-26",
+    "mode": "easy",
+    "solution": "moult",
+    "guesses": [
+        "tares",
+        "colin",
+        "amity",
+        "moult"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:02.508"
+}

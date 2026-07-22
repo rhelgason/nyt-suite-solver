@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 120,
+    "ds": "2021-10-16",
+    "mode": "easy",
+    "solution": "dutch",
+    "guesses": [
+        "tares",
+        "colin",
+        "bedim",
+        "dutch"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:02.564"
+}

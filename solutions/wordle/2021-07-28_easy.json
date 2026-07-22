@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 40,
+    "ds": "2021-07-28",
+    "mode": "easy",
+    "solution": "outdo",
+    "guesses": [
+        "tares",
+        "colin",
+        "outgo",
+        "outdo"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:02.777"
+}

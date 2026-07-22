@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 43,
+    "ds": "2021-07-31",
+    "mode": "easy",
+    "solution": "sower",
+    "guesses": [
+        "tares",
+        "spoil",
+        "sober",
+        "sower"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.528"
+}

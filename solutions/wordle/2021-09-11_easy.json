@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 85,
+    "ds": "2021-09-11",
+    "mode": "easy",
+    "solution": "start",
+    "guesses": [
+        "tares",
+        "attic",
+        "start"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:00.199"
+}

@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 104,
+    "ds": "2021-09-30",
+    "mode": "hard",
+    "solution": "spicy",
+    "guesses": [
+        "tares",
+        "spoil",
+        "spick",
+        "spicy"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.117"
+}

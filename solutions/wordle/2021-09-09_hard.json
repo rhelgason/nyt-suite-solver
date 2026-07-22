@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 83,
+    "ds": "2021-09-09",
+    "mode": "hard",
+    "solution": "biome",
+    "guesses": [
+        "tares",
+        "oldie",
+        "koine",
+        "biome"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.278"
+}

@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 119,
+    "ds": "2021-10-15",
+    "mode": "easy",
+    "solution": "belch",
+    "guesses": [
+        "tares",
+        "colin",
+        "belch"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:05.200"
+}

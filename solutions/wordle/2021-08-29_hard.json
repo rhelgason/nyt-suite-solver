@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 72,
+    "ds": "2021-08-29",
+    "mode": "hard",
+    "solution": "error",
+    "guesses": [
+        "tares",
+        "nerdy",
+        "forge",
+        "error"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.058"
+}

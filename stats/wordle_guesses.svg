@@ -4,33 +4,33 @@
 <line x1="52" y1="348.0" x2="740" y2="348.0" stroke="#eaeaea"/>
 <text x="44" y="352.0" text-anchor="end" fill="#888">0</text>
 <line x1="52" y1="272.0" x2="740" y2="272.0" stroke="#eaeaea"/>
-<text x="44" y="276.0" text-anchor="end" fill="#888">12</text>
+<text x="44" y="276.0" text-anchor="end" fill="#888">25</text>
 <line x1="52" y1="196.0" x2="740" y2="196.0" stroke="#eaeaea"/>
-<text x="44" y="200.0" text-anchor="end" fill="#888">25</text>
+<text x="44" y="200.0" text-anchor="end" fill="#888">50</text>
 <line x1="52" y1="120.0" x2="740" y2="120.0" stroke="#eaeaea"/>
-<text x="44" y="124.0" text-anchor="end" fill="#888">38</text>
+<text x="44" y="124.0" text-anchor="end" fill="#888">75</text>
 <line x1="52" y1="44.0" x2="740" y2="44.0" stroke="#eaeaea"/>
-<text x="44" y="48.0" text-anchor="end" fill="#888">50</text>
+<text x="44" y="48.0" text-anchor="end" fill="#888">100</text>
 <rect x="66.7" y="348.0" width="31.0" height="0.0" rx="1.5" fill="#a78bfa"/>
 <rect x="101.1" y="348.0" width="31.0" height="0.0" rx="1.5" fill="#7c3aed"/>
 <text x="101.1" y="366.0" text-anchor="middle" fill="#888">1</text>
 <rect x="165.0" y="348.0" width="31.0" height="0.0" rx="1.5" fill="#a78bfa"/>
 <rect x="199.4" y="341.9" width="31.0" height="6.1" rx="1.5" fill="#7c3aed"/>
 <text x="199.4" y="366.0" text-anchor="middle" fill="#888">2</text>
-<rect x="263.3" y="269.0" width="31.0" height="79.0" rx="1.5" fill="#a78bfa"/>
-<rect x="297.7" y="250.7" width="31.0" height="97.3" rx="1.5" fill="#7c3aed"/>
+<rect x="263.3" y="235.5" width="31.0" height="112.5" rx="1.5" fill="#a78bfa"/>
+<rect x="297.7" y="229.4" width="31.0" height="118.6" rx="1.5" fill="#7c3aed"/>
 <text x="297.7" y="366.0" text-anchor="middle" fill="#888">3</text>
-<rect x="361.6" y="159.5" width="31.0" height="188.5" rx="1.5" fill="#a78bfa"/>
-<rect x="396.0" y="226.4" width="31.0" height="121.6" rx="1.5" fill="#7c3aed"/>
+<rect x="361.6" y="86.6" width="31.0" height="261.4" rx="1.5" fill="#a78bfa"/>
+<rect x="396.0" y="168.6" width="31.0" height="179.4" rx="1.5" fill="#7c3aed"/>
 <text x="396.0" y="366.0" text-anchor="middle" fill="#888">4</text>
-<rect x="459.9" y="317.6" width="31.0" height="30.4" rx="1.5" fill="#a78bfa"/>
-<rect x="494.3" y="299.4" width="31.0" height="48.6" rx="1.5" fill="#7c3aed"/>
+<rect x="459.9" y="308.5" width="31.0" height="39.5" rx="1.5" fill="#a78bfa"/>
+<rect x="494.3" y="269.0" width="31.0" height="79.0" rx="1.5" fill="#7c3aed"/>
 <text x="494.3" y="366.0" text-anchor="middle" fill="#888">5</text>
 <rect x="558.2" y="348.0" width="31.0" height="0.0" rx="1.5" fill="#a78bfa"/>
-<rect x="592.6" y="329.8" width="31.0" height="18.2" rx="1.5" fill="#7c3aed"/>
+<rect x="592.6" y="326.7" width="31.0" height="21.3" rx="1.5" fill="#7c3aed"/>
 <text x="592.6" y="366.0" text-anchor="middle" fill="#888">6</text>
 <rect x="656.5" y="348.0" width="31.0" height="0.0" rx="1.5" fill="#a78bfa"/>
-<rect x="690.9" y="341.9" width="31.0" height="6.1" rx="1.5" fill="#7c3aed"/>
+<rect x="690.9" y="338.9" width="31.0" height="9.1" rx="1.5" fill="#7c3aed"/>
 <text x="690.9" y="366.0" text-anchor="middle" fill="#888">X</text>
 <line x1="52" y1="348" x2="740" y2="348" stroke="#bbb"/>
 <line x1="52" y1="44" x2="52" y2="348" stroke="#bbb"/>

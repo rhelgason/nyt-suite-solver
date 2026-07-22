@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 115,
+    "ds": "2021-10-11",
+    "mode": "easy",
+    "solution": "hyper",
+    "guesses": [
+        "tares",
+        "poind",
+        "leech",
+        "hyper"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:03.181"
+}

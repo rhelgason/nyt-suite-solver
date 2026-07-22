@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 105,
+    "ds": "2021-10-01",
+    "mode": "hard",
+    "solution": "spray",
+    "guesses": [
+        "tares",
+        "sprag",
+        "spray"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:00.044"
+}

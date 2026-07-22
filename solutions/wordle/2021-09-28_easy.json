@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 102,
+    "ds": "2021-09-28",
+    "mode": "easy",
+    "solution": "salad",
+    "guesses": [
+        "tares",
+        "sylis",
+        "aldol",
+        "salad"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.988"
+}

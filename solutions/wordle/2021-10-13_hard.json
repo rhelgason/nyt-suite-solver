@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 117,
+    "ds": "2021-10-13",
+    "mode": "hard",
+    "solution": "dowry",
+    "guesses": [
+        "tares",
+        "prion",
+        "chord",
+        "dobro",
+        "dowry"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:00.108"
+}

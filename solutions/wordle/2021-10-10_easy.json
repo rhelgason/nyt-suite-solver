@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 114,
+    "ds": "2021-10-10",
+    "mode": "easy",
+    "solution": "hatch",
+    "guesses": [
+        "tares",
+        "cutin",
+        "blimp",
+        "hatch"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:01.043"
+}

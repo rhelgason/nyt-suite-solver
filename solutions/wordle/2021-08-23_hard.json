@@ -1,0 +1,17 @@
+{
+    "puzzle_id": 66,
+    "ds": "2021-08-23",
+    "mode": "hard",
+    "solution": "stout",
+    "guesses": [
+        "tares",
+        "shout",
+        "scout",
+        "snout",
+        "spout",
+        "stout"
+    ],
+    "num_guesses": 6,
+    "solved": true,
+    "solve_time": "0:00:00.062"
+}

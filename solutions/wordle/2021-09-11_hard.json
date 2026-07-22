@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 85,
+    "ds": "2021-09-11",
+    "mode": "hard",
+    "solution": "start",
+    "guesses": [
+        "tares",
+        "scart",
+        "smart",
+        "start"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.049"
+}

@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 81,
+    "ds": "2021-09-07",
+    "mode": "easy",
+    "solution": "shrub",
+    "guesses": [
+        "tares",
+        "gulpy",
+        "scrub",
+        "shrub"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.375"
+}

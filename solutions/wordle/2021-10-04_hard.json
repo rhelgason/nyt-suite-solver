@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 108,
+    "ds": "2021-10-04",
+    "mode": "hard",
+    "solution": "spend",
+    "guesses": [
+        "tares",
+        "seine",
+        "scend",
+        "shend",
+        "spend"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:00.080"
+}

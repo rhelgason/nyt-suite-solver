@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 59,
+    "ds": "2021-08-16",
+    "mode": "hard",
+    "solution": "belly",
+    "guesses": [
+        "tares",
+        "oldie",
+        "knell",
+        "belly"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.285"
+}

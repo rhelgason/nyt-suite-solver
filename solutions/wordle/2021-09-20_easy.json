@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 94,
+    "ds": "2021-09-20",
+    "mode": "easy",
+    "solution": "gamma",
+    "guesses": [
+        "tares",
+        "lingy",
+        "begot",
+        "gamma"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:03.363"
+}

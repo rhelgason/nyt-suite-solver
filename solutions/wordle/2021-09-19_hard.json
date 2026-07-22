@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 93,
+    "ds": "2021-09-19",
+    "mode": "hard",
+    "solution": "lying",
+    "guesses": [
+        "tares",
+        "colin",
+        "lungi",
+        "lying"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.586"
+}

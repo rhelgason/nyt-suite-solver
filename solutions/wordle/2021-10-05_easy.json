@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 109,
+    "ds": "2021-10-05",
+    "mode": "easy",
+    "solution": "kebab",
+    "guesses": [
+        "tares",
+        "aland",
+        "chomp",
+        "kebab"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:02.747"
+}

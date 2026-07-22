@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 86,
+    "ds": "2021-09-12",
+    "mode": "hard",
+    "solution": "greet",
+    "guesses": [
+        "tares",
+        "outer",
+        "relet",
+        "greet"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.056"
+}

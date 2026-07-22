@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 95,
+    "ds": "2021-09-21",
+    "mode": "easy",
+    "solution": "labor",
+    "guesses": [
+        "tares",
+        "rindy",
+        "labor"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:01.158"
+}

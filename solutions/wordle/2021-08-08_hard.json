@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 51,
+    "ds": "2021-08-08",
+    "mode": "hard",
+    "solution": "maxim",
+    "guesses": [
+        "tares",
+        "manly",
+        "magma",
+        "mambo",
+        "maxim"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:00.146"
+}

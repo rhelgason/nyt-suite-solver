@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 103,
+    "ds": "2021-09-29",
+    "mode": "hard",
+    "solution": "agate",
+    "guesses": [
+        "tares",
+        "leant",
+        "abate",
+        "agate"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.060"
+}

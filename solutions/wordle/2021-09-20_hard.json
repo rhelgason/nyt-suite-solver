@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 94,
+    "ds": "2021-09-20",
+    "mode": "hard",
+    "solution": "gamma",
+    "guesses": [
+        "tares",
+        "manly",
+        "gamic",
+        "gamba",
+        "gamma"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:00.143"
+}

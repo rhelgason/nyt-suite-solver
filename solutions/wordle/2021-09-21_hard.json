@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 95,
+    "ds": "2021-09-21",
+    "mode": "hard",
+    "solution": "labor",
+    "guesses": [
+        "tares",
+        "ranid",
+        "malar",
+        "labor"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.062"
+}

@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 96,
+    "ds": "2021-09-22",
+    "mode": "hard",
+    "solution": "islet",
+    "guesses": [
+        "tares",
+        "steel",
+        "islet"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:00.047"
+}

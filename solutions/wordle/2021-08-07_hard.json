@@ -1,0 +1,17 @@
+{
+    "puzzle_id": 50,
+    "ds": "2021-08-07",
+    "mode": "hard",
+    "solution": "pound",
+    "guesses": [
+        "tares",
+        "colin",
+        "mondo",
+        "bound",
+        "found",
+        "hound"
+    ],
+    "num_guesses": null,
+    "solved": false,
+    "solve_time": "0:00:00.574"
+}

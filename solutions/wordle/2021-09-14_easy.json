@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 88,
+    "ds": "2021-09-14",
+    "mode": "easy",
+    "solution": "golem",
+    "guesses": [
+        "tares",
+        "indol",
+        "foley",
+        "golem"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:03.864"
+}

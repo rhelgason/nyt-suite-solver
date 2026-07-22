@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 38,
+    "ds": "2021-07-26",
+    "mode": "easy",
+    "solution": "whelp",
+    "guesses": [
+        "tares",
+        "colin",
+        "pudgy",
+        "whelp"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:05.652"
+}

@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 50,
+    "ds": "2021-08-07",
+    "mode": "easy",
+    "solution": "pound",
+    "guesses": [
+        "tares",
+        "colin",
+        "bawdy",
+        "bumph",
+        "pound"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:08.182"
+}

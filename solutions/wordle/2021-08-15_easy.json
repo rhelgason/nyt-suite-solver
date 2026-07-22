@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 58,
+    "ds": "2021-08-15",
+    "mode": "easy",
+    "solution": "stand",
+    "guesses": [
+        "tares",
+        "slant",
+        "adage",
+        "stand"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.752"
+}

@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 97,
+    "ds": "2021-09-23",
+    "mode": "easy",
+    "solution": "civic",
+    "guesses": [
+        "tares",
+        "colin",
+        "civic"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:08.465"
+}

@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 76,
+    "ds": "2021-09-02",
+    "mode": "easy",
+    "solution": "delta",
+    "guesses": [
+        "tares",
+        "plane",
+        "fetal",
+        "delta"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.813"
+}

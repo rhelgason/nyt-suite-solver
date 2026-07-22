@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 59,
+    "ds": "2021-08-16",
+    "mode": "easy",
+    "solution": "belly",
+    "guesses": [
+        "tares",
+        "colin",
+        "badly",
+        "belly"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:05.561"
+}

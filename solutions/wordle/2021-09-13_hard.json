@@ -1,0 +1,17 @@
+{
+    "puzzle_id": 87,
+    "ds": "2021-09-13",
+    "mode": "hard",
+    "solution": "goner",
+    "guesses": [
+        "tares",
+        "riled",
+        "comer",
+        "power",
+        "boner",
+        "goner"
+    ],
+    "num_guesses": 6,
+    "solved": true,
+    "solve_time": "0:00:00.133"
+}

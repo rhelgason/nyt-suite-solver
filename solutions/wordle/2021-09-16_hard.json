@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 90,
+    "ds": "2021-09-16",
+    "mode": "hard",
+    "solution": "loopy",
+    "guesses": [
+        "tares",
+        "colin",
+        "wooly",
+        "looby",
+        "loopy"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:00.595"
+}

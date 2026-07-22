@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 41,
+    "ds": "2021-07-29",
+    "mode": "hard",
+    "solution": "adobe",
+    "guesses": [
+        "tares",
+        "plane",
+        "adoze",
+        "adobe"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.109"
+}

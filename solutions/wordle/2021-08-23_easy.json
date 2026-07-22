@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 66,
+    "ds": "2021-08-23",
+    "mode": "easy",
+    "solution": "stout",
+    "guesses": [
+        "tares",
+        "shout",
+        "capon",
+        "stout"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:01.327"
+}

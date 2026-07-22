@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 87,
+    "ds": "2021-09-13",
+    "mode": "easy",
+    "solution": "goner",
+    "guesses": [
+        "tares",
+        "poind",
+        "begun",
+        "goner"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:03.105"
+}

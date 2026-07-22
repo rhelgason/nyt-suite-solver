@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 55,
+    "ds": "2021-08-12",
+    "mode": "hard",
+    "solution": "booby",
+    "guesses": [
+        "tares",
+        "colin",
+        "boody",
+        "booby"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.589"
+}

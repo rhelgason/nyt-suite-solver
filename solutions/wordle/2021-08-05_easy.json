@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 48,
+    "ds": "2021-08-05",
+    "mode": "easy",
+    "solution": "spike",
+    "guesses": [
+        "tares",
+        "seine",
+        "plack",
+        "spike"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:02.031"
+}

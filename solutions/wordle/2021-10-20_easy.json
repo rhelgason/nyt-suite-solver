@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 124,
+    "ds": "2021-10-20",
+    "mode": "easy",
+    "solution": "jaunt",
+    "guesses": [
+        "tares",
+        "cutin",
+        "dight",
+        "jaunt"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:01.033"
+}

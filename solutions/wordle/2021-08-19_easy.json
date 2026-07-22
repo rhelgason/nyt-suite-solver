@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 62,
+    "ds": "2021-08-19",
+    "mode": "easy",
+    "solution": "print",
+    "guesses": [
+        "tares",
+        "fruit",
+        "gript",
+        "print"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.715"
+}

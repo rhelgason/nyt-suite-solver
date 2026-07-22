@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 73,
+    "ds": "2021-08-30",
+    "mode": "easy",
+    "solution": "swirl",
+    "guesses": [
+        "tares",
+        "shoyu",
+        "skirl",
+        "swirl"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.635"
+}

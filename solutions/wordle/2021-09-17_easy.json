@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 91,
+    "ds": "2021-09-17",
+    "mode": "easy",
+    "solution": "round",
+    "guesses": [
+        "tares",
+        "coign",
+        "donor",
+        "round"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:02.476"
+}
