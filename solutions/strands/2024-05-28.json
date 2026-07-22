@@ -1,0 +1,21 @@
+{
+    "puzzle_id": 135,
+    "ds": "2024-05-28",
+    "clue": "All atwitter",
+    "theme_words": [
+        "chirp",
+        "cluck",
+        "screech",
+        "trill",
+        "tweet",
+        "warble",
+        "whistle"
+    ],
+    "spangram": "birdsong",
+    "solved": true,
+    "theme_words_found": 7,
+    "theme_words_total": 7,
+    "candidates": 1,
+    "truncated": false,
+    "solve_time": "0:00:00.225"
+}

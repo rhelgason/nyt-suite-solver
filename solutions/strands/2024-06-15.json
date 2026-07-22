@@ -1,0 +1,21 @@
+{
+    "puzzle_id": 144,
+    "ds": "2024-06-15",
+    "clue": "Deep dive",
+    "theme_words": [
+        "clam",
+        "coral",
+        "lobster",
+        "octopus",
+        "shark",
+        "squid",
+        "whale"
+    ],
+    "spangram": "marinelife",
+    "solved": false,
+    "theme_words_found": 3,
+    "theme_words_total": 7,
+    "candidates": 120010,
+    "truncated": true,
+    "solve_time": "0:01:05.370"
+}

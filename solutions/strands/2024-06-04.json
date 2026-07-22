@@ -1,0 +1,20 @@
+{
+    "puzzle_id": 136,
+    "ds": "2024-06-04",
+    "clue": "Purposeful pairs",
+    "theme_words": [
+        "conquer",
+        "divide",
+        "forget",
+        "forgive",
+        "learn",
+        "watch"
+    ],
+    "spangram": "usefuladvice",
+    "solved": false,
+    "theme_words_found": 3,
+    "theme_words_total": 6,
+    "candidates": 1211,
+    "truncated": true,
+    "solve_time": "0:01:00.325"
+}

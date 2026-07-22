@@ -1,0 +1,21 @@
+{
+    "puzzle_id": 44,
+    "ds": "2024-05-14",
+    "clue": "On board",
+    "theme_words": [
+        "brie",
+        "cracker",
+        "fruit",
+        "nuts",
+        "olive",
+        "salami",
+        "spread"
+    ],
+    "spangram": "charcuterie",
+    "solved": false,
+    "theme_words_found": 1,
+    "theme_words_total": 7,
+    "candidates": 416,
+    "truncated": true,
+    "solve_time": "0:01:05.345"
+}

@@ -1,0 +1,21 @@
+{
+    "puzzle_id": 90,
+    "ds": "2024-05-13",
+    "clue": "Best in show",
+    "theme_words": [
+        "beagle",
+        "boxer",
+        "collie",
+        "hound",
+        "husky",
+        "poodle",
+        "shepherd"
+    ],
+    "spangram": "dogpile",
+    "solved": false,
+    "theme_words_found": 4,
+    "theme_words_total": 7,
+    "candidates": 51545,
+    "truncated": true,
+    "solve_time": "0:01:00.456"
+}

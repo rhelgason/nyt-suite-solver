@@ -1,0 +1,21 @@
+{
+    "puzzle_id": 149,
+    "ds": "2024-05-26",
+    "clue": "Beyond Nashville",
+    "theme_words": [
+        "brooks",
+        "cash",
+        "hill",
+        "paisley",
+        "swift",
+        "twain",
+        "urban"
+    ],
+    "spangram": "countrystars",
+    "solved": false,
+    "theme_words_found": 1,
+    "theme_words_total": 7,
+    "candidates": 38,
+    "truncated": true,
+    "solve_time": "0:01:01.923"
+}

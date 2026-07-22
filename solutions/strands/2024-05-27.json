@@ -1,0 +1,21 @@
+{
+    "puzzle_id": 108,
+    "ds": "2024-05-27",
+    "clue": "Noodle on this one",
+    "theme_words": [
+        "bowtie",
+        "elbow",
+        "ribbon",
+        "shell",
+        "spiral",
+        "tube",
+        "wheel"
+    ],
+    "spangram": "pastashapes",
+    "solved": false,
+    "theme_words_found": 2,
+    "theme_words_total": 7,
+    "candidates": 20127,
+    "truncated": true,
+    "solve_time": "0:01:05.242"
+}

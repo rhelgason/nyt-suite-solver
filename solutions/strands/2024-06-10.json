@@ -1,0 +1,21 @@
+{
+    "puzzle_id": 164,
+    "ds": "2024-06-10",
+    "clue": "Print edition",
+    "theme_words": [
+        "article",
+        "byline",
+        "caption",
+        "column",
+        "fold",
+        "folio",
+        "page"
+    ],
+    "spangram": "newspaper",
+    "solved": true,
+    "theme_words_found": 7,
+    "theme_words_total": 7,
+    "candidates": 9,
+    "truncated": false,
+    "solve_time": "0:00:00.516"
+}

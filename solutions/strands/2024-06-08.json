@@ -1,0 +1,20 @@
+{
+    "puzzle_id": 157,
+    "ds": "2024-06-08",
+    "clue": "Beat the heat",
+    "theme_words": [
+        "beach",
+        "camp",
+        "carnival",
+        "hopscotch",
+        "lemonade",
+        "popsicle"
+    ],
+    "spangram": "summer",
+    "solved": true,
+    "theme_words_found": 6,
+    "theme_words_total": 6,
+    "candidates": 1,
+    "truncated": false,
+    "solve_time": "0:00:00.368"
+}

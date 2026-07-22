@@ -1,0 +1,19 @@
+{
+    "puzzle_id": 88,
+    "ds": "2024-05-23",
+    "clue": "No dice!",
+    "theme_words": [
+        "celebrity",
+        "charades",
+        "mafia",
+        "telephone",
+        "twister"
+    ],
+    "spangram": "partygames",
+    "solved": true,
+    "theme_words_found": 5,
+    "theme_words_total": 5,
+    "candidates": 17543,
+    "truncated": false,
+    "solve_time": "0:00:12.373"
+}

@@ -1,0 +1,21 @@
+{
+    "puzzle_id": 57,
+    "ds": "2024-06-13",
+    "clue": "Good times ahead",
+    "theme_words": [
+        "animal",
+        "boat",
+        "crasher",
+        "favor",
+        "foul",
+        "hearty",
+        "pooper"
+    ],
+    "spangram": "afterparty",
+    "solved": false,
+    "theme_words_found": 2,
+    "theme_words_total": 7,
+    "candidates": 6234,
+    "truncated": true,
+    "solve_time": "0:01:05.302"
+}

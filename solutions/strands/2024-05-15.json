@@ -1,0 +1,21 @@
+{
+    "puzzle_id": 24,
+    "ds": "2024-05-15",
+    "clue": "American pastime",
+    "theme_words": [
+        "base",
+        "bullpen",
+        "dugout",
+        "infield",
+        "mound",
+        "plate",
+        "stands"
+    ],
+    "spangram": "ballpark",
+    "solved": true,
+    "theme_words_found": 7,
+    "theme_words_total": 7,
+    "candidates": 35,
+    "truncated": false,
+    "solve_time": "0:00:00.317"
+}

@@ -1,0 +1,21 @@
+{
+    "puzzle_id": 129,
+    "ds": "2024-06-02",
+    "clue": "Nailed it!",
+    "theme_words": [
+        "base",
+        "buff",
+        "cleanse",
+        "color",
+        "file",
+        "moisturize",
+        "topper"
+    ],
+    "spangram": "manicure",
+    "solved": true,
+    "theme_words_found": 7,
+    "theme_words_total": 7,
+    "candidates": 3,
+    "truncated": false,
+    "solve_time": "0:00:01.600"
+}

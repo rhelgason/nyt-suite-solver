@@ -1,0 +1,22 @@
+{
+    "puzzle_id": 72,
+    "ds": "2024-05-16",
+    "clue": "Tasty!",
+    "theme_words": [
+        "bitter",
+        "piquant",
+        "salty",
+        "sour",
+        "spicy",
+        "sweet",
+        "tart",
+        "umami"
+    ],
+    "spangram": "flavors",
+    "solved": true,
+    "theme_words_found": 8,
+    "theme_words_total": 8,
+    "candidates": 30,
+    "truncated": false,
+    "solve_time": "0:00:00.284"
+}

@@ -1,0 +1,21 @@
+{
+    "puzzle_id": 118,
+    "ds": "2024-06-12",
+    "clue": "By the dozen",
+    "theme_words": [
+        "cake",
+        "cider",
+        "frosted",
+        "glazed",
+        "hole",
+        "jelly",
+        "powdered"
+    ],
+    "spangram": "doughnuts",
+    "solved": true,
+    "theme_words_found": 7,
+    "theme_words_total": 7,
+    "candidates": 49,
+    "truncated": false,
+    "solve_time": "0:00:01.236"
+}

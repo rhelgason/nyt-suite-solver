@@ -1,0 +1,21 @@
+{
+    "puzzle_id": 110,
+    "ds": "2024-05-17",
+    "clue": "Looking for a mate",
+    "theme_words": [
+        "bookend",
+        "chopstick",
+        "earplug",
+        "mitten",
+        "plier",
+        "tong",
+        "wing"
+    ],
+    "spangram": "paired",
+    "solved": true,
+    "theme_words_found": 7,
+    "theme_words_total": 7,
+    "candidates": 1552,
+    "truncated": false,
+    "solve_time": "0:00:02.142"
+}

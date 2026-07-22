@@ -1,0 +1,20 @@
+{
+    "puzzle_id": 89,
+    "ds": "2024-05-29",
+    "clue": "A good workout",
+    "theme_words": [
+        "bike",
+        "cables",
+        "elliptical",
+        "rower",
+        "treadmill",
+        "weights"
+    ],
+    "spangram": "fitness",
+    "solved": true,
+    "theme_words_found": 6,
+    "theme_words_total": 6,
+    "candidates": 986,
+    "truncated": false,
+    "solve_time": "0:00:00.362"
+}

@@ -1,0 +1,21 @@
+{
+    "puzzle_id": 112,
+    "ds": "2024-05-19",
+    "clue": "✨🔥🌹💀🤩👀💐",
+    "theme_words": [
+        "bouquet",
+        "eyes",
+        "fire",
+        "rose",
+        "skull",
+        "sparkles",
+        "starstruck"
+    ],
+    "spangram": "emojis",
+    "solved": false,
+    "theme_words_found": 4,
+    "theme_words_total": 7,
+    "candidates": 10467,
+    "truncated": true,
+    "solve_time": "0:01:01.402"
+}

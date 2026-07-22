@@ -1,0 +1,22 @@
+{
+    "puzzle_id": 6,
+    "ds": "2024-05-25",
+    "clue": "Sounds delicious!",
+    "theme_words": [
+        "chilly",
+        "leak",
+        "meet",
+        "moose",
+        "pair",
+        "serial",
+        "stake",
+        "time"
+    ],
+    "spangram": "homophones",
+    "solved": false,
+    "theme_words_found": 3,
+    "theme_words_total": 8,
+    "candidates": 6357,
+    "truncated": true,
+    "solve_time": "0:01:05.216"
+}

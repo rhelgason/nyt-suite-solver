@@ -1,0 +1,21 @@
+{
+    "puzzle_id": 142,
+    "ds": "2024-06-14",
+    "clue": "Take a load off!",
+    "theme_words": [
+        "armchair",
+        "chaise",
+        "couch",
+        "divan",
+        "recliner",
+        "sofa",
+        "stool"
+    ],
+    "spangram": "seating",
+    "solved": true,
+    "theme_words_found": 7,
+    "theme_words_total": 7,
+    "candidates": 1951,
+    "truncated": false,
+    "solve_time": "0:00:03.839"
+}

@@ -1,0 +1,20 @@
+{
+    "puzzle_id": 102,
+    "ds": "2024-06-03",
+    "clue": "Better with age",
+    "theme_words": [
+        "kefir",
+        "kimchi",
+        "kombucha",
+        "miso",
+        "sauerkraut",
+        "yogurt"
+    ],
+    "spangram": "fermented",
+    "solved": false,
+    "theme_words_found": 4,
+    "theme_words_total": 6,
+    "candidates": 821,
+    "truncated": true,
+    "solve_time": "0:01:01.270"
+}

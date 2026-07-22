@@ -1,0 +1,21 @@
+{
+    "puzzle_id": 116,
+    "ds": "2024-06-01",
+    "clue": "Start the day right",
+    "theme_words": [
+        "bacon",
+        "eggs",
+        "hash",
+        "oatmeal",
+        "quiche",
+        "sausage",
+        "waffle"
+    ],
+    "spangram": "breakfast",
+    "solved": true,
+    "theme_words_found": 7,
+    "theme_words_total": 7,
+    "candidates": 4,
+    "truncated": false,
+    "solve_time": "0:00:00.195"
+}

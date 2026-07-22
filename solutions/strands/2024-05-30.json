@@ -1,0 +1,21 @@
+{
+    "puzzle_id": 121,
+    "ds": "2024-05-30",
+    "clue": "Pump it up!",
+    "theme_words": [
+        "block",
+        "chunky",
+        "cone",
+        "cuban",
+        "kitten",
+        "stiletto",
+        "wedge"
+    ],
+    "spangram": "highheels",
+    "solved": false,
+    "theme_words_found": 2,
+    "theme_words_total": 7,
+    "candidates": 5930,
+    "truncated": true,
+    "solve_time": "0:01:00.297"
+}

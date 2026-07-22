@@ -1,0 +1,21 @@
+{
+    "puzzle_id": 159,
+    "ds": "2024-06-09",
+    "clue": "Way to grow!",
+    "theme_words": [
+        "earth",
+        "love",
+        "protection",
+        "seeds",
+        "space",
+        "sunlight",
+        "water"
+    ],
+    "spangram": "garden",
+    "solved": true,
+    "theme_words_found": 7,
+    "theme_words_total": 7,
+    "candidates": 611,
+    "truncated": false,
+    "solve_time": "0:00:00.764"
+}

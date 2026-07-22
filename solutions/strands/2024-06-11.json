@@ -1,0 +1,21 @@
+{
+    "puzzle_id": 66,
+    "ds": "2024-06-11",
+    "clue": "Hold up...",
+    "theme_words": [
+        "boost",
+        "elevate",
+        "exalt",
+        "hoist",
+        "levitate",
+        "lift",
+        "support"
+    ],
+    "spangram": "allrise",
+    "solved": false,
+    "theme_words_found": 3,
+    "theme_words_total": 7,
+    "candidates": 28438,
+    "truncated": true,
+    "solve_time": "0:01:05.329"
+}
