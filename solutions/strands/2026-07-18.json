@@ -12,10 +12,9 @@
     ],
     "spangram": "bowlofgranola",
     "solved": false,
-    "spangram_matched": false,
-    "theme_words_found": 0,
+    "theme_words_found": 1,
     "theme_words_total": 6,
-    "candidates": 0,
-    "truncated": false,
-    "solve_time": "0:00:01.015"
+    "candidates": 56,
+    "truncated": true,
+    "solve_time": "0:00:16.116"
 }

@@ -12,10 +12,9 @@
     ],
     "spangram": "stationery",
     "solved": true,
-    "spangram_matched": true,
     "theme_words_found": 6,
     "theme_words_total": 6,
     "candidates": 300,
     "truncated": false,
-    "solve_time": "0:00:14.702"
+    "solve_time": "0:00:16.511"
 }

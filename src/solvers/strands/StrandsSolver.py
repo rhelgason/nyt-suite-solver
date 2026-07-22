@@ -16,16 +16,23 @@ WORDS_FILE_PATH = "wordlist.txt"
 MIN_WORD_LEN = 4
 
 # A real board is a few long theme words plus the spangram, so cap the number of
-# words in a candidate cover. This excludes the flood of all-short-word tilings
-# and keeps the search tractable. (Puzzles with more theme words than this, or a
-# multi-word/phrase spangram that is not a single dictionary word, are misses.)
+# words in a candidate cover. This excludes the flood of all-short-word tilings.
 MAX_WORDS_TOTAL = 9
 
-# Search budgets: exact cover is NP-hard and we have no theme signal to guide us,
-# so bound the work and report honestly when a cap is hit.
-NODE_BUDGET = 2_000_000
+# The leftover (fallback) search covers the board with the exact theme-word count
+# and treats the remaining cells as the spangram strand (which need not be a
+# dictionary word, so phrase spangrams like "pie in the sky" work).
+MAX_SPANGRAM_CELLS = 16
+HAM_PATH_STEP_BUDGET = 100_000
+
+# Search budgets: this is NP-hard with no theme signal, so bound the work and
+# report honestly when a cap is hit. We try a fast exact-cover-by-words pass
+# first, then fall back to the slower leftover-path search only if it did not
+# already recover the theme words.
+NODE_BUDGET = 3_000_000
 MAX_CANDIDATES = 300
-TIME_BUDGET_SECONDS = 20.0
+WORDS_TIME_BUDGET = 20.0
+LEFTOVER_TIME_BUDGET = 15.0
 
 # 8 king-move directions
 DIRS = [(-1, -1), (-1, 0), (-1, 1), (0, -1), (0, 1), (1, -1), (1, 0), (1, 1)]
@@ -92,46 +99,85 @@ def is_spanning(cells, rows: int, cols: int) -> bool:
     return (top and bottom) or (left and right)
 
 
+def has_hamiltonian_path(cells: Set[int], adj: Dict[int, List[int]]) -> bool:
+    """Whether the cells can be traced as one continuous strand (a single path
+    visiting every cell once over king adjacency). Bounded by a step budget."""
+    n = len(cells)
+    if n <= 1:
+        return n == 1
+    steps = [0]
+
+    def extend(cell: int, seen: Set[int]) -> bool:
+        if len(seen) == n:
+            return True
+        steps[0] += 1
+        if steps[0] > HAM_PATH_STEP_BUDGET:
+            return False
+        for nb in adj[cell]:
+            if nb in cells and nb not in seen:
+                seen.add(nb)
+                if extend(nb, seen):
+                    return True
+                seen.remove(nb)
+        return False
+
+    for start in cells:
+        if extend(start, {start}):
+            return True
+        if steps[0] > HAM_PATH_STEP_BUDGET:
+            return False
+    return False
+
+
 class _Budget:
-    def __init__(self, start: float) -> None:
+    def __init__(self, time_budget: float, node_budget: int = NODE_BUDGET) -> None:
         self.nodes = 0
-        self.start = start
+        self.start = time()
+        self.time_budget = time_budget
+        self.node_budget = node_budget
         self.exhausted = False
 
     def tick(self) -> bool:
         self.nodes += 1
-        if self.nodes > NODE_BUDGET or (time() - self.start) > TIME_BUDGET_SECONDS:
+        if self.nodes > self.node_budget or (time() - self.start) > self.time_budget:
             self.exhausted = True
         return not self.exhausted
 
 
-def find_solutions(grid: List[str], placements: List[Placement], start_time: float
-                   ) -> Tuple[List[FrozenSet[str]], bool]:
-    """Exact-cover search: partition all cells into disjoint valid words, at least
-    one of which spans opposite sides (the spangram). Returns (candidate word
-    sets, truncated). Capped word count keeps it to few-long-word covers."""
-    rows, cols = len(grid), len(grid[0])
-    full_mask = (1 << (rows * cols)) - 1
+def _mask_to_cells(mask: int, n: int) -> Set[int]:
+    return {c for c in range(n) if mask >> c & 1}
 
+
+def _placement_masks(placements: List[Placement], n: int):
     masks = [0] * len(placements)
-    spanning = [False] * len(placements)
     for i, (_, cells) in enumerate(placements):
         bits = 0
         for cell in cells:
             bits |= 1 << cell
         masks[i] = bits
-        spanning[i] = is_spanning(cells, rows, cols)
-
     # longest words first so the few-long-words theme cover surfaces early
     order = sorted(range(len(placements)), key=lambda i: -len(placements[i][0]))
-    cell_to_placements: Dict[int, List[int]] = {cell: [] for cell in range(rows * cols)}
+    cell_to_placements: Dict[int, List[int]] = {cell: [] for cell in range(n)}
     for idx in order:
         for cell in placements[idx][1]:
             cell_to_placements[cell].append(idx)
+    return masks, cell_to_placements
+
+
+def find_solutions_words(grid: List[str], placements: List[Placement]
+                         ) -> Tuple[List[FrozenSet[str]], bool]:
+    """Fast pass: exact-cover every cell with valid words, at least one spanning
+    (the spangram is a single dictionary word or a chain of them). Returns
+    (candidate word sets, truncated)."""
+    rows, cols = len(grid), len(grid[0])
+    n = rows * cols
+    full_mask = (1 << n) - 1
+    masks, cell_to_placements = _placement_masks(placements, n)
+    spanning = [is_spanning(cells, rows, cols) for _, cells in placements]
 
     candidates: List[FrozenSet[str]] = []
     seen: Set[FrozenSet[str]] = set()
-    budget = _Budget(start_time)
+    budget = _Budget(WORDS_TIME_BUDGET)
 
     def dfs(covered: int, chosen: List[int], spanning_count: int) -> None:
         if budget.exhausted or len(candidates) >= MAX_CANDIDATES:
@@ -139,7 +185,7 @@ def find_solutions(grid: List[str], placements: List[Placement], start_time: flo
         if not budget.tick():
             return
         if covered == full_mask:
-            if spanning_count >= 1:  # a spangram is required
+            if spanning_count >= 1:
                 words = frozenset(placements[i][0] for i in chosen)
                 if words not in seen:
                     seen.add(words)
@@ -159,6 +205,65 @@ def find_solutions(grid: List[str], placements: List[Placement], start_time: flo
                 return
 
     dfs(0, [], 0)
+    return candidates, budget.exhausted
+
+
+def find_solutions_leftover(grid: List[str], placements: List[Placement], num_words: int
+                            ) -> Tuple[List[FrozenSet[str]], bool]:
+    """Fallback: partition the board into exactly ``num_words`` theme words plus a
+    leftover spangram. The leftover cells (everything not covered by a theme word)
+    must form one connected king-path spanning opposite sides; it is never
+    dictionary-matched, so phrase spangrams work. ``num_words`` is the theme-word
+    count NYT shows the player, which prunes the search hard.
+
+    Returns (candidate theme-word sets, truncated)."""
+    rows, cols = len(grid), len(grid[0])
+    n = rows * cols
+    full_mask = (1 << n) - 1
+    adj = {cell: neighbors(cell, rows, cols) for cell in range(n)}
+    masks, cell_to_placements = _placement_masks(placements, n)
+
+    candidates: List[FrozenSet[str]] = []
+    seen: Set[FrozenSet[str]] = set()
+    budget = _Budget(LEFTOVER_TIME_BUDGET)
+
+    def record(covered: int, chosen: List[int]) -> None:
+        spangram = _mask_to_cells(full_mask & ~covered, n)
+        if not (0 < len(spangram) <= MAX_SPANGRAM_CELLS):
+            return
+        if is_spanning(spangram, rows, cols) and has_hamiltonian_path(spangram, adj):
+            words = frozenset(placements[i][0] for i in chosen)
+            if words not in seen:
+                seen.add(words)
+                candidates.append(words)
+
+    def dfs(covered: int, reserved: int, chosen: List[int]) -> None:
+        if budget.exhausted or len(candidates) >= MAX_CANDIDATES:
+            return
+        if not budget.tick():
+            return
+        if len(chosen) == num_words:
+            record(covered, chosen)  # everything uncovered becomes the spangram
+            return
+        assigned = covered | reserved
+        if assigned == full_mask:
+            return  # ran out of cells before placing all theme words
+        lowest = ~assigned & full_mask
+        target = (lowest & -lowest).bit_length() - 1
+        # Branch 1: cover the target cell with a theme word
+        for idx in cell_to_placements[target]:
+            if masks[idx] & assigned:
+                continue
+            chosen.append(idx)
+            dfs(covered | masks[idx], reserved, chosen)
+            chosen.pop()
+            if budget.exhausted or len(candidates) >= MAX_CANDIDATES:
+                return
+        # Branch 2: the target cell belongs to the spangram instead
+        if bin(reserved).count("1") < MAX_SPANGRAM_CELLS:
+            dfs(covered, reserved | (1 << target), chosen)
+
+    dfs(0, 0, [])
     return candidates, budget.exhausted
 
 
@@ -198,27 +303,33 @@ class StrandsSolver(BaseSolver):
         start = time()
         word_set, prefixes = build_word_index(self.load_words())
         placements = enumerate_placements(self.grid, word_set, prefixes)
-        candidates, truncated = find_solutions(self.grid, placements, start)
+        theme_set = frozenset(self.theme_words)
+
+        # Fast pass: cover the whole board with words (spangram as dictionary
+        # word(s)). Fall back to the slower leftover-path search only if that did
+        # not already recover the theme words, since it also handles phrase
+        # spangrams. NYT shows the theme-word count, so we use it to prune.
+        candidates, truncated = find_solutions_words(self.grid, placements)
+        if not any(theme_set <= cand for cand in candidates):
+            leftover, trunc_l = find_solutions_leftover(self.grid, placements, len(self.theme_words))
+            candidates = candidates + leftover
+            truncated = truncated or trunc_l
         end = time()
 
-        theme_set = frozenset(self.theme_words)
-        # "solved" = some candidate cover recovers every theme word. The spangram
-        # is often a multi-word phrase (not one dictionary word), so we do not
-        # require matching it exactly; we note separately when we do.
+        # "solved" = some candidate cover recovers every theme word (the spangram
+        # is then the remaining strand).
         solved = any(theme_set <= cand for cand in candidates)
-        spangram_matched = any(cand == theme_set | {self.spangram} for cand in candidates)
         best_overlap = max((len(cand & theme_set) for cand in candidates), default=0)
 
         if solved:
-            note = " (spangram too)" if spangram_matched else ""
-            print(f"\nSolved! Recovered all {len(theme_set)} theme words{note} among {len(candidates)} cover(s).")
+            print(f"\nSolved! Recovered all {len(theme_set)} theme words among {len(candidates)} cover(s).")
         else:
             print(f"\nNot solved. Best cover recovered {best_overlap}/{len(theme_set)} theme words "
                   f"across {len(candidates)} candidate(s)" + (" (search truncated)." if truncated else "."))
 
-        self.write_solved_puzzle(candidates, solved, spangram_matched, best_overlap, truncated, start, end)
+        self.write_solved_puzzle(candidates, solved, best_overlap, truncated, start, end)
 
-    def write_solved_puzzle(self, candidates, solved, spangram_matched, best_overlap, truncated, start, end) -> None:
+    def write_solved_puzzle(self, candidates, solved, best_overlap, truncated, start, end) -> None:
         data = {
             "puzzle_id": self.puzzle_id,
             "ds": self.ds,
@@ -226,7 +337,6 @@ class StrandsSolver(BaseSolver):
             "theme_words": self.theme_words,
             "spangram": self.spangram,
             "solved": solved,
-            "spangram_matched": spangram_matched,
             "theme_words_found": best_overlap,
             "theme_words_total": len(self.theme_words),
             "candidates": len(candidates),

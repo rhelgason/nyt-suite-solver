@@ -9,11 +9,10 @@
         "romantic"
     ],
     "spangram": "pieinthesky",
-    "solved": false,
-    "spangram_matched": false,
-    "theme_words_found": 1,
+    "solved": true,
+    "theme_words_found": 4,
     "theme_words_total": 4,
-    "candidates": 12,
-    "truncated": false,
-    "solve_time": "0:00:00.383"
+    "candidates": 106,
+    "truncated": true,
+    "solve_time": "0:00:15.412"
 }

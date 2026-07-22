@@ -9,11 +9,10 @@
         "satisfying"
     ],
     "spangram": "hitsthespot",
-    "solved": false,
-    "spangram_matched": false,
-    "theme_words_found": 0,
+    "solved": true,
+    "theme_words_found": 4,
     "theme_words_total": 4,
-    "candidates": 0,
+    "candidates": 49,
     "truncated": true,
-    "solve_time": "0:00:05.943"
+    "solve_time": "0:00:22.937"
 }

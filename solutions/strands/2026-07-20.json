@@ -11,10 +11,9 @@
     ],
     "spangram": "itsybitsy",
     "solved": false,
-    "spangram_matched": false,
-    "theme_words_found": 0,
+    "theme_words_found": 2,
     "theme_words_total": 5,
-    "candidates": 0,
-    "truncated": false,
-    "solve_time": "0:00:00.957"
+    "candidates": 165,
+    "truncated": true,
+    "solve_time": "0:00:16.044"
 }

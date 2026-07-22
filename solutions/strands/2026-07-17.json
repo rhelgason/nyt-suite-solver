@@ -10,10 +10,9 @@
     ],
     "spangram": "trivialpursuit",
     "solved": true,
-    "spangram_matched": false,
     "theme_words_found": 4,
     "theme_words_total": 4,
     "candidates": 300,
     "truncated": false,
-    "solve_time": "0:00:00.426"
+    "solve_time": "0:00:00.493"
 }

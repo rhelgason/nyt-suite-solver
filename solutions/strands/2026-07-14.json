@@ -12,10 +12,9 @@
     ],
     "spangram": "haveaseat",
     "solved": false,
-    "spangram_matched": false,
     "theme_words_found": 3,
     "theme_words_total": 6,
     "candidates": 42,
     "truncated": true,
-    "solve_time": "0:00:07.444"
+    "solve_time": "0:00:25.927"
 }
