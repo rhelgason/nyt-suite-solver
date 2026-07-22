@@ -7,7 +7,7 @@ import cli
 
 def _args(**overrides):
     base = dict(game="all", date=None, difficulty="all", backfill=False,
-                since=None, force=True, delay=0.0)
+                since=None, force=True, delay=0.0, limit=None)
     base.update(overrides)
     return argparse.Namespace(**base)
 
@@ -33,13 +33,13 @@ def test_build_jobs_past_date_skips_today_only_games(monkeypatch):
     monkeypatch.setattr(cli, "today_ds", lambda: "2026-01-01")
     # Letter Boxed and Sudoku have no archive; Spelling Bee and Wordle do
     labels = [label for label, _ in cli.build_jobs(_args(date="2025-12-01"))]
+    # Letter Boxed, Sudoku and the Mini crossword are today-only; the rest have history
     assert labels == [
         "spelling-bee 2025-12-01",
         "wordle easy 2025-12-01",
         "wordle hard 2025-12-01",
         "strands 2025-12-01",
         "connections 2025-12-01",
-        "crossword 2025-12-01",
     ]
 
 
@@ -81,6 +81,25 @@ def test_strands_backfill_before_epoch_clamped(monkeypatch):
     monkeypatch.setattr(cli, "today_ds", lambda: "2024-03-05")
     labels = [l for l, _ in cli.build_jobs(_args(game="strands", backfill=True, since="2024-01-01"))]
     assert labels == ["strands 2024-03-04", "strands 2024-03-05"]  # epoch is 2024-03-04
+
+
+def test_connections_backfill_defaults_to_cap(monkeypatch):
+    monkeypatch.setattr(cli, "today_ds", lambda: "2026-01-01")
+    labels = [l for l, _ in cli.build_jobs(_args(game="connections", backfill=True))]
+    assert len(labels) == cli.DEFAULT_LLM_BACKFILL_LIMIT  # capped by default
+    assert labels[-1] == "connections 2026-01-01"          # oldest-first, so newest last
+
+
+def test_connections_backfill_respects_limit(monkeypatch):
+    monkeypatch.setattr(cli, "today_ds", lambda: "2023-06-20")
+    labels = [l for l, _ in cli.build_jobs(_args(game="connections", backfill=True, limit=3))]
+    # the 3 most recent dates, solved oldest-first
+    assert labels == ["connections 2023-06-18", "connections 2023-06-19", "connections 2023-06-20"]
+
+
+def test_crossword_backfill_rejected_today_only():
+    with pytest.raises(SystemExit):
+        cli.build_jobs(_args(game="crossword", backfill=True))
 
 
 def test_backfill_skips_existing_unless_forced(monkeypatch, tmp_path):

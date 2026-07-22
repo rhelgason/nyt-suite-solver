@@ -123,9 +123,10 @@ candidate answers per clue at the exact required length; a backtracking
 constraint solver then tiles the 5x5 so every crossing letter agrees, using a
 human wordlist as backup, so a wrong clue answer is corrected by its crossings
 instead of poisoning the grid. Any slot it still cannot place is re-queried once
-with the known letters shown, then the search runs again. Only the Mini is free
-to fetch; the full-size Daily and Sunday crosswords are locked behind a NYT
-subscription, so they are intentionally left out.
+with the known letters shown, then the search runs again. Only today's Mini is
+free to fetch (past Minis and the full-size Daily and Sunday crosswords are
+locked behind a NYT subscription), so it is solved fresh each day and never
+backfilled.
 
 <p align="center"><img src="stats/crossword_passfail.svg" alt="Mini crossword pass/fail" width="520"></p>
 
@@ -155,4 +156,11 @@ export GITHUB_TOKEN=...   # a PAT with the Models permission
 # or: export GEMINI_API_KEY=...   # free-tier fallback
 .venv/bin/python src/cli.py --game connections
 .venv/bin/python src/cli.py --game crossword
+```
+
+Connections has a full free archive, so you can backfill a recent sample to judge
+its success rate (capped since each solve is an LLM call; re-run to accumulate
+more). The Mini is today-only and cannot be backfilled.
+```
+.venv/bin/python src/cli.py --game connections --backfill --limit 30
 ```

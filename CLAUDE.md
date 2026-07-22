@@ -46,10 +46,11 @@ genuinely cannot be solved otherwise.
   unavailable or rate-limited (chain is `GITHUB_MODELS_MODEL`, comma-separated).
   Reasoning models need a larger token budget (hidden reasoning tokens) and reject
   a custom temperature, which `llm.py` handles automatically.
-- **Data availability caveat:** only the Mini is freely fetchable. The full-size
-  **Daily and Sunday crosswords are gated behind a NYT Games subscription** — the
-  content endpoint returns metadata with the clues/grid stripped out — so no free
-  solver can run them; they are intentionally out of scope.
+- **Data availability caveat:** for crosswords, only **today's Mini** is freely
+  fetchable — every past Mini's content is subscriber-gated (the content endpoint
+  returns metadata with the clues/grid stripped), and the full-size Daily/Sunday
+  are gated on every date. So the Mini is today-only (no backfill) and Daily/Sunday
+  are out of scope. Connections, by contrast, has free full history.
 
 ### 3. Solvers are pure and headless
 Solver classes contain solving + scraping only. All interactive/terminal
@@ -87,12 +88,12 @@ and `svg_charts.py` standard-library only.
   managed and rejects `pip install`). `make run`, `make test`, `make setup`.
 - Run tests: `make test` (builds the Sudoku extension, then pytest)
 - Solve headlessly: `.venv/bin/python src/cli.py --game all`
-- Data availability: NYT serves only today's puzzle for Letter Boxed & Sudoku;
-  a ~1-week public archive for Spelling Bee; and full date-addressable history
-  for Wordle, Strands, Connections, and the Mini crossword (`--backfill` covers
-  Spelling Bee, Wordle, and Strands — the LLM games are left out to stay within
-  free rate limits). The full-size Daily/Sunday crosswords need a subscriber
-  login and are out of scope.
+- Data availability: NYT serves only today's puzzle for Letter Boxed, Sudoku, and
+  the Mini crossword; a ~1-week public archive for Spelling Bee; and full
+  date-addressable history for Wordle, Strands, and Connections. `--backfill`
+  covers Spelling Bee, Wordle, Strands, and Connections; Connections is capped
+  (`--limit`, default 30) since it calls an LLM. The full-size Daily/Sunday
+  crosswords need a subscriber login and are out of scope.
 - LLM games (Connections, Mini) need a provider configured: in CI the workflow's
   `GITHUB_TOKEN` + `models: read` covers it for free; locally, export
   `GITHUB_TOKEN` (a PAT with the Models permission) or `GEMINI_API_KEY`, else

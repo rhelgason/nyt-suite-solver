@@ -8,6 +8,7 @@ Examples:
     python src/cli.py --game spelling-bee --backfill        # every archived date
     python src/cli.py --game wordle --backfill --delay 0.5  # full history, politely
     python src/cli.py --game strands --backfill --since 2026-01-01
+    python src/cli.py --game connections --backfill --limit 30  # recent sample (LLM)
 
 Exits non-zero if any requested puzzle failed to solve so that scheduled runs
 surface breakage instead of silently skipping a day.
@@ -34,18 +35,24 @@ from solvers.wordle.WordleSolver import WordleSolver
 GAMES = ["letter-boxed", "spelling-bee", "sudoku", "wordle", "strands", "connections", "crossword"]
 DATE_FORMAT = "%Y-%m-%d"
 
-# Letter Boxed and Sudoku only expose today's puzzle; Spelling Bee serves a short
-# archive, and Wordle, Strands, Connections and the Mini crossword serve their
-# full history, so a non-today date works for those.
-TODAY_ONLY_GAMES = {"letter-boxed", "sudoku"}
+# Letter Boxed, Sudoku and the Mini crossword only expose today's puzzle (every
+# past Mini's content is subscriber-gated); Spelling Bee serves a short archive,
+# and Wordle, Strands and Connections serve their full history.
+TODAY_ONLY_GAMES = {"letter-boxed", "sudoku", "crossword"}
 
 # Games with a full date-addressable history and the earliest date NYT serves.
 # Spelling Bee only exposes a rolling ~1-week archive (handled separately).
 HISTORY_EPOCHS = {
-    "wordle": "2021-06-19",   # Wordle #1
-    "strands": "2024-03-04",  # Strands #1
+    "wordle": "2021-06-19",       # Wordle #1
+    "strands": "2024-03-04",      # Strands #1
+    "connections": "2023-06-12",  # Connections #1
 }
-BACKFILL_GAMES = ("spelling-bee", "wordle", "strands")
+BACKFILL_GAMES = ("spelling-bee", "wordle", "strands", "connections")
+
+# Backfill games that call an LLM: capped by default so a run cannot accidentally
+# fire thousands of model requests. Override the cap with --limit.
+LLM_BACKFILL_GAMES = {"connections"}
+DEFAULT_LLM_BACKFILL_LIMIT = 30
 
 
 def today_ds() -> str:
@@ -98,22 +105,37 @@ def _already_solved(game: str, ds: str) -> bool:
         return os.path.exists(f"{StrandsSolver.OUTPUT_DIRECTORY_PATH}/{ds}.json")
     if game == "spelling-bee":
         return os.path.exists(f"{SpellingBeeSolver.OUTPUT_DIRECTORY_PATH}/{ds}.json")
+    if game == "connections":
+        return os.path.exists(f"{ConnectionsSolver.OUTPUT_DIRECTORY_PATH}/{ds}.json")
     return False
 
 
-def backfill_jobs(game: str, since: Optional[str], force: bool) -> List:
-    """Every solvable historical date for a game, oldest first, skipping dates
-    already on disk unless force is set."""
+def backfill_jobs(game: str, since: Optional[str], force: bool, limit: Optional[int]) -> List:
+    """Solvable historical dates for a game, skipping any already on disk unless
+    forced. When ``limit`` is set (or defaulted for the LLM games) only the most
+    recent that-many unsolved dates are taken, so a capped run builds a recent
+    sample and can be re-run to accumulate more."""
     if game == "spelling-bee":
         dates = spelling_bee_archive_dates()
     else:
         start = max(since, HISTORY_EPOCHS[game]) if since else HISTORY_EPOCHS[game]
         dates = date_range(start, today_ds())
 
-    jobs = []
-    for ds in dates:
+    if limit is None and game in LLM_BACKFILL_GAMES:
+        limit = DEFAULT_LLM_BACKFILL_LIMIT
+
+    # pick the most recent unsolved dates up to the cap, then solve oldest-first
+    selected = []
+    for ds in reversed(dates):
         if not force and _already_solved(game, ds):
             continue
+        selected.append(ds)
+        if limit is not None and len(selected) >= limit:
+            break
+    selected.reverse()
+
+    jobs = []
+    for ds in selected:
         if game == "spelling-bee":
             jobs.append((f"spelling-bee {ds}", lambda ds=ds: SpellingBeeSolver(ds).solve()))
         elif game == "wordle":
@@ -122,6 +144,8 @@ def backfill_jobs(game: str, since: Optional[str], force: bool) -> List:
                 jobs.append((f"wordle {mode} {ds}", lambda ds=ds, hard=hard: WordleSolver(ds, hard=hard).solve()))
         elif game == "strands":
             jobs.append((f"strands {ds}", lambda ds=ds: StrandsSolver(ds).solve()))
+        elif game == "connections":
+            jobs.append((f"connections {ds}", lambda ds=ds: ConnectionsSolver(ds).solve()))
     return jobs
 
 
@@ -135,7 +159,7 @@ def build_jobs(args) -> List:
         if not targets:
             raise SystemExit(f"--backfill is only supported for {', '.join(BACKFILL_GAMES)}")
         for game in targets:
-            jobs.extend(backfill_jobs(game, args.since, args.force))
+            jobs.extend(backfill_jobs(game, args.since, args.force, args.limit))
         return jobs
 
     ds = args.date or today_ds()
@@ -180,6 +204,9 @@ def run(argv: Optional[List[str]] = None) -> int:
                         help="earliest date to backfill (default: each game's full history)")
     parser.add_argument("--force", action="store_true",
                         help="re-solve dates already on disk (default: skip them)")
+    parser.add_argument("--limit", type=int, default=None,
+                        help="cap backfill to the N most recent unsolved dates "
+                             f"(default {DEFAULT_LLM_BACKFILL_LIMIT} for connections)")
     parser.add_argument("--delay", type=float, default=0.0,
                         help="seconds to sleep between puzzles during backfill (be polite to NYT)")
     args = parser.parse_args(argv)
