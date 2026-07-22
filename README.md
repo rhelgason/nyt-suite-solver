@@ -8,13 +8,14 @@ required, and can also be used interactively or headlessly.
 <!-- STATS:START -->
 ## Lifetime results
 
-_Auto-generated from `solutions/` · **13** puzzles solved across 3 games (through 2026-07-21)._
+_Auto-generated from `solutions/` · **14** puzzles solved across 4 games (through 2026-07-21)._
 
 | Game | Puzzles | Avg score | p90 runtime |
 | --- | ---: | ---: | ---: |
 | Spelling Bee | 9 | 99.5% | 92 ms |
 | Letter Boxed | 1 | 2.0 words | 110 ms |
 | Sudoku | 3 | 100% | 0.23 ms |
+| Wordle | 1 | 4.0 guesses | 45 ms |
 
 <p align="center"><img src="stats/cumulative_solves.svg" alt="Cumulative Puzzles Solved" width="720"></p>
 <!-- STATS:END -->
@@ -60,6 +61,19 @@ doubly-linked nodes, and the algorithm repeatedly covers the most-constrained
 column and backtracks until each rule is satisfied exactly once. It finds the
 unique solution in well under a millisecond on every difficulty, so there is no
 chart here; the p90 runtime above tells the whole story.
+
+### Wordle
+
+Wordle gives six tries to guess a hidden five-letter word, coloring each guess
+green, yellow, or gray. The solver opens with a fixed, letter-diverse word, then
+after each result keeps only the words still consistent with every clue and picks
+the next guess that splits those remaining words most evenly (minimizing the
+expected number left). It plays from a human five-letter vocabulary rather than
+the official answer list, treating the scraped solution purely as the feedback
+oracle, so a day is only solvable if that vocabulary contains the answer. The
+chart shows how many guesses it typically needs, with X marking the rare misses.
+
+<p align="center"><img src="stats/wordle_guesses.svg" alt="Wordle guess distribution" width="520"></p>
 
 ## Running it yourself
 

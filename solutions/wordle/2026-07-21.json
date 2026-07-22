@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 2350,
+    "ds": "2026-07-21",
+    "solution": "shill",
+    "guesses": [
+        "slate",
+        "silos",
+        "skill",
+        "shill"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.045"
+}

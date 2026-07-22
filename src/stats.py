@@ -129,17 +129,41 @@ def summarize_sudoku(records: List[Record]) -> dict:
     }
 
 
+def summarize_wordle(records: List[Record]) -> dict:
+    by_ds = _by_date(records)
+    dates = sorted(by_ds)
+    guesses = [by_ds[d]["num_guesses"] for d in dates
+               if by_ds[d].get("solved") and isinstance(by_ds[d].get("num_guesses"), int)]
+    dist: Dict[object, int] = {}
+    for d in dates:
+        rec = by_ds[d]
+        if rec.get("solved") and isinstance(rec.get("num_guesses"), int):
+            dist[rec["num_guesses"]] = dist.get(rec["num_guesses"], 0) + 1
+        else:
+            dist["X"] = dist.get("X", 0) + 1
+    avg = sum(guesses) / len(guesses) if guesses else None
+    return {
+        "count": len(dates),
+        "avg_guesses": avg,
+        "guess_dist": dist,
+        "p90_ms": _percentile(_runtimes_ms(records), 90),
+        "score_cell": f"{avg:.1f} guesses" if avg is not None else "n/a",
+    }
+
+
 # game order and colors used for the cumulative chart's legend/lines
 CUMULATIVE_GAMES = [
     ("spelling_bee", "Spelling Bee", "#eab308"),
     ("letter_boxed", "Letter Boxed", "#2563eb"),
     ("sudoku", "Sudoku", "#dc2626"),
+    ("wordle", "Wordle", "#7c3aed"),
 ]
 
 ASSETS_DIR = os.path.join(REPO_ROOT, "stats")
 CUMULATIVE_SVG_REL = "stats/cumulative_solves.svg"
 SCORES_SVG_REL = "stats/spelling_bee_scores.svg"
 WORDS_SVG_REL = "stats/letter_boxed_words.svg"
+WORDLE_SVG_REL = "stats/wordle_guesses.svg"
 
 
 def _parse_date(value: str) -> date:
@@ -194,7 +218,7 @@ def time_axis_ticks(dmin: date, dmax: date, target: int = 7) -> List[Tuple[float
 
 def cumulative_solves_svg(games: Dict[str, List[Record]]) -> Optional[str]:
     per_game = {
-        key: sorted(data.get("ds") for _, data in games[key] if data.get("ds"))
+        key: sorted(data.get("ds") for _, data in games.get(key, []) if data.get("ds"))
         for key, _, _ in CUMULATIVE_GAMES
     }
     all_dates = sorted({d for dates in per_game.values() for d in dates})
@@ -258,27 +282,44 @@ def word_count_pie_svg(s: dict) -> Optional[str]:
     return svg_charts.pie_chart("Letter Boxed Words per Solution", slices)
 
 
+def wordle_guesses_svg(s: dict) -> Optional[str]:
+    dist = s.get("guess_dist") or {}
+    if not dist:
+        return None
+    labels = [str(i) for i in range(1, 7)]
+    values = [dist.get(i, 0) for i in range(1, 7)]
+    if dist.get("X"):  # failed puzzles
+        labels.append("X")
+        values.append(dist["X"])
+    return svg_charts.bar_chart("Wordle Guess Distribution", labels, values, "#7c3aed", "Puzzles")
+
+
+GAMES = ("spelling_bee", "letter_boxed", "sudoku", "wordle")
+
+
 def build_section(root: str = SOLUTIONS_ROOT) -> str:
-    games = {g: load_game(root, g) for g in ("spelling_bee", "letter_boxed", "sudoku")}
+    games = {g: load_game(root, g) for g in GAMES}
     all_dates = [data.get("ds") for recs in games.values() for _, data in recs if data.get("ds")]
     latest = max(all_dates) if all_dates else None
 
     sb = summarize_spelling_bee(games["spelling_bee"])
     lb = summarize_letter_boxed(games["letter_boxed"])
     sk = summarize_sudoku(games["sudoku"])
-    total = sb["count"] + lb["count"] + sk["count"]
+    wd = summarize_wordle(games["wordle"])
+    rows = [("Spelling Bee", sb), ("Letter Boxed", lb), ("Sudoku", sk), ("Wordle", wd)]
+    total = sum(s["count"] for _, s in rows)
+    played = sum(1 for _, s in rows if s["count"] > 0)
 
     lines = ["## Lifetime results", ""]
     if total == 0:
         return "\n".join(lines + ["_No puzzles solved yet._"])
 
-    lines.append(f"_Auto-generated from `solutions/` · **{total}** puzzles solved across 3 games (through {latest})._")
+    lines.append(f"_Auto-generated from `solutions/` · **{total}** puzzles solved across {played} games (through {latest})._")
     lines.append("")
     lines.append("| Game | Puzzles | Avg score | p90 runtime |")
     lines.append("| --- | ---: | ---: | ---: |")
-    lines.append(f"| Spelling Bee | {sb['count']} | {sb['score_cell']} | {_format_runtime(sb['p90_ms'])} |")
-    lines.append(f"| Letter Boxed | {lb['count']} | {lb['score_cell']} | {_format_runtime(lb['p90_ms'])} |")
-    lines.append(f"| Sudoku | {sk['count']} | {sk['score_cell']} | {_format_runtime(sk['p90_ms'])} |")
+    for name, s in rows:
+        lines.append(f"| {name} | {s['count']} | {s['score_cell']} | {_format_runtime(s['p90_ms'])} |")
 
     if cumulative_solves_svg(games) is not None:
         lines.append("")
@@ -288,11 +329,12 @@ def build_section(root: str = SOLUTIONS_ROOT) -> str:
 
 def write_assets(root: str = SOLUTIONS_ROOT, assets_dir: str = ASSETS_DIR) -> None:
     """Write the committed chart images referenced by the README."""
-    games = {g: load_game(root, g) for g in ("spelling_bee", "letter_boxed", "sudoku")}
+    games = {g: load_game(root, g) for g in GAMES}
     assets = {
         "cumulative_solves.svg": cumulative_solves_svg(games),
         "spelling_bee_scores.svg": score_pie_svg(summarize_spelling_bee(games["spelling_bee"])),
         "letter_boxed_words.svg": word_count_pie_svg(summarize_letter_boxed(games["letter_boxed"])),
+        "wordle_guesses.svg": wordle_guesses_svg(summarize_wordle(games["wordle"])),
     }
     os.makedirs(assets_dir, exist_ok=True)
     for name, svg in assets.items():

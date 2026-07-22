@@ -26,14 +26,16 @@ def test_build_section_table_and_chart(tmp_path):
            {"ds": "2026-01-01", "valid_answers": [["a", "b"], ["c", "d"]], "shortest_answer_length": 2})
     _write(root, "sudoku", "2026-01-01_hard.json",
            {"ds": "2026-01-01", "solved_puzzle": "1,2", "solve_time": "0:00:00.000200"})
+    _write(root, "wordle", "2026-01-02.json", {"ds": "2026-01-02", "solved": True, "num_guesses": 3})
 
     section = build_section(root)
     assert "## Lifetime results" in section
-    assert "**4** puzzles solved across 3 games (through 2026-01-02)" in section
+    assert "**5** puzzles solved across 4 games (through 2026-01-02)" in section
     assert "| Game | Puzzles | Avg score | p90 runtime |" in section
     assert "| Spelling Bee | 2 | 75.0% | n/a |" in section          # (100 + 50) / 2, no timings
     assert "| Letter Boxed | 1 | 2.0 words | n/a |" in section
     assert "| Sudoku | 1 | 100% | 0.20 ms |" in section
+    assert "| Wordle | 1 | 3.0 guesses | n/a |" in section
     # cumulative line chart is a centered SVG image
     assert '<p align="center"><img src="stats/cumulative_solves.svg"' in section
 
@@ -57,8 +59,9 @@ def test_cumulative_svg_is_valid_and_time_scaled(tmp_path):
 
     svg = cumulative_solves_svg(games)
     ET.fromstring(svg)  # well-formed XML
-    assert "Spelling Bee" in svg and "Letter Boxed" in svg and "Sudoku" in svg  # legend
-    assert svg.count("<polyline") == 3  # one line per game
+    for name in ("Spelling Bee", "Letter Boxed", "Sudoku", "Wordle"):
+        assert name in svg  # legend covers every game
+    assert svg.count("<polyline") == 4  # one line per game (Wordle flat at 0 until it has data)
 
 
 def test_time_axis_ticks_scale_with_span():
@@ -113,6 +116,28 @@ def test_word_count_pie_svg(tmp_path):
     assert svg.count("<path") == 2               # "1 word" and "2 words" slices
     assert "1 word: 1 (33%)" in svg
     assert "2 words: 2 (67%)" in svg
+
+
+def test_summarize_wordle_and_chart(tmp_path):
+    import xml.etree.ElementTree as ET
+
+    from stats import load_game, summarize_wordle, wordle_guesses_svg
+
+    root = str(tmp_path)
+    _write(root, "wordle", "2026-01-01.json", {"ds": "2026-01-01", "solved": True, "num_guesses": 3})
+    _write(root, "wordle", "2026-01-02.json", {"ds": "2026-01-02", "solved": True, "num_guesses": 4})
+    _write(root, "wordle", "2026-01-03.json", {"ds": "2026-01-03", "solved": False, "num_guesses": None})
+
+    s = summarize_wordle(load_game(root, "wordle"))
+    assert s["count"] == 3
+    assert abs(s["avg_guesses"] - 3.5) < 1e-9        # mean of solved (3, 4)
+    assert s["guess_dist"] == {3: 1, 4: 1, "X": 1}
+    assert s["score_cell"] == "3.5 guesses"
+
+    svg = wordle_guesses_svg(s)
+    ET.fromstring(svg)  # well-formed XML
+    assert "Wordle Guess Distribution" in svg
+    assert svg.count("<rect") >= 7  # background + a bar per bucket (1-6 and X)
 
 
 def test_build_section_empty(tmp_path):

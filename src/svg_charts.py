@@ -98,6 +98,48 @@ def line_chart(title: str, x_values: List[float], series: List[Series],
     return "\n".join(out)
 
 
+def bar_chart(title: str, labels: List[str], values: List[float],
+              color: str = "#2563eb", y_label: str = "") -> str:
+    """A simple single-series vertical bar chart (e.g. Wordle guess counts)."""
+    y_max = _nice_max(max(values) if values else 0)
+    baseline = M_TOP + PLOT_H
+    n = max(1, len(labels))
+    slot = PLOT_W / n
+    bar_w = slot * 0.6
+
+    out = [
+        f'<svg xmlns="http://www.w3.org/2000/svg" width="{WIDTH}" height="{HEIGHT}" '
+        f'viewBox="0 0 {WIDTH} {HEIGHT}" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="12">',
+        f'<rect width="{WIDTH}" height="{HEIGHT}" fill="#ffffff"/>',
+        f'<text x="{WIDTH / 2:.0f}" y="26" text-anchor="middle" font-size="16" font-weight="600" fill="#1a1a1a">{_escape(title)}</text>',
+    ]
+
+    for t in range(5):
+        value = y_max * t / 4
+        yy = _y(value, y_max)
+        out.append(f'<line x1="{M_LEFT}" y1="{yy:.1f}" x2="{M_LEFT + PLOT_W}" y2="{yy:.1f}" stroke="#eaeaea"/>')
+        out.append(f'<text x="{M_LEFT - 8}" y="{yy + 4:.1f}" text-anchor="end" fill="#888">{value:.0f}</text>')
+
+    for i, (label, value) in enumerate(zip(labels, values)):
+        cx = M_LEFT + slot * i + slot / 2
+        height = PLOT_H * value / y_max
+        out.append(f'<rect x="{cx - bar_w / 2:.1f}" y="{baseline - height:.1f}" width="{bar_w:.1f}" height="{height:.1f}" rx="2" fill="{color}"/>')
+        if value:
+            out.append(f'<text x="{cx:.1f}" y="{baseline - height - 5:.1f}" text-anchor="middle" fill="#555">{value:.0f}</text>')
+        out.append(f'<text x="{cx:.1f}" y="{baseline + 18:.1f}" text-anchor="middle" fill="#888">{_escape(label)}</text>')
+
+    out.append(f'<line x1="{M_LEFT}" y1="{baseline}" x2="{M_LEFT + PLOT_W}" y2="{baseline}" stroke="#bbb"/>')
+    out.append(f'<line x1="{M_LEFT}" y1="{M_TOP}" x2="{M_LEFT}" y2="{baseline}" stroke="#bbb"/>')
+    if y_label:
+        out.append(
+            f'<text x="14" y="{M_TOP + PLOT_H / 2:.0f}" text-anchor="middle" fill="#888" '
+            f'transform="rotate(-90 14 {M_TOP + PLOT_H / 2:.0f})">{_escape(y_label)}</text>'
+        )
+
+    out.append("</svg>")
+    return "\n".join(out)
+
+
 PIE_W = 560
 PIE_H = 320
 PIE_CX = 165
