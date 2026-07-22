@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1154,
+    "ds": "2023-02-13",
+    "mode": "hard",
+    "solution": "usage",
+    "guesses": [
+        "tares",
+        "spale",
+        "cease",
+        "usage"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.051"
+}

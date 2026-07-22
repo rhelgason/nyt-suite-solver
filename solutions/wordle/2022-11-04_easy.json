@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 504,
+    "ds": "2022-11-04",
+    "mode": "easy",
+    "solution": "photo",
+    "guesses": [
+        "tares",
+        "colin",
+        "outgo",
+        "photo"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:02.557"
+}

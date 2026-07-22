@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 415,
+    "ds": "2022-08-07",
+    "mode": "hard",
+    "solution": "smear",
+    "guesses": [
+        "tares",
+        "spear",
+        "shear",
+        "smear"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.308"
+}

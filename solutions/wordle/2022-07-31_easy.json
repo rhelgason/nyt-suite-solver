@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 408,
+    "ds": "2022-07-31",
+    "mode": "easy",
+    "solution": "cramp",
+    "guesses": [
+        "tares",
+        "blond",
+        "charm",
+        "cramp"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:02.560"
+}

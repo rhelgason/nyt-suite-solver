@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 730,
+    "ds": "2023-02-09",
+    "mode": "hard",
+    "solution": "stage",
+    "guesses": [
+        "tares",
+        "stale",
+        "stade",
+        "stage"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.043"
+}

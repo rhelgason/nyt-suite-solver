@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 434,
+    "ds": "2022-08-26",
+    "mode": "hard",
+    "solution": "irony",
+    "guesses": [
+        "tares",
+        "prion",
+        "irony"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:00.107"
+}

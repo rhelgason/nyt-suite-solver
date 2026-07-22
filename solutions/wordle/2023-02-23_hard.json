@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 1881,
+    "ds": "2023-02-23",
+    "mode": "hard",
+    "solution": "vague",
+    "guesses": [
+        "tares",
+        "macle",
+        "fadge",
+        "gauze",
+        "vague"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:00.051"
+}

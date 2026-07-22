@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 452,
+    "ds": "2022-09-13",
+    "mode": "easy",
+    "solution": "alpha",
+    "guesses": [
+        "tares",
+        "colin",
+        "algum",
+        "alkyd",
+        "alpha"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:05.310"
+}

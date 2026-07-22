@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 839,
+    "ds": "2023-03-20",
+    "mode": "easy",
+    "solution": "glove",
+    "guesses": [
+        "tares",
+        "colin",
+        "blond",
+        "glove"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:05.299"
+}

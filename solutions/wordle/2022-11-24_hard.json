@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1438,
+    "ds": "2022-11-24",
+    "mode": "hard",
+    "solution": "feast",
+    "guesses": [
+        "tares",
+        "stale",
+        "beast",
+        "feast"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.065"
+}

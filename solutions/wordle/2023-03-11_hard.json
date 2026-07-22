@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 2168,
+    "ds": "2023-03-11",
+    "mode": "hard",
+    "solution": "email",
+    "guesses": [
+        "tares",
+        "plane",
+        "leavy",
+        "email"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.107"
+}

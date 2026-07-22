@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 423,
+    "ds": "2022-08-15",
+    "mode": "easy",
+    "solution": "poker",
+    "guesses": [
+        "tares",
+        "poind",
+        "aglow",
+        "poker"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:03.019"
+}

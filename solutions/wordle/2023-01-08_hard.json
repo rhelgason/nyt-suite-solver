@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1969,
+    "ds": "2023-01-08",
+    "mode": "hard",
+    "solution": "opera",
+    "guesses": [
+        "tares",
+        "beard",
+        "afire",
+        "opera"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.067"
+}

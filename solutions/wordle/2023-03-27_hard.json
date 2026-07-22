@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 2312,
+    "ds": "2023-03-27",
+    "mode": "hard",
+    "solution": "guano",
+    "guesses": [
+        "tares",
+        "aloin",
+        "donga",
+        "guano"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.254"
+}

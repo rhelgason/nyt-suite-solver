@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 929,
+    "ds": "2022-11-22",
+    "mode": "hard",
+    "solution": "prime",
+    "guesses": [
+        "tares",
+        "pride",
+        "price",
+        "prime"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.080"
+}

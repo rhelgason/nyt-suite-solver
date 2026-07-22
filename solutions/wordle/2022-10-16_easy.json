@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 485,
+    "ds": "2022-10-16",
+    "mode": "easy",
+    "solution": "spade",
+    "guesses": [
+        "tares",
+        "plash",
+        "aback",
+        "spade"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.869"
+}

@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1685,
+    "ds": "2022-11-21",
+    "mode": "easy",
+    "solution": "axiom",
+    "guesses": [
+        "tares",
+        "colin",
+        "amido",
+        "axiom"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:04.930"
+}

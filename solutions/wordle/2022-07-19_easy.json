@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 396,
+    "ds": "2022-07-19",
+    "mode": "easy",
+    "solution": "angry",
+    "guesses": [
+        "tares",
+        "blond",
+        "inarm",
+        "angry"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:02.345"
+}

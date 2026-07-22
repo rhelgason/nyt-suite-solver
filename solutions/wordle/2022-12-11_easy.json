@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 923,
+    "ds": "2022-12-11",
+    "mode": "easy",
+    "solution": "naive",
+    "guesses": [
+        "tares",
+        "cling",
+        "naive"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:00.728"
+}

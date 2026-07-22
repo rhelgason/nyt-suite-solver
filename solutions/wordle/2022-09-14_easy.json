@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 453,
+    "ds": "2022-09-14",
+    "mode": "easy",
+    "solution": "thyme",
+    "guesses": [
+        "tares",
+        "chine",
+        "theme",
+        "thyme"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.708"
+}

@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 479,
+    "ds": "2022-10-10",
+    "mode": "easy",
+    "solution": "enjoy",
+    "guesses": [
+        "tares",
+        "colin",
+        "geode",
+        "enjoy"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:05.266"
+}

@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 417,
+    "ds": "2022-08-09",
+    "mode": "easy",
+    "solution": "patty",
+    "guesses": [
+        "tares",
+        "cutin",
+        "lofty",
+        "batty",
+        "patty"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:01.092"
+}

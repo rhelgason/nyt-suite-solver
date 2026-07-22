@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 450,
+    "ds": "2022-09-11",
+    "mode": "hard",
+    "solution": "tibia",
+    "guesses": [
+        "tares",
+        "tolan",
+        "thack",
+        "tibia"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.061"
+}

@@ -1,0 +1,17 @@
+{
+    "puzzle_id": 391,
+    "ds": "2022-07-14",
+    "mode": "hard",
+    "solution": "liver",
+    "guesses": [
+        "tares",
+        "riled",
+        "liber",
+        "lifer",
+        "liger",
+        "liker"
+    ],
+    "num_guesses": null,
+    "solved": false,
+    "solve_time": "0:00:00.123"
+}

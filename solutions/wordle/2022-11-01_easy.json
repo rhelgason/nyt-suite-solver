@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 501,
+    "ds": "2022-11-01",
+    "mode": "easy",
+    "solution": "piney",
+    "guesses": [
+        "tares",
+        "indol",
+        "vampy",
+        "piney"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:03.893"
+}

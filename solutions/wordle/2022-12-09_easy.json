@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 840,
+    "ds": "2022-12-09",
+    "mode": "easy",
+    "solution": "braid",
+    "guesses": [
+        "tares",
+        "blond",
+        "braid"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:02.173"
+}

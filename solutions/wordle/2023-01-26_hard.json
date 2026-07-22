@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1384,
+    "ds": "2023-01-26",
+    "mode": "hard",
+    "solution": "beefy",
+    "guesses": [
+        "tares",
+        "oldie",
+        "bench",
+        "beefy"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.277"
+}

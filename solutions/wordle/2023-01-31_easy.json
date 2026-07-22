@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1007,
+    "ds": "2023-01-31",
+    "mode": "easy",
+    "solution": "cross",
+    "guesses": [
+        "tares",
+        "pound",
+        "swigs",
+        "cross"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:01.445"
+}

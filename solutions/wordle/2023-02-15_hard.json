@@ -1,0 +1,13 @@
+{
+    "puzzle_id": 1584,
+    "ds": "2023-02-15",
+    "mode": "hard",
+    "solution": "salsa",
+    "guesses": [
+        "tares",
+        "salsa"
+    ],
+    "num_guesses": 2,
+    "solved": true,
+    "solve_time": "0:00:00.051"
+}

@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 393,
+    "ds": "2022-07-16",
+    "mode": "easy",
+    "solution": "roomy",
+    "guesses": [
+        "tares",
+        "coign",
+        "duomo",
+        "roomy"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:02.536"
+}

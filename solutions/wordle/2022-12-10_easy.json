@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 2256,
+    "ds": "2022-12-10",
+    "mode": "easy",
+    "solution": "knock",
+    "guesses": [
+        "tares",
+        "colin",
+        "bunco",
+        "knock"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:07.685"
+}

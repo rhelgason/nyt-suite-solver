@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 495,
+    "ds": "2022-10-26",
+    "mode": "hard",
+    "solution": "flout",
+    "guesses": [
+        "tares",
+        "litho",
+        "poult",
+        "clout",
+        "flout"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:00.100"
+}

@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1556,
+    "ds": "2023-02-05",
+    "mode": "easy",
+    "solution": "dance",
+    "guesses": [
+        "tares",
+        "cling",
+        "aahed",
+        "dance"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.766"
+}

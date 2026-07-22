@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 560,
+    "ds": "2023-01-11",
+    "mode": "hard",
+    "solution": "sedan",
+    "guesses": [
+        "tares",
+        "spale",
+        "sedan"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:00.053"
+}

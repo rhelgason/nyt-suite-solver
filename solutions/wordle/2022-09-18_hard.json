@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 457,
+    "ds": "2022-09-18",
+    "mode": "hard",
+    "solution": "stick",
+    "guesses": [
+        "tares",
+        "shout",
+        "stink",
+        "stick"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.065"
+}

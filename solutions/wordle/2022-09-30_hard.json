@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 469,
+    "ds": "2022-09-30",
+    "mode": "hard",
+    "solution": "scorn",
+    "guesses": [
+        "tares",
+        "shirk",
+        "scorn"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:00.053"
+}

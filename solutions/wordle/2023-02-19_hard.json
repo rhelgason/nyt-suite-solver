@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 815,
+    "ds": "2023-02-19",
+    "mode": "hard",
+    "solution": "kiosk",
+    "guesses": [
+        "tares",
+        "spoil",
+        "kiosk"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:00.124"
+}

@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 2180,
+    "ds": "2022-11-27",
+    "mode": "easy",
+    "solution": "happy",
+    "guesses": [
+        "tares",
+        "lingy",
+        "pudic",
+        "happy"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:03.525"
+}

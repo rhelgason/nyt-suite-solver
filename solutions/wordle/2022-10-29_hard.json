@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 498,
+    "ds": "2022-10-29",
+    "mode": "hard",
+    "solution": "libel",
+    "guesses": [
+        "tares",
+        "loden",
+        "level",
+        "libel"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.187"
+}

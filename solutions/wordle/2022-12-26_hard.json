@@ -1,0 +1,17 @@
+{
+    "puzzle_id": 2283,
+    "ds": "2022-12-26",
+    "mode": "hard",
+    "solution": "judge",
+    "guesses": [
+        "tares",
+        "oldie",
+        "endue",
+        "budge",
+        "fudge",
+        "judge"
+    ],
+    "num_guesses": 6,
+    "solved": true,
+    "solve_time": "0:00:00.280"
+}

@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 805,
+    "ds": "2023-02-24",
+    "mode": "easy",
+    "solution": "arbor",
+    "guesses": [
+        "tares",
+        "blond",
+        "abhor",
+        "arbor"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:02.208"
+}

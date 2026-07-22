@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 849,
+    "ds": "2022-12-05",
+    "mode": "easy",
+    "solution": "woken",
+    "guesses": [
+        "tares",
+        "indol",
+        "campy",
+        "woken"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:03.958"
+}

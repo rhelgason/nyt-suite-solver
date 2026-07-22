@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1052,
+    "ds": "2023-03-09",
+    "mode": "easy",
+    "solution": "where",
+    "guesses": [
+        "tares",
+        "deice",
+        "brawn",
+        "where"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:02.016"
+}

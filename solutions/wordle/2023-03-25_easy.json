@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1738,
+    "ds": "2023-03-25",
+    "mode": "easy",
+    "solution": "voter",
+    "guesses": [
+        "tares",
+        "notum",
+        "doter",
+        "voter"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.461"
+}

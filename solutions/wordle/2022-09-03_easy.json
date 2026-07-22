@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 442,
+    "ds": "2022-09-03",
+    "mode": "easy",
+    "solution": "gully",
+    "guesses": [
+        "tares",
+        "colin",
+        "bigly",
+        "gully"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:07.780"
+}

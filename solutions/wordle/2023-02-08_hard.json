@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1927,
+    "ds": "2023-02-08",
+    "mode": "hard",
+    "solution": "flail",
+    "guesses": [
+        "tares",
+        "aloin",
+        "claim",
+        "flail"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.253"
+}

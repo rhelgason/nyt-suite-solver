@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 403,
+    "ds": "2022-07-26",
+    "mode": "hard",
+    "solution": "cinch",
+    "guesses": [
+        "tares",
+        "colin",
+        "chink",
+        "cinch"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.574"
+}

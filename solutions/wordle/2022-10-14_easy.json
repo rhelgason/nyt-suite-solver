@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 483,
+    "ds": "2022-10-14",
+    "mode": "easy",
+    "solution": "floor",
+    "guesses": [
+        "tares",
+        "coign",
+        "blood",
+        "floor"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:02.717"
+}

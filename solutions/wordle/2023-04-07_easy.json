@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1307,
+    "ds": "2023-04-07",
+    "mode": "easy",
+    "solution": "locus",
+    "guesses": [
+        "tares",
+        "colin",
+        "chook",
+        "locus"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:07.102"
+}

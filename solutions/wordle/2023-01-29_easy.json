@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 1159,
+    "ds": "2023-01-29",
+    "mode": "easy",
+    "solution": "fishy",
+    "guesses": [
+        "tares",
+        "noily",
+        "skosh",
+        "dishy",
+        "fishy"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:02.780"
+}

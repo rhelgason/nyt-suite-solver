@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 488,
+    "ds": "2022-10-19",
+    "mode": "easy",
+    "solution": "quirk",
+    "guesses": [
+        "tares",
+        "coign",
+        "flump",
+        "quirk"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:02.584"
+}

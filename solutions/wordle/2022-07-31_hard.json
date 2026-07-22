@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 408,
+    "ds": "2022-07-31",
+    "mode": "hard",
+    "solution": "cramp",
+    "guesses": [
+        "tares",
+        "drain",
+        "craal",
+        "crack",
+        "cramp"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:00.107"
+}

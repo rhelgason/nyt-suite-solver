@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 449,
+    "ds": "2022-09-10",
+    "mode": "hard",
+    "solution": "lofty",
+    "guesses": [
+        "tares",
+        "litho",
+        "lofty"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:00.108"
+}

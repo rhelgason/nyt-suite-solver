@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 495,
+    "ds": "2022-10-26",
+    "mode": "easy",
+    "solution": "flout",
+    "guesses": [
+        "tares",
+        "colin",
+        "buffy",
+        "flout"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:02.507"
+}

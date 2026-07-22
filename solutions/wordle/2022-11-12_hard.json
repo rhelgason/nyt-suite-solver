@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 537,
+    "ds": "2022-11-12",
+    "mode": "hard",
+    "solution": "valet",
+    "guesses": [
+        "tares",
+        "lated",
+        "palet",
+        "valet"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.048"
+}

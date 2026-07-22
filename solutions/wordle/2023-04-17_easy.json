@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1522,
+    "ds": "2023-04-17",
+    "mode": "easy",
+    "solution": "whiff",
+    "guesses": [
+        "tares",
+        "colin",
+        "dumpy",
+        "whiff"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:08.022"
+}

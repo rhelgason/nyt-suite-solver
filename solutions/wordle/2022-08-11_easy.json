@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 419,
+    "ds": "2022-08-11",
+    "mode": "easy",
+    "solution": "glean",
+    "guesses": [
+        "tares",
+        "aland",
+        "clean",
+        "glean"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:02.595"
+}

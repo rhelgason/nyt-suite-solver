@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 801,
+    "ds": "2022-12-17",
+    "mode": "hard",
+    "solution": "chord",
+    "guesses": [
+        "tares",
+        "prion",
+        "chord"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:00.105"
+}

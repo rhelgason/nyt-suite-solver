@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 406,
+    "ds": "2022-07-29",
+    "mode": "hard",
+    "solution": "upset",
+    "guesses": [
+        "tares",
+        "steel",
+        "onset",
+        "upset"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.046"
+}

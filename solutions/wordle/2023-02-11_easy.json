@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1873,
+    "ds": "2023-02-11",
+    "mode": "easy",
+    "solution": "debug",
+    "guesses": [
+        "tares",
+        "colin",
+        "dumpy",
+        "debug"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:05.543"
+}

@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 488,
+    "ds": "2022-10-19",
+    "mode": "hard",
+    "solution": "quirk",
+    "guesses": [
+        "tares",
+        "prion",
+        "chirr",
+        "quirk"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.126"
+}

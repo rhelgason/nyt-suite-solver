@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 2269,
+    "ds": "2023-01-05",
+    "mode": "hard",
+    "solution": "sleek",
+    "guesses": [
+        "tares",
+        "soled",
+        "sleep",
+        "sleek"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.049"
+}

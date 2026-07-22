@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 2261,
+    "ds": "2023-02-28",
+    "mode": "hard",
+    "solution": "polka",
+    "guesses": [
+        "tares",
+        "aloin",
+        "coala",
+        "dolma",
+        "polka"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:00.255"
+}

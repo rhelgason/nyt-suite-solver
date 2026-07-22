@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 439,
+    "ds": "2022-08-31",
+    "mode": "easy",
+    "solution": "prize",
+    "guesses": [
+        "tares",
+        "deice",
+        "gumbo",
+        "prize"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:02.052"
+}

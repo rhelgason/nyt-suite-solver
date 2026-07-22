@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 411,
+    "ds": "2022-08-03",
+    "mode": "easy",
+    "solution": "youth",
+    "guesses": [
+        "tares",
+        "colin",
+        "humpy",
+        "youth"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:02.661"
+}

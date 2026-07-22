@@ -1,0 +1,17 @@
+{
+    "puzzle_id": 397,
+    "ds": "2022-07-20",
+    "mode": "hard",
+    "solution": "trite",
+    "guesses": [
+        "tares",
+        "trine",
+        "tribe",
+        "trice",
+        "trike",
+        "tripe"
+    ],
+    "num_guesses": null,
+    "solved": false,
+    "solve_time": "0:00:00.066"
+}

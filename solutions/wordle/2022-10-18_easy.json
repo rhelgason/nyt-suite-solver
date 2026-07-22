@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 487,
+    "ds": "2022-10-18",
+    "mode": "easy",
+    "solution": "exist",
+    "guesses": [
+        "tares",
+        "point",
+        "deash",
+        "exist"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.889"
+}

@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 621,
+    "ds": "2022-12-14",
+    "mode": "easy",
+    "solution": "usual",
+    "guesses": [
+        "tares",
+        "milch",
+        "knell",
+        "usual"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:01.590"
+}

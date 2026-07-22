@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 487,
+    "ds": "2022-10-18",
+    "mode": "hard",
+    "solution": "exist",
+    "guesses": [
+        "tares",
+        "spite",
+        "deist",
+        "exist"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.064"
+}

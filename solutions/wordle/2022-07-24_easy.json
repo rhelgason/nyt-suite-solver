@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 401,
+    "ds": "2022-07-24",
+    "mode": "easy",
+    "solution": "power",
+    "guesses": [
+        "tares",
+        "poind",
+        "aglow",
+        "power"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:03.022"
+}

@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 441,
+    "ds": "2022-09-02",
+    "mode": "hard",
+    "solution": "charm",
+    "guesses": [
+        "tares",
+        "drain",
+        "clary",
+        "chark",
+        "charm"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:00.094"
+}

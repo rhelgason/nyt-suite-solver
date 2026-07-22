@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 425,
+    "ds": "2022-08-17",
+    "mode": "easy",
+    "solution": "twice",
+    "guesses": [
+        "tares",
+        "chine",
+        "twice"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:00.659"
+}

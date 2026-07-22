@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 1279,
+    "ds": "2022-12-29",
+    "mode": "hard",
+    "solution": "havoc",
+    "guesses": [
+        "tares",
+        "manly",
+        "haika",
+        "haugh",
+        "havoc"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:00.154"
+}

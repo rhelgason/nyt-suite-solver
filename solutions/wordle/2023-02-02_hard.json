@@ -1,0 +1,13 @@
+{
+    "puzzle_id": 1182,
+    "ds": "2023-02-02",
+    "mode": "hard",
+    "solution": "shirk",
+    "guesses": [
+        "tares",
+        "shirk"
+    ],
+    "num_guesses": 2,
+    "solved": true,
+    "solve_time": "0:00:00.057"
+}

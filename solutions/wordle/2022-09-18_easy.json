@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 457,
+    "ds": "2022-09-18",
+    "mode": "easy",
+    "solution": "stick",
+    "guesses": [
+        "tares",
+        "shout",
+        "linky",
+        "stick"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:01.422"
+}

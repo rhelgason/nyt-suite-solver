@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 468,
+    "ds": "2022-09-29",
+    "mode": "hard",
+    "solution": "scald",
+    "guesses": [
+        "tares",
+        "spail",
+        "slack",
+        "scald"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.069"
+}

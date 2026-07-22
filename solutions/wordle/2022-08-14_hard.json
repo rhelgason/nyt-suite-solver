@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 422,
+    "ds": "2022-08-14",
+    "mode": "hard",
+    "solution": "khaki",
+    "guesses": [
+        "tares",
+        "aloin",
+        "khadi",
+        "khaki"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.263"
+}

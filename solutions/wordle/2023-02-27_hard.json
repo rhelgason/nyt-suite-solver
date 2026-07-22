@@ -1,0 +1,17 @@
+{
+    "puzzle_id": 1805,
+    "ds": "2023-02-27",
+    "mode": "hard",
+    "solution": "worse",
+    "guesses": [
+        "tares",
+        "servo",
+        "corse",
+        "gorse",
+        "horse",
+        "morse"
+    ],
+    "num_guesses": null,
+    "solved": false,
+    "solve_time": "0:00:00.043"
+}

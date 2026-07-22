@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1155,
+    "ds": "2022-12-24",
+    "mode": "hard",
+    "solution": "poise",
+    "guesses": [
+        "tares",
+        "seine",
+        "hoise",
+        "poise"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.072"
+}

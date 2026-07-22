@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1249,
+    "ds": "2022-11-11",
+    "mode": "hard",
+    "solution": "medal",
+    "guesses": [
+        "tares",
+        "plane",
+        "decal",
+        "medal"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.114"
+}

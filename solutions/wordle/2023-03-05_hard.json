@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1795,
+    "ds": "2023-03-05",
+    "mode": "hard",
+    "solution": "toxic",
+    "guesses": [
+        "tares",
+        "thing",
+        "typic",
+        "toxic"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.064"
+}

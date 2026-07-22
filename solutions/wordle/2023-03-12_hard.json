@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 1754,
+    "ds": "2023-03-12",
+    "mode": "hard",
+    "solution": "birth",
+    "guesses": [
+        "tares",
+        "borty",
+        "birth"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:00.047"
+}

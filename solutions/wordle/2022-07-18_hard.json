@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 395,
+    "ds": "2022-07-18",
+    "mode": "hard",
+    "solution": "flock",
+    "guesses": [
+        "tares",
+        "colin",
+        "block",
+        "flock"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.600"
+}

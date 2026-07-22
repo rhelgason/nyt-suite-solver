@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 482,
+    "ds": "2022-10-13",
+    "mode": "hard",
+    "solution": "equal",
+    "guesses": [
+        "tares",
+        "plane",
+        "decal",
+        "equal"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.106"
+}

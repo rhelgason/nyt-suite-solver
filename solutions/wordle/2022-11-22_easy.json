@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 929,
+    "ds": "2022-11-22",
+    "mode": "easy",
+    "solution": "prime",
+    "guesses": [
+        "tares",
+        "deice",
+        "gumbo",
+        "prime"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:02.061"
+}

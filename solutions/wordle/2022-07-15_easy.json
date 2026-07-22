@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 392,
+    "ds": "2022-07-15",
+    "mode": "easy",
+    "solution": "wedge",
+    "guesses": [
+        "tares",
+        "colin",
+        "dumpy",
+        "ankhs",
+        "wedge"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:05.586"
+}

@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 435,
+    "ds": "2022-08-27",
+    "mode": "easy",
+    "solution": "ruder",
+    "guesses": [
+        "tares",
+        "poind",
+        "ceded",
+        "ruder"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:03.096"
+}

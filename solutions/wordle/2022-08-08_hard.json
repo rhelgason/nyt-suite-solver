@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 416,
+    "ds": "2022-08-08",
+    "mode": "hard",
+    "solution": "unfit",
+    "guesses": [
+        "tares",
+        "litho",
+        "cubit",
+        "unfit"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.114"
+}

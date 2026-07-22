@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 465,
+    "ds": "2022-09-26",
+    "mode": "easy",
+    "solution": "brisk",
+    "guesses": [
+        "tares",
+        "shoyu",
+        "aback",
+        "brisk"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.653"
+}

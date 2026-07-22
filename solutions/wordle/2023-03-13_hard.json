@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 2239,
+    "ds": "2023-03-13",
+    "mode": "hard",
+    "solution": "blame",
+    "guesses": [
+        "tares",
+        "plane",
+        "clade",
+        "blame"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.107"
+}

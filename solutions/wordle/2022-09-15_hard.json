@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 454,
+    "ds": "2022-09-15",
+    "mode": "hard",
+    "solution": "doubt",
+    "guesses": [
+        "tares",
+        "litho",
+        "fount",
+        "doubt"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.105"
+}

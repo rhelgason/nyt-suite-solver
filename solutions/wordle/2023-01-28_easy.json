@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 1211,
+    "ds": "2023-01-28",
+    "mode": "easy",
+    "solution": "flirt",
+    "guesses": [
+        "tares",
+        "fruit",
+        "flirt"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:00.644"
+}

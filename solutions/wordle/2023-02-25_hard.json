@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1715,
+    "ds": "2023-02-25",
+    "mode": "hard",
+    "solution": "fifty",
+    "guesses": [
+        "tares",
+        "litho",
+        "nifty",
+        "fifty"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.099"
+}

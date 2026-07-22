@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 444,
+    "ds": "2022-09-05",
+    "mode": "easy",
+    "solution": "whoop",
+    "guesses": [
+        "tares",
+        "colin",
+        "duomo",
+        "whoof",
+        "whoop"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:07.774"
+}

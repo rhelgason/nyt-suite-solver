@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 1717,
+    "ds": "2023-02-12",
+    "mode": "easy",
+    "solution": "giant",
+    "guesses": [
+        "tares",
+        "aloin",
+        "giant"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:01.079"
+}

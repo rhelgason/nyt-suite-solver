@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 509,
+    "ds": "2022-11-16",
+    "mode": "easy",
+    "solution": "baker",
+    "guesses": [
+        "tares",
+        "glyph",
+        "mewed",
+        "racon",
+        "baker"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:01.487"
+}

@@ -1,0 +1,13 @@
+{
+    "puzzle_id": 506,
+    "ds": "2022-11-06",
+    "mode": "hard",
+    "solution": "stale",
+    "guesses": [
+        "tares",
+        "stale"
+    ],
+    "num_guesses": 2,
+    "solved": true,
+    "solve_time": "0:00:00.057"
+}

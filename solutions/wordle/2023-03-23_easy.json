@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 2221,
+    "ds": "2023-03-23",
+    "mode": "easy",
+    "solution": "staid",
+    "guesses": [
+        "tares",
+        "slant",
+        "chimp",
+        "staid"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.820"
+}

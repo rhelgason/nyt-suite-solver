@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 507,
+    "ds": "2022-11-10",
+    "mode": "hard",
+    "solution": "unite",
+    "guesses": [
+        "tares",
+        "elite",
+        "quite",
+        "unite"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.138"
+}

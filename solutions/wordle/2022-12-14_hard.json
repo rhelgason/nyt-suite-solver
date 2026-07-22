@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 621,
+    "ds": "2022-12-14",
+    "mode": "hard",
+    "solution": "usual",
+    "guesses": [
+        "tares",
+        "spail",
+        "usual"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:00.074"
+}

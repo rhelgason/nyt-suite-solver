@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 2279,
+    "ds": "2023-03-26",
+    "mode": "hard",
+    "solution": "untie",
+    "guesses": [
+        "tares",
+        "elite",
+        "cutie",
+        "untie"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.061"
+}

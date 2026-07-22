@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 400,
+    "ds": "2022-07-23",
+    "mode": "hard",
+    "solution": "midge",
+    "guesses": [
+        "tares",
+        "oldie",
+        "fidge",
+        "midge"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.295"
+}

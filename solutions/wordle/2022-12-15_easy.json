@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 2278,
+    "ds": "2022-12-15",
+    "mode": "easy",
+    "solution": "rival",
+    "guesses": [
+        "tares",
+        "blond",
+        "cigar",
+        "rival"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:02.432"
+}

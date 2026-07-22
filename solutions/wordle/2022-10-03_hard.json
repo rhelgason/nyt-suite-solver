@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 472,
+    "ds": "2022-10-03",
+    "mode": "hard",
+    "solution": "sting",
+    "guesses": [
+        "tares",
+        "shout",
+        "stink",
+        "sting"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.061"
+}

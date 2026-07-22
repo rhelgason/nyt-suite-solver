@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 429,
+    "ds": "2022-08-21",
+    "mode": "easy",
+    "solution": "waste",
+    "guesses": [
+        "tares",
+        "bumph",
+        "caste",
+        "waste"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.138"
+}

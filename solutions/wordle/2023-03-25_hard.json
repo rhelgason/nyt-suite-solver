@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 1738,
+    "ds": "2023-03-25",
+    "mode": "hard",
+    "solution": "voter",
+    "guesses": [
+        "tares",
+        "outer",
+        "doter",
+        "noter",
+        "voter"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:00.044"
+}

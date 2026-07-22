@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 497,
+    "ds": "2022-10-28",
+    "mode": "hard",
+    "solution": "sneak",
+    "guesses": [
+        "tares",
+        "spale",
+        "sedan",
+        "sneak"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.060"
+}

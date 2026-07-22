@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 496,
+    "ds": "2022-10-27",
+    "mode": "easy",
+    "solution": "carry",
+    "guesses": [
+        "tares",
+        "cymol",
+        "carny",
+        "carry"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.718"
+}

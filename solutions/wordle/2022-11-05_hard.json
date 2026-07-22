@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 505,
+    "ds": "2022-11-05",
+    "mode": "hard",
+    "solution": "dream",
+    "guesses": [
+        "tares",
+        "beard",
+        "dream"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:00.059"
+}

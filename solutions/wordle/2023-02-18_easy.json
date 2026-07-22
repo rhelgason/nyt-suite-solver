@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1207,
+    "ds": "2023-02-18",
+    "mode": "easy",
+    "solution": "avail",
+    "guesses": [
+        "tares",
+        "colin",
+        "algid",
+        "avail"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:04.879"
+}

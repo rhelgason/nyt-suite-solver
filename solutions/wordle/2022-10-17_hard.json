@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 486,
+    "ds": "2022-10-17",
+    "mode": "hard",
+    "solution": "stein",
+    "guesses": [
+        "tares",
+        "spite",
+        "stein"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:00.061"
+}

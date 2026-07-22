@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 394,
+    "ds": "2022-07-17",
+    "mode": "hard",
+    "solution": "wacky",
+    "guesses": [
+        "tares",
+        "manly",
+        "cadgy",
+        "jacky",
+        "wacky"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:00.138"
+}

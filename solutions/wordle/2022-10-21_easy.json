@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 490,
+    "ds": "2022-10-21",
+    "mode": "easy",
+    "solution": "grove",
+    "guesses": [
+        "tares",
+        "deice",
+        "bumph",
+        "angry",
+        "grove"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:02.273"
+}

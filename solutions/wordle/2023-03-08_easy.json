@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 975,
+    "ds": "2023-03-08",
+    "mode": "easy",
+    "solution": "regal",
+    "guesses": [
+        "tares",
+        "craal",
+        "regal"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:01.341"
+}

@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 883,
+    "ds": "2023-03-15",
+    "mode": "easy",
+    "solution": "sweep",
+    "guesses": [
+        "tares",
+        "solid",
+        "chunk",
+        "sweep"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:01.021"
+}

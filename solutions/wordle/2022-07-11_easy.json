@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 388,
+    "ds": "2022-07-11",
+    "mode": "easy",
+    "solution": "madam",
+    "guesses": [
+        "tares",
+        "lingy",
+        "combo",
+        "madam"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:03.560"
+}

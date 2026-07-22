@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 699,
+    "ds": "2023-04-12",
+    "mode": "easy",
+    "solution": "borax",
+    "guesses": [
+        "tares",
+        "linum",
+        "abash",
+        "borax"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.756"
+}

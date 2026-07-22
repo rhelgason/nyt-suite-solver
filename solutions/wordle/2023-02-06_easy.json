@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1245,
+    "ds": "2023-02-06",
+    "mode": "easy",
+    "solution": "ninth",
+    "guesses": [
+        "tares",
+        "colin",
+        "finny",
+        "ninth"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:02.527"
+}

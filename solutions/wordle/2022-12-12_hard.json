@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1168,
+    "ds": "2022-12-12",
+    "mode": "hard",
+    "solution": "apply",
+    "guesses": [
+        "tares",
+        "aloin",
+        "amply",
+        "apply"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.257"
+}

@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 1867,
+    "ds": "2023-03-10",
+    "mode": "easy",
+    "solution": "revel",
+    "guesses": [
+        "tares",
+        "poind",
+        "elegy",
+        "bevel",
+        "revel"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:03.607"
+}

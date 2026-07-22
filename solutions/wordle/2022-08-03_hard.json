@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 411,
+    "ds": "2022-08-03",
+    "mode": "hard",
+    "solution": "youth",
+    "guesses": [
+        "tares",
+        "litho",
+        "mouth",
+        "couth",
+        "youth"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:00.126"
+}

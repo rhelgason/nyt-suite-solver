@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 839,
+    "ds": "2023-03-20",
+    "mode": "hard",
+    "solution": "glove",
+    "guesses": [
+        "tares",
+        "oldie",
+        "clove",
+        "glove"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.275"
+}

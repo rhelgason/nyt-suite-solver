@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1271,
+    "ds": "2023-04-14",
+    "mode": "hard",
+    "solution": "thief",
+    "guesses": [
+        "tares",
+        "toned",
+        "tepee",
+        "thief"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.056"
+}

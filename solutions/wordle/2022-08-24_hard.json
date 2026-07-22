@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 432,
+    "ds": "2022-08-24",
+    "mode": "hard",
+    "solution": "needy",
+    "guesses": [
+        "tares",
+        "oldie",
+        "debug",
+        "needy"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.300"
+}

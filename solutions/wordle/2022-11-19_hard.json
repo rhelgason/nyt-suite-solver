@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 539,
+    "ds": "2022-11-19",
+    "mode": "hard",
+    "solution": "avert",
+    "guesses": [
+        "tares",
+        "peart",
+        "alert",
+        "avert"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.055"
+}

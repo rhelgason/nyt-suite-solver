@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 412,
+    "ds": "2022-08-04",
+    "mode": "easy",
+    "solution": "rhyme",
+    "guesses": [
+        "tares",
+        "deice",
+        "bumph",
+        "rhyme"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:02.241"
+}

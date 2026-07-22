@@ -1,0 +1,17 @@
+{
+    "puzzle_id": 514,
+    "ds": "2022-11-08",
+    "mode": "hard",
+    "solution": "spell",
+    "guesses": [
+        "tares",
+        "seine",
+        "shell",
+        "skell",
+        "smell",
+        "spell"
+    ],
+    "num_guesses": 6,
+    "solved": true,
+    "solve_time": "0:00:00.095"
+}

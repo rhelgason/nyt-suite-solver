@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 883,
+    "ds": "2023-03-15",
+    "mode": "hard",
+    "solution": "sweep",
+    "guesses": [
+        "tares",
+        "soled",
+        "skeen",
+        "sheep",
+        "sweep"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:00.054"
+}

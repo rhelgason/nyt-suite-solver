@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 461,
+    "ds": "2022-09-22",
+    "mode": "easy",
+    "solution": "saint",
+    "guesses": [
+        "tares",
+        "spiny",
+        "saint"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:00.338"
+}

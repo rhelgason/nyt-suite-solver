@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 413,
+    "ds": "2022-08-05",
+    "mode": "easy",
+    "solution": "buggy",
+    "guesses": [
+        "tares",
+        "colin",
+        "pygmy",
+        "abaft",
+        "buggy"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:08.140"
+}

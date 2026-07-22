@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 409,
+    "ds": "2022-08-01",
+    "mode": "hard",
+    "solution": "quart",
+    "guesses": [
+        "tares",
+        "arhat",
+        "boart",
+        "lyart",
+        "quart"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:00.060"
+}

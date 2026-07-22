@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 474,
+    "ds": "2022-10-05",
+    "mode": "easy",
+    "solution": "marsh",
+    "guesses": [
+        "tares",
+        "hogan",
+        "marsh"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:00.168"
+}

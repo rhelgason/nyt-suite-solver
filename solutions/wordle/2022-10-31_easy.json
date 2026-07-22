@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 500,
+    "ds": "2022-10-31",
+    "mode": "easy",
+    "solution": "aptly",
+    "guesses": [
+        "tares",
+        "aloin",
+        "adult",
+        "aptly"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:01.035"
+}

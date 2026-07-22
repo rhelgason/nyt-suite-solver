@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 494,
+    "ds": "2022-10-25",
+    "mode": "easy",
+    "solution": "foggy",
+    "guesses": [
+        "tares",
+        "colin",
+        "boody",
+        "pommy",
+        "foggy"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:08.319"
+}

@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 466,
+    "ds": "2022-09-27",
+    "mode": "easy",
+    "solution": "soggy",
+    "guesses": [
+        "tares",
+        "noily",
+        "sumps",
+        "soddy",
+        "soggy"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:02.819"
+}

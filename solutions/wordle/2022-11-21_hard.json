@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1685,
+    "ds": "2022-11-21",
+    "mode": "hard",
+    "solution": "axiom",
+    "guesses": [
+        "tares",
+        "aloin",
+        "amido",
+        "axiom"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.262"
+}

@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1879,
+    "ds": "2023-03-06",
+    "mode": "easy",
+    "solution": "pinky",
+    "guesses": [
+        "tares",
+        "colin",
+        "piing",
+        "pinky"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:08.009"
+}

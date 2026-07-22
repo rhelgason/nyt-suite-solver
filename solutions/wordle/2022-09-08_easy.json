@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 447,
+    "ds": "2022-09-08",
+    "mode": "easy",
+    "solution": "class",
+    "guesses": [
+        "tares",
+        "comal",
+        "dingy",
+        "apish",
+        "class"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:03.131"
+}

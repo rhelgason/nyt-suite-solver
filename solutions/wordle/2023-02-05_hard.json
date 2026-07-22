@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 1556,
+    "ds": "2023-02-05",
+    "mode": "hard",
+    "solution": "dance",
+    "guesses": [
+        "tares",
+        "macle",
+        "dance"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:00.064"
+}

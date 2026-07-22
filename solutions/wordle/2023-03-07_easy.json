@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1977,
+    "ds": "2023-03-07",
+    "mode": "easy",
+    "solution": "horse",
+    "guesses": [
+        "tares",
+        "vogue",
+        "cahow",
+        "horse"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.400"
+}

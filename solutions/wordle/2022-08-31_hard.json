@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 439,
+    "ds": "2022-08-31",
+    "mode": "hard",
+    "solution": "prize",
+    "guesses": [
+        "tares",
+        "pride",
+        "price",
+        "prime",
+        "prize"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:00.088"
+}

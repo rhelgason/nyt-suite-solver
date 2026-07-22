@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 2265,
+    "ds": "2022-12-03",
+    "mode": "easy",
+    "solution": "torso",
+    "guesses": [
+        "tares",
+        "alike",
+        "torso"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:00.123"
+}

@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 481,
+    "ds": "2022-10-12",
+    "mode": "easy",
+    "solution": "ionic",
+    "guesses": [
+        "tares",
+        "colin",
+        "ionic"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:07.641"
+}

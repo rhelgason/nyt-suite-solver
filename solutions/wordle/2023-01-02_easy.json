@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 2263,
+    "ds": "2023-01-02",
+    "mode": "easy",
+    "solution": "skirt",
+    "guesses": [
+        "tares",
+        "spout",
+        "shirt",
+        "skirt"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.357"
+}

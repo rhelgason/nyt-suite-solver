@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 491,
+    "ds": "2022-10-22",
+    "mode": "hard",
+    "solution": "spiel",
+    "guesses": [
+        "tares",
+        "soled",
+        "sleep",
+        "spiel"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.061"
+}

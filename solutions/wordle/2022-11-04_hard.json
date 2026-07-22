@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 504,
+    "ds": "2022-11-04",
+    "mode": "hard",
+    "solution": "photo",
+    "guesses": [
+        "tares",
+        "litho",
+        "photo"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:00.096"
+}

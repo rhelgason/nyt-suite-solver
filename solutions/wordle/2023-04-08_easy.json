@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1895,
+    "ds": "2023-04-08",
+    "mode": "easy",
+    "solution": "ledge",
+    "guesses": [
+        "tares",
+        "colin",
+        "pudgy",
+        "ledge"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:05.444"
+}

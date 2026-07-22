@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 1246,
+    "ds": "2022-12-07",
+    "mode": "easy",
+    "solution": "joust",
+    "guesses": [
+        "tares",
+        "shout",
+        "joust"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:01.288"
+}

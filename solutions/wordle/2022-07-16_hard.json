@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 393,
+    "ds": "2022-07-16",
+    "mode": "hard",
+    "solution": "roomy",
+    "guesses": [
+        "tares",
+        "prion",
+        "chord",
+        "rooky",
+        "roomy"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:00.105"
+}

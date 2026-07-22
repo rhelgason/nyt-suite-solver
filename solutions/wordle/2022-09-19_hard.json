@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 458,
+    "ds": "2022-09-19",
+    "mode": "hard",
+    "solution": "trice",
+    "guesses": [
+        "tares",
+        "trine",
+        "tribe",
+        "trice"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.063"
+}

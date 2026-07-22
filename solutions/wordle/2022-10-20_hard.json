@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 489,
+    "ds": "2022-10-20",
+    "mode": "hard",
+    "solution": "denim",
+    "guesses": [
+        "tares",
+        "oldie",
+        "cebid",
+        "denim"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.288"
+}

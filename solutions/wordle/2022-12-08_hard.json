@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1149,
+    "ds": "2022-12-08",
+    "mode": "hard",
+    "solution": "infer",
+    "guesses": [
+        "tares",
+        "riled",
+        "brief",
+        "infer"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.133"
+}

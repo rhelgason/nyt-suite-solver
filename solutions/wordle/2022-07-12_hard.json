@@ -1,0 +1,17 @@
+{
+    "puzzle_id": 389,
+    "ds": "2022-07-12",
+    "mode": "hard",
+    "solution": "night",
+    "guesses": [
+        "tares",
+        "litho",
+        "bight",
+        "dight",
+        "fight",
+        "hight"
+    ],
+    "num_guesses": null,
+    "solved": false,
+    "solve_time": "0:00:00.111"
+}

@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 398,
+    "ds": "2022-07-21",
+    "mode": "hard",
+    "solution": "aphid",
+    "guesses": [
+        "tares",
+        "aloin",
+        "admix",
+        "aphid"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.347"
+}

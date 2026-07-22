@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1279,
+    "ds": "2022-12-29",
+    "mode": "easy",
+    "solution": "havoc",
+    "guesses": [
+        "tares",
+        "lingy",
+        "combo",
+        "havoc"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:03.558"
+}

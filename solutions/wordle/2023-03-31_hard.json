@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 977,
+    "ds": "2023-03-31",
+    "mode": "hard",
+    "solution": "every",
+    "guesses": [
+        "tares",
+        "pride",
+        "leery",
+        "emery",
+        "every"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:00.077"
+}

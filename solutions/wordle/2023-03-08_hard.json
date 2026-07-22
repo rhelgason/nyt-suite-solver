@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 975,
+    "ds": "2023-03-08",
+    "mode": "hard",
+    "solution": "regal",
+    "guesses": [
+        "tares",
+        "beard",
+        "renal",
+        "regal"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.062"
+}

@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1502,
+    "ds": "2023-02-01",
+    "mode": "hard",
+    "solution": "scold",
+    "guesses": [
+        "tares",
+        "spoil",
+        "slojd",
+        "scold"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.108"
+}

@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 482,
+    "ds": "2022-10-13",
+    "mode": "easy",
+    "solution": "equal",
+    "guesses": [
+        "tares",
+        "aland",
+        "chill",
+        "equal"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:02.792"
+}

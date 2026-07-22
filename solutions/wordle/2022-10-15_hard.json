@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 484,
+    "ds": "2022-10-15",
+    "mode": "hard",
+    "solution": "catch",
+    "guesses": [
+        "tares",
+        "haint",
+        "batch",
+        "catch"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.066"
+}

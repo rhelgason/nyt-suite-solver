@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 2283,
+    "ds": "2022-12-26",
+    "mode": "easy",
+    "solution": "judge",
+    "guesses": [
+        "tares",
+        "colin",
+        "dumpy",
+        "abaft",
+        "judge"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:05.562"
+}

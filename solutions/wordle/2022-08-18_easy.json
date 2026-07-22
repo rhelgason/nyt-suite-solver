@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 426,
+    "ds": "2022-08-18",
+    "mode": "easy",
+    "solution": "twang",
+    "guesses": [
+        "tares",
+        "linky",
+        "toman",
+        "twang"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.361"
+}

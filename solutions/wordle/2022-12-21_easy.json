@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 694,
+    "ds": "2022-12-21",
+    "mode": "easy",
+    "solution": "lunar",
+    "guesses": [
+        "tares",
+        "blond",
+        "gnarl",
+        "lunar"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:02.186"
+}

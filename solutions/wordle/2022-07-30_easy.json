@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 407,
+    "ds": "2022-07-30",
+    "mode": "easy",
+    "solution": "bluff",
+    "guesses": [
+        "tares",
+        "colin",
+        "bumpy",
+        "bluff"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:07.791"
+}

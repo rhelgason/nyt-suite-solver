@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 801,
+    "ds": "2022-12-17",
+    "mode": "easy",
+    "solution": "chord",
+    "guesses": [
+        "tares",
+        "coign",
+        "cruck",
+        "chord"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:02.505"
+}

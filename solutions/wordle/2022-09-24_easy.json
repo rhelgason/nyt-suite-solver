@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 463,
+    "ds": "2022-09-24",
+    "mode": "easy",
+    "solution": "grate",
+    "guesses": [
+        "tares",
+        "acari",
+        "bogus",
+        "grate"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.401"
+}

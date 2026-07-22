@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1591,
+    "ds": "2022-12-16",
+    "mode": "easy",
+    "solution": "probe",
+    "guesses": [
+        "tares",
+        "deice",
+        "bumph",
+        "probe"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:02.252"
+}

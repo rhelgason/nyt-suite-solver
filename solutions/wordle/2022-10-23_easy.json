@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 492,
+    "ds": "2022-10-23",
+    "mode": "easy",
+    "solution": "mummy",
+    "guesses": [
+        "tares",
+        "colin",
+        "pygmy",
+        "dummy",
+        "mummy"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:08.070"
+}

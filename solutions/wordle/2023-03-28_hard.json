@@ -1,0 +1,17 @@
+{
+    "puzzle_id": 2104,
+    "ds": "2023-03-28",
+    "mode": "hard",
+    "solution": "hurry",
+    "guesses": [
+        "tares",
+        "curio",
+        "burry",
+        "furry",
+        "gurry",
+        "hurry"
+    ],
+    "num_guesses": 6,
+    "solved": true,
+    "solve_time": "0:00:00.054"
+}

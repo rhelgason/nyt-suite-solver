@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 435,
+    "ds": "2022-08-27",
+    "mode": "hard",
+    "solution": "ruder",
+    "guesses": [
+        "tares",
+        "riled",
+        "rodeo",
+        "ruder"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.128"
+}

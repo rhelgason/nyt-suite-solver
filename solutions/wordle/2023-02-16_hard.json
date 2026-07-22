@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 776,
+    "ds": "2023-02-16",
+    "mode": "hard",
+    "solution": "magic",
+    "guesses": [
+        "tares",
+        "manly",
+        "magma",
+        "magic"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.129"
+}

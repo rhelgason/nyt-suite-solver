@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 446,
+    "ds": "2022-09-07",
+    "mode": "easy",
+    "solution": "leery",
+    "guesses": [
+        "tares",
+        "deice",
+        "blare",
+        "leery"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:02.018"
+}

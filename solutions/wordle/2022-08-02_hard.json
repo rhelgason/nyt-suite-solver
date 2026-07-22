@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 410,
+    "ds": "2022-08-02",
+    "mode": "hard",
+    "solution": "coyly",
+    "guesses": [
+        "tares",
+        "colin",
+        "cooly",
+        "coyly"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.583"
+}

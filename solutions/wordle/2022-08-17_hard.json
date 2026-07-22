@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 425,
+    "ds": "2022-08-17",
+    "mode": "hard",
+    "solution": "twice",
+    "guesses": [
+        "tares",
+        "thine",
+        "toile",
+        "twice"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.082"
+}

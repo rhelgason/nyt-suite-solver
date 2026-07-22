@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 965,
+    "ds": "2023-01-17",
+    "mode": "hard",
+    "solution": "adopt",
+    "guesses": [
+        "tares",
+        "alant",
+        "audit",
+        "adopt"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.057"
+}

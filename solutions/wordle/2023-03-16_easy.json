@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1342,
+    "ds": "2023-03-16",
+    "mode": "easy",
+    "solution": "cider",
+    "guesses": [
+        "tares",
+        "poind",
+        "ditch",
+        "cider"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:03.095"
+}

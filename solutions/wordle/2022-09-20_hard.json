@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 459,
+    "ds": "2022-09-20",
+    "mode": "hard",
+    "solution": "alike",
+    "guesses": [
+        "tares",
+        "plane",
+        "alike"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:00.102"
+}

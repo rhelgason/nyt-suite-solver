@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 726,
+    "ds": "2023-04-11",
+    "mode": "hard",
+    "solution": "qualm",
+    "guesses": [
+        "tares",
+        "aloin",
+        "bulla",
+        "qualm"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.257"
+}

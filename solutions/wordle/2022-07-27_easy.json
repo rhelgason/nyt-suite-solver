@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 404,
+    "ds": "2022-07-27",
+    "mode": "easy",
+    "solution": "motto",
+    "guesses": [
+        "tares",
+        "colin",
+        "humpy",
+        "motto"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:02.665"
+}

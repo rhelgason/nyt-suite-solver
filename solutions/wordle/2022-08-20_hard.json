@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 428,
+    "ds": "2022-08-20",
+    "mode": "hard",
+    "solution": "treat",
+    "guesses": [
+        "tares",
+        "trade",
+        "treat"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:00.044"
+}

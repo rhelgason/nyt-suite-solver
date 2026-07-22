@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 470,
+    "ds": "2022-10-01",
+    "mode": "hard",
+    "solution": "leave",
+    "guesses": [
+        "tares",
+        "plane",
+        "quale",
+        "leave"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.118"
+}

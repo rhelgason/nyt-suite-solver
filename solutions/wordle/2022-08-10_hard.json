@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 418,
+    "ds": "2022-08-10",
+    "mode": "hard",
+    "solution": "cling",
+    "guesses": [
+        "tares",
+        "colin",
+        "cling"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:00.585"
+}

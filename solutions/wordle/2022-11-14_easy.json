@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1255,
+    "ds": "2022-11-14",
+    "mode": "easy",
+    "solution": "maple",
+    "guesses": [
+        "tares",
+        "cling",
+        "dumbo",
+        "maple"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.869"
+}

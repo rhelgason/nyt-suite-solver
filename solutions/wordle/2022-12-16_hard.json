@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 1591,
+    "ds": "2022-12-16",
+    "mode": "hard",
+    "solution": "probe",
+    "guesses": [
+        "tares",
+        "pride",
+        "probe"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:00.091"
+}

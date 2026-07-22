@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 398,
+    "ds": "2022-07-21",
+    "mode": "easy",
+    "solution": "aphid",
+    "guesses": [
+        "tares",
+        "colin",
+        "admix",
+        "aphid"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:04.958"
+}

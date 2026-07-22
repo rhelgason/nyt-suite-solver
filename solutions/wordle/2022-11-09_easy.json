@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 530,
+    "ds": "2022-11-09",
+    "mode": "easy",
+    "solution": "rainy",
+    "guesses": [
+        "tares",
+        "rindy",
+        "rainy"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:00.924"
+}

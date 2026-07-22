@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 477,
+    "ds": "2022-10-08",
+    "mode": "hard",
+    "solution": "vigor",
+    "guesses": [
+        "tares",
+        "prion",
+        "rigor",
+        "vigor"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.104"
+}

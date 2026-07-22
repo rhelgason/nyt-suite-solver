@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 475,
+    "ds": "2022-10-06",
+    "mode": "easy",
+    "solution": "sloth",
+    "guesses": [
+        "tares",
+        "shout",
+        "sloth"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:01.291"
+}

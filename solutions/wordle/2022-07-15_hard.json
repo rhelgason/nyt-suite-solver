@@ -1,0 +1,17 @@
+{
+    "puzzle_id": 392,
+    "ds": "2022-07-15",
+    "mode": "hard",
+    "solution": "wedge",
+    "guesses": [
+        "tares",
+        "oldie",
+        "endue",
+        "hedge",
+        "kedge",
+        "wedge"
+    ],
+    "num_guesses": 6,
+    "solved": true,
+    "solve_time": "0:00:00.289"
+}

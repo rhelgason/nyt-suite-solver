@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 476,
+    "ds": "2022-10-07",
+    "mode": "hard",
+    "solution": "dandy",
+    "guesses": [
+        "tares",
+        "manly",
+        "nancy",
+        "bandy",
+        "dandy"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:00.133"
+}

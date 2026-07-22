@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 2251,
+    "ds": "2022-12-31",
+    "mode": "easy",
+    "solution": "manly",
+    "guesses": [
+        "tares",
+        "lingy",
+        "manly"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:03.197"
+}

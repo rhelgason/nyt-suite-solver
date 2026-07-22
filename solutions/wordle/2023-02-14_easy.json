@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 838,
+    "ds": "2023-02-14",
+    "mode": "easy",
+    "solution": "sound",
+    "guesses": [
+        "tares",
+        "noily",
+        "boson",
+        "sound"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:02.698"
+}

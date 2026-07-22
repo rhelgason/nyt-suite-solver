@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1718,
+    "ds": "2023-03-14",
+    "mode": "hard",
+    "solution": "surly",
+    "guesses": [
+        "tares",
+        "sprug",
+        "surfy",
+        "surly"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.045"
+}

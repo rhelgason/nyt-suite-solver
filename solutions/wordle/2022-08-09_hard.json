@@ -1,0 +1,17 @@
+{
+    "puzzle_id": 417,
+    "ds": "2022-08-09",
+    "mode": "hard",
+    "solution": "patty",
+    "guesses": [
+        "tares",
+        "haint",
+        "fatty",
+        "batty",
+        "catty",
+        "patty"
+    ],
+    "num_guesses": 6,
+    "solved": true,
+    "solve_time": "0:00:00.059"
+}

@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 2258,
+    "ds": "2022-12-27",
+    "mode": "easy",
+    "solution": "condo",
+    "guesses": [
+        "tares",
+        "colin",
+        "boody",
+        "condo"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:07.678"
+}

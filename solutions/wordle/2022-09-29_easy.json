@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 468,
+    "ds": "2022-09-29",
+    "mode": "easy",
+    "solution": "scald",
+    "guesses": [
+        "tares",
+        "milch",
+        "dally",
+        "scald"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:01.521"
+}

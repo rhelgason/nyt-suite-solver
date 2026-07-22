@@ -1,0 +1,17 @@
+{
+    "puzzle_id": 455,
+    "ds": "2022-09-16",
+    "mode": "hard",
+    "solution": "parer",
+    "guesses": [
+        "tares",
+        "darer",
+        "barer",
+        "carer",
+        "farer",
+        "parer"
+    ],
+    "num_guesses": 6,
+    "solved": true,
+    "solve_time": "0:00:00.050"
+}

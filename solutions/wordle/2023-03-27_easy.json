@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 2312,
+    "ds": "2023-03-27",
+    "mode": "easy",
+    "solution": "guano",
+    "guesses": [
+        "tares",
+        "colin",
+        "agony",
+        "guano"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:04.867"
+}

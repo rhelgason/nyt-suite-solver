@@ -1,0 +1,17 @@
+{
+    "puzzle_id": 962,
+    "ds": "2022-12-18",
+    "mode": "hard",
+    "solution": "taper",
+    "guesses": [
+        "tares",
+        "taber",
+        "taker",
+        "taler",
+        "tamer",
+        "taper"
+    ],
+    "num_guesses": 6,
+    "solved": true,
+    "solve_time": "0:00:00.050"
+}

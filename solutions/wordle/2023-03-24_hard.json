@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 1471,
+    "ds": "2023-03-24",
+    "mode": "hard",
+    "solution": "grout",
+    "guesses": [
+        "tares",
+        "fruit",
+        "grout"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:00.052"
+}

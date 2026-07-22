@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 977,
+    "ds": "2023-03-31",
+    "mode": "easy",
+    "solution": "every",
+    "guesses": [
+        "tares",
+        "deice",
+        "emery",
+        "every"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:01.919"
+}

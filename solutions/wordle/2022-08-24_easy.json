@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 432,
+    "ds": "2022-08-24",
+    "mode": "easy",
+    "solution": "needy",
+    "guesses": [
+        "tares",
+        "colin",
+        "benne",
+        "needy"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:05.361"
+}

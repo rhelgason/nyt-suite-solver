@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 424,
+    "ds": "2022-08-16",
+    "mode": "easy",
+    "solution": "gruel",
+    "guesses": [
+        "tares",
+        "poind",
+        "elegy",
+        "gruel"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:03.567"
+}

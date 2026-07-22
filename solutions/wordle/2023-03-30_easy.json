@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1002,
+    "ds": "2023-03-30",
+    "mode": "easy",
+    "solution": "bread",
+    "guesses": [
+        "tares",
+        "craal",
+        "bowed",
+        "bread"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:01.453"
+}

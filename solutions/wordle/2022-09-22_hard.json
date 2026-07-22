@@ -1,0 +1,13 @@
+{
+    "puzzle_id": 461,
+    "ds": "2022-09-22",
+    "mode": "hard",
+    "solution": "saint",
+    "guesses": [
+        "tares",
+        "saint"
+    ],
+    "num_guesses": 2,
+    "solved": true,
+    "solve_time": "0:00:00.065"
+}

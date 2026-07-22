@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 771,
+    "ds": "2022-12-30",
+    "mode": "hard",
+    "solution": "molar",
+    "guesses": [
+        "tares",
+        "drain",
+        "lobar",
+        "molar"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.093"
+}

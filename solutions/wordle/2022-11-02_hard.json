@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 502,
+    "ds": "2022-11-02",
+    "mode": "hard",
+    "solution": "inept",
+    "guesses": [
+        "tares",
+        "elite",
+        "debit",
+        "inept"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.097"
+}

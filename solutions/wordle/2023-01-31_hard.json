@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 1007,
+    "ds": "2023-01-31",
+    "mode": "hard",
+    "solution": "cross",
+    "guesses": [
+        "tares",
+        "drops",
+        "grows",
+        "crocs",
+        "cross"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:00.064"
+}

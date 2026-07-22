@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 2010,
+    "ds": "2023-04-13",
+    "mode": "easy",
+    "solution": "carat",
+    "guesses": [
+        "tares",
+        "chapt",
+        "carat"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:00.109"
+}

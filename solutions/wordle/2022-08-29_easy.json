@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 437,
+    "ds": "2022-08-29",
+    "mode": "easy",
+    "solution": "chief",
+    "guesses": [
+        "tares",
+        "indol",
+        "baffy",
+        "chief"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:03.862"
+}

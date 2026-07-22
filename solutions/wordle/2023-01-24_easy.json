@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 546,
+    "ds": "2023-01-24",
+    "mode": "easy",
+    "solution": "count",
+    "guesses": [
+        "tares",
+        "colin",
+        "conto",
+        "count"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:02.424"
+}

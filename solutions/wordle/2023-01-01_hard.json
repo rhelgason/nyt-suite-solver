@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 2191,
+    "ds": "2023-01-01",
+    "mode": "hard",
+    "solution": "whine",
+    "guesses": [
+        "tares",
+        "oldie",
+        "mince",
+        "gwine",
+        "whine"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:00.301"
+}

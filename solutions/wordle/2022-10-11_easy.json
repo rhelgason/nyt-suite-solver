@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 480,
+    "ds": "2022-10-11",
+    "mode": "easy",
+    "solution": "valid",
+    "guesses": [
+        "tares",
+        "lingy",
+        "civil",
+        "valid"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:03.312"
+}

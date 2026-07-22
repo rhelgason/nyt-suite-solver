@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1104,
+    "ds": "2023-02-20",
+    "mode": "hard",
+    "solution": "sweat",
+    "guesses": [
+        "tares",
+        "stale",
+        "septa",
+        "sweat"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.052"
+}

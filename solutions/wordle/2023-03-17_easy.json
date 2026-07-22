@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1922,
+    "ds": "2023-03-17",
+    "mode": "easy",
+    "solution": "mealy",
+    "guesses": [
+        "tares",
+        "aland",
+        "vealy",
+        "mealy"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:02.644"
+}

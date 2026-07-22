@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 409,
+    "ds": "2022-08-01",
+    "mode": "easy",
+    "solution": "quart",
+    "guesses": [
+        "tares",
+        "craal",
+        "boart",
+        "quart"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.530"
+}
