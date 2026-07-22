@@ -1,0 +1,19 @@
+{
+    "puzzle_id": 305,
+    "ds": "2024-08-28",
+    "clue": "Commuter benefits",
+    "theme_words": [
+        "ferry",
+        "monorail",
+        "streetcar",
+        "subway",
+        "train"
+    ],
+    "spangram": "publictransport",
+    "solved": false,
+    "theme_words_found": 4,
+    "theme_words_total": 5,
+    "candidates": 17381,
+    "truncated": true,
+    "solve_time": "0:01:05.678"
+}

@@ -1,0 +1,20 @@
+{
+    "puzzle_id": 215,
+    "ds": "2024-08-21",
+    "clue": "One for the ages",
+    "theme_words": [
+        "cake",
+        "candles",
+        "cards",
+        "celebrate",
+        "gifts",
+        "party"
+    ],
+    "spangram": "happybirthday",
+    "solved": true,
+    "theme_words_found": 6,
+    "theme_words_total": 6,
+    "candidates": 2057,
+    "truncated": false,
+    "solve_time": "0:00:02.222"
+}

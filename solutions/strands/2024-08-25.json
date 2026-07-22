@@ -1,0 +1,21 @@
+{
+    "puzzle_id": 308,
+    "ds": "2024-08-25",
+    "clue": "Into the woods",
+    "theme_words": [
+        "beech",
+        "chestnut",
+        "ginkgo",
+        "maple",
+        "pine",
+        "sycamore",
+        "willow"
+    ],
+    "spangram": "forest",
+    "solved": true,
+    "theme_words_found": 7,
+    "theme_words_total": 7,
+    "candidates": 4,
+    "truncated": false,
+    "solve_time": "0:00:00.262"
+}

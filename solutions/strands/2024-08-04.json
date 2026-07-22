@@ -1,0 +1,22 @@
+{
+    "puzzle_id": 227,
+    "ds": "2024-08-04",
+    "clue": "In glove",
+    "theme_words": [
+        "cuticle",
+        "middle",
+        "nail",
+        "palm",
+        "pinky",
+        "pointer",
+        "ring",
+        "thumb"
+    ],
+    "spangram": "onhand",
+    "solved": false,
+    "theme_words_found": 0,
+    "theme_words_total": 8,
+    "candidates": 0,
+    "truncated": true,
+    "solve_time": "0:01:01.089"
+}

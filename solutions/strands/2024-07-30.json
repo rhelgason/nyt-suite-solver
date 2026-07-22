@@ -1,0 +1,21 @@
+{
+    "puzzle_id": 253,
+    "ds": "2024-07-30",
+    "clue": "That's a stretch!",
+    "theme_words": [
+        "bridge",
+        "chair",
+        "cobra",
+        "crow",
+        "mountain",
+        "tree",
+        "warrior"
+    ],
+    "spangram": "yogaposes",
+    "solved": false,
+    "theme_words_found": 6,
+    "theme_words_total": 7,
+    "candidates": 67567,
+    "truncated": true,
+    "solve_time": "0:01:02.405"
+}

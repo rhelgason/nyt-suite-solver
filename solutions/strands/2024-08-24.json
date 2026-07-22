@@ -1,0 +1,21 @@
+{
+    "puzzle_id": 306,
+    "ds": "2024-08-24",
+    "clue": "Crumby theme",
+    "theme_words": [
+        "animal",
+        "goldfish",
+        "oyster",
+        "rice",
+        "saltine",
+        "soda",
+        "water"
+    ],
+    "spangram": "crackers",
+    "solved": false,
+    "theme_words_found": 5,
+    "theme_words_total": 7,
+    "candidates": 44672,
+    "truncated": true,
+    "solve_time": "0:01:05.758"
+}

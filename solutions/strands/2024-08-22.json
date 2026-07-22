@@ -1,0 +1,21 @@
+{
+    "puzzle_id": 271,
+    "ds": "2024-08-22",
+    "clue": "Smoothie moves",
+    "theme_words": [
+        "chop",
+        "grind",
+        "liquefy",
+        "pulse",
+        "puree",
+        "stir",
+        "whip"
+    ],
+    "spangram": "blendersetting",
+    "solved": false,
+    "theme_words_found": 3,
+    "theme_words_total": 7,
+    "candidates": 26147,
+    "truncated": true,
+    "solve_time": "0:01:01.232"
+}

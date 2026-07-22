@@ -1,0 +1,21 @@
+{
+    "puzzle_id": 307,
+    "ds": "2024-08-26",
+    "clue": "See you on the court",
+    "theme_words": [
+        "forehand",
+        "love",
+        "racket",
+        "serve",
+        "slice",
+        "smash",
+        "volley"
+    ],
+    "spangram": "grandslam",
+    "solved": false,
+    "theme_words_found": 0,
+    "theme_words_total": 7,
+    "candidates": 0,
+    "truncated": true,
+    "solve_time": "0:01:05.751"
+}

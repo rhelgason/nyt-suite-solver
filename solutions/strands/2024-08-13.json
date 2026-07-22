@@ -1,0 +1,19 @@
+{
+    "puzzle_id": 230,
+    "ds": "2024-08-13",
+    "clue": "Look it up!",
+    "theme_words": [
+        "almanac",
+        "atlas",
+        "dictionary",
+        "handbook",
+        "thesaurus"
+    ],
+    "spangram": "reference",
+    "solved": true,
+    "theme_words_found": 5,
+    "theme_words_total": 5,
+    "candidates": 116,
+    "truncated": false,
+    "solve_time": "0:00:00.622"
+}

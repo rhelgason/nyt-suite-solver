@@ -1,0 +1,20 @@
+{
+    "puzzle_id": 264,
+    "ds": "2024-08-11",
+    "clue": "Home stretch?",
+    "theme_words": [
+        "balcony",
+        "deck",
+        "patio",
+        "sunroom",
+        "terrace",
+        "veranda"
+    ],
+    "spangram": "bonusspaces",
+    "solved": false,
+    "theme_words_found": 3,
+    "theme_words_total": 6,
+    "candidates": 12288,
+    "truncated": true,
+    "solve_time": "0:01:02.811"
+}

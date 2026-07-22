@@ -1,0 +1,21 @@
+{
+    "puzzle_id": 233,
+    "ds": "2024-08-01",
+    "clue": "Not stirred",
+    "theme_words": [
+        "booty",
+        "hairspray",
+        "hands",
+        "maraca",
+        "martini",
+        "rattle",
+        "salt"
+    ],
+    "spangram": "shaken",
+    "solved": true,
+    "theme_words_found": 7,
+    "theme_words_total": 7,
+    "candidates": 6,
+    "truncated": false,
+    "solve_time": "0:00:00.449"
+}

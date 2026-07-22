@@ -1,0 +1,19 @@
+{
+    "puzzle_id": 235,
+    "ds": "2024-08-03",
+    "clue": "A night at the museum",
+    "theme_words": [
+        "baroque",
+        "classical",
+        "medieval",
+        "modern",
+        "romantic"
+    ],
+    "spangram": "arthistory",
+    "solved": true,
+    "theme_words_found": 5,
+    "theme_words_total": 5,
+    "candidates": 3716,
+    "truncated": false,
+    "solve_time": "0:00:38.525"
+}

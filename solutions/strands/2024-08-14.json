@@ -1,0 +1,20 @@
+{
+    "puzzle_id": 224,
+    "ds": "2024-08-14",
+    "clue": "Honey I'm home!",
+    "theme_words": [
+        "bungalow",
+        "cabin",
+        "colonial",
+        "cottage",
+        "craftsman",
+        "ranch"
+    ],
+    "spangram": "houses",
+    "solved": true,
+    "theme_words_found": 6,
+    "theme_words_total": 6,
+    "candidates": 1,
+    "truncated": false,
+    "solve_time": "0:00:00.177"
+}

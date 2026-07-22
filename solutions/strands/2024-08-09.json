@@ -1,0 +1,21 @@
+{
+    "puzzle_id": 255,
+    "ds": "2024-08-09",
+    "clue": "Back to nature",
+    "theme_words": [
+        "birdwatch",
+        "camp",
+        "fish",
+        "forage",
+        "hike",
+        "stargaze",
+        "swim"
+    ],
+    "spangram": "outdoorsy",
+    "solved": true,
+    "theme_words_found": 7,
+    "theme_words_total": 7,
+    "candidates": 1,
+    "truncated": false,
+    "solve_time": "0:00:00.421"
+}

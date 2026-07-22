@@ -1,0 +1,19 @@
+{
+    "puzzle_id": 304,
+    "ds": "2024-08-27",
+    "clue": "Pixar fare",
+    "theme_words": [
+        "eggplant",
+        "onions",
+        "peppers",
+        "tomatoes",
+        "zucchini"
+    ],
+    "spangram": "ratatouille",
+    "solved": true,
+    "theme_words_found": 5,
+    "theme_words_total": 5,
+    "candidates": 1,
+    "truncated": false,
+    "solve_time": "0:00:00.190"
+}

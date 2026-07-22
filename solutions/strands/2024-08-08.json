@@ -1,0 +1,20 @@
+{
+    "puzzle_id": 273,
+    "ds": "2024-08-08",
+    "clue": "Splashy event",
+    "theme_words": [
+        "drinks",
+        "floats",
+        "music",
+        "noodles",
+        "sunscreen",
+        "towels"
+    ],
+    "spangram": "poolparty",
+    "solved": false,
+    "theme_words_found": 3,
+    "theme_words_total": 6,
+    "candidates": 15042,
+    "truncated": true,
+    "solve_time": "0:01:02.450"
+}

@@ -1,0 +1,20 @@
+{
+    "puzzle_id": 232,
+    "ds": "2024-08-12",
+    "clue": "Everybody cut footloose!",
+    "theme_words": [
+        "floss",
+        "hustle",
+        "moonwalk",
+        "pirouette",
+        "twerk",
+        "vogue"
+    ],
+    "spangram": "dancemoves",
+    "solved": false,
+    "theme_words_found": 3,
+    "theme_words_total": 6,
+    "candidates": 24379,
+    "truncated": true,
+    "solve_time": "0:01:01.753"
+}

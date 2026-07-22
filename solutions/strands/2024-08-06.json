@@ -1,0 +1,19 @@
+{
+    "puzzle_id": 212,
+    "ds": "2024-08-06",
+    "clue": "Bed, bath and beyond",
+    "theme_words": [
+        "blanket",
+        "pillowcase",
+        "sheet",
+        "tablecloth",
+        "towel"
+    ],
+    "spangram": "linencloset",
+    "solved": true,
+    "theme_words_found": 5,
+    "theme_words_total": 5,
+    "candidates": 10134,
+    "truncated": false,
+    "solve_time": "0:00:26.534"
+}
