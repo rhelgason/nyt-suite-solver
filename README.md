@@ -8,16 +8,16 @@ required, and can also be used interactively or headlessly.
 <!-- STATS:START -->
 ## Lifetime results
 
-_Auto-generated from `solutions/` · **40** puzzles solved across 5 games (through 2026-07-21)._
+_Auto-generated from `solutions/` · **48** puzzles solved across 5 games (through 2026-07-22)._
 
 | Game | Puzzles | Avg score | p90 runtime |
 | --- | ---: | ---: | ---: |
-| Spelling Bee | 9 | 99.5% | 92 ms |
-| Letter Boxed | 1 | 2.0 words | 110 ms |
-| Sudoku | 3 | 100% | 0.23 ms |
-| Wordle (easy) | 9 | 3.9 guesses | 3.37 s |
-| Wordle (hard) | 9 | 4.0 guesses | 124 ms |
-| Strands | 9 | 87% words | 50.16 s |
+| Spelling Bee | 10 | 99.3% | 92 ms |
+| Letter Boxed | 2 | 2.0 words | 155 ms |
+| Sudoku | 6 | 100% | 0.23 ms |
+| Wordle (easy) | 10 | 3.9 guesses | 2.89 s |
+| Wordle (hard) | 10 | 4.1 guesses | 111 ms |
+| Strands | 10 | 78% words | 35.82 s |
 
 <p align="center"><img src="stats/cumulative_solves.svg" alt="Cumulative Puzzles Solved" width="720"></p>
 <!-- STATS:END -->

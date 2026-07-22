@@ -1,0 +1,20 @@
+{
+    "puzzle_id": 1049,
+    "ds": "2026-07-22",
+    "clue": "\"What is ...\"",
+    "theme_words": [
+        "answer",
+        "board",
+        "buzzer",
+        "category",
+        "question",
+        "wager"
+    ],
+    "spangram": "injeopardy",
+    "solved": false,
+    "theme_words_found": 0,
+    "theme_words_total": 6,
+    "candidates": 0,
+    "truncated": true,
+    "solve_time": "0:00:30.196"
+}
