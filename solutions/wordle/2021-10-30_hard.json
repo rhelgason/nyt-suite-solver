@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 134,
+    "ds": "2021-10-30",
+    "mode": "hard",
+    "solution": "gouge",
+    "guesses": [
+        "tares",
+        "oldie",
+        "ponce",
+        "bombe",
+        "gouge"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:00.292"
+}

@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 149,
+    "ds": "2021-11-14",
+    "mode": "easy",
+    "solution": "pithy",
+    "guesses": [
+        "tares",
+        "colin",
+        "wifty",
+        "ditzy",
+        "pithy"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:02.748"
+}

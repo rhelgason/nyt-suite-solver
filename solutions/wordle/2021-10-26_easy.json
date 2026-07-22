@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 130,
+    "ds": "2021-10-26",
+    "mode": "easy",
+    "solution": "dozen",
+    "guesses": [
+        "tares",
+        "indol",
+        "bonze",
+        "dozen"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:04.004"
+}

@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 194,
+    "ds": "2021-12-29",
+    "mode": "easy",
+    "solution": "tapir",
+    "guesses": [
+        "tares",
+        "aalii",
+        "tapir"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:00.123"
+}

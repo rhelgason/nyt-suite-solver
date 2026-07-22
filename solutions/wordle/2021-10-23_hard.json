@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 127,
+    "ds": "2021-10-23",
+    "mode": "hard",
+    "solution": "abyss",
+    "guesses": [
+        "tares",
+        "loans",
+        "amiss",
+        "abyss"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.145"
+}

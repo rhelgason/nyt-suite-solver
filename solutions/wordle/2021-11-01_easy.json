@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 136,
+    "ds": "2021-11-01",
+    "mode": "easy",
+    "solution": "briar",
+    "guesses": [
+        "tares",
+        "blond",
+        "chivy",
+        "briar"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:02.294"
+}

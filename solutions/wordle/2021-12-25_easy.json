@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 190,
+    "ds": "2021-12-25",
+    "mode": "easy",
+    "solution": "picky",
+    "guesses": [
+        "tares",
+        "colin",
+        "kiddy",
+        "picky"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:07.838"
+}

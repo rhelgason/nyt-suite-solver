@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 146,
+    "ds": "2021-11-11",
+    "mode": "hard",
+    "solution": "rogue",
+    "guesses": [
+        "tares",
+        "pride",
+        "revue",
+        "rogue"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.076"
+}

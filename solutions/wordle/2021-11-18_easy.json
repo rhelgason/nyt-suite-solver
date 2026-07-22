@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 153,
+    "ds": "2021-11-18",
+    "mode": "easy",
+    "solution": "vodka",
+    "guesses": [
+        "tares",
+        "colin",
+        "dumka",
+        "vodka"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:05.153"
+}

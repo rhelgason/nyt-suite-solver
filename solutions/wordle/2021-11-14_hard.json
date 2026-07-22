@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 149,
+    "ds": "2021-11-14",
+    "mode": "hard",
+    "solution": "pithy",
+    "guesses": [
+        "tares",
+        "litho",
+        "pithy"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:00.098"
+}

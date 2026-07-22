@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 189,
+    "ds": "2021-12-24",
+    "mode": "easy",
+    "solution": "weary",
+    "guesses": [
+        "tares",
+        "craal",
+        "deary",
+        "weary"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:01.521"
+}

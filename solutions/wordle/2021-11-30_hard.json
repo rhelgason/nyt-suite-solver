@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 165,
+    "ds": "2021-11-30",
+    "mode": "hard",
+    "solution": "bring",
+    "guesses": [
+        "tares",
+        "prion",
+        "bring"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:00.095"
+}

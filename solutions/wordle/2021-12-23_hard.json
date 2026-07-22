@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 188,
+    "ds": "2021-12-23",
+    "mode": "hard",
+    "solution": "gripe",
+    "guesses": [
+        "tares",
+        "pride",
+        "cripe",
+        "gripe"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.118"
+}

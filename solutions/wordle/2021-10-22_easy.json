@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 126,
+    "ds": "2021-10-22",
+    "mode": "easy",
+    "solution": "steed",
+    "guesses": [
+        "tares",
+        "slipt",
+        "steed"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:00.336"
+}

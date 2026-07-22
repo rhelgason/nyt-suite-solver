@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 194,
+    "ds": "2021-12-29",
+    "mode": "hard",
+    "solution": "tapir",
+    "guesses": [
+        "tares",
+        "talar",
+        "tabor",
+        "tapir"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.063"
+}

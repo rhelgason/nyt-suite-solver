@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 164,
+    "ds": "2021-11-29",
+    "mode": "easy",
+    "solution": "prove",
+    "guesses": [
+        "tares",
+        "deice",
+        "bumph",
+        "aland",
+        "prove"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:02.273"
+}

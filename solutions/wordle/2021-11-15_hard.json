@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 150,
+    "ds": "2021-11-15",
+    "mode": "hard",
+    "solution": "gaudy",
+    "guesses": [
+        "tares",
+        "manly",
+        "cadgy",
+        "gaudy"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.154"
+}

@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 153,
+    "ds": "2021-11-18",
+    "mode": "hard",
+    "solution": "vodka",
+    "guesses": [
+        "tares",
+        "aloin",
+        "comma",
+        "koppa",
+        "vodka"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:00.271"
+}

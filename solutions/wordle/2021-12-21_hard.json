@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 186,
+    "ds": "2021-12-21",
+    "mode": "hard",
+    "solution": "pluck",
+    "guesses": [
+        "tares",
+        "colin",
+        "lucky",
+        "pluck"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.586"
+}

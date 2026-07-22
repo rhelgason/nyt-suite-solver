@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 181,
+    "ds": "2021-12-16",
+    "mode": "hard",
+    "solution": "using",
+    "guesses": [
+        "tares",
+        "spoil",
+        "whisk",
+        "using"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.107"
+}

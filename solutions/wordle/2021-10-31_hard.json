@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 135,
+    "ds": "2021-10-31",
+    "mode": "hard",
+    "solution": "click",
+    "guesses": [
+        "tares",
+        "colin",
+        "child",
+        "click"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.601"
+}

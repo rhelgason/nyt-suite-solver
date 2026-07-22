@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 183,
+    "ds": "2021-12-18",
+    "mode": "easy",
+    "solution": "champ",
+    "guesses": [
+        "tares",
+        "colin",
+        "champ"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:04.902"
+}

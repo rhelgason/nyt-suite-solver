@@ -1,0 +1,17 @@
+{
+    "puzzle_id": 131,
+    "ds": "2021-10-27",
+    "mode": "hard",
+    "solution": "boozy",
+    "guesses": [
+        "tares",
+        "colin",
+        "boody",
+        "booby",
+        "boogy",
+        "boomy"
+    ],
+    "num_guesses": null,
+    "solved": false,
+    "solve_time": "0:00:00.586"
+}

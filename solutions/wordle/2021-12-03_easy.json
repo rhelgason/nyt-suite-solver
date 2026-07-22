@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 168,
+    "ds": "2021-12-03",
+    "mode": "easy",
+    "solution": "grime",
+    "guesses": [
+        "tares",
+        "deice",
+        "gumbo",
+        "grime"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:02.045"
+}

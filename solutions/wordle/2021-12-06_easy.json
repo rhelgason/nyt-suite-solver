@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 171,
+    "ds": "2021-12-06",
+    "mode": "easy",
+    "solution": "epoch",
+    "guesses": [
+        "tares",
+        "colin",
+        "decoy",
+        "epoch"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:05.164"
+}

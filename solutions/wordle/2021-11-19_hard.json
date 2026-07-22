@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 154,
+    "ds": "2021-11-19",
+    "mode": "hard",
+    "solution": "finer",
+    "guesses": [
+        "tares",
+        "riled",
+        "biner",
+        "finer"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.126"
+}

@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 132,
+    "ds": "2021-10-28",
+    "mode": "hard",
+    "solution": "erode",
+    "guesses": [
+        "tares",
+        "pride",
+        "brede",
+        "erode"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.087"
+}

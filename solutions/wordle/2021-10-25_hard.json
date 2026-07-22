@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 129,
+    "ds": "2021-10-25",
+    "mode": "hard",
+    "solution": "fling",
+    "guesses": [
+        "tares",
+        "colin",
+        "lungi",
+        "fling"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.580"
+}

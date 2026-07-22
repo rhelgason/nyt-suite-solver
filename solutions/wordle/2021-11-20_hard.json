@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 155,
+    "ds": "2021-11-20",
+    "mode": "hard",
+    "solution": "surer",
+    "guesses": [
+        "tares",
+        "sered",
+        "sorer",
+        "surer"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.047"
+}

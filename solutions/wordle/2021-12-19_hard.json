@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 184,
+    "ds": "2021-12-19",
+    "mode": "hard",
+    "solution": "baton",
+    "guesses": [
+        "tares",
+        "haint",
+        "canto",
+        "baton"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.059"
+}

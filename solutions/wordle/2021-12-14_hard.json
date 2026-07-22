@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 179,
+    "ds": "2021-12-14",
+    "mode": "hard",
+    "solution": "vital",
+    "guesses": [
+        "tares",
+        "alant",
+        "dotal",
+        "vital"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.056"
+}

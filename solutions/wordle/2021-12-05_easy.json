@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 170,
+    "ds": "2021-12-05",
+    "mode": "easy",
+    "solution": "usher",
+    "guesses": [
+        "tares",
+        "spoil",
+        "resee",
+        "usher"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.580"
+}

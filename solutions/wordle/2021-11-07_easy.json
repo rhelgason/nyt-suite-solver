@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 142,
+    "ds": "2021-11-07",
+    "mode": "easy",
+    "solution": "duchy",
+    "guesses": [
+        "tares",
+        "colin",
+        "dumka",
+        "duchy"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:07.758"
+}

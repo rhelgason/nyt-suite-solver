@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 181,
+    "ds": "2021-12-16",
+    "mode": "easy",
+    "solution": "using",
+    "guesses": [
+        "tares",
+        "noily",
+        "swink",
+        "using"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:02.788"
+}

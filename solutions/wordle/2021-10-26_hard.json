@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 130,
+    "ds": "2021-10-26",
+    "mode": "hard",
+    "solution": "dozen",
+    "guesses": [
+        "tares",
+        "loden",
+        "doven",
+        "doyen",
+        "dozen"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:00.170"
+}

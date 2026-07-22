@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 138,
+    "ds": "2021-11-03",
+    "mode": "hard",
+    "solution": "altar",
+    "guesses": [
+        "tares",
+        "arhat",
+        "altar"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:00.048"
+}

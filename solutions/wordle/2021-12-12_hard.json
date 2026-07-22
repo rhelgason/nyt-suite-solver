@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 177,
+    "ds": "2021-12-12",
+    "mode": "hard",
+    "solution": "masse",
+    "guesses": [
+        "tares",
+        "lapse",
+        "hanse",
+        "cause",
+        "masse"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:00.041"
+}

@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 131,
+    "ds": "2021-10-27",
+    "mode": "easy",
+    "solution": "boozy",
+    "guesses": [
+        "tares",
+        "colin",
+        "boody",
+        "gamba",
+        "boozy"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:08.499"
+}

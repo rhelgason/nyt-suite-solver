@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 177,
+    "ds": "2021-12-12",
+    "mode": "easy",
+    "solution": "masse",
+    "guesses": [
+        "tares",
+        "plush",
+        "manse",
+        "masse"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.256"
+}

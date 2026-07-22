@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 172,
+    "ds": "2021-12-07",
+    "mode": "hard",
+    "solution": "triad",
+    "guesses": [
+        "tares",
+        "traik",
+        "triac",
+        "triad"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.042"
+}

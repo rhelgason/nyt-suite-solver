@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 178,
+    "ds": "2021-12-13",
+    "mode": "hard",
+    "solution": "sonic",
+    "guesses": [
+        "tares",
+        "spoil",
+        "sodic",
+        "sonic"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.110"
+}

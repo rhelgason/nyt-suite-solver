@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 185,
+    "ds": "2021-12-20",
+    "mode": "easy",
+    "solution": "brake",
+    "guesses": [
+        "tares",
+        "craal",
+        "debug",
+        "azuki",
+        "brake"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:01.597"
+}

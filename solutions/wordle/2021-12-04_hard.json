@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 169,
+    "ds": "2021-12-04",
+    "mode": "hard",
+    "solution": "exult",
+    "guesses": [
+        "tares",
+        "elite",
+        "ethyl",
+        "exult"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.072"
+}

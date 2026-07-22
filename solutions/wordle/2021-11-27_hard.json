@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 162,
+    "ds": "2021-11-27",
+    "mode": "hard",
+    "solution": "tilde",
+    "guesses": [
+        "tares",
+        "thine",
+        "tilde"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:00.061"
+}

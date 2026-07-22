@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 143,
+    "ds": "2021-11-08",
+    "mode": "hard",
+    "solution": "groin",
+    "guesses": [
+        "tares",
+        "prion",
+        "groin"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:00.097"
+}

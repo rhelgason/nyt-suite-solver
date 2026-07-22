@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 161,
+    "ds": "2021-11-26",
+    "mode": "easy",
+    "solution": "clock",
+    "guesses": [
+        "tares",
+        "colin",
+        "humpy",
+        "clock"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:07.840"
+}

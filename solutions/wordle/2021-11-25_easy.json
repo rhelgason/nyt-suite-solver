@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 160,
+    "ds": "2021-11-25",
+    "mode": "easy",
+    "solution": "wrote",
+    "guesses": [
+        "tares",
+        "court",
+        "fetor",
+        "wrote"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.564"
+}

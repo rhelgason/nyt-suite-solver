@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 170,
+    "ds": "2021-12-05",
+    "mode": "hard",
+    "solution": "usher",
+    "guesses": [
+        "tares",
+        "shier",
+        "hoser",
+        "usher"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.057"
+}

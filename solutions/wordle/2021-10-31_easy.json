@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 135,
+    "ds": "2021-10-31",
+    "mode": "easy",
+    "solution": "click",
+    "guesses": [
+        "tares",
+        "colin",
+        "bifid",
+        "chill",
+        "click"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:07.784"
+}

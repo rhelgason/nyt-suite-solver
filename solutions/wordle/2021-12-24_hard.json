@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 189,
+    "ds": "2021-12-24",
+    "mode": "hard",
+    "solution": "weary",
+    "guesses": [
+        "tares",
+        "beard",
+        "leary",
+        "weary"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.060"
+}

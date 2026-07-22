@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 193,
+    "ds": "2021-12-28",
+    "mode": "easy",
+    "solution": "aside",
+    "guesses": [
+        "tares",
+        "plash",
+        "sedan",
+        "aside"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:01.020"
+}

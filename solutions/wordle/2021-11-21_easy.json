@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 156,
+    "ds": "2021-11-21",
+    "mode": "easy",
+    "solution": "radio",
+    "guesses": [
+        "tares",
+        "rindy",
+        "boxed",
+        "radio"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.976"
+}

@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 133,
+    "ds": "2021-10-29",
+    "mode": "easy",
+    "solution": "world",
+    "guesses": [
+        "tares",
+        "uncoy",
+        "amido",
+        "world"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:01.069"
+}

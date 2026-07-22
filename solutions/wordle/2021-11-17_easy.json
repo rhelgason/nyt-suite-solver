@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 152,
+    "ds": "2021-11-17",
+    "mode": "easy",
+    "solution": "heron",
+    "guesses": [
+        "tares",
+        "monie",
+        "enrol",
+        "heron"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.933"
+}

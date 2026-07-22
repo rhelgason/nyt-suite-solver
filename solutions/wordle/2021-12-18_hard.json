@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 183,
+    "ds": "2021-12-18",
+    "mode": "hard",
+    "solution": "champ",
+    "guesses": [
+        "tares",
+        "aloin",
+        "pucka",
+        "champ"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.255"
+}

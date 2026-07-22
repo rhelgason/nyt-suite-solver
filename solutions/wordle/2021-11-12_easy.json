@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 147,
+    "ds": "2021-11-12",
+    "mode": "easy",
+    "solution": "badly",
+    "guesses": [
+        "tares",
+        "lingy",
+        "badly"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:03.345"
+}

@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 157,
+    "ds": "2021-11-22",
+    "mode": "easy",
+    "solution": "rouge",
+    "guesses": [
+        "tares",
+        "deice",
+        "bumph",
+        "rogue",
+        "rouge"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:02.302"
+}

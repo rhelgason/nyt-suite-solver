@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 145,
+    "ds": "2021-11-10",
+    "mode": "hard",
+    "solution": "group",
+    "guesses": [
+        "tares",
+        "prion",
+        "croup",
+        "group"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.108"
+}

@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 166,
+    "ds": "2021-12-01",
+    "mode": "easy",
+    "solution": "solve",
+    "guesses": [
+        "tares",
+        "seine",
+        "clomp",
+        "solve"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:01.968"
+}

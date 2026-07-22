@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 158,
+    "ds": "2021-11-23",
+    "mode": "easy",
+    "solution": "perch",
+    "guesses": [
+        "tares",
+        "monie",
+        "updry",
+        "perch"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:01.110"
+}

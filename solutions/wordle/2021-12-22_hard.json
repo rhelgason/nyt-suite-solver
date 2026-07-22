@@ -1,0 +1,17 @@
+{
+    "puzzle_id": 187,
+    "ds": "2021-12-22",
+    "mode": "hard",
+    "solution": "craze",
+    "guesses": [
+        "tares",
+        "beard",
+        "crape",
+        "crake",
+        "crane",
+        "crave"
+    ],
+    "num_guesses": null,
+    "solved": false,
+    "solve_time": "0:00:00.070"
+}

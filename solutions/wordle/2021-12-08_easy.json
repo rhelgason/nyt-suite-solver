@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 173,
+    "ds": "2021-12-08",
+    "mode": "easy",
+    "solution": "break",
+    "guesses": [
+        "tares",
+        "craal",
+        "bowed",
+        "break"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:01.467"
+}

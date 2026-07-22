@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 187,
+    "ds": "2021-12-22",
+    "mode": "easy",
+    "solution": "craze",
+    "guesses": [
+        "tares",
+        "craal",
+        "kanzu",
+        "craze"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:01.414"
+}

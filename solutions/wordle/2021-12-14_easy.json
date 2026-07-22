@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 179,
+    "ds": "2021-12-14",
+    "mode": "easy",
+    "solution": "vital",
+    "guesses": [
+        "tares",
+        "aloin",
+        "litai",
+        "vital"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:01.071"
+}

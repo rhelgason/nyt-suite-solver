@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 173,
+    "ds": "2021-12-08",
+    "mode": "hard",
+    "solution": "break",
+    "guesses": [
+        "tares",
+        "beard",
+        "break"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:00.080"
+}

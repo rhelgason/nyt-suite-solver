@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 147,
+    "ds": "2021-11-12",
+    "mode": "hard",
+    "solution": "badly",
+    "guesses": [
+        "tares",
+        "manly",
+        "dally",
+        "badly"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.133"
+}
