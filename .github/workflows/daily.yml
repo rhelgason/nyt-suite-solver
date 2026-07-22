@@ -14,7 +14,8 @@ permissions:
   models: read
 
 concurrency:
-  group: daily-solve
+  # shared with the manual Backfill workflow so the two never commit over each other
+  group: solve-and-commit
   cancel-in-progress: false
 
 jobs:

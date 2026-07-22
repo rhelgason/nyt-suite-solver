@@ -1,0 +1,92 @@
+name: Backfill
+
+# Manually backfill historical puzzles from the Actions tab. Handy for the LLM
+# games (Connections) where running locally would need a personal token -- here
+# the run uses the free, built-in GitHub Models token and the logs are visible in
+# the run output. Solutions are committed back like the daily job.
+
+on:
+  workflow_dispatch:
+    inputs:
+      game:
+        description: "Game to backfill"
+        type: choice
+        default: connections
+        options:
+          - connections
+          - spelling-bee
+          - wordle
+          - strands
+      limit:
+        description: "Cap: most recent N unsolved dates (blank = no cap; default 30 for connections)"
+        type: string
+        default: "30"
+      since:
+        description: "Earliest date YYYY-MM-DD (blank = each game's full history)"
+        type: string
+        default: ""
+      force:
+        description: "Re-solve dates already on disk"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+  models: read
+
+concurrency:
+  # share the daily job's lane so the two never commit over each other
+  group: solve-and-commit
+  cancel-in-progress: false
+
+jobs:
+  backfill:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install Python dependencies
+        run: pip install -r requirements.txt
+
+      - name: Build solver extensions
+        run: make build
+
+      - name: Backfill ${{ inputs.game }}
+        id: backfill
+        continue-on-error: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: |
+          ARGS="--game ${{ inputs.game }} --backfill --delay 1"
+          if [ -n "${{ inputs.limit }}" ]; then ARGS="$ARGS --limit ${{ inputs.limit }}"; fi
+          if [ -n "${{ inputs.since }}" ]; then ARGS="$ARGS --since ${{ inputs.since }}"; fi
+          if [ "${{ inputs.force }}" = "true" ]; then ARGS="$ARGS --force"; fi
+          echo "Running: python src/cli.py $ARGS"
+          python src/cli.py $ARGS
+
+      - name: Regenerate README stats
+        if: always()
+        run: python src/stats.py
+
+      - name: Commit backfilled solutions
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add solutions/ README.md stats/
+          if git diff --cached --quiet; then
+            echo "No new solutions to commit."
+          else
+            git commit -m "Backfill ${{ inputs.game }} ($(date -u +%Y-%m-%d))"
+            git pull --rebase --autostash origin ${{ github.ref_name }}
+            git push
+          fi
