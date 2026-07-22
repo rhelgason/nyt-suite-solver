@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1593,
+    "ds": "2025-01-15",
+    "mode": "easy",
+    "solution": "knack",
+    "guesses": [
+        "tares",
+        "colin",
+        "nucha",
+        "knack"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:04.884"
+}

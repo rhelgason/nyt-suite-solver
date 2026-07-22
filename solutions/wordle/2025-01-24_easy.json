@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1592,
+    "ds": "2025-01-24",
+    "mode": "easy",
+    "solution": "crepe",
+    "guesses": [
+        "tares",
+        "deice",
+        "creme",
+        "crepe"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:01.940"
+}

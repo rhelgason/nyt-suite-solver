@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 2047,
+    "ds": "2024-12-21",
+    "mode": "hard",
+    "solution": "blade",
+    "guesses": [
+        "tares",
+        "plane",
+        "clade",
+        "blade"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.116"
+}

@@ -1,0 +1,17 @@
+{
+    "puzzle_id": 1854,
+    "ds": "2025-01-09",
+    "mode": "hard",
+    "solution": "wafer",
+    "guesses": [
+        "tares",
+        "lager",
+        "caper",
+        "waker",
+        "wader",
+        "wafer"
+    ],
+    "num_guesses": 6,
+    "solved": true,
+    "solve_time": "0:00:00.081"
+}

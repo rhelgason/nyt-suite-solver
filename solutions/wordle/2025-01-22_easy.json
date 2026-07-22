@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 1352,
+    "ds": "2025-01-22",
+    "mode": "easy",
+    "solution": "reach",
+    "guesses": [
+        "tares",
+        "craal",
+        "reach"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:01.346"
+}

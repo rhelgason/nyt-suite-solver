@@ -1,0 +1,17 @@
+{
+    "puzzle_id": 1946,
+    "ds": "2025-03-09",
+    "mode": "hard",
+    "solution": "greed",
+    "guesses": [
+        "tares",
+        "riled",
+        "breed",
+        "creed",
+        "dreed",
+        "freed"
+    ],
+    "num_guesses": null,
+    "solved": false,
+    "solve_time": "0:00:00.151"
+}

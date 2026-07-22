@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1777,
+    "ds": "2025-06-10",
+    "mode": "easy",
+    "solution": "taffy",
+    "guesses": [
+        "tares",
+        "blink",
+        "amity",
+        "taffy"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.500"
+}

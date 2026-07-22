@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 1821,
+    "ds": "2025-09-10",
+    "mode": "hard",
+    "solution": "pouty",
+    "guesses": [
+        "tares",
+        "litho",
+        "fount",
+        "gouty",
+        "pouty"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:00.103"
+}

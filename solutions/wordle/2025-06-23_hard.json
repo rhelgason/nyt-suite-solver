@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1472,
+    "ds": "2025-06-23",
+    "mode": "hard",
+    "solution": "oddly",
+    "guesses": [
+        "tares",
+        "colin",
+        "blood",
+        "oddly"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.582"
+}

@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 2192,
+    "ds": "2025-06-16",
+    "mode": "hard",
+    "solution": "petty",
+    "guesses": [
+        "tares",
+        "elite",
+        "cento",
+        "depth",
+        "petty"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:00.073"
+}

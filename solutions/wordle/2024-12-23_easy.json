@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1055,
+    "ds": "2024-12-23",
+    "mode": "easy",
+    "solution": "sauna",
+    "guesses": [
+        "tares",
+        "sylis",
+        "ajuga",
+        "sauna"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:01.035"
+}

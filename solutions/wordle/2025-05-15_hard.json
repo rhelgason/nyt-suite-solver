@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1753,
+    "ds": "2025-05-15",
+    "mode": "hard",
+    "solution": "eager",
+    "guesses": [
+        "tares",
+        "lager",
+        "cager",
+        "eager"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.076"
+}

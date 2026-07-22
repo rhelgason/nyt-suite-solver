@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 748,
+    "ds": "2025-01-17",
+    "mode": "hard",
+    "solution": "prose",
+    "guesses": [
+        "tares",
+        "rouse",
+        "brose",
+        "erose",
+        "prose"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:00.078"
+}

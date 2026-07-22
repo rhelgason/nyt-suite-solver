@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 2122,
+    "ds": "2025-08-23",
+    "mode": "easy",
+    "solution": "union",
+    "guesses": [
+        "tares",
+        "colin",
+        "input",
+        "union"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:07.725"
+}

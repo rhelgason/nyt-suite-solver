@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1195,
+    "ds": "2025-02-02",
+    "mode": "easy",
+    "solution": "chore",
+    "guesses": [
+        "tares",
+        "deice",
+        "churn",
+        "chore"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:02.023"
+}

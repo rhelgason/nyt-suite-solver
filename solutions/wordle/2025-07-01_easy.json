@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 753,
+    "ds": "2025-07-01",
+    "mode": "easy",
+    "solution": "moldy",
+    "guesses": [
+        "tares",
+        "colin",
+        "dimly",
+        "moldy"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:07.768"
+}

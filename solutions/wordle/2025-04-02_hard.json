@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1690,
+    "ds": "2025-04-02",
+    "mode": "hard",
+    "solution": "curse",
+    "guesses": [
+        "tares",
+        "servo",
+        "birse",
+        "curse"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.060"
+}

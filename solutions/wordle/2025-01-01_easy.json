@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 732,
+    "ds": "2025-01-01",
+    "mode": "easy",
+    "solution": "nerve",
+    "guesses": [
+        "tares",
+        "monie",
+        "kerne",
+        "nerve"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.903"
+}

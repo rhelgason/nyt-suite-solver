@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 2206,
+    "ds": "2025-08-02",
+    "mode": "easy",
+    "solution": "daunt",
+    "guesses": [
+        "tares",
+        "cutin",
+        "dight",
+        "daunt"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.994"
+}

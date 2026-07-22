@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1549,
+    "ds": "2025-03-12",
+    "mode": "easy",
+    "solution": "mango",
+    "guesses": [
+        "tares",
+        "lingy",
+        "abamp",
+        "mango"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:03.241"
+}

@@ -1,0 +1,13 @@
+{
+    "puzzle_id": 1732,
+    "ds": "2025-04-16",
+    "mode": "hard",
+    "solution": "moral",
+    "guesses": [
+        "tares",
+        "moral"
+    ],
+    "num_guesses": 2,
+    "solved": true,
+    "solve_time": "0:00:00.046"
+}

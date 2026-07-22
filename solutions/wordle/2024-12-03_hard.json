@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 1364,
+    "ds": "2024-12-03",
+    "mode": "hard",
+    "solution": "shaky",
+    "guesses": [
+        "tares",
+        "spail",
+        "shank",
+        "shako",
+        "shaky"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:00.064"
+}

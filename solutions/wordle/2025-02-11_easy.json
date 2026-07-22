@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 821,
+    "ds": "2025-02-11",
+    "mode": "easy",
+    "solution": "score",
+    "guesses": [
+        "tares",
+        "poise",
+        "ancho",
+        "score"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.502"
+}

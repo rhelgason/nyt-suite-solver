@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 1629,
+    "ds": "2025-07-29",
+    "mode": "hard",
+    "solution": "omega",
+    "guesses": [
+        "tares",
+        "plane",
+        "decay",
+        "ameba",
+        "omega"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:00.104"
+}

@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 645,
+    "ds": "2024-12-24",
+    "mode": "easy",
+    "solution": "eagle",
+    "guesses": [
+        "tares",
+        "cling",
+        "eagle"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:00.742"
+}

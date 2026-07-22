@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 2047,
+    "ds": "2024-12-21",
+    "mode": "easy",
+    "solution": "blade",
+    "guesses": [
+        "tares",
+        "aland",
+        "abaca",
+        "blade"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:02.572"
+}

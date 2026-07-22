@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1838,
+    "ds": "2025-08-28",
+    "mode": "easy",
+    "solution": "split",
+    "guesses": [
+        "tares",
+        "shout",
+        "plink",
+        "split"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:01.358"
+}

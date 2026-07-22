@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 1576,
+    "ds": "2025-04-27",
+    "mode": "hard",
+    "solution": "weedy",
+    "guesses": [
+        "tares",
+        "oldie",
+        "debug",
+        "needy",
+        "weedy"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:00.297"
+}

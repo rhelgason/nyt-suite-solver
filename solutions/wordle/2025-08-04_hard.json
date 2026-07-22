@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1319,
+    "ds": "2025-08-04",
+    "mode": "hard",
+    "solution": "rigid",
+    "guesses": [
+        "tares",
+        "prion",
+        "ribby",
+        "rigid"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.121"
+}

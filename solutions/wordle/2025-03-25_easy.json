@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1141,
+    "ds": "2025-03-25",
+    "mode": "easy",
+    "solution": "shelf",
+    "guesses": [
+        "tares",
+        "seine",
+        "mohel",
+        "shelf"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:01.967"
+}

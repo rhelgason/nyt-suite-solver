@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 2000,
+    "ds": "2024-12-29",
+    "mode": "easy",
+    "solution": "mambo",
+    "guesses": [
+        "tares",
+        "lingy",
+        "combo",
+        "mambo"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:03.573"
+}

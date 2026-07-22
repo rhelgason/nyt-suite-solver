@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 2024,
+    "ds": "2025-06-15",
+    "mode": "easy",
+    "solution": "quail",
+    "guesses": [
+        "tares",
+        "colin",
+        "algid",
+        "quail"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:04.883"
+}

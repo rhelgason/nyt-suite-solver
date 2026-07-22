@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1370,
+    "ds": "2025-07-26",
+    "mode": "easy",
+    "solution": "haunt",
+    "guesses": [
+        "tares",
+        "cutin",
+        "dight",
+        "haunt"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:01.017"
+}

@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 2324,
+    "ds": "2025-07-16",
+    "mode": "easy",
+    "solution": "nervy",
+    "guesses": [
+        "tares",
+        "monie",
+        "nerdy",
+        "nervy"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.933"
+}

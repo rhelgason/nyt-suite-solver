@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 993,
+    "ds": "2025-01-14",
+    "mode": "hard",
+    "solution": "fancy",
+    "guesses": [
+        "tares",
+        "manly",
+        "nancy",
+        "fancy"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.142"
+}

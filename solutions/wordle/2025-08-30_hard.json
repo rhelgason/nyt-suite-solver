@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 1540,
+    "ds": "2025-08-30",
+    "mode": "hard",
+    "solution": "elate",
+    "guesses": [
+        "tares",
+        "leant",
+        "alate",
+        "blate",
+        "elate"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:00.048"
+}

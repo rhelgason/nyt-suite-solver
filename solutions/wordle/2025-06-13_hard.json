@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 898,
+    "ds": "2025-06-13",
+    "mode": "hard",
+    "solution": "bilge",
+    "guesses": [
+        "tares",
+        "oldie",
+        "liege",
+        "bilge"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.277"
+}

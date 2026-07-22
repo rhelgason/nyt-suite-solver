@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 1592,
+    "ds": "2025-01-24",
+    "mode": "hard",
+    "solution": "crepe",
+    "guesses": [
+        "tares",
+        "pride",
+        "crepe"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:00.082"
+}

@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 660,
+    "ds": "2025-06-06",
+    "mode": "easy",
+    "solution": "edify",
+    "guesses": [
+        "tares",
+        "colin",
+        "begum",
+        "edify"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:05.319"
+}

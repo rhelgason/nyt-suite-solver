@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 1577,
+    "ds": "2025-06-28",
+    "mode": "easy",
+    "solution": "stump",
+    "guesses": [
+        "tares",
+        "shout",
+        "flank",
+        "study",
+        "stump"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:01.360"
+}

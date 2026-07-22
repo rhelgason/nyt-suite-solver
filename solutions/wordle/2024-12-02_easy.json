@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 563,
+    "ds": "2024-12-02",
+    "mode": "easy",
+    "solution": "guile",
+    "guesses": [
+        "tares",
+        "colin",
+        "bleed",
+        "guile"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:05.317"
+}

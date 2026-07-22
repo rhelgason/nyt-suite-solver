@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1475,
+    "ds": "2025-04-28",
+    "mode": "hard",
+    "solution": "dummy",
+    "guesses": [
+        "tares",
+        "colin",
+        "pygmy",
+        "dummy"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.587"
+}

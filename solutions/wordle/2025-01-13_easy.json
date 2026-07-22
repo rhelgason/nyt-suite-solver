@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1567,
+    "ds": "2025-01-13",
+    "mode": "easy",
+    "solution": "cloak",
+    "guesses": [
+        "tares",
+        "colin",
+        "chola",
+        "cloak"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:04.820"
+}

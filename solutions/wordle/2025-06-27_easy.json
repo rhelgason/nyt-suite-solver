@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1669,
+    "ds": "2025-06-27",
+    "mode": "easy",
+    "solution": "plain",
+    "guesses": [
+        "tares",
+        "colin",
+        "blain",
+        "plain"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:04.848"
+}

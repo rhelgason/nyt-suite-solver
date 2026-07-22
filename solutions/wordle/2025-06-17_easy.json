@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1158,
+    "ds": "2025-06-17",
+    "mode": "easy",
+    "solution": "prank",
+    "guesses": [
+        "tares",
+        "blond",
+        "pucka",
+        "prank"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:02.285"
+}

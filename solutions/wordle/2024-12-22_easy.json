@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 685,
+    "ds": "2024-12-22",
+    "mode": "easy",
+    "solution": "brawn",
+    "guesses": [
+        "tares",
+        "blond",
+        "brain",
+        "brawn"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:02.182"
+}

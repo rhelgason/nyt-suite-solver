@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 637,
+    "ds": "2025-05-11",
+    "mode": "hard",
+    "solution": "dowel",
+    "guesses": [
+        "tares",
+        "loden",
+        "coled",
+        "dowel"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.194"
+}

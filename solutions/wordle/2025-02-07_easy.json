@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 1164,
+    "ds": "2025-02-07",
+    "mode": "easy",
+    "solution": "swath",
+    "guesses": [
+        "tares",
+        "slant",
+        "chimp",
+        "stash",
+        "swath"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:00.833"
+}

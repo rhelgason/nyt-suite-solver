@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1547,
+    "ds": "2025-07-19",
+    "mode": "hard",
+    "solution": "sword",
+    "guesses": [
+        "tares",
+        "shirk",
+        "scorn",
+        "sword"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.050"
+}

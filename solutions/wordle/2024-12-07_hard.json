@@ -1,0 +1,17 @@
+{
+    "puzzle_id": 1664,
+    "ds": "2024-12-07",
+    "mode": "hard",
+    "solution": "hilly",
+    "guesses": [
+        "tares",
+        "colin",
+        "filly",
+        "billy",
+        "dilly",
+        "gilly"
+    ],
+    "num_guesses": null,
+    "solved": false,
+    "solve_time": "0:00:00.580"
+}

@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 2099,
+    "ds": "2025-06-18",
+    "mode": "easy",
+    "solution": "munch",
+    "guesses": [
+        "tares",
+        "colin",
+        "abamp",
+        "munch"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:07.692"
+}

@@ -1,0 +1,13 @@
+{
+    "puzzle_id": 1103,
+    "ds": "2025-04-14",
+    "mode": "hard",
+    "solution": "crest",
+    "guesses": [
+        "tares",
+        "crest"
+    ],
+    "num_guesses": 2,
+    "solved": true,
+    "solve_time": "0:00:00.045"
+}

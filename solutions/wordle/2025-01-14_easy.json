@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 993,
+    "ds": "2025-01-14",
+    "mode": "easy",
+    "solution": "fancy",
+    "guesses": [
+        "tares",
+        "lingy",
+        "ditch",
+        "fancy"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:03.324"
+}

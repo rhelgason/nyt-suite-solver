@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1458,
+    "ds": "2025-03-26",
+    "mode": "easy",
+    "solution": "elbow",
+    "guesses": [
+        "tares",
+        "colin",
+        "blond",
+        "elbow"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:05.235"
+}

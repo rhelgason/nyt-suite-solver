@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1013,
+    "ds": "2025-04-06",
+    "mode": "hard",
+    "solution": "villa",
+    "guesses": [
+        "tares",
+        "aloin",
+        "milpa",
+        "villa"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.274"
+}

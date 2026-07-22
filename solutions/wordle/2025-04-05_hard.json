@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1794,
+    "ds": "2025-04-05",
+    "mode": "hard",
+    "solution": "foamy",
+    "guesses": [
+        "tares",
+        "aloin",
+        "comma",
+        "foamy"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.253"
+}

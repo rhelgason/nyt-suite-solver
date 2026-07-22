@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1749,
+    "ds": "2025-04-11",
+    "mode": "easy",
+    "solution": "arrow",
+    "guesses": [
+        "tares",
+        "linum",
+        "abash",
+        "arrow"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.764"
+}

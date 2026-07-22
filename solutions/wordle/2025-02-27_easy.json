@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1142,
+    "ds": "2025-02-27",
+    "mode": "easy",
+    "solution": "lodge",
+    "guesses": [
+        "tares",
+        "colin",
+        "buhls",
+        "lodge"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:05.228"
+}

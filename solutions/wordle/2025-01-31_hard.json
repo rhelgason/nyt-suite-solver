@@ -1,0 +1,13 @@
+{
+    "puzzle_id": 1394,
+    "ds": "2025-01-31",
+    "mode": "hard",
+    "solution": "toast",
+    "guesses": [
+        "tares",
+        "toast"
+    ],
+    "num_guesses": 2,
+    "solved": true,
+    "solve_time": "0:00:00.043"
+}

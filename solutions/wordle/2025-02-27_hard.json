@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 1142,
+    "ds": "2025-02-27",
+    "mode": "hard",
+    "solution": "lodge",
+    "guesses": [
+        "tares",
+        "oldie",
+        "lodge"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:00.286"
+}

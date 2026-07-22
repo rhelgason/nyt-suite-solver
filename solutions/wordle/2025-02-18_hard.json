@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 2366,
+    "ds": "2025-02-18",
+    "mode": "hard",
+    "solution": "indie",
+    "guesses": [
+        "tares",
+        "oldie",
+        "didie",
+        "indie"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.289"
+}

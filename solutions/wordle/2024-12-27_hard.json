@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1982,
+    "ds": "2024-12-27",
+    "mode": "hard",
+    "solution": "grain",
+    "guesses": [
+        "tares",
+        "drain",
+        "brain",
+        "grain"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.091"
+}

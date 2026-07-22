@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 653,
+    "ds": "2025-02-10",
+    "mode": "easy",
+    "solution": "goody",
+    "guesses": [
+        "tares",
+        "colin",
+        "boody",
+        "degum",
+        "goody"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:08.325"
+}

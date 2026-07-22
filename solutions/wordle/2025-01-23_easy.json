@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1413,
+    "ds": "2025-01-23",
+    "mode": "easy",
+    "solution": "upper",
+    "guesses": [
+        "tares",
+        "poind",
+        "leech",
+        "upper"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:03.126"
+}

@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1639,
+    "ds": "2025-01-10",
+    "mode": "hard",
+    "solution": "crawl",
+    "guesses": [
+        "tares",
+        "drain",
+        "craal",
+        "crawl"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.096"
+}

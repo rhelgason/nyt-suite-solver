@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 735,
+    "ds": "2025-02-15",
+    "mode": "hard",
+    "solution": "crook",
+    "guesses": [
+        "tares",
+        "prion",
+        "broom",
+        "crook"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.110"
+}

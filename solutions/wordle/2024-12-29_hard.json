@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 2000,
+    "ds": "2024-12-29",
+    "mode": "hard",
+    "solution": "mambo",
+    "guesses": [
+        "tares",
+        "manly",
+        "magma",
+        "mambo"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.137"
+}

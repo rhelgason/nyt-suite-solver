@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1452,
+    "ds": "2025-04-01",
+    "mode": "easy",
+    "solution": "jewel",
+    "guesses": [
+        "tares",
+        "indol",
+        "becks",
+        "jewel"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:03.914"
+}

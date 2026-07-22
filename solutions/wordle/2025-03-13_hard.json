@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 627,
+    "ds": "2025-03-13",
+    "mode": "hard",
+    "solution": "chase",
+    "guesses": [
+        "tares",
+        "spale",
+        "cease",
+        "chase"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.055"
+}

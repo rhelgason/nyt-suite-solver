@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 2084,
+    "ds": "2025-08-01",
+    "mode": "hard",
+    "solution": "banjo",
+    "guesses": [
+        "tares",
+        "manly",
+        "danio",
+        "banco",
+        "banjo"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:00.141"
+}

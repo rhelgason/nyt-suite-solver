@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 735,
+    "ds": "2025-02-15",
+    "mode": "easy",
+    "solution": "crook",
+    "guesses": [
+        "tares",
+        "coign",
+        "cruck",
+        "crook"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:02.490"
+}

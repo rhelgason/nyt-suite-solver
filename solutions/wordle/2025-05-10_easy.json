@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1337,
+    "ds": "2025-05-10",
+    "mode": "easy",
+    "solution": "yeast",
+    "guesses": [
+        "tares",
+        "stalk",
+        "abaft",
+        "yeast"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.422"
+}

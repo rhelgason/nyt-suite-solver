@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1790,
+    "ds": "2025-09-06",
+    "mode": "easy",
+    "solution": "bulge",
+    "guesses": [
+        "tares",
+        "colin",
+        "badly",
+        "bulge"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:05.242"
+}

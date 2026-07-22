@@ -1,0 +1,17 @@
+{
+    "puzzle_id": 980,
+    "ds": "2025-08-24",
+    "mode": "hard",
+    "solution": "spore",
+    "guesses": [
+        "tares",
+        "rouse",
+        "score",
+        "shore",
+        "snore",
+        "spore"
+    ],
+    "num_guesses": 6,
+    "solved": true,
+    "solve_time": "0:00:00.043"
+}

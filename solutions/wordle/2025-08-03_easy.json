@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1627,
+    "ds": "2025-08-03",
+    "mode": "easy",
+    "solution": "lumpy",
+    "guesses": [
+        "tares",
+        "colin",
+        "bumpy",
+        "lumpy"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:07.785"
+}

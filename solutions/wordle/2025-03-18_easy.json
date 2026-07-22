@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1176,
+    "ds": "2025-03-18",
+    "mode": "easy",
+    "solution": "timer",
+    "guesses": [
+        "tares",
+        "windy",
+        "algum",
+        "timer"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.382"
+}

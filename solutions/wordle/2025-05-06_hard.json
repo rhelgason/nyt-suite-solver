@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 1679,
+    "ds": "2025-05-06",
+    "mode": "hard",
+    "solution": "suite",
+    "guesses": [
+        "tares",
+        "spite",
+        "skite",
+        "smite",
+        "suite"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:00.067"
+}

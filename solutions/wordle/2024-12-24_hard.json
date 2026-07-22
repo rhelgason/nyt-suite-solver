@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 645,
+    "ds": "2024-12-24",
+    "mode": "hard",
+    "solution": "eagle",
+    "guesses": [
+        "tares",
+        "macle",
+        "gable",
+        "eagle"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.051"
+}

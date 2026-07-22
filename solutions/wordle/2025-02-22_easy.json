@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 620,
+    "ds": "2025-02-22",
+    "mode": "easy",
+    "solution": "cream",
+    "guesses": [
+        "tares",
+        "craal",
+        "creak",
+        "cream"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:01.380"
+}

@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1801,
+    "ds": "2025-05-09",
+    "mode": "easy",
+    "solution": "tripe",
+    "guesses": [
+        "tares",
+        "chine",
+        "aback",
+        "tripe"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.402"
+}

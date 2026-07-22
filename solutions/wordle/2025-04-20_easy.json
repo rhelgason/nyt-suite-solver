@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1625,
+    "ds": "2025-04-20",
+    "mode": "easy",
+    "solution": "patch",
+    "guesses": [
+        "tares",
+        "cutin",
+        "blimp",
+        "patch"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:01.012"
+}

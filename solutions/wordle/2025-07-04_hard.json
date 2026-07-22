@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 2141,
+    "ds": "2025-07-04",
+    "mode": "hard",
+    "solution": "curve",
+    "guesses": [
+        "tares",
+        "nerdy",
+        "forge",
+        "birle",
+        "curve"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:00.066"
+}

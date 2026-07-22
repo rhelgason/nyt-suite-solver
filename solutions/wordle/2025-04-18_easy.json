@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1298,
+    "ds": "2025-04-18",
+    "mode": "easy",
+    "solution": "dirge",
+    "guesses": [
+        "tares",
+        "monie",
+        "birle",
+        "dirge"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.896"
+}

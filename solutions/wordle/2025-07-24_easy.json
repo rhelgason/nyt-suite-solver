@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1509,
+    "ds": "2025-07-24",
+    "mode": "easy",
+    "solution": "quake",
+    "guesses": [
+        "tares",
+        "aland",
+        "hempy",
+        "quake"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:02.769"
+}

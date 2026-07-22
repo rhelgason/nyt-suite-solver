@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1593,
+    "ds": "2025-01-15",
+    "mode": "hard",
+    "solution": "knack",
+    "guesses": [
+        "tares",
+        "aloin",
+        "uncap",
+        "knack"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.262"
+}

@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 2051,
+    "ds": "2025-08-25",
+    "mode": "hard",
+    "solution": "mirth",
+    "guesses": [
+        "tares",
+        "borty",
+        "firth",
+        "girth",
+        "mirth"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:00.045"
+}

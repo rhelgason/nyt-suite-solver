@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 742,
+    "ds": "2025-01-21",
+    "mode": "hard",
+    "solution": "icing",
+    "guesses": [
+        "tares",
+        "colin",
+        "finch",
+        "icing"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.580"
+}

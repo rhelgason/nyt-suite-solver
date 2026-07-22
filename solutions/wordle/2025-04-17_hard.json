@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 894,
+    "ds": "2025-04-17",
+    "mode": "hard",
+    "solution": "stood",
+    "guesses": [
+        "tares",
+        "shout",
+        "stoop",
+        "stood"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.069"
+}

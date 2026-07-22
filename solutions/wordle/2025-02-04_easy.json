@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 1160,
+    "ds": "2025-02-04",
+    "mode": "easy",
+    "solution": "tooth",
+    "guesses": [
+        "tares",
+        "yogin",
+        "tooth"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:00.735"
+}

@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 957,
+    "ds": "2025-05-04",
+    "mode": "hard",
+    "solution": "trout",
+    "guesses": [
+        "tares",
+        "triol",
+        "troth",
+        "trout"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.048"
+}

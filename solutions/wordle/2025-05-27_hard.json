@@ -1,0 +1,13 @@
+{
+    "puzzle_id": 778,
+    "ds": "2025-05-27",
+    "mode": "hard",
+    "solution": "sport",
+    "guesses": [
+        "tares",
+        "sport"
+    ],
+    "num_guesses": 2,
+    "solved": true,
+    "solve_time": "0:00:00.052"
+}

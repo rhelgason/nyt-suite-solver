@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1629,
+    "ds": "2025-07-29",
+    "mode": "easy",
+    "solution": "omega",
+    "guesses": [
+        "tares",
+        "aland",
+        "chomp",
+        "omega"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:02.697"
+}

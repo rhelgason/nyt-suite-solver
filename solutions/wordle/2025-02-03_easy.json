@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1650,
+    "ds": "2025-02-03",
+    "mode": "easy",
+    "solution": "revue",
+    "guesses": [
+        "tares",
+        "deice",
+        "reeve",
+        "revue"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:01.987"
+}

@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 857,
+    "ds": "2025-04-07",
+    "mode": "hard",
+    "solution": "hazel",
+    "guesses": [
+        "tares",
+        "laden",
+        "bagel",
+        "camel",
+        "hazel"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:00.071"
+}

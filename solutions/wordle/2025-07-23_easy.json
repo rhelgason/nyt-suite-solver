@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 1626,
+    "ds": "2025-07-23",
+    "mode": "easy",
+    "solution": "water",
+    "guesses": [
+        "tares",
+        "domal",
+        "cheep",
+        "aglow",
+        "water"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:00.364"
+}

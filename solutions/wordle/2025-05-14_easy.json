@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 833,
+    "ds": "2025-05-14",
+    "mode": "easy",
+    "solution": "bongo",
+    "guesses": [
+        "tares",
+        "colin",
+        "bawdy",
+        "bongo"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:07.924"
+}

@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 947,
+    "ds": "2025-03-21",
+    "mode": "easy",
+    "solution": "nudge",
+    "guesses": [
+        "tares",
+        "colin",
+        "benne",
+        "nudge"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:05.388"
+}

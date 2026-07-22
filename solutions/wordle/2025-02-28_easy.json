@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 1624,
+    "ds": "2025-02-28",
+    "mode": "easy",
+    "solution": "fuzzy",
+    "guesses": [
+        "tares",
+        "colin",
+        "pygmy",
+        "bifid",
+        "fuzzy"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:08.235"
+}

@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1793,
+    "ds": "2024-12-15",
+    "mode": "hard",
+    "solution": "funky",
+    "guesses": [
+        "tares",
+        "colin",
+        "gunky",
+        "funky"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.598"
+}

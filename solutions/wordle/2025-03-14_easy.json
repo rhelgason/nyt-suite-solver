@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 2238,
+    "ds": "2025-03-14",
+    "mode": "easy",
+    "solution": "piece",
+    "guesses": [
+        "tares",
+        "colin",
+        "bumph",
+        "piece"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:05.165"
+}

@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1302,
+    "ds": "2025-05-23",
+    "mode": "hard",
+    "solution": "shuck",
+    "guesses": [
+        "tares",
+        "spoil",
+        "snuck",
+        "shuck"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.121"
+}

@@ -1,0 +1,17 @@
+{
+    "puzzle_id": 1625,
+    "ds": "2025-04-20",
+    "mode": "hard",
+    "solution": "patch",
+    "guesses": [
+        "tares",
+        "haint",
+        "batch",
+        "catch",
+        "latch",
+        "match"
+    ],
+    "num_guesses": null,
+    "solved": false,
+    "solve_time": "0:00:00.065"
+}

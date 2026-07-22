@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 915,
+    "ds": "2025-07-22",
+    "mode": "easy",
+    "solution": "burnt",
+    "guesses": [
+        "tares",
+        "forby",
+        "birth",
+        "burnt"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.288"
+}

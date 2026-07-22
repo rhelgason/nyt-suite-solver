@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 1920,
+    "ds": "2025-02-17",
+    "mode": "easy",
+    "solution": "trail",
+    "guesses": [
+        "tares",
+        "claim",
+        "trail"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:00.330"
+}

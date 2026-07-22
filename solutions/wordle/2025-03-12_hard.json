@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1549,
+    "ds": "2025-03-12",
+    "mode": "hard",
+    "solution": "mango",
+    "guesses": [
+        "tares",
+        "manly",
+        "manga",
+        "mango"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.145"
+}

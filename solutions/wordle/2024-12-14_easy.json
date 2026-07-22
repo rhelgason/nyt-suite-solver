@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1301,
+    "ds": "2024-12-14",
+    "mode": "easy",
+    "solution": "drool",
+    "guesses": [
+        "tares",
+        "coign",
+        "blood",
+        "drool"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:02.716"
+}

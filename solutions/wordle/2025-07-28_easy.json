@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 704,
+    "ds": "2025-07-28",
+    "mode": "easy",
+    "solution": "savvy",
+    "guesses": [
+        "tares",
+        "sylis",
+        "capon",
+        "saggy",
+        "savvy"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:01.025"
+}

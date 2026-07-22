@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 1301,
+    "ds": "2024-12-14",
+    "mode": "hard",
+    "solution": "drool",
+    "guesses": [
+        "tares",
+        "prion",
+        "broom",
+        "crook",
+        "drool"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:00.136"
+}

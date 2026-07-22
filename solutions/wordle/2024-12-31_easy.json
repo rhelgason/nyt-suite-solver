@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1289,
+    "ds": "2024-12-31",
+    "mode": "easy",
+    "solution": "lemur",
+    "guesses": [
+        "tares",
+        "deice",
+        "pylon",
+        "lemur"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:02.086"
+}

@@ -1,0 +1,13 @@
+{
+    "puzzle_id": 526,
+    "ds": "2025-03-10",
+    "mode": "hard",
+    "solution": "spite",
+    "guesses": [
+        "tares",
+        "spite"
+    ],
+    "num_guesses": 2,
+    "solved": true,
+    "solve_time": "0:00:00.065"
+}

@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1280,
+    "ds": "2025-05-03",
+    "mode": "easy",
+    "solution": "patsy",
+    "guesses": [
+        "tares",
+        "spiny",
+        "pasty",
+        "patsy"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.315"
+}

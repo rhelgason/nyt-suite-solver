@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 2150,
+    "ds": "2025-02-19",
+    "mode": "easy",
+    "solution": "madly",
+    "guesses": [
+        "tares",
+        "lingy",
+        "badly",
+        "madly"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:03.331"
+}

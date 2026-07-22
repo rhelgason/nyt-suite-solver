@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 697,
+    "ds": "2025-04-12",
+    "mode": "hard",
+    "solution": "nurse",
+    "guesses": [
+        "tares",
+        "servo",
+        "birse",
+        "curse",
+        "nurse"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:00.088"
+}

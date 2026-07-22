@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1664,
+    "ds": "2024-12-07",
+    "mode": "easy",
+    "solution": "hilly",
+    "guesses": [
+        "tares",
+        "colin",
+        "muhly",
+        "hilly"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:07.807"
+}

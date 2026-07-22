@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 555,
+    "ds": "2025-02-01",
+    "mode": "hard",
+    "solution": "rivet",
+    "guesses": [
+        "tares",
+        "outer",
+        "relet",
+        "rivet"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.058"
+}

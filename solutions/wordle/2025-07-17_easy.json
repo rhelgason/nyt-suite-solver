@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1080,
+    "ds": "2025-07-17",
+    "mode": "easy",
+    "solution": "modal",
+    "guesses": [
+        "tares",
+        "colin",
+        "dumka",
+        "modal"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:04.944"
+}

@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 1825,
+    "ds": "2025-01-06",
+    "mode": "hard",
+    "solution": "sprig",
+    "guesses": [
+        "tares",
+        "sprug",
+        "sprig"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:00.050"
+}

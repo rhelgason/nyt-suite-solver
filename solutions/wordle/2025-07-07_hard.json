@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 989,
+    "ds": "2025-07-07",
+    "mode": "hard",
+    "solution": "stilt",
+    "guesses": [
+        "tares",
+        "shout",
+        "stilt"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:00.069"
+}

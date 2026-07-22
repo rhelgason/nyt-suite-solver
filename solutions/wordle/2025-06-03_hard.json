@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1628,
+    "ds": "2025-06-03",
+    "mode": "hard",
+    "solution": "admin",
+    "guesses": [
+        "tares",
+        "aloin",
+        "again",
+        "auxin"
+    ],
+    "num_guesses": null,
+    "solved": false,
+    "solve_time": "0:00:00.251"
+}

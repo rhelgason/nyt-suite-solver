@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1812,
+    "ds": "2025-03-05",
+    "mode": "hard",
+    "solution": "scrum",
+    "guesses": [
+        "tares",
+        "sprug",
+        "scrub",
+        "scrum"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.054"
+}

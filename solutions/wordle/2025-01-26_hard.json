@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 669,
+    "ds": "2025-01-26",
+    "mode": "hard",
+    "solution": "sunny",
+    "guesses": [
+        "tares",
+        "spoil",
+        "snuck",
+        "sunny"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.123"
+}

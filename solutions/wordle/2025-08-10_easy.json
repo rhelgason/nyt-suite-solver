@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 596,
+    "ds": "2025-08-10",
+    "mode": "easy",
+    "solution": "minty",
+    "guesses": [
+        "tares",
+        "colin",
+        "finny",
+        "minty"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:02.525"
+}

@@ -1,0 +1,17 @@
+{
+    "puzzle_id": 1299,
+    "ds": "2025-05-17",
+    "mode": "hard",
+    "solution": "grown",
+    "guesses": [
+        "tares",
+        "prion",
+        "brown",
+        "crown",
+        "drown",
+        "frown"
+    ],
+    "num_guesses": null,
+    "solved": false,
+    "solve_time": "0:00:00.099"
+}

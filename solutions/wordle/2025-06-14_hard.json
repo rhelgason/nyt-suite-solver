@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 692,
+    "ds": "2025-06-14",
+    "mode": "hard",
+    "solution": "ghost",
+    "guesses": [
+        "tares",
+        "shout",
+        "ghost"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:00.070"
+}

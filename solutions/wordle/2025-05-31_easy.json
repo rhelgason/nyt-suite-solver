@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1707,
+    "ds": "2025-05-31",
+    "mode": "easy",
+    "solution": "habit",
+    "guesses": [
+        "tares",
+        "cutin",
+        "davit",
+        "habit"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.936"
+}

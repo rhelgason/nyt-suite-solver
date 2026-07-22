@@ -1,0 +1,17 @@
+{
+    "puzzle_id": 1939,
+    "ds": "2025-07-10",
+    "mode": "hard",
+    "solution": "jumpy",
+    "guesses": [
+        "tares",
+        "colin",
+        "pygmy",
+        "bumpy",
+        "dumpy",
+        "humpy"
+    ],
+    "num_guesses": null,
+    "solved": false,
+    "solve_time": "0:00:00.592"
+}

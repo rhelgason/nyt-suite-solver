@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 1134,
+    "ds": "2025-02-09",
+    "mode": "easy",
+    "solution": "bonus",
+    "guesses": [
+        "tares",
+        "colin",
+        "bongo",
+        "adieu",
+        "bonus"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:07.491"
+}

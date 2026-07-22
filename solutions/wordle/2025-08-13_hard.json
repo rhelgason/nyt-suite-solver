@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 2378,
+    "ds": "2025-08-13",
+    "mode": "hard",
+    "solution": "kefir",
+    "guesses": [
+        "tares",
+        "pride",
+        "renig",
+        "kefir"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.092"
+}

@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 1503,
+    "ds": "2024-12-18",
+    "mode": "hard",
+    "solution": "hefty",
+    "guesses": [
+        "tares",
+        "elite",
+        "cento",
+        "depth",
+        "hefty"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:00.083"
+}

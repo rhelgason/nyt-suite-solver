@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 2284,
+    "ds": "2025-01-19",
+    "mode": "easy",
+    "solution": "rower",
+    "guesses": [
+        "tares",
+        "poind",
+        "womby",
+        "cavil",
+        "rower"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:03.381"
+}

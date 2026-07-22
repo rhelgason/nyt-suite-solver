@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1640,
+    "ds": "2025-08-17",
+    "mode": "easy",
+    "solution": "lousy",
+    "guesses": [
+        "tares",
+        "noily",
+        "lossy",
+        "lousy"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:02.712"
+}

@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 1080,
+    "ds": "2025-07-17",
+    "mode": "hard",
+    "solution": "modal",
+    "guesses": [
+        "tares",
+        "aloin",
+        "coala",
+        "molal",
+        "modal"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:00.272"
+}

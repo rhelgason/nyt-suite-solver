@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 2353,
+    "ds": "2025-01-20",
+    "mode": "hard",
+    "solution": "squid",
+    "guesses": [
+        "tares",
+        "spoil",
+        "squib",
+        "squid"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.121"
+}

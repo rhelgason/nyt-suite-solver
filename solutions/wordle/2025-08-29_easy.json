@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 2035,
+    "ds": "2025-08-29",
+    "mode": "easy",
+    "solution": "graft",
+    "guesses": [
+        "tares",
+        "craal",
+        "fungi",
+        "graft"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.591"
+}

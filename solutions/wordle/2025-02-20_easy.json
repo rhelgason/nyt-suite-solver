@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1111,
+    "ds": "2025-02-20",
+    "mode": "easy",
+    "solution": "roach",
+    "guesses": [
+        "tares",
+        "blond",
+        "comfy",
+        "roach"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:02.307"
+}

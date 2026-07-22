@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 1138,
+    "ds": "2025-06-05",
+    "mode": "hard",
+    "solution": "datum",
+    "guesses": [
+        "tares",
+        "haint",
+        "fatty",
+        "matza",
+        "datum"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:00.069"
+}

@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 2387,
+    "ds": "2025-07-25",
+    "mode": "easy",
+    "solution": "gofer",
+    "guesses": [
+        "tares",
+        "poind",
+        "womby",
+        "gulch",
+        "gofer"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:03.392"
+}

@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1256,
+    "ds": "2025-06-25",
+    "mode": "easy",
+    "solution": "comfy",
+    "guesses": [
+        "tares",
+        "colin",
+        "boomy",
+        "comfy"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:07.790"
+}

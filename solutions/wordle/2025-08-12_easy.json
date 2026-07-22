@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1429,
+    "ds": "2025-08-12",
+    "mode": "easy",
+    "solution": "nomad",
+    "guesses": [
+        "tares",
+        "colin",
+        "donga",
+        "nomad"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:04.884"
+}

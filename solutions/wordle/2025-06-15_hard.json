@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 2024,
+    "ds": "2025-06-15",
+    "mode": "hard",
+    "solution": "quail",
+    "guesses": [
+        "tares",
+        "aloin",
+        "cilia",
+        "quail"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.260"
+}

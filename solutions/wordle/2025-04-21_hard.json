@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 2328,
+    "ds": "2025-04-21",
+    "mode": "hard",
+    "solution": "spate",
+    "guesses": [
+        "tares",
+        "stale",
+        "skate",
+        "spate"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.055"
+}

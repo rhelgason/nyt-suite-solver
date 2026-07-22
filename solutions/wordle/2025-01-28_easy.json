@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 1844,
+    "ds": "2025-01-28",
+    "mode": "easy",
+    "solution": "fever",
+    "guesses": [
+        "tares",
+        "poind",
+        "elegy",
+        "whirr",
+        "fever"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:03.720"
+}

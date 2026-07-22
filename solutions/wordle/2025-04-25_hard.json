@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 2153,
+    "ds": "2025-04-25",
+    "mode": "hard",
+    "solution": "known",
+    "guesses": [
+        "tares",
+        "colin",
+        "jupon",
+        "known"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.584"
+}

@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 979,
+    "ds": "2024-12-25",
+    "mode": "hard",
+    "solution": "share",
+    "guesses": [
+        "tares",
+        "spear",
+        "scare",
+        "share"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.050"
+}

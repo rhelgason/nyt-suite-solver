@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1802,
+    "ds": "2025-05-12",
+    "mode": "hard",
+    "solution": "bicep",
+    "guesses": [
+        "tares",
+        "loden",
+        "cuvee",
+        "bicep"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.226"
+}

@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 750,
+    "ds": "2025-07-03",
+    "mode": "easy",
+    "solution": "poppy",
+    "guesses": [
+        "tares",
+        "colin",
+        "boody",
+        "pommy",
+        "poppy"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:08.311"
+}

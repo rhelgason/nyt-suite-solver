@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 837,
+    "ds": "2025-04-24",
+    "mode": "easy",
+    "solution": "genie",
+    "guesses": [
+        "tares",
+        "colin",
+        "indie",
+        "genie"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:05.193"
+}

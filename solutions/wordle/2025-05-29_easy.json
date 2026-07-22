@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 2177,
+    "ds": "2025-05-29",
+    "mode": "easy",
+    "solution": "quash",
+    "guesses": [
+        "tares",
+        "milch",
+        "snubs",
+        "quash"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:01.585"
+}

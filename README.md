@@ -8,7 +8,7 @@ required, and can also be used interactively or headlessly.
 <!-- STATS:START -->
 ## Lifetime results
 
-_Auto-generated from `solutions/` · **2572** puzzles solved across 5 games (through 2026-07-22)._
+_Auto-generated from `solutions/` · **3144** puzzles solved across 5 games (through 2026-07-22)._
 
 <div align="center">
 <table>
@@ -16,8 +16,8 @@ _Auto-generated from `solutions/` · **2572** puzzles solved across 5 games (thr
 <tr><td>Spelling Bee</td><td>10</td><td>99.3%</td><td>107 ms</td></tr>
 <tr><td>Letter Boxed</td><td>2</td><td>2.0 words</td><td>155 ms</td></tr>
 <tr><td>Sudoku</td><td>6</td><td>100%</td><td>0.23 ms</td></tr>
-<tr><td>Wordle (easy)</td><td>1272</td><td>3.8 guesses</td><td>5.50 s</td></tr>
-<tr><td>Wordle (hard)</td><td>1272</td><td>3.9 guesses</td><td>301 ms</td></tr>
+<tr><td>Wordle (easy)</td><td>1558</td><td>3.8 guesses</td><td>5.56 s</td></tr>
+<tr><td>Wordle (hard)</td><td>1558</td><td>3.9 guesses</td><td>305 ms</td></tr>
 <tr><td>Strands</td><td>10</td><td>83% words</td><td>61.41 s</td></tr>
 </table>
 </div>

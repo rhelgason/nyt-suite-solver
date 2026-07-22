@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 1337,
+    "ds": "2025-05-10",
+    "mode": "hard",
+    "solution": "yeast",
+    "guesses": [
+        "tares",
+        "stale",
+        "beast",
+        "feast",
+        "yeast"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:00.057"
+}

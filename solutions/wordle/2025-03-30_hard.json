@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 938,
+    "ds": "2025-03-30",
+    "mode": "hard",
+    "solution": "quota",
+    "guesses": [
+        "tares",
+        "alant",
+        "pitta",
+        "quota"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.076"
+}

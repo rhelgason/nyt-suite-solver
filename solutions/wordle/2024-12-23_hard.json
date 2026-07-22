@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1055,
+    "ds": "2024-12-23",
+    "mode": "hard",
+    "solution": "sauna",
+    "guesses": [
+        "tares",
+        "salsa",
+        "sanga",
+        "sauna"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.059"
+}

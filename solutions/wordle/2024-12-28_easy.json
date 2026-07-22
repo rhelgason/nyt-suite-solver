@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 2202,
+    "ds": "2024-12-28",
+    "mode": "easy",
+    "solution": "decry",
+    "guesses": [
+        "tares",
+        "deice",
+        "decor",
+        "decry"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:01.937"
+}

@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1846,
+    "ds": "2025-03-19",
+    "mode": "hard",
+    "solution": "spark",
+    "guesses": [
+        "tares",
+        "snarf",
+        "sharp",
+        "spark"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.046"
+}

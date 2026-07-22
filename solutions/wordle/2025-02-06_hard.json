@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 951,
+    "ds": "2025-02-06",
+    "mode": "hard",
+    "solution": "pupil",
+    "guesses": [
+        "tares",
+        "colin",
+        "lipid",
+        "pupil"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.593"
+}

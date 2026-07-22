@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 986,
+    "ds": "2025-08-15",
+    "mode": "easy",
+    "solution": "level",
+    "guesses": [
+        "tares",
+        "indol",
+        "becks",
+        "jewel",
+        "level"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:03.899"
+}

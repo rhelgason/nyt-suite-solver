@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1191,
+    "ds": "2025-05-01",
+    "mode": "hard",
+    "solution": "adept",
+    "guesses": [
+        "tares",
+        "leant",
+        "cheat",
+        "adept"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.053"
+}

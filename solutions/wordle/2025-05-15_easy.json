@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1753,
+    "ds": "2025-05-15",
+    "mode": "easy",
+    "solution": "eager",
+    "guesses": [
+        "tares",
+        "glyph",
+        "ceder",
+        "eager"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:01.038"
+}

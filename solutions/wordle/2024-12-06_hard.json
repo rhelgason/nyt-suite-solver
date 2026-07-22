@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1232,
+    "ds": "2024-12-06",
+    "mode": "hard",
+    "solution": "shove",
+    "guesses": [
+        "tares",
+        "seine",
+        "scope",
+        "shove"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.099"
+}

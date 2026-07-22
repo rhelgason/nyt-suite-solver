@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 947,
+    "ds": "2025-03-21",
+    "mode": "hard",
+    "solution": "nudge",
+    "guesses": [
+        "tares",
+        "oldie",
+        "endue",
+        "nudge"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.276"
+}

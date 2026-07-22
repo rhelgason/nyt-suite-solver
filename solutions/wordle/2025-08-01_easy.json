@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 2084,
+    "ds": "2025-08-01",
+    "mode": "easy",
+    "solution": "banjo",
+    "guesses": [
+        "tares",
+        "lingy",
+        "bucko",
+        "banjo"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:03.308"
+}

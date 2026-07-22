@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1000,
+    "ds": "2025-03-22",
+    "mode": "easy",
+    "solution": "amble",
+    "guesses": [
+        "tares",
+        "aland",
+        "bimbo",
+        "amble"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:02.648"
+}

@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 1452,
+    "ds": "2025-04-01",
+    "mode": "hard",
+    "solution": "jewel",
+    "guesses": [
+        "tares",
+        "loden",
+        "kelep",
+        "bevel",
+        "jewel"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:00.177"
+}

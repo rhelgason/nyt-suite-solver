@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 984,
+    "ds": "2025-02-23",
+    "mode": "easy",
+    "solution": "otter",
+    "guesses": [
+        "tares",
+        "notum",
+        "affix",
+        "otter"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.521"
+}

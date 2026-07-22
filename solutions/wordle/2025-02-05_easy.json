@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1440,
+    "ds": "2025-02-05",
+    "mode": "easy",
+    "solution": "pedal",
+    "guesses": [
+        "tares",
+        "aland",
+        "middy",
+        "pedal"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:02.613"
+}

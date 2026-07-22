@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 2070,
+    "ds": "2025-05-16",
+    "mode": "easy",
+    "solution": "fifth",
+    "guesses": [
+        "tares",
+        "colin",
+        "wifty",
+        "fifth"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:02.729"
+}

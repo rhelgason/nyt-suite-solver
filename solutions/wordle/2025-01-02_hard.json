@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 610,
+    "ds": "2025-01-02",
+    "mode": "hard",
+    "solution": "chose",
+    "guesses": [
+        "tares",
+        "seine",
+        "pulse",
+        "whose",
+        "chose"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:00.094"
+}

@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1955,
+    "ds": "2025-06-07",
+    "mode": "easy",
+    "solution": "reuse",
+    "guesses": [
+        "tares",
+        "poise",
+        "cruse",
+        "reuse"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.502"
+}

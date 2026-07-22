@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 2185,
+    "ds": "2025-08-22",
+    "mode": "easy",
+    "solution": "ratty",
+    "guesses": [
+        "tares",
+        "cibol",
+        "ratan",
+        "ratty"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.179"
+}

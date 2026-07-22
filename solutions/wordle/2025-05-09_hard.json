@@ -1,0 +1,17 @@
+{
+    "puzzle_id": 1801,
+    "ds": "2025-05-09",
+    "mode": "hard",
+    "solution": "tripe",
+    "guesses": [
+        "tares",
+        "trine",
+        "tribe",
+        "trice",
+        "trike",
+        "tripe"
+    ],
+    "num_guesses": 6,
+    "solved": true,
+    "solve_time": "0:00:00.066"
+}

@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 898,
+    "ds": "2025-06-13",
+    "mode": "easy",
+    "solution": "bilge",
+    "guesses": [
+        "tares",
+        "colin",
+        "fille",
+        "bilge"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:05.140"
+}

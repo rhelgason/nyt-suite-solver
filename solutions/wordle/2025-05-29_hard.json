@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 2177,
+    "ds": "2025-05-29",
+    "mode": "hard",
+    "solution": "quash",
+    "guesses": [
+        "tares",
+        "spail",
+        "abash",
+        "gnash",
+        "quash"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:00.071"
+}

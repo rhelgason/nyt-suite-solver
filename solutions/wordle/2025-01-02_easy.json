@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 610,
+    "ds": "2025-01-02",
+    "mode": "easy",
+    "solution": "chose",
+    "guesses": [
+        "tares",
+        "seine",
+        "cloud",
+        "chose"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:02.078"
+}

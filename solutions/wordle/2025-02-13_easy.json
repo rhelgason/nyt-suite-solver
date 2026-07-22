@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1550,
+    "ds": "2025-02-13",
+    "mode": "easy",
+    "solution": "rumba",
+    "guesses": [
+        "tares",
+        "blond",
+        "mbira",
+        "rumba"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:02.259"
+}

@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 1946,
+    "ds": "2025-03-09",
+    "mode": "easy",
+    "solution": "greed",
+    "guesses": [
+        "tares",
+        "poind",
+        "fuddy",
+        "acerb",
+        "greed"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:03.178"
+}

@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1158,
+    "ds": "2025-06-17",
+    "mode": "hard",
+    "solution": "prank",
+    "guesses": [
+        "tares",
+        "drain",
+        "prang",
+        "prank"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.103"
+}

@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1807,
+    "ds": "2024-12-08",
+    "mode": "hard",
+    "solution": "hyena",
+    "guesses": [
+        "tares",
+        "plane",
+        "henna",
+        "hyena"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.108"
+}

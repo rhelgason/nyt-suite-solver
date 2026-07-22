@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1496,
+    "ds": "2025-05-21",
+    "mode": "easy",
+    "solution": "alarm",
+    "guesses": [
+        "tares",
+        "blond",
+        "agism",
+        "alarm"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:02.259"
+}

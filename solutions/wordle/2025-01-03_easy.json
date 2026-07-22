@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1317,
+    "ds": "2025-01-03",
+    "mode": "easy",
+    "solution": "cheap",
+    "guesses": [
+        "tares",
+        "aland",
+        "chomp",
+        "cheap"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:02.737"
+}

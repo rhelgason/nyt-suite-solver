@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1798,
+    "ds": "2025-01-11",
+    "mode": "hard",
+    "solution": "dingy",
+    "guesses": [
+        "tares",
+        "colin",
+        "piing",
+        "dingy"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.587"
+}

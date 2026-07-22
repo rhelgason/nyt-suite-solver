@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1203,
+    "ds": "2024-12-13",
+    "mode": "easy",
+    "solution": "boxer",
+    "guesses": [
+        "tares",
+        "poind",
+        "womby",
+        "boxer"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:03.308"
+}

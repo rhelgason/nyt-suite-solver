@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 870,
+    "ds": "2025-04-29",
+    "mode": "easy",
+    "solution": "bliss",
+    "guesses": [
+        "tares",
+        "colin",
+        "skimp",
+        "bliss"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:07.237"
+}

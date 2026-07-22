@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 769,
+    "ds": "2025-04-23",
+    "mode": "hard",
+    "solution": "ozone",
+    "guesses": [
+        "tares",
+        "oldie",
+        "ounce",
+        "ozone"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.285"
+}

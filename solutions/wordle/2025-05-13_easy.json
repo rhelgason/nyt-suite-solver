@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 1173,
+    "ds": "2025-05-13",
+    "mode": "easy",
+    "solution": "aware",
+    "guesses": [
+        "tares",
+        "craal",
+        "aware"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:01.358"
+}

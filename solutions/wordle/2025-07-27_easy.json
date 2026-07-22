@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1542,
+    "ds": "2025-07-27",
+    "mode": "easy",
+    "solution": "whole",
+    "guesses": [
+        "tares",
+        "colin",
+        "blond",
+        "whole"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:05.232"
+}

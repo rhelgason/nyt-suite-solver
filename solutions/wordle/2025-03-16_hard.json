@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 675,
+    "ds": "2025-03-16",
+    "mode": "hard",
+    "solution": "stamp",
+    "guesses": [
+        "tares",
+        "slant",
+        "staig",
+        "staph",
+        "stamp"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:00.058"
+}

@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 2021,
+    "ds": "2024-12-09",
+    "mode": "easy",
+    "solution": "flung",
+    "guesses": [
+        "tares",
+        "colin",
+        "flung"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:07.677"
+}

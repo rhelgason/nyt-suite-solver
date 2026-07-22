@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 574,
+    "ds": "2024-12-19",
+    "mode": "easy",
+    "solution": "stray",
+    "guesses": [
+        "tares",
+        "strap",
+        "straw",
+        "stray"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.126"
+}

@@ -1,0 +1,17 @@
+{
+    "puzzle_id": 1203,
+    "ds": "2024-12-13",
+    "mode": "hard",
+    "solution": "boxer",
+    "guesses": [
+        "tares",
+        "riled",
+        "comer",
+        "power",
+        "boner",
+        "boxer"
+    ],
+    "num_guesses": 6,
+    "solved": true,
+    "solve_time": "0:00:00.144"
+}

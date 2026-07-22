@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 1221,
+    "ds": "2025-02-08",
+    "mode": "hard",
+    "solution": "steep",
+    "guesses": [
+        "tares",
+        "steel",
+        "steed",
+        "steek",
+        "steep"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:00.054"
+}

@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 2378,
+    "ds": "2025-08-13",
+    "mode": "easy",
+    "solution": "kefir",
+    "guesses": [
+        "tares",
+        "deice",
+        "fungo",
+        "kefir"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:02.050"
+}

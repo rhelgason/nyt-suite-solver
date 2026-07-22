@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 687,
+    "ds": "2025-07-12",
+    "mode": "hard",
+    "solution": "exile",
+    "guesses": [
+        "tares",
+        "oldie",
+        "liege",
+        "exile"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.297"
+}

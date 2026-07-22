@@ -1,0 +1,17 @@
+{
+    "puzzle_id": 949,
+    "ds": "2025-05-19",
+    "mode": "hard",
+    "solution": "pitch",
+    "guesses": [
+        "tares",
+        "litho",
+        "bitch",
+        "ditch",
+        "fitch",
+        "hitch"
+    ],
+    "num_guesses": null,
+    "solved": false,
+    "solve_time": "0:00:00.109"
+}

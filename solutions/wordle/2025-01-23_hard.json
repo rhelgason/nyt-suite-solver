@@ -1,0 +1,17 @@
+{
+    "puzzle_id": 1413,
+    "ds": "2025-01-23",
+    "mode": "hard",
+    "solution": "upper",
+    "guesses": [
+        "tares",
+        "riled",
+        "comer",
+        "fewer",
+        "huger",
+        "upper"
+    ],
+    "num_guesses": 6,
+    "solved": true,
+    "solve_time": "0:00:00.170"
+}

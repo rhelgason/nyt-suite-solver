@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 783,
+    "ds": "2025-08-20",
+    "mode": "easy",
+    "solution": "llama",
+    "guesses": [
+        "tares",
+        "colin",
+        "algum",
+        "flamy",
+        "llama"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:05.274"
+}

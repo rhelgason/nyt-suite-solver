@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1797,
+    "ds": "2024-12-11",
+    "mode": "easy",
+    "solution": "plumb",
+    "guesses": [
+        "tares",
+        "colin",
+        "bumpy",
+        "plumb"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:07.879"
+}

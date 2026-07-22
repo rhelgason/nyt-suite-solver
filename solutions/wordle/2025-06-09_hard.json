@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1897,
+    "ds": "2025-06-09",
+    "mode": "hard",
+    "solution": "board",
+    "guesses": [
+        "tares",
+        "drain",
+        "hoard",
+        "board"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.100"
+}

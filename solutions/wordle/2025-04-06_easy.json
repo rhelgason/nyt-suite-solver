@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1013,
+    "ds": "2025-04-06",
+    "mode": "easy",
+    "solution": "villa",
+    "guesses": [
+        "tares",
+        "colin",
+        "flump",
+        "villa"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:04.905"
+}

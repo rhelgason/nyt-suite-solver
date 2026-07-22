@@ -1,0 +1,13 @@
+{
+    "puzzle_id": 1562,
+    "ds": "2025-06-19",
+    "mode": "hard",
+    "solution": "curio",
+    "guesses": [
+        "tares",
+        "curio"
+    ],
+    "num_guesses": 2,
+    "solved": true,
+    "solve_time": "0:00:00.075"
+}
