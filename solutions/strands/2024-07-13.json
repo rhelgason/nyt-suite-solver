@@ -1,0 +1,20 @@
+{
+    "puzzle_id": 199,
+    "ds": "2024-07-13",
+    "clue": "Hello kitty",
+    "theme_words": [
+        "black",
+        "calico",
+        "orange",
+        "tabby",
+        "tortoiseshell",
+        "tuxedo"
+    ],
+    "spangram": "furcoat",
+    "solved": true,
+    "theme_words_found": 6,
+    "theme_words_total": 6,
+    "candidates": 21456,
+    "truncated": false,
+    "solve_time": "0:00:12.853"
+}

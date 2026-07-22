@@ -1,0 +1,19 @@
+{
+    "puzzle_id": 204,
+    "ds": "2024-07-09",
+    "clue": "Now on exhibit",
+    "theme_words": [
+        "collage",
+        "lithograph",
+        "mural",
+        "painting",
+        "sculpture"
+    ],
+    "spangram": "artmuseum",
+    "solved": false,
+    "theme_words_found": 3,
+    "theme_words_total": 5,
+    "candidates": 344,
+    "truncated": true,
+    "solve_time": "0:01:04.803"
+}

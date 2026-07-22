@@ -1,0 +1,19 @@
+{
+    "puzzle_id": 155,
+    "ds": "2024-07-06",
+    "clue": "By the yard",
+    "theme_words": [
+        "birdbath",
+        "flamingo",
+        "gnome",
+        "planter",
+        "windsock"
+    ],
+    "spangram": "lawnornament",
+    "solved": true,
+    "theme_words_found": 5,
+    "theme_words_total": 5,
+    "candidates": 557,
+    "truncated": false,
+    "solve_time": "0:00:02.357"
+}

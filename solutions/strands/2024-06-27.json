@@ -1,0 +1,20 @@
+{
+    "puzzle_id": 123,
+    "ds": "2024-06-27",
+    "clue": "Better together",
+    "theme_words": [
+        "biscuits",
+        "burger",
+        "cheese",
+        "fries",
+        "gravy",
+        "macaroni"
+    ],
+    "spangram": "combomeals",
+    "solved": false,
+    "theme_words_found": 4,
+    "theme_words_total": 6,
+    "candidates": 76,
+    "truncated": true,
+    "solve_time": "0:01:05.368"
+}

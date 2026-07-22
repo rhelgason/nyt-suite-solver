@@ -1,0 +1,21 @@
+{
+    "puzzle_id": 133,
+    "ds": "2024-07-02",
+    "clue": "Heat and eat",
+    "theme_words": [
+        "blanch",
+        "braise",
+        "deglaze",
+        "flambe",
+        "poach",
+        "simmer",
+        "steam"
+    ],
+    "spangram": "cooking",
+    "solved": true,
+    "theme_words_found": 7,
+    "theme_words_total": 7,
+    "candidates": 25,
+    "truncated": false,
+    "solve_time": "0:00:00.257"
+}

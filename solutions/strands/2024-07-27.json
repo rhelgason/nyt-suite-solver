@@ -1,0 +1,20 @@
+{
+    "puzzle_id": 194,
+    "ds": "2024-07-27",
+    "clue": "Bedtime story",
+    "theme_words": [
+        "clocks",
+        "kittens",
+        "mittens",
+        "mush",
+        "nobody",
+        "socks"
+    ],
+    "spangram": "goodnightmoon",
+    "solved": false,
+    "theme_words_found": 5,
+    "theme_words_total": 6,
+    "candidates": 20517,
+    "truncated": true,
+    "solve_time": "0:01:01.004"
+}

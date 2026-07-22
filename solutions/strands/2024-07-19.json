@@ -1,0 +1,21 @@
+{
+    "puzzle_id": 190,
+    "ds": "2024-07-19",
+    "clue": "And the Oscar goes to ...",
+    "theme_words": [
+        "berry",
+        "bridges",
+        "field",
+        "hunt",
+        "phoenix",
+        "stone",
+        "swank"
+    ],
+    "spangram": "bestacting",
+    "solved": false,
+    "theme_words_found": 2,
+    "theme_words_total": 7,
+    "candidates": 5021,
+    "truncated": true,
+    "solve_time": "0:01:01.010"
+}

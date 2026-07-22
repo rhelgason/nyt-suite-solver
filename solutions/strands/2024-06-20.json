@@ -1,0 +1,20 @@
+{
+    "puzzle_id": 174,
+    "ds": "2024-06-20",
+    "clue": "They're good for a laugh",
+    "theme_words": [
+        "bewitched",
+        "cheers",
+        "community",
+        "friends",
+        "scrubs",
+        "veep"
+    ],
+    "spangram": "sitcoms",
+    "solved": true,
+    "theme_words_found": 6,
+    "theme_words_total": 6,
+    "candidates": 6,
+    "truncated": false,
+    "solve_time": "0:00:00.139"
+}

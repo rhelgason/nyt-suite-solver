@@ -1,0 +1,20 @@
+{
+    "puzzle_id": 168,
+    "ds": "2024-07-10",
+    "clue": "In Neverland",
+    "theme_words": [
+        "crocodile",
+        "darling",
+        "hook",
+        "lagoon",
+        "mermaid",
+        "pirates"
+    ],
+    "spangram": "peterpan",
+    "solved": true,
+    "theme_words_found": 6,
+    "theme_words_total": 6,
+    "candidates": 10911,
+    "truncated": false,
+    "solve_time": "0:00:08.254"
+}

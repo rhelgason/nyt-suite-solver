@@ -1,0 +1,20 @@
+{
+    "puzzle_id": 128,
+    "ds": "2024-06-16",
+    "clue": "It’s in the bag",
+    "theme_words": [
+        "chai",
+        "chamomile",
+        "gunpowder",
+        "jasmine",
+        "matcha",
+        "oolong"
+    ],
+    "spangram": "teatime",
+    "solved": false,
+    "theme_words_found": 4,
+    "theme_words_total": 6,
+    "candidates": 30,
+    "truncated": true,
+    "solve_time": "0:01:02.388"
+}

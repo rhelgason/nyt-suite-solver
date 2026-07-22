@@ -1,0 +1,22 @@
+{
+    "puzzle_id": 166,
+    "ds": "2024-06-21",
+    "clue": "We do",
+    "theme_words": [
+        "bouquet",
+        "cake",
+        "dance",
+        "family",
+        "friends",
+        "kiss",
+        "ring",
+        "vows"
+    ],
+    "spangram": "wedding",
+    "solved": true,
+    "theme_words_found": 8,
+    "theme_words_total": 8,
+    "candidates": 1,
+    "truncated": false,
+    "solve_time": "0:00:00.247"
+}

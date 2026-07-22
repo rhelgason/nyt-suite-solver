@@ -1,0 +1,19 @@
+{
+    "puzzle_id": 208,
+    "ds": "2024-07-24",
+    "clue": "Screen time",
+    "theme_words": [
+        "candy",
+        "feature",
+        "popcorn",
+        "projector",
+        "trailers"
+    ],
+    "spangram": "movietheater",
+    "solved": true,
+    "theme_words_found": 5,
+    "theme_words_total": 5,
+    "candidates": 829,
+    "truncated": false,
+    "solve_time": "0:00:06.919"
+}

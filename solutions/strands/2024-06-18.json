@@ -1,0 +1,19 @@
+{
+    "puzzle_id": 182,
+    "ds": "2024-06-18",
+    "clue": "It’s right under your nose!",
+    "theme_words": [
+        "handlebar",
+        "horseshoe",
+        "pencil",
+        "toothbrush",
+        "walrus"
+    ],
+    "spangram": "mustache",
+    "solved": true,
+    "theme_words_found": 5,
+    "theme_words_total": 5,
+    "candidates": 1,
+    "truncated": false,
+    "solve_time": "0:00:00.233"
+}

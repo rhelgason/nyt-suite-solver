@@ -1,0 +1,19 @@
+{
+    "puzzle_id": 216,
+    "ds": "2024-07-23",
+    "clue": "You're the best!",
+    "theme_words": [
+        "excellent",
+        "iconic",
+        "perfect",
+        "superlative",
+        "supreme"
+    ],
+    "spangram": "champion",
+    "solved": true,
+    "theme_words_found": 5,
+    "theme_words_total": 5,
+    "candidates": 1,
+    "truncated": false,
+    "solve_time": "0:00:00.169"
+}

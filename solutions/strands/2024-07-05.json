@@ -1,0 +1,21 @@
+{
+    "puzzle_id": 158,
+    "ds": "2024-07-05",
+    "clue": "Say something",
+    "theme_words": [
+        "declare",
+        "express",
+        "sign",
+        "speak",
+        "talk",
+        "tell",
+        "utter"
+    ],
+    "spangram": "articulation",
+    "solved": false,
+    "theme_words_found": 4,
+    "theme_words_total": 7,
+    "candidates": 18312,
+    "truncated": true,
+    "solve_time": "0:01:05.417"
+}

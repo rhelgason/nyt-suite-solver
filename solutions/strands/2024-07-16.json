@@ -1,0 +1,21 @@
+{
+    "puzzle_id": 185,
+    "ds": "2024-07-16",
+    "clue": "Were you raised in a barn?",
+    "theme_words": [
+        "calf",
+        "chick",
+        "duckling",
+        "foal",
+        "gosling",
+        "lamb",
+        "piglet"
+    ],
+    "spangram": "babyanimal",
+    "solved": false,
+    "theme_words_found": 4,
+    "theme_words_total": 7,
+    "candidates": 11067,
+    "truncated": true,
+    "solve_time": "0:01:00.375"
+}

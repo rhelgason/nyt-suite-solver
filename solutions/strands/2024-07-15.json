@@ -1,0 +1,20 @@
+{
+    "puzzle_id": 191,
+    "ds": "2024-07-15",
+    "clue": "Give it the ol' college try",
+    "theme_words": [
+        "brown",
+        "duke",
+        "northwestern",
+        "rice",
+        "temple",
+        "tufts"
+    ],
+    "spangram": "universities",
+    "solved": true,
+    "theme_words_found": 6,
+    "theme_words_total": 6,
+    "candidates": 6,
+    "truncated": false,
+    "solve_time": "0:00:00.207"
+}

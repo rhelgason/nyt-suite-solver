@@ -1,0 +1,20 @@
+{
+    "puzzle_id": 150,
+    "ds": "2024-07-07",
+    "clue": "Not just black and white",
+    "theme_words": [
+        "charcoal",
+        "flint",
+        "graphite",
+        "platinum",
+        "slate",
+        "steel"
+    ],
+    "spangram": "grayscale",
+    "solved": true,
+    "theme_words_found": 6,
+    "theme_words_total": 6,
+    "candidates": 233,
+    "truncated": false,
+    "solve_time": "0:00:00.285"
+}

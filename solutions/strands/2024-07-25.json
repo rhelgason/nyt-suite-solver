@@ -1,0 +1,22 @@
+{
+    "puzzle_id": 217,
+    "ds": "2024-07-25",
+    "clue": "All that jazz",
+    "theme_words": [
+        "acid",
+        "bebop",
+        "cool",
+        "funk",
+        "fusion",
+        "modal",
+        "ragtime",
+        "swing"
+    ],
+    "spangram": "subgenre",
+    "solved": true,
+    "theme_words_found": 8,
+    "theme_words_total": 8,
+    "candidates": 16,
+    "truncated": false,
+    "solve_time": "0:00:00.462"
+}

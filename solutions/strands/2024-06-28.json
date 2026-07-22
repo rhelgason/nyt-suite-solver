@@ -1,0 +1,22 @@
+{
+    "puzzle_id": 151,
+    "ds": "2024-06-28",
+    "clue": "That's my jam!",
+    "theme_words": [
+        "blues",
+        "country",
+        "disco",
+        "folk",
+        "jazz",
+        "rock",
+        "salsa",
+        "soul"
+    ],
+    "spangram": "musicgenre",
+    "solved": false,
+    "theme_words_found": 6,
+    "theme_words_total": 8,
+    "candidates": 11012,
+    "truncated": true,
+    "solve_time": "0:01:00.450"
+}

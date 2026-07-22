@@ -1,0 +1,21 @@
+{
+    "puzzle_id": 188,
+    "ds": "2024-07-18",
+    "clue": "At your fingertips",
+    "theme_words": [
+        "control",
+        "delete",
+        "enter",
+        "escape",
+        "return",
+        "shift",
+        "space"
+    ],
+    "spangram": "keyboard",
+    "solved": true,
+    "theme_words_found": 7,
+    "theme_words_total": 7,
+    "candidates": 234,
+    "truncated": false,
+    "solve_time": "0:00:00.888"
+}

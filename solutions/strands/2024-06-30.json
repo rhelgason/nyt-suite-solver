@@ -1,0 +1,20 @@
+{
+    "puzzle_id": 153,
+    "ds": "2024-06-30",
+    "clue": "Cut and color",
+    "theme_words": [
+        "amethyst",
+        "emerald",
+        "garnet",
+        "ruby",
+        "sapphire",
+        "topaz"
+    ],
+    "spangram": "jeweltones",
+    "solved": false,
+    "theme_words_found": 3,
+    "theme_words_total": 6,
+    "candidates": 10444,
+    "truncated": true,
+    "solve_time": "0:01:01.084"
+}

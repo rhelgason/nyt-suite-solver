@@ -1,0 +1,21 @@
+{
+    "puzzle_id": 181,
+    "ds": "2024-07-03",
+    "clue": "Spin your wheels",
+    "theme_words": [
+        "brake",
+        "chain",
+        "fender",
+        "frame",
+        "kickstand",
+        "pedal",
+        "saddle"
+    ],
+    "spangram": "bicycle",
+    "solved": true,
+    "theme_words_found": 7,
+    "theme_words_total": 7,
+    "candidates": 562,
+    "truncated": false,
+    "solve_time": "0:00:01.777"
+}

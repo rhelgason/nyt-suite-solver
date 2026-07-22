@@ -1,0 +1,21 @@
+{
+    "puzzle_id": 101,
+    "ds": "2024-06-26",
+    "clue": "Looking good",
+    "theme_words": [
+        "chic",
+        "dapper",
+        "drippy",
+        "posh",
+        "snazzy",
+        "spiffy",
+        "swank"
+    ],
+    "spangram": "fashionista",
+    "solved": true,
+    "theme_words_found": 7,
+    "theme_words_total": 7,
+    "candidates": 2,
+    "truncated": false,
+    "solve_time": "0:00:00.142"
+}
