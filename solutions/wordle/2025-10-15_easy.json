@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1581,
+    "ds": "2025-10-15",
+    "mode": "easy",
+    "solution": "spoof",
+    "guesses": [
+        "tares",
+        "noily",
+        "chook",
+        "spoof"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:02.845"
+}

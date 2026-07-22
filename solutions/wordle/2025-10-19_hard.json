@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 899,
+    "ds": "2025-10-19",
+    "mode": "hard",
+    "solution": "ideal",
+    "guesses": [
+        "tares",
+        "plane",
+        "decal",
+        "ideal"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.100"
+}

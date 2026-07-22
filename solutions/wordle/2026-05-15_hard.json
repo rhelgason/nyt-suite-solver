@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 885,
+    "ds": "2026-05-15",
+    "mode": "hard",
+    "solution": "creed",
+    "guesses": [
+        "tares",
+        "riled",
+        "breed",
+        "creed"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.138"
+}

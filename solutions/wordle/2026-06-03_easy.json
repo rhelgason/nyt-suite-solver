@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 1109,
+    "ds": "2026-06-03",
+    "mode": "easy",
+    "solution": "notch",
+    "guesses": [
+        "tares",
+        "colin",
+        "notch"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:02.442"
+}

@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1064,
+    "ds": "2026-04-24",
+    "mode": "hard",
+    "solution": "drunk",
+    "guesses": [
+        "tares",
+        "prion",
+        "brung",
+        "drunk"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.109"
+}

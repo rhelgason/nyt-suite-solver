@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 1947,
+    "ds": "2026-05-09",
+    "mode": "easy",
+    "solution": "satin",
+    "guesses": [
+        "tares",
+        "spiny",
+        "satin"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:00.344"
+}

@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 4545,
+    "ds": "2026-04-20",
+    "mode": "easy",
+    "solution": "weave",
+    "guesses": [
+        "tares",
+        "aland",
+        "hempy",
+        "feaze",
+        "weave"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:02.818"
+}

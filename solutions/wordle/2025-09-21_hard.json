@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 1911,
+    "ds": "2025-09-21",
+    "mode": "hard",
+    "solution": "coven",
+    "guesses": [
+        "tares",
+        "loden",
+        "coven"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:00.198"
+}

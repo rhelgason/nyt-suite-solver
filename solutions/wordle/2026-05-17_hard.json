@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1177,
+    "ds": "2026-05-17",
+    "mode": "hard",
+    "solution": "bylaw",
+    "guesses": [
+        "tares",
+        "aloin",
+        "bulla",
+        "bylaw"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.258"
+}

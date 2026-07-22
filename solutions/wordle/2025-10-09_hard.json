@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 909,
+    "ds": "2025-10-09",
+    "mode": "hard",
+    "solution": "hardy",
+    "guesses": [
+        "tares",
+        "carom",
+        "pardy",
+        "hardy"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.051"
+}

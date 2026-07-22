@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 787,
+    "ds": "2025-11-26",
+    "mode": "easy",
+    "solution": "hovel",
+    "guesses": [
+        "tares",
+        "indol",
+        "hobby",
+        "hovel"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:03.830"
+}

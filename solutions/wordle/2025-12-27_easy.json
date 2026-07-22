@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 2137,
+    "ds": "2025-12-27",
+    "mode": "easy",
+    "solution": "batch",
+    "guesses": [
+        "tares",
+        "cutin",
+        "blimp",
+        "batch"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:01.039"
+}

@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1200,
+    "ds": "2026-04-07",
+    "mode": "easy",
+    "solution": "dense",
+    "guesses": [
+        "tares",
+        "seine",
+        "acold",
+        "dense"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:01.861"
+}

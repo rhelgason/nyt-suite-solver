@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 1388,
+    "ds": "2025-12-21",
+    "mode": "hard",
+    "solution": "quilt",
+    "guesses": [
+        "tares",
+        "litho",
+        "glint",
+        "built",
+        "quilt"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:00.112"
+}

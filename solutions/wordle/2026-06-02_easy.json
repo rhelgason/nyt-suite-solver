@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1635,
+    "ds": "2026-06-02",
+    "mode": "easy",
+    "solution": "basis",
+    "guesses": [
+        "tares",
+        "plink",
+        "gombo",
+        "basis"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:02.912"
+}

@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 720,
+    "ds": "2026-03-08",
+    "mode": "easy",
+    "solution": "lobby",
+    "guesses": [
+        "tares",
+        "colin",
+        "wooly",
+        "abamp",
+        "lobby"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:07.881"
+}

@@ -1,0 +1,17 @@
+{
+    "puzzle_id": 1733,
+    "ds": "2026-03-07",
+    "mode": "hard",
+    "solution": "vogue",
+    "guesses": [
+        "tares",
+        "oldie",
+        "ponce",
+        "bombe",
+        "gouge",
+        "vogue"
+    ],
+    "num_guesses": 6,
+    "solved": true,
+    "solve_time": "0:00:00.293"
+}

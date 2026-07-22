@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 1197,
+    "ds": "2026-03-28",
+    "mode": "hard",
+    "solution": "afoot",
+    "guesses": [
+        "tares",
+        "alant",
+        "audit",
+        "abbot",
+        "afoot"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:00.067"
+}

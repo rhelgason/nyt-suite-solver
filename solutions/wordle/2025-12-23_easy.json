@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 972,
+    "ds": "2025-12-23",
+    "mode": "easy",
+    "solution": "glint",
+    "guesses": [
+        "tares",
+        "colin",
+        "flint",
+        "glint"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:02.471"
+}

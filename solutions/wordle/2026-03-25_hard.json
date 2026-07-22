@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 2203,
+    "ds": "2026-03-25",
+    "mode": "hard",
+    "solution": "wiser",
+    "guesses": [
+        "tares",
+        "shier",
+        "miser",
+        "riser",
+        "wiser"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:00.047"
+}

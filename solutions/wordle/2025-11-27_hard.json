@@ -1,0 +1,17 @@
+{
+    "puzzle_id": 1257,
+    "ds": "2025-11-27",
+    "mode": "hard",
+    "solution": "remit",
+    "guesses": [
+        "tares",
+        "retie",
+        "recit",
+        "refit",
+        "relit",
+        "remit"
+    ],
+    "num_guesses": 6,
+    "solved": true,
+    "solve_time": "0:00:00.052"
+}

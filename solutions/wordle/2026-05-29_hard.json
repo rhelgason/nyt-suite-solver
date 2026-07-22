@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 2164,
+    "ds": "2026-05-29",
+    "mode": "hard",
+    "solution": "clang",
+    "guesses": [
+        "tares",
+        "aloin",
+        "blank",
+        "clang"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.282"
+}

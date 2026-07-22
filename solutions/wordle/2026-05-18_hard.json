@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 670,
+    "ds": "2026-05-18",
+    "mode": "hard",
+    "solution": "loath",
+    "guesses": [
+        "tares",
+        "alant",
+        "loath"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:00.072"
+}

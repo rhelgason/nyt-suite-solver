@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1183,
+    "ds": "2025-09-24",
+    "mode": "hard",
+    "solution": "blunt",
+    "guesses": [
+        "tares",
+        "litho",
+        "fluty",
+        "blunt"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.100"
+}

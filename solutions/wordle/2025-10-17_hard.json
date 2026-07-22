@@ -1,0 +1,17 @@
+{
+    "puzzle_id": 1944,
+    "ds": "2025-10-17",
+    "mode": "hard",
+    "solution": "gross",
+    "guesses": [
+        "tares",
+        "drops",
+        "grows",
+        "grogs",
+        "groks",
+        "gross"
+    ],
+    "num_guesses": 6,
+    "solved": true,
+    "solve_time": "0:00:00.063"
+}

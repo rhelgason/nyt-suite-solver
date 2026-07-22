@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1944,
+    "ds": "2025-10-17",
+    "mode": "easy",
+    "solution": "gross",
+    "guesses": [
+        "tares",
+        "pound",
+        "swigs",
+        "gross"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:01.452"
+}

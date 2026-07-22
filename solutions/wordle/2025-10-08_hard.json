@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1292,
+    "ds": "2025-10-08",
+    "mode": "hard",
+    "solution": "annoy",
+    "guesses": [
+        "tares",
+        "aloin",
+        "ancho",
+        "annoy"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.249"
+}

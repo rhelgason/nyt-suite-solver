@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 899,
+    "ds": "2025-10-19",
+    "mode": "easy",
+    "solution": "ideal",
+    "guesses": [
+        "tares",
+        "aland",
+        "middy",
+        "ideal"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:02.602"
+}

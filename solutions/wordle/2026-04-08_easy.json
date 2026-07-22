@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 2217,
+    "ds": "2026-04-08",
+    "mode": "easy",
+    "solution": "inlet",
+    "guesses": [
+        "tares",
+        "could",
+        "filet",
+        "inlet"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.802"
+}

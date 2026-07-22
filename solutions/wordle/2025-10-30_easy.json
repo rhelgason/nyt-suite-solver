@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 2009,
+    "ds": "2025-10-30",
+    "mode": "easy",
+    "solution": "lathe",
+    "guesses": [
+        "tares",
+        "cloth",
+        "lathe"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:00.127"
+}

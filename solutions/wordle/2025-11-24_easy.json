@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 943,
+    "ds": "2025-11-24",
+    "mode": "easy",
+    "solution": "dough",
+    "guesses": [
+        "tares",
+        "colin",
+        "boody",
+        "dough"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:08.262"
+}

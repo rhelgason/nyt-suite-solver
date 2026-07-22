@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 775,
+    "ds": "2026-01-24",
+    "mode": "hard",
+    "solution": "cliff",
+    "guesses": [
+        "tares",
+        "colin",
+        "child",
+        "click",
+        "cliff"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:00.594"
+}

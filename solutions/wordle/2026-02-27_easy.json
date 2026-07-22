@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 1711,
+    "ds": "2026-02-27",
+    "mode": "easy",
+    "solution": "dizzy",
+    "guesses": [
+        "tares",
+        "colin",
+        "dumpy",
+        "divvy",
+        "dizzy"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:08.009"
+}

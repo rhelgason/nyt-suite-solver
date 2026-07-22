@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 939,
+    "ds": "2025-10-18",
+    "mode": "hard",
+    "solution": "haven",
+    "guesses": [
+        "tares",
+        "laden",
+        "maven",
+        "haven"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.058"
+}

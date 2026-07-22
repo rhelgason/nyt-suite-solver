@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 1811,
+    "ds": "2026-03-22",
+    "mode": "hard",
+    "solution": "basil",
+    "guesses": [
+        "tares",
+        "salsa",
+        "basil"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:00.052"
+}

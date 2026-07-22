@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1960,
+    "ds": "2026-05-06",
+    "mode": "hard",
+    "solution": "liken",
+    "guesses": [
+        "tares",
+        "loden",
+        "limen",
+        "liken"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.176"
+}

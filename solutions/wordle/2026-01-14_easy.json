@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1957,
+    "ds": "2026-01-14",
+    "mode": "easy",
+    "solution": "avoid",
+    "guesses": [
+        "tares",
+        "colin",
+        "audio",
+        "avoid"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:04.821"
+}

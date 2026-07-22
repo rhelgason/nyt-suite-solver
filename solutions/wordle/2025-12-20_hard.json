@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 1974,
+    "ds": "2025-12-20",
+    "mode": "hard",
+    "solution": "white",
+    "guesses": [
+        "tares",
+        "elite",
+        "quite",
+        "boite",
+        "white"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:00.074"
+}

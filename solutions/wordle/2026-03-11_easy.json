@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 2224,
+    "ds": "2026-03-11",
+    "mode": "easy",
+    "solution": "teddy",
+    "guesses": [
+        "tares",
+        "chine",
+        "adapt",
+        "teddy"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.733"
+}

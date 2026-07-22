@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 1552,
+    "ds": "2026-01-05",
+    "mode": "hard",
+    "solution": "filly",
+    "guesses": [
+        "tares",
+        "colin",
+        "filly"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:00.620"
+}

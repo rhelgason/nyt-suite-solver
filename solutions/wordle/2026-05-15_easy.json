@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 885,
+    "ds": "2026-05-15",
+    "mode": "easy",
+    "solution": "creed",
+    "guesses": [
+        "tares",
+        "poind",
+        "fuddy",
+        "acerb",
+        "creed"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:03.175"
+}

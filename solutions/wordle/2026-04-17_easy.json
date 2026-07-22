@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1986,
+    "ds": "2026-04-17",
+    "mode": "easy",
+    "solution": "belle",
+    "guesses": [
+        "tares",
+        "colin",
+        "badly",
+        "belle"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:05.282"
+}

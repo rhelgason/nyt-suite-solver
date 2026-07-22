@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1231,
+    "ds": "2025-10-29",
+    "mode": "hard",
+    "solution": "glare",
+    "guesses": [
+        "tares",
+        "beard",
+        "flare",
+        "glare"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.062"
+}

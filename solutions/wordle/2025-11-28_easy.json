@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 2390,
+    "ds": "2025-11-28",
+    "mode": "easy",
+    "solution": "colic",
+    "guesses": [
+        "tares",
+        "colin",
+        "colic"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:07.630"
+}

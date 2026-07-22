@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1457,
+    "ds": "2025-11-09",
+    "mode": "easy",
+    "solution": "fugue",
+    "guesses": [
+        "tares",
+        "colin",
+        "dumpy",
+        "fugue"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:05.541"
+}

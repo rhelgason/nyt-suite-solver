@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 619,
+    "ds": "2026-02-20",
+    "mode": "hard",
+    "solution": "stank",
+    "guesses": [
+        "tares",
+        "slant",
+        "stand",
+        "stang",
+        "stank"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:00.058"
+}

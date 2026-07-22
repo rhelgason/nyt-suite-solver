@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 1740,
+    "ds": "2026-04-13",
+    "mode": "hard",
+    "solution": "elfin",
+    "guesses": [
+        "tares",
+        "oldie",
+        "elfin"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:00.292"
+}

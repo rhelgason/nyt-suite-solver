@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 944,
+    "ds": "2026-02-06",
+    "mode": "easy",
+    "solution": "gavel",
+    "guesses": [
+        "tares",
+        "lynch",
+        "belga",
+        "gavel"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:01.481"
+}

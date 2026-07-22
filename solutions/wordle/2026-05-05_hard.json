@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 1414,
+    "ds": "2026-05-05",
+    "mode": "hard",
+    "solution": "latch",
+    "guesses": [
+        "tares",
+        "haint",
+        "batch",
+        "catch",
+        "latch"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:00.051"
+}

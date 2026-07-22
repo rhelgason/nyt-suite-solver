@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1619,
+    "ds": "2025-12-24",
+    "mode": "easy",
+    "solution": "spool",
+    "guesses": [
+        "tares",
+        "noily",
+        "shool",
+        "spool"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:02.766"
+}

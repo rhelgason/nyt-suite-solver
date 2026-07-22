@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 751,
+    "ds": "2026-05-07",
+    "mode": "hard",
+    "solution": "budge",
+    "guesses": [
+        "tares",
+        "oldie",
+        "endue",
+        "budge"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.296"
+}

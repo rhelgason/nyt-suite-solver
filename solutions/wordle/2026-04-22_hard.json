@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 2226,
+    "ds": "2026-04-22",
+    "mode": "hard",
+    "solution": "snore",
+    "guesses": [
+        "tares",
+        "rouse",
+        "score",
+        "shore",
+        "snore"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:00.067"
+}

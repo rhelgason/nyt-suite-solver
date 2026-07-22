@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 630,
+    "ds": "2025-10-01",
+    "mode": "easy",
+    "solution": "spoil",
+    "guesses": [
+        "tares",
+        "noily",
+        "sloid",
+        "spoil"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:02.661"
+}

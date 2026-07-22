@@ -1,0 +1,17 @@
+{
+    "puzzle_id": 1710,
+    "ds": "2026-01-27",
+    "mode": "hard",
+    "solution": "dusky",
+    "guesses": [
+        "tares",
+        "spoil",
+        "mushy",
+        "fussy",
+        "busby",
+        "dusky"
+    ],
+    "num_guesses": 6,
+    "solved": true,
+    "solve_time": "0:00:00.120"
+}

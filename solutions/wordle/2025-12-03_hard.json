@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1597,
+    "ds": "2025-12-03",
+    "mode": "hard",
+    "solution": "haste",
+    "guesses": [
+        "tares",
+        "baste",
+        "caste",
+        "haste"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.050"
+}

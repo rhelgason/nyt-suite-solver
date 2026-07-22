@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1009,
+    "ds": "2025-10-24",
+    "mode": "hard",
+    "solution": "tuber",
+    "guesses": [
+        "tares",
+        "twier",
+        "tuner",
+        "tuber"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.059"
+}

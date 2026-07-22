@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 1326,
+    "ds": "2026-04-05",
+    "mode": "easy",
+    "solution": "envoy",
+    "guesses": [
+        "tares",
+        "colin",
+        "geode",
+        "enjoy",
+        "envoy"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:05.279"
+}

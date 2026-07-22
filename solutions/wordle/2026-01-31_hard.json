@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 2073,
+    "ds": "2026-01-31",
+    "mode": "hard",
+    "solution": "allot",
+    "guesses": [
+        "tares",
+        "alant",
+        "allot"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:00.064"
+}

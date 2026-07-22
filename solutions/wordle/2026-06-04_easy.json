@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 2015,
+    "ds": "2026-06-04",
+    "mode": "easy",
+    "solution": "alloy",
+    "guesses": [
+        "tares",
+        "colin",
+        "alkyd",
+        "alloy"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:04.866"
+}

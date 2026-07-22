@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 2090,
+    "ds": "2025-09-28",
+    "mode": "hard",
+    "solution": "gooey",
+    "guesses": [
+        "tares",
+        "loden",
+        "pogey",
+        "gooey"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.175"
+}

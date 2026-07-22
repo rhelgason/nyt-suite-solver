@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 2164,
+    "ds": "2026-05-29",
+    "mode": "easy",
+    "solution": "clang",
+    "guesses": [
+        "tares",
+        "colin",
+        "clang"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:04.834"
+}

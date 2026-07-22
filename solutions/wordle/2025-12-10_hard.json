@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1497,
+    "ds": "2025-12-10",
+    "mode": "hard",
+    "solution": "erase",
+    "guesses": [
+        "tares",
+        "spear",
+        "arise",
+        "erase"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.043"
+}

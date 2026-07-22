@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 1941,
+    "ds": "2026-05-08",
+    "mode": "hard",
+    "solution": "umbra",
+    "guesses": [
+        "tares",
+        "drain",
+        "lobar",
+        "ambry",
+        "umbra"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:00.089"
+}

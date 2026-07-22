@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 2237,
+    "ds": "2025-11-07",
+    "mode": "hard",
+    "solution": "peril",
+    "guesses": [
+        "tares",
+        "nerdy",
+        "merge",
+        "cerci",
+        "peril"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:00.049"
+}

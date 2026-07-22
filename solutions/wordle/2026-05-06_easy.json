@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1960,
+    "ds": "2026-05-06",
+    "mode": "easy",
+    "solution": "liken",
+    "guesses": [
+        "tares",
+        "indol",
+        "conky",
+        "liken"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:03.838"
+}

@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 2074,
+    "ds": "2025-12-12",
+    "mode": "easy",
+    "solution": "truck",
+    "guesses": [
+        "tares",
+        "cholo",
+        "trick",
+        "truck"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.421"
+}

@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 1120,
+    "ds": "2025-11-04",
+    "mode": "hard",
+    "solution": "venue",
+    "guesses": [
+        "tares",
+        "oldie",
+        "pence",
+        "venge",
+        "venue"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:00.285"
+}

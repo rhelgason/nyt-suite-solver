@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1018,
+    "ds": "2025-12-05",
+    "mode": "easy",
+    "solution": "among",
+    "guesses": [
+        "tares",
+        "colin",
+        "agony",
+        "among"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:04.864"
+}

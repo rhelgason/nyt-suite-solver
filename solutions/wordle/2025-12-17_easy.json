@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1420,
+    "ds": "2025-12-17",
+    "mode": "easy",
+    "solution": "grass",
+    "guesses": [
+        "tares",
+        "grody",
+        "abysm",
+        "grass"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.963"
+}

@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1672,
+    "ds": "2025-12-28",
+    "mode": "hard",
+    "solution": "abbot",
+    "guesses": [
+        "tares",
+        "alant",
+        "audit",
+        "abbot"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.059"
+}

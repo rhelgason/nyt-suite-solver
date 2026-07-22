@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 1196,
+    "ds": "2026-03-01",
+    "mode": "easy",
+    "solution": "fluke",
+    "guesses": [
+        "tares",
+        "colin",
+        "pudgy",
+        "blume",
+        "fluke"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:05.487"
+}

@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 1030,
+    "ds": "2025-09-18",
+    "mode": "hard",
+    "solution": "knife",
+    "guesses": [
+        "tares",
+        "oldie",
+        "mince",
+        "gwine",
+        "knife"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:00.282"
+}

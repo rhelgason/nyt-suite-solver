@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1008,
+    "ds": "2026-03-24",
+    "mode": "easy",
+    "solution": "brood",
+    "guesses": [
+        "tares",
+        "coign",
+        "blood",
+        "brood"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:02.758"
+}

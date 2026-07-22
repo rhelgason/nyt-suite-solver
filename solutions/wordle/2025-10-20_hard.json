@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 1862,
+    "ds": "2025-10-20",
+    "mode": "hard",
+    "solution": "limbo",
+    "guesses": [
+        "tares",
+        "colin",
+        "limbo"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:00.582"
+}

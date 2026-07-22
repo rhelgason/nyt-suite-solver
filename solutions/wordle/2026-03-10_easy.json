@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 924,
+    "ds": "2026-03-10",
+    "mode": "easy",
+    "solution": "shoal",
+    "guesses": [
+        "tares",
+        "milch",
+        "hullo",
+        "shoal"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:01.524"
+}

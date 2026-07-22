@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 2030,
+    "ds": "2025-11-12",
+    "mode": "easy",
+    "solution": "deuce",
+    "guesses": [
+        "tares",
+        "colin",
+        "duchy",
+        "deuce"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:05.176"
+}

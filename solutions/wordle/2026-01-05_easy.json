@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 1552,
+    "ds": "2026-01-05",
+    "mode": "easy",
+    "solution": "filly",
+    "guesses": [
+        "tares",
+        "colin",
+        "muhly",
+        "badge",
+        "filly"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:07.867"
+}

@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1345,
+    "ds": "2025-12-16",
+    "mode": "easy",
+    "solution": "segue",
+    "guesses": [
+        "tares",
+        "seine",
+        "sedge",
+        "segue"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:01.840"
+}

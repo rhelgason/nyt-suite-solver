@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 2050,
+    "ds": "2025-12-13",
+    "mode": "easy",
+    "solution": "miser",
+    "guesses": [
+        "tares",
+        "spoil",
+        "armer",
+        "miser"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.579"
+}

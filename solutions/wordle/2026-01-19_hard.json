@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 1380,
+    "ds": "2026-01-19",
+    "mode": "hard",
+    "solution": "waxen",
+    "guesses": [
+        "tares",
+        "laden",
+        "maven",
+        "waken",
+        "waxen"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:00.085"
+}

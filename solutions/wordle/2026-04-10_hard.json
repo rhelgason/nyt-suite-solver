@@ -1,0 +1,13 @@
+{
+    "puzzle_id": 2728,
+    "ds": "2026-04-10",
+    "mode": "hard",
+    "solution": "carom",
+    "guesses": [
+        "tares",
+        "carom"
+    ],
+    "num_guesses": 2,
+    "solved": true,
+    "solve_time": "0:00:00.051"
+}

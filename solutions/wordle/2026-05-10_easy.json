@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1949,
+    "ds": "2026-05-10",
+    "mode": "easy",
+    "solution": "parka",
+    "guesses": [
+        "tares",
+        "cymol",
+        "apian",
+        "parka"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.835"
+}

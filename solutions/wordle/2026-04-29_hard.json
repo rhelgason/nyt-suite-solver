@@ -1,0 +1,17 @@
+{
+    "puzzle_id": 2286,
+    "ds": "2026-04-29",
+    "mode": "hard",
+    "solution": "rural",
+    "guesses": [
+        "tares",
+        "moral",
+        "aural",
+        "dural",
+        "jural",
+        "rural"
+    ],
+    "num_guesses": 6,
+    "solved": true,
+    "solve_time": "0:00:00.059"
+}

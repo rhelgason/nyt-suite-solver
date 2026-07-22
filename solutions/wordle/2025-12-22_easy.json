@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1213,
+    "ds": "2025-12-22",
+    "mode": "easy",
+    "solution": "conch",
+    "guesses": [
+        "tares",
+        "colin",
+        "boody",
+        "conch"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:07.775"
+}

@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 1871,
+    "ds": "2026-02-09",
+    "mode": "easy",
+    "solution": "cello",
+    "guesses": [
+        "tares",
+        "colin",
+        "cello"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:05.100"
+}

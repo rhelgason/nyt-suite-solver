@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 1037,
+    "ds": "2025-10-04",
+    "mode": "hard",
+    "solution": "relay",
+    "guesses": [
+        "tares",
+        "beard",
+        "renal",
+        "relax",
+        "relay"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:00.060"
+}

@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 916,
+    "ds": "2025-12-04",
+    "mode": "hard",
+    "solution": "tulip",
+    "guesses": [
+        "tares",
+        "thing",
+        "typic",
+        "tulip"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.056"
+}

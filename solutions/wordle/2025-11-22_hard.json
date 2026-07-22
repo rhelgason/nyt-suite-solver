@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1585,
+    "ds": "2025-11-22",
+    "mode": "hard",
+    "solution": "thick",
+    "guesses": [
+        "tares",
+        "thing",
+        "thill",
+        "thick"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.056"
+}

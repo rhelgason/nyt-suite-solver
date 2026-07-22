@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 2363,
+    "ds": "2026-04-16",
+    "mode": "hard",
+    "solution": "cubit",
+    "guesses": [
+        "tares",
+        "litho",
+        "cubit"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:00.107"
+}

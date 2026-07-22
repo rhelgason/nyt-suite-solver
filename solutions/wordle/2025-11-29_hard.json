@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1258,
+    "ds": "2025-11-29",
+    "mode": "hard",
+    "solution": "gruff",
+    "guesses": [
+        "tares",
+        "prion",
+        "brugh",
+        "gruff"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.101"
+}

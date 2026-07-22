@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1388,
+    "ds": "2025-12-21",
+    "mode": "easy",
+    "solution": "quilt",
+    "guesses": [
+        "tares",
+        "colin",
+        "begat",
+        "quilt"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:02.516"
+}

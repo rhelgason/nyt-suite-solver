@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1806,
+    "ds": "2026-03-16",
+    "mode": "hard",
+    "solution": "drama",
+    "guesses": [
+        "tares",
+        "drain",
+        "draff",
+        "drama"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.085"
+}

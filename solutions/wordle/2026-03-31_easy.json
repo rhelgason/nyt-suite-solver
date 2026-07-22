@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 1235,
+    "ds": "2026-03-31",
+    "mode": "easy",
+    "solution": "swamp",
+    "guesses": [
+        "tares",
+        "milch",
+        "swamp"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:01.568"
+}

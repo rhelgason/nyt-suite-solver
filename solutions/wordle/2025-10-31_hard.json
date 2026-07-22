@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 2045,
+    "ds": "2025-10-31",
+    "mode": "hard",
+    "solution": "abhor",
+    "guesses": [
+        "tares",
+        "drain",
+        "lobar",
+        "abhor"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.091"
+}

@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1380,
+    "ds": "2026-01-19",
+    "mode": "easy",
+    "solution": "waxen",
+    "guesses": [
+        "tares",
+        "lynch",
+        "dawks",
+        "waxen"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:01.503"
+}

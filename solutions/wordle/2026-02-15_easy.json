@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 1404,
+    "ds": "2026-02-15",
+    "mode": "easy",
+    "solution": "skull",
+    "guesses": [
+        "tares",
+        "noily",
+        "skull"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:02.758"
+}

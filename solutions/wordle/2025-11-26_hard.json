@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 787,
+    "ds": "2025-11-26",
+    "mode": "hard",
+    "solution": "hovel",
+    "guesses": [
+        "tares",
+        "loden",
+        "holey",
+        "hovel"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.172"
+}

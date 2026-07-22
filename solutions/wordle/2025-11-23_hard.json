@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1187,
+    "ds": "2025-11-23",
+    "mode": "hard",
+    "solution": "bunny",
+    "guesses": [
+        "tares",
+        "colin",
+        "gunky",
+        "bunny"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.586"
+}

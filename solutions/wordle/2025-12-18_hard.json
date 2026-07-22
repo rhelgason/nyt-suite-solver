@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1237,
+    "ds": "2025-12-18",
+    "mode": "hard",
+    "solution": "rugby",
+    "guesses": [
+        "tares",
+        "prion",
+        "blurb",
+        "rugby"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.119"
+}

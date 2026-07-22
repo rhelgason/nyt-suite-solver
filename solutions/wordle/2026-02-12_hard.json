@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1984,
+    "ds": "2026-02-12",
+    "mode": "hard",
+    "solution": "surge",
+    "guesses": [
+        "tares",
+        "servo",
+        "sprue",
+        "surge"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.044"
+}

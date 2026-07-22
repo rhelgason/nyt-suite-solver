@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 522,
+    "ds": "2025-11-20",
+    "mode": "hard",
+    "solution": "grave",
+    "guesses": [
+        "tares",
+        "beard",
+        "crape",
+        "arame",
+        "grave"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:00.064"
+}

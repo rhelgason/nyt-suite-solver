@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1442,
+    "ds": "2026-01-28",
+    "mode": "easy",
+    "solution": "cruel",
+    "guesses": [
+        "tares",
+        "poind",
+        "elegy",
+        "cruel"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:03.617"
+}

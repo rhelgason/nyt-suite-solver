@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 2015,
+    "ds": "2026-06-04",
+    "mode": "hard",
+    "solution": "alloy",
+    "guesses": [
+        "tares",
+        "aloin",
+        "aldol",
+        "allow",
+        "alloy"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:00.262"
+}

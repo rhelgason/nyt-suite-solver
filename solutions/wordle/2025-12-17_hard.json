@@ -1,0 +1,17 @@
+{
+    "puzzle_id": 1420,
+    "ds": "2025-12-17",
+    "mode": "hard",
+    "solution": "grass",
+    "guesses": [
+        "tares",
+        "grabs",
+        "grads",
+        "grams",
+        "grans",
+        "grass"
+    ],
+    "num_guesses": 6,
+    "solved": true,
+    "solve_time": "0:00:00.061"
+}

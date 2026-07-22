@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 1109,
+    "ds": "2026-06-03",
+    "mode": "hard",
+    "solution": "notch",
+    "guesses": [
+        "tares",
+        "litho",
+        "botch",
+        "hotch",
+        "notch"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:00.133"
+}

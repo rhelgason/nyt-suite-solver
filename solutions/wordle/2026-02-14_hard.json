@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 846,
+    "ds": "2026-02-14",
+    "mode": "hard",
+    "solution": "bloom",
+    "guesses": [
+        "tares",
+        "colin",
+        "blood",
+        "bloom"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.583"
+}

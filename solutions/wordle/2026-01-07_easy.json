@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 2057,
+    "ds": "2026-01-07",
+    "mode": "easy",
+    "solution": "pecan",
+    "guesses": [
+        "tares",
+        "aland",
+        "genoa",
+        "pecan"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:02.703"
+}

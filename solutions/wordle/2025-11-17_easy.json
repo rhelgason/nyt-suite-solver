@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1792,
+    "ds": "2025-11-17",
+    "mode": "easy",
+    "solution": "clamp",
+    "guesses": [
+        "tares",
+        "colin",
+        "chalk",
+        "clamp"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:04.838"
+}

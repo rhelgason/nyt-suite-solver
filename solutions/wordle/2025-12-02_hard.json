@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1617,
+    "ds": "2025-12-02",
+    "mode": "hard",
+    "solution": "cacti",
+    "guesses": [
+        "tares",
+        "haint",
+        "batik",
+        "cacti"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.054"
+}

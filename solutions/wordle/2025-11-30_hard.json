@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 2323,
+    "ds": "2025-11-30",
+    "mode": "hard",
+    "solution": "muggy",
+    "guesses": [
+        "tares",
+        "colin",
+        "pygmy",
+        "muggy"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.590"
+}

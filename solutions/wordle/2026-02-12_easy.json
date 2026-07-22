@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 1984,
+    "ds": "2026-02-12",
+    "mode": "easy",
+    "solution": "surge",
+    "guesses": [
+        "tares",
+        "vogue",
+        "surge"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:00.344"
+}

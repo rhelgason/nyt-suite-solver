@@ -1,0 +1,17 @@
+{
+    "puzzle_id": 871,
+    "ds": "2026-05-22",
+    "mode": "hard",
+    "solution": "vocal",
+    "guesses": [
+        "tares",
+        "aloin",
+        "coala",
+        "focal",
+        "local",
+        "vocal"
+    ],
+    "num_guesses": 6,
+    "solved": true,
+    "solve_time": "0:00:00.265"
+}

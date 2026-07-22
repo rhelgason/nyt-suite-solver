@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 2377,
+    "ds": "2026-03-20",
+    "mode": "hard",
+    "solution": "oasis",
+    "guesses": [
+        "tares",
+        "mails",
+        "sadis",
+        "basis",
+        "oasis"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:00.124"
+}

@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 2096,
+    "ds": "2025-11-25",
+    "mode": "hard",
+    "solution": "plead",
+    "guesses": [
+        "tares",
+        "plane",
+        "plead"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:00.108"
+}

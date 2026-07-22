@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1489,
+    "ds": "2025-12-30",
+    "mode": "hard",
+    "solution": "decor",
+    "guesses": [
+        "tares",
+        "pride",
+        "redox",
+        "decor"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.083"
+}

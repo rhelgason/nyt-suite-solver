@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 2061,
+    "ds": "2025-11-06",
+    "mode": "hard",
+    "solution": "guise",
+    "guesses": [
+        "tares",
+        "seine",
+        "hoise",
+        "guise"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.078"
+}

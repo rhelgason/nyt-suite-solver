@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 1779,
+    "ds": "2026-02-05",
+    "mode": "easy",
+    "solution": "swoop",
+    "guesses": [
+        "tares",
+        "noily",
+        "chook",
+        "spoof",
+        "swoop"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:02.877"
+}

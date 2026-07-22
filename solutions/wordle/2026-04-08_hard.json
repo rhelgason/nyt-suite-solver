@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 2217,
+    "ds": "2026-04-08",
+    "mode": "hard",
+    "solution": "inlet",
+    "guesses": [
+        "tares",
+        "outed",
+        "gleet",
+        "filet",
+        "inlet"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:00.050"
+}

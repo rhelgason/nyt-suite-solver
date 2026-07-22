@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 714,
+    "ds": "2026-04-14",
+    "mode": "easy",
+    "solution": "cycle",
+    "guesses": [
+        "tares",
+        "colin",
+        "chyle",
+        "cycle"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:05.122"
+}

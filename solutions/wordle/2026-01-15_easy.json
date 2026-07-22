@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 1699,
+    "ds": "2026-01-15",
+    "mode": "easy",
+    "solution": "chasm",
+    "guesses": [
+        "tares",
+        "milch",
+        "chasm"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:01.450"
+}

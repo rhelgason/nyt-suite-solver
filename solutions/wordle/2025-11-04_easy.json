@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 1120,
+    "ds": "2025-11-04",
+    "mode": "easy",
+    "solution": "venue",
+    "guesses": [
+        "tares",
+        "colin",
+        "benne",
+        "henge",
+        "venue"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:05.414"
+}

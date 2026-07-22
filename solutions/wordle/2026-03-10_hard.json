@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 924,
+    "ds": "2026-03-10",
+    "mode": "hard",
+    "solution": "shoal",
+    "guesses": [
+        "tares",
+        "spail",
+        "shoal"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:00.080"
+}

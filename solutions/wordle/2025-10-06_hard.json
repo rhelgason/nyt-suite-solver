@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1026,
+    "ds": "2025-10-06",
+    "mode": "hard",
+    "solution": "amuse",
+    "guesses": [
+        "tares",
+        "spale",
+        "abuse",
+        "amuse"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.054"
+}

@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 747,
+    "ds": "2025-11-02",
+    "mode": "easy",
+    "solution": "rabid",
+    "guesses": [
+        "tares",
+        "rindy",
+        "boxed",
+        "rabid"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.952"
+}

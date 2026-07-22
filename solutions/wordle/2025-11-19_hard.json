@@ -1,0 +1,17 @@
+{
+    "puzzle_id": 1709,
+    "ds": "2025-11-19",
+    "mode": "hard",
+    "solution": "maker",
+    "guesses": [
+        "tares",
+        "lager",
+        "caper",
+        "waker",
+        "baker",
+        "faker"
+    ],
+    "num_guesses": null,
+    "solved": false,
+    "solve_time": "0:00:00.052"
+}

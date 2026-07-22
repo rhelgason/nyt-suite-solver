@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 684,
+    "ds": "2025-11-03",
+    "mode": "hard",
+    "solution": "awoke",
+    "guesses": [
+        "tares",
+        "plane",
+        "adoze",
+        "above",
+        "awoke"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:00.105"
+}

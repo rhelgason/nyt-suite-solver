@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 2343,
+    "ds": "2025-11-11",
+    "mode": "hard",
+    "solution": "gizmo",
+    "guesses": [
+        "tares",
+        "colin",
+        "bipod",
+        "gizmo"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.585"
+}

@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 609,
+    "ds": "2025-10-11",
+    "mode": "hard",
+    "solution": "stack",
+    "guesses": [
+        "tares",
+        "slant",
+        "staig",
+        "staph",
+        "stack"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:00.050"
+}

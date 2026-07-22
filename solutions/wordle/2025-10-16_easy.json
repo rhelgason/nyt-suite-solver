@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 2274,
+    "ds": "2025-10-16",
+    "mode": "easy",
+    "solution": "catty",
+    "guesses": [
+        "tares",
+        "cutin",
+        "catch",
+        "catty"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.944"
+}

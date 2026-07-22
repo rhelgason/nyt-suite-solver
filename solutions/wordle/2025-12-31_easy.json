@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 647,
+    "ds": "2025-12-31",
+    "mode": "easy",
+    "solution": "siren",
+    "guesses": [
+        "tares",
+        "dowie",
+        "siren"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:00.245"
+}

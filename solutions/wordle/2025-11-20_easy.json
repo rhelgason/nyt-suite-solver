@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 522,
+    "ds": "2025-11-20",
+    "mode": "easy",
+    "solution": "grave",
+    "guesses": [
+        "tares",
+        "craal",
+        "debug",
+        "capiz",
+        "grave"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:01.558"
+}

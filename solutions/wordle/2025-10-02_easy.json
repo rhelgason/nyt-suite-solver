@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1840,
+    "ds": "2025-10-02",
+    "mode": "easy",
+    "solution": "width",
+    "guesses": [
+        "tares",
+        "colin",
+        "wifty",
+        "width"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:02.697"
+}

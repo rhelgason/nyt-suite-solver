@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 609,
+    "ds": "2025-10-11",
+    "mode": "easy",
+    "solution": "stack",
+    "guesses": [
+        "tares",
+        "slant",
+        "chimp",
+        "stack"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.823"
+}

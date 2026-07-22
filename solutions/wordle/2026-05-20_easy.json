@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 851,
+    "ds": "2026-05-20",
+    "mode": "easy",
+    "solution": "wreck",
+    "guesses": [
+        "tares",
+        "deice",
+        "wreck"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:01.944"
+}

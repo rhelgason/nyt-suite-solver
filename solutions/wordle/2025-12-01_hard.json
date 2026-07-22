@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 2231,
+    "ds": "2025-12-01",
+    "mode": "hard",
+    "solution": "leach",
+    "guesses": [
+        "tares",
+        "plane",
+        "leavy",
+        "leach"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.119"
+}

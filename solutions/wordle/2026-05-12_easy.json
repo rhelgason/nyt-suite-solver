@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 2805,
+    "ds": "2026-05-12",
+    "mode": "easy",
+    "solution": "clock",
+    "guesses": [
+        "tares",
+        "colin",
+        "humpy",
+        "clock"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:07.740"
+}

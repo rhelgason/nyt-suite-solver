@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 1763,
+    "ds": "2026-02-03",
+    "mode": "easy",
+    "solution": "weigh",
+    "guesses": [
+        "tares",
+        "colin",
+        "begum",
+        "heigh",
+        "weigh"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:05.354"
+}

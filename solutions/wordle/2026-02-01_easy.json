@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 743,
+    "ds": "2026-02-01",
+    "mode": "easy",
+    "solution": "spiny",
+    "guesses": [
+        "tares",
+        "noily",
+        "shiny",
+        "spiny"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:02.649"
+}

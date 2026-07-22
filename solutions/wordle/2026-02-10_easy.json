@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 2152,
+    "ds": "2026-02-10",
+    "mode": "easy",
+    "solution": "scene",
+    "guesses": [
+        "tares",
+        "seine",
+        "scene"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:01.800"
+}

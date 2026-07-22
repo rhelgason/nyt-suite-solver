@@ -1,0 +1,17 @@
+{
+    "puzzle_id": 1998,
+    "ds": "2025-10-03",
+    "mode": "hard",
+    "solution": "spasm",
+    "guesses": [
+        "tares",
+        "spail",
+        "spang",
+        "spacy",
+        "spado",
+        "spasm"
+    ],
+    "num_guesses": 6,
+    "solved": true,
+    "solve_time": "0:00:00.065"
+}

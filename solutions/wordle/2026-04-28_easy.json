@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1239,
+    "ds": "2026-04-28",
+    "mode": "easy",
+    "solution": "quack",
+    "guesses": [
+        "tares",
+        "colin",
+        "bulky",
+        "quack"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:04.934"
+}

@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 2049,
+    "ds": "2025-09-30",
+    "mode": "hard",
+    "solution": "geese",
+    "guesses": [
+        "tares",
+        "seine",
+        "fesse",
+        "geese"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.081"
+}

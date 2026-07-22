@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1566,
+    "ds": "2026-01-01",
+    "mode": "easy",
+    "solution": "fable",
+    "guesses": [
+        "tares",
+        "cling",
+        "dumbo",
+        "fable"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.847"
+}

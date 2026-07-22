@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1355,
+    "ds": "2025-12-26",
+    "mode": "hard",
+    "solution": "speed",
+    "guesses": [
+        "tares",
+        "soled",
+        "siped",
+        "speed"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.061"
+}

@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1941,
+    "ds": "2026-05-08",
+    "mode": "easy",
+    "solution": "umbra",
+    "guesses": [
+        "tares",
+        "blond",
+        "mbira",
+        "umbra"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:02.273"
+}

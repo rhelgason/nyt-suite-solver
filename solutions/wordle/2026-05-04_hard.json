@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 2270,
+    "ds": "2026-05-04",
+    "mode": "hard",
+    "solution": "riser",
+    "guesses": [
+        "tares",
+        "shier",
+        "miser",
+        "riser"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.054"
+}

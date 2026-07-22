@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 2327,
+    "ds": "2026-02-25",
+    "mode": "easy",
+    "solution": "shred",
+    "guesses": [
+        "tares",
+        "dowie",
+        "sered",
+        "shred"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.249"
+}

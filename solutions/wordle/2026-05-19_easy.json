@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 1448,
+    "ds": "2026-05-19",
+    "mode": "easy",
+    "solution": "dusty",
+    "guesses": [
+        "tares",
+        "shout",
+        "fling",
+        "abamp",
+        "dusty"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:01.419"
+}

@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 1411,
+    "ds": "2026-01-12",
+    "mode": "easy",
+    "solution": "trial",
+    "guesses": [
+        "tares",
+        "claim",
+        "trial"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:00.316"
+}

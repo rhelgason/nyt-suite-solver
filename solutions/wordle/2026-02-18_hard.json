@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 1261,
+    "ds": "2026-02-18",
+    "mode": "hard",
+    "solution": "mogul",
+    "guesses": [
+        "tares",
+        "colin",
+        "wooly",
+        "lough",
+        "mogul"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:00.594"
+}

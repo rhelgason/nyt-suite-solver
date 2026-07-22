@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 914,
+    "ds": "2026-01-25",
+    "mode": "hard",
+    "solution": "strut",
+    "guesses": [
+        "tares",
+        "wurst",
+        "strut"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:00.065"
+}

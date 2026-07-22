@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 1839,
+    "ds": "2025-12-19",
+    "mode": "hard",
+    "solution": "myrrh",
+    "guesses": [
+        "tares",
+        "curio",
+        "myrrh"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:00.083"
+}

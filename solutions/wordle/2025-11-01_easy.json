@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1864,
+    "ds": "2025-11-01",
+    "mode": "easy",
+    "solution": "motel",
+    "guesses": [
+        "tares",
+        "could",
+        "abamp",
+        "motel"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.756"
+}

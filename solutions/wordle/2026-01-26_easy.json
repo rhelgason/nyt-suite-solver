@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1016,
+    "ds": "2026-01-26",
+    "mode": "easy",
+    "solution": "freak",
+    "guesses": [
+        "tares",
+        "craal",
+        "bowed",
+        "freak"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:01.465"
+}

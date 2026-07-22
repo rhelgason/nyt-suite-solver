@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 1800,
+    "ds": "2025-10-23",
+    "mode": "hard",
+    "solution": "drill",
+    "guesses": [
+        "tares",
+        "prion",
+        "frill",
+        "brill",
+        "drill"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:00.109"
+}

@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 739,
+    "ds": "2025-11-21",
+    "mode": "easy",
+    "solution": "vowel",
+    "guesses": [
+        "tares",
+        "indol",
+        "hobby",
+        "vowel"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:03.838"
+}
