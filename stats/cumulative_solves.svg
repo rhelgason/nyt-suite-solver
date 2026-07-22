@@ -11,10 +11,15 @@
 <text x="44" y="124.0" text-anchor="end" fill="#888">8</text>
 <line x1="52" y1="44.0" x2="740" y2="44.0" stroke="#eaeaea"/>
 <text x="44" y="48.0" text-anchor="end" fill="#888">10</text>
+<line x1="52.0" y1="348" x2="52.0" y2="352" stroke="#bbb"/>
 <text x="52.0" y="366.0" text-anchor="middle" fill="#888">07-13</text>
+<line x1="224.0" y1="348" x2="224.0" y2="352" stroke="#bbb"/>
 <text x="224.0" y="366.0" text-anchor="middle" fill="#888">07-15</text>
+<line x1="396.0" y1="348" x2="396.0" y2="352" stroke="#bbb"/>
 <text x="396.0" y="366.0" text-anchor="middle" fill="#888">07-17</text>
+<line x1="568.0" y1="348" x2="568.0" y2="352" stroke="#bbb"/>
 <text x="568.0" y="366.0" text-anchor="middle" fill="#888">07-19</text>
+<line x1="740.0" y1="348" x2="740.0" y2="352" stroke="#bbb"/>
 <text x="740.0" y="366.0" text-anchor="middle" fill="#888">07-21</text>
 <line x1="52" y1="348" x2="740" y2="348" stroke="#bbb"/>
 <line x1="52" y1="44" x2="52" y2="348" stroke="#bbb"/>

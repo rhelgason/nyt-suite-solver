@@ -33,22 +33,22 @@ def test_build_section_summarizes_each_game(tmp_path):
     assert "avg score **75.0%**" in section                 # (100 + 50) / 2
     assert "Queen Bee on **50%** of puzzles" in section      # 1 of 2
     assert "**100%** solved" in section                      # letter boxed + sudoku
-    # cumulative chart is referenced as a committed SVG image (2 distinct dates)
+    # both charts are referenced as committed SVG images; no Mermaid remains
     assert "![Cumulative puzzles solved by game](stats/cumulative_solves.svg)" in section
-    # score histogram replaces the rank chart
-    assert "Spelling Bee score distribution" in section
-
-
-def test_cumulative_chart_omitted_for_single_date(tmp_path):
-    root = str(tmp_path)
-    _write(root, "spelling_bee", "2026-01-01.json", {"ds": "2026-01-01", "percentage": 100, "rank": "QUEEN_BEE"})
-    section = build_section(root)
-    # only one date and one score -> neither chart is drawn
-    assert "cumulative_solves.svg" not in section
+    assert "![Spelling Bee score distribution](stats/spelling_bee_scores.svg)" in section
     assert "```mermaid" not in section
 
 
-def test_write_assets_emits_valid_svg(tmp_path):
+def test_charts_omitted_for_single_date(tmp_path):
+    root = str(tmp_path)
+    _write(root, "spelling_bee", "2026-01-01.json", {"ds": "2026-01-01", "percentage": 100, "rank": "QUEEN_BEE"})
+    section = build_section(root)
+    # one date and one score -> neither the line nor the pie is drawn
+    assert "cumulative_solves.svg" not in section
+    assert "spelling_bee_scores.svg" not in section
+
+
+def test_cumulative_svg_is_valid_and_time_scaled(tmp_path):
     import xml.etree.ElementTree as ET
 
     from stats import cumulative_solves_svg, load_game
@@ -59,21 +59,46 @@ def test_write_assets_emits_valid_svg(tmp_path):
     games = {g: load_game(root, g) for g in ("spelling_bee", "letter_boxed", "sudoku")}
 
     svg = cumulative_solves_svg(games)
-    ET.fromstring(svg)  # must be well-formed XML
-    assert "Spelling Bee" in svg and "Letter Boxed" in svg and "Sudoku" in svg  # legend labels
+    ET.fromstring(svg)  # well-formed XML
+    assert "Spelling Bee" in svg and "Letter Boxed" in svg and "Sudoku" in svg  # legend
     assert svg.count("<polyline") == 3  # one line per game
 
 
-def test_score_histogram_buckets(tmp_path):
+def test_time_axis_ticks_scale_with_span():
+    from datetime import date
+    from stats import time_axis_ticks
+
+    # a 10-day span uses day labels
+    day_ticks = time_axis_ticks(date(2026, 1, 1), date(2026, 1, 11))
+    assert all(len(label) == 5 and label[2] == "-" for _, label in day_ticks)  # MM-DD
+    assert len(day_ticks) <= 10
+
+    # a multi-year span uses year labels, not one tick per day
+    year_ticks = time_axis_ticks(date(2026, 1, 1), date(2030, 1, 1))
+    assert len(year_ticks) <= 8
+    assert all(label.isdigit() and len(label) == 4 for _, label in year_ticks)  # YYYY
+
+    # a ~1.5 year span uses month labels
+    month_ticks = time_axis_ticks(date(2026, 1, 1), date(2027, 6, 1))
+    assert len(month_ticks) <= 10
+    assert any(any(c.isalpha() for c in label) for _, label in month_ticks)  # e.g. "Jul 26"
+
+
+def test_score_pie_svg(tmp_path):
+    import xml.etree.ElementTree as ET
+
+    from stats import load_game, score_pie_svg, summarize_spelling_bee
+
     root = str(tmp_path)
     scores = {"2026-01-01": 100, "2026-01-02": 97, "2026-01-03": 92, "2026-01-04": 100}
     for ds, pct in scores.items():
         _write(root, "spelling_bee", f"{ds}.json", {"ds": ds, "percentage": pct, "rank": "GENIUS"})
-    section = build_section(root)
-    assert "Spelling Bee score distribution" in section
-    # leading empty buckets (<80, 80-89) are trimmed; range starts at 90-94
-    assert '"90-94", "95-99", "100"' in section
-    assert "bar [1, 1, 2]" in section  # 92 | 97 | (100, 100)
+
+    svg = score_pie_svg(summarize_spelling_bee(load_game(root, "spelling_bee")))
+    ET.fromstring(svg)  # well-formed XML
+    # three non-empty buckets (90-94, 95-99, 100) -> three pie slices + legend rows
+    assert svg.count("<path") == 3
+    assert "100: 2 (50%)" in svg  # two perfect scores of four puzzles
 
 
 def test_build_section_empty(tmp_path):

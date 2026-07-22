@@ -4,6 +4,7 @@ solution JSON files. Run by the daily workflow after solving (and via
 `make stats`), so the repo's front page always reflects the latest history
 without any hosted service.
 """
+from datetime import date, timedelta
 from typing import Dict, List, Optional, Tuple
 
 import ast
@@ -60,50 +61,17 @@ def as_list(value) -> list:
             return []
     return []
 
-
-def _mermaid_chart(title: str, labels: List[str], y_label: str, y_max: int, plots: List[str]) -> str:
-    xs = ", ".join(f'"{label}"' for label in labels)
-    body = "".join(f"    {plot}\n" for plot in plots)
-    return (
-        "```mermaid\n"
-        "xychart-beta\n"
-        f'    title "{title}"\n'
-        f"    x-axis [{xs}]\n"
-        f'    y-axis "{y_label}" 0 --> {y_max}\n'
-        f"{body}```"
-    )
-
-
-def mermaid_bar(title: str, labels: List[str], values: List[float], y_label: str, y_max: int) -> str:
-    return _mermaid_chart(title, labels, y_label, y_max, [f"bar [{', '.join(str(v) for v in values)}]"])
-
-
-
-
-# canonical Spelling Bee ranks, best to worst
-RANK_ORDER = [
-    "QUEEN_BEE", "GENIUS", "AMAZING", "GREAT", "NICE",
-    "SOLID", "GOOD", "MOVING_UP", "GOOD_START", "BEGINNER",
-]
-
-
-def _pretty_rank(name: str) -> str:
-    return name.replace("_", " ").title()
-
-
 def summarize_spelling_bee(records: List[Record]) -> dict:
     by_ds = _by_date(records)
     dates = sorted(by_ds)
     pcts = [by_ds[d]["percentage"] for d in dates if isinstance(by_ds[d].get("percentage"), (int, float))]
     ranks = [by_ds[d]["rank"] for d in dates if by_ds[d].get("rank")]
-    rank_counts = {r: ranks.count(r) for r in RANK_ORDER if r in ranks}
     return {
         "count": len(dates),
         "percentages": pcts,
         "avg_pct": sum(pcts) / len(pcts) if pcts else None,
         "best_pct": max(pcts) if pcts else None,
         "queen_bee_rate": ranks.count("QUEEN_BEE") / len(ranks) * 100 if ranks else None,
-        "rank_counts": rank_counts,
         "total_pangrams": sum(len(as_list(by_ds[d].get("pangrams"))) for d in dates),
     }
 
@@ -180,6 +148,61 @@ CUMULATIVE_GAMES = [
 
 ASSETS_DIR = os.path.join(REPO_ROOT, "stats")
 CUMULATIVE_SVG_REL = "stats/cumulative_solves.svg"
+SCORES_SVG_REL = "stats/spelling_bee_scores.svg"
+
+
+def _parse_date(value: str) -> date:
+    return date(int(value[:4]), int(value[5:7]), int(value[8:10]))
+
+
+def _add_months(base: date, months: int) -> date:
+    total = base.month - 1 + months
+    return date(base.year + total // 12, total % 12 + 1, 1)
+
+
+def _ceil_div(a: int, b: int) -> int:
+    return -(-a // b)
+
+
+def time_axis_ticks(dmin: date, dmax: date, target: int = 7) -> List[Tuple[float, str]]:
+    """Choose readable, calendar-aligned x-axis ticks that scale with the span:
+    days for a short window, then weeks, months, and finally years. Tick count
+    stays near `target` regardless of how much history accumulates."""
+    span = (dmax - dmin).days
+    ticks: List[Tuple[float, str]] = []
+    if span <= 0:
+        return [(dmin.toordinal(), dmin.strftime("%m-%d"))]
+
+    if span <= 21:  # daily
+        stride = max(1, _ceil_div(span, target))
+        cur = dmin
+        while cur <= dmax:
+            ticks.append((cur.toordinal(), cur.strftime("%m-%d")))
+            cur += timedelta(days=stride)
+    elif span <= 120:  # weekly
+        stride = max(1, _ceil_div(span, 7 * target)) * 7
+        cur = dmin
+        while cur <= dmax:
+            ticks.append((cur.toordinal(), cur.strftime("%m-%d")))
+            cur += timedelta(days=stride)
+    elif span <= 365 * 3:  # monthly
+        stride = max(1, _ceil_div(span, 30 * target))
+        cur = date(dmin.year, dmin.month, 1)
+        while cur <= dmax:
+            if cur >= dmin:
+                ticks.append((cur.toordinal(), cur.strftime("%b %y")))
+            cur = _add_months(cur, stride)
+    else:  # yearly
+        stride = max(1, _ceil_div(span, 365 * target))
+        cur = date(dmin.year, 1, 1)
+        while cur <= dmax:
+            if cur >= dmin:
+                ticks.append((cur.toordinal(), cur.strftime("%Y")))
+            cur = date(cur.year + stride, 1, 1)
+
+    if len(ticks) < 2:
+        ticks = [(dmin.toordinal(), dmin.strftime("%m-%d")), (dmax.toordinal(), dmax.strftime("%m-%d"))]
+    return ticks
 
 
 def cumulative_solves_svg(games: Dict[str, List[Record]]) -> Optional[str]:
@@ -191,16 +214,23 @@ def cumulative_solves_svg(games: Dict[str, List[Record]]) -> Optional[str]:
     if len(all_dates) < 2:  # need at least two points to draw a line
         return None
 
-    multiyear = len({d[:4] for d in all_dates}) > 1
-    labels = [d[2:] if multiyear else d[5:] for d in all_dates]
+    x_values = [_parse_date(d).toordinal() for d in all_dates]
+    ticks = time_axis_ticks(_parse_date(all_dates[0]), _parse_date(all_dates[-1]))
     series = [
         (name, color, [bisect.bisect_right(per_game[key], d) for d in all_dates])
         for key, name, color in CUMULATIVE_GAMES
     ]
-    return svg_charts.line_chart("Cumulative puzzles solved", labels, series, "Puzzles solved")
+    return svg_charts.line_chart("Cumulative puzzles solved", x_values, series, "Puzzles solved", ticks)
 
 
-SCORE_BUCKETS = ["<80", "80-89", "90-94", "95-99", "100"]
+# score buckets for the pie, with a red-to-green (worse-to-better) palette
+SCORE_BUCKETS = [
+    ("<80", "#dc2626"),
+    ("80-89", "#f59e0b"),
+    ("90-94", "#eab308"),
+    ("95-99", "#84cc16"),
+    ("100", "#16a34a"),
+]
 
 
 def _score_bucket(pct: float) -> int:
@@ -215,23 +245,15 @@ def _score_bucket(pct: float) -> int:
     return 0
 
 
-def score_histogram_chart(s: dict) -> Optional[str]:
+def score_pie_svg(s: dict) -> Optional[str]:
     pcts = s.get("percentages") or []
     if len(pcts) < 2:
         return None
     counts = [0] * len(SCORE_BUCKETS)
     for pct in pcts:
         counts[_score_bucket(pct)] += 1
-    # trim leading empty buckets so the chart focuses on the range in use
-    first = next((i for i, c in enumerate(counts) if c > 0), 0)
-    labels, counts = SCORE_BUCKETS[first:], counts[first:]
-    return mermaid_bar(
-        "Spelling Bee score distribution (lifetime)",
-        labels,
-        counts,
-        "Puzzles",
-        max(counts),
-    )
+    slices = [(label, counts[i], color) for i, (label, color) in enumerate(SCORE_BUCKETS) if counts[i] > 0]
+    return svg_charts.pie_chart("Spelling Bee score distribution (lifetime)", slices)
 
 
 def build_section(root: str = SOLUTIONS_ROOT) -> str:
@@ -260,22 +282,24 @@ def build_section(root: str = SOLUTIONS_ROOT) -> str:
         lines.append("")
         lines.append(f"![Cumulative puzzles solved by game]({CUMULATIVE_SVG_REL})")
 
-    histogram = score_histogram_chart(sb)
-    if histogram:
+    if score_pie_svg(sb) is not None:
         lines.append("")
-        lines.append(histogram)
+        lines.append(f"![Spelling Bee score distribution]({SCORES_SVG_REL})")
     return "\n".join(lines)
 
 
 def write_assets(root: str = SOLUTIONS_ROOT, assets_dir: str = ASSETS_DIR) -> None:
     """Write the committed chart image(s) referenced by the README section."""
     games = {g: load_game(root, g) for g in ("spelling_bee", "letter_boxed", "sudoku")}
-    svg = cumulative_solves_svg(games)
-    if svg is None:
-        return
+    assets = {
+        "cumulative_solves.svg": cumulative_solves_svg(games),
+        "spelling_bee_scores.svg": score_pie_svg(summarize_spelling_bee(games["spelling_bee"])),
+    }
     os.makedirs(assets_dir, exist_ok=True)
-    with open(os.path.join(assets_dir, "cumulative_solves.svg"), "w", encoding="utf-8") as f:
-        f.write(svg)
+    for name, svg in assets.items():
+        if svg is not None:
+            with open(os.path.join(assets_dir, name), "w", encoding="utf-8") as f:
+                f.write(svg)
 
 
 def update_readme(readme_text: str, section: str) -> str:

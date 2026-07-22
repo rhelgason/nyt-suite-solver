@@ -29,13 +29,7 @@ _Auto-generated from `solutions/` · **13** puzzles solved across 3 games (throu
 
 ![Cumulative puzzles solved by game](stats/cumulative_solves.svg)
 
-```mermaid
-xychart-beta
-    title "Spelling Bee score distribution (lifetime)"
-    x-axis ["95-99", "100"]
-    y-axis "Puzzles" 0 --> 6
-    bar [3, 6]
-```
+![Spelling Bee score distribution](stats/spelling_bee_scores.svg)
 <!-- STATS:END -->
 
 The results above refresh automatically: a scheduled GitHub Actions workflow
