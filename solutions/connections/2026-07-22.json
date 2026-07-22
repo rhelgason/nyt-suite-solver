@@ -1,0 +1,106 @@
+{
+    "puzzle_id": 1225,
+    "ds": "2026-07-22",
+    "words": [
+        "WHITE STRIPES",
+        "HOLE",
+        "PINS",
+        "STROKES",
+        "HIVES",
+        "HOOVES",
+        "VINES",
+        "SCORE",
+        "SNAPS",
+        "RASH",
+        "MANE",
+        "TWEETS",
+        "PAR",
+        "REDNESS",
+        "TAIL",
+        "ITCHING"
+    ],
+    "categories": [
+        {
+            "title": "SYMPTOMS OF AN ALLERGIC REACTION",
+            "words": [
+                "HIVES",
+                "ITCHING",
+                "RASH",
+                "REDNESS"
+            ]
+        },
+        {
+            "title": "ON A GOLF SCORECARD",
+            "words": [
+                "HOLE",
+                "PAR",
+                "SCORE",
+                "STROKES"
+            ]
+        },
+        {
+            "title": "PLATFORM-SPECIFIC POSTS",
+            "words": [
+                "PINS",
+                "SNAPS",
+                "TWEETS",
+                "VINES"
+            ]
+        },
+        {
+            "title": "FEATURES OF A ZEBRA",
+            "words": [
+                "HOOVES",
+                "MANE",
+                "TAIL",
+                "WHITE STRIPES"
+            ]
+        }
+    ],
+    "solved": false,
+    "groups_found": 0,
+    "mistakes": 4,
+    "guesses": [
+        {
+            "guess": [
+                "HOLE",
+                "PINS",
+                "SNAPS",
+                "STROKES"
+            ],
+            "result": "wrong",
+            "one_away": false
+        },
+        {
+            "guess": [
+                "HIVES",
+                "HOOVES",
+                "VINES",
+                "WHITE STRIPES"
+            ],
+            "result": "wrong",
+            "one_away": false
+        },
+        {
+            "guess": [
+                "ITCHING",
+                "MANE",
+                "RASH",
+                "REDNESS"
+            ],
+            "result": "wrong",
+            "one_away": true
+        },
+        {
+            "guess": [
+                "ITCHING",
+                "MANE",
+                "RASH",
+                "TAIL"
+            ],
+            "result": "wrong",
+            "one_away": false
+        }
+    ],
+    "solve_time": "0:00:06.644"
+}

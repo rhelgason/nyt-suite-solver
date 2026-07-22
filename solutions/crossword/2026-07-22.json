@@ -1,0 +1,17 @@
+{
+    "puzzle_id": 24272,
+    "ds": "2026-07-22",
+    "width": 5,
+    "height": 5,
+    "solved": false,
+    "cells_correct": 10,
+    "cells_total": 19,
+    "grid": [
+        "# # H E N",
+        "# B O D Y",
+        "B A D D Y",
+        "A B L Y #",
+        "R A W # #"
+    ],
+    "solve_time": "0:00:02.696"
+}
