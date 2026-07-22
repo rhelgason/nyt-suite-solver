@@ -1,0 +1,88 @@
+{
+    "puzzle_id": 1208,
+    "ds": "2026-07-13",
+    "words": [
+        "UMBRELLA",
+        "SALEM",
+        "BUCKET",
+        "QUESTION",
+        "PUSS",
+        "GRILL",
+        "PUMP",
+        "KISSER",
+        "MUG",
+        "FIGARO",
+        "SMACKDOWN",
+        "DRAWER",
+        "EXAMINE",
+        "BUSSIN",
+        "TOM",
+        "PECKISH"
+    ],
+    "categories": [
+        {
+            "title": "INTERROGATE",
+            "words": [
+                "EXAMINE",
+                "GRILL",
+                "PUMP",
+                "QUESTION"
+            ]
+        },
+        {
+            "title": "THINGS WITH HANDLES",
+            "words": [
+                "BUCKET",
+                "DRAWER",
+                "MUG",
+                "UMBRELLA"
+            ]
+        },
+        {
+            "title": "FICTIONAL CATS",
+            "words": [
+                "FIGARO",
+                "PUSS",
+                "SALEM",
+                "TOM"
+            ]
+        },
+        {
+            "title": "STARTING WITH SMOOCHES",
+            "words": [
+                "BUSSIN",
+                "KISSER",
+                "PECKISH",
+                "SMACKDOWN"
+            ]
+        }
+    ],
+    "solved": false,
+    "groups_found": 0,
+    "mistakes": 2,
+    "guesses": [
+        {
+            "guess": [
+                "BUCKET",
+                "DRAWER",
+                "PUMP",
+                "UMBRELLA"
+            ],
+            "result": "wrong",
+            "connection": "Types of objects that can hold or contain things",
+            "one_away": true
+        },
+        {
+            "guess": [
+                "BUCKET",
+                "DRAWER",
+                "FIGARO",
+                "UMBRELLA"
+            ],
+            "result": "wrong",
+            "connection": "Types of handles (bucket handle, drawer handle, umbrella handle, Figaro handle in jewelry)",
+            "one_away": true
+        }
+    ],
+    "solve_time": "0:00:13.921"
+}

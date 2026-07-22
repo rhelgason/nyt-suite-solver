@@ -1,0 +1,110 @@
+{
+    "puzzle_id": 1196,
+    "ds": "2026-06-24",
+    "words": [
+        "HUMPTY DUMPTY",
+        "TOASTER",
+        "PINK FLOYD",
+        "MONEY",
+        "KOOL-AID MAN",
+        "HELTER SKELTER",
+        "CHINA",
+        "RUSH",
+        "CHICK FLICK",
+        "DEADPOOL",
+        "LUGGAGE",
+        "GENESIS",
+        "CLIFFORD",
+        "MUMBO JUMBO",
+        "KING CRIMSON",
+        "MR. KRABS"
+    ],
+    "categories": [
+        {
+            "title": "PROG BANDS",
+            "words": [
+                "GENESIS",
+                "KING CRIMSON",
+                "PINK FLOYD",
+                "RUSH"
+            ]
+        },
+        {
+            "title": "CLASSIC WEDDING GIFTS",
+            "words": [
+                "CHINA",
+                "LUGGAGE",
+                "MONEY",
+                "TOASTER"
+            ]
+        },
+        {
+            "title": "RED CHARACTERS",
+            "words": [
+                "CLIFFORD",
+                "DEADPOOL",
+                "KOOL-AID MAN",
+                "MR. KRABS"
+            ]
+        },
+        {
+            "title": "RHYMING COMPOUND WORDS",
+            "words": [
+                "CHICK FLICK",
+                "HELTER SKELTER",
+                "HUMPTY DUMPTY",
+                "MUMBO JUMBO"
+            ]
+        }
+    ],
+    "solved": false,
+    "groups_found": 1,
+    "mistakes": 3,
+    "guesses": [
+        {
+            "guess": [
+                "GENESIS",
+                "KING CRIMSON",
+                "PINK FLOYD",
+                "RUSH"
+            ],
+            "result": "correct",
+            "group": "PROG BANDS",
+            "connection": "Progressive rock bands"
+        },
+        {
+            "guess": [
+                "CLIFFORD",
+                "HUMPTY DUMPTY",
+                "KOOL-AID MAN",
+                "MR. KRABS"
+            ],
+            "result": "wrong",
+            "connection": "Characters associated with specific colors (Humpty Dumpty - white, Kool-Aid Man - red, Clifford - red, Mr. Krabs - red)",
+            "one_away": true
+        },
+        {
+            "guess": [
+                "CLIFFORD",
+                "DEADPOOL",
+                "HUMPTY DUMPTY",
+                "KOOL-AID MAN"
+            ],
+            "result": "wrong",
+            "connection": "Characters with distinctive appearances",
+            "one_away": true
+        },
+        {
+            "guess": [
+                "DEADPOOL",
+                "HUMPTY DUMPTY",
+                "KOOL-AID MAN",
+                "MR. KRABS"
+            ],
+            "result": "wrong",
+            "connection": "Fictional characters",
+            "one_away": true
+        }
+    ],
+    "solve_time": "0:00:20.379"
+}

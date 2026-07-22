@@ -1,0 +1,65 @@
+{
+    "puzzle_id": 1216,
+    "ds": "2026-07-18",
+    "words": [
+        "TRAVEL",
+        "FLY",
+        "QUIZ",
+        "SCORE",
+        "OPINION",
+        "CARRY",
+        "HEALTH",
+        "TART",
+        "CULTURE",
+        "MIND",
+        "TIME",
+        "GOALTEND",
+        "VIEW",
+        "LIVES",
+        "DOUBLE DRIBBLE",
+        "ATTITUDE"
+    ],
+    "categories": [
+        {
+            "title": "COMMIT A BASKETBALL VIOLATION",
+            "words": [
+                "CARRY",
+                "DOUBLE DRIBBLE",
+                "GOALTEND",
+                "TRAVEL"
+            ]
+        },
+        {
+            "title": "BELIEF",
+            "words": [
+                "ATTITUDE",
+                "MIND",
+                "OPINION",
+                "VIEW"
+            ]
+        },
+        {
+            "title": "THINGS TRACKED IN VIDEO GAMES",
+            "words": [
+                "HEALTH",
+                "LIVES",
+                "SCORE",
+                "TIME"
+            ]
+        },
+        {
+            "title": "WORDS AFTER \"POP\"",
+            "words": [
+                "CULTURE",
+                "FLY",
+                "QUIZ",
+                "TART"
+            ]
+        }
+    ],
+    "solved": false,
+    "groups_found": 0,
+    "mistakes": 0,
+    "guesses": [],
+    "solve_time": "0:00:07.924"
+}

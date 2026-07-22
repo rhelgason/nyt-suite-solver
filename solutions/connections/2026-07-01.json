@@ -1,0 +1,110 @@
+{
+    "puzzle_id": 1192,
+    "ds": "2026-07-01",
+    "words": [
+        "CHICAGO",
+        "LONG ISLAND",
+        "NIGERIA",
+        "COLOGNE",
+        "INDIANAPOLIS",
+        "MUNICH",
+        "LIMERICK",
+        "SINGAPORE",
+        "CASABLANCA",
+        "CUBA",
+        "DOMINICAN REPUBLIC",
+        "CHAMPAGNE",
+        "GUINEA-BISSAU",
+        "CHINA",
+        "FARGO",
+        "MOSCOW"
+    ],
+    "categories": [
+        {
+            "title": "THINGS NAMED AFTER PLACES",
+            "words": [
+                "CHAMPAGNE",
+                "CHINA",
+                "COLOGNE",
+                "LIMERICK"
+            ]
+        },
+        {
+            "title": "BEST PICTURE WINNERS/NOMINEES",
+            "words": [
+                "CASABLANCA",
+                "CHICAGO",
+                "FARGO",
+                "MUNICH"
+            ]
+        },
+        {
+            "title": "PLACES IN COCKTAIL NAMES",
+            "words": [
+                "CUBA",
+                "LONG ISLAND",
+                "MOSCOW",
+                "SINGAPORE"
+            ]
+        },
+        {
+            "title": "STARTING WITH COUNTRIES",
+            "words": [
+                "DOMINICAN REPUBLIC",
+                "GUINEA-BISSAU",
+                "INDIANAPOLIS",
+                "NIGERIA"
+            ]
+        }
+    ],
+    "solved": false,
+    "groups_found": 0,
+    "mistakes": 4,
+    "guesses": [
+        {
+            "guess": [
+                "CHAMPAGNE",
+                "COLOGNE",
+                "FARGO",
+                "LIMERICK"
+            ],
+            "result": "wrong",
+            "connection": "Names of things that are also places",
+            "one_away": true
+        },
+        {
+            "guess": [
+                "CHAMPAGNE",
+                "COLOGNE",
+                "LIMERICK",
+                "MUNICH"
+            ],
+            "result": "wrong",
+            "connection": "Places known for specific products (e.g., Champagne for sparkling wine, Cologne for perfume, Munich for beer, Limerick for poetry)",
+            "one_away": true
+        },
+        {
+            "guess": [
+                "CHAMPAGNE",
+                "COLOGNE",
+                "MOSCOW",
+                "MUNICH"
+            ],
+            "result": "wrong",
+            "connection": "Famous for beverages (e.g., wine, beer, vodka)",
+            "one_away": false
+        },
+        {
+            "guess": [
+                "CHICAGO",
+                "FARGO",
+                "INDIANAPOLIS",
+                "LONG ISLAND"
+            ],
+            "result": "wrong",
+            "connection": "Locations in the United States",
+            "one_away": false
+        }
+    ],
+    "solve_time": "0:00:11.507"
+}

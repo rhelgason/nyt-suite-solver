@@ -1,0 +1,110 @@
+{
+    "puzzle_id": 1210,
+    "ds": "2026-07-19",
+    "words": [
+        "SWITCH",
+        "SWIRL",
+        "LONG",
+        "GAME",
+        "POKER",
+        "PAIR",
+        "FLUSH",
+        "STRAIGHT",
+        "RELAY",
+        "SYNC",
+        "DRAIN",
+        "FUSE",
+        "CONNECT",
+        "BREAKER",
+        "REFILL",
+        "JOIN"
+    ],
+    "categories": [
+        {
+            "title": "CIRCUIT COMPONENTS",
+            "words": [
+                "BREAKER",
+                "FUSE",
+                "RELAY",
+                "SWITCH"
+            ]
+        },
+        {
+            "title": "DIGITAL COUPLING VERBS",
+            "words": [
+                "CONNECT",
+                "JOIN",
+                "PAIR",
+                "SYNC"
+            ]
+        },
+        {
+            "title": "THINGS TOILETS DO",
+            "words": [
+                "DRAIN",
+                "FLUSH",
+                "REFILL",
+                "SWIRL"
+            ]
+        },
+        {
+            "title": "___ FACE EXPRESSIONS",
+            "words": [
+                "GAME",
+                "LONG",
+                "POKER",
+                "STRAIGHT"
+            ]
+        }
+    ],
+    "solved": false,
+    "groups_found": 0,
+    "mistakes": 4,
+    "guesses": [
+        {
+            "guess": [
+                "FLUSH",
+                "PAIR",
+                "POKER",
+                "STRAIGHT"
+            ],
+            "result": "wrong",
+            "connection": "Poker hand types",
+            "one_away": false
+        },
+        {
+            "guess": [
+                "FLUSH",
+                "PAIR",
+                "POKER",
+                "STRAIGHT"
+            ],
+            "result": "wrong",
+            "connection": "Poker hand rankings",
+            "one_away": false
+        },
+        {
+            "guess": [
+                "FLUSH",
+                "PAIR",
+                "POKER",
+                "STRAIGHT"
+            ],
+            "result": "wrong",
+            "connection": "Poker hand rankings",
+            "one_away": false
+        },
+        {
+            "guess": [
+                "FLUSH",
+                "PAIR",
+                "POKER",
+                "STRAIGHT"
+            ],
+            "result": "wrong",
+            "connection": "Poker hands",
+            "one_away": false
+        }
+    ],
+    "solve_time": "0:00:15.983"
+}

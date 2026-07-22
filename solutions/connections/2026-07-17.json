@@ -1,0 +1,65 @@
+{
+    "puzzle_id": 1212,
+    "ds": "2026-07-17",
+    "words": [
+        "CRANE GAME",
+        "SATIRES",
+        "TICKETS",
+        "CARDINAL DIRECTIONS",
+        "SWAN SONG",
+        "SUITS",
+        "ROBIN HOOD",
+        "PLOT SPOILER",
+        "TREE TRUNK",
+        "TOKENS",
+        "SEASONS",
+        "EPILOGUE",
+        "LAST DANCE",
+        "CLASSICAL ELEMENTS",
+        "FAREWELL",
+        "PINBALL"
+    ],
+    "categories": [
+        {
+            "title": "GRAND FINALE",
+            "words": [
+                "EPILOGUE",
+                "FAREWELL",
+                "LAST DANCE",
+                "SWAN SONG"
+            ]
+        },
+        {
+            "title": "SEEN IN AN ARCADE",
+            "words": [
+                "CRANE GAME",
+                "PINBALL",
+                "TICKETS",
+                "TOKENS"
+            ]
+        },
+        {
+            "title": "FOUR GROUPS OF FOUR",
+            "words": [
+                "CARDINAL DIRECTIONS",
+                "CLASSICAL ELEMENTS",
+                "SEASONS",
+                "SUITS"
+            ]
+        },
+        {
+            "title": "ENDING IN PARTS OF A CAR",
+            "words": [
+                "PLOT SPOILER",
+                "ROBIN HOOD",
+                "SATIRES",
+                "TREE TRUNK"
+            ]
+        }
+    ],
+    "solved": false,
+    "groups_found": 0,
+    "mistakes": 0,
+    "guesses": [],
+    "solve_time": "0:00:08.228"
+}

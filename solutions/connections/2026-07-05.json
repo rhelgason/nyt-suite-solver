@@ -1,0 +1,110 @@
+{
+    "puzzle_id": 1204,
+    "ds": "2026-07-05",
+    "words": [
+        "WIN",
+        "OATS",
+        "GREEN",
+        "WIRE",
+        "WEST",
+        "CARD",
+        "WITH",
+        "HONEY",
+        "GOLD",
+        "TUNGSTEN",
+        "CHECK",
+        "SEEDS",
+        "CASH",
+        "PLATINUM",
+        "NUTS",
+        "CENTURION"
+    ],
+    "categories": [
+        {
+            "title": "GRANOLA INGREDIENTS",
+            "words": [
+                "HONEY",
+                "NUTS",
+                "OATS",
+                "SEEDS"
+            ]
+        },
+        {
+            "title": "PAYMENT METHODS",
+            "words": [
+                "CARD",
+                "CASH",
+                "CHECK",
+                "WIRE"
+            ]
+        },
+        {
+            "title": "AMEX CARD TYPES",
+            "words": [
+                "CENTURION",
+                "GOLD",
+                "GREEN",
+                "PLATINUM"
+            ]
+        },
+        {
+            "title": "WHAT \"W\" MIGHT STAND FOR",
+            "words": [
+                "TUNGSTEN",
+                "WEST",
+                "WIN",
+                "WITH"
+            ]
+        }
+    ],
+    "solved": false,
+    "groups_found": 0,
+    "mistakes": 4,
+    "guesses": [
+        {
+            "guess": [
+                "GOLD",
+                "GREEN",
+                "PLATINUM",
+                "TUNGSTEN"
+            ],
+            "result": "wrong",
+            "connection": "Precious metals or materials",
+            "one_away": true
+        },
+        {
+            "guess": [
+                "GOLD",
+                "PLATINUM",
+                "TUNGSTEN",
+                "WIRE"
+            ],
+            "result": "wrong",
+            "connection": "Metals or materials",
+            "one_away": false
+        },
+        {
+            "guess": [
+                "GOLD",
+                "PLATINUM",
+                "TUNGSTEN",
+                "WIRE"
+            ],
+            "result": "wrong",
+            "connection": "Elements or materials used in jewelry or electronics",
+            "one_away": false
+        },
+        {
+            "guess": [
+                "GOLD",
+                "PLATINUM",
+                "TUNGSTEN",
+                "WIRE"
+            ],
+            "result": "wrong",
+            "connection": "Materials or elements used in jewelry or industry",
+            "one_away": false
+        }
+    ],
+    "solve_time": "0:00:14.667"
+}

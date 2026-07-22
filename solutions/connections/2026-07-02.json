@@ -1,0 +1,88 @@
+{
+    "puzzle_id": 1190,
+    "ds": "2026-07-02",
+    "words": [
+        "MOCKINGBIRD",
+        "FIELD MOUSE",
+        "TOM-TOM",
+        "COURT JESTER",
+        "MIME",
+        "LOOKING GLASS",
+        "TRACK RECORD",
+        "BILLY GOAT",
+        "DIAMOND RING",
+        "SPECTACLES",
+        "DAN DAN NOODLES",
+        "COPYCAT",
+        "TALKIE",
+        "RICH TEXT",
+        "T-1000",
+        "WATER CLOSET"
+    ],
+    "categories": [
+        {
+            "title": "THEY IMPERSONATE OTHER THINGS",
+            "words": [
+                "COPYCAT",
+                "MIME",
+                "MOCKINGBIRD",
+                "T-1000"
+            ]
+        },
+        {
+            "title": "OLD-TIMEY NAMES FOR THINGS WE STILL USE",
+            "words": [
+                "LOOKING GLASS",
+                "SPECTACLES",
+                "TALKIE",
+                "WATER CLOSET"
+            ]
+        },
+        {
+            "title": "STARTING WITH NICKNAMES",
+            "words": [
+                "BILLY GOAT",
+                "DAN DAN NOODLES",
+                "RICH TEXT",
+                "TOM-TOM"
+            ]
+        },
+        {
+            "title": "STARTING WITH SPORTS VENUES",
+            "words": [
+                "COURT JESTER",
+                "DIAMOND RING",
+                "FIELD MOUSE",
+                "TRACK RECORD"
+            ]
+        }
+    ],
+    "solved": false,
+    "groups_found": 0,
+    "mistakes": 2,
+    "guesses": [
+        {
+            "guess": [
+                "COPYCAT",
+                "COURT JESTER",
+                "MIME",
+                "MOCKINGBIRD"
+            ],
+            "result": "wrong",
+            "connection": "Things associated with mocking or imitation",
+            "one_away": true
+        },
+        {
+            "guess": [
+                "COPYCAT",
+                "COURT JESTER",
+                "MIME",
+                "TALKIE"
+            ],
+            "result": "wrong",
+            "connection": "Performers or things related to imitation or acting",
+            "one_away": false
+        }
+    ],
+    "solve_time": "0:00:14.451"
+}

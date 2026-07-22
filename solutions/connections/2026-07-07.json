@@ -1,0 +1,110 @@
+{
+    "puzzle_id": 1191,
+    "ds": "2026-07-07",
+    "words": [
+        "PLOT",
+        "DISCOUNT",
+        "JOCK",
+        "COLBERT",
+        "LETTERMAN",
+        "FRENCH",
+        "LEMON",
+        "KITCHEN",
+        "BERNIE",
+        "HALL",
+        "OLIVER",
+        "TEAM CAPTAIN",
+        "STUDY",
+        "SAN ANSELMO",
+        "ALL-AMERICAN",
+        "CONSERVATORY"
+    ],
+    "categories": [
+        {
+            "title": "ROOMS IN CLUE",
+            "words": [
+                "CONSERVATORY",
+                "HALL",
+                "KITCHEN",
+                "STUDY"
+            ]
+        },
+        {
+            "title": "STUDENT-ATHLETE DESIGNATIONS",
+            "words": [
+                "ALL-AMERICAN",
+                "JOCK",
+                "LETTERMAN",
+                "TEAM CAPTAIN"
+            ]
+        },
+        {
+            "title": "___ TWIST",
+            "words": [
+                "FRENCH",
+                "LEMON",
+                "OLIVER",
+                "PLOT"
+            ]
+        },
+        {
+            "title": "ENDING IN \"SESAME STREET\" CHARACTERS",
+            "words": [
+                "BERNIE",
+                "COLBERT",
+                "DISCOUNT",
+                "SAN ANSELMO"
+            ]
+        }
+    ],
+    "solved": false,
+    "groups_found": 0,
+    "mistakes": 4,
+    "guesses": [
+        {
+            "guess": [
+                "BERNIE",
+                "COLBERT",
+                "LETTERMAN",
+                "OLIVER"
+            ],
+            "result": "wrong",
+            "connection": "Late-night TV hosts",
+            "one_away": false
+        },
+        {
+            "guess": [
+                "COLBERT",
+                "HALL",
+                "LETTERMAN",
+                "OLIVER"
+            ],
+            "result": "wrong",
+            "connection": "Late-night TV hosts",
+            "one_away": false
+        },
+        {
+            "guess": [
+                "COLBERT",
+                "HALL",
+                "LETTERMAN",
+                "OLIVER"
+            ],
+            "result": "wrong",
+            "connection": "Late-night TV hosts",
+            "one_away": false
+        },
+        {
+            "guess": [
+                "BERNIE",
+                "COLBERT",
+                "LETTERMAN",
+                "OLIVER"
+            ],
+            "result": "wrong",
+            "connection": "Famous TV hosts or comedians",
+            "one_away": false
+        }
+    ],
+    "solve_time": "0:00:10.812"
+}

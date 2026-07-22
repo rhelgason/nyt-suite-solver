@@ -1,0 +1,65 @@
+{
+    "puzzle_id": 1207,
+    "ds": "2026-07-04",
+    "words": [
+        "LINGER",
+        "SPOT",
+        "EPIC",
+        "DREAMS",
+        "ZOMBIE",
+        "ODE",
+        "PEA",
+        "SCORPION",
+        "LAST",
+        "HURRICANE",
+        "NOTHINGS",
+        "STAY",
+        "BALLAD",
+        "CONTINUE",
+        "PAINKILLER",
+        "VILLANELLE"
+    ],
+    "categories": [
+        {
+            "title": "PERSIST",
+            "words": [
+                "CONTINUE",
+                "LAST",
+                "LINGER",
+                "STAY"
+            ]
+        },
+        {
+            "title": "KINDS OF POEMS",
+            "words": [
+                "BALLAD",
+                "EPIC",
+                "ODE",
+                "VILLANELLE"
+            ]
+        },
+        {
+            "title": "TROPICAL DRINKS",
+            "words": [
+                "HURRICANE",
+                "PAINKILLER",
+                "SCORPION",
+                "ZOMBIE"
+            ]
+        },
+        {
+            "title": "SWEET ___",
+            "words": [
+                "DREAMS",
+                "NOTHINGS",
+                "PEA",
+                "SPOT"
+            ]
+        }
+    ],
+    "solved": false,
+    "groups_found": 0,
+    "mistakes": 0,
+    "guesses": [],
+    "solve_time": "0:00:08.029"
+}

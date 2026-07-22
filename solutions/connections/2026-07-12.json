@@ -1,0 +1,110 @@
+{
+    "puzzle_id": 1213,
+    "ds": "2026-07-12",
+    "words": [
+        "PARTY",
+        "NERD",
+        "MAD",
+        "STONE",
+        "DOT",
+        "DEN",
+        "PIP",
+        "STUDY",
+        "PHO",
+        "SPREE",
+        "SLEEP",
+        "PIT",
+        "RUNT",
+        "SAC",
+        "SEED",
+        "REPEAT"
+    ],
+    "categories": [
+        {
+            "title": "REPRODUCTIVE PART OF FRUIT",
+            "words": [
+                "PIP",
+                "PIT",
+                "SEED",
+                "STONE"
+            ]
+        },
+        {
+            "title": "BIT OF FRUIT-FLAVORED CANDY",
+            "words": [
+                "DOT",
+                "NERD",
+                "RUNT",
+                "SPREE"
+            ]
+        },
+        {
+            "title": "VERBS IN A COLLEGE LIFE SLOGAN",
+            "words": [
+                "PARTY",
+                "REPEAT",
+                "SLEEP",
+                "STUDY"
+            ]
+        },
+        {
+            "title": "STARTS OF U.S. CAPITALS",
+            "words": [
+                "DEN",
+                "MAD",
+                "PHO",
+                "SAC"
+            ]
+        }
+    ],
+    "solved": false,
+    "groups_found": 0,
+    "mistakes": 4,
+    "guesses": [
+        {
+            "guess": [
+                "MAD",
+                "NERD",
+                "PARTY",
+                "SPREE"
+            ],
+            "result": "wrong",
+            "connection": "Can be preceded by 'House' (House Party, House Nerd, House Mad, House Spree)",
+            "one_away": false
+        },
+        {
+            "guess": [
+                "DOT",
+                "PIP",
+                "PIT",
+                "STONE"
+            ],
+            "result": "wrong",
+            "connection": "Small marks or points",
+            "one_away": true
+        },
+        {
+            "guess": [
+                "DOT",
+                "PIP",
+                "SEED",
+                "STONE"
+            ],
+            "result": "wrong",
+            "connection": "Small or round objects",
+            "one_away": true
+        },
+        {
+            "guess": [
+                "DOT",
+                "PIP",
+                "SAC",
+                "SEED"
+            ],
+            "result": "wrong",
+            "connection": "Small or round objects",
+            "one_away": false
+        }
+    ],
+    "solve_time": "0:00:12.075"
+}

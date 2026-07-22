@@ -1,0 +1,99 @@
+{
+    "puzzle_id": 1205,
+    "ds": "2026-07-08",
+    "words": [
+        "DRIFT",
+        "PLANE",
+        "WAX",
+        "PLOT",
+        "PLUCK",
+        "CARDS",
+        "SHAVE",
+        "THREAD",
+        "GRATE",
+        "PICK",
+        "WORSHIP",
+        "TAP",
+        "LORDS",
+        "STRUM",
+        "THEME",
+        "SLIVER"
+    ],
+    "categories": [
+        {
+            "title": "CUT INTO THIN PIECES",
+            "words": [
+                "GRATE",
+                "PLANE",
+                "SHAVE",
+                "SLIVER"
+            ]
+        },
+        {
+            "title": "MOTIF",
+            "words": [
+                "DRIFT",
+                "PLOT",
+                "THEME",
+                "THREAD"
+            ]
+        },
+        {
+            "title": "GUITAR-PLAYING TECHNIQUES",
+            "words": [
+                "PICK",
+                "PLUCK",
+                "STRUM",
+                "TAP"
+            ]
+        },
+        {
+            "title": "HOUSE OF ___",
+            "words": [
+                "CARDS",
+                "LORDS",
+                "WAX",
+                "WORSHIP"
+            ]
+        }
+    ],
+    "solved": false,
+    "groups_found": 1,
+    "mistakes": 2,
+    "guesses": [
+        {
+            "guess": [
+                "PICK",
+                "PLUCK",
+                "STRUM",
+                "TAP"
+            ],
+            "result": "correct",
+            "group": "GUITAR-PLAYING TECHNIQUES",
+            "connection": "Actions associated with playing stringed instruments"
+        },
+        {
+            "guess": [
+                "DRIFT",
+                "PLANE",
+                "PLOT",
+                "THEME"
+            ],
+            "result": "wrong",
+            "connection": "Things that can have a storyline or narrative",
+            "one_away": true
+        },
+        {
+            "guess": [
+                "CARDS",
+                "DRIFT",
+                "PLANE",
+                "PLOT"
+            ],
+            "result": "wrong",
+            "connection": "Things that can be dealt",
+            "one_away": false
+        }
+    ],
+    "solve_time": "0:00:15.892"
+}

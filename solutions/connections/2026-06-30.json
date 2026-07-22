@@ -1,0 +1,110 @@
+{
+    "puzzle_id": 1193,
+    "ds": "2026-06-30",
+    "words": [
+        "CURL",
+        "BREEZE",
+        "BOX",
+        "FENCE",
+        "SKETCH",
+        "SKATE",
+        "BOTTLE",
+        "ON TAP",
+        "CAN",
+        "WALL",
+        "RECRUIT",
+        "HEDGE",
+        "LUGE",
+        "NEWSPAPER",
+        "GATE",
+        "SKI"
+    ],
+    "categories": [
+        {
+            "title": "DIVIDING STRUCTURES",
+            "words": [
+                "FENCE",
+                "GATE",
+                "HEDGE",
+                "WALL"
+            ]
+        },
+        {
+            "title": "PARTICIPATE IN SOME WINTER OLYMPICS",
+            "words": [
+                "CURL",
+                "LUGE",
+                "SKATE",
+                "SKI"
+            ]
+        },
+        {
+            "title": "COMMON RECYCLABLES",
+            "words": [
+                "BOTTLE",
+                "BOX",
+                "CAN",
+                "NEWSPAPER"
+            ]
+        },
+        {
+            "title": "WHAT \"DRAFT\" MIGHT REFER TO",
+            "words": [
+                "BREEZE",
+                "ON TAP",
+                "RECRUIT",
+                "SKETCH"
+            ]
+        }
+    ],
+    "solved": false,
+    "groups_found": 0,
+    "mistakes": 4,
+    "guesses": [
+        {
+            "guess": [
+                "BOTTLE",
+                "BOX",
+                "CAN",
+                "ON TAP"
+            ],
+            "result": "wrong",
+            "connection": "Ways beverages are packaged or served",
+            "one_away": true
+        },
+        {
+            "guess": [
+                "BOTTLE",
+                "BOX",
+                "CAN",
+                "WALL"
+            ],
+            "result": "wrong",
+            "connection": "Things that can be stacked or stored",
+            "one_away": true
+        },
+        {
+            "guess": [
+                "BOTTLE",
+                "BOX",
+                "CAN",
+                "ON TAP"
+            ],
+            "result": "wrong",
+            "connection": "Containers or ways to package beverages",
+            "one_away": true
+        },
+        {
+            "guess": [
+                "BOTTLE",
+                "BOX",
+                "CAN",
+                "WALL"
+            ],
+            "result": "wrong",
+            "connection": "Things that can be packed or contained",
+            "one_away": true
+        }
+    ],
+    "solve_time": "0:00:14.669"
+}

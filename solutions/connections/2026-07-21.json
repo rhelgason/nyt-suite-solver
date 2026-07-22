@@ -1,0 +1,99 @@
+{
+    "puzzle_id": 1224,
+    "ds": "2026-07-21",
+    "words": [
+        "MUSIC",
+        "GRAM",
+        "DRIVER",
+        "VISION",
+        "TUBE",
+        "CROP",
+        "BOOK",
+        "APP",
+        "ORCHESTRATION",
+        "EXTENSION",
+        "TANK",
+        "KINESIS",
+        "PROMPTER",
+        "HALTER",
+        "LYRICS",
+        "PLUGIN"
+    ],
+    "categories": [
+        {
+            "title": "KINDS OF TOPS",
+            "words": [
+                "CROP",
+                "HALTER",
+                "TANK",
+                "TUBE"
+            ]
+        },
+        {
+            "title": "SOFTWARE DOWNLOADS",
+            "words": [
+                "APP",
+                "DRIVER",
+                "EXTENSION",
+                "PLUGIN"
+            ]
+        },
+        {
+            "title": "ELEMENTS OF A MUSICAL",
+            "words": [
+                "BOOK",
+                "LYRICS",
+                "MUSIC",
+                "ORCHESTRATION"
+            ]
+        },
+        {
+            "title": "TELE___",
+            "words": [
+                "GRAM",
+                "KINESIS",
+                "PROMPTER",
+                "VISION"
+            ]
+        }
+    ],
+    "solved": false,
+    "groups_found": 0,
+    "mistakes": 3,
+    "guesses": [
+        {
+            "guess": [
+                "KINESIS",
+                "LYRICS",
+                "MUSIC",
+                "ORCHESTRATION"
+            ],
+            "result": "wrong",
+            "connection": "Elements related to musical composition or performance",
+            "one_away": true
+        },
+        {
+            "guess": [
+                "LYRICS",
+                "MUSIC",
+                "ORCHESTRATION",
+                "PLUGIN"
+            ],
+            "result": "wrong",
+            "connection": "Related to music or audio production",
+            "one_away": true
+        },
+        {
+            "guess": [
+                "LYRICS",
+                "MUSIC",
+                "ORCHESTRATION",
+                "PROMPTER"
+            ],
+            "result": "wrong",
+            "connection": "Related to performing arts or music production",
+            "one_away": true
+        }
+    ],
+    "solve_time": "0:00:16.847"
+}

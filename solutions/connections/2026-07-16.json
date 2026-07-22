@@ -1,0 +1,77 @@
+{
+    "puzzle_id": 1202,
+    "ds": "2026-07-16",
+    "words": [
+        "NEEDLE",
+        "INK",
+        "JET",
+        "DOT MATRIX",
+        "TONER",
+        "POINT BREAK",
+        "LASER",
+        "CHARCOAL",
+        "PEEL",
+        "PITCH",
+        "PERIOD PIECE",
+        "BULLSEYE",
+        "SPOT REMOVER",
+        "EYE CREAM",
+        "CLOCKWORK",
+        "CLAY MASK"
+    ],
+    "categories": [
+        {
+            "title": "SKINCARE PRODUCTS",
+            "words": [
+                "CLAY MASK",
+                "EYE CREAM",
+                "PEEL",
+                "TONER"
+            ]
+        },
+        {
+            "title": "SHADES OF BLACK",
+            "words": [
+                "CHARCOAL",
+                "INK",
+                "JET",
+                "PITCH"
+            ]
+        },
+        {
+            "title": "ASSOCIATED WITH PRECISION",
+            "words": [
+                "BULLSEYE",
+                "CLOCKWORK",
+                "LASER",
+                "NEEDLE"
+            ]
+        },
+        {
+            "title": "STARTING WITH TINY MARKS",
+            "words": [
+                "DOT MATRIX",
+                "PERIOD PIECE",
+                "POINT BREAK",
+                "SPOT REMOVER"
+            ]
+        }
+    ],
+    "solved": false,
+    "groups_found": 0,
+    "mistakes": 1,
+    "guesses": [
+        {
+            "guess": [
+                "INK",
+                "LASER",
+                "NEEDLE",
+                "TONER"
+            ],
+            "result": "wrong",
+            "connection": "Items related to printers or printing",
+            "one_away": false
+        }
+    ],
+    "solve_time": "0:00:18.564"
+}

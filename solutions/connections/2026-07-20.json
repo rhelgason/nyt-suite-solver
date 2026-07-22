@@ -1,0 +1,121 @@
+{
+    "puzzle_id": 1211,
+    "ds": "2026-07-20",
+    "words": [
+        "OYSTER",
+        "MEADOW",
+        "WISDOM",
+        "SOUND",
+        "BUTTON",
+        "BUBBLE TEA",
+        "PORTOBELLO",
+        "MENU",
+        "TRUMPET",
+        "ICON",
+        "HERALD",
+        "SWINE",
+        "SAKES",
+        "BLARE",
+        "LINK",
+        "ALEXA"
+    ],
+    "categories": [
+        {
+            "title": "ANNOUNCE",
+            "words": [
+                "BLARE",
+                "HERALD",
+                "SOUND",
+                "TRUMPET"
+            ]
+        },
+        {
+            "title": "THINGS TO CLICK",
+            "words": [
+                "BUTTON",
+                "ICON",
+                "LINK",
+                "MENU"
+            ]
+        },
+        {
+            "title": "ASSOCIATED WITH PEARLS",
+            "words": [
+                "BUBBLE TEA",
+                "OYSTER",
+                "SWINE",
+                "WISDOM"
+            ]
+        },
+        {
+            "title": "STARTING WITH ALCOHOLIC BEVERAGES",
+            "words": [
+                "ALEXA",
+                "MEADOW",
+                "PORTOBELLO",
+                "SAKES"
+            ]
+        }
+    ],
+    "solved": false,
+    "groups_found": 1,
+    "mistakes": 4,
+    "guesses": [
+        {
+            "guess": [
+                "BUBBLE TEA",
+                "OYSTER",
+                "PORTOBELLO",
+                "SWINE"
+            ],
+            "result": "wrong",
+            "connection": "Things that can be farmed",
+            "one_away": true
+        },
+        {
+            "guess": [
+                "BUBBLE TEA",
+                "MENU",
+                "OYSTER",
+                "PORTOBELLO"
+            ],
+            "result": "wrong",
+            "connection": "Items you might find on a menu",
+            "one_away": false
+        },
+        {
+            "guess": [
+                "BUTTON",
+                "OYSTER",
+                "PORTOBELLO",
+                "SWINE"
+            ],
+            "result": "wrong",
+            "connection": "Types of things (mushrooms, animals, etc.) with specific names",
+            "one_away": false
+        },
+        {
+            "guess": [
+                "BUTTON",
+                "ICON",
+                "LINK",
+                "MENU"
+            ],
+            "result": "correct",
+            "group": "THINGS TO CLICK",
+            "connection": "User interface elements"
+        },
+        {
+            "guess": [
+                "BUBBLE TEA",
+                "OYSTER",
+                "PORTOBELLO",
+                "TRUMPET"
+            ],
+            "result": "wrong",
+            "connection": "Types of mushrooms (Oyster, Portobello, Bubble Tea, and Trumpet are all mushroom varieties)",
+            "one_away": false
+        }
+    ],
+    "solve_time": "0:00:21.220"
+}

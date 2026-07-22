@@ -1,0 +1,65 @@
+{
+    "puzzle_id": 1197,
+    "ds": "2026-07-10",
+    "words": [
+        "OUTKAST",
+        "DEPECHE MODE",
+        "FRESH-BAKED",
+        "BALL GOWN",
+        "DO NOT DISTURB",
+        "À LA MODE",
+        "STRIKE A POSE",
+        "AIRPLANE MODE",
+        "ERASURE",
+        "SAFE MODE",
+        "DECADENT",
+        "NEW ORDER",
+        "HOTSPOT",
+        "PET SHOP BOYS",
+        "MOLTEN",
+        "LOCATION SERVICES"
+    ],
+    "categories": [
+        {
+            "title": "SMARTPHONE SETTINGS",
+            "words": [
+                "AIRPLANE MODE",
+                "DO NOT DISTURB",
+                "HOTSPOT",
+                "LOCATION SERVICES"
+            ]
+        },
+        {
+            "title": "DESSERT MENU DESCRIPTORS",
+            "words": [
+                "DECADENT",
+                "FRESH-BAKED",
+                "MOLTEN",
+                "À LA MODE"
+            ]
+        },
+        {
+            "title": "'80S SYNTH-POP BANDS",
+            "words": [
+                "DEPECHE MODE",
+                "ERASURE",
+                "NEW ORDER",
+                "PET SHOP BOYS"
+            ]
+        },
+        {
+            "title": "STARTING WITH BASEBALL CALLS",
+            "words": [
+                "BALL GOWN",
+                "OUTKAST",
+                "SAFE MODE",
+                "STRIKE A POSE"
+            ]
+        }
+    ],
+    "solved": false,
+    "groups_found": 0,
+    "mistakes": 0,
+    "guesses": [],
+    "solve_time": "0:00:07.920"
+}

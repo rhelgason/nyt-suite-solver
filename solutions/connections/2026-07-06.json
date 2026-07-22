@@ -1,0 +1,110 @@
+{
+    "puzzle_id": 1199,
+    "ds": "2026-07-06",
+    "words": [
+        "ATOM",
+        "BUMBLEBEE",
+        "TNT",
+        "THUNDERBOLT",
+        "VOLCANO",
+        "TINDERBOX",
+        "DNA",
+        "ROCKET SKATES",
+        "MATCHA",
+        "BOMBSHELL",
+        "EARTHQUAKE PILLS",
+        "REVELATION",
+        "SOLAR SYSTEM",
+        "GRIND RAIL",
+        "SHOCKER",
+        "IRON BIRD SEED"
+    ],
+    "categories": [
+        {
+            "title": "STUNNING NEWS",
+            "words": [
+                "BOMBSHELL",
+                "REVELATION",
+                "SHOCKER",
+                "THUNDERBOLT"
+            ]
+        },
+        {
+            "title": "SCIENCE FAIR MODEL SUBJECTS",
+            "words": [
+                "ATOM",
+                "DNA",
+                "SOLAR SYSTEM",
+                "VOLCANO"
+            ]
+        },
+        {
+            "title": "ACME PRODUCTS USED BY WILE E. COYOTE",
+            "words": [
+                "EARTHQUAKE PILLS",
+                "IRON BIRD SEED",
+                "ROCKET SKATES",
+                "TNT"
+            ]
+        },
+        {
+            "title": "STARTING WITH DATING APPS",
+            "words": [
+                "BUMBLEBEE",
+                "GRIND RAIL",
+                "MATCHA",
+                "TINDERBOX"
+            ]
+        }
+    ],
+    "solved": false,
+    "groups_found": 0,
+    "mistakes": 4,
+    "guesses": [
+        {
+            "guess": [
+                "BUMBLEBEE",
+                "EARTHQUAKE PILLS",
+                "IRON BIRD SEED",
+                "ROCKET SKATES"
+            ],
+            "result": "wrong",
+            "connection": "Items from Acme Corporation in Looney Tunes",
+            "one_away": true
+        },
+        {
+            "guess": [
+                "BUMBLEBEE",
+                "EARTHQUAKE PILLS",
+                "IRON BIRD SEED",
+                "TNT"
+            ],
+            "result": "wrong",
+            "connection": "Items from Acme or Looney Tunes cartoons",
+            "one_away": true
+        },
+        {
+            "guess": [
+                "BUMBLEBEE",
+                "EARTHQUAKE PILLS",
+                "IRON BIRD SEED",
+                "ROCKET SKATES"
+            ],
+            "result": "wrong",
+            "connection": "Fictional ACME products from Looney Tunes",
+            "one_away": true
+        },
+        {
+            "guess": [
+                "BUMBLEBEE",
+                "EARTHQUAKE PILLS",
+                "IRON BIRD SEED",
+                "SHOCKER"
+            ],
+            "result": "wrong",
+            "connection": "Items from Acme Corporation in Looney Tunes",
+            "one_away": false
+        }
+    ],
+    "solve_time": "0:00:12.293"
+}

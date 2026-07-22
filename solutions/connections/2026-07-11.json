@@ -1,0 +1,110 @@
+{
+    "puzzle_id": 1214,
+    "ds": "2026-07-11",
+    "words": [
+        "STILL",
+        "STILTS",
+        "SLINKY",
+        "AARDVARK",
+        "WOODY",
+        "GLASSY",
+        "CANNON",
+        "BOCCE",
+        "EBBING",
+        "BO PEEP",
+        "FLAT",
+        "UNICYCLE",
+        "CALM",
+        "JESSIE",
+        "TRAPEZE",
+        "TWIDDLE"
+    ],
+    "categories": [
+        {
+            "title": "CIRCUS EQUIPMENT",
+            "words": [
+                "CANNON",
+                "STILTS",
+                "TRAPEZE",
+                "UNICYCLE"
+            ]
+        },
+        {
+            "title": "UNDISTURBED, AS WATER",
+            "words": [
+                "CALM",
+                "FLAT",
+                "GLASSY",
+                "STILL"
+            ]
+        },
+        {
+            "title": "\"TOY STORY\" CHARACTERS",
+            "words": [
+                "BO PEEP",
+                "JESSIE",
+                "SLINKY",
+                "WOODY"
+            ]
+        },
+        {
+            "title": "DOUBLE LETTERS APPEARING IN THAT LETTER'S ALPHABETICAL POSITION",
+            "words": [
+                "AARDVARK",
+                "BOCCE",
+                "EBBING",
+                "TWIDDLE"
+            ]
+        }
+    ],
+    "solved": false,
+    "groups_found": 0,
+    "mistakes": 4,
+    "guesses": [
+        {
+            "guess": [
+                "SLINKY",
+                "STILTS",
+                "TRAPEZE",
+                "UNICYCLE"
+            ],
+            "result": "wrong",
+            "connection": "Things associated with a circus or acrobatics",
+            "one_away": true
+        },
+        {
+            "guess": [
+                "BO PEEP",
+                "SLINKY",
+                "STILTS",
+                "TRAPEZE"
+            ],
+            "result": "wrong",
+            "connection": "Things associated with a circus or performance",
+            "one_away": false
+        },
+        {
+            "guess": [
+                "SLINKY",
+                "STILTS",
+                "TRAPEZE",
+                "UNICYCLE"
+            ],
+            "result": "wrong",
+            "connection": "Circus or performance equipment",
+            "one_away": true
+        },
+        {
+            "guess": [
+                "BO PEEP",
+                "SLINKY",
+                "STILTS",
+                "TRAPEZE"
+            ],
+            "result": "wrong",
+            "connection": "Toys from the Toy Story franchise",
+            "one_away": false
+        }
+    ],
+    "solve_time": "0:00:25.489"
+}

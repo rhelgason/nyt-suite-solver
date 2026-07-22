@@ -1,0 +1,77 @@
+{
+    "puzzle_id": 1217,
+    "ds": "2026-07-15",
+    "words": [
+        "RACKET",
+        "FOOTBALL",
+        "WIGGLE",
+        "BAR",
+        "HEAD",
+        "BENCH",
+        "ELBOW",
+        "SHOE",
+        "EXTREME",
+        "BREATHING",
+        "MOTOR",
+        "COURT",
+        "CORSET",
+        "WATER",
+        "TRIBUNAL",
+        "BASEBALL GLOVE"
+    ],
+    "categories": [
+        {
+            "title": "TERMS FOR THE LEGAL SYSTEM",
+            "words": [
+                "BAR",
+                "BENCH",
+                "COURT",
+                "TRIBUNAL"
+            ]
+        },
+        {
+            "title": "THINGS WITH LACES",
+            "words": [
+                "BASEBALL GLOVE",
+                "CORSET",
+                "FOOTBALL",
+                "SHOE"
+            ]
+        },
+        {
+            "title": "KINDS OF SPORTS",
+            "words": [
+                "EXTREME",
+                "MOTOR",
+                "RACKET",
+                "WATER"
+            ]
+        },
+        {
+            "title": "WORDS BEFORE \"ROOM\" TO INDICATE EXTRA SPACE",
+            "words": [
+                "BREATHING",
+                "ELBOW",
+                "HEAD",
+                "WIGGLE"
+            ]
+        }
+    ],
+    "solved": false,
+    "groups_found": 0,
+    "mistakes": 1,
+    "guesses": [
+        {
+            "guess": [
+                "BAR",
+                "COURT",
+                "RACKET",
+                "TRIBUNAL"
+            ],
+            "result": "wrong",
+            "connection": "Legal or judicial terms",
+            "one_away": true
+        }
+    ],
+    "solve_time": "0:00:11.139"
+}

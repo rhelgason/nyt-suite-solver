@@ -1,0 +1,132 @@
+{
+    "puzzle_id": 1195,
+    "ds": "2026-06-26",
+    "words": [
+        "TANG",
+        "CHIP",
+        "BOARD",
+        "PINKY",
+        "DALE",
+        "REDO",
+        "SPLINTER",
+        "NUT",
+        "HOLLOW",
+        "TREE",
+        "GORGE",
+        "BRONZER",
+        "CRACKER",
+        "DELL",
+        "LOG",
+        "PRETZEL"
+    ],
+    "categories": [
+        {
+            "title": "CRUNCHY SNACK ITEM",
+            "words": [
+                "CHIP",
+                "CRACKER",
+                "NUT",
+                "PRETZEL"
+            ]
+        },
+        {
+            "title": "VARIOUS AMOUNTS OF WOOD",
+            "words": [
+                "BOARD",
+                "LOG",
+                "SPLINTER",
+                "TREE"
+            ]
+        },
+        {
+            "title": "AREAS OF LOW GROUND",
+            "words": [
+                "DALE",
+                "DELL",
+                "GORGE",
+                "HOLLOW"
+            ]
+        },
+        {
+            "title": "COLORS PLUS A LETTER",
+            "words": [
+                "BRONZER",
+                "PINKY",
+                "REDO",
+                "TANG"
+            ]
+        }
+    ],
+    "solved": true,
+    "groups_found": 4,
+    "mistakes": 2,
+    "guesses": [
+        {
+            "guess": [
+                "CHIP",
+                "CRACKER",
+                "NUT",
+                "PRETZEL"
+            ],
+            "result": "correct",
+            "group": "CRUNCHY SNACK ITEM",
+            "connection": "Snack foods"
+        },
+        {
+            "guess": [
+                "DALE",
+                "DELL",
+                "PINKY",
+                "TANG"
+            ],
+            "result": "wrong",
+            "connection": "Characters from the cartoon 'Chip 'n Dale: Rescue Rangers'",
+            "one_away": false
+        },
+        {
+            "guess": [
+                "DALE",
+                "DELL",
+                "GORGE",
+                "HOLLOW"
+            ],
+            "result": "correct",
+            "group": "AREAS OF LOW GROUND",
+            "connection": "Geographical features (valleys, depressions, or hollows)"
+        },
+        {
+            "guess": [
+                "BOARD",
+                "LOG",
+                "TANG",
+                "TREE"
+            ],
+            "result": "wrong",
+            "connection": "Things associated with wood",
+            "one_away": true
+        },
+        {
+            "guess": [
+                "BOARD",
+                "LOG",
+                "SPLINTER",
+                "TREE"
+            ],
+            "result": "correct",
+            "group": "VARIOUS AMOUNTS OF WOOD",
+            "connection": "Types of wood or things made from wood"
+        },
+        {
+            "guess": [
+                "BRONZER",
+                "PINKY",
+                "REDO",
+                "TANG"
+            ],
+            "result": "correct",
+            "group": "COLORS PLUS A LETTER",
+            "connection": ""
+        }
+    ],
+    "solve_time": "0:00:12.092"
+}

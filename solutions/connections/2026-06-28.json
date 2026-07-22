@@ -1,0 +1,99 @@
+{
+    "puzzle_id": 1200,
+    "ds": "2026-06-28",
+    "words": [
+        "PICK",
+        "CHESS",
+        "START",
+        "SELECT",
+        "CHOICE",
+        "GO",
+        "SLIDE",
+        "CORPORATION",
+        "BEGIN",
+        "PRIME",
+        "SURFER",
+        "STRAP",
+        "CAPO",
+        "DARTS",
+        "NOW",
+        "FINE"
+    ],
+    "categories": [
+        {
+            "title": "HIGH-QUALITY",
+            "words": [
+                "CHOICE",
+                "FINE",
+                "PRIME",
+                "SELECT"
+            ]
+        },
+        {
+            "title": "SIGNALS TO COMMENCE",
+            "words": [
+                "BEGIN",
+                "GO",
+                "NOW",
+                "START"
+            ]
+        },
+        {
+            "title": "ACCESSORIES FOR A GUITARIST",
+            "words": [
+                "CAPO",
+                "PICK",
+                "SLIDE",
+                "STRAP"
+            ]
+        },
+        {
+            "title": "THEY HAVE BOARDS",
+            "words": [
+                "CHESS",
+                "CORPORATION",
+                "DARTS",
+                "SURFER"
+            ]
+        }
+    ],
+    "solved": false,
+    "groups_found": 0,
+    "mistakes": 3,
+    "guesses": [
+        {
+            "guess": [
+                "CHOICE",
+                "FINE",
+                "PICK",
+                "SELECT"
+            ],
+            "result": "wrong",
+            "connection": "Words related to selection or choosing",
+            "one_away": true
+        },
+        {
+            "guess": [
+                "CHOICE",
+                "GO",
+                "PICK",
+                "SELECT"
+            ],
+            "result": "wrong",
+            "connection": "Words related to making a decision or selection",
+            "one_away": false
+        },
+        {
+            "guess": [
+                "CHOICE",
+                "GO",
+                "PICK",
+                "SELECT"
+            ],
+            "result": "wrong",
+            "connection": "Words related to making a decision or selection",
+            "one_away": false
+        }
+    ],
+    "solve_time": "0:00:18.318"
+}

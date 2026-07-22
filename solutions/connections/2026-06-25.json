@@ -1,0 +1,110 @@
+{
+    "puzzle_id": 1183,
+    "ds": "2026-06-25",
+    "words": [
+        "POLONIUM",
+        "CRANIUM",
+        "COMPACT",
+        "HOCKEY",
+        "CROQUETTE",
+        "TRACKPAD",
+        "LEAD",
+        "SQUASHED",
+        "MERCURY",
+        "DUCTILE",
+        "DENSE",
+        "MICROPHONE",
+        "MONITOR",
+        "FRANCIUM",
+        "PRINTER",
+        "COMPRESSED"
+    ],
+    "categories": [
+        {
+            "title": "COMPUTER PERIPHERALS",
+            "words": [
+                "MICROPHONE",
+                "MONITOR",
+                "PRINTER",
+                "TRACKPAD"
+            ]
+        },
+        {
+            "title": "TIGHTLY PACKED",
+            "words": [
+                "COMPACT",
+                "COMPRESSED",
+                "DENSE",
+                "SQUASHED"
+            ]
+        },
+        {
+            "title": "HAZARDOUS ELEMENTAL METALS",
+            "words": [
+                "FRANCIUM",
+                "LEAD",
+                "MERCURY",
+                "POLONIUM"
+            ]
+        },
+        {
+            "title": "STARTING WITH BIRD HOMOPHONES",
+            "words": [
+                "CRANIUM",
+                "CROQUETTE",
+                "DUCTILE",
+                "HOCKEY"
+            ]
+        }
+    ],
+    "solved": true,
+    "groups_found": 4,
+    "mistakes": 0,
+    "guesses": [
+        {
+            "guess": [
+                "FRANCIUM",
+                "LEAD",
+                "MERCURY",
+                "POLONIUM"
+            ],
+            "result": "correct",
+            "group": "HAZARDOUS ELEMENTAL METALS",
+            "connection": "Chemical elements"
+        },
+        {
+            "guess": [
+                "MICROPHONE",
+                "MONITOR",
+                "PRINTER",
+                "TRACKPAD"
+            ],
+            "result": "correct",
+            "group": "COMPUTER PERIPHERALS",
+            "connection": "Computer peripherals"
+        },
+        {
+            "guess": [
+                "COMPACT",
+                "COMPRESSED",
+                "DENSE",
+                "SQUASHED"
+            ],
+            "result": "correct",
+            "group": "TIGHTLY PACKED",
+            "connection": "Words related to being tightly packed or condensed"
+        },
+        {
+            "guess": [
+                "CRANIUM",
+                "CROQUETTE",
+                "DUCTILE",
+                "HOCKEY"
+            ],
+            "result": "correct",
+            "group": "STARTING WITH BIRD HOMOPHONES",
+            "connection": ""
+        }
+    ],
+    "solve_time": "0:00:10.498"
+}

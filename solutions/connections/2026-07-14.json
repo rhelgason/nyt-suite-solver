@@ -1,0 +1,65 @@
+{
+    "puzzle_id": 1218,
+    "ds": "2026-07-14",
+    "words": [
+        "U-TURN",
+        "PICNIC",
+        "CUT",
+        "SHUFFLE",
+        "LAUNDRY",
+        "RECYCLING",
+        "DEAL",
+        "COPY",
+        "BARGAIN",
+        "GROCERY",
+        "UNDERSTANDING",
+        "THIS SIDE UP",
+        "PASTE",
+        "AGREEMENT",
+        "EASTER",
+        "DELETE"
+    ],
+    "categories": [
+        {
+            "title": "CONTRACT",
+            "words": [
+                "AGREEMENT",
+                "BARGAIN",
+                "DEAL",
+                "UNDERSTANDING"
+            ]
+        },
+        {
+            "title": "EDIT MENU OPTIONS",
+            "words": [
+                "COPY",
+                "CUT",
+                "DELETE",
+                "PASTE"
+            ]
+        },
+        {
+            "title": "KINDS OF BASKETS",
+            "words": [
+                "EASTER",
+                "GROCERY",
+                "LAUNDRY",
+                "PICNIC"
+            ]
+        },
+        {
+            "title": "SYMBOLIZED WITH ARROWS",
+            "words": [
+                "RECYCLING",
+                "SHUFFLE",
+                "THIS SIDE UP",
+                "U-TURN"
+            ]
+        }
+    ],
+    "solved": false,
+    "groups_found": 0,
+    "mistakes": 0,
+    "guesses": [],
+    "solve_time": "0:00:07.968"
+}

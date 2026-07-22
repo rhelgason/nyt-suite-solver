@@ -1,0 +1,110 @@
+{
+    "puzzle_id": 1181,
+    "ds": "2026-06-22",
+    "words": [
+        "STRESSED",
+        "BOOMER",
+        "POWDER",
+        "HEAD",
+        "ALPHA",
+        "SOFT",
+        "X",
+        "LEAD",
+        "TIMES",
+        "PRIMARY",
+        "SILENT",
+        "●",
+        "SHORT",
+        "POPSICLE",
+        "BY",
+        "BANGKOK"
+    ],
+    "categories": [
+        {
+            "title": "DOMINANT",
+            "words": [
+                "ALPHA",
+                "HEAD",
+                "LEAD",
+                "PRIMARY"
+            ]
+        },
+        {
+            "title": "MULTIPLICATION INDICATORS",
+            "words": [
+                "BY",
+                "TIMES",
+                "X",
+                "●"
+            ]
+        },
+        {
+            "title": "PRONUNCIATION DESCRIPTORS",
+            "words": [
+                "SHORT",
+                "SILENT",
+                "SOFT",
+                "STRESSED"
+            ]
+        },
+        {
+            "title": "STARTING WITH EXPLOSIVE ONOMATOPOEIA",
+            "words": [
+                "BANGKOK",
+                "BOOMER",
+                "POPSICLE",
+                "POWDER"
+            ]
+        }
+    ],
+    "solved": false,
+    "groups_found": 0,
+    "mistakes": 4,
+    "guesses": [
+        {
+            "guess": [
+                "BOOMER",
+                "POPSICLE",
+                "SILENT",
+                "STRESSED"
+            ],
+            "result": "wrong",
+            "connection": "Words that are palindromes or meaningful when reversed (e.g., STRESSED reversed is DESSERTS, SILENT reversed is LISTEN)",
+            "one_away": false
+        },
+        {
+            "guess": [
+                "BY",
+                "SILENT",
+                "STRESSED",
+                "TIMES"
+            ],
+            "result": "wrong",
+            "connection": "Words that can form palindromes or reverse into other meaningful words (e.g., STRESSED reversed is DESSERTS, SILENT reversed is LISTEN)",
+            "one_away": false
+        },
+        {
+            "guess": [
+                "SILENT",
+                "STRESSED",
+                "TIMES",
+                "●"
+            ],
+            "result": "wrong",
+            "connection": "Words that are palindromes or reverse to form other words (e.g., STRESSED reversed is DESSERT, SILENT reversed is LISTEN)",
+            "one_away": false
+        },
+        {
+            "guess": [
+                "SILENT",
+                "STRESSED",
+                "TIMES",
+                "●"
+            ],
+            "result": "wrong",
+            "connection": "Words that are palindromes or reverse to form other words (e.g., STRESSED reversed is DESSERT, SILENT reversed is LISTEN, TIMES reversed is SEMIT, ● is a visual palindrome)",
+            "one_away": false
+        }
+    ],
+    "solve_time": "0:00:15.724"
+}

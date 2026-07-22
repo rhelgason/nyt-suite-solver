@@ -1,0 +1,65 @@
+{
+    "puzzle_id": 1209,
+    "ds": "2026-07-03",
+    "words": [
+        "HOT DRINK",
+        "RUNAROUND",
+        "FELICITY",
+        "SHIRT",
+        "WARM FUZZIES",
+        "GOSSIP",
+        "COOL BEANS",
+        "DIRTY LOOK",
+        "COLD SHOULDER",
+        "HAPPINESS",
+        "RIGHT ON",
+        "HARD TIME",
+        "FAR OUT",
+        "GOLF ACCESSORY",
+        "BLISS",
+        "GROOVY"
+    ],
+    "categories": [
+        {
+            "title": "POSITIVE FEELINGS",
+            "words": [
+                "BLISS",
+                "FELICITY",
+                "HAPPINESS",
+                "WARM FUZZIES"
+            ]
+        },
+        {
+            "title": "RETRO EXPRESSIONS OF APPROVAL",
+            "words": [
+                "COOL BEANS",
+                "FAR OUT",
+                "GROOVY",
+                "RIGHT ON"
+            ]
+        },
+        {
+            "title": "BAD THINGS TO GIVE SOMEONE",
+            "words": [
+                "COLD SHOULDER",
+                "DIRTY LOOK",
+                "HARD TIME",
+                "RUNAROUND"
+            ]
+        },
+        {
+            "title": "WHAT THINGS PRONOUNCED \"T\" MIGHT REFER TO",
+            "words": [
+                "GOLF ACCESSORY",
+                "GOSSIP",
+                "HOT DRINK",
+                "SHIRT"
+            ]
+        }
+    ],
+    "solved": false,
+    "groups_found": 0,
+    "mistakes": 0,
+    "guesses": [],
+    "solve_time": "0:00:07.970"
+}

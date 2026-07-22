@@ -1,0 +1,110 @@
+{
+    "puzzle_id": 1194,
+    "ds": "2026-06-23",
+    "words": [
+        "MONEY",
+        "YANKEES",
+        "HOTEL",
+        "FOXTROT",
+        "MODERN",
+        "FIREPLACE",
+        "POPULAR",
+        "DEED",
+        "EMPEROR",
+        "FEATURED",
+        "TOKEN",
+        "TAP",
+        "RECENT",
+        "SWING",
+        "EARTH",
+        "TRENDING"
+    ],
+    "categories": [
+        {
+            "title": "DANCE STYLES",
+            "words": [
+                "FOXTROT",
+                "MODERN",
+                "SWING",
+                "TAP"
+            ]
+        },
+        {
+            "title": "IN A MONOPOLY BOX",
+            "words": [
+                "DEED",
+                "HOTEL",
+                "MONEY",
+                "TOKEN"
+            ]
+        },
+        {
+            "title": "CONTENT SORTING OPTIONS ONLINE",
+            "words": [
+                "FEATURED",
+                "POPULAR",
+                "RECENT",
+                "TRENDING"
+            ]
+        },
+        {
+            "title": "THINGS WITH MANTLES/MANTELS",
+            "words": [
+                "EARTH",
+                "EMPEROR",
+                "FIREPLACE",
+                "YANKEES"
+            ]
+        }
+    ],
+    "solved": false,
+    "groups_found": 0,
+    "mistakes": 4,
+    "guesses": [
+        {
+            "guess": [
+                "FOXTROT",
+                "HOTEL",
+                "SWING",
+                "YANKEES"
+            ],
+            "result": "wrong",
+            "connection": "NATO phonetic alphabet words",
+            "one_away": false
+        },
+        {
+            "guess": [
+                "FOXTROT",
+                "HOTEL",
+                "SWING",
+                "YANKEES"
+            ],
+            "result": "wrong",
+            "connection": "NATO phonetic alphabet words",
+            "one_away": false
+        },
+        {
+            "guess": [
+                "DEED",
+                "MONEY",
+                "TAP",
+                "TOKEN"
+            ],
+            "result": "wrong",
+            "connection": "Things exchanged or used in transactions",
+            "one_away": true
+        },
+        {
+            "guess": [
+                "DEED",
+                "FEATURED",
+                "MONEY",
+                "TOKEN"
+            ],
+            "result": "wrong",
+            "connection": "Things associated with transactions or value",
+            "one_away": true
+        }
+    ],
+    "solve_time": "0:00:12.468"
+}

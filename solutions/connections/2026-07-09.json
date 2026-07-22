@@ -1,0 +1,99 @@
+{
+    "puzzle_id": 1206,
+    "ds": "2026-07-09",
+    "words": [
+        "THROW",
+        "VIRGIN",
+        "SPIN",
+        "PRAYER",
+        "NA",
+        "ROLLING STONE",
+        "PERSIAN",
+        "FIREBIRD",
+        "G6",
+        "SHAG",
+        "ZERO-PROOF",
+        "GRAND PRIX",
+        "BILLBOARD",
+        "TRANS AM",
+        "PITCHFORK",
+        "SPIRIT-FREE"
+    ],
+    "categories": [
+        {
+            "title": "NON-ALCOHOLIC DESIGNATORS",
+            "words": [
+                "NA",
+                "SPIRIT-FREE",
+                "VIRGIN",
+                "ZERO-PROOF"
+            ]
+        },
+        {
+            "title": "MUSIC PUBLICATIONS",
+            "words": [
+                "BILLBOARD",
+                "PITCHFORK",
+                "ROLLING STONE",
+                "SPIN"
+            ]
+        },
+        {
+            "title": "KINDS OF RUGS",
+            "words": [
+                "PERSIAN",
+                "PRAYER",
+                "SHAG",
+                "THROW"
+            ]
+        },
+        {
+            "title": "PONTIAC MODELS",
+            "words": [
+                "FIREBIRD",
+                "G6",
+                "GRAND PRIX",
+                "TRANS AM"
+            ]
+        }
+    ],
+    "solved": false,
+    "groups_found": 2,
+    "mistakes": 1,
+    "guesses": [
+        {
+            "guess": [
+                "NA",
+                "SPIRIT-FREE",
+                "VIRGIN",
+                "ZERO-PROOF"
+            ],
+            "result": "correct",
+            "group": "NON-ALCOHOLIC DESIGNATORS",
+            "connection": "Non-alcoholic terms"
+        },
+        {
+            "guess": [
+                "BILLBOARD",
+                "PITCHFORK",
+                "PRAYER",
+                "ROLLING STONE"
+            ],
+            "result": "wrong",
+            "connection": "Music-related terms or entities",
+            "one_away": true
+        },
+        {
+            "guess": [
+                "BILLBOARD",
+                "PITCHFORK",
+                "ROLLING STONE",
+                "SPIN"
+            ],
+            "result": "correct",
+            "group": "MUSIC PUBLICATIONS",
+            "connection": "Music publications"
+        }
+    ],
+    "solve_time": "0:00:14.925"
+}

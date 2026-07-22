@@ -1,0 +1,121 @@
+{
+    "puzzle_id": 1198,
+    "ds": "2026-06-27",
+    "words": [
+        "CATWALK",
+        "FOXTROT",
+        "CREDIT CARD",
+        "COLLECTION",
+        "BOARDWALK",
+        "DESIGNER",
+        "ENVELOPE",
+        "CROSSWALK",
+        "FIREWALK",
+        "INCOME TAX",
+        "BILLIARD BALL",
+        "MODEL",
+        "SHORT LINE",
+        "DECANTER",
+        "WATER WORKS",
+        "BARBER POLE"
+    ],
+    "categories": [
+        {
+            "title": "MONOPOLY SQUARES",
+            "words": [
+                "BOARDWALK",
+                "INCOME TAX",
+                "SHORT LINE",
+                "WATER WORKS"
+            ]
+        },
+        {
+            "title": "COMPONENTS OF A FASHION SHOW",
+            "words": [
+                "CATWALK",
+                "COLLECTION",
+                "DESIGNER",
+                "MODEL"
+            ]
+        },
+        {
+            "title": "COMMONLY STRIPED THINGS",
+            "words": [
+                "BARBER POLE",
+                "BILLIARD BALL",
+                "CREDIT CARD",
+                "CROSSWALK"
+            ]
+        },
+        {
+            "title": "ENDING IN HORSE GAITS",
+            "words": [
+                "DECANTER",
+                "ENVELOPE",
+                "FIREWALK",
+                "FOXTROT"
+            ]
+        }
+    ],
+    "solved": false,
+    "groups_found": 1,
+    "mistakes": 4,
+    "guesses": [
+        {
+            "guess": [
+                "BOARDWALK",
+                "CATWALK",
+                "CROSSWALK",
+                "FIREWALK"
+            ],
+            "result": "wrong",
+            "connection": "Types of walk",
+            "one_away": false
+        },
+        {
+            "guess": [
+                "BOARDWALK",
+                "INCOME TAX",
+                "SHORT LINE",
+                "WATER WORKS"
+            ],
+            "result": "correct",
+            "group": "MONOPOLY SQUARES",
+            "connection": "Monopoly properties"
+        },
+        {
+            "guess": [
+                "CATWALK",
+                "CROSSWALK",
+                "FIREWALK",
+                "FOXTROT"
+            ],
+            "result": "wrong",
+            "connection": "Words with 'walk' or 'trot' in them",
+            "one_away": false
+        },
+        {
+            "guess": [
+                "CATWALK",
+                "CROSSWALK",
+                "FIREWALK",
+                "MODEL"
+            ],
+            "result": "wrong",
+            "connection": "Things associated with walking or showcasing (e.g., fashion or paths)",
+            "one_away": false
+        },
+        {
+            "guess": [
+                "CATWALK",
+                "CROSSWALK",
+                "FIREWALK",
+                "FOXTROT"
+            ],
+            "result": "wrong",
+            "connection": "Words containing 'walk' or 'trot'",
+            "one_away": false
+        }
+    ],
+    "solve_time": "0:00:13.207"
+}
