@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1724,
+    "ds": "2023-12-20",
+    "mode": "easy",
+    "solution": "small",
+    "guesses": [
+        "tares",
+        "milch",
+        "plasm",
+        "small"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:01.499"
+}

@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1263,
+    "ds": "2023-10-24",
+    "mode": "hard",
+    "solution": "cause",
+    "guesses": [
+        "tares",
+        "lapse",
+        "hanse",
+        "cause"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.043"
+}

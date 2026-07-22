@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 2262,
+    "ds": "2023-09-14",
+    "mode": "hard",
+    "solution": "rayon",
+    "guesses": [
+        "tares",
+        "ranid",
+        "racon",
+        "rayon"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.052"
+}

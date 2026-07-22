@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1637,
+    "ds": "2024-02-04",
+    "mode": "hard",
+    "solution": "verge",
+    "guesses": [
+        "tares",
+        "nerdy",
+        "merge",
+        "verge"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.051"
+}

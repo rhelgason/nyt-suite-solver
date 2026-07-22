@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 618,
+    "ds": "2023-04-24",
+    "mode": "easy",
+    "solution": "ditto",
+    "guesses": [
+        "tares",
+        "colin",
+        "bipod",
+        "ditto"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:02.526"
+}

@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 631,
+    "ds": "2023-07-26",
+    "mode": "easy",
+    "solution": "heart",
+    "guesses": [
+        "tares",
+        "acari",
+        "heart"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:00.306"
+}

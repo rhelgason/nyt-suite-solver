@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 2245,
+    "ds": "2023-06-25",
+    "mode": "easy",
+    "solution": "rodeo",
+    "guesses": [
+        "tares",
+        "poind",
+        "dower",
+        "rodeo"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:03.061"
+}

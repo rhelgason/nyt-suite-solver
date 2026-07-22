@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 774,
+    "ds": "2023-11-19",
+    "mode": "easy",
+    "solution": "queue",
+    "guesses": [
+        "tares",
+        "colin",
+        "dumpy",
+        "fugue",
+        "queue"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:05.578"
+}

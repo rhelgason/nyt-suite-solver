@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 1972,
+    "ds": "2023-11-05",
+    "mode": "hard",
+    "solution": "flare",
+    "guesses": [
+        "tares",
+        "beard",
+        "flare"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:00.063"
+}

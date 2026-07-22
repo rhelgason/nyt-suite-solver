@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 816,
+    "ds": "2024-01-16",
+    "mode": "easy",
+    "solution": "blond",
+    "guesses": [
+        "tares",
+        "colin",
+        "klong",
+        "blond"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:07.702"
+}

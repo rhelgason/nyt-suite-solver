@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1338,
+    "ds": "2023-09-13",
+    "mode": "hard",
+    "solution": "clear",
+    "guesses": [
+        "tares",
+        "beard",
+        "areca",
+        "clear"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.069"
+}

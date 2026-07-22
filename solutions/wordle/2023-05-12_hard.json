@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1858,
+    "ds": "2023-05-12",
+    "mode": "hard",
+    "solution": "snack",
+    "guesses": [
+        "tares",
+        "spail",
+        "shank",
+        "snack"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.074"
+}

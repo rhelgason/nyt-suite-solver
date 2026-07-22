@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 625,
+    "ds": "2023-11-08",
+    "mode": "easy",
+    "solution": "ninja",
+    "guesses": [
+        "tares",
+        "colin",
+        "agape",
+        "ninja"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:04.962"
+}

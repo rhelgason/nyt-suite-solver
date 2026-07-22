@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 1934,
+    "ds": "2024-01-29",
+    "mode": "hard",
+    "solution": "leggy",
+    "guesses": [
+        "tares",
+        "oldie",
+        "knell",
+        "belch",
+        "leggy"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:00.281"
+}

@@ -1,0 +1,13 @@
+{
+    "puzzle_id": 1117,
+    "ds": "2023-06-16",
+    "mode": "easy",
+    "solution": "strap",
+    "guesses": [
+        "tares",
+        "strap"
+    ],
+    "num_guesses": 2,
+    "solved": true,
+    "solve_time": "0:00:00.161"
+}

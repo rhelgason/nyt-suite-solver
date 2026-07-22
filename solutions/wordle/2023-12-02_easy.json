@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 543,
+    "ds": "2023-12-02",
+    "mode": "easy",
+    "solution": "genre",
+    "guesses": [
+        "tares",
+        "deice",
+        "reeve",
+        "genre"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:02.033"
+}

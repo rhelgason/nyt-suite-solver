@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1885,
+    "ds": "2023-09-21",
+    "mode": "easy",
+    "solution": "stone",
+    "guesses": [
+        "tares",
+        "point",
+        "steno",
+        "stone"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.846"
+}

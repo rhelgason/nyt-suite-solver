@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 835,
+    "ds": "2023-09-29",
+    "mode": "hard",
+    "solution": "azure",
+    "guesses": [
+        "tares",
+        "beard",
+        "afire",
+        "azure"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.072"
+}

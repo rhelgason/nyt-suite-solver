@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1389,
+    "ds": "2023-05-05",
+    "mode": "easy",
+    "solution": "below",
+    "guesses": [
+        "tares",
+        "colin",
+        "hello",
+        "below"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:05.150"
+}

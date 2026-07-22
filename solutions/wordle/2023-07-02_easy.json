@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 2220,
+    "ds": "2023-07-02",
+    "mode": "easy",
+    "solution": "mossy",
+    "guesses": [
+        "tares",
+        "noily",
+        "sumps",
+        "mossy"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:02.820"
+}

@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 633,
+    "ds": "2023-06-29",
+    "mode": "easy",
+    "solution": "diner",
+    "guesses": [
+        "tares",
+        "poind",
+        "diner"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:02.964"
+}

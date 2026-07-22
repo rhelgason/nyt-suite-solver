@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1536,
+    "ds": "2023-06-12",
+    "mode": "easy",
+    "solution": "wrong",
+    "guesses": [
+        "tares",
+        "coign",
+        "prong",
+        "wrong"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:02.405"
+}

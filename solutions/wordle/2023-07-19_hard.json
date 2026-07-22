@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 1948,
+    "ds": "2023-07-19",
+    "mode": "hard",
+    "solution": "tonic",
+    "guesses": [
+        "tares",
+        "thing",
+        "tonic"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:00.050"
+}

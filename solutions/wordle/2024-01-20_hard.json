@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 1023,
+    "ds": "2024-01-20",
+    "mode": "hard",
+    "solution": "large",
+    "guesses": [
+        "tares",
+        "carle",
+        "large"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:00.049"
+}

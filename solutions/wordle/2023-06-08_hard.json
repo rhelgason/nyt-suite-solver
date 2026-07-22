@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1459,
+    "ds": "2023-06-08",
+    "mode": "hard",
+    "solution": "crumb",
+    "guesses": [
+        "tares",
+        "prion",
+        "brugh",
+        "crumb"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.135"
+}

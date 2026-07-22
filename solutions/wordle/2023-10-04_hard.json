@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1569,
+    "ds": "2023-10-04",
+    "mode": "hard",
+    "solution": "spurt",
+    "guesses": [
+        "tares",
+        "sport",
+        "spirt",
+        "spurt"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.052"
+}

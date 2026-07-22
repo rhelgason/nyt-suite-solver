@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1210,
+    "ds": "2023-09-26",
+    "mode": "easy",
+    "solution": "loyal",
+    "guesses": [
+        "tares",
+        "colin",
+        "dumka",
+        "loyal"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:05.022"
+}

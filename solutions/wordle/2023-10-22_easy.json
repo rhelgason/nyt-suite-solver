@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 580,
+    "ds": "2023-10-22",
+    "mode": "easy",
+    "solution": "given",
+    "guesses": [
+        "tares",
+        "indol",
+        "vampy",
+        "given"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:03.883"
+}

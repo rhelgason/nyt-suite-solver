@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 1190,
+    "ds": "2023-07-25",
+    "mode": "hard",
+    "solution": "wheel",
+    "guesses": [
+        "tares",
+        "loden",
+        "kelep",
+        "excel",
+        "wheel"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:00.176"
+}

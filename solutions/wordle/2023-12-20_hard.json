@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 1724,
+    "ds": "2023-12-20",
+    "mode": "hard",
+    "solution": "small",
+    "guesses": [
+        "tares",
+        "spail",
+        "scall",
+        "shall",
+        "small"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:00.067"
+}

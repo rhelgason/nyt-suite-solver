@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1297,
+    "ds": "2023-04-29",
+    "mode": "hard",
+    "solution": "cedar",
+    "guesses": [
+        "tares",
+        "beard",
+        "denar",
+        "cedar"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.064"
+}

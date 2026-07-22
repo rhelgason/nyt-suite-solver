@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 786,
+    "ds": "2023-09-12",
+    "mode": "easy",
+    "solution": "whisk",
+    "guesses": [
+        "tares",
+        "noily",
+        "spick",
+        "whisk"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:02.786"
+}

@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 1896,
+    "ds": "2024-01-22",
+    "mode": "hard",
+    "solution": "tweak",
+    "guesses": [
+        "tares",
+        "telae",
+        "tweak"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:00.058"
+}

@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1975,
+    "ds": "2024-01-31",
+    "mode": "hard",
+    "solution": "bulky",
+    "guesses": [
+        "tares",
+        "colin",
+        "gully",
+        "bulky"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.582"
+}

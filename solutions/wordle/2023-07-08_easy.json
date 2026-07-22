@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 1931,
+    "ds": "2023-07-08",
+    "mode": "easy",
+    "solution": "cower",
+    "guesses": [
+        "tares",
+        "poind",
+        "womby",
+        "cavil",
+        "cower"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:03.381"
+}

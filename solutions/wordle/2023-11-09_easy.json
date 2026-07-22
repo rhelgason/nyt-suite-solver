@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 2072,
+    "ds": "2023-11-09",
+    "mode": "easy",
+    "solution": "glaze",
+    "guesses": [
+        "tares",
+        "aland",
+        "gamic",
+        "glaze"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:02.653"
+}

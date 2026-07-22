@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 855,
+    "ds": "2023-11-26",
+    "mode": "hard",
+    "solution": "solid",
+    "guesses": [
+        "tares",
+        "spoil",
+        "solid"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:00.123"
+}

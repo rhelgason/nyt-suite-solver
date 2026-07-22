@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 617,
+    "ds": "2023-12-24",
+    "mode": "easy",
+    "solution": "grace",
+    "guesses": [
+        "tares",
+        "craal",
+        "brace",
+        "grace"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:01.393"
+}

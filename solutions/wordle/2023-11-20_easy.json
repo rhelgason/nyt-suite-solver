@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 800,
+    "ds": "2023-11-20",
+    "mode": "easy",
+    "solution": "candy",
+    "guesses": [
+        "tares",
+        "lingy",
+        "ditch",
+        "candy"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:03.322"
+}

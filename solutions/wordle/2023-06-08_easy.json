@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1459,
+    "ds": "2023-06-08",
+    "mode": "easy",
+    "solution": "crumb",
+    "guesses": [
+        "tares",
+        "coign",
+        "belch",
+        "crumb"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:02.483"
+}

@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 532,
+    "ds": "2023-10-26",
+    "mode": "hard",
+    "solution": "pique",
+    "guesses": [
+        "tares",
+        "oldie",
+        "mince",
+        "fique",
+        "pique"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:00.281"
+}

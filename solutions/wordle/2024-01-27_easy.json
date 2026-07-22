@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1565,
+    "ds": "2024-01-27",
+    "mode": "easy",
+    "solution": "snake",
+    "guesses": [
+        "tares",
+        "plash",
+        "young",
+        "snake"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.916"
+}

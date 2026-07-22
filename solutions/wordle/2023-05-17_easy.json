@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 1636,
+    "ds": "2023-05-17",
+    "mode": "easy",
+    "solution": "plank",
+    "guesses": [
+        "tares",
+        "colin",
+        "banda",
+        "flank",
+        "plank"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:04.962"
+}

@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 1128,
+    "ds": "2023-05-13",
+    "mode": "easy",
+    "solution": "acrid",
+    "guesses": [
+        "tares",
+        "linum",
+        "acrid"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:00.742"
+}

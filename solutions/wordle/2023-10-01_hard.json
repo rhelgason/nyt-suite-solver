@@ -1,0 +1,13 @@
+{
+    "puzzle_id": 1963,
+    "ds": "2023-10-01",
+    "mode": "hard",
+    "solution": "beret",
+    "guesses": [
+        "tares",
+        "beret"
+    ],
+    "num_guesses": 2,
+    "solved": true,
+    "solve_time": "0:00:00.052"
+}

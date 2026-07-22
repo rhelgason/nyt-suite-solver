@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1599,
+    "ds": "2023-10-14",
+    "mode": "easy",
+    "solution": "agent",
+    "guesses": [
+        "tares",
+        "plane",
+        "agama",
+        "agent"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.809"
+}

@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 1339,
+    "ds": "2023-10-11",
+    "mode": "easy",
+    "solution": "skunk",
+    "guesses": [
+        "tares",
+        "noily",
+        "skunk"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:02.751"
+}

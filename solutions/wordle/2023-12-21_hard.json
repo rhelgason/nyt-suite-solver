@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 648,
+    "ds": "2023-12-21",
+    "mode": "hard",
+    "solution": "built",
+    "guesses": [
+        "tares",
+        "litho",
+        "glint",
+        "built"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.115"
+}

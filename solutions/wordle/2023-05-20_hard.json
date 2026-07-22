@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 2038,
+    "ds": "2023-05-20",
+    "mode": "hard",
+    "solution": "flask",
+    "guesses": [
+        "tares",
+        "spail",
+        "clash",
+        "flask"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.080"
+}

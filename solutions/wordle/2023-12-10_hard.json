@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 2088,
+    "ds": "2023-12-10",
+    "mode": "hard",
+    "solution": "chain",
+    "guesses": [
+        "tares",
+        "aloin",
+        "chain"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:00.269"
+}

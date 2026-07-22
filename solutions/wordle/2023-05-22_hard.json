@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1450,
+    "ds": "2023-05-22",
+    "mode": "hard",
+    "solution": "igloo",
+    "guesses": [
+        "tares",
+        "colin",
+        "fillo",
+        "igloo"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.570"
+}

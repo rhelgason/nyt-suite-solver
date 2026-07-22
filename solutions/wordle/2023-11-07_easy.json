@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 1630,
+    "ds": "2023-11-07",
+    "mode": "easy",
+    "solution": "limit",
+    "guesses": [
+        "tares",
+        "colin",
+        "limit"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:02.449"
+}

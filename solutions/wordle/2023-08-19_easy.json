@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 2154,
+    "ds": "2023-08-19",
+    "mode": "easy",
+    "solution": "magma",
+    "guesses": [
+        "tares",
+        "lingy",
+        "begot",
+        "magma"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:03.266"
+}

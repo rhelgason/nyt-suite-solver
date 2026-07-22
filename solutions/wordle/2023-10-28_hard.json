@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 767,
+    "ds": "2023-10-28",
+    "mode": "hard",
+    "solution": "mason",
+    "guesses": [
+        "tares",
+        "salsa",
+        "mashy",
+        "mason"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.053"
+}

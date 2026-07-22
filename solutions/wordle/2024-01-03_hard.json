@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 781,
+    "ds": "2024-01-03",
+    "mode": "hard",
+    "solution": "twirl",
+    "guesses": [
+        "tares",
+        "triol",
+        "thirl",
+        "twirl"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.046"
+}

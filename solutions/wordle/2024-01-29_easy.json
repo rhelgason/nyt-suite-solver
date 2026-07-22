@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 1934,
+    "ds": "2024-01-29",
+    "mode": "easy",
+    "solution": "leggy",
+    "guesses": [
+        "tares",
+        "colin",
+        "pudgy",
+        "elegy",
+        "leggy"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:05.453"
+}

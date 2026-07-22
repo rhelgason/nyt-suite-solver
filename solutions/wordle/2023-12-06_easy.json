@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 2156,
+    "ds": "2023-12-06",
+    "mode": "easy",
+    "solution": "woman",
+    "guesses": [
+        "tares",
+        "colin",
+        "begum",
+        "woman"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:04.923"
+}

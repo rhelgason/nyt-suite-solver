@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 556,
+    "ds": "2023-12-18",
+    "mode": "easy",
+    "solution": "funny",
+    "guesses": [
+        "tares",
+        "colin",
+        "gunky",
+        "abaft",
+        "funny"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:07.814"
+}

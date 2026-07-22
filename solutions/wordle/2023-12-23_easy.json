@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1291,
+    "ds": "2023-12-23",
+    "mode": "easy",
+    "solution": "slope",
+    "guesses": [
+        "tares",
+        "seine",
+        "clomp",
+        "slope"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:01.950"
+}

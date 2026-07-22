@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1250,
+    "ds": "2024-02-03",
+    "mode": "easy",
+    "solution": "micro",
+    "guesses": [
+        "tares",
+        "coign",
+        "ichor",
+        "micro"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:02.390"
+}

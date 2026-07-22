@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 2246,
+    "ds": "2023-06-11",
+    "mode": "hard",
+    "solution": "guard",
+    "guesses": [
+        "tares",
+        "drain",
+        "hoard",
+        "award",
+        "guard"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:00.097"
+}

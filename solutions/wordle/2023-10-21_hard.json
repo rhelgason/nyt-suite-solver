@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 1535,
+    "ds": "2023-10-21",
+    "mode": "hard",
+    "solution": "smirk",
+    "guesses": [
+        "tares",
+        "shirk",
+        "smirk"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:00.045"
+}

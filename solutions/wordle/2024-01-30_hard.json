@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1849,
+    "ds": "2024-01-30",
+    "mode": "hard",
+    "solution": "expel",
+    "guesses": [
+        "tares",
+        "loden",
+        "kelep",
+        "expel"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.174"
+}

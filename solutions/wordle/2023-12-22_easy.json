@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1092,
+    "ds": "2023-12-22",
+    "mode": "easy",
+    "solution": "touch",
+    "guesses": [
+        "tares",
+        "yogin",
+        "tooth",
+        "touch"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.749"
+}

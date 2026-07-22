@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 642,
+    "ds": "2023-12-25",
+    "mode": "easy",
+    "solution": "evoke",
+    "guesses": [
+        "tares",
+        "colin",
+        "debye",
+        "evoke"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:05.403"
+}

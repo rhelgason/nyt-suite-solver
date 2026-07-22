@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1704,
+    "ds": "2023-06-21",
+    "mode": "easy",
+    "solution": "crane",
+    "guesses": [
+        "tares",
+        "craal",
+        "kanzu",
+        "crane"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:01.423"
+}

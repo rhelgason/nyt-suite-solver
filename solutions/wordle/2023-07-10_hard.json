@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 515,
+    "ds": "2023-07-10",
+    "mode": "hard",
+    "solution": "folly",
+    "guesses": [
+        "tares",
+        "colin",
+        "dolly",
+        "folly"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.578"
+}

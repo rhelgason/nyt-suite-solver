@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 1657,
+    "ds": "2023-05-23",
+    "mode": "easy",
+    "solution": "clerk",
+    "guesses": [
+        "tares",
+        "deice",
+        "clerk"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:01.936"
+}

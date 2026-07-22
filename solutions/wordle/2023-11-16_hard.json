@@ -1,0 +1,13 @@
+{
+    "puzzle_id": 2003,
+    "ds": "2023-11-16",
+    "mode": "hard",
+    "solution": "trust",
+    "guesses": [
+        "tares",
+        "trust"
+    ],
+    "num_guesses": 2,
+    "solved": true,
+    "solve_time": "0:00:00.065"
+}

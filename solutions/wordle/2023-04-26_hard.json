@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 2081,
+    "ds": "2023-04-26",
+    "mode": "hard",
+    "solution": "metro",
+    "guesses": [
+        "tares",
+        "retie",
+        "fetor",
+        "metro"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.045"
+}

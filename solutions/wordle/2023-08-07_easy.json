@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1713,
+    "ds": "2023-08-07",
+    "mode": "easy",
+    "solution": "brook",
+    "guesses": [
+        "tares",
+        "coign",
+        "blood",
+        "brook"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:02.729"
+}

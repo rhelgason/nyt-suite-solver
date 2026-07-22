@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 2246,
+    "ds": "2023-06-11",
+    "mode": "easy",
+    "solution": "guard",
+    "guesses": [
+        "tares",
+        "blond",
+        "acari",
+        "guard"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:02.247"
+}

@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 1858,
+    "ds": "2023-05-12",
+    "mode": "easy",
+    "solution": "snack",
+    "guesses": [
+        "tares",
+        "milch",
+        "snack"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:01.452"
+}

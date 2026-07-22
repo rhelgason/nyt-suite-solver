@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 912,
+    "ds": "2023-12-27",
+    "mode": "easy",
+    "solution": "daisy",
+    "guesses": [
+        "tares",
+        "sylis",
+        "daisy"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:00.918"
+}

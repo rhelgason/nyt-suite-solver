@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 1554,
+    "ds": "2023-11-10",
+    "mode": "easy",
+    "solution": "leash",
+    "guesses": [
+        "tares",
+        "plash",
+        "leash"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:00.814"
+}

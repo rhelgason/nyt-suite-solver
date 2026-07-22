@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 1300,
+    "ds": "2023-05-03",
+    "mode": "hard",
+    "solution": "horde",
+    "guesses": [
+        "tares",
+        "nerdy",
+        "horde"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:00.062"
+}

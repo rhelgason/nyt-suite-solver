@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 642,
+    "ds": "2023-12-25",
+    "mode": "hard",
+    "solution": "evoke",
+    "guesses": [
+        "tares",
+        "oldie",
+        "ponce",
+        "evoke"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.292"
+}

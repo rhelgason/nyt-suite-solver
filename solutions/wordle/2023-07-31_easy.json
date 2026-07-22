@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 2115,
+    "ds": "2023-07-31",
+    "mode": "easy",
+    "solution": "style",
+    "guesses": [
+        "tares",
+        "point",
+        "bushy",
+        "style"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.930"
+}

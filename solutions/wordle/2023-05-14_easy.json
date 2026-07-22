@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1441,
+    "ds": "2023-05-14",
+    "mode": "easy",
+    "solution": "scarf",
+    "guesses": [
+        "tares",
+        "spawn",
+        "duchy",
+        "scarf"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.497"
+}

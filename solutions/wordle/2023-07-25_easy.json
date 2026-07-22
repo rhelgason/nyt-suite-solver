@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 1190,
+    "ds": "2023-07-25",
+    "mode": "easy",
+    "solution": "wheel",
+    "guesses": [
+        "tares",
+        "indol",
+        "becks",
+        "expel",
+        "wheel"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:03.913"
+}

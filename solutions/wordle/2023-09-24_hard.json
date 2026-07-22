@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 2001,
+    "ds": "2023-09-24",
+    "mode": "hard",
+    "solution": "right",
+    "guesses": [
+        "tares",
+        "fruit",
+        "right"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:00.058"
+}

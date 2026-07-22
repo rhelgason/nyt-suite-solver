@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 569,
+    "ds": "2023-06-23",
+    "mode": "easy",
+    "solution": "covet",
+    "guesses": [
+        "tares",
+        "could",
+        "comet",
+        "covet"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.756"
+}

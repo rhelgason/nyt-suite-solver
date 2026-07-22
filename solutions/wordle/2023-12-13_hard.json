@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1525,
+    "ds": "2023-12-13",
+    "mode": "hard",
+    "solution": "spent",
+    "guesses": [
+        "tares",
+        "spite",
+        "spelt",
+        "spent"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.066"
+}

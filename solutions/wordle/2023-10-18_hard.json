@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 2267,
+    "ds": "2023-10-18",
+    "mode": "hard",
+    "solution": "mercy",
+    "guesses": [
+        "tares",
+        "nerdy",
+        "merry",
+        "mercy"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.049"
+}

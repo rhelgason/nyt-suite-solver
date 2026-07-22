@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 611,
+    "ds": "2023-12-07",
+    "mode": "easy",
+    "solution": "sleep",
+    "guesses": [
+        "tares",
+        "solid",
+        "sleek",
+        "sleep"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.953"
+}

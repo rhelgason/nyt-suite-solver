@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 882,
+    "ds": "2023-12-04",
+    "mode": "easy",
+    "solution": "worst",
+    "guesses": [
+        "tares",
+        "whaup",
+        "worst"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:00.254"
+}

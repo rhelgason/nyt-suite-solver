@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1786,
+    "ds": "2023-08-24",
+    "mode": "hard",
+    "solution": "wordy",
+    "guesses": [
+        "tares",
+        "curio",
+        "dormy",
+        "wordy"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.051"
+}

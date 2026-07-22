@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 2113,
+    "ds": "2023-07-22",
+    "mode": "easy",
+    "solution": "froze",
+    "guesses": [
+        "tares",
+        "deice",
+        "bumph",
+        "angry",
+        "froze"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:02.286"
+}

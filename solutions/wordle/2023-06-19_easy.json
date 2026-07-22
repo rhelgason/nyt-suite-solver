@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 2313,
+    "ds": "2023-06-19",
+    "mode": "easy",
+    "solution": "kazoo",
+    "guesses": [
+        "tares",
+        "lingy",
+        "combo",
+        "kazoo"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:03.644"
+}

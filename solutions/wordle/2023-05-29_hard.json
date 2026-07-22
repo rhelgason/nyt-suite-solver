@@ -1,0 +1,17 @@
+{
+    "puzzle_id": 1331,
+    "ds": "2023-05-29",
+    "mode": "hard",
+    "solution": "mouse",
+    "guesses": [
+        "tares",
+        "seine",
+        "pulse",
+        "bouse",
+        "douse",
+        "house"
+    ],
+    "num_guesses": null,
+    "solved": false,
+    "solve_time": "0:00:00.073"
+}

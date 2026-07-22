@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 703,
+    "ds": "2023-06-27",
+    "mode": "easy",
+    "solution": "about",
+    "guesses": [
+        "tares",
+        "aloin",
+        "humpy",
+        "about"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:01.151"
+}

@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 1703,
+    "ds": "2023-09-22",
+    "mode": "hard",
+    "solution": "brush",
+    "guesses": [
+        "tares",
+        "shirk",
+        "brush"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:00.045"
+}

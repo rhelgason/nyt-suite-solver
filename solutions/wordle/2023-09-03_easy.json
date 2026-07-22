@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 2209,
+    "ds": "2023-09-03",
+    "mode": "easy",
+    "solution": "await",
+    "guesses": [
+        "tares",
+        "aloin",
+        "admit",
+        "await"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:01.129"
+}

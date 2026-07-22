@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 765,
+    "ds": "2023-07-18",
+    "mode": "easy",
+    "solution": "flyer",
+    "guesses": [
+        "tares",
+        "poind",
+        "elegy",
+        "flyer"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:03.580"
+}

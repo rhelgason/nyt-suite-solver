@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 785,
+    "ds": "2023-05-01",
+    "mode": "hard",
+    "solution": "range",
+    "guesses": [
+        "tares",
+        "cadre",
+        "ramie",
+        "range"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.051"
+}

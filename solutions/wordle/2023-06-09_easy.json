@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 2310,
+    "ds": "2023-06-09",
+    "mode": "easy",
+    "solution": "balsa",
+    "guesses": [
+        "tares",
+        "sylis",
+        "balsa"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:00.926"
+}

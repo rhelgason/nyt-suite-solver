@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 1874,
+    "ds": "2023-08-05",
+    "mode": "easy",
+    "solution": "anode",
+    "guesses": [
+        "tares",
+        "aland",
+        "anode"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:02.526"
+}

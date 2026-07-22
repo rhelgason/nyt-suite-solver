@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1253,
+    "ds": "2023-12-28",
+    "mode": "hard",
+    "solution": "learn",
+    "guesses": [
+        "tares",
+        "beard",
+        "leary",
+        "learn"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.070"
+}

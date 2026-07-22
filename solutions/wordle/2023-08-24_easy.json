@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1786,
+    "ds": "2023-08-24",
+    "mode": "easy",
+    "solution": "wordy",
+    "guesses": [
+        "tares",
+        "uncoy",
+        "dwarf",
+        "wordy"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:01.121"
+}

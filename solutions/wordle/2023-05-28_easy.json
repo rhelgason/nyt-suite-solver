@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 528,
+    "ds": "2023-05-28",
+    "mode": "easy",
+    "solution": "skimp",
+    "guesses": [
+        "tares",
+        "noily",
+        "spick",
+        "skimp"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:02.779"
+}

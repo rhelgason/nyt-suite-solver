@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1849,
+    "ds": "2024-01-30",
+    "mode": "easy",
+    "solution": "expel",
+    "guesses": [
+        "tares",
+        "indol",
+        "becks",
+        "expel"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:03.894"
+}

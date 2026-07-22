@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 2162,
+    "ds": "2023-07-12",
+    "mode": "hard",
+    "solution": "whirl",
+    "guesses": [
+        "tares",
+        "prion",
+        "chirr",
+        "whirl"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.101"
+}

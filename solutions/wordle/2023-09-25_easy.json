@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 1274,
+    "ds": "2023-09-25",
+    "mode": "easy",
+    "solution": "rocky",
+    "guesses": [
+        "tares",
+        "coign",
+        "rocky"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:02.416"
+}

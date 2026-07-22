@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 2083,
+    "ds": "2023-06-24",
+    "mode": "hard",
+    "solution": "grand",
+    "guesses": [
+        "tares",
+        "drain",
+        "brand",
+        "grand"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.088"
+}

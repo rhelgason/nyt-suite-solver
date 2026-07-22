@@ -1,0 +1,13 @@
+{
+    "puzzle_id": 1091,
+    "ds": "2023-08-03",
+    "mode": "hard",
+    "solution": "party",
+    "guesses": [
+        "tares",
+        "party"
+    ],
+    "num_guesses": 2,
+    "solved": true,
+    "solve_time": "0:00:00.055"
+}

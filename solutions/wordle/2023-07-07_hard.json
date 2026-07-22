@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 988,
+    "ds": "2023-07-07",
+    "mode": "hard",
+    "solution": "donut",
+    "guesses": [
+        "tares",
+        "litho",
+        "fount",
+        "donut"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.097"
+}

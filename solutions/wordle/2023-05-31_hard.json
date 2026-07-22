@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1222,
+    "ds": "2023-05-31",
+    "mode": "hard",
+    "solution": "agile",
+    "guesses": [
+        "tares",
+        "plane",
+        "amble",
+        "agile"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.100"
+}

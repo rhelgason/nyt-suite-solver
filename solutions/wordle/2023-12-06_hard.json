@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 2156,
+    "ds": "2023-12-06",
+    "mode": "hard",
+    "solution": "woman",
+    "guesses": [
+        "tares",
+        "aloin",
+        "bogan",
+        "honan",
+        "woman"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:00.260"
+}

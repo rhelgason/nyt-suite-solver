@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1755,
+    "ds": "2023-10-16",
+    "mode": "easy",
+    "solution": "graph",
+    "guesses": [
+        "tares",
+        "blond",
+        "charm",
+        "graph"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:02.573"
+}

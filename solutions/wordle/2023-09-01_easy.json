@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1206,
+    "ds": "2023-09-01",
+    "mode": "easy",
+    "solution": "space",
+    "guesses": [
+        "tares",
+        "plash",
+        "aback",
+        "space"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.861"
+}

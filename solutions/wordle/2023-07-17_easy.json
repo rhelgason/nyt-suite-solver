@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1215,
+    "ds": "2023-07-17",
+    "mode": "easy",
+    "solution": "droop",
+    "guesses": [
+        "tares",
+        "coign",
+        "blood",
+        "droop"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:02.729"
+}

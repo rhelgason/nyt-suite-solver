@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1701,
+    "ds": "2023-12-15",
+    "mode": "hard",
+    "solution": "topic",
+    "guesses": [
+        "tares",
+        "thing",
+        "typic",
+        "topic"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.070"
+}

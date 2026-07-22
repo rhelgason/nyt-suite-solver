@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 845,
+    "ds": "2023-08-25",
+    "mode": "hard",
+    "solution": "ocean",
+    "guesses": [
+        "tares",
+        "plane",
+        "began",
+        "ocean"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.114"
+}

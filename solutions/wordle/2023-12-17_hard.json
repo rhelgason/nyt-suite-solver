@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1900,
+    "ds": "2023-12-17",
+    "mode": "hard",
+    "solution": "bacon",
+    "guesses": [
+        "tares",
+        "manly",
+        "pagan",
+        "bacon"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.148"
+}

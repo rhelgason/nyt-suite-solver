@@ -1,0 +1,13 @@
+{
+    "puzzle_id": 1534,
+    "ds": "2023-12-19",
+    "mode": "hard",
+    "solution": "table",
+    "guesses": [
+        "tares",
+        "table"
+    ],
+    "num_guesses": 2,
+    "solved": true,
+    "solve_time": "0:00:00.045"
+}

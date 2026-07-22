@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1333,
+    "ds": "2023-05-02",
+    "mode": "hard",
+    "solution": "sulky",
+    "guesses": [
+        "tares",
+        "spoil",
+        "shuln",
+        "sulky"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.108"
+}

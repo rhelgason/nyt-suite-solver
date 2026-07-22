@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 2038,
+    "ds": "2023-05-20",
+    "mode": "easy",
+    "solution": "flask",
+    "guesses": [
+        "tares",
+        "milch",
+        "knell",
+        "flask"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:01.609"
+}

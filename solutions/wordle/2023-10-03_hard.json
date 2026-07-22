@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 1166,
+    "ds": "2023-10-03",
+    "mode": "hard",
+    "solution": "while",
+    "guesses": [
+        "tares",
+        "oldie",
+        "liege",
+        "chile",
+        "while"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:00.283"
+}

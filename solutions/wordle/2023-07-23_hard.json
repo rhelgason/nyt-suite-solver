@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1454,
+    "ds": "2023-07-23",
+    "mode": "hard",
+    "solution": "whale",
+    "guesses": [
+        "tares",
+        "plane",
+        "quale",
+        "whale"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.120"
+}

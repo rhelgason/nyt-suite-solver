@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 2129,
+    "ds": "2023-10-09",
+    "mode": "hard",
+    "solution": "truth",
+    "guesses": [
+        "tares",
+        "triol",
+        "truck",
+        "trump",
+        "truth"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:00.051"
+}

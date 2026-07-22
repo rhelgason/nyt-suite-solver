@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1682,
+    "ds": "2023-05-25",
+    "mode": "easy",
+    "solution": "bagel",
+    "guesses": [
+        "tares",
+        "lynch",
+        "belga",
+        "bagel"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:01.457"
+}

@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1853,
+    "ds": "2024-01-21",
+    "mode": "hard",
+    "solution": "north",
+    "guesses": [
+        "tares",
+        "borty",
+        "forth",
+        "north"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.046"
+}

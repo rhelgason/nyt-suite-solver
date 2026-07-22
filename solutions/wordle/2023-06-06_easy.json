@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1877,
+    "ds": "2023-06-06",
+    "mode": "easy",
+    "solution": "scout",
+    "guesses": [
+        "tares",
+        "shout",
+        "capon",
+        "scout"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:01.364"
+}

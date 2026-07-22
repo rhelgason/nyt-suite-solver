@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 2087,
+    "ds": "2023-10-20",
+    "mode": "hard",
+    "solution": "occur",
+    "guesses": [
+        "tares",
+        "prion",
+        "chord",
+        "occur"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.105"
+}

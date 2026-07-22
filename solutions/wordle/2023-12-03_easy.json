@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 2259,
+    "ds": "2023-12-03",
+    "mode": "easy",
+    "solution": "adapt",
+    "guesses": [
+        "tares",
+        "aloin",
+        "abaft",
+        "adapt"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:01.108"
+}

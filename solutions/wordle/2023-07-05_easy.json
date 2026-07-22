@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 674,
+    "ds": "2023-07-05",
+    "mode": "easy",
+    "solution": "venom",
+    "guesses": [
+        "tares",
+        "colin",
+        "geode",
+        "venom"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:05.246"
+}

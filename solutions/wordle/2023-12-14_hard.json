@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1021,
+    "ds": "2023-12-14",
+    "mode": "hard",
+    "solution": "would",
+    "guesses": [
+        "tares",
+        "colin",
+        "wooly",
+        "would"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.593"
+}

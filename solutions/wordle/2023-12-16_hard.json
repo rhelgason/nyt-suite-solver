@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 860,
+    "ds": "2023-12-16",
+    "mode": "hard",
+    "solution": "globe",
+    "guesses": [
+        "tares",
+        "oldie",
+        "clove",
+        "globe"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.284"
+}

@@ -1,0 +1,17 @@
+{
+    "puzzle_id": 2233,
+    "ds": "2023-04-18",
+    "mode": "hard",
+    "solution": "hound",
+    "guesses": [
+        "tares",
+        "colin",
+        "mondo",
+        "bound",
+        "found",
+        "hound"
+    ],
+    "num_guesses": 6,
+    "solved": true,
+    "solve_time": "0:00:00.590"
+}

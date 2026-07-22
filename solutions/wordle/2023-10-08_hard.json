@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1833,
+    "ds": "2023-10-08",
+    "mode": "hard",
+    "solution": "binge",
+    "guesses": [
+        "tares",
+        "oldie",
+        "mince",
+        "binge"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.300"
+}

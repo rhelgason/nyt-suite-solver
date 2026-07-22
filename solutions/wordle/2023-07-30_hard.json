@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 926,
+    "ds": "2023-07-30",
+    "mode": "hard",
+    "solution": "bathe",
+    "guesses": [
+        "tares",
+        "lathe",
+        "bathe"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:00.050"
+}

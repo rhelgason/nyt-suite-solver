@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 745,
+    "ds": "2023-10-10",
+    "mode": "easy",
+    "solution": "snail",
+    "guesses": [
+        "tares",
+        "milch",
+        "adown",
+        "snail"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:01.541"
+}

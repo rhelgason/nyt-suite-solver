@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 1536,
+    "ds": "2023-06-12",
+    "mode": "hard",
+    "solution": "wrong",
+    "guesses": [
+        "tares",
+        "prion",
+        "bronc",
+        "frond",
+        "wrong"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:00.098"
+}

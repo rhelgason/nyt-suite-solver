@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 696,
+    "ds": "2023-09-20",
+    "mode": "hard",
+    "solution": "snare",
+    "guesses": [
+        "tares",
+        "spear",
+        "scare",
+        "share",
+        "snare"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:00.044"
+}

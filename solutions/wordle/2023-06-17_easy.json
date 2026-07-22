@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 2108,
+    "ds": "2023-06-17",
+    "mode": "easy",
+    "solution": "ranch",
+    "guesses": [
+        "tares",
+        "rindy",
+        "ranch"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:00.925"
+}

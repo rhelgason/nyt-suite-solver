@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1113,
+    "ds": "2023-12-05",
+    "mode": "easy",
+    "solution": "young",
+    "guesses": [
+        "tares",
+        "colin",
+        "bawdy",
+        "young"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:07.966"
+}

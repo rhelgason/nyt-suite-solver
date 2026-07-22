@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 2169,
+    "ds": "2023-09-17",
+    "mode": "easy",
+    "solution": "music",
+    "guesses": [
+        "tares",
+        "noily",
+        "disci",
+        "music"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:02.747"
+}

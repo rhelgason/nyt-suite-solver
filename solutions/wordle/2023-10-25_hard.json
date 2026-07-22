@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1417,
+    "ds": "2023-10-25",
+    "mode": "hard",
+    "solution": "retry",
+    "guesses": [
+        "tares",
+        "retie",
+        "retro",
+        "retry"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.046"
+}

@@ -1,0 +1,17 @@
+{
+    "puzzle_id": 584,
+    "ds": "2023-10-15",
+    "mode": "hard",
+    "solution": "leaky",
+    "guesses": [
+        "tares",
+        "plane",
+        "leavy",
+        "leady",
+        "leafy",
+        "leaky"
+    ],
+    "num_guesses": 6,
+    "solved": true,
+    "solve_time": "0:00:00.101"
+}

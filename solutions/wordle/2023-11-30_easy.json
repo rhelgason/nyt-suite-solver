@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1541,
+    "ds": "2023-11-30",
+    "mode": "easy",
+    "solution": "resin",
+    "guesses": [
+        "tares",
+        "poise",
+        "resid",
+        "resin"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.499"
+}

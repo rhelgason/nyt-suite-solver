@@ -1,0 +1,17 @@
+{
+    "puzzle_id": 2313,
+    "ds": "2023-06-19",
+    "mode": "hard",
+    "solution": "kazoo",
+    "guesses": [
+        "tares",
+        "manly",
+        "haika",
+        "kabob",
+        "kapok",
+        "kazoo"
+    ],
+    "num_guesses": 6,
+    "solved": true,
+    "solve_time": "0:00:00.136"
+}

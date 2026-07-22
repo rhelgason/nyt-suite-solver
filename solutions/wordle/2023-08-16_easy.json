@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 992,
+    "ds": "2023-08-16",
+    "mode": "easy",
+    "solution": "scrub",
+    "guesses": [
+        "tares",
+        "gulpy",
+        "scrub"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:00.373"
+}

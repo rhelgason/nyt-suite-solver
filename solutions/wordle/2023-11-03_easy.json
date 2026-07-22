@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 612,
+    "ds": "2023-11-03",
+    "mode": "easy",
+    "solution": "ardor",
+    "guesses": [
+        "tares",
+        "blond",
+        "ardor"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:02.183"
+}

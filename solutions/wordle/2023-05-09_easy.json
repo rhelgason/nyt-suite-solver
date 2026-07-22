@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 1530,
+    "ds": "2023-05-09",
+    "mode": "easy",
+    "solution": "cocoa",
+    "guesses": [
+        "tares",
+        "colin",
+        "cocoa"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:04.835"
+}

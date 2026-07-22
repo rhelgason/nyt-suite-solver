@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1490,
+    "ds": "2023-07-24",
+    "mode": "easy",
+    "solution": "hobby",
+    "guesses": [
+        "tares",
+        "colin",
+        "boody",
+        "hobby"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:08.265"
+}

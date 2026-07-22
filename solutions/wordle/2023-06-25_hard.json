@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 2245,
+    "ds": "2023-06-25",
+    "mode": "hard",
+    "solution": "rodeo",
+    "guesses": [
+        "tares",
+        "riled",
+        "rodeo"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:00.126"
+}

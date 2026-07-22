@@ -1,0 +1,17 @@
+{
+    "puzzle_id": 1636,
+    "ds": "2023-05-17",
+    "mode": "hard",
+    "solution": "plank",
+    "guesses": [
+        "tares",
+        "aloin",
+        "blank",
+        "clank",
+        "flank",
+        "plank"
+    ],
+    "num_guesses": 6,
+    "solved": true,
+    "solve_time": "0:00:00.272"
+}

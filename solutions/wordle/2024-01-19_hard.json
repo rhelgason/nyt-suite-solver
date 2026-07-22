@@ -1,0 +1,13 @@
+{
+    "puzzle_id": 2102,
+    "ds": "2024-01-19",
+    "mode": "hard",
+    "solution": "thing",
+    "guesses": [
+        "tares",
+        "thing"
+    ],
+    "num_guesses": 2,
+    "solved": true,
+    "solve_time": "0:00:00.055"
+}

@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 2133,
+    "ds": "2023-10-06",
+    "mode": "easy",
+    "solution": "chime",
+    "guesses": [
+        "tares",
+        "colin",
+        "adeem",
+        "chime"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:05.141"
+}

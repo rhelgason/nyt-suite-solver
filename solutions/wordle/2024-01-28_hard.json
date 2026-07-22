@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1351,
+    "ds": "2024-01-28",
+    "mode": "hard",
+    "solution": "ember",
+    "guesses": [
+        "tares",
+        "riled",
+        "comer",
+        "ember"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.132"
+}

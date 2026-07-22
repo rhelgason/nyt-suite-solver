@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1645,
+    "ds": "2023-11-25",
+    "mode": "easy",
+    "solution": "guide",
+    "guesses": [
+        "tares",
+        "colin",
+        "begum",
+        "guide"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:05.348"
+}

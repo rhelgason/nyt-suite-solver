@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1485,
+    "ds": "2023-10-27",
+    "mode": "easy",
+    "solution": "noble",
+    "guesses": [
+        "tares",
+        "colin",
+        "longe",
+        "noble"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:05.117"
+}

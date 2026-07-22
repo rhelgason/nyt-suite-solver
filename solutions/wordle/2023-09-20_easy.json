@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 696,
+    "ds": "2023-09-20",
+    "mode": "easy",
+    "solution": "snare",
+    "guesses": [
+        "tares",
+        "swipe",
+        "ached",
+        "snare"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.359"
+}

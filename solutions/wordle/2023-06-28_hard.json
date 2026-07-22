@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1992,
+    "ds": "2023-06-28",
+    "mode": "hard",
+    "solution": "tract",
+    "guesses": [
+        "tares",
+        "traik",
+        "trapt",
+        "tract"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.042"
+}

@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 793,
+    "ds": "2023-11-29",
+    "mode": "hard",
+    "solution": "sushi",
+    "guesses": [
+        "tares",
+        "spoil",
+        "swink",
+        "scudi",
+        "sushi"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:00.123"
+}

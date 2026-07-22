@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 698,
+    "ds": "2023-12-11",
+    "mode": "easy",
+    "solution": "house",
+    "guesses": [
+        "tares",
+        "seine",
+        "cloud",
+        "abmho",
+        "house"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:02.126"
+}

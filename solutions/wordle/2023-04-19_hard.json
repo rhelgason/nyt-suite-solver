@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 798,
+    "ds": "2023-04-19",
+    "mode": "hard",
+    "solution": "thump",
+    "guesses": [
+        "tares",
+        "thing",
+        "thumb",
+        "thump"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.057"
+}

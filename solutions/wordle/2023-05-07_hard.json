@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1663,
+    "ds": "2023-05-07",
+    "mode": "hard",
+    "solution": "ghoul",
+    "guesses": [
+        "tares",
+        "colin",
+        "blood",
+        "ghoul"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.580"
+}

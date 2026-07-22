@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 824,
+    "ds": "2023-07-13",
+    "mode": "hard",
+    "solution": "barge",
+    "guesses": [
+        "tares",
+        "carle",
+        "barge"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:00.045"
+}

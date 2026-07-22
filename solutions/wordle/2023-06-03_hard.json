@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 613,
+    "ds": "2023-06-03",
+    "mode": "hard",
+    "solution": "nanny",
+    "guesses": [
+        "tares",
+        "manly",
+        "nancy",
+        "nanny"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.153"
+}

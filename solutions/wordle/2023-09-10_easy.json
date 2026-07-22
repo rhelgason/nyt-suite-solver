@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1958,
+    "ds": "2023-09-10",
+    "mode": "easy",
+    "solution": "quote",
+    "guesses": [
+        "tares",
+        "lotic",
+        "gemot",
+        "quote"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:01.456"
+}

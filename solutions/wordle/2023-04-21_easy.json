@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 2075,
+    "ds": "2023-04-21",
+    "mode": "easy",
+    "solution": "kayak",
+    "guesses": [
+        "tares",
+        "lingy",
+        "kayak"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:03.237"
+}

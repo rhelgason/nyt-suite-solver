@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 2165,
+    "ds": "2023-05-06",
+    "mode": "hard",
+    "solution": "anger",
+    "guesses": [
+        "tares",
+        "armed",
+        "agger",
+        "anger"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.044"
+}

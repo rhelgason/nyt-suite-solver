@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 1563,
+    "ds": "2023-12-31",
+    "mode": "easy",
+    "solution": "salty",
+    "guesses": [
+        "tares",
+        "spiny",
+        "salty"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:00.315"
+}

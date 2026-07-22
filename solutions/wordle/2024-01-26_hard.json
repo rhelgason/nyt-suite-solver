@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1780,
+    "ds": "2024-01-26",
+    "mode": "hard",
+    "solution": "aloof",
+    "guesses": [
+        "tares",
+        "aloin",
+        "aloha",
+        "aloof"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.283"
+}

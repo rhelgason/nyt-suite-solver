@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1050,
+    "ds": "2023-05-19",
+    "mode": "easy",
+    "solution": "grief",
+    "guesses": [
+        "tares",
+        "poind",
+        "brief",
+        "grief"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:03.069"
+}

@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1194,
+    "ds": "2023-07-16",
+    "mode": "hard",
+    "solution": "topaz",
+    "guesses": [
+        "tares",
+        "tolan",
+        "today",
+        "topaz"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.045"
+}

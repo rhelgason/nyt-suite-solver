@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 533,
+    "ds": "2023-09-30",
+    "mode": "hard",
+    "solution": "daddy",
+    "guesses": [
+        "tares",
+        "manly",
+        "cadgy",
+        "baddy",
+        "daddy"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:00.146"
+}

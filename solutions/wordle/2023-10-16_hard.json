@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 1755,
+    "ds": "2023-10-16",
+    "mode": "hard",
+    "solution": "graph",
+    "guesses": [
+        "tares",
+        "drain",
+        "craal",
+        "grapy",
+        "graph"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:00.092"
+}

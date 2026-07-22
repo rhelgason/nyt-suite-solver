@@ -1,0 +1,17 @@
+{
+    "puzzle_id": 1931,
+    "ds": "2023-07-08",
+    "mode": "hard",
+    "solution": "cower",
+    "guesses": [
+        "tares",
+        "riled",
+        "comer",
+        "cooer",
+        "coper",
+        "cover"
+    ],
+    "num_guesses": null,
+    "solved": false,
+    "solve_time": "0:00:00.138"
+}

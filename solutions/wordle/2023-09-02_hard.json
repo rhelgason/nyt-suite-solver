@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 635,
+    "ds": "2023-09-02",
+    "mode": "hard",
+    "solution": "onion",
+    "guesses": [
+        "tares",
+        "colin",
+        "inion",
+        "onion"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.595"
+}

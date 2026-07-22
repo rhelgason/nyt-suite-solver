@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1351,
+    "ds": "2024-01-28",
+    "mode": "easy",
+    "solution": "ember",
+    "guesses": [
+        "tares",
+        "poind",
+        "elegy",
+        "ember"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:03.571"
+}

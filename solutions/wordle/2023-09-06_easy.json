@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 2097,
+    "ds": "2023-09-06",
+    "mode": "easy",
+    "solution": "gnash",
+    "guesses": [
+        "tares",
+        "milch",
+        "snubs",
+        "gnash"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:01.558"
+}

@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 674,
+    "ds": "2023-07-05",
+    "mode": "hard",
+    "solution": "venom",
+    "guesses": [
+        "tares",
+        "oldie",
+        "genom",
+        "venom"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.321"
+}

@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 1274,
+    "ds": "2023-09-25",
+    "mode": "hard",
+    "solution": "rocky",
+    "guesses": [
+        "tares",
+        "prion",
+        "chord",
+        "occur",
+        "rocky"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:00.098"
+}

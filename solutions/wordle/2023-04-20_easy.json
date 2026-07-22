@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 1216,
+    "ds": "2023-04-20",
+    "mode": "easy",
+    "solution": "plate",
+    "guesses": [
+        "tares",
+        "plane",
+        "plate"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:00.751"
+}

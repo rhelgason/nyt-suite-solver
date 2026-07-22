@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 1316,
+    "ds": "2023-04-27",
+    "mode": "easy",
+    "solution": "logic",
+    "guesses": [
+        "tares",
+        "colin",
+        "logic"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:07.659"
+}

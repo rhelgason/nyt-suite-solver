@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1315,
+    "ds": "2023-07-14",
+    "mode": "easy",
+    "solution": "fiend",
+    "guesses": [
+        "tares",
+        "colin",
+        "kedge",
+        "fiend"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:05.444"
+}

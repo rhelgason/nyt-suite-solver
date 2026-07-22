@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 1447,
+    "ds": "2023-07-06",
+    "mode": "hard",
+    "solution": "windy",
+    "guesses": [
+        "tares",
+        "colin",
+        "piing",
+        "dinky",
+        "windy"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:00.582"
+}

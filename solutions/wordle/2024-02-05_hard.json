@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 2145,
+    "ds": "2024-02-05",
+    "mode": "hard",
+    "solution": "repel",
+    "guesses": [
+        "tares",
+        "riled",
+        "rebel",
+        "refel",
+        "repel"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:00.126"
+}

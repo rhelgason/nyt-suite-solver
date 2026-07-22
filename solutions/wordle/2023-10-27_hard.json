@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 1485,
+    "ds": "2023-10-27",
+    "mode": "hard",
+    "solution": "noble",
+    "guesses": [
+        "tares",
+        "oldie",
+        "boule",
+        "coble",
+        "noble"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:00.281"
+}

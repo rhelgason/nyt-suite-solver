@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1193,
+    "ds": "2024-01-18",
+    "mode": "hard",
+    "solution": "stole",
+    "guesses": [
+        "tares",
+        "spite",
+        "stele",
+        "stole"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.049"
+}

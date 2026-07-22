@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 862,
+    "ds": "2023-09-08",
+    "mode": "easy",
+    "solution": "rouse",
+    "guesses": [
+        "tares",
+        "poise",
+        "roose",
+        "rouse"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.477"
+}

@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 860,
+    "ds": "2023-12-16",
+    "mode": "easy",
+    "solution": "globe",
+    "guesses": [
+        "tares",
+        "colin",
+        "blond",
+        "globe"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:05.264"
+}

@@ -1,0 +1,17 @@
+{
+    "puzzle_id": 553,
+    "ds": "2023-08-09",
+    "mode": "hard",
+    "solution": "lover",
+    "guesses": [
+        "tares",
+        "riled",
+        "leger",
+        "loner",
+        "loper",
+        "lover"
+    ],
+    "num_guesses": 6,
+    "solved": true,
+    "solve_time": "0:00:00.127"
+}

@@ -1,0 +1,17 @@
+{
+    "puzzle_id": 1823,
+    "ds": "2023-06-15",
+    "mode": "hard",
+    "solution": "maybe",
+    "guesses": [
+        "tares",
+        "macle",
+        "mavie",
+        "mahoe",
+        "mange",
+        "maybe"
+    ],
+    "num_guesses": 6,
+    "solved": true,
+    "solve_time": "0:00:00.079"
+}

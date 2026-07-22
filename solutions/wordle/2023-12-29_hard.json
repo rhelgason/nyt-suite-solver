@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 964,
+    "ds": "2023-12-29",
+    "mode": "hard",
+    "solution": "child",
+    "guesses": [
+        "tares",
+        "colin",
+        "child"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:00.573"
+}

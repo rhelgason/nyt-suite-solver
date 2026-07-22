@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 2171,
+    "ds": "2023-07-01",
+    "mode": "easy",
+    "solution": "bleep",
+    "guesses": [
+        "tares",
+        "indol",
+        "gulpy",
+        "bleep"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:03.952"
+}

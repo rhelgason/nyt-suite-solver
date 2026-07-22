@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 2145,
+    "ds": "2024-02-05",
+    "mode": "easy",
+    "solution": "repel",
+    "guesses": [
+        "tares",
+        "poind",
+        "leech",
+        "repel"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:03.069"
+}

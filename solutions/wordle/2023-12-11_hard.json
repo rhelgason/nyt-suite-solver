@@ -1,0 +1,17 @@
+{
+    "puzzle_id": 698,
+    "ds": "2023-12-11",
+    "mode": "hard",
+    "solution": "house",
+    "guesses": [
+        "tares",
+        "seine",
+        "pulse",
+        "bouse",
+        "douse",
+        "house"
+    ],
+    "num_guesses": 6,
+    "solved": true,
+    "solve_time": "0:00:00.079"
+}

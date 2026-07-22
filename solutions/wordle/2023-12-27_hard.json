@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 912,
+    "ds": "2023-12-27",
+    "mode": "hard",
+    "solution": "daisy",
+    "guesses": [
+        "tares",
+        "salsa",
+        "canso",
+        "daisy"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.063"
+}

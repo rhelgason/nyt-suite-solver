@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 601,
+    "ds": "2023-09-28",
+    "mode": "hard",
+    "solution": "coach",
+    "guesses": [
+        "tares",
+        "aloin",
+        "comma",
+        "coach"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.280"
+}

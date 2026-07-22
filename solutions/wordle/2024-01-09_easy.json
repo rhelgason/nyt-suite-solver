@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1561,
+    "ds": "2024-01-09",
+    "mode": "easy",
+    "solution": "liner",
+    "guesses": [
+        "tares",
+        "poind",
+        "final",
+        "liner"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:03.117"
+}

@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1199,
+    "ds": "2023-08-08",
+    "mode": "hard",
+    "solution": "bully",
+    "guesses": [
+        "tares",
+        "colin",
+        "gully",
+        "bully"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.581"
+}

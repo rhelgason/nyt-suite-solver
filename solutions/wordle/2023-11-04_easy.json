@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 683,
+    "ds": "2023-11-04",
+    "mode": "easy",
+    "solution": "mania",
+    "guesses": [
+        "tares",
+        "lingy",
+        "manic",
+        "mania"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:03.258"
+}

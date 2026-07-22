@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 1331,
+    "ds": "2023-05-29",
+    "mode": "easy",
+    "solution": "mouse",
+    "guesses": [
+        "tares",
+        "seine",
+        "cloud",
+        "abmho",
+        "mouse"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:02.138"
+}

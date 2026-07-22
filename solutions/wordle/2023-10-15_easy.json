@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 584,
+    "ds": "2023-10-15",
+    "mode": "easy",
+    "solution": "leaky",
+    "guesses": [
+        "tares",
+        "aland",
+        "vealy",
+        "leafy",
+        "leaky"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:02.681"
+}

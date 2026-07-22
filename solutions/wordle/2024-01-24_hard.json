@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 2183,
+    "ds": "2024-01-24",
+    "mode": "hard",
+    "solution": "relic",
+    "guesses": [
+        "tares",
+        "pride",
+        "renig",
+        "refix",
+        "relic"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:00.084"
+}

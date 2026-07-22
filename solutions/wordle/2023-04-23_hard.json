@@ -1,0 +1,17 @@
+{
+    "puzzle_id": 955,
+    "ds": "2023-04-23",
+    "mode": "hard",
+    "solution": "unzip",
+    "guesses": [
+        "tares",
+        "colin",
+        "infix",
+        "unbid",
+        "unhip",
+        "unzip"
+    ],
+    "num_guesses": 6,
+    "solved": true,
+    "solve_time": "0:00:00.587"
+}

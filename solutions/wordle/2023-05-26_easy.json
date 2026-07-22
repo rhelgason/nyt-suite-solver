@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 562,
+    "ds": "2023-05-26",
+    "mode": "easy",
+    "solution": "swine",
+    "guesses": [
+        "tares",
+        "seine",
+        "aleph",
+        "swine"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:01.845"
+}

@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 1888,
+    "ds": "2023-06-20",
+    "mode": "hard",
+    "solution": "frost",
+    "guesses": [
+        "tares",
+        "sport",
+        "frost"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:00.063"
+}

@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 613,
+    "ds": "2023-06-03",
+    "mode": "easy",
+    "solution": "nanny",
+    "guesses": [
+        "tares",
+        "lingy",
+        "ditch",
+        "fanny",
+        "nanny"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:03.304"
+}

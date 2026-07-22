@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 641,
+    "ds": "2023-09-27",
+    "mode": "hard",
+    "solution": "smile",
+    "guesses": [
+        "tares",
+        "seine",
+        "slipe",
+        "smile"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.070"
+}

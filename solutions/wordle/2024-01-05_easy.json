@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1205,
+    "ds": "2024-01-05",
+    "mode": "easy",
+    "solution": "lunge",
+    "guesses": [
+        "tares",
+        "colin",
+        "knell",
+        "lunge"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:05.169"
+}

@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1546,
+    "ds": "2023-07-03",
+    "mode": "easy",
+    "solution": "hotel",
+    "guesses": [
+        "tares",
+        "could",
+        "abamp",
+        "hotel"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.783"
+}

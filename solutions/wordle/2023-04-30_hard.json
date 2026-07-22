@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 1894,
+    "ds": "2023-04-30",
+    "mode": "hard",
+    "solution": "plaza",
+    "guesses": [
+        "tares",
+        "aloin",
+        "flaky",
+        "llama",
+        "plaza"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:00.267"
+}

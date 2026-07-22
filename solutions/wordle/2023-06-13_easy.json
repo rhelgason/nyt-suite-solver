@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1218,
+    "ds": "2023-06-13",
+    "mode": "easy",
+    "solution": "plunk",
+    "guesses": [
+        "tares",
+        "colin",
+        "flung",
+        "plunk"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:07.686"
+}

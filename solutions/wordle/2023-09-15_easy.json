@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1983,
+    "ds": "2023-09-15",
+    "mode": "easy",
+    "solution": "exert",
+    "guesses": [
+        "tares",
+        "court",
+        "evert",
+        "exert"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.592"
+}

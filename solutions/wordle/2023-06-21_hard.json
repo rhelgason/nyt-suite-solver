@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 1704,
+    "ds": "2023-06-21",
+    "mode": "hard",
+    "solution": "crane",
+    "guesses": [
+        "tares",
+        "beard",
+        "crape",
+        "crake",
+        "crane"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:00.077"
+}

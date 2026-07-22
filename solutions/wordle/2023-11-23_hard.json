@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 956,
+    "ds": "2023-11-23",
+    "mode": "hard",
+    "solution": "queen",
+    "guesses": [
+        "tares",
+        "loden",
+        "vimen",
+        "queen"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.177"
+}

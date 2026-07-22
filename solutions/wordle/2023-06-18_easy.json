@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 1268,
+    "ds": "2023-06-18",
+    "mode": "easy",
+    "solution": "shyly",
+    "guesses": [
+        "tares",
+        "noily",
+        "shyly"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:02.695"
+}

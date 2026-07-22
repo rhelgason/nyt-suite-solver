@@ -1,0 +1,17 @@
+{
+    "puzzle_id": 682,
+    "ds": "2023-06-07",
+    "mode": "hard",
+    "solution": "hater",
+    "guesses": [
+        "tares",
+        "rated",
+        "cater",
+        "eater",
+        "gater",
+        "hater"
+    ],
+    "num_guesses": 6,
+    "solved": true,
+    "solve_time": "0:00:00.078"
+}

@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 793,
+    "ds": "2023-11-29",
+    "mode": "easy",
+    "solution": "sushi",
+    "guesses": [
+        "tares",
+        "noily",
+        "disci",
+        "sushi"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:02.754"
+}

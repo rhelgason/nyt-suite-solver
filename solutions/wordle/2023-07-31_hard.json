@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 2115,
+    "ds": "2023-07-31",
+    "mode": "hard",
+    "solution": "style",
+    "guesses": [
+        "tares",
+        "spite",
+        "stele",
+        "stole",
+        "style"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:00.066"
+}

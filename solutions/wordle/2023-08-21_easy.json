@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1054,
+    "ds": "2023-08-21",
+    "mode": "easy",
+    "solution": "beach",
+    "guesses": [
+        "tares",
+        "aland",
+        "hempy",
+        "beach"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:02.792"
+}

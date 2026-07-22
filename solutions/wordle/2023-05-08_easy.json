@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1265,
+    "ds": "2023-05-08",
+    "mode": "easy",
+    "solution": "aglow",
+    "guesses": [
+        "tares",
+        "colin",
+        "alkyd",
+        "aglow"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:04.858"
+}

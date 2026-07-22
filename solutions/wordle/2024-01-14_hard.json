@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 768,
+    "ds": "2024-01-14",
+    "mode": "hard",
+    "solution": "doing",
+    "guesses": [
+        "tares",
+        "colin",
+        "boing",
+        "doing"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.581"
+}

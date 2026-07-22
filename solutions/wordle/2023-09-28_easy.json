@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 601,
+    "ds": "2023-09-28",
+    "mode": "easy",
+    "solution": "coach",
+    "guesses": [
+        "tares",
+        "colin",
+        "cocoa",
+        "coach"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:04.860"
+}

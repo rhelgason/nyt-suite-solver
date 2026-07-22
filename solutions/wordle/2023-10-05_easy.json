@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 2144,
+    "ds": "2023-10-05",
+    "mode": "easy",
+    "solution": "bunch",
+    "guesses": [
+        "tares",
+        "colin",
+        "abamp",
+        "bunch"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:07.697"
+}

@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 964,
+    "ds": "2023-12-29",
+    "mode": "easy",
+    "solution": "child",
+    "guesses": [
+        "tares",
+        "colin",
+        "bifid",
+        "child"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:07.688"
+}

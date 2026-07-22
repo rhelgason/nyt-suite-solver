@@ -1,0 +1,13 @@
+{
+    "puzzle_id": 1349,
+    "ds": "2024-02-07",
+    "mode": "hard",
+    "solution": "after",
+    "guesses": [
+        "tares",
+        "after"
+    ],
+    "num_guesses": 2,
+    "solved": true,
+    "solve_time": "0:00:00.050"
+}

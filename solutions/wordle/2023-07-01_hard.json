@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 2171,
+    "ds": "2023-07-01",
+    "mode": "hard",
+    "solution": "bleep",
+    "guesses": [
+        "tares",
+        "loden",
+        "kelep",
+        "bleep"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.178"
+}
