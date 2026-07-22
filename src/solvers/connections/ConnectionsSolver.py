@@ -31,30 +31,35 @@ MAX_MISTAKES = 4
 MAX_ITERATIONS = 12
 
 SYSTEM_PROMPT = (
-    "You are an expert NYT Connections player. You are given the remaining words "
-    "and must find one group of exactly four that share a hidden connection "
-    "(wordplay, category, shared prefix/suffix, etc.). Respond ONLY with JSON."
+    "You are an expert NYT Connections player. The remaining words always split "
+    "into groups of exactly four sharing a hidden connection -- often wordplay, a "
+    "shared prefix/suffix, or trivia, NOT plain synonyms. Some words look like they "
+    "fit several groups; that is the intended trap, so reason over the WHOLE board "
+    "before committing. Respond ONLY with JSON."
 )
 
 
 def build_prompt(remaining: List[str], tried: List[List[str]], one_away: Optional[List[str]]) -> str:
+    n_groups = len(remaining) // 4
     lines = [
-        f"Remaining words: {', '.join(remaining)}",
+        f"Remaining words ({len(remaining)}): {', '.join(remaining)}",
         "",
-        "Pick the four words you are MOST confident form a single group, and name "
-        "the connection.",
+        f"These form {n_groups} group(s) of four. Work out the full split, then list "
+        f"the groups ordered from the one you are MOST confident about to least, so "
+        f"I can guess the surest first.",
     ]
     if tried:
         lines.append("")
-        lines.append("These guesses were already wrong, do not repeat them:")
+        lines.append("Already-wrong guesses (a full group is NOT among these), do not repeat:")
         for guess in tried:
             lines.append(f"  - {', '.join(guess)}")
     if one_away:
         lines.append("")
-        lines.append(f"Your last guess ({', '.join(one_away)}) was ONE AWAY: exactly "
-                     "three of those belong together. Swap one word.")
+        lines.append(f"Your guess {', '.join(one_away)} was ONE AWAY: exactly three of "
+                     "those four belong together. Keep those three and swap the fourth.")
     lines.append("")
-    lines.append('Respond as JSON: {"group": ["W1","W2","W3","W4"], "connection": "..."}')
+    lines.append('Respond as JSON: {"groups": [{"words": ["W1","W2","W3","W4"], '
+                 '"connection": "..."}, ...]} ordered most-confident first.')
     return "\n".join(lines)
 
 
@@ -95,53 +100,73 @@ class ConnectionsSolver(BaseSolver):
     def _one_away(self, guess: Set[str], remaining_groups: List[Tuple[str, Set[str]]]) -> bool:
         return any(len(guess & group) == GROUP_SIZE - 1 for _, group in remaining_groups)
 
+    def _pick_group(self, remaining_words: List[str]) -> Tuple[Optional[set], str, list]:
+        """Ask the model to split the remaining words and return its most confident
+        valid group (all four still in play), plus its connection label and the raw
+        groups it proposed (for logging). Re-plans holistically every turn using the
+        accumulated wrong-guess and one-away feedback."""
+        prompt = build_prompt(remaining_words, self._tried, self._one_away_hint)
+        response = llm.complete_json(prompt, system=SYSTEM_PROMPT, max_tokens=512)
+        groups = response.get("groups") if isinstance(response, dict) else None
+        groups = groups or []
+        for g in groups:
+            words = [str(w).upper() for w in (g.get("words") or [])]
+            valid = {w for w in words if w in remaining_words}
+            if len(valid) == GROUP_SIZE:
+                return valid, str(g.get("connection", "")), groups
+        return None, "", groups
+
     def play(self) -> None:
-        """Play the game against the secret groups, one guess at a time, within
-        the four-mistake budget. The LLM only ever sees the remaining words."""
+        """Play the game against the secret groups within the four-mistake budget.
+        The LLM only ever sees the remaining words and the feedback so far."""
         remaining_words = list(self.words)
         remaining_groups = list(self.true_groups)
-        tried: List[List[str]] = []
-        one_away_hint: Optional[List[str]] = None
+        self._tried: List[List[str]] = []
+        self._one_away_hint: Optional[List[str]] = None
 
         for _ in range(MAX_ITERATIONS):
             if self.mistakes >= MAX_MISTAKES or not remaining_groups:
                 break
 
-            # last four remaining are forced -- no need to spend a guess/LLM call
-            if len(remaining_words) == GROUP_SIZE:
+            connection = ""
+            if len(remaining_words) == GROUP_SIZE:  # last four are forced -- no call
                 guess = set(remaining_words)
             else:
-                prompt = build_prompt(remaining_words, tried, one_away_hint)
-                response = llm.complete_json(prompt, system=SYSTEM_PROMPT, max_tokens=256)
-                raw = [str(w).upper() for w in response.get("group", [])]
-                guess = {w for w in raw if w in remaining_words}
-                if len(guess) != GROUP_SIZE:
-                    # malformed / hallucinated words: count as a mistake and move on
+                guess, connection, proposed = self._pick_group(remaining_words)
+                if guess is None:
+                    raw = [str(w).upper() for w in (proposed[0].get("words") if proposed else [])]
                     self.mistakes += 1
                     self.guess_log.append({"guess": raw, "result": "invalid"})
                     continue
 
-            one_away_hint = None
+            self._one_away_hint = None
             idx = self._match(guess, remaining_groups)
             if idx is not None:
                 title, group = remaining_groups.pop(idx)
                 for word in group:
                     remaining_words.remove(word)
                 self.groups_found += 1
-                self.guess_log.append({"guess": sorted(guess), "result": "correct", "group": title})
+                self.guess_log.append({"guess": sorted(guess), "result": "correct",
+                                       "group": title, "connection": connection})
             else:
                 self.mistakes += 1
-                tried.append(sorted(guess))
+                self._tried.append(sorted(guess))
                 if self._one_away(guess, remaining_groups):
-                    one_away_hint = sorted(guess)
+                    self._one_away_hint = sorted(guess)
                 self.guess_log.append({"guess": sorted(guess), "result": "wrong",
-                                       "one_away": one_away_hint is not None})
+                                       "connection": connection,
+                                       "one_away": self._one_away_hint is not None})
 
         self.solved = self.groups_found == NUM_GROUPS
 
     def solve(self) -> None:
         date = datetime.strptime(self.ds, "%Y-%m-%d")
         print(f"Solving Connections for {date.strftime('%B %d, %Y')}:\n")
+        print("Board: " + ", ".join(self.words))
+        print("Secret groups:")
+        for title, words in self.true_groups:
+            print(f"  - {title}: {', '.join(sorted(words))}")
+        print()
 
         start = time()
         try:
@@ -152,7 +177,13 @@ class ConnectionsSolver(BaseSolver):
 
         for entry in self.guess_log:
             mark = {"correct": "OK  ", "wrong": "X   ", "invalid": "??  "}.get(entry["result"], "")
-            print(f"  {mark}{', '.join(entry['guess'])}")
+            note = ""
+            if entry["result"] == "correct":
+                note = f"  -> {entry.get('group', '')}"
+            elif entry["result"] == "wrong":
+                label = entry.get("connection") or "?"
+                note = f'  (guessed "{label}"' + (", one away)" if entry.get("one_away") else ")")
+            print(f"  {mark}{', '.join(entry['guess'])}{note}")
         if self.solved:
             print(f"\nSolved with {self.mistakes} mistake(s).")
         else:

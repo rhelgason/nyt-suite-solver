@@ -66,12 +66,14 @@ def _consistent(word: str, slot: Slot, grid: Dict[int, str]) -> bool:
                for i, cell in enumerate(slot.cells))
 
 
-def fill_grid(slots: List[Slot], candidates: Dict[str, List[str]]) -> Optional[Dict[int, str]]:
+def fill_grid(slots: List[Slot], candidates: Dict[str, List[str]],
+              base_grid: Optional[Dict[int, str]] = None) -> Optional[Dict[int, str]]:
     """Backtracking search for a complete grid where every slot holds one of its
-    candidate words and all crossings agree. Returns the filled grid (cell->letter)
-    or None if no full assignment exists. Slots are ordered most-constrained-first
-    (MRV) at each step for speed."""
-    grid: Dict[int, str] = {}
+    candidate words and all crossings agree. Starts from ``base_grid`` (letters
+    already locked in by other slots) and only assigns ``slots``. Returns the
+    filled grid (cell->letter) or None if no full assignment exists. Slots are
+    ordered most-constrained-first (MRV) at each step for speed."""
+    grid: Dict[int, str] = dict(base_grid) if base_grid else {}
     assigned: Dict[str, str] = {}
 
     def backtrack() -> bool:
@@ -104,11 +106,12 @@ def fill_grid(slots: List[Slot], candidates: Dict[str, List[str]]) -> Optional[D
     return grid if backtrack() else None
 
 
-def greedy_partial(slots: List[Slot], candidates: Dict[str, List[str]]) -> Dict[int, str]:
+def greedy_partial(slots: List[Slot], candidates: Dict[str, List[str]],
+                   base_grid: Optional[Dict[int, str]] = None) -> Dict[int, str]:
     """Best-effort fill when no complete solution exists: assign slots
     most-constrained-first, skipping any with no consistent candidate. Leaves the
     unresolved cells blank so scoring still credits the letters we did get."""
-    grid: Dict[int, str] = {}
+    grid: Dict[int, str] = dict(base_grid) if base_grid else {}
     remaining = list(slots)
     while remaining:
         remaining.sort(key=lambda s: len([w for w in candidates.get(s.id, []) if _consistent(w, s, grid)]))
@@ -119,6 +122,41 @@ def greedy_partial(slots: List[Slot], candidates: Dict[str, List[str]]) -> Dict[
                     grid[cell] = word[i]
                 break
     return grid
+
+
+def fill_grid_prefer_llm(slots: List[Slot], llm_cands: Dict[str, List[str]],
+                         dictionary: Dict[int, List[str]]) -> Dict[int, str]:
+    """Fill the grid while trusting the model's answers. A single clue the model
+    can't answer must not force a *correct* crossing answer to be overwritten just
+    to complete the grid, so:
+
+      1. Best case: a complete grid using the LLM answers alone.
+      2. Otherwise lock a mutually-consistent set of LLM answers (most-confident
+         slots first), then fill only the leftover slots from the dictionary,
+         constrained by the locked letters -- the locked answers are never changed.
+
+    Returns a grid that may leave a few cells blank if nothing fits."""
+    llm_only = {s.id: llm_cands.get(s.id, []) for s in slots}
+    full = fill_grid(slots, llm_only)
+    if full is not None:
+        return full
+
+    grid: Dict[int, str] = {}
+    locked = set()
+    for slot in sorted(slots, key=lambda s: 0 if llm_cands.get(s.id) else 1):
+        for word in llm_cands.get(slot.id, []):
+            if _consistent(word, slot, grid):
+                for i, cell in enumerate(slot.cells):
+                    grid[cell] = word[i]
+                locked.add(slot.id)
+                break
+
+    remaining = [s for s in slots if s.id not in locked]
+    if not remaining:
+        return grid
+    cand = {s.id: llm_cands.get(s.id, []) + dictionary.get(s.length, []) for s in remaining}
+    filled = fill_grid(remaining, cand, base_grid=grid)
+    return filled if filled is not None else greedy_partial(remaining, cand, base_grid=grid)
 
 
 class MiniCrosswordSolver(BaseSolver):
@@ -132,6 +170,7 @@ class MiniCrosswordSolver(BaseSolver):
         self.answers: List[Optional[str]] = []
         self.slots: List[Slot] = []
         self.grid: Dict[int, str] = {}
+        self.llm_answers: Dict[str, List[str]] = {}
         self.solved = False
         self.cells_correct = 0
         self.cells_total = 0
@@ -173,7 +212,13 @@ class MiniCrosswordSolver(BaseSolver):
         ``patterns`` is given, only those slots are asked, with known letters shown
         (e.g. '_A_DY') so the model can respect the crossings."""
         by_id = {s.id: s for s in self.slots}
-        lines = ["Solve this crossword. Give candidate answers for each clue.", ""]
+        lines = [
+            "Solve this NYT Mini crossword. Give candidate answers for each clue.",
+            "Answers may be phrases (write with NO spaces), proper nouns, or "
+            "abbreviations; prefer the common crossword answer. Give several "
+            "candidates per clue when unsure so the crossings can decide.",
+            "",
+        ]
         target = patterns.keys() if patterns else by_id.keys()
         for direction, label in (("A", "Across"), ("D", "Down")):
             entries = [sid for sid in target if sid.startswith(direction)]
@@ -206,37 +251,42 @@ class MiniCrosswordSolver(BaseSolver):
     def _pattern(self, slot: Slot) -> str:
         return "".join(self.grid.get(cell, "_") for cell in slot.cells)
 
-    def _candidates(self, llm_cands: Dict[str, List[str]], dictionary: Dict[int, List[str]]) -> Dict[str, List[str]]:
-        merged: Dict[str, List[str]] = {}
-        for slot in self.slots:
-            words = list(llm_cands.get(slot.id, []))
-            seen = set(words)
-            for word in dictionary.get(slot.length, []):
-                if word not in seen:
-                    words.append(word)
-            merged[slot.id] = words
-        return merged
-
     def play(self) -> None:
         dictionary = self.load_dictionary({s.length for s in self.slots})
         llm_cands = self._ask_clues()
-        candidates = self._candidates(llm_cands, dictionary)
+        self.grid = fill_grid_prefer_llm(self.slots, llm_cands, dictionary)
 
-        grid = fill_grid(self.slots, candidates)
-        if grid is None:
-            # partial fill so far -> re-ask the unresolved slots with crossing hints
-            self.grid = greedy_partial(self.slots, candidates)
-            patterns = {s.id: self._pattern(s) for s in self.slots if "_" in self._pattern(s)}
-            if patterns:
-                extra = self._ask_clues(patterns)
-                for sid, words in extra.items():
-                    llm_cands.setdefault(sid, [])
-                    llm_cands[sid] = words + [w for w in llm_cands[sid] if w not in words]
-                candidates = self._candidates(llm_cands, dictionary)
-                grid = fill_grid(self.slots, candidates)
+        # any still-blank cells -> re-ask just those slots with the crossing letters
+        # already shown, then refill once
+        blanks = {s.id: self._pattern(s) for s in self.slots if "_" in self._pattern(s)}
+        if blanks:
+            extra = self._ask_clues(blanks)
+            for sid, words in extra.items():
+                llm_cands[sid] = words + [w for w in llm_cands.get(sid, []) if w not in words]
+            self.grid = fill_grid_prefer_llm(self.slots, llm_cands, dictionary)
 
-        self.grid = grid if grid is not None else greedy_partial(self.slots, candidates)
+        self.llm_answers = llm_cands
         self._score()
+
+    def _entry(self, slot: Slot, source: Dict[int, str]) -> str:
+        return "".join(source.get(cell, "_") for cell in slot.cells)
+
+    def _answer(self, slot: Slot) -> str:
+        return "".join(self.answers[cell] or "_" for cell in slot.cells)
+
+    def slot_report(self) -> List[str]:
+        """Per-slot breakdown for the logs: what we filled vs the real answer, and
+        whether the model's top candidate was right. Uses the answer key only to
+        report, never to solve."""
+        answers_by_cell = {i: a for i, a in enumerate(self.answers)}
+        rows = []
+        for slot in self.slots:
+            filled = self._entry(slot, self.grid)
+            actual = self._entry(slot, answers_by_cell)
+            top = (self.llm_answers.get(slot.id) or ["-"])[0]
+            mark = "OK " if filled == actual else "X  "
+            rows.append(f"  {mark}{slot.id} {filled:<7} (answer {actual}, llm {top}): {slot.clue}")
+        return rows
 
     def _score(self) -> None:
         white = [i for i, cell in enumerate(self.layout) if cell == 1]
@@ -267,6 +317,8 @@ class MiniCrosswordSolver(BaseSolver):
         end = time()
 
         print("\n".join(self.grid_rows()))
+        print()
+        print("\n".join(self.slot_report()))
         pct = (self.cells_correct / self.cells_total * 100) if self.cells_total else 0
         print(f"\n{'Solved' if self.solved else 'Filled'} "
               f"{self.cells_correct}/{self.cells_total} cells ({pct:.0f}%).")
@@ -283,6 +335,7 @@ class MiniCrosswordSolver(BaseSolver):
             "cells_correct": self.cells_correct,
             "cells_total": self.cells_total,
             "grid": self.grid_rows(),
+            "llm_answers": {sid: words for sid, words in self.llm_answers.items() if words},
             "solve_time": str(timedelta(seconds=end - start))[:-3],
         }
         self.write_solution(data)

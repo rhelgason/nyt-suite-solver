@@ -40,8 +40,11 @@ MAX_ATTEMPTS = 3
 BACKOFF_SECONDS = 2.0
 
 # Defaults are overridable by env so the model can be swapped without code changes.
+# gpt-4o (not -mini) is the default: Connections and crossword clues need real
+# world-knowledge and wordplay reasoning that the mini model gets wrong. Override
+# with GITHUB_MODELS_MODEL if a different model is preferred or better rate-limited.
 GITHUB_MODELS_URL = "https://models.github.ai/inference/chat/completions"
-GITHUB_MODELS_MODEL = os.environ.get("GITHUB_MODELS_MODEL", "openai/gpt-4o-mini")
+GITHUB_MODELS_MODEL = os.environ.get("GITHUB_MODELS_MODEL", "openai/gpt-4o")
 GEMINI_MODEL = os.environ.get("GEMINI_MODEL", "gemini-2.0-flash")
 
 

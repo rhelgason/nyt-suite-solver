@@ -5,6 +5,7 @@ from solvers.crossword.MiniCrosswordSolver import (
     MiniCrosswordSolver,
     build_slots,
     fill_grid,
+    fill_grid_prefer_llm,
     greedy_partial,
 )
 
@@ -60,6 +61,24 @@ def test_greedy_partial_fills_what_it_can():
     grid = greedy_partial(slots, cands)
     assert grid[0] == "H" and grid[1] == "I"  # A1 placed; others left blank
     assert 2 not in grid or grid.get(2) is None
+
+
+def test_prefer_llm_recovers_unanswered_slot_from_crossings():
+    slots = build_slots(2, CLUES)
+    # D2 is unanswered by the model; its letters must come from the crossings, and
+    # the correct answers A1/A2/D1 must NOT be overwritten to patch it
+    llm = {"A1": ["HI"], "A2": ["AT"], "D1": ["HA"], "D2": []}
+    grid = fill_grid_prefer_llm(slots, llm, {2: ["IT", "ON"]})
+    assert grid == {0: "H", 1: "I", 2: "A", 3: "T"}
+
+
+def test_prefer_llm_never_overwrites_correct_answer_for_a_bad_one():
+    slots = build_slots(2, CLUES)
+    # D2's model answer ON conflicts with the correct crossings; with no dictionary
+    # rescue it is left unplaced rather than corrupting A1/A2/D1
+    llm = {"A1": ["HI"], "A2": ["AT"], "D1": ["HA"], "D2": ["ON"]}
+    grid = fill_grid_prefer_llm(slots, llm, {})
+    assert grid[0] == "H" and grid[1] == "I" and grid[2] == "A"  # correct cells kept
 
 
 def _install(monkeypatch):

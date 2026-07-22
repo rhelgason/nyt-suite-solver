@@ -112,7 +112,7 @@ so it stays free with no API key to manage; if the model is unavailable the game
 is simply recorded as unsolved. The score reflects realistic play rather than a
 trivial win, since a wrong group costs a mistake just as it would for a person.
 
-<p align="center"><img src="stats/connections_outcomes.svg" alt="Connections outcomes" width="520"></p>
+<p align="center"><img src="stats/connections_groups.svg" alt="Connections groups found" width="520"></p>
 
 ### Mini crossword
 
@@ -126,7 +126,7 @@ with the known letters shown, then the search runs again. Only the Mini is free
 to fetch; the full-size Daily and Sunday crosswords are locked behind a NYT
 subscription, so they are intentionally left out.
 
-<p align="center"><img src="stats/crossword_outcomes.svg" alt="Mini crossword outcomes" width="520"></p>
+<p align="center"><img src="stats/crossword_passfail.svg" alt="Mini crossword pass/fail" width="520"></p>
 
 ## Running it yourself
 

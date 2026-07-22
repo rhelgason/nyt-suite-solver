@@ -25,7 +25,8 @@ def _install(monkeypatch, responder):
 
 
 def _remaining(prompt):
-    return set(prompt.split("Remaining words: ")[1].split("\n")[0].split(", "))
+    line = next(l for l in prompt.splitlines() if l.startswith("Remaining words"))
+    return set(line.split(": ", 1)[1].split(", "))
 
 
 def _true_groups():
@@ -40,24 +41,27 @@ def test_scrape_builds_board_in_position_order(monkeypatch):
     assert len(s.true_groups) == 4
 
 
+def _groups_of(sets):
+    return {"groups": [{"words": sorted(g), "connection": "x"} for g in sets]}
+
+
+def _perfect(prompt, system=None, max_tokens=512):
+    rem = _remaining(prompt)
+    return _groups_of([g for g in _true_groups() if g <= rem])
+
+
 def test_perfect_play_solves_with_no_mistakes(monkeypatch):
-    def perfect(prompt, system=None, max_tokens=256):
-        rem = _remaining(prompt)
-        for group in _true_groups():
-            if group <= rem:
-                return {"group": sorted(group)}
-        return {"group": []}
-    _install(monkeypatch, perfect)
+    _install(monkeypatch, _perfect)
     s = ConnectionsSolver("2026-07-22")
     s.play()
     assert s.solved and s.groups_found == 4 and s.mistakes == 0
 
 
 def test_always_wrong_loses_after_four_mistakes(monkeypatch):
-    def wrong(prompt, system=None, max_tokens=256):
+    def wrong(prompt, system=None, max_tokens=512):
         rem = sorted(_remaining(prompt))
         # deliberately mix groups so it is never a real category
-        return {"group": [rem[0], rem[5], rem[10], rem[15]][:4]}
+        return {"groups": [{"words": [rem[0], rem[5], rem[10], rem[15]]}]}
     _install(monkeypatch, wrong)
     s = ConnectionsSolver("2026-07-22")
     s.play()
@@ -66,8 +70,8 @@ def test_always_wrong_loses_after_four_mistakes(monkeypatch):
 
 def test_one_away_is_flagged(monkeypatch):
     # guess three REDs plus one wrong word -> should be recorded as one-away
-    def one_away(prompt, system=None, max_tokens=256):
-        return {"group": ["APPLE", "ROSE", "RUBY", "BASE"]}
+    def one_away(prompt, system=None, max_tokens=512):
+        return {"groups": [{"words": ["APPLE", "ROSE", "RUBY", "BASE"]}]}
     _install(monkeypatch, one_away)
     s = ConnectionsSolver("2026-07-22")
     s.play()
@@ -75,8 +79,8 @@ def test_one_away_is_flagged(monkeypatch):
 
 
 def test_invalid_words_count_as_mistake(monkeypatch):
-    def hallucinate(prompt, system=None, max_tokens=256):
-        return {"group": ["ZZZ", "QQQ", "WWW", "XXX"]}
+    def hallucinate(prompt, system=None, max_tokens=512):
+        return {"groups": [{"words": ["ZZZ", "QQQ", "WWW", "XXX"]}]}
     _install(monkeypatch, hallucinate)
     s = ConnectionsSolver("2026-07-22")
     s.play()
@@ -85,13 +89,7 @@ def test_invalid_words_count_as_mistake(monkeypatch):
 
 
 def test_solve_writes_file(monkeypatch, tmp_path):
-    def perfect(prompt, system=None, max_tokens=256):
-        rem = _remaining(prompt)
-        for group in _true_groups():
-            if group <= rem:
-                return {"group": sorted(group)}
-        return {"group": []}
-    _install(monkeypatch, perfect)
+    _install(monkeypatch, _perfect)
     s = ConnectionsSolver("2026-07-22")
     s.OUTPUT_DIRECTORY_PATH = str(tmp_path)
     s.solve()
