@@ -10,10 +10,10 @@
         "mammoth"
     ],
     "spangram": "supersizeit",
-    "solved": false,
-    "theme_words_found": 4,
+    "solved": true,
+    "theme_words_found": 5,
     "theme_words_total": 5,
-    "candidates": 5562,
-    "truncated": true,
-    "solve_time": "0:00:29.204"
+    "candidates": 22905,
+    "truncated": false,
+    "solve_time": "0:00:54.654"
 }

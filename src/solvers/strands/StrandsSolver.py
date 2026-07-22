@@ -40,9 +40,12 @@ LEFTOVER_TIME_BUDGET = 30.0
 # on the hard ones while staying under a minute. Python is the fallback if the
 # extension is not built.
 STRANDS_SO_PATH = "src/solvers/strands/StrandsSearch.so"
-C_WORDS_TIME = 15.0
-C_LEFTOVER_TIME = 40.0
-C_NODE_BUDGET = 800_000_000
+# The word-cover pass nails single/multi-word-spangram boards in well under a
+# second, so give it little time; spend the rest on the leftover pass, which is
+# where the deeper phrase-spangram boards are found.
+C_WORDS_TIME = 5.0
+C_LEFTOVER_TIME = 60.0
+C_NODE_BUDGET = 8_000_000_000
 
 # 8 king-move directions
 DIRS = [(-1, -1), (-1, 0), (-1, 1), (0, -1), (0, 1), (1, -1), (1, 0), (1, 1)]
