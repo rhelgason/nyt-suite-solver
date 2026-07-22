@@ -1,0 +1,19 @@
+{
+    "puzzle_id": 1044,
+    "ds": "2026-07-17",
+    "clue": "Categorically speaking",
+    "theme_words": [
+        "entertainment",
+        "geography",
+        "nature",
+        "sports"
+    ],
+    "spangram": "trivialpursuit",
+    "solved": true,
+    "spangram_matched": false,
+    "theme_words_found": 4,
+    "theme_words_total": 4,
+    "candidates": 300,
+    "truncated": false,
+    "solve_time": "0:00:00.426"
+}

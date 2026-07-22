@@ -1,0 +1,20 @@
+{
+    "puzzle_id": 1017,
+    "ds": "2026-07-20",
+    "clue": "Small talk",
+    "theme_words": [
+        "little",
+        "microscopic",
+        "miniature",
+        "minuscule",
+        "tiny"
+    ],
+    "spangram": "itsybitsy",
+    "solved": false,
+    "spangram_matched": false,
+    "theme_words_found": 0,
+    "theme_words_total": 5,
+    "candidates": 0,
+    "truncated": false,
+    "solve_time": "0:00:00.957"
+}

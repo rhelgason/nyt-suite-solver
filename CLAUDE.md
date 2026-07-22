@@ -21,8 +21,11 @@ Solve with real algorithms wherever possible; avoid LLM calls unless a puzzle
 genuinely cannot be solved otherwise.
 - Current solvers are fully algorithmic: trie-backed word search (Letter Boxed,
   Spelling Bee), a Dancing Links / Algorithm X exact-cover solver in C++
-  (Sudoku), and a constraint-filtering / information-gain solver (Wordle). No AI
-  is involved, and that is the goal.
+  (Sudoku), a constraint-filtering / information-gain solver (Wordle), and an
+  exact-cover grid-partition search (Strands). No AI is involved, and that is
+  the goal. Strands notably has no theme understanding at all — it relies purely
+  on the combinatorial rigidity of tiling the grid, so it only solves a fraction
+  of puzzles, which is expected and acceptable.
 - A future puzzle such as the **Crossword** would likely require an LLM (clue
   semantics have no clean algorithm). That is an acceptable exception — but reach
   for an LLM only when there is no reasonable deterministic approach, and

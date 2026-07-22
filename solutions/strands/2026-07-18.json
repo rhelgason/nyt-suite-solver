@@ -1,0 +1,21 @@
+{
+    "puzzle_id": 1042,
+    "ds": "2026-07-18",
+    "clue": "A healthy breakfast",
+    "theme_words": [
+        "crunchy",
+        "nutty",
+        "oaty",
+        "salty",
+        "sweet",
+        "wholesome"
+    ],
+    "spangram": "bowlofgranola",
+    "solved": false,
+    "spangram_matched": false,
+    "theme_words_found": 0,
+    "theme_words_total": 6,
+    "candidates": 0,
+    "truncated": false,
+    "solve_time": "0:00:01.015"
+}

@@ -1,0 +1,21 @@
+{
+    "puzzle_id": 1047,
+    "ds": "2026-07-21",
+    "clue": "Write there",
+    "theme_words": [
+        "card",
+        "envelope",
+        "file",
+        "letterhead",
+        "notepad",
+        "sheet"
+    ],
+    "spangram": "stationery",
+    "solved": true,
+    "spangram_matched": true,
+    "theme_words_found": 6,
+    "theme_words_total": 6,
+    "candidates": 300,
+    "truncated": false,
+    "solve_time": "0:00:14.702"
+}

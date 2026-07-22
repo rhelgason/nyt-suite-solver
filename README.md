@@ -8,7 +8,7 @@ required, and can also be used interactively or headlessly.
 <!-- STATS:START -->
 ## Lifetime results
 
-_Auto-generated from `solutions/` · **31** puzzles solved across 4 games (through 2026-07-21)._
+_Auto-generated from `solutions/` · **40** puzzles solved across 5 games (through 2026-07-21)._
 
 | Game | Puzzles | Avg score | p90 runtime |
 | --- | ---: | ---: | ---: |
@@ -17,6 +17,7 @@ _Auto-generated from `solutions/` · **31** puzzles solved across 4 games (throu
 | Sudoku | 3 | 100% | 0.23 ms |
 | Wordle (easy) | 9 | 3.9 guesses | 3.37 s |
 | Wordle (hard) | 9 | 4.0 guesses | 124 ms |
+| Strands | 9 | 51% words | 14.70 s |
 
 <p align="center"><img src="stats/cumulative_solves.svg" alt="Cumulative Puzzles Solved" width="720"></p>
 <!-- STATS:END -->
@@ -78,6 +79,21 @@ games it plays from a human vocabulary, not the official answer list, and the
 chart compares how many guesses each mode needs (X marks a miss).
 
 <p align="center"><img src="stats/wordle_guesses.svg" alt="Wordle guess distribution by mode" width="720"></p>
+
+### Strands
+
+Strands hides a set of theme words plus a spanning "spangram" in a 6x8 grid,
+where the answers tile the board so every letter is used exactly once. There is
+no theme understanding here at all: the solver treats it as a pure exact-cover
+puzzle, finding every valid word-path (king moves) from a human wordlist and
+searching for ways to partition all 48 cells into a few long words with one path
+spanning opposite sides. It keeps every candidate partition and counts a puzzle
+as solved when one of them recovers all the theme words. It will not crack every
+board (English offers many valid tilings, and spangrams are usually multi-word
+phrases we cannot match as a single word), but getting some without any AI is the
+fun of it.
+
+<p align="center"><img src="stats/strands_outcomes.svg" alt="Strands outcomes" width="520"></p>
 
 ## Running it yourself
 

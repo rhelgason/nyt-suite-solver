@@ -1,0 +1,19 @@
+{
+    "puzzle_id": 1041,
+    "ds": "2026-07-15",
+    "clue": "Rose-colored glasses",
+    "theme_words": [
+        "idealistic",
+        "impractical",
+        "quixotic",
+        "romantic"
+    ],
+    "spangram": "pieinthesky",
+    "solved": false,
+    "spangram_matched": false,
+    "theme_words_found": 1,
+    "theme_words_total": 4,
+    "candidates": 12,
+    "truncated": false,
+    "solve_time": "0:00:00.383"
+}

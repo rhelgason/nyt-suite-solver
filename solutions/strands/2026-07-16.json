@@ -1,0 +1,22 @@
+{
+    "puzzle_id": 1053,
+    "ds": "2026-07-16",
+    "clue": "\"Rerouting ...\"",
+    "theme_words": [
+        "deviate",
+        "pivot",
+        "swerve",
+        "tack",
+        "turn",
+        "veer",
+        "zigzag"
+    ],
+    "spangram": "changecourse",
+    "solved": true,
+    "spangram_matched": false,
+    "theme_words_found": 7,
+    "theme_words_total": 7,
+    "candidates": 2,
+    "truncated": false,
+    "solve_time": "0:00:00.284"
+}

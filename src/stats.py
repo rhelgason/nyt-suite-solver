@@ -154,12 +154,40 @@ def summarize_wordle(records: List[Record], mode: str) -> dict:
     }
 
 
+def summarize_strands(records: List[Record]) -> dict:
+    by_ds = _by_date(records)
+    dates = sorted(by_ds)
+    solved = partial = missed = 0
+    recovery = []
+    for d in dates:
+        rec = by_ds[d]
+        total = rec.get("theme_words_total") or 0
+        found = rec.get("theme_words_found") or 0
+        if total:
+            recovery.append(found / total * 100)
+        if rec.get("solved"):
+            solved += 1
+        elif found > 0:
+            partial += 1
+        else:
+            missed += 1
+    avg_recovery = sum(recovery) / len(recovery) if recovery else None
+    return {
+        "count": len(dates),
+        "outcome": {"solved": solved, "partial": partial, "missed": missed},
+        "avg_recovery": avg_recovery,
+        "p90_ms": _percentile(_runtimes_ms(records), 90),
+        "score_cell": f"{avg_recovery:.0f}% words" if avg_recovery is not None else "n/a",
+    }
+
+
 # game order and colors used for the cumulative chart's legend/lines
 CUMULATIVE_GAMES = [
     ("spelling_bee", "Spelling Bee", "#eab308"),
     ("letter_boxed", "Letter Boxed", "#2563eb"),
     ("sudoku", "Sudoku", "#dc2626"),
     ("wordle", "Wordle", "#7c3aed"),
+    ("strands", "Strands", "#0891b2"),
 ]
 
 ASSETS_DIR = os.path.join(REPO_ROOT, "stats")
@@ -167,6 +195,7 @@ CUMULATIVE_SVG_REL = "stats/cumulative_solves.svg"
 SCORES_SVG_REL = "stats/spelling_bee_scores.svg"
 WORDS_SVG_REL = "stats/letter_boxed_words.svg"
 WORDLE_SVG_REL = "stats/wordle_guesses.svg"
+STRANDS_SVG_REL = "stats/strands_outcomes.svg"
 
 
 def _parse_date(value: str) -> date:
@@ -303,7 +332,20 @@ def wordle_guesses_svg(easy: dict, hard: dict) -> Optional[str]:
     return svg_charts.grouped_bar_chart("Wordle Guess Distribution", labels, series, "Puzzles")
 
 
-GAMES = ("spelling_bee", "letter_boxed", "sudoku", "wordle")
+def strands_outcomes_pie_svg(s: dict) -> Optional[str]:
+    outcome = s.get("outcome") or {}
+    slices = [
+        ("All theme words", outcome.get("solved", 0), "#16a34a"),
+        ("Some theme words", outcome.get("partial", 0), "#f59e0b"),
+        ("None", outcome.get("missed", 0), "#dc2626"),
+    ]
+    slices = [(label, value, color) for label, value, color in slices if value > 0]
+    if not slices:
+        return None
+    return svg_charts.pie_chart("Strands Outcomes", slices)
+
+
+GAMES = ("spelling_bee", "letter_boxed", "sudoku", "wordle", "strands")
 
 
 def build_section(root: str = SOLUTIONS_ROOT) -> str:
@@ -316,12 +358,14 @@ def build_section(root: str = SOLUTIONS_ROOT) -> str:
     sk = summarize_sudoku(games["sudoku"])
     wd_easy = summarize_wordle(games["wordle"], "easy")
     wd_hard = summarize_wordle(games["wordle"], "hard")
+    st = summarize_strands(games["strands"])
     rows = [
         ("Spelling Bee", sb),
         ("Letter Boxed", lb),
         ("Sudoku", sk),
         ("Wordle (easy)", wd_easy),
         ("Wordle (hard)", wd_hard),
+        ("Strands", st),
     ]
     total = sum(s["count"] for _, s in rows)
     played = sum(1 for g in GAMES if games[g])
@@ -353,6 +397,7 @@ def write_assets(root: str = SOLUTIONS_ROOT, assets_dir: str = ASSETS_DIR) -> No
         "wordle_guesses.svg": wordle_guesses_svg(
             summarize_wordle(games["wordle"], "easy"), summarize_wordle(games["wordle"], "hard")
         ),
+        "strands_outcomes.svg": strands_outcomes_pie_svg(summarize_strands(games["strands"])),
     }
     os.makedirs(assets_dir, exist_ok=True)
     for name, svg in assets.items():

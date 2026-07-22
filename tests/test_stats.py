@@ -61,9 +61,9 @@ def test_cumulative_svg_is_valid_and_time_scaled(tmp_path):
 
     svg = cumulative_solves_svg(games)
     ET.fromstring(svg)  # well-formed XML
-    for name in ("Spelling Bee", "Letter Boxed", "Sudoku", "Wordle"):
+    for name in ("Spelling Bee", "Letter Boxed", "Sudoku", "Wordle", "Strands"):
         assert name in svg  # legend covers every game
-    assert svg.count("<polyline") == 4  # one line per game (Wordle flat at 0 until it has data)
+    assert svg.count("<polyline") == 5  # one line per game (flat at 0 until it has data)
 
 
 def test_time_axis_ticks_scale_with_span():
@@ -142,6 +142,30 @@ def test_summarize_wordle_splits_by_mode(tmp_path):
     ET.fromstring(svg)  # well-formed XML
     assert "Wordle Guess Distribution" in svg
     assert "Easy" in svg and "Hard" in svg  # grouped legend
+
+
+def test_summarize_strands_and_pie(tmp_path):
+    import xml.etree.ElementTree as ET
+
+    from stats import load_game, strands_outcomes_pie_svg, summarize_strands
+
+    root = str(tmp_path)
+    _write(root, "strands", "2026-01-01.json",
+           {"ds": "2026-01-01", "solved": True, "theme_words_found": 6, "theme_words_total": 6})
+    _write(root, "strands", "2026-01-02.json",
+           {"ds": "2026-01-02", "solved": False, "theme_words_found": 3, "theme_words_total": 6})
+    _write(root, "strands", "2026-01-03.json",
+           {"ds": "2026-01-03", "solved": False, "theme_words_found": 0, "theme_words_total": 5})
+
+    s = summarize_strands(load_game(root, "strands"))
+    assert s["count"] == 3
+    assert s["outcome"] == {"solved": 1, "partial": 1, "missed": 1}
+    assert abs(s["avg_recovery"] - (100 + 50 + 0) / 3) < 1e-9
+    assert s["score_cell"] == "50% words"
+
+    svg = strands_outcomes_pie_svg(s)
+    ET.fromstring(svg)  # well-formed XML
+    assert svg.count("<path") == 3  # solved / partial / missed slices
 
 
 def test_build_section_empty(tmp_path):
