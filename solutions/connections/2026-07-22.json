@@ -96,26 +96,26 @@
         },
         {
             "guess": [
-                "HOOVES",
-                "MANE",
-                "PINS",
-                "TAIL"
+                "HOLE",
+                "STROKES",
+                "VINES",
+                "WHITE STRIPES"
             ],
             "result": "wrong",
-            "connection": "Parts of animals",
-            "one_away": true
+            "connection": "Rock bands",
+            "one_away": false
         },
         {
             "guess": [
-                "HOOVES",
-                "MANE",
-                "SNAPS",
-                "TAIL"
+                "HOLE",
+                "STROKES",
+                "VINES",
+                "WHITE STRIPES"
             ],
             "result": "wrong",
-            "connection": "Parts or actions associated with animals",
-            "one_away": true
+            "connection": "Rock bands from the 2000s",
+            "one_away": false
         }
     ],
-    "solve_time": "0:00:11.530"
+    "solve_time": "0:00:12.474"
 }

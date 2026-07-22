@@ -15,44 +15,28 @@
     ],
     "llm_answers": {
         "A1": [
-            "HEN",
-            "MOM",
-            "DAM"
+            "HEN"
         ],
         "A4": [
             "EDGE",
-            "ROLE",
-            "ACTS",
-            "LADY"
+            "ROLE"
         ],
         "A5": [
             "GRAVY",
-            "PEACH",
-            "IDEAL",
-            "SUPER"
+            "PEACH"
         ],
         "A6": [
-            "AIDY",
-            "KOBE",
-            "BRYN",
-            "ABBY"
+            "AIDY"
         ],
         "A7": [
             "DRY",
-            "BAD",
-            "OFF",
             "TOO"
         ],
         "D1": [
-            "USFUL",
-            "NURSE",
-            "ASSET",
-            "AIDED"
+            "HANDY"
         ],
         "D2": [
             "EDDY",
-            "GYRE",
-            "WHIR",
             "SWIR"
         ],
         "D3": [
@@ -60,15 +44,12 @@
         ],
         "D4": [
             "LAIR",
-            "BASE",
-            "HIDE"
+            "BASE"
         ],
         "D5": [
             "BAD",
-            "DRY",
-            "OFF",
-            "TOO"
+            "FUN"
         ]
     },
-    "solve_time": "0:00:03.309"
+    "solve_time": "0:00:02.648"
 }
