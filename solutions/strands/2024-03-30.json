@@ -1,0 +1,20 @@
+{
+    "puzzle_id": 60,
+    "ds": "2024-03-30",
+    "clue": "Camouflage",
+    "theme_words": [
+        "cheetah",
+        "dalmatian",
+        "giraffe",
+        "hyena",
+        "ladybug",
+        "leopard"
+    ],
+    "spangram": "spotty",
+    "solved": true,
+    "theme_words_found": 6,
+    "theme_words_total": 6,
+    "candidates": 1,
+    "truncated": false,
+    "solve_time": "0:00:00.264"
+}

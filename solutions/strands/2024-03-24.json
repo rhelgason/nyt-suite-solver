@@ -1,0 +1,20 @@
+{
+    "puzzle_id": 47,
+    "ds": "2024-03-24",
+    "clue": "Lock steps",
+    "theme_words": [
+        "apply",
+        "condition",
+        "lather",
+        "moisturize",
+        "rinse",
+        "towel"
+    ],
+    "spangram": "haircare",
+    "solved": false,
+    "theme_words_found": 0,
+    "theme_words_total": 6,
+    "candidates": 0,
+    "truncated": true,
+    "solve_time": "0:01:05.523"
+}

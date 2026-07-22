@@ -1,0 +1,21 @@
+{
+    "puzzle_id": 12,
+    "ds": "2024-04-08",
+    "clue": "It goes by fast",
+    "theme_words": [
+        "century",
+        "decade",
+        "hour",
+        "minute",
+        "month",
+        "second",
+        "week"
+    ],
+    "spangram": "timepieces",
+    "solved": true,
+    "theme_words_found": 7,
+    "theme_words_total": 7,
+    "candidates": 2,
+    "truncated": false,
+    "solve_time": "0:00:00.289"
+}

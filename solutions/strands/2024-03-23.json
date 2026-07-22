@@ -1,0 +1,21 @@
+{
+    "puzzle_id": 34,
+    "ds": "2024-03-23",
+    "clue": "Romeo and Juliet",
+    "theme_words": [
+        "balcony",
+        "feud",
+        "kiss",
+        "love",
+        "poison",
+        "tragedy",
+        "tryst"
+    ],
+    "spangram": "starcrossed",
+    "solved": false,
+    "theme_words_found": 3,
+    "theme_words_total": 7,
+    "candidates": 29132,
+    "truncated": true,
+    "solve_time": "0:01:02.384"
+}

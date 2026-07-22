@@ -1,0 +1,20 @@
+{
+    "puzzle_id": 37,
+    "ds": "2024-03-26",
+    "clue": "That’s fantastic!",
+    "theme_words": [
+        "centaur",
+        "cyclops",
+        "dragon",
+        "fairy",
+        "mermaid",
+        "ogre"
+    ],
+    "spangram": "mythological",
+    "solved": true,
+    "theme_words_found": 6,
+    "theme_words_total": 6,
+    "candidates": 46,
+    "truncated": false,
+    "solve_time": "0:00:00.298"
+}

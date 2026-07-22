@@ -1,0 +1,21 @@
+{
+    "puzzle_id": 45,
+    "ds": "2024-04-04",
+    "clue": "Consumerism",
+    "theme_words": [
+        "bacon",
+        "bread",
+        "cabbage",
+        "chips",
+        "clam",
+        "dough",
+        "lettuce"
+    ],
+    "spangram": "lunchmoney",
+    "solved": false,
+    "theme_words_found": 3,
+    "theme_words_total": 7,
+    "candidates": 14039,
+    "truncated": true,
+    "solve_time": "0:01:00.769"
+}

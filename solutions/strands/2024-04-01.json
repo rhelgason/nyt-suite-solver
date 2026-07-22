@@ -1,0 +1,21 @@
+{
+    "puzzle_id": 65,
+    "ds": "2024-04-01",
+    "clue": "What’s so funny?",
+    "theme_words": [
+        "chortle",
+        "chuckle",
+        "guffaw",
+        "hoot",
+        "laugh",
+        "roar",
+        "titter"
+    ],
+    "spangram": "hilarious",
+    "solved": true,
+    "theme_words_found": 7,
+    "theme_words_total": 7,
+    "candidates": 1,
+    "truncated": false,
+    "solve_time": "0:00:00.131"
+}

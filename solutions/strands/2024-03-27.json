@@ -1,0 +1,20 @@
+{
+    "puzzle_id": 49,
+    "ds": "2024-03-27",
+    "clue": "This is where I draw the line",
+    "theme_words": [
+        "cartoon",
+        "comic",
+        "design",
+        "doodle",
+        "portrait",
+        "sketch"
+    ],
+    "spangram": "graphicart",
+    "solved": false,
+    "theme_words_found": 3,
+    "theme_words_total": 6,
+    "candidates": 16168,
+    "truncated": true,
+    "solve_time": "0:01:00.891"
+}

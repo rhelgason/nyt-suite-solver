@@ -1,0 +1,21 @@
+{
+    "puzzle_id": 3,
+    "ds": "2024-03-25",
+    "clue": "Sign language",
+    "theme_words": [
+        "archer",
+        "bull",
+        "goat",
+        "scales",
+        "scorpion",
+        "twins",
+        "virgin"
+    ],
+    "spangram": "astrology",
+    "solved": false,
+    "theme_words_found": 5,
+    "theme_words_total": 7,
+    "candidates": 41864,
+    "truncated": true,
+    "solve_time": "0:01:05.322"
+}

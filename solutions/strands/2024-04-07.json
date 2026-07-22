@@ -1,0 +1,20 @@
+{
+    "puzzle_id": 38,
+    "ds": "2024-04-07",
+    "clue": "This’ll all blow over",
+    "theme_words": [
+        "balloon",
+        "bubble",
+        "eyelash",
+        "feather",
+        "paper",
+        "straw"
+    ],
+    "spangram": "lightweight",
+    "solved": false,
+    "theme_words_found": 3,
+    "theme_words_total": 6,
+    "candidates": 30252,
+    "truncated": true,
+    "solve_time": "0:01:05.341"
+}

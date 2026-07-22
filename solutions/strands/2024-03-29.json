@@ -1,0 +1,20 @@
+{
+    "puzzle_id": 85,
+    "ds": "2024-03-29",
+    "clue": "Pardon my French!",
+    "theme_words": [
+        "aperitif",
+        "beret",
+        "bureau",
+        "chauffeur",
+        "chic",
+        "liaison"
+    ],
+    "spangram": "loanwords",
+    "solved": true,
+    "theme_words_found": 6,
+    "theme_words_total": 6,
+    "candidates": 1,
+    "truncated": false,
+    "solve_time": "0:00:00.530"
+}

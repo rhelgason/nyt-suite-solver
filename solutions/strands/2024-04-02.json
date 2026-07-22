@@ -1,0 +1,20 @@
+{
+    "puzzle_id": 81,
+    "ds": "2024-04-02",
+    "clue": "Rolling in the aisles",
+    "theme_words": [
+        "bakery",
+        "dairy",
+        "frozen",
+        "meats",
+        "produce",
+        "seafood"
+    ],
+    "spangram": "grocerystore",
+    "solved": false,
+    "theme_words_found": 1,
+    "theme_words_total": 6,
+    "candidates": 280,
+    "truncated": true,
+    "solve_time": "0:01:01.831"
+}
