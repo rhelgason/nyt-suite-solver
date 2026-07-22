@@ -20,8 +20,8 @@ jobs:
       - name: Install Python dependencies
         run: pip install -r requirements-dev.txt
 
-      - name: Build Sudoku extension
-        run: make build-sudoku
+      - name: Build solver extensions
+        run: make build
 
       - name: Run tests
         # conftest.py forces pynput's dummy backend, so no display is needed

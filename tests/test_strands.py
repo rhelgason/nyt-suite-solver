@@ -1,4 +1,7 @@
 import json
+import os
+
+import pytest
 
 from solvers.strands import StrandsSolver as strands_module
 from solvers.strands.StrandsSolver import (
@@ -10,7 +13,10 @@ from solvers.strands.StrandsSolver import (
     has_hamiltonian_path,
     is_spanning,
     neighbors,
+    solve_with_c,
 )
+
+STRANDS_SO = os.path.join("src", "solvers", "strands", "StrandsSearch.so")
 
 
 def test_neighbors_corner_and_center():
@@ -55,6 +61,19 @@ def test_find_solutions_leftover_uses_spangram_path():
     placements = enumerate_placements(grid, word_set, prefixes)
     candidates, _ = find_solutions_leftover(grid, placements, num_words=1)
     assert frozenset({"word"}) in candidates  # leftover {4,5,6,7} spans left-right
+
+
+@pytest.mark.skipif(not os.path.exists(STRANDS_SO), reason="StrandsSearch.so not built")
+def test_c_solver_finds_leftover_spangram():
+    # bottom row "abcd" is the leftover spangram; "word" is the one theme word
+    grid = ["word", "abcd"]
+    word_set, prefixes = build_word_index(["word"])
+    placements = enumerate_placements(grid, word_set, prefixes)
+    result = solve_with_c(grid, placements, ["word"])
+    assert result is not None
+    solved, best_overlap, candidates = result
+    assert solved is True
+    assert best_overlap == 1
 
 
 def test_solve_writes_solution_file(monkeypatch, tmp_path):

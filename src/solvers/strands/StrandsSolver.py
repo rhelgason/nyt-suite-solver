@@ -6,6 +6,7 @@ from Spinner import Spinner
 from time import time
 from typing import Dict, FrozenSet, List, Optional, Set, Tuple
 
+import ctypes as ct
 import os
 
 BASE_URL = "https://www.nytimes.com/svc/strands/v2"
@@ -33,6 +34,15 @@ NODE_BUDGET = 12_000_000
 MAX_CANDIDATES = 20_000
 WORDS_TIME_BUDGET = 20.0
 LEFTOVER_TIME_BUDGET = 30.0
+
+# The C extension (StrandsSearch.so) is the same two-pass hybrid but ~20-50x
+# faster, so solved boards finish near-instantly and we can afford deeper limits
+# on the hard ones while staying under a minute. Python is the fallback if the
+# extension is not built.
+STRANDS_SO_PATH = "src/solvers/strands/StrandsSearch.so"
+C_WORDS_TIME = 15.0
+C_LEFTOVER_TIME = 40.0
+C_NODE_BUDGET = 800_000_000
 
 # 8 king-move directions
 DIRS = [(-1, -1), (-1, 0), (-1, 1), (0, -1), (0, 1), (1, -1), (1, 0), (1, 1)]
@@ -291,6 +301,61 @@ def find_solutions_leftover(grid: List[str], placements: List[Placement], num_wo
     return candidates, budget.exhausted and not found[0]
 
 
+_C_LIB = None
+_C_LIB_LOADED = False
+
+
+def _c_lib():
+    """Load the StrandsSearch extension once; return None if it isn't built."""
+    global _C_LIB, _C_LIB_LOADED
+    if not _C_LIB_LOADED:
+        _C_LIB_LOADED = True
+        try:
+            lib = ct.CDLL(os.path.join("./", STRANDS_SO_PATH))
+            lib.strands_solve.argtypes = [
+                ct.POINTER(ct.c_ulonglong), ct.POINTER(ct.c_int), ct.c_int,
+                ct.c_int, ct.c_int, ct.c_int, ct.c_int,
+                ct.POINTER(ct.c_int), ct.c_int, ct.c_int, ct.c_long,
+                ct.c_double, ct.c_double, ct.POINTER(ct.c_int), ct.POINTER(ct.c_long),
+            ]
+            lib.strands_solve.restype = ct.c_int
+            _C_LIB = lib
+        except OSError:
+            _C_LIB = None
+    return _C_LIB
+
+
+def solve_with_c(grid: List[str], placements: List[Placement], theme_words: List[str]):
+    """Run the C exact-cover search. Returns (solved, best_overlap, candidates) or
+    None if the extension is unavailable."""
+    lib = _c_lib()
+    if lib is None:
+        return None
+    placements = sorted(placements, key=lambda p: -len(p[0]))  # longest first
+    cols = len(grid[0])
+    word_id: Dict[str, int] = {}
+    word_ids, masks = [], []
+    for word, cells in placements:
+        word_ids.append(word_id.setdefault(word, len(word_id)))
+        bits = 0
+        for cell in cells:
+            bits |= 1 << cell
+        masks.append(bits)
+    theme_ids = sorted({word_id[w] for w in theme_words if w in word_id})
+    n = len(placements)
+
+    best_overlap = ct.c_int(0)
+    candidates = ct.c_long(0)
+    solved = lib.strands_solve(
+        (ct.c_ulonglong * n)(*masks), (ct.c_int * n)(*word_ids), n,
+        len(grid) * cols, len(grid), cols, len(theme_words),
+        (ct.c_int * len(theme_ids))(*theme_ids), len(theme_ids),
+        MAX_SPANGRAM_CELLS, C_NODE_BUDGET, C_WORDS_TIME, C_LEFTOVER_TIME,
+        ct.byref(best_overlap), ct.byref(candidates),
+    )
+    return bool(solved), best_overlap.value, candidates.value
+
+
 class StrandsSolver(BaseSolver):
     OUTPUT_DIRECTORY_PATH = "solutions/strands"
 
@@ -332,32 +397,32 @@ class StrandsSolver(BaseSolver):
         placements = enumerate_placements(self.grid, word_set, prefixes)
         theme_set = frozenset(self.theme_words)
 
-        # Fast pass: cover the whole board with words (spangram as dictionary
-        # word(s)). Fall back to the slower leftover-path search only if that did
-        # not already recover the theme words, since it also handles phrase
-        # spangrams. NYT shows the theme-word count, so we use it to prune.
-        candidates, truncated = find_solutions_words(self.grid, placements, target=theme_set)
-        if not any(theme_set <= cand for cand in candidates):
-            leftover, trunc_l = find_solutions_leftover(
-                self.grid, placements, len(self.theme_words), target=theme_set)
-            candidates = candidates + leftover
-            truncated = truncated or trunc_l
+        result = solve_with_c(self.grid, placements, self.theme_words)
+        if result is not None:
+            solved, best_overlap, n_candidates = result
+            truncated = not solved
+        else:
+            # Python fallback: fast word-cover pass, then leftover-path pass.
+            candidates, truncated = find_solutions_words(self.grid, placements, target=theme_set)
+            if not any(theme_set <= cand for cand in candidates):
+                leftover, trunc_l = find_solutions_leftover(
+                    self.grid, placements, len(self.theme_words), target=theme_set)
+                candidates = candidates + leftover
+                truncated = truncated or trunc_l
+            solved = any(theme_set <= cand for cand in candidates)
+            best_overlap = max((len(cand & theme_set) for cand in candidates), default=0)
+            n_candidates = len(candidates)
         end = time()
 
-        # "solved" = some candidate cover recovers every theme word (the spangram
-        # is then the remaining strand).
-        solved = any(theme_set <= cand for cand in candidates)
-        best_overlap = max((len(cand & theme_set) for cand in candidates), default=0)
-
         if solved:
-            print(f"\nSolved! Recovered all {len(theme_set)} theme words among {len(candidates)} cover(s).")
+            print(f"\nSolved! Recovered all {len(theme_set)} theme words among {n_candidates} cover(s).")
         else:
             print(f"\nNot solved. Best cover recovered {best_overlap}/{len(theme_set)} theme words "
-                  f"across {len(candidates)} candidate(s)" + (" (search truncated)." if truncated else "."))
+                  f"across {n_candidates} candidate(s)" + (" (search truncated)." if truncated else "."))
 
-        self.write_solved_puzzle(candidates, solved, best_overlap, truncated, start, end)
+        self.write_solved_puzzle(n_candidates, solved, best_overlap, truncated, start, end)
 
-    def write_solved_puzzle(self, candidates, solved, best_overlap, truncated, start, end) -> None:
+    def write_solved_puzzle(self, n_candidates, solved, best_overlap, truncated, start, end) -> None:
         data = {
             "puzzle_id": self.puzzle_id,
             "ds": self.ds,
@@ -367,7 +432,7 @@ class StrandsSolver(BaseSolver):
             "solved": solved,
             "theme_words_found": best_overlap,
             "theme_words_total": len(self.theme_words),
-            "candidates": len(candidates),
+            "candidates": n_candidates,
             "truncated": truncated,
             "solve_time": str(timedelta(seconds=end - start))[:-3],
         }

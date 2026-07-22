@@ -2,7 +2,7 @@ VENV := .venv
 PYTHON := $(VENV)/bin/python
 PIP := $(VENV)/bin/pip
 
-.PHONY: setup setup-dev run test stats clean build-sudoku
+.PHONY: setup setup-dev run test stats clean build build-sudoku build-strands
 
 # create the virtualenv and install runtime dependencies (isolated from the
 # system Python, which is externally managed and rejects pip installs)
@@ -21,10 +21,13 @@ $(VENV)/.stamp-dev: requirements-dev.txt requirements.txt
 
 setup-dev: $(VENV)/.stamp-dev
 
-run: setup build-sudoku
+# build the C/C++ solver extensions
+build: build-sudoku build-strands
+
+run: setup build
 	$(PYTHON) src/main.py
 
-test: setup-dev build-sudoku
+test: setup-dev build
 	$(PYTHON) -m pytest
 
 # regenerate the auto-updated stats section of the README from solutions/
@@ -33,7 +36,10 @@ stats:
 
 clean:
 	rm -rf __pycache__
-	rm -rf src/solvers/sudoku/*.so
+	rm -rf src/solvers/sudoku/*.so src/solvers/strands/*.so
 
 build-sudoku: src/solvers/sudoku/DancingLinks.cpp src/solvers/sudoku/Grid.cpp src/solvers/sudoku/Grid.h src/solvers/sudoku/Box.cpp src/solvers/sudoku/Box.h src/solvers/sudoku/Node.cpp src/solvers/sudoku/Node.h
 	g++ -std=c++11 -fPIC -shared -o src/solvers/sudoku/DancingLinks.so src/solvers/sudoku/DancingLinks.cpp src/solvers/sudoku/Grid.cpp src/solvers/sudoku/Box.cpp src/solvers/sudoku/Node.cpp
+
+build-strands: src/solvers/strands/StrandsSearch.cpp
+	g++ -std=c++17 -O2 -fPIC -shared -o src/solvers/strands/StrandsSearch.so src/solvers/strands/StrandsSearch.cpp

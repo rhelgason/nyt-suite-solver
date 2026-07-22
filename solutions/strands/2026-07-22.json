@@ -12,9 +12,9 @@
     ],
     "spangram": "injeopardy",
     "solved": false,
-    "theme_words_found": 0,
+    "theme_words_found": 2,
     "theme_words_total": 6,
-    "candidates": 0,
+    "candidates": 8929,
     "truncated": true,
-    "solve_time": "0:00:30.196"
+    "solve_time": "0:00:41.113"
 }

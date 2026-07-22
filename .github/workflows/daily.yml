@@ -30,8 +30,8 @@ jobs:
       - name: Install Python dependencies
         run: pip install -r requirements.txt
 
-      - name: Build Sudoku extension
-        run: make build-sudoku
+      - name: Build solver extensions
+        run: make build
 
       - name: Solve today's puzzles
         id: solve

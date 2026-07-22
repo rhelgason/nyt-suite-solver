@@ -22,10 +22,13 @@ genuinely cannot be solved otherwise.
 - Current solvers are fully algorithmic: trie-backed word search (Letter Boxed,
   Spelling Bee), a Dancing Links / Algorithm X exact-cover solver in C++
   (Sudoku), a constraint-filtering / information-gain solver (Wordle), and an
-  exact-cover grid-partition search (Strands). No AI is involved, and that is
-  the goal. Strands notably has no theme understanding at all — it relies purely
-  on the combinatorial rigidity of tiling the grid, so it only solves a fraction
-  of puzzles, which is expected and acceptable.
+  exact-cover grid-partition search (Strands, with a C++ extension
+  `StrandsSearch.so` for speed and a pure-Python fallback). No AI is involved,
+  and that is the goal. Strands notably has no theme understanding at all — it
+  relies purely on the combinatorial rigidity of tiling the grid, so it only
+  solves a fraction of puzzles, which is expected and acceptable.
+- Both C/C++ extensions are built by `make build` (which the CI and daily
+  workflows run); the `.so` files are gitignored and rebuilt per environment.
 - A future puzzle such as the **Crossword** would likely require an LLM (clue
   semantics have no clean algorithm). That is an acceptable exception — but reach
   for an LLM only when there is no reasonable deterministic approach, and
