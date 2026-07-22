@@ -17,7 +17,7 @@ _Auto-generated from `solutions/` · **40** puzzles solved across 5 games (throu
 | Sudoku | 3 | 100% | 0.23 ms |
 | Wordle (easy) | 9 | 3.9 guesses | 3.37 s |
 | Wordle (hard) | 9 | 4.0 guesses | 124 ms |
-| Strands | 9 | 87% words | 70.29 s |
+| Strands | 9 | 87% words | 50.16 s |
 
 <p align="center"><img src="stats/cumulative_solves.svg" alt="Cumulative Puzzles Solved" width="720"></p>
 <!-- STATS:END -->

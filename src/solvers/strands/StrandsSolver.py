@@ -4,7 +4,7 @@ from solvers.BaseSolver import BaseSolver
 from solvers.scraping import fetch_json
 from Spinner import Spinner
 from time import time
-from typing import Dict, FrozenSet, List, Set, Tuple
+from typing import Dict, FrozenSet, List, Optional, Set, Tuple
 
 import os
 
@@ -31,8 +31,8 @@ HAM_PATH_STEP_BUDGET = 100_000
 # already recover the theme words.
 NODE_BUDGET = 12_000_000
 MAX_CANDIDATES = 20_000
-WORDS_TIME_BUDGET = 25.0
-LEFTOVER_TIME_BUDGET = 45.0
+WORDS_TIME_BUDGET = 20.0
+LEFTOVER_TIME_BUDGET = 30.0
 
 # 8 king-move directions
 DIRS = [(-1, -1), (-1, 0), (-1, 1), (0, -1), (0, 1), (1, -1), (1, 0), (1, 1)]
@@ -316,8 +316,11 @@ class StrandsSolver(BaseSolver):
         print(fetching_str + " done!")
 
     def load_words(self):
+        # only words whose letters all appear on the board can ever be placed, so
+        # drop the rest up front to keep the trie/prefix set small and enumeration fast
+        grid_letters = set("".join(self.grid))
         with open(os.path.join("./", WORDS_FILE_PATH), "r") as f:
-            return [line.strip().lower() for line in f]
+            return [w for w in (line.strip().lower() for line in f) if set(w) <= grid_letters]
 
     def solve(self) -> None:
         date = datetime.strptime(self.ds, "%Y-%m-%d")
