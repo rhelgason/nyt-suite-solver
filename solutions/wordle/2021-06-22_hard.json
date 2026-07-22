@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 4,
+    "ds": "2021-06-22",
+    "mode": "hard",
+    "solution": "humph",
+    "guesses": [
+        "tares",
+        "colin",
+        "pygmy",
+        "bumph",
+        "humph"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:00.576"
+}

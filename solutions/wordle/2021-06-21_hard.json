@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 3,
+    "ds": "2021-06-21",
+    "mode": "hard",
+    "solution": "sissy",
+    "guesses": [
+        "tares",
+        "spoil",
+        "swink",
+        "scudi",
+        "sissy"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:00.116"
+}

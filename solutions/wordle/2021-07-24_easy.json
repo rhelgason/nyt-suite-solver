@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 36,
+    "ds": "2021-07-24",
+    "mode": "easy",
+    "solution": "paper",
+    "guesses": [
+        "tares",
+        "glyph",
+        "caper",
+        "jerry",
+        "paper"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:01.126"
+}

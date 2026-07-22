@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 19,
+    "ds": "2021-07-07",
+    "mode": "easy",
+    "solution": "abate",
+    "guesses": [
+        "tares",
+        "plane",
+        "abbot",
+        "abate"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:01.050"
+}

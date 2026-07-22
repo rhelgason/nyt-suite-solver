@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 18,
+    "ds": "2021-07-06",
+    "mode": "easy",
+    "solution": "bench",
+    "guesses": [
+        "tares",
+        "colin",
+        "bumph",
+        "bench"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:05.334"
+}

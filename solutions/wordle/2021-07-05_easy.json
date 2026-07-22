@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 17,
+    "ds": "2021-07-05",
+    "mode": "easy",
+    "solution": "quiet",
+    "guesses": [
+        "tares",
+        "could",
+        "fumet",
+        "quiet"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.795"
+}

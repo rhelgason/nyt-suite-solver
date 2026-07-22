@@ -1,0 +1,13 @@
+{
+    "puzzle_id": 31,
+    "ds": "2021-07-19",
+    "mode": "hard",
+    "solution": "pride",
+    "guesses": [
+        "tares",
+        "pride"
+    ],
+    "num_guesses": 2,
+    "solved": true,
+    "solve_time": "0:00:00.077"
+}

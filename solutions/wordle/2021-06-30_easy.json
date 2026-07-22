@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 12,
+    "ds": "2021-06-30",
+    "mode": "easy",
+    "solution": "dwarf",
+    "guesses": [
+        "tares",
+        "blond",
+        "hydra",
+        "dwarf"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:02.332"
+}

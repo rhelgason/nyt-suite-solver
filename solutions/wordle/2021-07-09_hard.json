@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 21,
+    "ds": "2021-07-09",
+    "mode": "hard",
+    "solution": "major",
+    "guesses": [
+        "tares",
+        "ranid",
+        "malar",
+        "major"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.055"
+}

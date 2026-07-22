@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 33,
+    "ds": "2021-07-21",
+    "mode": "easy",
+    "solution": "helix",
+    "guesses": [
+        "tares",
+        "colin",
+        "fedex",
+        "helix"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:05.306"
+}

@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 35,
+    "ds": "2021-07-23",
+    "mode": "easy",
+    "solution": "staff",
+    "guesses": [
+        "tares",
+        "slant",
+        "chimp",
+        "staff"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.859"
+}

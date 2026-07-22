@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 15,
+    "ds": "2021-07-03",
+    "mode": "hard",
+    "solution": "stink",
+    "guesses": [
+        "tares",
+        "shout",
+        "stink"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:00.059"
+}

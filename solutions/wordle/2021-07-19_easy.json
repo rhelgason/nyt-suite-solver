@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 31,
+    "ds": "2021-07-19",
+    "mode": "easy",
+    "solution": "pride",
+    "guesses": [
+        "tares",
+        "deice",
+        "abamp",
+        "pride"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:02.012"
+}

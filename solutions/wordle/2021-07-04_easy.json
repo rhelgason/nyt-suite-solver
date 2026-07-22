@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 16,
+    "ds": "2021-07-04",
+    "mode": "easy",
+    "solution": "grade",
+    "guesses": [
+        "tares",
+        "craal",
+        "debug",
+        "grade"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:01.521"
+}

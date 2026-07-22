@@ -8,18 +8,19 @@ required, and can also be used interactively or headlessly.
 <!-- STATS:START -->
 ## Lifetime results
 
-_Auto-generated from `solutions/` · **48** puzzles solved across 5 games (through 2026-07-22)._
+_Auto-generated from `solutions/` · **126** puzzles solved across 5 games (through 2026-07-22)._
 
-| Game | Puzzles | Avg score | p90 runtime |
-| --- | ---: | ---: | ---: |
-| Spelling Bee | 10 | 99.3% | 92 ms |
-| Letter Boxed | 2 | 2.0 words | 155 ms |
-| Sudoku | 6 | 100% | 0.23 ms |
-| Wordle (easy) | 10 | 3.9 guesses | 2.89 s |
-| Wordle (hard) | 10 | 4.1 guesses | 111 ms |
-| Strands | 10 | 83% words | 61.41 s |
-
-<p align="center"><img src="stats/cumulative_solves.svg" alt="Cumulative Puzzles Solved" width="720"></p>
+<div align="center">
+<table>
+<tr><th>Game</th><th>Puzzles</th><th>Avg score</th><th>p90 runtime</th></tr>
+<tr><td>Spelling Bee</td><td>10</td><td>99.3%</td><td>107 ms</td></tr>
+<tr><td>Letter Boxed</td><td>2</td><td>2.0 words</td><td>155 ms</td></tr>
+<tr><td>Sudoku</td><td>6</td><td>100%</td><td>0.23 ms</td></tr>
+<tr><td>Wordle (easy)</td><td>49</td><td>3.8 guesses</td><td>5.33 s</td></tr>
+<tr><td>Wordle (hard)</td><td>49</td><td>3.9 guesses</td><td>294 ms</td></tr>
+<tr><td>Strands</td><td>10</td><td>83% words</td><td>61.41 s</td></tr>
+</table>
+</div>
 <!-- STATS:END -->
 
 The results above refresh automatically: a scheduled GitHub Actions workflow

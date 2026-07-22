@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 36,
+    "ds": "2021-07-24",
+    "mode": "hard",
+    "solution": "paper",
+    "guesses": [
+        "tares",
+        "lager",
+        "caper",
+        "japer",
+        "paper"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:00.053"
+}

@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 18,
+    "ds": "2021-07-06",
+    "mode": "hard",
+    "solution": "bench",
+    "guesses": [
+        "tares",
+        "oldie",
+        "bench"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:00.286"
+}

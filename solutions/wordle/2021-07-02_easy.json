@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 14,
+    "ds": "2021-07-02",
+    "mode": "easy",
+    "solution": "karma",
+    "guesses": [
+        "tares",
+        "cymol",
+        "karma"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:00.791"
+}

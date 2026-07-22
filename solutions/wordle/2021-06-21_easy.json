@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 3,
+    "ds": "2021-06-21",
+    "mode": "easy",
+    "solution": "sissy",
+    "guesses": [
+        "tares",
+        "noily",
+        "skosh",
+        "sissy"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:02.800"
+}

@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 7,
+    "ds": "2021-06-25",
+    "mode": "hard",
+    "solution": "focal",
+    "guesses": [
+        "tares",
+        "aloin",
+        "coala",
+        "focal"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.298"
+}

@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1,
+    "ds": "2021-06-19",
+    "mode": "hard",
+    "solution": "cigar",
+    "guesses": [
+        "tares",
+        "drain",
+        "rival",
+        "cigar"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.085"
+}

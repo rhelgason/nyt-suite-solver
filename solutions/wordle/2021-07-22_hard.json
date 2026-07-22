@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 34,
+    "ds": "2021-07-22",
+    "mode": "hard",
+    "solution": "croak",
+    "guesses": [
+        "tares",
+        "drain",
+        "arbor",
+        "croak"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.099"
+}

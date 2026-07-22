@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 28,
+    "ds": "2021-07-16",
+    "mode": "easy",
+    "solution": "marry",
+    "guesses": [
+        "tares",
+        "cymol",
+        "marry"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:00.790"
+}

@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 8,
+    "ds": "2021-06-26",
+    "mode": "hard",
+    "solution": "evade",
+    "guesses": [
+        "tares",
+        "plane",
+        "agave",
+        "evade"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.098"
+}

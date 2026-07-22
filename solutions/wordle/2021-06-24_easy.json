@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 6,
+    "ds": "2021-06-24",
+    "mode": "easy",
+    "solution": "blush",
+    "guesses": [
+        "tares",
+        "noily",
+        "bumph",
+        "blush"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:02.785"
+}

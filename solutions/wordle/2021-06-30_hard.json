@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 12,
+    "ds": "2021-06-30",
+    "mode": "hard",
+    "solution": "dwarf",
+    "guesses": [
+        "tares",
+        "drain",
+        "dwarf"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:00.087"
+}

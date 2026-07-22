@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 5,
+    "ds": "2021-06-23",
+    "mode": "easy",
+    "solution": "awake",
+    "guesses": [
+        "tares",
+        "aland",
+        "gamps",
+        "awake"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:02.603"
+}

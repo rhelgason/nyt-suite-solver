@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 7,
+    "ds": "2021-06-25",
+    "mode": "easy",
+    "solution": "focal",
+    "guesses": [
+        "tares",
+        "colin",
+        "favas",
+        "focal"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:04.862"
+}

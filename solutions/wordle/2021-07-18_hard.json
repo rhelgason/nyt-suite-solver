@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 30,
+    "ds": "2021-07-18",
+    "mode": "hard",
+    "solution": "batty",
+    "guesses": [
+        "tares",
+        "haint",
+        "fatty",
+        "batty"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.051"
+}

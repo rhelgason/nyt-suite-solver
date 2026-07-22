@@ -1,0 +1,17 @@
+{
+    "puzzle_id": 25,
+    "ds": "2021-07-13",
+    "mode": "hard",
+    "solution": "stool",
+    "guesses": [
+        "tares",
+        "shout",
+        "stoop",
+        "stood",
+        "stook",
+        "stool"
+    ],
+    "num_guesses": 6,
+    "solved": true,
+    "solve_time": "0:00:00.058"
+}

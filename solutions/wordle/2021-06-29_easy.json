@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 11,
+    "ds": "2021-06-29",
+    "mode": "easy",
+    "solution": "heath",
+    "guesses": [
+        "tares",
+        "plane",
+        "death",
+        "heath"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.902"
+}

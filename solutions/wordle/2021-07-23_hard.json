@@ -1,0 +1,17 @@
+{
+    "puzzle_id": 35,
+    "ds": "2021-07-23",
+    "mode": "hard",
+    "solution": "staff",
+    "guesses": [
+        "tares",
+        "slant",
+        "staig",
+        "staph",
+        "stack",
+        "staff"
+    ],
+    "num_guesses": 6,
+    "solved": true,
+    "solve_time": "0:00:00.049"
+}

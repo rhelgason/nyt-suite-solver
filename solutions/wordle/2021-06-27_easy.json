@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 9,
+    "ds": "2021-06-27",
+    "mode": "easy",
+    "solution": "naval",
+    "guesses": [
+        "tares",
+        "lingy",
+        "halon",
+        "naval"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:03.260"
+}

@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 536,
+    "ds": "2024-01-02",
+    "mode": "easy",
+    "solution": "aging",
+    "guesses": [
+        "tares",
+        "colin",
+        "agape",
+        "aging"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:05.085"
+}

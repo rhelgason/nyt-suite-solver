@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 536,
+    "ds": "2024-01-02",
+    "mode": "hard",
+    "solution": "aging",
+    "guesses": [
+        "tares",
+        "aloin",
+        "acini",
+        "aging"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.255"
+}
