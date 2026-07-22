@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 2201,
+    "ds": "2024-02-16",
+    "mode": "hard",
+    "solution": "stash",
+    "guesses": [
+        "tares",
+        "slant",
+        "staig",
+        "staph",
+        "stash"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:00.060"
+}

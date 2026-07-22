@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1750,
+    "ds": "2024-09-01",
+    "mode": "easy",
+    "solution": "mushy",
+    "guesses": [
+        "tares",
+        "noily",
+        "smush",
+        "mushy"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:02.934"
+}

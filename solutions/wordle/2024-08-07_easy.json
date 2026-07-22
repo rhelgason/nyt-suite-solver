@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 789,
+    "ds": "2024-08-07",
+    "mode": "easy",
+    "solution": "macaw",
+    "guesses": [
+        "tares",
+        "lingy",
+        "combo",
+        "macaw"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:03.583"
+}

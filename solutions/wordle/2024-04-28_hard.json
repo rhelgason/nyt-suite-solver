@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1723,
+    "ds": "2024-04-28",
+    "mode": "hard",
+    "solution": "prune",
+    "guesses": [
+        "tares",
+        "pride",
+        "probe",
+        "prune"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.080"
+}

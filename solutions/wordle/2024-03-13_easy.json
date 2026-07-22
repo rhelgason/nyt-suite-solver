@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1076,
+    "ds": "2024-03-13",
+    "mode": "easy",
+    "solution": "local",
+    "guesses": [
+        "tares",
+        "colin",
+        "favas",
+        "local"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:04.906"
+}

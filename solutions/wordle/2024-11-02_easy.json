@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1090,
+    "ds": "2024-11-02",
+    "mode": "easy",
+    "solution": "snoop",
+    "guesses": [
+        "tares",
+        "noily",
+        "ephod",
+        "snoop"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:02.783"
+}

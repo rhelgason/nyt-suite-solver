@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 2198,
+    "ds": "2024-11-25",
+    "mode": "hard",
+    "solution": "brown",
+    "guesses": [
+        "tares",
+        "prion",
+        "brown"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:00.106"
+}

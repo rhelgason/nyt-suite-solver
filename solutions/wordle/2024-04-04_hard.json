@@ -1,0 +1,17 @@
+{
+    "puzzle_id": 1654,
+    "ds": "2024-04-04",
+    "mode": "hard",
+    "solution": "climb",
+    "guesses": [
+        "tares",
+        "colin",
+        "child",
+        "click",
+        "cliff",
+        "climb"
+    ],
+    "num_guesses": 6,
+    "solved": true,
+    "solve_time": "0:00:00.583"
+}

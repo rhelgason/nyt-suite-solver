@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 1161,
+    "ds": "2024-06-06",
+    "mode": "hard",
+    "solution": "ether",
+    "guesses": [
+        "tares",
+        "outer",
+        "ether"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:00.054"
+}

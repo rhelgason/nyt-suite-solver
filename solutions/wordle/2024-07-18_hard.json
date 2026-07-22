@@ -1,0 +1,13 @@
+{
+    "puzzle_id": 1451,
+    "ds": "2024-07-18",
+    "mode": "hard",
+    "solution": "nerdy",
+    "guesses": [
+        "tares",
+        "nerdy"
+    ],
+    "num_guesses": 2,
+    "solved": true,
+    "solve_time": "0:00:00.050"
+}

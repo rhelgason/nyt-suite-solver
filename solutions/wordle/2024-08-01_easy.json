@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 1437,
+    "ds": "2024-08-01",
+    "mode": "easy",
+    "solution": "chalk",
+    "guesses": [
+        "tares",
+        "colin",
+        "chalk"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:04.858"
+}

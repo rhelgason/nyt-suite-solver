@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1899,
+    "ds": "2024-08-10",
+    "mode": "easy",
+    "solution": "medic",
+    "guesses": [
+        "tares",
+        "colin",
+        "demic",
+        "medic"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:05.159"
+}

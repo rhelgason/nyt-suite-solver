@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1382,
+    "ds": "2024-05-09",
+    "mode": "hard",
+    "solution": "jerky",
+    "guesses": [
+        "tares",
+        "nerdy",
+        "merry",
+        "jerky"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.069"
+}

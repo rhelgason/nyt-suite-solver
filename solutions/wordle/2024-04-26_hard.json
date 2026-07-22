@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 1097,
+    "ds": "2024-04-26",
+    "mode": "hard",
+    "solution": "vapid",
+    "guesses": [
+        "tares",
+        "manly",
+        "haika",
+        "capiz",
+        "vapid"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:00.149"
+}

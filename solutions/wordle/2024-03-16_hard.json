@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 705,
+    "ds": "2024-03-16",
+    "mode": "hard",
+    "solution": "toxin",
+    "guesses": [
+        "tares",
+        "thing",
+        "tonic",
+        "toxin"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.055"
+}

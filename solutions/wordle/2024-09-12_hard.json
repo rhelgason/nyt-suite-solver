@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 930,
+    "ds": "2024-09-12",
+    "mode": "hard",
+    "solution": "brass",
+    "guesses": [
+        "tares",
+        "grabs",
+        "brads",
+        "brans",
+        "brass"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:00.055"
+}

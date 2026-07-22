@@ -1,0 +1,17 @@
+{
+    "puzzle_id": 797,
+    "ds": "2024-06-30",
+    "mode": "hard",
+    "solution": "buddy",
+    "guesses": [
+        "tares",
+        "colin",
+        "pygmy",
+        "buffy",
+        "bubby",
+        "buddy"
+    ],
+    "num_guesses": 6,
+    "solved": true,
+    "solve_time": "0:00:00.579"
+}

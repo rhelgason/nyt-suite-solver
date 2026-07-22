@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 2325,
+    "ds": "2024-05-08",
+    "mode": "hard",
+    "solution": "pious",
+    "guesses": [
+        "tares",
+        "lions",
+        "biogs",
+        "pious"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.504"
+}

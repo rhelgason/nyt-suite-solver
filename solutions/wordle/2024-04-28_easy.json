@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1723,
+    "ds": "2024-04-28",
+    "mode": "easy",
+    "solution": "prune",
+    "guesses": [
+        "tares",
+        "deice",
+        "bumph",
+        "prune"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:02.232"
+}

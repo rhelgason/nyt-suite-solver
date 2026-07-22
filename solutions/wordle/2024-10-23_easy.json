@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 2167,
+    "ds": "2024-10-23",
+    "mode": "easy",
+    "solution": "goofy",
+    "guesses": [
+        "tares",
+        "colin",
+        "boody",
+        "gopik",
+        "goofy"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:08.410"
+}

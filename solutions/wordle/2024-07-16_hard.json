@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1746,
+    "ds": "2024-07-16",
+    "mode": "hard",
+    "solution": "decoy",
+    "guesses": [
+        "tares",
+        "oldie",
+        "demon",
+        "decoy"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.299"
+}

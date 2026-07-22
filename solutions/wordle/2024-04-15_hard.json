@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 565,
+    "ds": "2024-04-15",
+    "mode": "hard",
+    "solution": "equip",
+    "guesses": [
+        "tares",
+        "oldie",
+        "genic",
+        "equip"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.284"
+}

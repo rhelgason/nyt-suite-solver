@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1769,
+    "ds": "2024-10-20",
+    "mode": "easy",
+    "solution": "dicey",
+    "guesses": [
+        "tares",
+        "indol",
+        "pawky",
+        "dicey"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:04.065"
+}

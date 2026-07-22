@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1647,
+    "ds": "2024-07-11",
+    "mode": "hard",
+    "solution": "cameo",
+    "guesses": [
+        "tares",
+        "laden",
+        "cagey",
+        "cameo"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.075"
+}

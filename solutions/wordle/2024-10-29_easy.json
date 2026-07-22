@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 706,
+    "ds": "2024-10-29",
+    "mode": "easy",
+    "solution": "tunic",
+    "guesses": [
+        "tares",
+        "yogin",
+        "tunic"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:00.752"
+}

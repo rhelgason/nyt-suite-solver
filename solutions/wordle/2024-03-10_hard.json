@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 2032,
+    "ds": "2024-03-10",
+    "mode": "hard",
+    "solution": "grasp",
+    "guesses": [
+        "tares",
+        "snarf",
+        "brash",
+        "grasp"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.058"
+}

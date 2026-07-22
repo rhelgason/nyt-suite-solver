@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 2179,
+    "ds": "2024-05-30",
+    "mode": "easy",
+    "solution": "gummy",
+    "guesses": [
+        "tares",
+        "colin",
+        "pygmy",
+        "gummy"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:08.091"
+}

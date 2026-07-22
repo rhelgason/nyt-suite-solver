@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1165,
+    "ds": "2024-10-18",
+    "mode": "easy",
+    "solution": "stint",
+    "guesses": [
+        "tares",
+        "shout",
+        "plink",
+        "stint"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:01.385"
+}

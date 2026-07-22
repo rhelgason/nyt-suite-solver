@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1928,
+    "ds": "2024-05-29",
+    "mode": "easy",
+    "solution": "papal",
+    "guesses": [
+        "tares",
+        "lingy",
+        "pacha",
+        "papal"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:03.473"
+}

@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1956,
+    "ds": "2024-03-31",
+    "mode": "easy",
+    "solution": "taboo",
+    "guesses": [
+        "tares",
+        "blink",
+        "tabby",
+        "taboo"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.433"
+}

@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 731,
+    "ds": "2024-03-22",
+    "mode": "easy",
+    "solution": "decay",
+    "guesses": [
+        "tares",
+        "aland",
+        "beamy",
+        "decay"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:02.625"
+}

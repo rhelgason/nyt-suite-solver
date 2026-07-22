@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1943,
+    "ds": "2024-10-01",
+    "mode": "hard",
+    "solution": "modem",
+    "guesses": [
+        "tares",
+        "loden",
+        "coded",
+        "modem"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.171"
+}

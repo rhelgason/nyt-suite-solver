@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 568,
+    "ds": "2024-05-31",
+    "mode": "hard",
+    "solution": "chaos",
+    "guesses": [
+        "tares",
+        "loans",
+        "odahs",
+        "chaos"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.156"
+}

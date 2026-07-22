@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 2023,
+    "ds": "2024-02-10",
+    "mode": "easy",
+    "solution": "fried",
+    "guesses": [
+        "tares",
+        "poind",
+        "decaf",
+        "fried"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:03.034"
+}

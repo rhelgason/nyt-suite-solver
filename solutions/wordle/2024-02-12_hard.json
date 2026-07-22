@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1776,
+    "ds": "2024-02-12",
+    "mode": "hard",
+    "solution": "pasta",
+    "guesses": [
+        "tares",
+        "saint",
+        "hasty",
+        "pasta"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.068"
+}

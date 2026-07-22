@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 960,
+    "ds": "2024-08-17",
+    "mode": "hard",
+    "solution": "storm",
+    "guesses": [
+        "tares",
+        "sport",
+        "stork",
+        "storm"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.045"
+}

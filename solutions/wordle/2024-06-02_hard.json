@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 811,
+    "ds": "2024-06-02",
+    "mode": "hard",
+    "solution": "bravo",
+    "guesses": [
+        "tares",
+        "drain",
+        "craal",
+        "grapy",
+        "bravo"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:00.109"
+}

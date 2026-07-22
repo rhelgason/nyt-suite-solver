@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1288,
+    "ds": "2024-05-26",
+    "mode": "easy",
+    "solution": "bevel",
+    "guesses": [
+        "tares",
+        "indol",
+        "becks",
+        "bevel"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:03.903"
+}

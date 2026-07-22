@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1035,
+    "ds": "2024-03-02",
+    "mode": "hard",
+    "solution": "urban",
+    "guesses": [
+        "tares",
+        "drain",
+        "argon",
+        "urban"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.091"
+}

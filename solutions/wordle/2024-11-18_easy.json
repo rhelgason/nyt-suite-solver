@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1860,
+    "ds": "2024-11-18",
+    "mode": "easy",
+    "solution": "frail",
+    "guesses": [
+        "tares",
+        "blond",
+        "cigar",
+        "frail"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:02.428"
+}

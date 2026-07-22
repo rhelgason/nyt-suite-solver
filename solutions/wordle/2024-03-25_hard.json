@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1449,
+    "ds": "2024-03-25",
+    "mode": "hard",
+    "solution": "sally",
+    "guesses": [
+        "tares",
+        "salsa",
+        "salol",
+        "sally"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.058"
+}

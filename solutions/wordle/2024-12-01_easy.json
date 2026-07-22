@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 2020,
+    "ds": "2024-12-01",
+    "mode": "easy",
+    "solution": "mauve",
+    "guesses": [
+        "tares",
+        "cling",
+        "abmho",
+        "mauve"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.805"
+}

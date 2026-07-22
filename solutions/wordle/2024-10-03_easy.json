@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 945,
+    "ds": "2024-10-03",
+    "mode": "easy",
+    "solution": "wagon",
+    "guesses": [
+        "tares",
+        "lingy",
+        "pagan",
+        "wagon"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:03.185"
+}

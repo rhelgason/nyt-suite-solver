@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 1102,
+    "ds": "2024-08-04",
+    "mode": "easy",
+    "solution": "lower",
+    "guesses": [
+        "tares",
+        "poind",
+        "womby",
+        "cavil",
+        "lower"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:03.351"
+}

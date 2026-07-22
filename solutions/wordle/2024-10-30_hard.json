@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 1395,
+    "ds": "2024-10-30",
+    "mode": "hard",
+    "solution": "easel",
+    "guesses": [
+        "tares",
+        "lased",
+        "easel"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:00.060"
+}

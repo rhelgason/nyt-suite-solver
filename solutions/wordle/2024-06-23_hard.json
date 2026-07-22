@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1435,
+    "ds": "2024-06-23",
+    "mode": "hard",
+    "solution": "bugle",
+    "guesses": [
+        "tares",
+        "oldie",
+        "uncle",
+        "bugle"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.292"
+}

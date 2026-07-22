@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 1097,
+    "ds": "2024-04-26",
+    "mode": "easy",
+    "solution": "vapid",
+    "guesses": [
+        "tares",
+        "lingy",
+        "humic",
+        "pavid",
+        "vapid"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:03.443"
+}

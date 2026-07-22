@@ -1,0 +1,17 @@
+{
+    "puzzle_id": 859,
+    "ds": "2024-04-21",
+    "mode": "hard",
+    "solution": "jolly",
+    "guesses": [
+        "tares",
+        "colin",
+        "dolly",
+        "folly",
+        "golly",
+        "holly"
+    ],
+    "num_guesses": null,
+    "solved": false,
+    "solve_time": "0:00:00.580"
+}

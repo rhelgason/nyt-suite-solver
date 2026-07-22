@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 995,
+    "ds": "2024-11-22",
+    "mode": "hard",
+    "solution": "pearl",
+    "guesses": [
+        "tares",
+        "beard",
+        "leary",
+        "pearl"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.072"
+}

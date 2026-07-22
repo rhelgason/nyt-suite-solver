@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 2060,
+    "ds": "2024-03-07",
+    "mode": "hard",
+    "solution": "clone",
+    "guesses": [
+        "tares",
+        "oldie",
+        "clove",
+        "clone"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.294"
+}

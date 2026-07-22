@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 564,
+    "ds": "2024-10-11",
+    "mode": "easy",
+    "solution": "gusty",
+    "guesses": [
+        "tares",
+        "shout",
+        "fling",
+        "gusty"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:01.382"
+}

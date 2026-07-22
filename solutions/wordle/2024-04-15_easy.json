@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 565,
+    "ds": "2024-04-15",
+    "mode": "easy",
+    "solution": "equip",
+    "guesses": [
+        "tares",
+        "colin",
+        "badge",
+        "equip"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:05.285"
+}

@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 1347,
+    "ds": "2024-07-29",
+    "mode": "hard",
+    "solution": "super",
+    "guesses": [
+        "tares",
+        "shier",
+        "sewer",
+        "suber",
+        "super"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:00.044"
+}

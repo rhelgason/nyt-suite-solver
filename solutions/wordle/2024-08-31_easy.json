@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 791,
+    "ds": "2024-08-31",
+    "mode": "easy",
+    "solution": "spout",
+    "guesses": [
+        "tares",
+        "shout",
+        "capon",
+        "spout"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:01.358"
+}

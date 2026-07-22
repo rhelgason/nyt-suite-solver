@@ -1,0 +1,17 @@
+{
+    "puzzle_id": 843,
+    "ds": "2024-04-23",
+    "mode": "easy",
+    "solution": "rover",
+    "guesses": [
+        "tares",
+        "poind",
+        "womby",
+        "gulch",
+        "joker",
+        "rover"
+    ],
+    "num_guesses": 6,
+    "solved": true,
+    "solve_time": "0:00:03.392"
+}

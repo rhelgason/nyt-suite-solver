@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 2352,
+    "ds": "2024-11-14",
+    "mode": "hard",
+    "solution": "uvula",
+    "guesses": [
+        "tares",
+        "aloin",
+        "bulla",
+        "uvula"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.266"
+}

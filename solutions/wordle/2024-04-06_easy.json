@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1078,
+    "ds": "2024-04-06",
+    "mode": "easy",
+    "solution": "finch",
+    "guesses": [
+        "tares",
+        "colin",
+        "wimpy",
+        "finch"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:07.713"
+}

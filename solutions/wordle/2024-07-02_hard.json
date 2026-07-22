@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 708,
+    "ds": "2024-07-02",
+    "mode": "hard",
+    "solution": "inlay",
+    "guesses": [
+        "tares",
+        "aloin",
+        "vinal",
+        "inlay"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.256"
+}

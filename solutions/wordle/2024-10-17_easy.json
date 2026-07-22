@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1068,
+    "ds": "2024-10-17",
+    "mode": "easy",
+    "solution": "halve",
+    "guesses": [
+        "tares",
+        "cling",
+        "dumbo",
+        "halve"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.851"
+}

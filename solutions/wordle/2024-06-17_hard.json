@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 1869,
+    "ds": "2024-06-17",
+    "mode": "hard",
+    "solution": "prior",
+    "guesses": [
+        "tares",
+        "prion",
+        "prior"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:00.106"
+}

@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1596,
+    "ds": "2024-06-27",
+    "mode": "easy",
+    "solution": "order",
+    "guesses": [
+        "tares",
+        "poind",
+        "addle",
+        "order"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:03.037"
+}

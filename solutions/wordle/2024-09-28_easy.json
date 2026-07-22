@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 796,
+    "ds": "2024-09-28",
+    "mode": "easy",
+    "solution": "brain",
+    "guesses": [
+        "tares",
+        "blond",
+        "brain"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:02.179"
+}

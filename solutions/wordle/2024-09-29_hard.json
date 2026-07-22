@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 2172,
+    "ds": "2024-09-29",
+    "mode": "hard",
+    "solution": "rider",
+    "guesses": [
+        "tares",
+        "riled",
+        "rider"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:00.130"
+}

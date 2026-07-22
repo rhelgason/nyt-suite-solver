@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 983,
+    "ds": "2024-11-10",
+    "mode": "hard",
+    "solution": "inner",
+    "guesses": [
+        "tares",
+        "riled",
+        "brief",
+        "icker",
+        "inner"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:00.122"
+}

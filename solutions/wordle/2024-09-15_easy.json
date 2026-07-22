@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1357,
+    "ds": "2024-09-15",
+    "mode": "easy",
+    "solution": "recur",
+    "guesses": [
+        "tares",
+        "deice",
+        "ceorl",
+        "recur"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:01.976"
+}

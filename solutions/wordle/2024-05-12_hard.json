@@ -1,0 +1,13 @@
+{
+    "puzzle_id": 931,
+    "ds": "2024-05-12",
+    "mode": "hard",
+    "solution": "outer",
+    "guesses": [
+        "tares",
+        "outer"
+    ],
+    "num_guesses": 2,
+    "solved": true,
+    "solve_time": "0:00:00.047"
+}

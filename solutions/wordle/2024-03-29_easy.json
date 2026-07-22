@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1119,
+    "ds": "2024-03-29",
+    "mode": "easy",
+    "solution": "realm",
+    "guesses": [
+        "tares",
+        "craal",
+        "angle",
+        "realm"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:01.433"
+}

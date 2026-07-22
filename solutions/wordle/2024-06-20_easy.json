@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1523,
+    "ds": "2024-06-20",
+    "mode": "easy",
+    "solution": "scent",
+    "guesses": [
+        "tares",
+        "point",
+        "ached",
+        "scent"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.866"
+}

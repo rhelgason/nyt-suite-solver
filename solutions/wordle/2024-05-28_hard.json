@@ -1,0 +1,17 @@
+{
+    "puzzle_id": 1768,
+    "ds": "2024-05-28",
+    "mode": "hard",
+    "solution": "minus",
+    "guesses": [
+        "tares",
+        "lions",
+        "kinds",
+        "sings",
+        "minis",
+        "minus"
+    ],
+    "num_guesses": 6,
+    "solved": true,
+    "solve_time": "0:00:00.500"
+}

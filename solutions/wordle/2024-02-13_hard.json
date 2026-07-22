@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 2250,
+    "ds": "2024-02-13",
+    "mode": "hard",
+    "solution": "scram",
+    "guesses": [
+        "tares",
+        "sprag",
+        "surah",
+        "scram"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.046"
+}

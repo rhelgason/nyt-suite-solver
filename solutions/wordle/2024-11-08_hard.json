@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1115,
+    "ds": "2024-11-08",
+    "mode": "hard",
+    "solution": "ready",
+    "guesses": [
+        "tares",
+        "beard",
+        "deair",
+        "ready"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.064"
+}

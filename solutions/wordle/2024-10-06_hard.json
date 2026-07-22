@@ -1,0 +1,13 @@
+{
+    "puzzle_id": 1407,
+    "ds": "2024-10-06",
+    "mode": "hard",
+    "solution": "lager",
+    "guesses": [
+        "tares",
+        "lager"
+    ],
+    "num_guesses": 2,
+    "solved": true,
+    "solve_time": "0:00:00.061"
+}

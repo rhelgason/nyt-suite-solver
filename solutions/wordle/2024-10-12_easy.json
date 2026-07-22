@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 808,
+    "ds": "2024-10-12",
+    "mode": "easy",
+    "solution": "stain",
+    "guesses": [
+        "tares",
+        "slant",
+        "snath",
+        "stain"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.726"
+}

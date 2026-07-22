@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1313,
+    "ds": "2024-04-14",
+    "mode": "easy",
+    "solution": "blimp",
+    "guesses": [
+        "tares",
+        "colin",
+        "bigly",
+        "blimp"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:07.835"
+}

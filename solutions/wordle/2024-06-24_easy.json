@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 873,
+    "ds": "2024-06-24",
+    "mode": "easy",
+    "solution": "dolly",
+    "guesses": [
+        "tares",
+        "colin",
+        "dimly",
+        "dolly"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:07.802"
+}

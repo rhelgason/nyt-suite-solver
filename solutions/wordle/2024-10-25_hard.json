@@ -1,0 +1,17 @@
+{
+    "puzzle_id": 654,
+    "ds": "2024-10-25",
+    "mode": "hard",
+    "solution": "frown",
+    "guesses": [
+        "tares",
+        "prion",
+        "brown",
+        "crown",
+        "drown",
+        "frown"
+    ],
+    "num_guesses": 6,
+    "solved": true,
+    "solve_time": "0:00:00.112"
+}

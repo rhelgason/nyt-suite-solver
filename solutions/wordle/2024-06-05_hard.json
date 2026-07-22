@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 2254,
+    "ds": "2024-06-05",
+    "mode": "hard",
+    "solution": "organ",
+    "guesses": [
+        "tares",
+        "drain",
+        "argon",
+        "organ"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.095"
+}

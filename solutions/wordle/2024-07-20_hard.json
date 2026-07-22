@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 734,
+    "ds": "2024-07-20",
+    "mode": "hard",
+    "solution": "shaft",
+    "guesses": [
+        "tares",
+        "slant",
+        "scatt",
+        "shaft"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.071"
+}

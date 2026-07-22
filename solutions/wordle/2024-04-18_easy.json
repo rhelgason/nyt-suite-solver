@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1558,
+    "ds": "2024-04-18",
+    "mode": "easy",
+    "solution": "facet",
+    "guesses": [
+        "tares",
+        "loped",
+        "eaten",
+        "facet"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.331"
+}

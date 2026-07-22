@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 858,
+    "ds": "2024-04-05",
+    "mode": "easy",
+    "solution": "wrist",
+    "guesses": [
+        "tares",
+        "spout",
+        "grist",
+        "wrist"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.346"
+}

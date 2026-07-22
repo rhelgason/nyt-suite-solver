@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 1726,
+    "ds": "2024-07-06",
+    "mode": "hard",
+    "solution": "scoff",
+    "guesses": [
+        "tares",
+        "spoil",
+        "shook",
+        "snowy",
+        "scoff"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:00.125"
+}

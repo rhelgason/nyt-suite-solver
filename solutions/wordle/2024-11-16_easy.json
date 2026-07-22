@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 2205,
+    "ds": "2024-11-16",
+    "mode": "easy",
+    "solution": "visor",
+    "guesses": [
+        "tares",
+        "shoyu",
+        "rosin",
+        "visor"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.597"
+}

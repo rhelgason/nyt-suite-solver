@@ -1,0 +1,17 @@
+{
+    "puzzle_id": 1408,
+    "ds": "2024-11-09",
+    "mode": "hard",
+    "solution": "swell",
+    "guesses": [
+        "tares",
+        "seine",
+        "shell",
+        "skell",
+        "smell",
+        "spell"
+    ],
+    "num_guesses": null,
+    "solved": false,
+    "solve_time": "0:00:00.096"
+}

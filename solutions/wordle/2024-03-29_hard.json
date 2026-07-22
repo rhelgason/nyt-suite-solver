@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1119,
+    "ds": "2024-03-29",
+    "mode": "hard",
+    "solution": "realm",
+    "guesses": [
+        "tares",
+        "beard",
+        "reach",
+        "realm"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.075"
+}

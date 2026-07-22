@@ -1,0 +1,17 @@
+{
+    "puzzle_id": 1102,
+    "ds": "2024-08-04",
+    "mode": "hard",
+    "solution": "lower",
+    "guesses": [
+        "tares",
+        "riled",
+        "leger",
+        "loner",
+        "loper",
+        "lover"
+    ],
+    "num_guesses": null,
+    "solved": false,
+    "solve_time": "0:00:00.135"
+}

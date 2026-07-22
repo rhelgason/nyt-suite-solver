@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 2210,
+    "ds": "2024-09-19",
+    "mode": "easy",
+    "solution": "press",
+    "guesses": [
+        "tares",
+        "weird",
+        "blype",
+        "press"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.853"
+}

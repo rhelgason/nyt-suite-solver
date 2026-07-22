@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 802,
+    "ds": "2024-06-01",
+    "mode": "easy",
+    "solution": "basin",
+    "guesses": [
+        "tares",
+        "sylis",
+        "basic",
+        "basin"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.942"
+}

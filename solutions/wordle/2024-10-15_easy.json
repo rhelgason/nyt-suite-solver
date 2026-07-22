@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 2011,
+    "ds": "2024-10-15",
+    "mode": "easy",
+    "solution": "corer",
+    "guesses": [
+        "tares",
+        "domic",
+        "corer"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:00.488"
+}

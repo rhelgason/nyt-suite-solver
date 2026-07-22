@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 1325,
+    "ds": "2024-11-03",
+    "mode": "hard",
+    "solution": "blaze",
+    "guesses": [
+        "tares",
+        "plane",
+        "clade",
+        "blame",
+        "blaze"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:00.107"
+}

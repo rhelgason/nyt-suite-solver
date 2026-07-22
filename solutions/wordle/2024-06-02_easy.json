@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 811,
+    "ds": "2024-06-02",
+    "mode": "easy",
+    "solution": "bravo",
+    "guesses": [
+        "tares",
+        "blond",
+        "boyar",
+        "bravo"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:02.194"
+}

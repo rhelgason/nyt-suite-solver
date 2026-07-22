@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1081,
+    "ds": "2024-07-10",
+    "mode": "easy",
+    "solution": "gaunt",
+    "guesses": [
+        "tares",
+        "cutin",
+        "dight",
+        "gaunt"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:01.024"
+}

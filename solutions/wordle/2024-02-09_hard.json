@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1893,
+    "ds": "2024-02-09",
+    "mode": "hard",
+    "solution": "stiff",
+    "guesses": [
+        "tares",
+        "shout",
+        "stink",
+        "stiff"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.070"
+}

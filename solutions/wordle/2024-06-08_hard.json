@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 2222,
+    "ds": "2024-06-08",
+    "mode": "hard",
+    "solution": "hence",
+    "guesses": [
+        "tares",
+        "oldie",
+        "pence",
+        "fence",
+        "hence"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:00.289"
+}

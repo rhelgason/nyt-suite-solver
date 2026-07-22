@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 2222,
+    "ds": "2024-06-08",
+    "mode": "easy",
+    "solution": "hence",
+    "guesses": [
+        "tares",
+        "colin",
+        "bumph",
+        "hence"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:05.184"
+}

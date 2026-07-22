@@ -1,0 +1,17 @@
+{
+    "puzzle_id": 866,
+    "ds": "2024-06-18",
+    "mode": "hard",
+    "solution": "cover",
+    "guesses": [
+        "tares",
+        "riled",
+        "comer",
+        "cooer",
+        "coper",
+        "cover"
+    ],
+    "num_guesses": 6,
+    "solved": true,
+    "solve_time": "0:00:00.136"
+}

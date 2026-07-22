@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 1188,
+    "ds": "2024-07-08",
+    "mode": "easy",
+    "solution": "shape",
+    "guesses": [
+        "tares",
+        "plash",
+        "shape"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:00.828"
+}

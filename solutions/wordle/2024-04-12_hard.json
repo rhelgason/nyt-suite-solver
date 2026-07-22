@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1507,
+    "ds": "2024-04-12",
+    "mode": "hard",
+    "solution": "whiny",
+    "guesses": [
+        "tares",
+        "colin",
+        "piing",
+        "whiny"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.575"
+}

@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1161,
+    "ds": "2024-06-06",
+    "mode": "easy",
+    "solution": "ether",
+    "guesses": [
+        "tares",
+        "notum",
+        "ervil",
+        "ether"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.562"
+}

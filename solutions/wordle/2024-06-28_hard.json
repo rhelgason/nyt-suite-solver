@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1162,
+    "ds": "2024-06-28",
+    "mode": "hard",
+    "solution": "drove",
+    "guesses": [
+        "tares",
+        "pride",
+        "drone",
+        "drove"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.094"
+}

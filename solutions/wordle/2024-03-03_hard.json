@@ -1,0 +1,17 @@
+{
+    "puzzle_id": 2031,
+    "ds": "2024-03-03",
+    "mode": "hard",
+    "solution": "state",
+    "guesses": [
+        "tares",
+        "stale",
+        "stade",
+        "stage",
+        "stake",
+        "stane"
+    ],
+    "num_guesses": null,
+    "solved": false,
+    "solve_time": "0:00:00.047"
+}

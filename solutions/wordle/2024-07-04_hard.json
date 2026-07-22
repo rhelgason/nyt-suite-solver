@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1595,
+    "ds": "2024-07-04",
+    "mode": "hard",
+    "solution": "debut",
+    "guesses": [
+        "tares",
+        "elite",
+        "depot",
+        "debut"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.080"
+}

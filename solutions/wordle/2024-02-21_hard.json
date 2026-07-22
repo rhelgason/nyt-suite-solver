@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1139,
+    "ds": "2024-02-21",
+    "mode": "hard",
+    "solution": "build",
+    "guesses": [
+        "tares",
+        "colin",
+        "bigly",
+        "build"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.577"
+}

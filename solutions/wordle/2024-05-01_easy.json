@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1125,
+    "ds": "2024-05-01",
+    "mode": "easy",
+    "solution": "diary",
+    "guesses": [
+        "tares",
+        "blond",
+        "hydra",
+        "diary"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:02.294"
+}

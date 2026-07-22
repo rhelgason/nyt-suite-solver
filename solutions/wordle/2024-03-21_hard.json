@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 632,
+    "ds": "2024-03-21",
+    "mode": "hard",
+    "solution": "shade",
+    "guesses": [
+        "tares",
+        "spale",
+        "shave",
+        "shade"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.053"
+}

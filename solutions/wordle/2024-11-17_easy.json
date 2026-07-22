@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1659,
+    "ds": "2024-11-17",
+    "mode": "easy",
+    "solution": "tally",
+    "guesses": [
+        "tares",
+        "blink",
+        "tamal",
+        "tally"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.497"
+}

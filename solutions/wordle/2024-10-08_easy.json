@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 1510,
+    "ds": "2024-10-08",
+    "mode": "easy",
+    "solution": "joint",
+    "guesses": [
+        "tares",
+        "colin",
+        "joint"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:02.454"
+}

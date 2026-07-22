@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 2125,
+    "ds": "2024-02-29",
+    "mode": "hard",
+    "solution": "image",
+    "guesses": [
+        "tares",
+        "plane",
+        "agave",
+        "image"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.110"
+}

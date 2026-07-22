@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 2287,
+    "ds": "2024-05-06",
+    "mode": "easy",
+    "solution": "shave",
+    "guesses": [
+        "tares",
+        "plash",
+        "dumka",
+        "shave"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.877"
+}

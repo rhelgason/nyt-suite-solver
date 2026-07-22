@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1590,
+    "ds": "2024-10-21",
+    "mode": "easy",
+    "solution": "spoon",
+    "guesses": [
+        "tares",
+        "noily",
+        "ephod",
+        "spoon"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:02.780"
+}

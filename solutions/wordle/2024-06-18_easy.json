@@ -1,0 +1,17 @@
+{
+    "puzzle_id": 866,
+    "ds": "2024-06-18",
+    "mode": "easy",
+    "solution": "cover",
+    "guesses": [
+        "tares",
+        "poind",
+        "womby",
+        "gulch",
+        "cooer",
+        "cover"
+    ],
+    "num_guesses": 6,
+    "solved": true,
+    "solve_time": "0:00:03.396"
+}

@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 2230,
+    "ds": "2024-11-19",
+    "mode": "easy",
+    "solution": "going",
+    "guesses": [
+        "tares",
+        "colin",
+        "badge",
+        "going"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:07.718"
+}

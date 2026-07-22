@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 2243,
+    "ds": "2024-04-25",
+    "mode": "hard",
+    "solution": "intro",
+    "guesses": [
+        "tares",
+        "fruit",
+        "intro"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:00.062"
+}

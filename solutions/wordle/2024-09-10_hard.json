@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 1251,
+    "ds": "2024-09-10",
+    "mode": "hard",
+    "solution": "rebel",
+    "guesses": [
+        "tares",
+        "riled",
+        "rebel"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:00.137"
+}

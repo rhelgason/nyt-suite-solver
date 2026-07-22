@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1422,
+    "ds": "2024-11-30",
+    "mode": "easy",
+    "solution": "dogma",
+    "guesses": [
+        "tares",
+        "colin",
+        "dumka",
+        "dogma"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:04.963"
+}

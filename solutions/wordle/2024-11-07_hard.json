@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 877,
+    "ds": "2024-11-07",
+    "mode": "hard",
+    "solution": "event",
+    "guesses": [
+        "tares",
+        "elite",
+        "eject",
+        "event"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.067"
+}

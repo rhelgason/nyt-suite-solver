@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 983,
+    "ds": "2024-11-10",
+    "mode": "easy",
+    "solution": "inner",
+    "guesses": [
+        "tares",
+        "poind",
+        "final",
+        "inner"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:03.092"
+}

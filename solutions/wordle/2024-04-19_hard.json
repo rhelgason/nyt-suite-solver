@@ -1,0 +1,13 @@
+{
+    "puzzle_id": 1643,
+    "ds": "2024-04-19",
+    "mode": "hard",
+    "solution": "raise",
+    "guesses": [
+        "tares",
+        "raise"
+    ],
+    "num_guesses": 2,
+    "solved": true,
+    "solve_time": "0:00:00.052"
+}

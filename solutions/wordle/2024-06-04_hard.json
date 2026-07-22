@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1110,
+    "ds": "2024-06-04",
+    "mode": "hard",
+    "solution": "groom",
+    "guesses": [
+        "tares",
+        "prion",
+        "broom",
+        "groom"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.115"
+}

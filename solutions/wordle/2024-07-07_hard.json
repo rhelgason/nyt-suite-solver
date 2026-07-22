@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1174,
+    "ds": "2024-07-07",
+    "mode": "hard",
+    "solution": "canon",
+    "guesses": [
+        "tares",
+        "manly",
+        "danio",
+        "canon"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.156"
+}

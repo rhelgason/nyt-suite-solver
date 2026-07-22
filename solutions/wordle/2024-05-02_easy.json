@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1602,
+    "ds": "2024-05-02",
+    "mode": "easy",
+    "solution": "slice",
+    "guesses": [
+        "tares",
+        "seine",
+        "plack",
+        "slice"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:01.962"
+}

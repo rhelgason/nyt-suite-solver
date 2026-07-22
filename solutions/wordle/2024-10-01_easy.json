@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1943,
+    "ds": "2024-10-01",
+    "mode": "easy",
+    "solution": "modem",
+    "guesses": [
+        "tares",
+        "indol",
+        "coxed",
+        "modem"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:03.864"
+}

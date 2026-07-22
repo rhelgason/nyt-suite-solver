@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 1244,
+    "ds": "2024-08-25",
+    "mode": "hard",
+    "solution": "skate",
+    "guesses": [
+        "tares",
+        "stale",
+        "skate"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:00.057"
+}

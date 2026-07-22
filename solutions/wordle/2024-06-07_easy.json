@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1744,
+    "ds": "2024-06-07",
+    "mode": "easy",
+    "solution": "melon",
+    "guesses": [
+        "tares",
+        "colin",
+        "abamp",
+        "melon"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:05.151"
+}

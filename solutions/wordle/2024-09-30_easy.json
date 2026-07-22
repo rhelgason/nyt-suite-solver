@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 2052,
+    "ds": "2024-09-30",
+    "mode": "easy",
+    "solution": "cloud",
+    "guesses": [
+        "tares",
+        "colin",
+        "humpy",
+        "cloud"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:07.755"
+}

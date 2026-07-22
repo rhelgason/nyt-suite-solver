@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1148,
+    "ds": "2024-02-17",
+    "mode": "hard",
+    "solution": "psalm",
+    "guesses": [
+        "tares",
+        "spail",
+        "plash",
+        "psalm"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.063"
+}

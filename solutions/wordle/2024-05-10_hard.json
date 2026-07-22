@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1335,
+    "ds": "2024-05-10",
+    "mode": "hard",
+    "solution": "media",
+    "guesses": [
+        "tares",
+        "plane",
+        "decay",
+        "media"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.110"
+}

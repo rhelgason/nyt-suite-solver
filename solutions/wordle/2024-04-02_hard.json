@@ -1,0 +1,17 @@
+{
+    "puzzle_id": 1178,
+    "ds": "2024-04-02",
+    "mode": "hard",
+    "solution": "serum",
+    "guesses": [
+        "tares",
+        "servo",
+        "serif",
+        "serge",
+        "serry",
+        "serum"
+    ],
+    "num_guesses": 6,
+    "solved": true,
+    "solve_time": "0:00:00.050"
+}

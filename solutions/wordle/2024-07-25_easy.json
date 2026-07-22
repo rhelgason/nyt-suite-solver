@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 997,
+    "ds": "2024-07-25",
+    "mode": "easy",
+    "solution": "porch",
+    "guesses": [
+        "tares",
+        "uncoy",
+        "boric",
+        "porch"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:01.039"
+}

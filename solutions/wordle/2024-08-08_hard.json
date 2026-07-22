@@ -1,0 +1,17 @@
+{
+    "puzzle_id": 1396,
+    "ds": "2024-08-08",
+    "mode": "hard",
+    "solution": "saucy",
+    "guesses": [
+        "tares",
+        "salsa",
+        "sangh",
+        "savoy",
+        "sappy",
+        "saucy"
+    ],
+    "num_guesses": 6,
+    "solved": true,
+    "solve_time": "0:00:00.064"
+}

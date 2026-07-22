@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1435,
+    "ds": "2024-06-23",
+    "mode": "easy",
+    "solution": "bugle",
+    "guesses": [
+        "tares",
+        "colin",
+        "pudgy",
+        "bugle"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:05.489"
+}

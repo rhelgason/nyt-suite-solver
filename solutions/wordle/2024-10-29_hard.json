@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 706,
+    "ds": "2024-10-29",
+    "mode": "hard",
+    "solution": "tunic",
+    "guesses": [
+        "tares",
+        "thing",
+        "tonic",
+        "tunic"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.051"
+}

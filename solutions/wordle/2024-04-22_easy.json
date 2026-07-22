@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 2321,
+    "ds": "2024-04-22",
+    "mode": "easy",
+    "solution": "laser",
+    "guesses": [
+        "tares",
+        "bosky",
+        "almud",
+        "laser"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.281"
+}

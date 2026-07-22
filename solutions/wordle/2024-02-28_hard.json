@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1959,
+    "ds": "2024-02-28",
+    "mode": "hard",
+    "solution": "devil",
+    "guesses": [
+        "tares",
+        "oldie",
+        "felid",
+        "devil"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.287"
+}

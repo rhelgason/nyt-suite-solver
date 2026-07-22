@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1272,
+    "ds": "2024-09-04",
+    "mode": "hard",
+    "solution": "stern",
+    "guesses": [
+        "tares",
+        "crest",
+        "stere",
+        "stern"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.050"
+}

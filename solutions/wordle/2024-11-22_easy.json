@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 995,
+    "ds": "2024-11-22",
+    "mode": "easy",
+    "solution": "pearl",
+    "guesses": [
+        "tares",
+        "craal",
+        "pearl"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:01.360"
+}

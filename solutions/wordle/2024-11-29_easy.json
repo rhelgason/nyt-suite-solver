@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1431,
+    "ds": "2024-11-29",
+    "mode": "easy",
+    "solution": "hippo",
+    "guesses": [
+        "tares",
+        "colin",
+        "dumbo",
+        "hippo"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:07.788"
+}

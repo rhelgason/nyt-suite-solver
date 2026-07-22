@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 542,
+    "ds": "2024-08-21",
+    "mode": "easy",
+    "solution": "mulch",
+    "guesses": [
+        "tares",
+        "colin",
+        "gulch",
+        "mulch"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:07.691"
+}

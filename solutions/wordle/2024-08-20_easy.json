@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 897,
+    "ds": "2024-08-20",
+    "mode": "easy",
+    "solution": "delay",
+    "guesses": [
+        "tares",
+        "aland",
+        "middy",
+        "delay"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:02.615"
+}

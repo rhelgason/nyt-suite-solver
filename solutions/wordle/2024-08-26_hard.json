@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 1223,
+    "ds": "2024-08-26",
+    "mode": "hard",
+    "solution": "stake",
+    "guesses": [
+        "tares",
+        "stale",
+        "stade",
+        "stage",
+        "stake"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:00.070"
+}

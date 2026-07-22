@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 2326,
+    "ds": "2024-11-13",
+    "mode": "easy",
+    "solution": "primp",
+    "guesses": [
+        "tares",
+        "coign",
+        "flump",
+        "primp"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:02.562"
+}

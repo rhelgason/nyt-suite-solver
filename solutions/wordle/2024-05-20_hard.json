@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 700,
+    "ds": "2024-05-20",
+    "mode": "hard",
+    "solution": "nicer",
+    "guesses": [
+        "tares",
+        "riled",
+        "biner",
+        "nicer"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.124"
+}

@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 557,
+    "ds": "2024-09-20",
+    "mode": "easy",
+    "solution": "smoke",
+    "guesses": [
+        "tares",
+        "seine",
+        "clomp",
+        "smoke"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:01.957"
+}

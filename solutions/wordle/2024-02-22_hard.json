@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1513,
+    "ds": "2024-02-22",
+    "mode": "hard",
+    "solution": "heavy",
+    "guesses": [
+        "tares",
+        "plane",
+        "heady",
+        "heavy"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.101"
+}

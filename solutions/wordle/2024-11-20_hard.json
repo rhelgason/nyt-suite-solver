@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1921,
+    "ds": "2024-11-20",
+    "mode": "hard",
+    "solution": "niche",
+    "guesses": [
+        "tares",
+        "oldie",
+        "mince",
+        "niche"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.281"
+}

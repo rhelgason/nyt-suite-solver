@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 2287,
+    "ds": "2024-05-06",
+    "mode": "hard",
+    "solution": "shave",
+    "guesses": [
+        "tares",
+        "spale",
+        "shave"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:00.095"
+}

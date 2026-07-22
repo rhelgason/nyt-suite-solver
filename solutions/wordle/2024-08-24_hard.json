@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 970,
+    "ds": "2024-08-24",
+    "mode": "hard",
+    "solution": "filet",
+    "guesses": [
+        "tares",
+        "outed",
+        "gleet",
+        "filet"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.061"
+}

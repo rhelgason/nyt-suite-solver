@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 607,
+    "ds": "2024-07-12",
+    "mode": "easy",
+    "solution": "jiffy",
+    "guesses": [
+        "tares",
+        "colin",
+        "dumpy",
+        "biffy",
+        "jiffy"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:08.136"
+}

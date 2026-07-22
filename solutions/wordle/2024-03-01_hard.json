@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1282,
+    "ds": "2024-03-01",
+    "mode": "hard",
+    "solution": "forty",
+    "guesses": [
+        "tares",
+        "borty",
+        "dorty",
+        "forty"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.060"
+}

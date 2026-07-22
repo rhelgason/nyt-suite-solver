@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 2011,
+    "ds": "2024-10-15",
+    "mode": "hard",
+    "solution": "corer",
+    "guesses": [
+        "tares",
+        "direr",
+        "curer",
+        "corer"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.058"
+}

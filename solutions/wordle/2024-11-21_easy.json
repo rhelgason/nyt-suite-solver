@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1826,
+    "ds": "2024-11-21",
+    "mode": "easy",
+    "solution": "spine",
+    "guesses": [
+        "tares",
+        "seine",
+        "aleph",
+        "spine"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:01.856"
+}

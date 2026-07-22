@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 1866,
+    "ds": "2024-10-26",
+    "mode": "hard",
+    "solution": "wreak",
+    "guesses": [
+        "tares",
+        "beard",
+        "areca",
+        "freak",
+        "wreak"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:00.080"
+}

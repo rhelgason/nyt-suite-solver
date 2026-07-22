@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 1916,
+    "ds": "2024-09-23",
+    "mode": "hard",
+    "solution": "steam",
+    "guesses": [
+        "tares",
+        "stale",
+        "stead",
+        "steak",
+        "steam"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:00.050"
+}

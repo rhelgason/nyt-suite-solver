@@ -1,0 +1,13 @@
+{
+    "puzzle_id": 1827,
+    "ds": "2024-10-22",
+    "mode": "hard",
+    "solution": "shout",
+    "guesses": [
+        "tares",
+        "shout"
+    ],
+    "num_guesses": 2,
+    "solved": true,
+    "solve_time": "0:00:00.063"
+}

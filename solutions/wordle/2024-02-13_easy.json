@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 2250,
+    "ds": "2024-02-13",
+    "mode": "easy",
+    "solution": "scram",
+    "guesses": [
+        "tares",
+        "slurp",
+        "scrag",
+        "scram"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.199"
+}

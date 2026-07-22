@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1816,
+    "ds": "2024-09-02",
+    "mode": "hard",
+    "solution": "camel",
+    "guesses": [
+        "tares",
+        "laden",
+        "bagel",
+        "camel"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.063"
+}

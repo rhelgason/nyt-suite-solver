@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 1882,
+    "ds": "2024-11-28",
+    "mode": "easy",
+    "solution": "chock",
+    "guesses": [
+        "tares",
+        "colin",
+        "chock"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:07.692"
+}

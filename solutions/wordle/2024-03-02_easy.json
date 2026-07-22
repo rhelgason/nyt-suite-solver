@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1035,
+    "ds": "2024-03-02",
+    "mode": "easy",
+    "solution": "urban",
+    "guesses": [
+        "tares",
+        "blond",
+        "unbar",
+        "urban"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:02.197"
+}

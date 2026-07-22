@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 998,
+    "ds": "2024-05-21",
+    "mode": "easy",
+    "solution": "dingo",
+    "guesses": [
+        "tares",
+        "colin",
+        "pudgy",
+        "dingo"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:07.791"
+}

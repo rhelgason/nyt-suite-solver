@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1371,
+    "ds": "2024-10-07",
+    "mode": "easy",
+    "solution": "flour",
+    "guesses": [
+        "tares",
+        "coign",
+        "blood",
+        "flour"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:02.735"
+}

@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1999,
+    "ds": "2024-03-12",
+    "mode": "easy",
+    "solution": "heave",
+    "guesses": [
+        "tares",
+        "aland",
+        "hempy",
+        "heave"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:02.769"
+}

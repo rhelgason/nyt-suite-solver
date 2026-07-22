@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1070,
+    "ds": "2024-11-04",
+    "mode": "hard",
+    "solution": "vinyl",
+    "guesses": [
+        "tares",
+        "colin",
+        "lungi",
+        "vinyl"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.593"
+}

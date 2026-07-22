@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1162,
+    "ds": "2024-06-28",
+    "mode": "easy",
+    "solution": "drove",
+    "guesses": [
+        "tares",
+        "deice",
+        "drone",
+        "drove"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:01.969"
+}

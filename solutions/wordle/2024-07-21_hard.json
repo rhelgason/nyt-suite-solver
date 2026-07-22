@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1086,
+    "ds": "2024-07-21",
+    "mode": "hard",
+    "solution": "speck",
+    "guesses": [
+        "tares",
+        "seine",
+        "shell",
+        "speck"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.102"
+}

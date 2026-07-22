@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 1667,
+    "ds": "2024-08-03",
+    "mode": "easy",
+    "solution": "scale",
+    "guesses": [
+        "tares",
+        "plash",
+        "scale"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:00.812"
+}

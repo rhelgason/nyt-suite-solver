@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 518,
+    "ds": "2024-06-14",
+    "mode": "easy",
+    "solution": "vault",
+    "guesses": [
+        "tares",
+        "cutin",
+        "faugh",
+        "vault"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:01.035"
+}

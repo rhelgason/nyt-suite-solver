@@ -1,0 +1,17 @@
+{
+    "puzzle_id": 1098,
+    "ds": "2024-11-23",
+    "mode": "easy",
+    "solution": "jelly",
+    "guesses": [
+        "tares",
+        "colin",
+        "badly",
+        "askew",
+        "felly",
+        "jelly"
+    ],
+    "num_guesses": 6,
+    "solved": true,
+    "solve_time": "0:00:05.313"
+}

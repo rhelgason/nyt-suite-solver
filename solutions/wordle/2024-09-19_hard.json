@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 2210,
+    "ds": "2024-09-19",
+    "mode": "hard",
+    "solution": "press",
+    "guesses": [
+        "tares",
+        "deers",
+        "brews",
+        "press"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.064"
+}

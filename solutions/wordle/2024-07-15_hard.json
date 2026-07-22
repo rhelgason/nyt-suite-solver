@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 1029,
+    "ds": "2024-07-15",
+    "mode": "hard",
+    "solution": "swoon",
+    "guesses": [
+        "tares",
+        "spoil",
+        "shook",
+        "snood",
+        "swoon"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:00.108"
+}

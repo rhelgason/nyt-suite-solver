@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1044,
+    "ds": "2024-05-14",
+    "mode": "hard",
+    "solution": "amass",
+    "guesses": [
+        "tares",
+        "loans",
+        "shays",
+        "amass"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.126"
+}

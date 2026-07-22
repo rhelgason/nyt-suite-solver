@@ -1,0 +1,17 @@
+{
+    "puzzle_id": 2266,
+    "ds": "2024-02-20",
+    "mode": "hard",
+    "solution": "match",
+    "guesses": [
+        "tares",
+        "haint",
+        "batch",
+        "catch",
+        "latch",
+        "match"
+    ],
+    "num_guesses": 6,
+    "solved": true,
+    "solve_time": "0:00:00.065"
+}

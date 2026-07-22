@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1032,
+    "ds": "2024-02-15",
+    "mode": "easy",
+    "solution": "ascot",
+    "guesses": [
+        "tares",
+        "slant",
+        "adust",
+        "ascot"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.754"
+}

@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 2230,
+    "ds": "2024-11-19",
+    "mode": "hard",
+    "solution": "going",
+    "guesses": [
+        "tares",
+        "colin",
+        "boing",
+        "doing",
+        "going"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:00.593"
+}

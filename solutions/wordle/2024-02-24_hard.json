@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 1500,
+    "ds": "2024-02-24",
+    "mode": "hard",
+    "solution": "piper",
+    "guesses": [
+        "tares",
+        "riled",
+        "biner",
+        "viper",
+        "piper"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:00.130"
+}

@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 1744,
+    "ds": "2024-06-07",
+    "mode": "hard",
+    "solution": "melon",
+    "guesses": [
+        "tares",
+        "oldie",
+        "belon",
+        "felon",
+        "melon"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:00.290"
+}

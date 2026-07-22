@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 2326,
+    "ds": "2024-11-13",
+    "mode": "hard",
+    "solution": "primp",
+    "guesses": [
+        "tares",
+        "prion",
+        "pricy",
+        "primi",
+        "primp"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:00.098"
+}

@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1634,
+    "ds": "2024-08-12",
+    "mode": "hard",
+    "solution": "skiff",
+    "guesses": [
+        "tares",
+        "spoil",
+        "swink",
+        "skiff"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.124"
+}

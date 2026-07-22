@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1495,
+    "ds": "2024-11-01",
+    "mode": "easy",
+    "solution": "sixth",
+    "guesses": [
+        "tares",
+        "shout",
+        "smith",
+        "sixth"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:01.341"
+}

@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1482,
+    "ds": "2024-03-11",
+    "mode": "hard",
+    "solution": "pesky",
+    "guesses": [
+        "tares",
+        "seine",
+        "messy",
+        "pesky"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.086"
+}

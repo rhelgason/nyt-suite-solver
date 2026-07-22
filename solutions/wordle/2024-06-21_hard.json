@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1560,
+    "ds": "2024-06-21",
+    "mode": "hard",
+    "solution": "paint",
+    "guesses": [
+        "tares",
+        "haint",
+        "faint",
+        "paint"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.058"
+}

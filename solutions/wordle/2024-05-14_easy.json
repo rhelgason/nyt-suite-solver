@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1044,
+    "ds": "2024-05-14",
+    "mode": "easy",
+    "solution": "amass",
+    "guesses": [
+        "tares",
+        "comal",
+        "shads",
+        "amass"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:03.147"
+}

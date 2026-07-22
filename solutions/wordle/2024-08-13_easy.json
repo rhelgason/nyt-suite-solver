@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1742,
+    "ds": "2024-08-13",
+    "mode": "easy",
+    "solution": "neigh",
+    "guesses": [
+        "tares",
+        "colin",
+        "kedge",
+        "neigh"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:05.444"
+}

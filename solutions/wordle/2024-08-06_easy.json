@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 2146,
+    "ds": "2024-08-06",
+    "mode": "easy",
+    "solution": "anvil",
+    "guesses": [
+        "tares",
+        "colin",
+        "anvil"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:04.806"
+}

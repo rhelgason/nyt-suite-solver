@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 1778,
+    "ds": "2024-03-04",
+    "mode": "hard",
+    "solution": "flame",
+    "guesses": [
+        "tares",
+        "plane",
+        "clade",
+        "blame",
+        "flame"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:00.103"
+}

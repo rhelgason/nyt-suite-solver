@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 1618,
+    "ds": "2024-11-15",
+    "mode": "easy",
+    "solution": "tacky",
+    "guesses": [
+        "tares",
+        "blink",
+        "tacky"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:00.443"
+}

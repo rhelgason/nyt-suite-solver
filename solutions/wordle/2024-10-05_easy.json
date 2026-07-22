@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 1697,
+    "ds": "2024-10-05",
+    "mode": "easy",
+    "solution": "miner",
+    "guesses": [
+        "tares",
+        "poind",
+        "final",
+        "biner",
+        "miner"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:03.098"
+}

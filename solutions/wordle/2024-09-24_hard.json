@@ -1,0 +1,17 @@
+{
+    "puzzle_id": 616,
+    "ds": "2024-09-24",
+    "mode": "hard",
+    "solution": "handy",
+    "guesses": [
+        "tares",
+        "manly",
+        "nancy",
+        "bandy",
+        "dandy",
+        "handy"
+    ],
+    "num_guesses": 6,
+    "solved": true,
+    "solve_time": "0:00:00.142"
+}

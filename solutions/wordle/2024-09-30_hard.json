@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 2052,
+    "ds": "2024-09-30",
+    "mode": "hard",
+    "solution": "cloud",
+    "guesses": [
+        "tares",
+        "colin",
+        "clomb",
+        "clock",
+        "cloud"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:00.614"
+}

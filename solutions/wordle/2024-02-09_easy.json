@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 1893,
+    "ds": "2024-02-09",
+    "mode": "easy",
+    "solution": "stiff",
+    "guesses": [
+        "tares",
+        "shout",
+        "linky",
+        "spitz",
+        "stiff"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:01.419"
+}

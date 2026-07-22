@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 516,
+    "ds": "2024-04-11",
+    "mode": "easy",
+    "solution": "louse",
+    "guesses": [
+        "tares",
+        "seine",
+        "cloud",
+        "louse"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:02.104"
+}

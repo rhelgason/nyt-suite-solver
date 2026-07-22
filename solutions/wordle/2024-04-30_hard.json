@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 1270,
+    "ds": "2024-04-30",
+    "mode": "hard",
+    "solution": "prowl",
+    "guesses": [
+        "tares",
+        "prion",
+        "promo",
+        "proud",
+        "prowl"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:00.112"
+}

@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 592,
+    "ds": "2024-09-16",
+    "mode": "easy",
+    "solution": "honey",
+    "guesses": [
+        "tares",
+        "indol",
+        "campy",
+        "boney",
+        "honey"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:04.060"
+}

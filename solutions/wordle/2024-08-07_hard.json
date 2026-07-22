@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 789,
+    "ds": "2024-08-07",
+    "mode": "hard",
+    "solution": "macaw",
+    "guesses": [
+        "tares",
+        "manly",
+        "magma",
+        "macaw"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.135"
+}

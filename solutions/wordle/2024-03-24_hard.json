@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 1387,
+    "ds": "2024-03-24",
+    "mode": "hard",
+    "solution": "towel",
+    "guesses": [
+        "tares",
+        "toned",
+        "topee",
+        "totem",
+        "towel"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:00.061"
+}

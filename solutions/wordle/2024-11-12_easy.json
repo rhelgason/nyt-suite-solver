@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 746,
+    "ds": "2024-11-12",
+    "mode": "easy",
+    "solution": "flown",
+    "guesses": [
+        "tares",
+        "colin",
+        "blown",
+        "flown"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:07.703"
+}

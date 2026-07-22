@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1034,
+    "ds": "2024-08-27",
+    "mode": "hard",
+    "solution": "crown",
+    "guesses": [
+        "tares",
+        "prion",
+        "brown",
+        "crown"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.094"
+}

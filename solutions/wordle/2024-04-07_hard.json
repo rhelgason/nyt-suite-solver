@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 1747,
+    "ds": "2024-04-07",
+    "mode": "hard",
+    "solution": "voila",
+    "guesses": [
+        "tares",
+        "aloin",
+        "voila"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:00.270"
+}

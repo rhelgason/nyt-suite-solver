@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 575,
+    "ds": "2024-06-10",
+    "mode": "hard",
+    "solution": "manga",
+    "guesses": [
+        "tares",
+        "manly",
+        "manga"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:00.145"
+}

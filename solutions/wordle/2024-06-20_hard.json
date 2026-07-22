@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 1523,
+    "ds": "2024-06-20",
+    "mode": "hard",
+    "solution": "scent",
+    "guesses": [
+        "tares",
+        "spite",
+        "scent"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:00.063"
+}

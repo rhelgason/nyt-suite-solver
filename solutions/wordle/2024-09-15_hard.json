@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 1357,
+    "ds": "2024-09-15",
+    "mode": "hard",
+    "solution": "recur",
+    "guesses": [
+        "tares",
+        "pride",
+        "leery",
+        "recon",
+        "recur"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:00.082"
+}

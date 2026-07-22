@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 1478,
+    "ds": "2024-09-25",
+    "mode": "hard",
+    "solution": "torch",
+    "guesses": [
+        "tares",
+        "throb",
+        "torch"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:00.048"
+}

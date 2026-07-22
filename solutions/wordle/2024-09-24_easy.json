@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 616,
+    "ds": "2024-09-24",
+    "mode": "easy",
+    "solution": "handy",
+    "guesses": [
+        "tares",
+        "lingy",
+        "ditch",
+        "handy"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:03.321"
+}

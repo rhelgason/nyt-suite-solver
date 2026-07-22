@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 2322,
+    "ds": "2024-10-09",
+    "mode": "hard",
+    "solution": "mommy",
+    "guesses": [
+        "tares",
+        "colin",
+        "boody",
+        "pommy",
+        "mommy"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:00.585"
+}

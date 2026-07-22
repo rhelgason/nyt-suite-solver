@@ -1,0 +1,13 @@
+{
+    "puzzle_id": 1868,
+    "ds": "2024-02-14",
+    "mode": "hard",
+    "solution": "talon",
+    "guesses": [
+        "tares",
+        "talon"
+    ],
+    "num_guesses": 2,
+    "solved": true,
+    "solve_time": "0:00:00.057"
+}

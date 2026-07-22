@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1721,
+    "ds": "2024-08-29",
+    "mode": "hard",
+    "solution": "flunk",
+    "guesses": [
+        "tares",
+        "colin",
+        "flung",
+        "flunk"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.594"
+}

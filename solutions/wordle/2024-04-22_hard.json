@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 2321,
+    "ds": "2024-04-22",
+    "mode": "hard",
+    "solution": "laser",
+    "guesses": [
+        "tares",
+        "baser",
+        "laser"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:00.045"
+}

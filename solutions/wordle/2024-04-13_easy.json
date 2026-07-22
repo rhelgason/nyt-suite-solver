@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 1067,
+    "ds": "2024-04-13",
+    "mode": "easy",
+    "solution": "steel",
+    "guesses": [
+        "tares",
+        "slipt",
+        "steel"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:00.280"
+}

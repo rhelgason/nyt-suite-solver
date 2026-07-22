@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 752,
+    "ds": "2024-10-19",
+    "mode": "hard",
+    "solution": "fiber",
+    "guesses": [
+        "tares",
+        "riled",
+        "biner",
+        "fiber"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.135"
+}

@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 2111,
+    "ds": "2024-08-14",
+    "mode": "hard",
+    "solution": "shore",
+    "guesses": [
+        "tares",
+        "rouse",
+        "score",
+        "shore"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.045"
+}

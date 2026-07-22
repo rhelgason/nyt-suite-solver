@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 843,
+    "ds": "2024-04-23",
+    "mode": "hard",
+    "solution": "rover",
+    "guesses": [
+        "tares",
+        "riled",
+        "roper",
+        "roger",
+        "rover"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:00.130"
+}

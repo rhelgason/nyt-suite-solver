@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1500,
+    "ds": "2024-02-24",
+    "mode": "easy",
+    "solution": "piper",
+    "guesses": [
+        "tares",
+        "poind",
+        "piker",
+        "piper"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:03.014"
+}

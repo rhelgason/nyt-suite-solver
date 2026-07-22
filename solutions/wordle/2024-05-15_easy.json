@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 2223,
+    "ds": "2024-05-15",
+    "mode": "easy",
+    "solution": "pinch",
+    "guesses": [
+        "tares",
+        "colin",
+        "wimpy",
+        "pinch"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:07.781"
+}

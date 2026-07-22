@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 1014,
+    "ds": "2024-04-16",
+    "mode": "hard",
+    "solution": "shank",
+    "guesses": [
+        "tares",
+        "spail",
+        "shank"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:00.082"
+}

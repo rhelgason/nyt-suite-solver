@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 812,
+    "ds": "2024-03-27",
+    "mode": "hard",
+    "solution": "stung",
+    "guesses": [
+        "tares",
+        "shout",
+        "stunk",
+        "stung"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.084"
+}

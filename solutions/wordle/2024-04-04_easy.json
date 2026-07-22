@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1654,
+    "ds": "2024-04-04",
+    "mode": "easy",
+    "solution": "climb",
+    "guesses": [
+        "tares",
+        "colin",
+        "bifid",
+        "climb"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:07.703"
+}

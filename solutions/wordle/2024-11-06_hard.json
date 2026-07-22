@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 1281,
+    "ds": "2024-11-06",
+    "mode": "hard",
+    "solution": "truly",
+    "guesses": [
+        "tares",
+        "triol",
+        "truly"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:00.044"
+}

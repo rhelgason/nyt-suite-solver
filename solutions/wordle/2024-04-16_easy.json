@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1014,
+    "ds": "2024-04-16",
+    "mode": "easy",
+    "solution": "shank",
+    "guesses": [
+        "tares",
+        "milch",
+        "shaky",
+        "shank"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:01.527"
+}
