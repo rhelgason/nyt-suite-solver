@@ -104,13 +104,14 @@ fun of it.
 
 Connections splits 16 words into 4 hidden groups joined by wordplay, trivia, or a
 shared prefix, which has no clean algorithm, so this is a deliberate LLM solver.
-It never sees the answer key while solving: the model is shown only the remaining
-words and asked for its most confident group, and the solver plays the real game
-against the secret categories with the actual four-mistake budget and "one away"
-feedback. The LLM runs on GitHub Models using the daily workflow's built-in token,
-so it stays free with no API key to manage; if the model is unavailable the game
-is simply recorded as unsolved. The score reflects realistic play rather than a
-trivial win, since a wrong group costs a mistake just as it would for a person.
+It never sees the answer key while solving: each turn the model reasons over the
+whole remaining board, proposes the full split ordered by confidence, and the
+solver guesses the surest group first, replanning with the real "one away" and
+wrong-guess feedback until it wins or spends its four mistakes. The LLM runs on
+GitHub Models using the daily workflow's built-in token, so it stays free with no
+API key to manage; if the model is unavailable the game is simply recorded as
+unsolved. The score reflects realistic play rather than a trivial win, since a
+wrong group costs a mistake just as it would for a person.
 
 <p align="center"><img src="stats/connections_groups.svg" alt="Connections groups found" width="520"></p>
 
