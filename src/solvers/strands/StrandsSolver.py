@@ -29,10 +29,10 @@ HAM_PATH_STEP_BUDGET = 100_000
 # report honestly when a cap is hit. We try a fast exact-cover-by-words pass
 # first, then fall back to the slower leftover-path search only if it did not
 # already recover the theme words.
-NODE_BUDGET = 3_000_000
-MAX_CANDIDATES = 300
-WORDS_TIME_BUDGET = 20.0
-LEFTOVER_TIME_BUDGET = 15.0
+NODE_BUDGET = 12_000_000
+MAX_CANDIDATES = 20_000
+WORDS_TIME_BUDGET = 25.0
+LEFTOVER_TIME_BUDGET = 45.0
 
 # 8 king-move directions
 DIRS = [(-1, -1), (-1, 0), (-1, 1), (0, -1), (0, 1), (1, -1), (1, 0), (1, 1)]
@@ -164,11 +164,27 @@ def _placement_masks(placements: List[Placement], n: int):
     return masks, cell_to_placements
 
 
-def find_solutions_words(grid: List[str], placements: List[Placement]
+def _cell_order(rows: int, cols: int) -> List[int]:
+    """Most-constrained cells first: corners (3 neighbours), then edges (5), then
+    interior (8). Branching on these first prunes the search like an MRV
+    heuristic would, but is precomputed so it costs nothing per node."""
+    return sorted(range(rows * cols), key=lambda c: (len(neighbors(c, rows, cols)), c))
+
+
+def _first_unassigned(cell_order: List[int], assigned: int) -> int:
+    for cell in cell_order:
+        if not (assigned >> cell & 1):
+            return cell
+    return -1
+
+
+def find_solutions_words(grid: List[str], placements: List[Placement],
+                         target: Optional[FrozenSet[str]] = None
                          ) -> Tuple[List[FrozenSet[str]], bool]:
     """Fast pass: exact-cover every cell with valid words, at least one spanning
-    (the spangram is a single dictionary word or a chain of them). Returns
-    (candidate word sets, truncated)."""
+    (the spangram is a single dictionary word or a chain of them). Stops early
+    once ``target`` (the theme words) is recovered. Returns (candidate word sets,
+    truncated)."""
     rows, cols = len(grid), len(grid[0])
     n = rows * cols
     full_mask = (1 << n) - 1
@@ -178,9 +194,10 @@ def find_solutions_words(grid: List[str], placements: List[Placement]
     candidates: List[FrozenSet[str]] = []
     seen: Set[FrozenSet[str]] = set()
     budget = _Budget(WORDS_TIME_BUDGET)
+    found = [False]
 
     def dfs(covered: int, chosen: List[int], spanning_count: int) -> None:
-        if budget.exhausted or len(candidates) >= MAX_CANDIDATES:
+        if found[0] or budget.exhausted or len(candidates) >= MAX_CANDIDATES:
             return
         if not budget.tick():
             return
@@ -190,31 +207,35 @@ def find_solutions_words(grid: List[str], placements: List[Placement]
                 if words not in seen:
                     seen.add(words)
                     candidates.append(words)
+                    if target is not None and target <= words:
+                        found[0] = True
             return
         if len(chosen) >= MAX_WORDS_TOTAL:
             return
         lowest = ~covered & full_mask
-        target = (lowest & -lowest).bit_length() - 1
-        for idx in cell_to_placements[target]:
+        cell = (lowest & -lowest).bit_length() - 1
+        for idx in cell_to_placements[cell]:
             if covered & masks[idx]:
                 continue
             chosen.append(idx)
             dfs(covered | masks[idx], chosen, spanning_count + (1 if spanning[idx] else 0))
             chosen.pop()
-            if budget.exhausted or len(candidates) >= MAX_CANDIDATES:
+            if found[0] or budget.exhausted or len(candidates) >= MAX_CANDIDATES:
                 return
 
     dfs(0, [], 0)
-    return candidates, budget.exhausted
+    return candidates, budget.exhausted and not found[0]
 
 
-def find_solutions_leftover(grid: List[str], placements: List[Placement], num_words: int
+def find_solutions_leftover(grid: List[str], placements: List[Placement], num_words: int,
+                            target: Optional[FrozenSet[str]] = None
                             ) -> Tuple[List[FrozenSet[str]], bool]:
     """Fallback: partition the board into exactly ``num_words`` theme words plus a
     leftover spangram. The leftover cells (everything not covered by a theme word)
     must form one connected king-path spanning opposite sides; it is never
     dictionary-matched, so phrase spangrams work. ``num_words`` is the theme-word
-    count NYT shows the player, which prunes the search hard.
+    count NYT shows the player, which prunes the search hard. Stops early once
+    ``target`` is recovered.
 
     Returns (candidate theme-word sets, truncated)."""
     rows, cols = len(grid), len(grid[0])
@@ -222,10 +243,12 @@ def find_solutions_leftover(grid: List[str], placements: List[Placement], num_wo
     full_mask = (1 << n) - 1
     adj = {cell: neighbors(cell, rows, cols) for cell in range(n)}
     masks, cell_to_placements = _placement_masks(placements, n)
+    cell_order = _cell_order(rows, cols)
 
     candidates: List[FrozenSet[str]] = []
     seen: Set[FrozenSet[str]] = set()
     budget = _Budget(LEFTOVER_TIME_BUDGET)
+    found = [False]
 
     def record(covered: int, chosen: List[int]) -> None:
         spangram = _mask_to_cells(full_mask & ~covered, n)
@@ -236,9 +259,11 @@ def find_solutions_leftover(grid: List[str], placements: List[Placement], num_wo
             if words not in seen:
                 seen.add(words)
                 candidates.append(words)
+                if target is not None and target <= words:
+                    found[0] = True
 
     def dfs(covered: int, reserved: int, chosen: List[int]) -> None:
-        if budget.exhausted or len(candidates) >= MAX_CANDIDATES:
+        if found[0] or budget.exhausted or len(candidates) >= MAX_CANDIDATES:
             return
         if not budget.tick():
             return
@@ -248,23 +273,22 @@ def find_solutions_leftover(grid: List[str], placements: List[Placement], num_wo
         assigned = covered | reserved
         if assigned == full_mask:
             return  # ran out of cells before placing all theme words
-        lowest = ~assigned & full_mask
-        target = (lowest & -lowest).bit_length() - 1
+        cell = _first_unassigned(cell_order, assigned)
         # Branch 1: cover the target cell with a theme word
-        for idx in cell_to_placements[target]:
+        for idx in cell_to_placements[cell]:
             if masks[idx] & assigned:
                 continue
             chosen.append(idx)
             dfs(covered | masks[idx], reserved, chosen)
             chosen.pop()
-            if budget.exhausted or len(candidates) >= MAX_CANDIDATES:
+            if found[0] or budget.exhausted or len(candidates) >= MAX_CANDIDATES:
                 return
         # Branch 2: the target cell belongs to the spangram instead
         if bin(reserved).count("1") < MAX_SPANGRAM_CELLS:
-            dfs(covered, reserved | (1 << target), chosen)
+            dfs(covered, reserved | (1 << cell), chosen)
 
     dfs(0, 0, [])
-    return candidates, budget.exhausted
+    return candidates, budget.exhausted and not found[0]
 
 
 class StrandsSolver(BaseSolver):
@@ -309,9 +333,10 @@ class StrandsSolver(BaseSolver):
         # word(s)). Fall back to the slower leftover-path search only if that did
         # not already recover the theme words, since it also handles phrase
         # spangrams. NYT shows the theme-word count, so we use it to prune.
-        candidates, truncated = find_solutions_words(self.grid, placements)
+        candidates, truncated = find_solutions_words(self.grid, placements, target=theme_set)
         if not any(theme_set <= cand for cand in candidates):
-            leftover, trunc_l = find_solutions_leftover(self.grid, placements, len(self.theme_words))
+            leftover, trunc_l = find_solutions_leftover(
+                self.grid, placements, len(self.theme_words), target=theme_set)
             candidates = candidates + leftover
             truncated = truncated or trunc_l
         end = time()
