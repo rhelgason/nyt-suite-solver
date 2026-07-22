@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 287,
+    "ds": "2022-04-01",
+    "mode": "easy",
+    "solution": "snout",
+    "guesses": [
+        "tares",
+        "shout",
+        "capon",
+        "snout"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:01.336"
+}

@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 254,
+    "ds": "2022-02-27",
+    "mode": "easy",
+    "solution": "chant",
+    "guesses": [
+        "tares",
+        "aloin",
+        "chant"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:01.118"
+}

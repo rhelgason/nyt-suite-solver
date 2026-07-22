@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 378,
+    "ds": "2022-07-01",
+    "mode": "easy",
+    "solution": "pinto",
+    "guesses": [
+        "tares",
+        "colin",
+        "biont",
+        "pinto"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:02.503"
+}

@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 224,
+    "ds": "2022-01-28",
+    "mode": "hard",
+    "solution": "perky",
+    "guesses": [
+        "tares",
+        "nerdy",
+        "merry",
+        "jerky",
+        "perky"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:00.050"
+}

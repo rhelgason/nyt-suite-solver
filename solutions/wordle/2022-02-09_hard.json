@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 236,
+    "ds": "2022-02-09",
+    "mode": "hard",
+    "solution": "humor",
+    "guesses": [
+        "tares",
+        "prion",
+        "color",
+        "humor"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.100"
+}

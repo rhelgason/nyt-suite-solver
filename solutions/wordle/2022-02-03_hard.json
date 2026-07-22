@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 230,
+    "ds": "2022-02-03",
+    "mode": "hard",
+    "solution": "shard",
+    "guesses": [
+        "tares",
+        "snarf",
+        "sharp",
+        "shard"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.045"
+}

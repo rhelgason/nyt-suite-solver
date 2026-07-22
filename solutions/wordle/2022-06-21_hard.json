@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 368,
+    "ds": "2022-06-21",
+    "mode": "hard",
+    "solution": "gloat",
+    "guesses": [
+        "tares",
+        "alant",
+        "bloat",
+        "float",
+        "gloat"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:00.055"
+}

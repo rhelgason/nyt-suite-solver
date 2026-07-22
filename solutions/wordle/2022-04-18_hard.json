@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 304,
+    "ds": "2022-04-18",
+    "mode": "hard",
+    "solution": "flair",
+    "guesses": [
+        "tares",
+        "drain",
+        "flair"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:00.087"
+}

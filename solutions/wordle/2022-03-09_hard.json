@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 264,
+    "ds": "2022-03-09",
+    "mode": "hard",
+    "solution": "month",
+    "guesses": [
+        "tares",
+        "litho",
+        "mouth",
+        "month"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.122"
+}

@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 270,
+    "ds": "2022-03-15",
+    "mode": "easy",
+    "solution": "tease",
+    "guesses": [
+        "tares",
+        "tesla",
+        "tease"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:00.105"
+}

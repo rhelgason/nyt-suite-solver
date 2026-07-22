@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 294,
+    "ds": "2022-04-08",
+    "mode": "easy",
+    "solution": "scare",
+    "guesses": [
+        "tares",
+        "swipe",
+        "ached",
+        "scare"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.373"
+}

@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 218,
+    "ds": "2022-01-22",
+    "mode": "easy",
+    "solution": "wince",
+    "guesses": [
+        "tares",
+        "colin",
+        "chewy",
+        "wince"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:05.253"
+}

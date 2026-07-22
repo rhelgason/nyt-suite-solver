@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 330,
+    "ds": "2022-05-14",
+    "mode": "hard",
+    "solution": "metal",
+    "guesses": [
+        "tares",
+        "leant",
+        "fetal",
+        "metal"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.054"
+}

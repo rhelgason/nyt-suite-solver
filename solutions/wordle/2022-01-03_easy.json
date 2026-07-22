@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 199,
+    "ds": "2022-01-03",
+    "mode": "easy",
+    "solution": "truss",
+    "guesses": [
+        "tares",
+        "goyim",
+        "truss"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:00.201"
+}

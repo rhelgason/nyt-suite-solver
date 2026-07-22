@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 255,
+    "ds": "2022-02-28",
+    "mode": "easy",
+    "solution": "choke",
+    "guesses": [
+        "tares",
+        "colin",
+        "chemo",
+        "choke"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:05.118"
+}

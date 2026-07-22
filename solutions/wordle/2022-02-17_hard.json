@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 244,
+    "ds": "2022-02-17",
+    "mode": "hard",
+    "solution": "shake",
+    "guesses": [
+        "tares",
+        "spale",
+        "shave",
+        "shade",
+        "shake"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:00.059"
+}

@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 281,
+    "ds": "2022-03-26",
+    "mode": "easy",
+    "solution": "epoxy",
+    "guesses": [
+        "tares",
+        "colin",
+        "debye",
+        "epoxy"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:05.414"
+}

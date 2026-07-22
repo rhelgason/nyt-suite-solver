@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 237,
+    "ds": "2022-02-10",
+    "mode": "easy",
+    "solution": "pause",
+    "guesses": [
+        "tares",
+        "plush",
+        "pause"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:00.261"
+}

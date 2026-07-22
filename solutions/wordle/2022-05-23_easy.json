@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 339,
+    "ds": "2022-05-23",
+    "mode": "easy",
+    "solution": "hinge",
+    "guesses": [
+        "tares",
+        "colin",
+        "kedge",
+        "binge",
+        "hinge"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:05.750"
+}

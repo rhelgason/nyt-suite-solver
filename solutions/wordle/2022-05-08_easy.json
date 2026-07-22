@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 324,
+    "ds": "2022-05-08",
+    "mode": "easy",
+    "solution": "canny",
+    "guesses": [
+        "tares",
+        "lingy",
+        "ditch",
+        "canny"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:03.361"
+}

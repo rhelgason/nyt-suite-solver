@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 303,
+    "ds": "2022-04-17",
+    "mode": "hard",
+    "solution": "ample",
+    "guesses": [
+        "tares",
+        "plane",
+        "ample"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:00.100"
+}

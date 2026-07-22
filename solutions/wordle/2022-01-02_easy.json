@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 198,
+    "ds": "2022-01-02",
+    "mode": "easy",
+    "solution": "boost",
+    "guesses": [
+        "tares",
+        "shout",
+        "boost"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:01.294"
+}

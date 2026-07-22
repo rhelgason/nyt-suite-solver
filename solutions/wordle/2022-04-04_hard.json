@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 290,
+    "ds": "2022-04-04",
+    "mode": "hard",
+    "solution": "shawl",
+    "guesses": [
+        "tares",
+        "spail",
+        "scall",
+        "shaul",
+        "shawl"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:00.063"
+}

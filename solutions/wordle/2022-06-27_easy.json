@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 374,
+    "ds": "2022-06-27",
+    "mode": "easy",
+    "solution": "retro",
+    "guesses": [
+        "tares",
+        "court",
+        "metro",
+        "retro"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.545"
+}

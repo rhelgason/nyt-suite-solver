@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 256,
+    "ds": "2022-03-01",
+    "mode": "easy",
+    "solution": "rupee",
+    "guesses": [
+        "tares",
+        "poind",
+        "leech",
+        "rupee"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:03.080"
+}

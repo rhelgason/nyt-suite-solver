@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 284,
+    "ds": "2022-03-29",
+    "mode": "hard",
+    "solution": "shall",
+    "guesses": [
+        "tares",
+        "spail",
+        "scall",
+        "shall"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.069"
+}

@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 203,
+    "ds": "2022-01-07",
+    "mode": "easy",
+    "solution": "slump",
+    "guesses": [
+        "tares",
+        "noily",
+        "bumph",
+        "slump"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:02.871"
+}

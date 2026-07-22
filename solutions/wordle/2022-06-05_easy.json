@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 352,
+    "ds": "2022-06-05",
+    "mode": "easy",
+    "solution": "depth",
+    "guesses": [
+        "tares",
+        "lotic",
+        "bendy",
+        "depth"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:01.503"
+}

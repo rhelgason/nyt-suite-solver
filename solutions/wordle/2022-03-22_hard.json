@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 277,
+    "ds": "2022-03-22",
+    "mode": "hard",
+    "solution": "slosh",
+    "guesses": [
+        "tares",
+        "spoil",
+        "slojd",
+        "slosh"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.111"
+}

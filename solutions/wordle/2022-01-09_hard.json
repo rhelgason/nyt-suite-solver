@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 205,
+    "ds": "2022-01-09",
+    "mode": "hard",
+    "solution": "gorge",
+    "guesses": [
+        "tares",
+        "nerdy",
+        "forge",
+        "gorge"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.060"
+}

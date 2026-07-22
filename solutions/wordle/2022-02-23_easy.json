@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 250,
+    "ds": "2022-02-23",
+    "mode": "easy",
+    "solution": "trove",
+    "guesses": [
+        "tares",
+        "chine",
+        "paved",
+        "trove"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.368"
+}

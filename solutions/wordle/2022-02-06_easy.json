@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 233,
+    "ds": "2022-02-06",
+    "mode": "easy",
+    "solution": "skill",
+    "guesses": [
+        "tares",
+        "noily",
+        "hawks",
+        "skill"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:02.714"
+}

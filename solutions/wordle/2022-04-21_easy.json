@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 307,
+    "ds": "2022-04-21",
+    "mode": "easy",
+    "solution": "oxide",
+    "guesses": [
+        "tares",
+        "colin",
+        "oxide"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:05.244"
+}

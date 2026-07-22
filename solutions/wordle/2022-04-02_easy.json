@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 288,
+    "ds": "2022-04-02",
+    "mode": "easy",
+    "solution": "trope",
+    "guesses": [
+        "tares",
+        "chine",
+        "paved",
+        "trope"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.388"
+}

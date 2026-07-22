@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 219,
+    "ds": "2022-01-23",
+    "mode": "hard",
+    "solution": "crimp",
+    "guesses": [
+        "tares",
+        "prion",
+        "crimp"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:00.095"
+}

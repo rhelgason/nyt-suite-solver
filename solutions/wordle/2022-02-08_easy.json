@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 235,
+    "ds": "2022-02-08",
+    "mode": "easy",
+    "solution": "frame",
+    "guesses": [
+        "tares",
+        "craal",
+        "debug",
+        "frame"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:01.542"
+}

@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 210,
+    "ds": "2022-01-14",
+    "mode": "easy",
+    "solution": "tangy",
+    "guesses": [
+        "tares",
+        "blink",
+        "gouty",
+        "tangy"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.510"
+}

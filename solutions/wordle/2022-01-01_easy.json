@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 197,
+    "ds": "2022-01-01",
+    "mode": "easy",
+    "solution": "rebus",
+    "guesses": [
+        "tares",
+        "weird",
+        "bleak",
+        "rebus"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.867"
+}

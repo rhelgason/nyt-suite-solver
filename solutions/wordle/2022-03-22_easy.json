@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 277,
+    "ds": "2022-03-22",
+    "mode": "easy",
+    "solution": "slosh",
+    "guesses": [
+        "tares",
+        "noily",
+        "shool",
+        "slosh"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:02.873"
+}

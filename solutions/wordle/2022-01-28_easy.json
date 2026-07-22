@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 224,
+    "ds": "2022-01-28",
+    "mode": "easy",
+    "solution": "perky",
+    "guesses": [
+        "tares",
+        "monie",
+        "updry",
+        "perky"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:01.105"
+}

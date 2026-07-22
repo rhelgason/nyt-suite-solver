@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 377,
+    "ds": "2022-06-30",
+    "mode": "easy",
+    "solution": "hutch",
+    "guesses": [
+        "tares",
+        "colin",
+        "bedim",
+        "hutch"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:02.490"
+}

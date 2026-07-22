@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 220,
+    "ds": "2022-01-24",
+    "mode": "hard",
+    "solution": "knoll",
+    "guesses": [
+        "tares",
+        "colin",
+        "klong",
+        "knoll"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.579"
+}

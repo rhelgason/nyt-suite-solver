@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 278,
+    "ds": "2022-03-23",
+    "mode": "hard",
+    "solution": "purge",
+    "guesses": [
+        "tares",
+        "nerdy",
+        "forge",
+        "gurge",
+        "purge"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:00.054"
+}

@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 305,
+    "ds": "2022-04-19",
+    "mode": "easy",
+    "solution": "foyer",
+    "guesses": [
+        "tares",
+        "poind",
+        "womby",
+        "coyer",
+        "foyer"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:03.312"
+}

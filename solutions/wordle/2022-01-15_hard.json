@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 211,
+    "ds": "2022-01-15",
+    "mode": "hard",
+    "solution": "panic",
+    "guesses": [
+        "tares",
+        "manly",
+        "danio",
+        "panic"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.132"
+}

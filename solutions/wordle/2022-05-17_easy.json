@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 333,
+    "ds": "2022-05-17",
+    "mode": "easy",
+    "solution": "being",
+    "guesses": [
+        "tares",
+        "colin",
+        "kedge",
+        "being"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:05.498"
+}

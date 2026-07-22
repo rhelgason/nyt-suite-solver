@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 260,
+    "ds": "2022-03-05",
+    "mode": "easy",
+    "solution": "brine",
+    "guesses": [
+        "tares",
+        "deice",
+        "gumbo",
+        "brine"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:02.092"
+}

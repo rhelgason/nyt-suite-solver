@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 371,
+    "ds": "2022-06-24",
+    "mode": "easy",
+    "solution": "smite",
+    "guesses": [
+        "tares",
+        "point",
+        "alums",
+        "smite"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.900"
+}

@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 222,
+    "ds": "2022-01-26",
+    "mode": "easy",
+    "solution": "whack",
+    "guesses": [
+        "tares",
+        "colin",
+        "bulky",
+        "whack"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:04.919"
+}

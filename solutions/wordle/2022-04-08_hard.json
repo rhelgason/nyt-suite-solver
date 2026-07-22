@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 294,
+    "ds": "2022-04-08",
+    "mode": "hard",
+    "solution": "scare",
+    "guesses": [
+        "tares",
+        "spear",
+        "scare"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:00.051"
+}

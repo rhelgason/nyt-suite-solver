@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 302,
+    "ds": "2022-04-16",
+    "mode": "hard",
+    "solution": "cheek",
+    "guesses": [
+        "tares",
+        "loden",
+        "cuvee",
+        "cheek"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.176"
+}

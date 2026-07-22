@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 283,
+    "ds": "2022-03-28",
+    "mode": "easy",
+    "solution": "found",
+    "guesses": [
+        "tares",
+        "colin",
+        "bawdy",
+        "bumph",
+        "found"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:08.098"
+}

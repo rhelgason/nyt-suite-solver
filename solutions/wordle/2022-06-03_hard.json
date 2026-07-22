@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 350,
+    "ds": "2022-06-03",
+    "mode": "hard",
+    "solution": "phase",
+    "guesses": [
+        "tares",
+        "spale",
+        "pease",
+        "phase"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.065"
+}

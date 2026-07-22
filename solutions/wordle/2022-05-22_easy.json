@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 338,
+    "ds": "2022-05-22",
+    "mode": "easy",
+    "solution": "money",
+    "guesses": [
+        "tares",
+        "indol",
+        "campy",
+        "money"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:04.029"
+}

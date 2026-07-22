@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 346,
+    "ds": "2022-05-30",
+    "mode": "hard",
+    "solution": "atoll",
+    "guesses": [
+        "tares",
+        "alant",
+        "aptly",
+        "atoll"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.053"
+}

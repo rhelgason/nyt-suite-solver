@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 212,
+    "ds": "2022-01-16",
+    "mode": "easy",
+    "solution": "solar",
+    "guesses": [
+        "tares",
+        "spawn",
+        "filmi",
+        "solar"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.476"
+}

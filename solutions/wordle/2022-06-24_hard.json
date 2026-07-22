@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 371,
+    "ds": "2022-06-24",
+    "mode": "hard",
+    "solution": "smite",
+    "guesses": [
+        "tares",
+        "spite",
+        "skite",
+        "smite"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.055"
+}

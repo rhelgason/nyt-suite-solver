@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 312,
+    "ds": "2022-04-26",
+    "mode": "easy",
+    "solution": "heist",
+    "guesses": [
+        "tares",
+        "point",
+        "deash",
+        "heist"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.900"
+}

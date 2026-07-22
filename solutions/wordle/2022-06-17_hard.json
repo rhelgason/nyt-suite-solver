@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 364,
+    "ds": "2022-06-17",
+    "mode": "hard",
+    "solution": "blown",
+    "guesses": [
+        "tares",
+        "colin",
+        "blown"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:00.596"
+}

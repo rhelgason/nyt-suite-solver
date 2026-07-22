@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 223,
+    "ds": "2022-01-27",
+    "mode": "hard",
+    "solution": "mount",
+    "guesses": [
+        "tares",
+        "litho",
+        "fount",
+        "count",
+        "mount"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:00.098"
+}

@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 325,
+    "ds": "2022-05-09",
+    "mode": "easy",
+    "solution": "shine",
+    "guesses": [
+        "tares",
+        "seine",
+        "aleph",
+        "shine"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:01.848"
+}

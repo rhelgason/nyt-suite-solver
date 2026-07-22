@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 246,
+    "ds": "2022-02-19",
+    "mode": "easy",
+    "solution": "swill",
+    "guesses": [
+        "tares",
+        "noily",
+        "hawks",
+        "swill"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:02.735"
+}

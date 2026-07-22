@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 221,
+    "ds": "2022-01-25",
+    "mode": "hard",
+    "solution": "sugar",
+    "guesses": [
+        "tares",
+        "snarf",
+        "simar",
+        "solar",
+        "sugar"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:00.046"
+}

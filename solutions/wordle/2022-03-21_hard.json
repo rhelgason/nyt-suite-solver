@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 276,
+    "ds": "2022-03-21",
+    "mode": "hard",
+    "solution": "their",
+    "guesses": [
+        "tares",
+        "trine",
+        "tetri",
+        "their"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.052"
+}

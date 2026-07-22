@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 298,
+    "ds": "2022-04-12",
+    "mode": "easy",
+    "solution": "royal",
+    "guesses": [
+        "tares",
+        "blond",
+        "amply",
+        "royal"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:02.272"
+}

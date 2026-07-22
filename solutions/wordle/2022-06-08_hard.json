@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 355,
+    "ds": "2022-06-08",
+    "mode": "hard",
+    "solution": "trait",
+    "guesses": [
+        "tares",
+        "traik",
+        "trail",
+        "train",
+        "trait"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:00.060"
+}

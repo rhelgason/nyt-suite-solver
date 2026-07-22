@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 366,
+    "ds": "2022-06-19",
+    "mode": "hard",
+    "solution": "loser",
+    "guesses": [
+        "tares",
+        "shier",
+        "doser",
+        "loser"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.045"
+}

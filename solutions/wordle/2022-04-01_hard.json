@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 287,
+    "ds": "2022-04-01",
+    "mode": "hard",
+    "solution": "snout",
+    "guesses": [
+        "tares",
+        "shout",
+        "scout",
+        "snout"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.061"
+}

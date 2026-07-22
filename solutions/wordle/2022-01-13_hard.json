@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 209,
+    "ds": "2022-01-13",
+    "mode": "hard",
+    "solution": "abbey",
+    "guesses": [
+        "tares",
+        "ailed",
+        "apnea",
+        "abbey"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.052"
+}

@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 226,
+    "ds": "2022-01-30",
+    "mode": "hard",
+    "solution": "wrung",
+    "guesses": [
+        "tares",
+        "prion",
+        "brung",
+        "wrung"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.095"
+}

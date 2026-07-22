@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 380,
+    "ds": "2022-07-03",
+    "mode": "easy",
+    "solution": "lilac",
+    "guesses": [
+        "tares",
+        "colin",
+        "lilac"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:04.805"
+}

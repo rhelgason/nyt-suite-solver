@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 206,
+    "ds": "2022-01-10",
+    "mode": "hard",
+    "solution": "query",
+    "guesses": [
+        "tares",
+        "pride",
+        "leery",
+        "onery",
+        "query"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:00.080"
+}

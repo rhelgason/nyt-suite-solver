@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 278,
+    "ds": "2022-03-23",
+    "mode": "easy",
+    "solution": "purge",
+    "guesses": [
+        "tares",
+        "monie",
+        "gecko",
+        "purge"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.987"
+}

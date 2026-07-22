@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 356,
+    "ds": "2022-06-09",
+    "mode": "hard",
+    "solution": "girth",
+    "guesses": [
+        "tares",
+        "borty",
+        "firth",
+        "girth"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.046"
+}

@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 245,
+    "ds": "2022-02-18",
+    "mode": "easy",
+    "solution": "dodge",
+    "guesses": [
+        "tares",
+        "colin",
+        "daube",
+        "dodge"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:05.350"
+}

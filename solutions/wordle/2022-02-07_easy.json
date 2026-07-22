@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 234,
+    "ds": "2022-02-07",
+    "mode": "easy",
+    "solution": "elder",
+    "guesses": [
+        "tares",
+        "poind",
+        "ceded",
+        "elder"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:03.306"
+}

@@ -1,0 +1,17 @@
+{
+    "puzzle_id": 331,
+    "ds": "2022-05-15",
+    "mode": "hard",
+    "solution": "yield",
+    "guesses": [
+        "tares",
+        "oldie",
+        "bield",
+        "field",
+        "wield",
+        "yield"
+    ],
+    "num_guesses": 6,
+    "solved": true,
+    "solve_time": "0:00:00.295"
+}

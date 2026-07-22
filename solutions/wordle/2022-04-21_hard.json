@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 307,
+    "ds": "2022-04-21",
+    "mode": "hard",
+    "solution": "oxide",
+    "guesses": [
+        "tares",
+        "oldie",
+        "oxide"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:00.296"
+}

@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 222,
+    "ds": "2022-01-26",
+    "mode": "hard",
+    "solution": "whack",
+    "guesses": [
+        "tares",
+        "aloin",
+        "pucka",
+        "kyack",
+        "whack"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:00.258"
+}

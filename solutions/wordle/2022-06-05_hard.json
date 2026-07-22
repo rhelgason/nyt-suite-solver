@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 352,
+    "ds": "2022-06-05",
+    "mode": "hard",
+    "solution": "depth",
+    "guesses": [
+        "tares",
+        "elite",
+        "cento",
+        "depth"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.088"
+}

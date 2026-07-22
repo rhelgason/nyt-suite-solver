@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 253,
+    "ds": "2022-02-26",
+    "mode": "easy",
+    "solution": "spill",
+    "guesses": [
+        "tares",
+        "noily",
+        "hawks",
+        "spill"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:02.809"
+}

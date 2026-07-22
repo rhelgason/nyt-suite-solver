@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 275,
+    "ds": "2022-03-20",
+    "mode": "hard",
+    "solution": "renew",
+    "guesses": [
+        "tares",
+        "riled",
+        "roper",
+        "rumen",
+        "renew"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:00.122"
+}

@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 275,
+    "ds": "2022-03-20",
+    "mode": "easy",
+    "solution": "renew",
+    "guesses": [
+        "tares",
+        "poind",
+        "never",
+        "renew"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:03.079"
+}

@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 231,
+    "ds": "2022-02-04",
+    "mode": "hard",
+    "solution": "pleat",
+    "guesses": [
+        "tares",
+        "leant",
+        "bleat",
+        "cleat",
+        "pleat"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:00.055"
+}

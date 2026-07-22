@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 343,
+    "ds": "2022-05-27",
+    "mode": "hard",
+    "solution": "tiara",
+    "guesses": [
+        "tares",
+        "traik",
+        "tiara"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:00.046"
+}

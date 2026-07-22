@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 355,
+    "ds": "2022-06-08",
+    "mode": "easy",
+    "solution": "trait",
+    "guesses": [
+        "tares",
+        "claim",
+        "agent",
+        "trait"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.362"
+}

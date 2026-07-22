@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 328,
+    "ds": "2022-05-12",
+    "mode": "hard",
+    "solution": "slung",
+    "guesses": [
+        "tares",
+        "spoil",
+        "shuln",
+        "slung"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.108"
+}

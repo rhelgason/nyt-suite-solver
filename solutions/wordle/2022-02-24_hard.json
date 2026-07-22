@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 251,
+    "ds": "2022-02-24",
+    "mode": "hard",
+    "solution": "bloke",
+    "guesses": [
+        "tares",
+        "oldie",
+        "clove",
+        "globe",
+        "bloke"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:00.293"
+}

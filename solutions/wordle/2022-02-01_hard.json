@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 228,
+    "ds": "2022-02-01",
+    "mode": "hard",
+    "solution": "those",
+    "guesses": [
+        "tares",
+        "these",
+        "those"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:00.047"
+}

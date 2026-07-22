@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 367,
+    "ds": "2022-06-20",
+    "mode": "easy",
+    "solution": "input",
+    "guesses": [
+        "tares",
+        "colin",
+        "finny",
+        "input"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:02.583"
+}

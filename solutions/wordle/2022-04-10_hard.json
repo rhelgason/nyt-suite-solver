@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 296,
+    "ds": "2022-04-10",
+    "mode": "hard",
+    "solution": "black",
+    "guesses": [
+        "tares",
+        "aloin",
+        "flaky",
+        "black"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.269"
+}

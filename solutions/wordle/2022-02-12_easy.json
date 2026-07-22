@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 239,
+    "ds": "2022-02-12",
+    "mode": "easy",
+    "solution": "ultra",
+    "guesses": [
+        "tares",
+        "craal",
+        "ultra"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:00.471"
+}

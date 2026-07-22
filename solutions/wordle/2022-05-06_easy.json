@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 322,
+    "ds": "2022-05-06",
+    "mode": "easy",
+    "solution": "badge",
+    "guesses": [
+        "tares",
+        "cling",
+        "bluff",
+        "badge"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.847"
+}

@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 232,
+    "ds": "2022-02-05",
+    "mode": "easy",
+    "solution": "aloft",
+    "guesses": [
+        "tares",
+        "aloin",
+        "aloft"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:01.028"
+}

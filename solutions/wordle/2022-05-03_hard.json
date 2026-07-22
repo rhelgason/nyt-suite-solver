@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 319,
+    "ds": "2022-05-03",
+    "mode": "hard",
+    "solution": "hairy",
+    "guesses": [
+        "tares",
+        "ranid",
+        "fairy",
+        "hairy"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.053"
+}

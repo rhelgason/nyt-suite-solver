@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 203,
+    "ds": "2022-01-07",
+    "mode": "hard",
+    "solution": "slump",
+    "guesses": [
+        "tares",
+        "spoil",
+        "sculp",
+        "slump"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.107"
+}

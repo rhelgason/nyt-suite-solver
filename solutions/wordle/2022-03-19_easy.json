@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 274,
+    "ds": "2022-03-19",
+    "mode": "easy",
+    "solution": "allow",
+    "guesses": [
+        "tares",
+        "colin",
+        "alkyd",
+        "allow"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:04.924"
+}

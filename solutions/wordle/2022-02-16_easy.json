@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 243,
+    "ds": "2022-02-16",
+    "mode": "easy",
+    "solution": "caulk",
+    "guesses": [
+        "tares",
+        "lingy",
+        "pacha",
+        "cauld",
+        "caulk"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:03.485"
+}

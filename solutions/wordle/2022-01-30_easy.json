@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 226,
+    "ds": "2022-01-30",
+    "mode": "easy",
+    "solution": "wrung",
+    "guesses": [
+        "tares",
+        "coign",
+        "brung",
+        "wrung"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:02.383"
+}

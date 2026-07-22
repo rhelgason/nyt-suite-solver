@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 380,
+    "ds": "2022-07-03",
+    "mode": "hard",
+    "solution": "lilac",
+    "guesses": [
+        "tares",
+        "aloin",
+        "milpa",
+        "lilac"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.252"
+}

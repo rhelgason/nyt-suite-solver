@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 300,
+    "ds": "2022-04-14",
+    "mode": "easy",
+    "solution": "mince",
+    "guesses": [
+        "tares",
+        "colin",
+        "chewy",
+        "mince"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:05.223"
+}

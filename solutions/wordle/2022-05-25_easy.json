@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 341,
+    "ds": "2022-05-25",
+    "mode": "easy",
+    "solution": "vouch",
+    "guesses": [
+        "tares",
+        "colin",
+        "bumph",
+        "vouch"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:07.776"
+}

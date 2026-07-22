@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 274,
+    "ds": "2022-03-19",
+    "mode": "hard",
+    "solution": "allow",
+    "guesses": [
+        "tares",
+        "aloin",
+        "aldol",
+        "allow"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.267"
+}

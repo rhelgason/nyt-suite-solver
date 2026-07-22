@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 309,
+    "ds": "2022-04-23",
+    "mode": "easy",
+    "solution": "olive",
+    "guesses": [
+        "tares",
+        "colin",
+        "obeli",
+        "olive"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:05.126"
+}

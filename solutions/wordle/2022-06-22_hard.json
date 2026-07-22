@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 369,
+    "ds": "2022-06-22",
+    "mode": "hard",
+    "solution": "awful",
+    "guesses": [
+        "tares",
+        "aloin",
+        "amply",
+        "awful"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.274"
+}

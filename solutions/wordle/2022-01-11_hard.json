@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 207,
+    "ds": "2022-01-11",
+    "mode": "hard",
+    "solution": "drink",
+    "guesses": [
+        "tares",
+        "prion",
+        "bring",
+        "drink"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.107"
+}

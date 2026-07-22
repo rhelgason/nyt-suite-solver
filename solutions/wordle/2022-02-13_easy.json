@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 240,
+    "ds": "2022-02-13",
+    "mode": "easy",
+    "solution": "robin",
+    "guesses": [
+        "tares",
+        "coign",
+        "robin"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:02.391"
+}

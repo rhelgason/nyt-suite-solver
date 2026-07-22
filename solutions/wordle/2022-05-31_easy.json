@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 347,
+    "ds": "2022-05-31",
+    "mode": "easy",
+    "solution": "manor",
+    "guesses": [
+        "tares",
+        "rindy",
+        "manor"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:00.896"
+}

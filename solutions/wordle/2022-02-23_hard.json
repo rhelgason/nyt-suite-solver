@@ -1,0 +1,17 @@
+{
+    "puzzle_id": 250,
+    "ds": "2022-02-23",
+    "mode": "hard",
+    "solution": "trove",
+    "guesses": [
+        "tares",
+        "trine",
+        "trode",
+        "troke",
+        "trope",
+        "trove"
+    ],
+    "num_guesses": 6,
+    "solved": true,
+    "solve_time": "0:00:00.047"
+}

@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 293,
+    "ds": "2022-04-07",
+    "mode": "hard",
+    "solution": "foray",
+    "guesses": [
+        "tares",
+        "moral",
+        "borax",
+        "foray"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.054"
+}

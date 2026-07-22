@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 345,
+    "ds": "2022-05-29",
+    "mode": "easy",
+    "solution": "bayou",
+    "guesses": [
+        "tares",
+        "lingy",
+        "kayak",
+        "bayou"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:03.231"
+}

@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 257,
+    "ds": "2022-03-02",
+    "mode": "hard",
+    "solution": "nasty",
+    "guesses": [
+        "tares",
+        "saint",
+        "nasty"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:00.043"
+}

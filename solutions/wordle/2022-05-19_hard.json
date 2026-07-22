@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 335,
+    "ds": "2022-05-19",
+    "mode": "hard",
+    "solution": "glass",
+    "guesses": [
+        "tares",
+        "loans",
+        "slabs",
+        "class",
+        "glass"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:00.127"
+}

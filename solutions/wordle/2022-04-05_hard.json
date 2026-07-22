@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 291,
+    "ds": "2022-04-05",
+    "mode": "hard",
+    "solution": "natal",
+    "guesses": [
+        "tares",
+        "haint",
+        "canto",
+        "natal"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.066"
+}

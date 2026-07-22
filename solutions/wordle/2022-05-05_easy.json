@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 321,
+    "ds": "2022-05-05",
+    "mode": "easy",
+    "solution": "homer",
+    "guesses": [
+        "tares",
+        "poind",
+        "womby",
+        "cohog",
+        "homer"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:03.405"
+}

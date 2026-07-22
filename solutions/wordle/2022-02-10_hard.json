@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 237,
+    "ds": "2022-02-10",
+    "mode": "hard",
+    "solution": "pause",
+    "guesses": [
+        "tares",
+        "lapse",
+        "paise",
+        "passe",
+        "pause"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:00.060"
+}

@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 382,
+    "ds": "2022-07-05",
+    "mode": "easy",
+    "solution": "field",
+    "guesses": [
+        "tares",
+        "colin",
+        "bleed",
+        "alway",
+        "field"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:05.384"
+}

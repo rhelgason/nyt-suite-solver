@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 242,
+    "ds": "2022-02-15",
+    "mode": "easy",
+    "solution": "aroma",
+    "guesses": [
+        "tares",
+        "blond",
+        "agora",
+        "aroma"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:02.254"
+}

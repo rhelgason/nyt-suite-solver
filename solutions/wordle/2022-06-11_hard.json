@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 358,
+    "ds": "2022-06-11",
+    "mode": "hard",
+    "solution": "goose",
+    "guesses": [
+        "tares",
+        "seine",
+        "pulse",
+        "whose",
+        "goose"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:00.078"
+}

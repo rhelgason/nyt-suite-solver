@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 293,
+    "ds": "2022-04-07",
+    "mode": "easy",
+    "solution": "foray",
+    "guesses": [
+        "tares",
+        "linum",
+        "abash",
+        "foray"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.761"
+}

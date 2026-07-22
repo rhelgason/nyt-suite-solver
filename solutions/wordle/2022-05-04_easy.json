@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 320,
+    "ds": "2022-05-04",
+    "mode": "easy",
+    "solution": "train",
+    "guesses": [
+        "tares",
+        "claim",
+        "agent",
+        "train"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.365"
+}

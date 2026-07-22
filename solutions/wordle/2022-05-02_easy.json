@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 318,
+    "ds": "2022-05-02",
+    "mode": "easy",
+    "solution": "story",
+    "guesses": [
+        "tares",
+        "spout",
+        "abysm",
+        "story"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.390"
+}

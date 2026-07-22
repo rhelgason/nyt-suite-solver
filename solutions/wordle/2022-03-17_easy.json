@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 272,
+    "ds": "2022-03-17",
+    "mode": "easy",
+    "solution": "movie",
+    "guesses": [
+        "tares",
+        "colin",
+        "gyved",
+        "movie"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:05.292"
+}

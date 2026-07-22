@@ -1,0 +1,17 @@
+{
+    "puzzle_id": 377,
+    "ds": "2022-06-30",
+    "mode": "hard",
+    "solution": "hutch",
+    "guesses": [
+        "tares",
+        "litho",
+        "butch",
+        "cutch",
+        "dutch",
+        "hutch"
+    ],
+    "num_guesses": 6,
+    "solved": true,
+    "solve_time": "0:00:00.105"
+}

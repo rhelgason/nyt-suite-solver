@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 313,
+    "ds": "2022-04-27",
+    "mode": "hard",
+    "solution": "shown",
+    "guesses": [
+        "tares",
+        "spoil",
+        "shook",
+        "shown"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.116"
+}

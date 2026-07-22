@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 385,
+    "ds": "2022-07-08",
+    "mode": "hard",
+    "solution": "voice",
+    "guesses": [
+        "tares",
+        "oldie",
+        "koine",
+        "voice"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.284"
+}

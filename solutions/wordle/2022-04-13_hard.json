@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 299,
+    "ds": "2022-04-13",
+    "mode": "hard",
+    "solution": "chunk",
+    "guesses": [
+        "tares",
+        "colin",
+        "chunk"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:00.593"
+}

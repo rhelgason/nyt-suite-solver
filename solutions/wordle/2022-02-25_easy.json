@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 252,
+    "ds": "2022-02-25",
+    "mode": "easy",
+    "solution": "vivid",
+    "guesses": [
+        "tares",
+        "colin",
+        "fuzed",
+        "vivid"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:07.959"
+}

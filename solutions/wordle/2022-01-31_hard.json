@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 227,
+    "ds": "2022-01-31",
+    "mode": "hard",
+    "solution": "light",
+    "guesses": [
+        "tares",
+        "litho",
+        "licht",
+        "light"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.098"
+}

@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 284,
+    "ds": "2022-03-29",
+    "mode": "easy",
+    "solution": "shall",
+    "guesses": [
+        "tares",
+        "milch",
+        "hullo",
+        "shall"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:01.557"
+}

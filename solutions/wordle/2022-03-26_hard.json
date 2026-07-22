@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 281,
+    "ds": "2022-03-26",
+    "mode": "hard",
+    "solution": "epoxy",
+    "guesses": [
+        "tares",
+        "oldie",
+        "genom",
+        "epoch",
+        "epoxy"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:00.280"
+}

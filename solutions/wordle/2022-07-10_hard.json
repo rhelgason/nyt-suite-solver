@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 387,
+    "ds": "2022-07-10",
+    "mode": "hard",
+    "solution": "berth",
+    "guesses": [
+        "tares",
+        "hertz",
+        "berth"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:00.042"
+}

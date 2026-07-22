@@ -1,0 +1,17 @@
+{
+    "puzzle_id": 266,
+    "ds": "2022-03-11",
+    "mode": "hard",
+    "solution": "watch",
+    "guesses": [
+        "tares",
+        "haint",
+        "batch",
+        "catch",
+        "latch",
+        "match"
+    ],
+    "num_guesses": null,
+    "solved": false,
+    "solve_time": "0:00:00.063"
+}

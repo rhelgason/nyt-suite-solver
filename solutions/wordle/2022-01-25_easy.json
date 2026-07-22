@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 221,
+    "ds": "2022-01-25",
+    "mode": "easy",
+    "solution": "sugar",
+    "guesses": [
+        "tares",
+        "spawn",
+        "filmi",
+        "sugar"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.482"
+}

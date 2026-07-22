@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 357,
+    "ds": "2022-06-10",
+    "mode": "hard",
+    "solution": "piety",
+    "guesses": [
+        "tares",
+        "elite",
+        "petti",
+        "piety"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.063"
+}

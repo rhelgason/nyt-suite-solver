@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 340,
+    "ds": "2022-05-24",
+    "mode": "easy",
+    "solution": "album",
+    "guesses": [
+        "tares",
+        "colin",
+        "algum",
+        "album"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:05.283"
+}

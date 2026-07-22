@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 207,
+    "ds": "2022-01-11",
+    "mode": "easy",
+    "solution": "drink",
+    "guesses": [
+        "tares",
+        "coign",
+        "baddy",
+        "drink"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:02.466"
+}

@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 246,
+    "ds": "2022-02-19",
+    "mode": "hard",
+    "solution": "swill",
+    "guesses": [
+        "tares",
+        "spoil",
+        "shill",
+        "skill",
+        "swill"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:00.119"
+}

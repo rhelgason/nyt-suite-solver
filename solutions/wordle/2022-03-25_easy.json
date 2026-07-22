@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 280,
+    "ds": "2022-03-25",
+    "mode": "easy",
+    "solution": "depot",
+    "guesses": [
+        "tares",
+        "lotic",
+        "gemot",
+        "depot"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:01.457"
+}

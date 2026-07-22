@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 206,
+    "ds": "2022-01-10",
+    "mode": "easy",
+    "solution": "query",
+    "guesses": [
+        "tares",
+        "deice",
+        "query"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:02.091"
+}

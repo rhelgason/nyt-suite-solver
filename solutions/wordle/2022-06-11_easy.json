@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 358,
+    "ds": "2022-06-11",
+    "mode": "easy",
+    "solution": "goose",
+    "guesses": [
+        "tares",
+        "seine",
+        "cloud",
+        "goose"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:02.117"
+}

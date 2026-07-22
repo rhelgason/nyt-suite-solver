@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 242,
+    "ds": "2022-02-15",
+    "mode": "hard",
+    "solution": "aroma",
+    "guesses": [
+        "tares",
+        "drain",
+        "arbor",
+        "aroma"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.090"
+}

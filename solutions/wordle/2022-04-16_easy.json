@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 302,
+    "ds": "2022-04-16",
+    "mode": "easy",
+    "solution": "cheek",
+    "guesses": [
+        "tares",
+        "indol",
+        "chape",
+        "cheek"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:03.904"
+}

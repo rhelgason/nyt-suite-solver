@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 312,
+    "ds": "2022-04-26",
+    "mode": "hard",
+    "solution": "heist",
+    "guesses": [
+        "tares",
+        "spite",
+        "deist",
+        "feist",
+        "heist"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:00.050"
+}

@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 262,
+    "ds": "2022-03-07",
+    "mode": "easy",
+    "solution": "hoard",
+    "guesses": [
+        "tares",
+        "blond",
+        "hoard"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:02.198"
+}

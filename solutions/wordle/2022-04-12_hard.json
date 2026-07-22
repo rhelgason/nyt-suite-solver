@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 298,
+    "ds": "2022-04-12",
+    "mode": "hard",
+    "solution": "royal",
+    "guesses": [
+        "tares",
+        "drain",
+        "lobar",
+        "royal"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.093"
+}

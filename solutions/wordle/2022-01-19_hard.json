@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 215,
+    "ds": "2022-01-19",
+    "mode": "hard",
+    "solution": "point",
+    "guesses": [
+        "tares",
+        "litho",
+        "joint",
+        "point"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.100"
+}

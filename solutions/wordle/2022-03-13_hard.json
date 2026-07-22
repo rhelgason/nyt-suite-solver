@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 268,
+    "ds": "2022-03-13",
+    "mode": "hard",
+    "solution": "focus",
+    "guesses": [
+        "tares",
+        "lions",
+        "kudos",
+        "focus"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.512"
+}

@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 266,
+    "ds": "2022-03-11",
+    "mode": "easy",
+    "solution": "watch",
+    "guesses": [
+        "tares",
+        "cutin",
+        "blimp",
+        "hatch",
+        "watch"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:01.024"
+}

@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 273,
+    "ds": "2022-03-18",
+    "mode": "easy",
+    "solution": "saute",
+    "guesses": [
+        "tares",
+        "bumph",
+        "saute"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:00.133"
+}

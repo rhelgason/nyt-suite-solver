@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 323,
+    "ds": "2022-05-07",
+    "mode": "hard",
+    "solution": "midst",
+    "guesses": [
+        "tares",
+        "shout",
+        "didst",
+        "midst"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.070"
+}

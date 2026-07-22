@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 339,
+    "ds": "2022-05-23",
+    "mode": "hard",
+    "solution": "hinge",
+    "guesses": [
+        "tares",
+        "oldie",
+        "mince",
+        "binge",
+        "hinge"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:00.291"
+}

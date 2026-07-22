@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 336,
+    "ds": "2022-05-20",
+    "mode": "hard",
+    "solution": "gamer",
+    "guesses": [
+        "tares",
+        "lager",
+        "gamer"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:00.048"
+}

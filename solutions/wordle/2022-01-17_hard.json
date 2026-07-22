@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 213,
+    "ds": "2022-01-17",
+    "mode": "hard",
+    "solution": "shire",
+    "guesses": [
+        "tares",
+        "rouse",
+        "shire"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:00.055"
+}

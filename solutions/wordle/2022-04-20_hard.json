@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 306,
+    "ds": "2022-04-20",
+    "mode": "hard",
+    "solution": "cargo",
+    "guesses": [
+        "tares",
+        "carom",
+        "carbo",
+        "cargo"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.047"
+}

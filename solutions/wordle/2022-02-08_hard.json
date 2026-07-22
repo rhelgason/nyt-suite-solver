@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 235,
+    "ds": "2022-02-08",
+    "mode": "hard",
+    "solution": "frame",
+    "guesses": [
+        "tares",
+        "beard",
+        "crape",
+        "arame",
+        "frame"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:00.062"
+}

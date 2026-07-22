@@ -1,0 +1,17 @@
+{
+    "puzzle_id": 285,
+    "ds": "2022-03-30",
+    "mode": "hard",
+    "solution": "stove",
+    "guesses": [
+        "tares",
+        "spite",
+        "stele",
+        "stoke",
+        "stone",
+        "stove"
+    ],
+    "num_guesses": 6,
+    "solved": true,
+    "solve_time": "0:00:00.050"
+}

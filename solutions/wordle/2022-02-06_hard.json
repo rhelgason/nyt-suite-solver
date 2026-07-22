@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 233,
+    "ds": "2022-02-06",
+    "mode": "hard",
+    "solution": "skill",
+    "guesses": [
+        "tares",
+        "spoil",
+        "shill",
+        "skill"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.109"
+}

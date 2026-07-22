@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 290,
+    "ds": "2022-04-04",
+    "mode": "easy",
+    "solution": "shawl",
+    "guesses": [
+        "tares",
+        "milch",
+        "hullo",
+        "shawl"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:01.532"
+}

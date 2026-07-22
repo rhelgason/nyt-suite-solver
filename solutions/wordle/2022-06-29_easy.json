@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 376,
+    "ds": "2022-06-29",
+    "mode": "easy",
+    "solution": "gawky",
+    "guesses": [
+        "tares",
+        "lingy",
+        "plumb",
+        "gawky"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:03.268"
+}

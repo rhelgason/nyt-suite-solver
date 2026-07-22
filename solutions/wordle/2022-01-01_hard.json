@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 197,
+    "ds": "2022-01-01",
+    "mode": "hard",
+    "solution": "rebus",
+    "guesses": [
+        "tares",
+        "deers",
+        "reifs",
+        "repos",
+        "rebus"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:00.048"
+}

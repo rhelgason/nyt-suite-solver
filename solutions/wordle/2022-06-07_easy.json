@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 354,
+    "ds": "2022-06-07",
+    "mode": "easy",
+    "solution": "flood",
+    "guesses": [
+        "tares",
+        "colin",
+        "blood",
+        "flood"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:07.820"
+}

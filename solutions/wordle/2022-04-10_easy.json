@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 296,
+    "ds": "2022-04-10",
+    "mode": "easy",
+    "solution": "black",
+    "guesses": [
+        "tares",
+        "colin",
+        "abaft",
+        "black"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:04.958"
+}

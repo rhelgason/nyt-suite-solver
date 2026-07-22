@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 196,
+    "ds": "2021-12-31",
+    "mode": "hard",
+    "solution": "unify",
+    "guesses": [
+        "tares",
+        "colin",
+        "piing",
+        "unify"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.620"
+}

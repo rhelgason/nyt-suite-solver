@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 229,
+    "ds": "2022-02-02",
+    "mode": "easy",
+    "solution": "moist",
+    "guesses": [
+        "tares",
+        "shout",
+        "motif",
+        "moist"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:01.336"
+}

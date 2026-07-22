@@ -1,0 +1,13 @@
+{
+    "puzzle_id": 265,
+    "ds": "2022-03-10",
+    "mode": "hard",
+    "solution": "lapse",
+    "guesses": [
+        "tares",
+        "lapse"
+    ],
+    "num_guesses": 2,
+    "solved": true,
+    "solve_time": "0:00:00.047"
+}

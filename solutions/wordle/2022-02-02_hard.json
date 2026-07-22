@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 229,
+    "ds": "2022-02-02",
+    "mode": "hard",
+    "solution": "moist",
+    "guesses": [
+        "tares",
+        "shout",
+        "foist",
+        "joist",
+        "moist"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:00.055"
+}

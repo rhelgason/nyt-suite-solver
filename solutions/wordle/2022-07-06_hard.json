@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 383,
+    "ds": "2022-07-06",
+    "mode": "hard",
+    "solution": "fluff",
+    "guesses": [
+        "tares",
+        "colin",
+        "flump",
+        "fluff"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.574"
+}

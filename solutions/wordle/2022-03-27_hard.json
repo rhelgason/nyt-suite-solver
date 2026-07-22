@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 282,
+    "ds": "2022-03-27",
+    "mode": "hard",
+    "solution": "nymph",
+    "guesses": [
+        "tares",
+        "colin",
+        "gunky",
+        "nymph"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.586"
+}

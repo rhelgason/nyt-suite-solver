@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 208,
+    "ds": "2022-01-12",
+    "mode": "easy",
+    "solution": "favor",
+    "guesses": [
+        "tares",
+        "rindy",
+        "labor",
+        "favor"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:01.157"
+}

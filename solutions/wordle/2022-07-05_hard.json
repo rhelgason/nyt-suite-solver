@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 382,
+    "ds": "2022-07-05",
+    "mode": "hard",
+    "solution": "field",
+    "guesses": [
+        "tares",
+        "oldie",
+        "bield",
+        "field"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.314"
+}

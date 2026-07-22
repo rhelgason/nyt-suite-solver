@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 292,
+    "ds": "2022-04-06",
+    "mode": "easy",
+    "solution": "comma",
+    "guesses": [
+        "tares",
+        "colin",
+        "cocoa",
+        "comma"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:04.882"
+}

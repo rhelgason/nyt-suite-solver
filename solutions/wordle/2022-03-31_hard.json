@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 286,
+    "ds": "2022-03-31",
+    "mode": "hard",
+    "solution": "lowly",
+    "guesses": [
+        "tares",
+        "colin",
+        "wooly",
+        "jowly",
+        "lowly"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:00.583"
+}
