@@ -6,7 +6,8 @@ import cli
 
 
 def _args(**overrides):
-    base = dict(game="all", date=None, difficulty="all", backfill=False)
+    base = dict(game="all", date=None, difficulty="all", backfill=False,
+                since=None, force=True, delay=0.0)
     base.update(overrides)
     return argparse.Namespace(**base)
 
@@ -53,6 +54,37 @@ def test_backfill_uses_archive_dates(monkeypatch):
     monkeypatch.setattr(cli, "spelling_bee_archive_dates", lambda: ["2026-07-20", "2026-07-21"])
     labels = [label for label, _ in cli.build_jobs(_args(game="spelling-bee", backfill=True))]
     assert labels == ["spelling-bee 2026-07-20", "spelling-bee 2026-07-21"]
+
+
+def test_date_range_inclusive():
+    assert cli.date_range("2026-01-01", "2026-01-03") == ["2026-01-01", "2026-01-02", "2026-01-03"]
+    assert cli.date_range("2026-01-01", "2026-01-01") == ["2026-01-01"]
+
+
+def test_wordle_backfill_honors_since_and_epoch(monkeypatch):
+    monkeypatch.setattr(cli, "today_ds", lambda: "2026-01-03")
+    # --since before the epoch is clamped to the epoch, both modes per day
+    labels = [l for l, _ in cli.build_jobs(_args(game="wordle", backfill=True, since="2025-12-31"))]
+    assert labels == [
+        "wordle easy 2025-12-31", "wordle hard 2025-12-31",
+        "wordle easy 2026-01-01", "wordle hard 2026-01-01",
+        "wordle easy 2026-01-02", "wordle hard 2026-01-02",
+        "wordle easy 2026-01-03", "wordle hard 2026-01-03",
+    ]
+
+
+def test_strands_backfill_before_epoch_clamped(monkeypatch):
+    monkeypatch.setattr(cli, "today_ds", lambda: "2024-03-05")
+    labels = [l for l, _ in cli.build_jobs(_args(game="strands", backfill=True, since="2024-01-01"))]
+    assert labels == ["strands 2024-03-04", "strands 2024-03-05"]  # epoch is 2024-03-04
+
+
+def test_backfill_skips_existing_unless_forced(monkeypatch, tmp_path):
+    monkeypatch.setattr(cli, "today_ds", lambda: "2024-03-05")
+    monkeypatch.setattr(cli.StrandsSolver, "OUTPUT_DIRECTORY_PATH", str(tmp_path))
+    (tmp_path / "2024-03-04.json").write_text("{}")
+    labels = [l for l, _ in cli.build_jobs(_args(game="strands", backfill=True, force=False))]
+    assert labels == ["strands 2024-03-05"]  # 03-04 already on disk, skipped
 
 
 class _FakeSolver:

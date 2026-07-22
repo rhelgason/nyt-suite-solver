@@ -4,11 +4,9 @@ solution JSON files. Run by the daily workflow after solving (and via
 `make stats`), so the repo's front page always reflects the latest history
 without any hosted service.
 """
-from datetime import date, timedelta
 from typing import Dict, List, Optional, Tuple
 
 import ast
-import bisect
 import glob
 import json
 import os
@@ -181,89 +179,11 @@ def summarize_strands(records: List[Record]) -> dict:
     }
 
 
-# game order and colors used for the cumulative chart's legend/lines
-CUMULATIVE_GAMES = [
-    ("spelling_bee", "Spelling Bee", "#eab308"),
-    ("letter_boxed", "Letter Boxed", "#2563eb"),
-    ("sudoku", "Sudoku", "#dc2626"),
-    ("wordle", "Wordle", "#7c3aed"),
-    ("strands", "Strands", "#0891b2"),
-]
-
 ASSETS_DIR = os.path.join(REPO_ROOT, "stats")
-CUMULATIVE_SVG_REL = "stats/cumulative_solves.svg"
 SCORES_SVG_REL = "stats/spelling_bee_scores.svg"
 WORDS_SVG_REL = "stats/letter_boxed_words.svg"
 WORDLE_SVG_REL = "stats/wordle_guesses.svg"
 STRANDS_SVG_REL = "stats/strands_outcomes.svg"
-
-
-def _parse_date(value: str) -> date:
-    return date(int(value[:4]), int(value[5:7]), int(value[8:10]))
-
-
-def _add_months(base: date, months: int) -> date:
-    total = base.month - 1 + months
-    return date(base.year + total // 12, total % 12 + 1, 1)
-
-
-def time_axis_ticks(dmin: date, dmax: date, target: int = 7) -> List[Tuple[float, str]]:
-    """Choose readable, calendar-aligned x-axis ticks that scale with the span:
-    days for a short window, then weeks, months, and finally years. Tick count
-    stays near `target` regardless of how much history accumulates."""
-    span = (dmax - dmin).days
-    ticks: List[Tuple[float, str]] = []
-    if span <= 0:
-        return [(dmin.toordinal(), dmin.strftime("%m-%d"))]
-
-    if span <= 21:  # daily
-        stride = max(1, _ceil_div(span, target))
-        cur = dmin
-        while cur <= dmax:
-            ticks.append((cur.toordinal(), cur.strftime("%m-%d")))
-            cur += timedelta(days=stride)
-    elif span <= 120:  # weekly
-        stride = max(1, _ceil_div(span, 7 * target)) * 7
-        cur = dmin
-        while cur <= dmax:
-            ticks.append((cur.toordinal(), cur.strftime("%m-%d")))
-            cur += timedelta(days=stride)
-    elif span <= 365 * 3:  # monthly
-        stride = max(1, _ceil_div(span, 30 * target))
-        cur = date(dmin.year, dmin.month, 1)
-        while cur <= dmax:
-            if cur >= dmin:
-                ticks.append((cur.toordinal(), cur.strftime("%b %y")))
-            cur = _add_months(cur, stride)
-    else:  # yearly
-        stride = max(1, _ceil_div(span, 365 * target))
-        cur = date(dmin.year, 1, 1)
-        while cur <= dmax:
-            if cur >= dmin:
-                ticks.append((cur.toordinal(), cur.strftime("%Y")))
-            cur = date(cur.year + stride, 1, 1)
-
-    if len(ticks) < 2:
-        ticks = [(dmin.toordinal(), dmin.strftime("%m-%d")), (dmax.toordinal(), dmax.strftime("%m-%d"))]
-    return ticks
-
-
-def cumulative_solves_svg(games: Dict[str, List[Record]]) -> Optional[str]:
-    per_game = {
-        key: sorted(data.get("ds") for _, data in games.get(key, []) if data.get("ds"))
-        for key, _, _ in CUMULATIVE_GAMES
-    }
-    all_dates = sorted({d for dates in per_game.values() for d in dates})
-    if len(all_dates) < 2:  # need at least two points to draw a line
-        return None
-
-    x_values = [_parse_date(d).toordinal() for d in all_dates]
-    ticks = time_axis_ticks(_parse_date(all_dates[0]), _parse_date(all_dates[-1]))
-    series = [
-        (name, color, [bisect.bisect_right(per_game[key], d) for d in all_dates])
-        for key, name, color in CUMULATIVE_GAMES
-    ]
-    return svg_charts.line_chart("Cumulative Puzzles Solved", x_values, series, "Puzzles solved", ticks)
 
 
 # score buckets for the pie, with a red-to-green (worse-to-better) palette
@@ -376,14 +296,15 @@ def build_section(root: str = SOLUTIONS_ROOT) -> str:
 
     lines.append(f"_Auto-generated from `solutions/` · **{total}** puzzles solved across {played} games (through {latest})._")
     lines.append("")
-    lines.append("| Game | Puzzles | Avg score | p90 runtime |")
-    lines.append("| --- | ---: | ---: | ---: |")
+    # centered HTML table (a markdown table cannot be centered on GitHub)
+    lines.append('<div align="center">')
+    lines.append("<table>")
+    lines.append("<tr><th>Game</th><th>Puzzles</th><th>Avg score</th><th>p90 runtime</th></tr>")
     for name, s in rows:
-        lines.append(f"| {name} | {s['count']} | {s['score_cell']} | {_format_runtime(s['p90_ms'])} |")
-
-    if cumulative_solves_svg(games) is not None:
-        lines.append("")
-        lines.append(f'<p align="center"><img src="{CUMULATIVE_SVG_REL}" alt="Cumulative Puzzles Solved" width="720"></p>')
+        lines.append(f"<tr><td>{name}</td><td>{s['count']}</td>"
+                     f"<td>{s['score_cell']}</td><td>{_format_runtime(s['p90_ms'])}</td></tr>")
+    lines.append("</table>")
+    lines.append("</div>")
     return "\n".join(lines)
 
 
@@ -391,7 +312,6 @@ def write_assets(root: str = SOLUTIONS_ROOT, assets_dir: str = ASSETS_DIR) -> No
     """Write the committed chart images referenced by the README."""
     games = {g: load_game(root, g) for g in GAMES}
     assets = {
-        "cumulative_solves.svg": cumulative_solves_svg(games),
         "spelling_bee_scores.svg": score_pie_svg(summarize_spelling_bee(games["spelling_bee"])),
         "letter_boxed_words.svg": word_count_pie_svg(summarize_letter_boxed(games["letter_boxed"])),
         "wordle_guesses.svg": wordle_guesses_svg(

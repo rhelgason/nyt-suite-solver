@@ -5,7 +5,7 @@ Mermaid renders simple charts but cannot draw a legend, a readable time axis, or
 a pie, so the stats charts are emitted as small hand-built SVGs instead. Standard
 library only, per the stats tooling's no-dependency rule.
 """
-from typing import List, Optional, Tuple
+from typing import List, Tuple
 import math
 
 WIDTH = 760
@@ -19,7 +19,6 @@ PLOT_W = WIDTH - M_LEFT - M_RIGHT
 PLOT_H = HEIGHT - M_TOP - M_BOTTOM
 
 Series = Tuple[str, str, List[float]]  # (name, color, values)
-Tick = Tuple[float, str]               # (x value, label)
 Slice = Tuple[str, float, str]         # (label, value, color)
 
 
@@ -39,63 +38,6 @@ def _nice_max(value: float) -> int:
 
 def _y(value: float, y_max: int) -> float:
     return M_TOP + PLOT_H * (1 - value / y_max)
-
-
-def line_chart(title: str, x_values: List[float], series: List[Series],
-               y_label: str = "", x_ticks: Optional[List[Tick]] = None) -> str:
-    """A multi-series line chart on a continuous (time) x-axis.
-
-    x_values are numeric positions (e.g. date ordinals) shared by every series;
-    x_ticks are explicit (position, label) pairs so the caller controls how the
-    axis scales.
-    """
-    x_min, x_max = min(x_values), max(x_values)
-    x_span = (x_max - x_min) or 1
-    y_max = _nice_max(max((max(vals) for _, _, vals in series if vals), default=0))
-    baseline = M_TOP + PLOT_H
-
-    def px(value: float) -> float:
-        return M_LEFT + PLOT_W * (value - x_min) / x_span
-
-    out = [
-        f'<svg xmlns="http://www.w3.org/2000/svg" width="{WIDTH}" height="{HEIGHT}" '
-        f'viewBox="0 0 {WIDTH} {HEIGHT}" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="12">',
-        f'<rect width="{WIDTH}" height="{HEIGHT}" fill="#ffffff"/>',
-        f'<text x="{WIDTH / 2:.0f}" y="26" text-anchor="middle" font-size="16" font-weight="600" fill="#1a1a1a">{_escape(title)}</text>',
-    ]
-
-    y_ticks = 4
-    for t in range(y_ticks + 1):
-        value = y_max * t / y_ticks
-        yy = _y(value, y_max)
-        out.append(f'<line x1="{M_LEFT}" y1="{yy:.1f}" x2="{M_LEFT + PLOT_W}" y2="{yy:.1f}" stroke="#eaeaea"/>')
-        out.append(f'<text x="{M_LEFT - 8}" y="{yy + 4:.1f}" text-anchor="end" fill="#888">{value:.0f}</text>')
-
-    for value, label in (x_ticks or []):
-        xx = px(value)
-        out.append(f'<line x1="{xx:.1f}" y1="{baseline}" x2="{xx:.1f}" y2="{baseline + 4}" stroke="#bbb"/>')
-        out.append(f'<text x="{xx:.1f}" y="{baseline + 18:.1f}" text-anchor="middle" fill="#888">{_escape(label)}</text>')
-
-    out.append(f'<line x1="{M_LEFT}" y1="{baseline}" x2="{M_LEFT + PLOT_W}" y2="{baseline}" stroke="#bbb"/>')
-    out.append(f'<line x1="{M_LEFT}" y1="{M_TOP}" x2="{M_LEFT}" y2="{baseline}" stroke="#bbb"/>')
-    if y_label:
-        out.append(
-            f'<text x="14" y="{M_TOP + PLOT_H / 2:.0f}" text-anchor="middle" fill="#888" '
-            f'transform="rotate(-90 14 {M_TOP + PLOT_H / 2:.0f})">{_escape(y_label)}</text>'
-        )
-
-    for _, color, vals in series:
-        points = " ".join(f"{px(x_values[i]):.1f},{_y(v, y_max):.1f}" for i, v in enumerate(vals))
-        out.append(f'<polyline fill="none" stroke="{color}" stroke-width="2.5" points="{points}"/>')
-
-    lx, ly = M_LEFT + 12, M_TOP + 10
-    for k, (name, color, _) in enumerate(series):
-        yy = ly + k * 18
-        out.append(f'<rect x="{lx}" y="{yy - 9}" width="12" height="12" rx="2" fill="{color}"/>')
-        out.append(f'<text x="{lx + 18}" y="{yy + 1}" fill="#333">{_escape(name)}</text>')
-
-    out.append("</svg>")
-    return "\n".join(out)
 
 
 def grouped_bar_chart(title: str, labels: List[str], series: List[Series], y_label: str = "") -> str:
