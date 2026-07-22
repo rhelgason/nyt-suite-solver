@@ -49,3 +49,63 @@ def test_complete_raises_when_all_fail(monkeypatch):
     monkeypatch.setattr(llm, "PROVIDERS", [broken])
     with pytest.raises(llm.LLMError):
         llm.complete("hi")
+
+
+def test_is_reasoning_detection():
+    assert llm._is_reasoning("openai/o4-mini")
+    assert llm._is_reasoning("openai/o3-mini")
+    assert llm._is_reasoning("openai/o1")
+    assert not llm._is_reasoning("openai/gpt-4o")
+    assert not llm._is_reasoning("openai/gpt-4o-mini")
+
+
+class _FakeResp:
+    def __init__(self, content):
+        self._content = content
+
+    def raise_for_status(self):
+        pass
+
+    def json(self):
+        return {"choices": [{"message": {"content": self._content}}]}
+
+
+def test_github_call_uses_reasoning_params(monkeypatch):
+    captured = {}
+
+    def fake_post(url, headers=None, json=None, timeout=None):
+        captured.update(json)
+        return _FakeResp("ok")
+
+    monkeypatch.setattr(llm.requests, "post", fake_post)
+    llm._github_call("tok", "openai/o4-mini", None, "hi", 2000)
+    assert captured["max_completion_tokens"] == 2000
+    assert "temperature" not in captured and "max_tokens" not in captured
+
+
+def test_github_call_uses_standard_params(monkeypatch):
+    captured = {}
+
+    def fake_post(url, headers=None, json=None, timeout=None):
+        captured.update(json)
+        return _FakeResp("ok")
+
+    monkeypatch.setattr(llm.requests, "post", fake_post)
+    llm._github_call("tok", "openai/gpt-4o", None, "hi", 500)
+    assert captured["max_tokens"] == 500 and captured["temperature"] == 0
+
+
+def test_github_models_falls_back_across_model_chain(monkeypatch):
+    monkeypatch.setenv("GITHUB_TOKEN", "tok")
+    monkeypatch.setattr(llm, "MODEL_CHAIN", ["openai/o4-mini", "openai/gpt-4o"])
+    calls = []
+
+    def fake_call(token, model, system, prompt, max_tokens):
+        calls.append(model)
+        if model == "openai/o4-mini":
+            raise llm.requests.RequestException("model unavailable")
+        return "recovered"
+
+    monkeypatch.setattr(llm, "_github_call", fake_call)
+    assert llm._github_models(None, "hi", 100) == "recovered"
+    assert calls == ["openai/o4-mini", "openai/gpt-4o"]

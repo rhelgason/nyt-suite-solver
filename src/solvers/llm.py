@@ -35,16 +35,18 @@ import time
 
 import requests
 
-REQUEST_TIMEOUT = 60
+REQUEST_TIMEOUT = 120  # reasoning models can take a while
 MAX_ATTEMPTS = 3
 BACKOFF_SECONDS = 2.0
 
-# Defaults are overridable by env so the model can be swapped without code changes.
-# gpt-4o (not -mini) is the default: Connections and crossword clues need real
-# world-knowledge and wordplay reasoning that the mini model gets wrong. Override
-# with GITHUB_MODELS_MODEL if a different model is preferred or better rate-limited.
+# Connections and crossword clues are lateral/wordplay reasoning, which the
+# o-series reasoning models do markedly better than gpt-4o. We try a reasoning
+# model first and fall back to gpt-4o if it is unavailable or rate-limited, so
+# quality goes up without risking the run. Override the whole chain with a
+# comma-separated GITHUB_MODELS_MODEL if desired.
 GITHUB_MODELS_URL = "https://models.github.ai/inference/chat/completions"
-GITHUB_MODELS_MODEL = os.environ.get("GITHUB_MODELS_MODEL", "openai/gpt-4o")
+MODEL_CHAIN = [m.strip() for m in os.environ.get(
+    "GITHUB_MODELS_MODEL", "openai/o4-mini,openai/gpt-4o").split(",") if m.strip()]
 GEMINI_MODEL = os.environ.get("GEMINI_MODEL", "gemini-2.0-flash")
 
 
@@ -52,23 +54,45 @@ class LLMError(Exception):
     """Raised when no configured provider could produce a completion."""
 
 
-def _github_models(system: Optional[str], prompt: str, max_tokens: int) -> str:
-    token = os.environ.get("GITHUB_TOKEN") or os.environ.get("GITHUB_MODELS_TOKEN")
-    if not token:
-        raise LLMError("GITHUB_TOKEN not set")
+def _is_reasoning(model: str) -> bool:
+    """o-series models (o1/o3/o4...) use a different request shape: they take
+    max_completion_tokens and reject a non-default temperature."""
+    name = model.split("/")[-1]
+    return len(name) >= 2 and name[0] == "o" and name[1].isdigit()
+
+
+def _github_call(token: str, model: str, system: Optional[str], prompt: str, max_tokens: int) -> str:
     messages = []
     if system:
         messages.append({"role": "system", "content": system})
     messages.append({"role": "user", "content": prompt})
+    payload = {"model": model, "messages": messages}
+    if _is_reasoning(model):
+        payload["max_completion_tokens"] = max_tokens  # must cover hidden reasoning tokens
+    else:
+        payload["max_tokens"] = max_tokens
+        payload["temperature"] = 0
     resp = requests.post(
         GITHUB_MODELS_URL,
         headers={"Authorization": f"Bearer {token}", "Content-Type": "application/json"},
-        json={"model": GITHUB_MODELS_MODEL, "messages": messages,
-              "temperature": 0, "max_tokens": max_tokens},
+        json=payload,
         timeout=REQUEST_TIMEOUT,
     )
     resp.raise_for_status()
     return resp.json()["choices"][0]["message"]["content"]
+
+
+def _github_models(system: Optional[str], prompt: str, max_tokens: int) -> str:
+    token = os.environ.get("GITHUB_TOKEN") or os.environ.get("GITHUB_MODELS_TOKEN")
+    if not token:
+        raise LLMError("GITHUB_TOKEN not set")
+    last_error = None
+    for model in MODEL_CHAIN:  # strongest first, gpt-4o as the safe fallback
+        try:
+            return _github_call(token, model, system, prompt, max_tokens)
+        except requests.RequestException as e:
+            last_error = e
+    raise last_error if last_error else LLMError("no models configured")
 
 
 def _gemini(system: Optional[str], prompt: str, max_tokens: int) -> str:

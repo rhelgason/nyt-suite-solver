@@ -41,6 +41,11 @@ genuinely cannot be solved otherwise.
   expire), with an optional `GEMINI_API_KEY` free-tier fallback. `daily.yml`
   grants `permissions: models: read`. If no provider is configured or all fail,
   the solver records an unsolved result rather than crashing the daily run.
+- These puzzles are lateral/wordplay reasoning, so the client tries a **reasoning
+  model** first (`openai/o4-mini`) and falls back to `openai/gpt-4o` if it is
+  unavailable or rate-limited (chain is `GITHUB_MODELS_MODEL`, comma-separated).
+  Reasoning models need a larger token budget (hidden reasoning tokens) and reject
+  a custom temperature, which `llm.py` handles automatically.
 - **Data availability caveat:** only the Mini is freely fetchable. The full-size
   **Daily and Sunday crosswords are gated behind a NYT Games subscription** — the
   content endpoint returns metadata with the clues/grid stripped out — so no free

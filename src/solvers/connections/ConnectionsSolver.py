@@ -106,7 +106,8 @@ class ConnectionsSolver(BaseSolver):
         groups it proposed (for logging). Re-plans holistically every turn using the
         accumulated wrong-guess and one-away feedback."""
         prompt = build_prompt(remaining_words, self._tried, self._one_away_hint)
-        response = llm.complete_json(prompt, system=SYSTEM_PROMPT, max_tokens=512)
+        # generous budget: reasoning models spend hidden tokens before the JSON
+        response = llm.complete_json(prompt, system=SYSTEM_PROMPT, max_tokens=3000)
         groups = response.get("groups") if isinstance(response, dict) else None
         groups = groups or []
         for g in groups:

@@ -207,13 +207,31 @@ class MiniCrosswordSolver(BaseSolver):
                     by_len[len(word)].append(word)
         return by_len
 
+    def _crossings_lines(self) -> List[str]:
+        """Human-readable list of every shared cell, so the model can make its
+        answers interlock instead of solving each clue in isolation."""
+        cell_members: Dict[int, list] = {}
+        for slot in self.slots:
+            for pos, cell in enumerate(slot.cells):
+                cell_members.setdefault(cell, []).append((slot.id, pos))
+        lines = []
+        for cell in sorted(cell_members):
+            across = [m for m in cell_members[cell] if m[0].startswith("A")]
+            down = [m for m in cell_members[cell] if m[0].startswith("D")]
+            for a_id, a_pos in across:
+                for d_id, d_pos in down:
+                    lines.append(f"  {a_id} letter {a_pos + 1} = {d_id} letter {d_pos + 1}")
+        return lines
+
     def _ask_clues(self, patterns: Optional[Dict[str, str]] = None) -> Dict[str, List[str]]:
         """One batched LLM call for candidate answers to every slot. When
         ``patterns`` is given, only those slots are asked, with known letters shown
         (e.g. '_A_DY') so the model can respect the crossings."""
         by_id = {s.id: s for s in self.slots}
         lines = [
-            "Solve this NYT Mini crossword. Give candidate answers for each clue.",
+            "Solve this NYT Mini crossword. Every Across and Down answer must "
+            "interlock, so shared cells hold the SAME letter -- solve the whole grid "
+            "together, not each clue alone.",
             "Answers may be phrases (write with NO spaces), proper nouns, or "
             "abbreviations; prefer the common crossword answer. Give several "
             "candidates per clue when unsure so the crossings can decide.",
@@ -227,13 +245,18 @@ class MiniCrosswordSolver(BaseSolver):
             lines.append(f"{label}:")
             for sid in entries:
                 slot = by_id[sid]
-                hint = f" pattern {patterns[sid]}" if patterns else ""
+                hint = f" so far {patterns[sid]}" if patterns else ""
                 lines.append(f"  {sid} ({slot.length}){hint}: {slot.clue}")
+            lines.append("")
+        if not patterns:  # full solve: spell out the interlock constraints
+            lines.append("Crossings (these letters must match):")
+            lines.extend(self._crossings_lines())
             lines.append("")
         lines.append('Respond as JSON mapping each id to up to '
                      f'{MAX_CANDIDATES_PER_SLOT} uppercase answers (best first), '
-                     'each EXACTLY the stated length, e.g. {"A1": ["HEN"], "D2": ["EDDY"]}.')
-        response = llm.complete_json("\n".join(lines), system=SYSTEM_PROMPT, max_tokens=1024)
+                     'each EXACTLY the stated length and consistent with the '
+                     'crossings, e.g. {"A1": ["HEN"], "D2": ["EDDY"]}.')
+        response = llm.complete_json("\n".join(lines), system=SYSTEM_PROMPT, max_tokens=3000)
 
         out: Dict[str, List[str]] = {}
         for sid, words in (response or {}).items():
