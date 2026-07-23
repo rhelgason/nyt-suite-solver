@@ -60,8 +60,10 @@ def test_is_reasoning_detection():
 
 
 class _FakeResp:
-    def __init__(self, content):
+    def __init__(self, content, status_code=200, headers=None):
         self._content = content
+        self.status_code = status_code
+        self.headers = headers or {}
 
     def raise_for_status(self):
         pass
@@ -93,6 +95,32 @@ def test_github_call_uses_standard_params(monkeypatch):
     monkeypatch.setattr(llm.requests, "post", fake_post)
     llm._github_call("tok", "openai/gpt-4o", None, "hi", 500)
     assert captured["max_tokens"] == 500 and captured["temperature"] == 0
+
+
+def test_github_call_raises_rate_limited_on_429(monkeypatch):
+    def fake_post(url, headers=None, json=None, timeout=None):
+        return _FakeResp("", status_code=429, headers={"Retry-After": "12"})
+
+    monkeypatch.setattr(llm.requests, "post", fake_post)
+    with pytest.raises(llm._RateLimited) as exc:
+        llm._github_call("tok", "openai/gpt-4o", None, "hi", 100)
+    assert exc.value.retry_after == 12.0
+
+
+def test_complete_waits_and_retries_on_rate_limit(monkeypatch):
+    slept = []
+    monkeypatch.setattr(llm.time, "sleep", lambda s: slept.append(s))
+    calls = {"n": 0}
+
+    def flaky(system, prompt, max_tokens):
+        calls["n"] += 1
+        if calls["n"] == 1:
+            raise llm._RateLimited(5.0)
+        return "ok"
+
+    monkeypatch.setattr(llm, "PROVIDERS", [flaky])
+    assert llm.complete("hi") == "ok"
+    assert slept == [5.0]  # honored the Retry-After before retrying
 
 
 def test_github_models_falls_back_across_model_chain(monkeypatch):

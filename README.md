@@ -104,10 +104,11 @@ fun of it.
 
 Connections splits 16 words into 4 hidden groups joined by wordplay, trivia, or a
 shared prefix, which has no clean algorithm, so this is a deliberate LLM solver.
-It never sees the answer key while solving: each turn the model reasons over the
-whole remaining board, proposes the full split ordered by confidence, and the
-solver guesses the surest group first, replanning with the real "one away" and
-wrong-guess feedback until it wins or spends its four mistakes. The LLM runs on
+It never sees the answer key while solving: the model reasons over the whole board
+and proposes the full split ordered by confidence, and the solver guesses the
+surest group first. A clean solve costs a single request; after any wrong guess it
+re-plans with the real "one away" and wrong-guess feedback, and it never repeats a
+guess, until it wins or spends its four mistakes. The LLM runs on
 GitHub Models using the daily workflow's built-in token, so it stays free with no
 API key to manage; if the model is unavailable the game is simply recorded as
 unsolved. The score reflects realistic play rather than a trivial win, since a
@@ -118,15 +119,16 @@ wrong group costs a mistake just as it would for a person.
 ### Mini crossword
 
 The Mini is the project's clearest hybrid: an LLM answers the clues, but a
-deterministic search fills the grid. In one batched call the model proposes a few
-candidate answers per clue at the exact required length; a backtracking
-constraint solver then tiles the 5x5 so every crossing letter agrees, using a
-human wordlist as backup, so a wrong clue answer is corrected by its crossings
-instead of poisoning the grid. Any slot it still cannot place is re-queried once
-with the known letters shown, then the search runs again. Only today's Mini is
-free to fetch (past Minis and the full-size Daily and Sunday crosswords are
-locked behind a NYT subscription), so it is solved fresh each day and never
-backfilled.
+deterministic search fills the grid, and the two iterate. The model proposes a few
+candidate answers per clue (given the full crossing structure); a backtracking
+constraint solver tiles the 5x5 so every crossing letter agrees, preferring the
+model's answers and using a human wordlist only to fill true gaps. The resulting
+grid is then fed back to the model -- "here are the letters the crossings have
+locked, revise anything that doesn't fit" -- and the loop repeats until the grid
+stops changing. That feedback loop is what lets a clue it got wrong blind fall
+into place once a crossing reveals a letter or two. Only today's Mini is free to
+fetch (past Minis and the full-size Daily and Sunday crosswords are locked behind
+a NYT subscription), so it is solved fresh each day and never backfilled.
 
 <p align="center"><img src="stats/crossword_passfail.svg" alt="Mini crossword pass/fail" width="520"></p>
 

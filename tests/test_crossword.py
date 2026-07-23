@@ -100,6 +100,24 @@ def test_solve_writes_full_solution(monkeypatch, tmp_path):
     assert data["cells_correct"] == 4 and data["cells_total"] == 4
 
 
+def test_iterative_revision_fixes_wrong_first_pass(monkeypatch, tmp_path):
+    _install(monkeypatch)
+    calls = {"n": 0}
+
+    def responder(prompt, system=None, max_tokens=3000):
+        calls["n"] += 1
+        if calls["n"] == 1:  # a self-consistent but WRONG first fill (HOAT)
+            return {"A1": ["HO"], "A2": ["AT"], "D1": ["HA"], "D2": ["OT"]}
+        return {"A1": ["HI"], "A2": ["AT"], "D1": ["HA"], "D2": ["IT"]}  # revised, correct
+
+    monkeypatch.setattr(mod.llm, "complete_json", responder)
+    s = MiniCrosswordSolver("2026-07-22")
+    s.OUTPUT_DIRECTORY_PATH = str(tmp_path)
+    s.solve()
+    assert calls["n"] >= 2                    # it actually iterated
+    assert s.solved and s.cells_correct == 4  # the revision round corrected the grid
+
+
 def test_solve_scores_partial_when_llm_incomplete(monkeypatch, tmp_path):
     _install(monkeypatch)
     # only one across answered, no way to complete -> partial credit, not a crash

@@ -27,8 +27,9 @@ BASE_URL = "https://www.nytimes.com/svc/connections/v2"
 GROUP_SIZE = 4
 NUM_GROUPS = 4
 MAX_MISTAKES = 4
-# a hard cap so a model that keeps repeating itself cannot loop forever
-MAX_ITERATIONS = 12
+# cap the LLM calls per puzzle: one plan up front, then at most one re-plan per
+# mistake -- bounds cost and keeps well under the free per-minute rate limit
+MAX_CALLS = 5
 
 SYSTEM_PROMPT = (
     "You are an expert NYT Connections player. The remaining words always split "
@@ -100,45 +101,57 @@ class ConnectionsSolver(BaseSolver):
     def _one_away(self, guess: Set[str], remaining_groups: List[Tuple[str, Set[str]]]) -> bool:
         return any(len(guess & group) == GROUP_SIZE - 1 for _, group in remaining_groups)
 
-    def _pick_group(self, remaining_words: List[str]) -> Tuple[Optional[set], str, list]:
-        """Ask the model to split the remaining words and return its most confident
-        valid group (all four still in play), plus its connection label and the raw
-        groups it proposed (for logging). Re-plans holistically every turn using the
-        accumulated wrong-guess and one-away feedback."""
+    def _make_plan(self, remaining_words: List[str]) -> List[Tuple[List[str], str]]:
+        """One LLM call: a full split of the remaining words into confidence-ordered
+        groups. Returns [(words, connection), ...]; parsing tolerates junk."""
         prompt = build_prompt(remaining_words, self._tried, self._one_away_hint)
         # generous budget: reasoning models spend hidden tokens before the JSON
         response = llm.complete_json(prompt, system=SYSTEM_PROMPT, max_tokens=3000)
         groups = response.get("groups") if isinstance(response, dict) else None
-        groups = groups or []
-        for g in groups:
+        plan = []
+        for g in (groups or []):
             words = [str(w).upper() for w in (g.get("words") or [])]
-            valid = {w for w in words if w in remaining_words}
-            if len(valid) == GROUP_SIZE:
-                return valid, str(g.get("connection", "")), groups
-        return None, "", groups
+            plan.append((words, str(g.get("connection", ""))))
+        return plan
+
+    def _next_guess(self, plan, remaining_words, tried_sets):
+        """Best untried, still-valid group from the current plan, or (None, '')."""
+        remaining = set(remaining_words)
+        for words, connection in plan:
+            guess = {w for w in words if w in remaining}
+            if len(guess) == GROUP_SIZE and frozenset(guess) not in tried_sets:
+                return guess, connection
+        return None, ""
 
     def play(self) -> None:
-        """Play the game against the secret groups within the four-mistake budget.
-        The LLM only ever sees the remaining words and the feedback so far."""
+        """Play within the four-mistake budget. Plan the whole board once and guess
+        the surest group; only re-plan (another call) after a wrong guess so a clean
+        solve costs a single request. Never repeat a guess, and feed the model the
+        wrong-guess and one-away history so it stops looping on the same idea."""
         remaining_words = list(self.words)
         remaining_groups = list(self.true_groups)
         self._tried: List[List[str]] = []
         self._one_away_hint: Optional[List[str]] = None
+        tried_sets: Set[frozenset] = set()
+        plan: List[Tuple[List[str], str]] = []
+        calls = 0
 
-        for _ in range(MAX_ITERATIONS):
-            if self.mistakes >= MAX_MISTAKES or not remaining_groups:
-                break
-
+        while self.mistakes < MAX_MISTAKES and remaining_groups:
             connection = ""
             if len(remaining_words) == GROUP_SIZE:  # last four are forced -- no call
                 guess = set(remaining_words)
             else:
-                guess, connection, proposed = self._pick_group(remaining_words)
-                if guess is None:
-                    raw = [str(w).upper() for w in (proposed[0].get("words") if proposed else [])]
-                    self.mistakes += 1
-                    self.guess_log.append({"guess": raw, "result": "invalid"})
-                    continue
+                guess, connection = self._next_guess(plan, remaining_words, tried_sets)
+                if guess is None:  # plan exhausted -> replan with the latest feedback
+                    if calls >= MAX_CALLS:
+                        break
+                    plan = self._make_plan(remaining_words)
+                    calls += 1
+                    guess, connection = self._next_guess(plan, remaining_words, tried_sets)
+                    if guess is None:  # model returned nothing usable and new
+                        self.mistakes += 1
+                        self.guess_log.append({"guess": [], "result": "invalid"})
+                        continue
 
             self._one_away_hint = None
             idx = self._match(guess, remaining_groups)
@@ -147,13 +160,16 @@ class ConnectionsSolver(BaseSolver):
                 for word in group:
                     remaining_words.remove(word)
                 self.groups_found += 1
+                plan = [(w, c) for w, c in plan if not (set(w) & group)]  # keep only disjoint
                 self.guess_log.append({"guess": sorted(guess), "result": "correct",
                                        "group": title, "connection": connection})
             else:
                 self.mistakes += 1
+                tried_sets.add(frozenset(guess))
                 self._tried.append(sorted(guess))
                 if self._one_away(guess, remaining_groups):
                     self._one_away_hint = sorted(guess)
+                plan = []  # force a re-plan next turn using the new feedback
                 self.guess_log.append({"guess": sorted(guess), "result": "wrong",
                                        "connection": connection,
                                        "one_away": self._one_away_hint is not None})

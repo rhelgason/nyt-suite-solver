@@ -57,6 +57,31 @@ def test_perfect_play_solves_with_no_mistakes(monkeypatch):
     assert s.solved and s.groups_found == 4 and s.mistakes == 0
 
 
+def test_perfect_solve_uses_a_single_llm_call(monkeypatch):
+    calls = {"n": 0}
+
+    def perfect(prompt, system=None, max_tokens=3000):
+        calls["n"] += 1
+        return _perfect(prompt)
+
+    _install(monkeypatch, perfect)
+    s = ConnectionsSolver("2026-07-22")
+    s.play()
+    assert s.solved and calls["n"] == 1  # one plan, then reused for every group
+
+
+def test_never_repeats_the_same_guess(monkeypatch):
+    def same_wrong(prompt, system=None, max_tokens=3000):
+        return {"groups": [{"words": ["APPLE", "BASE", "LION", "CORAL"]}]}  # never a real group
+
+    _install(monkeypatch, same_wrong)
+    s = ConnectionsSolver("2026-07-22")
+    s.play()
+    submitted = [tuple(g["guess"]) for g in s.guess_log if g["guess"]]
+    assert len(submitted) == len(set(submitted))  # the same guess is never sent twice
+    assert not s.solved
+
+
 def test_always_wrong_loses_after_four_mistakes(monkeypatch):
     def wrong(prompt, system=None, max_tokens=512):
         rem = sorted(_remaining(prompt))

@@ -33,6 +33,7 @@ LISTING_URL = "https://www.nytimes.com/svc/crosswords/v3/puzzles.json"
 CONTENT_URL = "https://www.nytimes.com/svc/crosswords/v2/puzzle"
 WORDS_FILE_PATH = "wordlist.txt"
 MAX_CANDIDATES_PER_SLOT = 6
+MAX_ROUNDS = 5  # solve/revise iterations before giving up on convergence
 
 SYSTEM_PROMPT = (
     "You are an expert crossword solver. Answers are single entries with NO spaces "
@@ -224,9 +225,11 @@ class MiniCrosswordSolver(BaseSolver):
         return lines
 
     def _ask_clues(self, patterns: Optional[Dict[str, str]] = None) -> Dict[str, List[str]]:
-        """One batched LLM call for candidate answers to every slot. When
-        ``patterns`` is given, only those slots are asked, with known letters shown
-        (e.g. '_A_DY') so the model can respect the crossings."""
+        """One batched LLM call for candidate answers to EVERY slot. On revision
+        rounds ``patterns`` holds each slot's current letters (from where the
+        Across/Down answers already agree); the model is shown the grid so far and
+        asked to fix answers that do not fit, which is the feedback loop that lets it
+        iterate toward a consistent fill."""
         by_id = {s.id: s for s in self.slots}
         lines = [
             "Solve this NYT Mini crossword. Every Across and Down answer must "
@@ -237,21 +240,24 @@ class MiniCrosswordSolver(BaseSolver):
             "candidates per clue when unsure so the crossings can decide.",
             "",
         ]
-        target = patterns.keys() if patterns else by_id.keys()
+        if patterns:  # revision round: show the current grid and the locked letters
+            lines.append("Grid so far ('.' = still empty). Some answers may be wrong; "
+                         "letters shown are fixed by crossings that already agree. Keep "
+                         "those letters and change any answer that conflicts:")
+            lines.append("")
+            lines.extend(self.grid_rows())
+            lines.append("")
         for direction, label in (("A", "Across"), ("D", "Down")):
-            entries = [sid for sid in target if sid.startswith(direction)]
-            if not entries:
-                continue
+            entries = [s.id for s in self.slots if s.id.startswith(direction)]
             lines.append(f"{label}:")
             for sid in entries:
                 slot = by_id[sid]
-                hint = f" so far {patterns[sid]}" if patterns else ""
+                hint = f" [{patterns[sid]}]" if patterns else ""
                 lines.append(f"  {sid} ({slot.length}){hint}: {slot.clue}")
             lines.append("")
-        if not patterns:  # full solve: spell out the interlock constraints
-            lines.append("Crossings (these letters must match):")
-            lines.extend(self._crossings_lines())
-            lines.append("")
+        lines.append("Crossings (these letters must match):")
+        lines.extend(self._crossings_lines())
+        lines.append("")
         lines.append('Respond as JSON mapping each id to up to '
                      f'{MAX_CANDIDATES_PER_SLOT} uppercase answers (best first), '
                      'each EXACTLY the stated length and consistent with the '
@@ -275,20 +281,29 @@ class MiniCrosswordSolver(BaseSolver):
         return "".join(self.grid.get(cell, "_") for cell in slot.cells)
 
     def play(self) -> None:
+        """Iteratively solve: get answers, fill the grid, feed the resulting
+        crossing letters back to the model to revise, and repeat until the grid
+        stops changing (or a round budget is hit). This gives the model the
+        feedback loop it lacks in a single shot -- a clue it got wrong blind often
+        becomes obvious once a crossing reveals a letter or two."""
         dictionary = self.load_dictionary({s.length for s in self.slots})
-        llm_cands = self._ask_clues()
-        self.grid = fill_grid_prefer_llm(self.slots, llm_cands, dictionary)
+        candidates: Dict[str, List[str]] = {}
+        self.grid = {}
+        previous_signature = None
 
-        # any still-blank cells -> re-ask just those slots with the crossing letters
-        # already shown, then refill once
-        blanks = {s.id: self._pattern(s) for s in self.slots if "_" in self._pattern(s)}
-        if blanks:
-            extra = self._ask_clues(blanks)
-            for sid, words in extra.items():
-                llm_cands[sid] = words + [w for w in llm_cands.get(sid, []) if w not in words]
-            self.grid = fill_grid_prefer_llm(self.slots, llm_cands, dictionary)
+        for round_index in range(MAX_ROUNDS):
+            patterns = None if round_index == 0 else {s.id: self._pattern(s) for s in self.slots}
+            fresh = self._ask_clues(patterns)
+            for sid, words in fresh.items():  # newest answers first so revisions win
+                candidates[sid] = words + [w for w in candidates.get(sid, []) if w not in words]
+            self.grid = fill_grid_prefer_llm(self.slots, candidates, dictionary)
 
-        self.llm_answers = llm_cands
+            signature = tuple(sorted(self.grid.items()))
+            if signature == previous_signature:
+                break  # a round changed nothing -> converged
+            previous_signature = signature
+
+        self.llm_answers = candidates
         self._score()
 
     def _entry(self, slot: Slot, source: Dict[int, str]) -> str:

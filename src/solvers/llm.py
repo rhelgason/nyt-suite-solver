@@ -36,8 +36,9 @@ import time
 import requests
 
 REQUEST_TIMEOUT = 120  # reasoning models can take a while
-MAX_ATTEMPTS = 3
+MAX_ATTEMPTS = 4
 BACKOFF_SECONDS = 2.0
+RATE_LIMIT_MAX_SLEEP = 65.0  # honor a 429 Retry-After up to about a minute
 
 # Connections and crossword clues are lateral/wordplay reasoning, which the
 # o-series reasoning models do markedly better than gpt-4o. We try a reasoning
@@ -52,6 +53,13 @@ GEMINI_MODEL = os.environ.get("GEMINI_MODEL", "gemini-2.0-flash")
 
 class LLMError(Exception):
     """Raised when no configured provider could produce a completion."""
+
+
+class _RateLimited(Exception):
+    """A 429 from a provider; carries the server's Retry-After (seconds) if given."""
+    def __init__(self, retry_after: Optional[float]):
+        super().__init__("rate limited")
+        self.retry_after = retry_after
 
 
 def _is_reasoning(model: str) -> bool:
@@ -78,6 +86,9 @@ def _github_call(token: str, model: str, system: Optional[str], prompt: str, max
         json=payload,
         timeout=REQUEST_TIMEOUT,
     )
+    if resp.status_code == 429:
+        after = resp.headers.get("Retry-After")
+        raise _RateLimited(float(after) if after and after.replace(".", "", 1).isdigit() else None)
     resp.raise_for_status()
     return resp.json()["choices"][0]["message"]["content"]
 
@@ -90,6 +101,8 @@ def _github_models(system: Optional[str], prompt: str, max_tokens: int) -> str:
     for model in MODEL_CHAIN:  # strongest first, gpt-4o as the safe fallback
         try:
             return _github_call(token, model, system, prompt, max_tokens)
+        except _RateLimited:
+            raise  # same account -> other models are rate-limited too; let complete() wait
         except requests.RequestException as e:
             last_error = e
     raise last_error if last_error else LLMError("no models configured")
@@ -145,6 +158,11 @@ def complete(prompt: str, system: Optional[str] = None, max_tokens: int = 1024) 
             except LLMError as e:
                 last_error = e
                 break  # credential missing -> do not retry this provider
+            except _RateLimited as e:
+                last_error = e
+                if attempt < MAX_ATTEMPTS - 1:
+                    wait = e.retry_after if e.retry_after is not None else BACKOFF_SECONDS * (attempt + 1)
+                    time.sleep(min(wait, RATE_LIMIT_MAX_SLEEP))
             except (requests.RequestException, KeyError, ValueError, IndexError) as e:
                 last_error = e
                 if attempt < MAX_ATTEMPTS - 1:
