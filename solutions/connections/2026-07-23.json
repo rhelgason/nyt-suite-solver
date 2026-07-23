@@ -58,7 +58,7 @@
         }
     ],
     "solved": false,
-    "groups_found": 0,
+    "groups_found": 1,
     "mistakes": 4,
     "guesses": [
         {
@@ -86,25 +86,36 @@
         {
             "guess": [
                 "FELINE",
-                "GLOBE",
+                "JANGLE",
                 "MARBLE",
                 "ORANGE"
             ],
             "result": "wrong",
-            "connection": "types of cats",
-            "one_away": true
+            "connection": "types of cats, with 'orange' and 'marble' referring to cat coat patterns, and 'jangle' possibly related to the sound of a cat's bell collar",
+            "one_away": false
         },
         {
             "guess": [
+                "EXCITED",
                 "FEBRILE",
                 "FRENETIC",
-                "INTENSE",
-                "JANGLE"
+                "INTENSE"
+            ],
+            "result": "correct",
+            "group": "IN AN ANXIOUS STATE",
+            "connection": "words that describe high energy or strong emotions"
+        },
+        {
+            "guess": [
+                "GLOBE",
+                "JANGLE",
+                "MARBLE",
+                "ORANGE"
             ],
             "result": "wrong",
-            "connection": "All can describe a state of heightened or frantic energy",
+            "connection": "words that can be related to the color orange or spherical objects",
             "one_away": true
         }
     ],
-    "solve_time": "0:00:03.515"
+    "solve_time": "0:00:03.125"
 }

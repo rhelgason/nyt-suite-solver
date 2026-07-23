@@ -4,29 +4,28 @@
     "width": 5,
     "height": 5,
     "solved": false,
-    "cells_correct": 18,
+    "cells_correct": 15,
     "cells_total": 23,
     "grid": [
         "B A N J O",
-        "W I S E G",
+        "A L E C K",
         "S T A R E",
-        "H A T E D",
-        "# R O W #"
+        "L O A T H",
+        "# S I X #"
     ],
     "llm_answers": {
         "A1": [
             "BANJO",
-            "BAGEL",
             "BANDY",
-            "GUITA",
+            "BANGS",
             "MANDO"
         ],
         "A6": [
+            "ALECK",
+            "ALERT",
+            "ALBUM",
             "WISEG",
-            "WISER",
-            "WISPY",
-            "SMART",
-            "SASSY"
+            "SMART"
         ],
         "A7": [
             "STARE",
@@ -36,45 +35,51 @@
             "RACED"
         ],
         "A8": [
-            "HATED",
-            "HAYED",
             "LOATH",
+            "LOATS",
+            "LATCH",
+            "LEASH",
+            "HATED",
             "ABHOR"
         ],
         "A9": [
-            "ROW",
-            "RAY",
-            "RUG"
+            "SIX",
+            "ONE",
+            "SAY",
+            "SUN"
         ],
         "D1": [
             "BASH",
-            "BLOW",
-            "BEND",
-            "CENS",
-            "SLAM"
+            "BALK",
+            "BAND",
+            "RATE",
+            "SCAM"
         ],
         "D2": [
-            "RINGA",
-            "RINGE",
+            "ALTAR",
+            "ALBUM",
+            "ALERT",
             "RINGS",
-            "VOWEL",
-            "BANDS"
+            "STAGE"
         ],
         "D3": [
             "NEATO",
+            "NEEDS",
             "NICEY",
-            "NATCH"
+            "RADIO"
         ],
         "D4": [
             "JCREW",
-            "JERKY",
-            "JERSE"
+            "JACKS",
+            "JAMIE"
         ],
         "D5": [
-            "GAVE",
+            "OKAY",
             "OKED",
-            "SENT"
+            "ORED",
+            "GAVE",
+            "LEAD"
         ]
     },
-    "solve_time": "0:00:08.506"
+    "solve_time": "0:00:12.510"
 }
