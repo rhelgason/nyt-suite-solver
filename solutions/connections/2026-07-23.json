@@ -1,0 +1,65 @@
+{
+    "puzzle_id": 1222,
+    "ds": "2026-07-23",
+    "words": [
+        "JANGLE",
+        "INTENSE",
+        "ORANGE",
+        "FELINE",
+        "FEBRILE",
+        "BASEBALL",
+        "MARBLE",
+        "APRON",
+        "APPOINT",
+        "TERMINAL",
+        "EXCITED",
+        "RUNWAY",
+        "FRENETIC",
+        "HANGAR",
+        "DEPLANE",
+        "GLOBE"
+    ],
+    "categories": [
+        {
+            "title": "SPHERICAL THINGS",
+            "words": [
+                "BASEBALL",
+                "GLOBE",
+                "MARBLE",
+                "ORANGE"
+            ]
+        },
+        {
+            "title": "IN AN ANXIOUS STATE",
+            "words": [
+                "EXCITED",
+                "FEBRILE",
+                "FRENETIC",
+                "INTENSE"
+            ]
+        },
+        {
+            "title": "PARTS OF AN AIRPORT",
+            "words": [
+                "APRON",
+                "HANGAR",
+                "RUNWAY",
+                "TERMINAL"
+            ]
+        },
+        {
+            "title": "ENDING IN GEOMETRY TERMS",
+            "words": [
+                "APPOINT",
+                "DEPLANE",
+                "FELINE",
+                "JANGLE"
+            ]
+        }
+    ],
+    "solved": false,
+    "groups_found": 0,
+    "mistakes": 0,
+    "guesses": [],
+    "solve_time": "0:01:01.944"
+}

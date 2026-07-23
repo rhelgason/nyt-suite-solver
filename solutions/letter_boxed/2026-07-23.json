@@ -1,0 +1,39 @@
+{
+    "puzzle_id": 2788,
+    "ds": "2026-07-23",
+    "sides": [
+        [
+            "e",
+            "l",
+            "r"
+        ],
+        [
+            "s",
+            "p",
+            "i"
+        ],
+        [
+            "a",
+            "o",
+            "z"
+        ],
+        [
+            "t",
+            "u",
+            "j"
+        ]
+    ],
+    "valid_answers": [
+        [
+            "pulsejets",
+            "solarize"
+        ],
+        [
+            "pulsejets",
+            "solarizes"
+        ]
+    ],
+    "invalid_answers": [],
+    "shortest_answer_length": 2,
+    "solve_time": "0:00:00.628"
+}
