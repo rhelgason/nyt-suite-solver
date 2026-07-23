@@ -58,8 +58,64 @@
         }
     ],
     "solved": false,
-    "groups_found": 0,
-    "mistakes": 0,
-    "guesses": [],
-    "solve_time": "0:01:01.944"
+    "groups_found": 1,
+    "mistakes": 4,
+    "guesses": [
+        {
+            "guess": [
+                "EXCITED",
+                "FELINE",
+                "FRENETIC",
+                "JANGLE"
+            ],
+            "result": "wrong",
+            "connection": "Words that can describe a state of being or emotion.",
+            "one_away": false
+        },
+        {
+            "guess": [
+                "BASEBALL",
+                "DEPLANE",
+                "HANGAR",
+                "RUNWAY"
+            ],
+            "result": "wrong",
+            "connection": "Terms related to aviation and sports",
+            "one_away": false
+        },
+        {
+            "guess": [
+                "APRON",
+                "GLOBE",
+                "MARBLE",
+                "ORANGE"
+            ],
+            "result": "wrong",
+            "connection": "Colors or items associated with color (orange, marble, apron, globe)",
+            "one_away": true
+        },
+        {
+            "guess": [
+                "EXCITED",
+                "FEBRILE",
+                "FRENETIC",
+                "INTENSE"
+            ],
+            "result": "correct",
+            "group": "IN AN ANXIOUS STATE",
+            "connection": "Words that describe heightened emotional or physical states."
+        },
+        {
+            "guess": [
+                "DEPLANE",
+                "HANGAR",
+                "RUNWAY",
+                "TERMINAL"
+            ],
+            "result": "wrong",
+            "connection": "Terms related to aviation and airports.",
+            "one_away": true
+        }
+    ],
+    "solve_time": "0:00:16.175"
 }

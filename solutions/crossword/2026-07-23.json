@@ -4,15 +4,77 @@
     "width": 5,
     "height": 5,
     "solved": false,
-    "cells_correct": 0,
+    "cells_correct": 13,
     "cells_total": 23,
     "grid": [
-        ". . . . .",
-        ". . . . .",
-        ". . . . .",
-        ". . . . .",
-        "# . . . #"
+        "B A N J O",
+        "W I S E G",
+        "S T A R E",
+        "L O A T H",
+        "# R O W #"
     ],
-    "llm_answers": {},
-    "solve_time": "0:01:59.500"
+    "llm_answers": {
+        "A1": [
+            "BANJO",
+            "BONGO",
+            "BANDY",
+            "MANDO"
+        ],
+        "A6": [
+            "WISEG",
+            "WISER",
+            "WISPY",
+            "SMART"
+        ],
+        "A7": [
+            "STARE",
+            "STAND",
+            "STING",
+            "GAMED",
+            "RACED"
+        ],
+        "A8": [
+            "LOATH",
+            "LOATS",
+            "LORRY",
+            "HATED",
+            "ABHOR"
+        ],
+        "A9": [
+            "ROW",
+            "COL",
+            "RAY"
+        ],
+        "D1": [
+            "BASH",
+            "BITE",
+            "BARK",
+            "CUSS",
+            "SCAM"
+        ],
+        "D2": [
+            "RINGE",
+            "RINGS",
+            "RINSE",
+            "ALTAR",
+            "RINGO",
+            "PLACE"
+        ],
+        "D3": [
+            "NEATO",
+            "NICEY",
+            "NUTTY"
+        ],
+        "D4": [
+            "JCREW",
+            "JACKS",
+            "JOGGY"
+        ],
+        "D5": [
+            "GAVE",
+            "OKED",
+            "SAID"
+        ]
+    },
+    "solve_time": "0:00:09.068"
 }

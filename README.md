@@ -16,13 +16,13 @@ _Auto-generated from `solutions/` · **3969** puzzles solved across 7 games (thr
 <table>
 <tr><th>Game</th><th>Puzzles</th><th>Avg score</th><th>p90 runtime</th></tr>
 <tr><td>Spelling Bee</td><td>11</td><td>98.9%</td><td>105 ms</td></tr>
-<tr><td>Letter Boxed</td><td>3</td><td>2.0 words</td><td>628 ms</td></tr>
-<tr><td>Sudoku</td><td>9</td><td>100%</td><td>0.25 ms</td></tr>
+<tr><td>Letter Boxed</td><td>3</td><td>2.0 words</td><td>582 ms</td></tr>
+<tr><td>Sudoku</td><td>9</td><td>100%</td><td>0.23 ms</td></tr>
 <tr><td>Wordle (easy)</td><td>1861</td><td>3.8 guesses</td><td>7.10 s</td></tr>
 <tr><td>Wordle (hard)</td><td>1861</td><td>3.9 guesses</td><td>492 ms</td></tr>
 <tr><td>Strands</td><td>190</td><td>76% words</td><td>65.36 s</td></tr>
 <tr><td>Connections</td><td>32</td><td>0%</td><td>195.99 s</td></tr>
-<tr><td>Mini Crossword</td><td>2</td><td>29% cells</td><td>119.50 s</td></tr>
+<tr><td>Mini Crossword</td><td>2</td><td>57% cells</td><td>9.07 s</td></tr>
 </table>
 </div>
 <!-- STATS:END -->
