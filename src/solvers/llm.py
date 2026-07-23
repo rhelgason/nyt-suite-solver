@@ -56,10 +56,12 @@ class LLMError(Exception):
 
 
 class _RateLimited(Exception):
-    """A 429 from a provider; carries the server's Retry-After (seconds) if given."""
-    def __init__(self, retry_after: Optional[float]):
+    """A 429 from a provider; carries the server's Retry-After (seconds) if given
+    plus a short detail string from the body for diagnostics."""
+    def __init__(self, retry_after: Optional[float], detail: str = ""):
         super().__init__("rate limited")
         self.retry_after = retry_after
+        self.detail = detail
 
 
 def _is_reasoning(model: str) -> bool:
@@ -67,6 +69,22 @@ def _is_reasoning(model: str) -> bool:
     max_completion_tokens and reject a non-default temperature."""
     name = model.split("/")[-1]
     return len(name) >= 2 and name[0] == "o" and name[1].isdigit()
+
+
+def _retry_after(resp) -> Optional[float]:
+    """Seconds to wait from a 429, read from the Retry-After header or a Google
+    RetryInfo detail (e.g. {"retryDelay": "17s"}); None if not provided."""
+    header = resp.headers.get("Retry-After")
+    if header and header.replace(".", "", 1).isdigit():
+        return float(header)
+    try:
+        for detail in resp.json().get("error", {}).get("details", []):
+            delay = detail.get("retryDelay")
+            if isinstance(delay, str) and delay.endswith("s") and delay[:-1].replace(".", "", 1).isdigit():
+                return float(delay[:-1])
+    except (ValueError, AttributeError):
+        pass
+    return None
 
 
 def _github_call(token: str, model: str, system: Optional[str], prompt: str, max_tokens: int) -> str:
@@ -87,9 +105,9 @@ def _github_call(token: str, model: str, system: Optional[str], prompt: str, max
         timeout=REQUEST_TIMEOUT,
     )
     if resp.status_code == 429:
-        after = resp.headers.get("Retry-After")
-        raise _RateLimited(float(after) if after and after.replace(".", "", 1).isdigit() else None)
-    resp.raise_for_status()
+        raise _RateLimited(_retry_after(resp), resp.text[:200])
+    if not resp.ok:  # surface the body so the failure reason is visible in logs
+        raise requests.HTTPError(f"github {model} {resp.status_code}: {resp.text[:300]}")
     return resp.json()["choices"][0]["message"]["content"]
 
 
@@ -125,7 +143,10 @@ def _gemini(system: Optional[str], prompt: str, max_tokens: int) -> str:
         json=body,
         timeout=REQUEST_TIMEOUT,
     )
-    resp.raise_for_status()
+    if resp.status_code == 429:
+        raise _RateLimited(_retry_after(resp), resp.text[:200])
+    if not resp.ok:  # surface the body (never the key) so the reason is visible
+        raise requests.HTTPError(f"gemini {GEMINI_MODEL} {resp.status_code}: {resp.text[:300]}")
     return resp.json()["candidates"][0]["content"]["parts"][0]["text"]
 
 
@@ -177,7 +198,7 @@ def complete(prompt: str, system: Optional[str] = None, max_tokens: int = 1024) 
                 rate_limited = saw_rate_limit = True
                 if e.retry_after is not None:
                     retry_after = e.retry_after
-                errors.append(f"{provider.__name__}: rate limited")
+                errors.append(f"{provider.__name__}: rate limited{(' - ' + e.detail) if e.detail else ''}")
             except (requests.RequestException, KeyError, ValueError, IndexError) as e:
                 any_present = True
                 errors.append(f"{provider.__name__}: {e}")

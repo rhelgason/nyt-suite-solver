@@ -60,10 +60,15 @@ def test_is_reasoning_detection():
 
 
 class _FakeResp:
-    def __init__(self, content, status_code=200, headers=None):
+    def __init__(self, content, status_code=200, headers=None, text=""):
         self._content = content
         self.status_code = status_code
         self.headers = headers or {}
+        self.text = text
+
+    @property
+    def ok(self):
+        return self.status_code < 400
 
     def raise_for_status(self):
         pass
