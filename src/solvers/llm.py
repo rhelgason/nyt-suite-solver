@@ -48,7 +48,9 @@ RATE_LIMIT_MAX_SLEEP = 65.0  # honor a 429 Retry-After up to about a minute
 GITHUB_MODELS_URL = "https://models.github.ai/inference/chat/completions"
 MODEL_CHAIN = [m.strip() for m in os.environ.get(
     "GITHUB_MODELS_MODEL", "openai/o4-mini,openai/gpt-4o").split(",") if m.strip()]
-GEMINI_MODEL = os.environ.get("GEMINI_MODEL", "gemini-2.0-flash")
+# `or` (not a default arg) so an empty env value from an unset CI variable still
+# falls back to the default instead of becoming an invalid model name
+GEMINI_MODEL = os.environ.get("GEMINI_MODEL") or "gemini-2.0-flash"
 
 
 class LLMError(Exception):
@@ -105,7 +107,7 @@ def _github_call(token: str, model: str, system: Optional[str], prompt: str, max
         timeout=REQUEST_TIMEOUT,
     )
     if resp.status_code == 429:
-        raise _RateLimited(_retry_after(resp), resp.text[:200])
+        raise _RateLimited(_retry_after(resp), resp.text[:600])
     if not resp.ok:  # surface the body so the failure reason is visible in logs
         raise requests.HTTPError(f"github {model} {resp.status_code}: {resp.text[:300]}")
     return resp.json()["choices"][0]["message"]["content"]
@@ -144,7 +146,7 @@ def _gemini(system: Optional[str], prompt: str, max_tokens: int) -> str:
         timeout=REQUEST_TIMEOUT,
     )
     if resp.status_code == 429:
-        raise _RateLimited(_retry_after(resp), resp.text[:200])
+        raise _RateLimited(_retry_after(resp), resp.text[:600])
     if not resp.ok:  # surface the body (never the key) so the reason is visible
         raise requests.HTTPError(f"gemini {GEMINI_MODEL} {resp.status_code}: {resp.text[:300]}")
     return resp.json()["candidates"][0]["content"]["parts"][0]["text"]

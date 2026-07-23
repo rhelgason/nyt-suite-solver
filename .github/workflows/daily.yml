@@ -45,6 +45,7 @@ jobs:
           # optional GEMINI_API_KEY secret, if set, is used as a fallback.
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_MODEL: ${{ vars.GEMINI_MODEL }}  # optional repo variable; blank = default
         run: python src/cli.py --game all
 
       - name: Regenerate README stats
