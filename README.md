@@ -149,13 +149,15 @@ Solve headlessly (all games today, a specific date, or a backfill):
 .venv/bin/python src/cli.py --game spelling-bee --backfill
 ```
 
-Connections and the Mini crossword call an LLM. In GitHub Actions this is free
-via GitHub Models (the workflow's `GITHUB_TOKEN` with `models: read`). To run
-them locally, export a provider credential first, otherwise they record an
-unsolved result:
+Connections and the Mini crossword call an LLM. The client tries providers in
+order and skips any that aren't configured: Groq (`GROQ_API_KEY`, generous free
+tier, leads when set), then GitHub Models (the workflow's built-in `GITHUB_TOKEN`
+with `models: read`), then Gemini (`GEMINI_API_KEY`). To run them locally, export
+one credential, otherwise they record an unsolved result:
 ```
-export GITHUB_TOKEN=...   # a PAT with the Models permission
-# or: export GEMINI_API_KEY=...   # free-tier fallback
+export GROQ_API_KEY=...     # free tier, console.groq.com (recommended)
+# or: export GITHUB_TOKEN=...   # a PAT with the Models permission
+# or: export GEMINI_API_KEY=... # only where the Gemini free tier is available
 .venv/bin/python src/cli.py --game connections
 .venv/bin/python src/cli.py --game crossword
 ```

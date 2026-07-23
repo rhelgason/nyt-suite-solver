@@ -36,11 +36,13 @@ genuinely cannot be solved otherwise.
   deterministic backtracking CSP fills the grid with crossing constraints; and
   both solve from the model's reasoning, using NYT's answer data only to score.
   All LLM calls go through the single client in `src/solvers/llm.py`.
-- The LLM client defaults to **GitHub Models** (authenticated by the workflow's
-  built-in `GITHUB_TOKEN`, so there is no external API key to create, rotate, or
-  expire), with an optional `GEMINI_API_KEY` free-tier fallback. `daily.yml`
-  grants `permissions: models: read`. If no provider is configured or all fail,
-  the solver records an unsolved result rather than crashing the daily run.
+- The LLM client tries providers in order and skips any without a credential:
+  **Groq** (`GROQ_API_KEY`, generous free tier + strong model, so it leads when
+  set), then **GitHub Models** (authenticated by the workflow's built-in
+  `GITHUB_TOKEN`, so there is no external key to rotate or expire), then **Gemini**
+  (`GEMINI_API_KEY`). `daily.yml` grants `permissions: models: read`. If no
+  provider is configured or all fail, the solver records an unsolved result rather
+  than crashing the daily run.
 - These puzzles are lateral/wordplay reasoning, so the client tries a **reasoning
   model** first (`openai/o4-mini`) for quality, then falls back to a **standard-tier
   model** (`openai/gpt-4o-mini`) whose free daily quota is far larger, since the

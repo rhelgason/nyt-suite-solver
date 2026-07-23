@@ -3,10 +3,10 @@ name: Backfill
 # Manually backfill historical puzzles from the Actions tab. Solutions are
 # committed back like the daily job and the logs are visible in the run output.
 #
-# NOTE: GitHub Models' free tier has a small request budget, so a bulk Connections
-# backfill will hit rate limits fast (the run aborts early rather than grinding).
-# For a real sample, add a free GEMINI_API_KEY repo secret -- its much larger free
-# quota is used as the fallback provider and makes a 30+ day backfill viable.
+# NOTE: GitHub Models' free tier has a small request budget for premium models, so
+# a bulk Connections backfill hits rate limits fast (the run aborts early rather
+# than grinding). For a real sample, add a free GROQ_API_KEY repo secret -- Groq's
+# generous free tier leads the provider order and makes a 30+ day backfill viable.
 
 on:
   workflow_dispatch:
@@ -67,6 +67,8 @@ jobs:
         continue-on-error: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          GROQ_MODEL: ${{ vars.GROQ_MODEL }}      # optional repo variable; blank = default
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           GEMINI_MODEL: ${{ vars.GEMINI_MODEL }}  # optional repo variable; blank = default
         run: |

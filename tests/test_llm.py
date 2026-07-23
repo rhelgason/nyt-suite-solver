@@ -19,11 +19,36 @@ def test_extract_json_raises_on_garbage():
 
 
 def test_available_reflects_env(monkeypatch):
-    for var in ("GITHUB_TOKEN", "GITHUB_MODELS_TOKEN", "GEMINI_API_KEY"):
+    for var in ("GROQ_API_KEY", "GITHUB_TOKEN", "GITHUB_MODELS_TOKEN", "GEMINI_API_KEY"):
         monkeypatch.delenv(var, raising=False)
     assert not llm.available()
-    monkeypatch.setenv("GITHUB_TOKEN", "x")
+    monkeypatch.setenv("GROQ_API_KEY", "x")
     assert llm.available()
+
+
+def test_groq_leads_provider_order():
+    assert llm.PROVIDERS[0] is llm._groq
+
+
+def test_groq_posts_and_parses(monkeypatch):
+    monkeypatch.setenv("GROQ_API_KEY", "tok")
+    captured = {}
+
+    def fake_post(url, headers=None, json=None, timeout=None):
+        captured["url"] = url
+        captured["model"] = json["model"]
+        return _FakeResp("grouped")
+
+    monkeypatch.setattr(llm.requests, "post", fake_post)
+    assert llm._groq(None, "hi", 256) == "grouped"
+    assert "api.groq.com" in captured["url"]
+    assert captured["model"] == llm.GROQ_MODEL
+
+
+def test_groq_missing_key_raises_llm_error(monkeypatch):
+    monkeypatch.delenv("GROQ_API_KEY", raising=False)
+    with pytest.raises(llm.LLMError):
+        llm._groq(None, "hi", 256)
 
 
 def test_complete_falls_back_to_next_provider(monkeypatch):

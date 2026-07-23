@@ -9,15 +9,16 @@ that exception: grouping 16 trivia/wordplay words, and answering natural-languag
 crossword clues, have no clean algorithm. (The Mini still fills its grid with a
 deterministic CSP; the LLM only supplies candidate answers.)
 
-Reliability is the priority for the unattended daily run, so:
+Reliability is the priority for the unattended daily run, so several providers are
+tried in order and any missing-credential one is skipped:
 
-- The default provider is **GitHub Models**, which authenticates with the
-  workflow's built-in ``GITHUB_TOKEN``. There is no separate API key to create,
-  rotate, or let expire -- the token is minted fresh for every Actions run. That
-  removes the single most common long-term failure mode of an LLM integration.
-- If a free-tier key is present (``GEMINI_API_KEY``), it is used as an automatic
-  fallback, so a GitHub Models rate-limit, outage, or model deprecation degrades
-  to the backup instead of failing the run.
+- **Groq** (``GROQ_API_KEY``) leads when configured: its free tier is genuinely
+  generous and it serves a strong model, so it is the most usable free option.
+- **GitHub Models** (``GITHUB_TOKEN``) needs no external key -- the token is minted
+  fresh for every Actions run, so there is nothing to rotate or expire -- but its
+  free quota for premium/reasoning models is very small.
+- **Gemini** (``GEMINI_API_KEY``) is a final fallback where the account is
+  free-tier eligible (some are not: ``limit: 0``).
 - All providers use temperature 0 for as-deterministic-as-an-LLM-gets output.
   Results are still not bit-reproducible; that is the documented cost of the
   exception.
@@ -53,6 +54,10 @@ MODEL_CHAIN = [m.strip() for m in os.environ.get(
 # `or` (not a default arg) so an empty env value from an unset CI variable still
 # falls back to the default instead of becoming an invalid model name
 GEMINI_MODEL = os.environ.get("GEMINI_MODEL") or "gemini-2.0-flash"
+# Groq: OpenAI-compatible, a genuinely generous free tier, and a strong default
+# model -- the most reliable free option, so it leads the provider order.
+GROQ_URL = "https://api.groq.com/openai/v1/chat/completions"
+GROQ_MODEL = os.environ.get("GROQ_MODEL") or "llama-3.3-70b-versatile"
 
 
 class LLMError(Exception):
@@ -159,11 +164,32 @@ def _gemini(system: Optional[str], prompt: str, max_tokens: int) -> str:
     return resp.json()["candidates"][0]["content"]["parts"][0]["text"]
 
 
-# Ordered by preference: GitHub Models (no external secret) first, then any
-# configured free-tier fallback. A provider raises LLMError if its credential is
-# absent, so unconfigured ones are skipped cleanly.
+def _groq(system: Optional[str], prompt: str, max_tokens: int) -> str:
+    key = os.environ.get("GROQ_API_KEY")
+    if not key:
+        raise LLMError("GROQ_API_KEY not set")
+    messages = []
+    if system:
+        messages.append({"role": "system", "content": system})
+    messages.append({"role": "user", "content": prompt})
+    resp = requests.post(
+        GROQ_URL,
+        headers={"Authorization": f"Bearer {key}", "Content-Type": "application/json"},
+        json={"model": GROQ_MODEL, "messages": messages, "temperature": 0, "max_tokens": max_tokens},
+        timeout=REQUEST_TIMEOUT,
+    )
+    if resp.status_code == 429:
+        raise _RateLimited(_retry_after(resp), resp.text[:600])
+    if not resp.ok:  # surface the body (never the key) so the reason is visible
+        raise requests.HTTPError(f"groq {GROQ_MODEL} {resp.status_code}: {resp.text[:300]}")
+    return resp.json()["choices"][0]["message"]["content"]
+
+
+# Provider order: Groq first (generous free tier + strong model), then GitHub
+# Models (free, no external secret), then Gemini. A provider raises LLMError if its
+# credential is absent, so unconfigured ones are skipped cleanly.
 Provider = Callable[[Optional[str], str, int], str]
-PROVIDERS: List[Provider] = [_github_models, _gemini]
+PROVIDERS: List[Provider] = [_groq, _github_models, _gemini]
 
 # set by complete() when the last failure was a rate limit, so a bulk caller
 # (backfill) can stop early instead of grinding through a throttled quota
@@ -173,7 +199,8 @@ _last_call_rate_limited = False
 def available() -> bool:
     """True if at least one provider has a credential configured."""
     return bool(
-        os.environ.get("GITHUB_TOKEN")
+        os.environ.get("GROQ_API_KEY")
+        or os.environ.get("GITHUB_TOKEN")
         or os.environ.get("GITHUB_MODELS_TOKEN")
         or os.environ.get("GEMINI_API_KEY")
     )
