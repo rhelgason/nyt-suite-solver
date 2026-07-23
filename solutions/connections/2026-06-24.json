@@ -58,53 +58,8 @@
         }
     ],
     "solved": false,
-    "groups_found": 1,
-    "mistakes": 3,
-    "guesses": [
-        {
-            "guess": [
-                "GENESIS",
-                "KING CRIMSON",
-                "PINK FLOYD",
-                "RUSH"
-            ],
-            "result": "correct",
-            "group": "PROG BANDS",
-            "connection": "Progressive rock bands"
-        },
-        {
-            "guess": [
-                "CLIFFORD",
-                "HUMPTY DUMPTY",
-                "KOOL-AID MAN",
-                "MR. KRABS"
-            ],
-            "result": "wrong",
-            "connection": "Characters associated with specific colors (Humpty Dumpty - white, Kool-Aid Man - red, Clifford - red, Mr. Krabs - red)",
-            "one_away": true
-        },
-        {
-            "guess": [
-                "CLIFFORD",
-                "DEADPOOL",
-                "HUMPTY DUMPTY",
-                "KOOL-AID MAN"
-            ],
-            "result": "wrong",
-            "connection": "Characters with distinctive appearances",
-            "one_away": true
-        },
-        {
-            "guess": [
-                "DEADPOOL",
-                "HUMPTY DUMPTY",
-                "KOOL-AID MAN",
-                "MR. KRABS"
-            ],
-            "result": "wrong",
-            "connection": "Fictional characters",
-            "one_away": true
-        }
-    ],
-    "solve_time": "0:00:20.379"
+    "groups_found": 0,
+    "mistakes": 0,
+    "guesses": [],
+    "solve_time": "0:03:16.464"
 }

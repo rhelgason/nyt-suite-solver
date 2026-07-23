@@ -57,54 +57,9 @@
             ]
         }
     ],
-    "solved": true,
-    "groups_found": 4,
+    "solved": false,
+    "groups_found": 0,
     "mistakes": 0,
-    "guesses": [
-        {
-            "guess": [
-                "FRANCIUM",
-                "LEAD",
-                "MERCURY",
-                "POLONIUM"
-            ],
-            "result": "correct",
-            "group": "HAZARDOUS ELEMENTAL METALS",
-            "connection": "Chemical elements"
-        },
-        {
-            "guess": [
-                "MICROPHONE",
-                "MONITOR",
-                "PRINTER",
-                "TRACKPAD"
-            ],
-            "result": "correct",
-            "group": "COMPUTER PERIPHERALS",
-            "connection": "Computer peripherals"
-        },
-        {
-            "guess": [
-                "COMPACT",
-                "COMPRESSED",
-                "DENSE",
-                "SQUASHED"
-            ],
-            "result": "correct",
-            "group": "TIGHTLY PACKED",
-            "connection": "Words related to being tightly packed or condensed"
-        },
-        {
-            "guess": [
-                "CRANIUM",
-                "CROQUETTE",
-                "DUCTILE",
-                "HOCKEY"
-            ],
-            "result": "correct",
-            "group": "STARTING WITH BIRD HOMOPHONES",
-            "connection": ""
-        }
-    ],
-    "solve_time": "0:00:10.498"
+    "guesses": [],
+    "solve_time": "0:03:16.420"
 }

@@ -59,41 +59,7 @@
     ],
     "solved": false,
     "groups_found": 0,
-    "mistakes": 3,
-    "guesses": [
-        {
-            "guess": [
-                "CHOICE",
-                "FINE",
-                "PICK",
-                "SELECT"
-            ],
-            "result": "wrong",
-            "connection": "Words related to selection or choosing",
-            "one_away": true
-        },
-        {
-            "guess": [
-                "CHOICE",
-                "GO",
-                "PICK",
-                "SELECT"
-            ],
-            "result": "wrong",
-            "connection": "Words related to making a decision or selection",
-            "one_away": false
-        },
-        {
-            "guess": [
-                "CHOICE",
-                "GO",
-                "PICK",
-                "SELECT"
-            ],
-            "result": "wrong",
-            "connection": "Words related to making a decision or selection",
-            "one_away": false
-        }
-    ],
-    "solve_time": "0:00:18.318"
+    "mistakes": 0,
+    "guesses": [],
+    "solve_time": "0:03:16.301"
 }

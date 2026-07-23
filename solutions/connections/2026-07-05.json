@@ -59,52 +59,7 @@
     ],
     "solved": false,
     "groups_found": 0,
-    "mistakes": 4,
-    "guesses": [
-        {
-            "guess": [
-                "GOLD",
-                "GREEN",
-                "PLATINUM",
-                "TUNGSTEN"
-            ],
-            "result": "wrong",
-            "connection": "Precious metals or materials",
-            "one_away": true
-        },
-        {
-            "guess": [
-                "GOLD",
-                "PLATINUM",
-                "TUNGSTEN",
-                "WIRE"
-            ],
-            "result": "wrong",
-            "connection": "Metals or materials",
-            "one_away": false
-        },
-        {
-            "guess": [
-                "GOLD",
-                "PLATINUM",
-                "TUNGSTEN",
-                "WIRE"
-            ],
-            "result": "wrong",
-            "connection": "Elements or materials used in jewelry or electronics",
-            "one_away": false
-        },
-        {
-            "guess": [
-                "GOLD",
-                "PLATINUM",
-                "TUNGSTEN",
-                "WIRE"
-            ],
-            "result": "wrong",
-            "connection": "Materials or elements used in jewelry or industry",
-            "one_away": false
-        }
-    ],
-    "solve_time": "0:00:14.667"
+    "mistakes": 0,
+    "guesses": [],
+    "solve_time": "0:03:15.874"
 }

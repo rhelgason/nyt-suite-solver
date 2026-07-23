@@ -58,42 +58,8 @@
         }
     ],
     "solved": false,
-    "groups_found": 2,
-    "mistakes": 1,
-    "guesses": [
-        {
-            "guess": [
-                "NA",
-                "SPIRIT-FREE",
-                "VIRGIN",
-                "ZERO-PROOF"
-            ],
-            "result": "correct",
-            "group": "NON-ALCOHOLIC DESIGNATORS",
-            "connection": "Non-alcoholic terms"
-        },
-        {
-            "guess": [
-                "BILLBOARD",
-                "PITCHFORK",
-                "PRAYER",
-                "ROLLING STONE"
-            ],
-            "result": "wrong",
-            "connection": "Music-related terms or entities",
-            "one_away": true
-        },
-        {
-            "guess": [
-                "BILLBOARD",
-                "PITCHFORK",
-                "ROLLING STONE",
-                "SPIN"
-            ],
-            "result": "correct",
-            "group": "MUSIC PUBLICATIONS",
-            "connection": "Music publications"
-        }
-    ],
-    "solve_time": "0:00:14.925"
+    "groups_found": 0,
+    "mistakes": 0,
+    "guesses": [],
+    "solve_time": "0:03:15.808"
 }

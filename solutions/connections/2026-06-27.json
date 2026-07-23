@@ -58,64 +58,8 @@
         }
     ],
     "solved": false,
-    "groups_found": 1,
-    "mistakes": 4,
-    "guesses": [
-        {
-            "guess": [
-                "BOARDWALK",
-                "CATWALK",
-                "CROSSWALK",
-                "FIREWALK"
-            ],
-            "result": "wrong",
-            "connection": "Types of walk",
-            "one_away": false
-        },
-        {
-            "guess": [
-                "BOARDWALK",
-                "INCOME TAX",
-                "SHORT LINE",
-                "WATER WORKS"
-            ],
-            "result": "correct",
-            "group": "MONOPOLY SQUARES",
-            "connection": "Monopoly properties"
-        },
-        {
-            "guess": [
-                "CATWALK",
-                "CROSSWALK",
-                "FIREWALK",
-                "FOXTROT"
-            ],
-            "result": "wrong",
-            "connection": "Words with 'walk' or 'trot' in them",
-            "one_away": false
-        },
-        {
-            "guess": [
-                "CATWALK",
-                "CROSSWALK",
-                "FIREWALK",
-                "MODEL"
-            ],
-            "result": "wrong",
-            "connection": "Things associated with walking or showcasing (e.g., fashion or paths)",
-            "one_away": false
-        },
-        {
-            "guess": [
-                "CATWALK",
-                "CROSSWALK",
-                "FIREWALK",
-                "FOXTROT"
-            ],
-            "result": "wrong",
-            "connection": "Words containing 'walk' or 'trot'",
-            "one_away": false
-        }
-    ],
-    "solve_time": "0:00:13.207"
+    "groups_found": 0,
+    "mistakes": 0,
+    "guesses": [],
+    "solve_time": "0:03:15.903"
 }

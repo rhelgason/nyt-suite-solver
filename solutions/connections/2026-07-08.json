@@ -58,42 +58,8 @@
         }
     ],
     "solved": false,
-    "groups_found": 1,
-    "mistakes": 2,
-    "guesses": [
-        {
-            "guess": [
-                "PICK",
-                "PLUCK",
-                "STRUM",
-                "TAP"
-            ],
-            "result": "correct",
-            "group": "GUITAR-PLAYING TECHNIQUES",
-            "connection": "Actions associated with playing stringed instruments"
-        },
-        {
-            "guess": [
-                "DRIFT",
-                "PLANE",
-                "PLOT",
-                "THEME"
-            ],
-            "result": "wrong",
-            "connection": "Things that can have a storyline or narrative",
-            "one_away": true
-        },
-        {
-            "guess": [
-                "CARDS",
-                "DRIFT",
-                "PLANE",
-                "PLOT"
-            ],
-            "result": "wrong",
-            "connection": "Things that can be dealt",
-            "one_away": false
-        }
-    ],
-    "solve_time": "0:00:15.892"
+    "groups_found": 0,
+    "mistakes": 0,
+    "guesses": [],
+    "solve_time": "0:03:15.725"
 }

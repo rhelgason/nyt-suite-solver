@@ -59,30 +59,7 @@
     ],
     "solved": false,
     "groups_found": 0,
-    "mistakes": 2,
-    "guesses": [
-        {
-            "guess": [
-                "COPYCAT",
-                "COURT JESTER",
-                "MIME",
-                "MOCKINGBIRD"
-            ],
-            "result": "wrong",
-            "connection": "Things associated with mocking or imitation",
-            "one_away": true
-        },
-        {
-            "guess": [
-                "COPYCAT",
-                "COURT JESTER",
-                "MIME",
-                "TALKIE"
-            ],
-            "result": "wrong",
-            "connection": "Performers or things related to imitation or acting",
-            "one_away": false
-        }
-    ],
-    "solve_time": "0:00:14.451"
+    "mistakes": 0,
+    "guesses": [],
+    "solve_time": "0:03:15.911"
 }

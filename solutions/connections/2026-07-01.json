@@ -59,52 +59,7 @@
     ],
     "solved": false,
     "groups_found": 0,
-    "mistakes": 4,
-    "guesses": [
-        {
-            "guess": [
-                "CHAMPAGNE",
-                "COLOGNE",
-                "FARGO",
-                "LIMERICK"
-            ],
-            "result": "wrong",
-            "connection": "Names of things that are also places",
-            "one_away": true
-        },
-        {
-            "guess": [
-                "CHAMPAGNE",
-                "COLOGNE",
-                "LIMERICK",
-                "MUNICH"
-            ],
-            "result": "wrong",
-            "connection": "Places known for specific products (e.g., Champagne for sparkling wine, Cologne for perfume, Munich for beer, Limerick for poetry)",
-            "one_away": true
-        },
-        {
-            "guess": [
-                "CHAMPAGNE",
-                "COLOGNE",
-                "MOSCOW",
-                "MUNICH"
-            ],
-            "result": "wrong",
-            "connection": "Famous for beverages (e.g., wine, beer, vodka)",
-            "one_away": false
-        },
-        {
-            "guess": [
-                "CHICAGO",
-                "FARGO",
-                "INDIANAPOLIS",
-                "LONG ISLAND"
-            ],
-            "result": "wrong",
-            "connection": "Locations in the United States",
-            "one_away": false
-        }
-    ],
-    "solve_time": "0:00:11.507"
+    "mistakes": 0,
+    "guesses": [],
+    "solve_time": "0:03:15.992"
 }

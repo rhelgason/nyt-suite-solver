@@ -59,52 +59,7 @@
     ],
     "solved": false,
     "groups_found": 0,
-    "mistakes": 4,
-    "guesses": [
-        {
-            "guess": [
-                "BERNIE",
-                "COLBERT",
-                "LETTERMAN",
-                "OLIVER"
-            ],
-            "result": "wrong",
-            "connection": "Late-night TV hosts",
-            "one_away": false
-        },
-        {
-            "guess": [
-                "COLBERT",
-                "HALL",
-                "LETTERMAN",
-                "OLIVER"
-            ],
-            "result": "wrong",
-            "connection": "Late-night TV hosts",
-            "one_away": false
-        },
-        {
-            "guess": [
-                "COLBERT",
-                "HALL",
-                "LETTERMAN",
-                "OLIVER"
-            ],
-            "result": "wrong",
-            "connection": "Late-night TV hosts",
-            "one_away": false
-        },
-        {
-            "guess": [
-                "BERNIE",
-                "COLBERT",
-                "LETTERMAN",
-                "OLIVER"
-            ],
-            "result": "wrong",
-            "connection": "Famous TV hosts or comedians",
-            "one_away": false
-        }
-    ],
-    "solve_time": "0:00:10.812"
+    "mistakes": 0,
+    "guesses": [],
+    "solve_time": "0:03:15.966"
 }

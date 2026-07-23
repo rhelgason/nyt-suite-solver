@@ -59,52 +59,7 @@
     ],
     "solved": false,
     "groups_found": 0,
-    "mistakes": 4,
-    "guesses": [
-        {
-            "guess": [
-                "BOTTLE",
-                "BOX",
-                "CAN",
-                "ON TAP"
-            ],
-            "result": "wrong",
-            "connection": "Ways beverages are packaged or served",
-            "one_away": true
-        },
-        {
-            "guess": [
-                "BOTTLE",
-                "BOX",
-                "CAN",
-                "WALL"
-            ],
-            "result": "wrong",
-            "connection": "Things that can be stacked or stored",
-            "one_away": true
-        },
-        {
-            "guess": [
-                "BOTTLE",
-                "BOX",
-                "CAN",
-                "ON TAP"
-            ],
-            "result": "wrong",
-            "connection": "Containers or ways to package beverages",
-            "one_away": true
-        },
-        {
-            "guess": [
-                "BOTTLE",
-                "BOX",
-                "CAN",
-                "WALL"
-            ],
-            "result": "wrong",
-            "connection": "Things that can be packed or contained",
-            "one_away": true
-        }
-    ],
-    "solve_time": "0:00:14.669"
+    "mistakes": 0,
+    "guesses": [],
+    "solve_time": "0:03:15.871"
 }

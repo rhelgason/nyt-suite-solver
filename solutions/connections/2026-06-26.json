@@ -57,76 +57,9 @@
             ]
         }
     ],
-    "solved": true,
-    "groups_found": 4,
-    "mistakes": 2,
-    "guesses": [
-        {
-            "guess": [
-                "CHIP",
-                "CRACKER",
-                "NUT",
-                "PRETZEL"
-            ],
-            "result": "correct",
-            "group": "CRUNCHY SNACK ITEM",
-            "connection": "Snack foods"
-        },
-        {
-            "guess": [
-                "DALE",
-                "DELL",
-                "PINKY",
-                "TANG"
-            ],
-            "result": "wrong",
-            "connection": "Characters from the cartoon 'Chip 'n Dale: Rescue Rangers'",
-            "one_away": false
-        },
-        {
-            "guess": [
-                "DALE",
-                "DELL",
-                "GORGE",
-                "HOLLOW"
-            ],
-            "result": "correct",
-            "group": "AREAS OF LOW GROUND",
-            "connection": "Geographical features (valleys, depressions, or hollows)"
-        },
-        {
-            "guess": [
-                "BOARD",
-                "LOG",
-                "TANG",
-                "TREE"
-            ],
-            "result": "wrong",
-            "connection": "Things associated with wood",
-            "one_away": true
-        },
-        {
-            "guess": [
-                "BOARD",
-                "LOG",
-                "SPLINTER",
-                "TREE"
-            ],
-            "result": "correct",
-            "group": "VARIOUS AMOUNTS OF WOOD",
-            "connection": "Types of wood or things made from wood"
-        },
-        {
-            "guess": [
-                "BRONZER",
-                "PINKY",
-                "REDO",
-                "TANG"
-            ],
-            "result": "correct",
-            "group": "COLORS PLUS A LETTER",
-            "connection": ""
-        }
-    ],
-    "solve_time": "0:00:12.092"
+    "solved": false,
+    "groups_found": 0,
+    "mistakes": 0,
+    "guesses": [],
+    "solve_time": "0:03:15.917"
 }
