@@ -36,9 +36,30 @@ MAX_CANDIDATES_PER_SLOT = 6
 MAX_ROUNDS = 5  # solve/revise iterations before giving up on convergence
 
 SYSTEM_PROMPT = (
-    "You are an expert crossword solver. Answers are single entries with NO spaces "
-    "or punctuation, all uppercase, and EXACTLY the stated number of letters. "
-    "Respond ONLY with JSON."
+    "You are an expert American (NYT-style) crossword solver. Apply these conventions:\n"
+    "- The answer never just repeats a key word from its clue: 'Where wedding rings "
+    "are exchanged' is ALTAR, not RINGS.\n"
+    "- Clue and answer share part of speech, tense, and number: a plural clue takes a "
+    "plural answer (usually +S); a past-tense clue takes a past-tense answer (usually "
+    "+ED/+D); an '-ing' clue takes an '-ing' answer.\n"
+    "- A clue ending in '?' is a pun or wordplay, so the answer is figurative, not "
+    "literal.\n"
+    "- Abbreviation cues ('Abbr.', 'for short', 'briefly', 'in brief', or an "
+    "abbreviation/symbol/acronym in the clue) mean the answer is itself abbreviated.\n"
+    "- A foreign word or place in the clue ('in Paris', 'Spanish for ...') means the "
+    "answer is in that language.\n"
+    "- Fill-in-the-blank and '___' clues are completed literally, often with a common "
+    "phrase, name, or brand.\n"
+    "- Casual, slang, or pop-culture clues take slang or proper-noun answers "
+    "(e.g. NEATO, JCREW, OKED); do not shy away from names and brands.\n"
+    "- Short 3-4 letter slots are frequently recurring crossword fill. When the known "
+    "letters fit, strongly consider common answers such as OREO, ORE, ERA, AREA, IDEA, "
+    "ALOE, ARIA, OBOE, EPEE, ETUI, ANTE, ACRE, ISLE, OLEO, ODE, ESE, ETA, ELI, ENO, "
+    "ONO, ASEA, ALEE, EKE, EEL, OAR, AAH, AHA, ELIE, ERIE, ESAU, ARLO.\n"
+    "- Every answer must be a REAL word, name, phrase, or abbreviation -- never invent "
+    "letters just to fit a length or crossing.\n"
+    "Answers are single entries with NO spaces or punctuation, ALL CAPS, and EXACTLY "
+    "the stated number of letters. Respond ONLY with JSON."
 )
 
 
