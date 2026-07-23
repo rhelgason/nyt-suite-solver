@@ -108,11 +108,11 @@ It never sees the answer key while solving: the model reasons over the whole boa
 and proposes the full split ordered by confidence, and the solver guesses the
 surest group first. A clean solve costs a single request; after any wrong guess it
 re-plans with the real "one away" and wrong-guess feedback, and it never repeats a
-guess, until it wins or spends its four mistakes. The LLM runs on
-GitHub Models using the daily workflow's built-in token, so it stays free with no
-API key to manage; if the model is unavailable the game is simply recorded as
-unsolved. The score reflects realistic play rather than a trivial win, since a
-wrong group costs a mistake just as it would for a person.
+guess, until it wins or spends its four mistakes. It runs on a free LLM provider
+(Groq, GitHub Models, or Gemini, whichever is configured), so it stays free; if
+none is available the game is simply recorded as unsolved. The score reflects
+realistic play rather than a trivial win, since a wrong group costs a mistake just
+as it would for a person.
 
 <p align="center"><img src="stats/connections_groups.svg" alt="Connections groups found" width="520"></p>
 
