@@ -37,6 +37,7 @@ def test_groq_leads_provider_order():
 
 def test_groq_posts_and_parses(monkeypatch):
     monkeypatch.setenv("GROQ_API_KEY", "tok")
+    monkeypatch.setenv("GROQ_MODEL", "pinned-model")  # pin -> skip discovery
     captured = {}
 
     def fake_post(url, headers=None, json=None, timeout=None):
@@ -47,7 +48,7 @@ def test_groq_posts_and_parses(monkeypatch):
     monkeypatch.setattr(llm.requests, "post", fake_post)
     assert llm._groq(None, "hi", 256) == "grouped"
     assert "api.groq.com" in captured["url"]
-    assert captured["model"] == llm.GROQ_MODEL_CHAIN[0]
+    assert captured["model"] == "pinned-model"
 
 
 def test_groq_missing_key_raises_llm_error(monkeypatch):
@@ -59,7 +60,7 @@ def test_groq_missing_key_raises_llm_error(monkeypatch):
 def test_groq_falls_through_its_model_chain(monkeypatch):
     # a deprecated/removed primary model must fall through to the next in the chain
     monkeypatch.setenv("GROQ_API_KEY", "tok")
-    monkeypatch.setattr(llm, "GROQ_MODEL_CHAIN", ["big-model", "small-model"])
+    monkeypatch.setattr(llm, "_models_for", lambda name: ["big-model", "small-model"])
     calls = []
 
     def fake_call(key, model, system, prompt, max_tokens):
@@ -71,6 +72,71 @@ def test_groq_falls_through_its_model_chain(monkeypatch):
     monkeypatch.setattr(llm, "_groq_call", fake_call)
     assert llm._groq(None, "hi", 100) == "ok"
     assert calls == ["big-model", "small-model"]
+
+
+def test_rank_models_orders_by_reasoning_then_size_then_version():
+    ids = ["llama-3.1-8b-instant", "llama-3.3-70b-versatile",
+           "deepseek-r1-distill-llama-70b", "whisper-large-v3", "llama-guard-4-12b"]
+    ranked = llm._rank_models(ids, llm._GROQ_FAMILIES)
+    assert ranked[0] == "deepseek-r1-distill-llama-70b"   # reasoning wins
+    assert ranked[1] == "llama-3.3-70b-versatile"          # 70b > 8b
+    assert ranked[2] == "llama-3.1-8b-instant"
+    assert "whisper-large-v3" not in ranked and "llama-guard-4-12b" not in ranked  # non-chat dropped
+
+
+def test_rank_models_drops_off_family_ids():
+    ranked = llm._rank_models(["some-random-model-70b", "llama-3.3-70b-versatile"], llm._GROQ_FAMILIES)
+    assert ranked == ["llama-3.3-70b-versatile"]
+
+
+def test_models_for_env_override_skips_discovery(monkeypatch):
+    monkeypatch.setenv("GROQ_MODEL", "a, b ,c")
+    # discovery must NOT run when pinned
+    monkeypatch.setattr(llm, "_discover_groq", lambda key: (_ for _ in ()).throw(AssertionError("called")))
+    llm._DISCOVERY_CACHE.pop("groq", None)
+    assert llm._models_for("groq") == ["a", "b", "c"]
+
+
+def test_models_for_discovers_then_appends_static(monkeypatch):
+    monkeypatch.delenv("GROQ_MODEL", raising=False)
+    llm._DISCOVERY_CACHE.pop("groq", None)
+    monkeypatch.setattr(llm, "_PROVIDER_MODELS", dict(llm._PROVIDER_MODELS,
+                        groq=(("GROQ_MODEL",), ["static-x"], lambda: ["disc-1", "disc-2"])))
+    assert llm._models_for("groq") == ["disc-1", "disc-2", "static-x"]
+
+
+def test_models_for_falls_back_to_static_on_discovery_failure(monkeypatch):
+    monkeypatch.delenv("GROQ_MODEL", raising=False)
+    llm._DISCOVERY_CACHE.pop("groq", None)
+
+    def boom():
+        raise llm.requests.RequestException("catalog down")
+
+    monkeypatch.setattr(llm, "_PROVIDER_MODELS", dict(llm._PROVIDER_MODELS,
+                        groq=(("GROQ_MODEL",), ["static-x", "static-y"], boom)))
+    assert llm._models_for("groq") == ["static-x", "static-y"]
+
+
+class _JsonResp:
+    def __init__(self, payload):
+        self._payload = payload
+
+    def raise_for_status(self):
+        pass
+
+    def json(self):
+        return self._payload
+
+
+def test_discover_groq_parses_and_ranks_catalog(monkeypatch):
+    payload = {"data": [{"id": "llama-3.3-70b-versatile"}, {"id": "whisper-large-v3"},
+                        {"id": "deepseek-r1-distill-llama-70b"}, {"id": "llama-3.1-8b-instant"}]}
+    monkeypatch.setattr(llm.requests, "get",
+                        lambda url, headers=None, params=None, timeout=None: _JsonResp(payload))
+    ranked = llm._discover_groq("key")
+    assert ranked[0] == "deepseek-r1-distill-llama-70b"  # reasoning first
+    assert "whisper-large-v3" not in ranked              # non-chat filtered out
+    assert ranked[-1] == "llama-3.1-8b-instant"          # smallest last
 
 
 def test_complete_falls_back_to_next_provider(monkeypatch):
@@ -205,7 +271,7 @@ def test_complete_waits_and_retries_on_rate_limit(monkeypatch):
 
 def test_github_models_falls_back_across_model_chain(monkeypatch):
     monkeypatch.setenv("GITHUB_TOKEN", "tok")
-    monkeypatch.setattr(llm, "GITHUB_MODEL_CHAIN", ["openai/o4-mini", "openai/gpt-4o"])
+    monkeypatch.setattr(llm, "_models_for", lambda name: ["openai/o4-mini", "openai/gpt-4o"])
     calls = []
 
     def fake_call(token, model, system, prompt, max_tokens):
@@ -222,7 +288,7 @@ def test_github_models_falls_back_across_model_chain(monkeypatch):
 def test_github_models_falls_through_to_next_tier_on_rate_limit(monkeypatch):
     # a rate limit on the premium model must NOT block the standard-tier fallback
     monkeypatch.setenv("GITHUB_TOKEN", "tok")
-    monkeypatch.setattr(llm, "GITHUB_MODEL_CHAIN", ["openai/o4-mini", "openai/gpt-4o-mini"])
+    monkeypatch.setattr(llm, "_models_for", lambda name: ["openai/o4-mini", "openai/gpt-4o-mini"])
     calls = []
 
     def fake_call(token, model, system, prompt, max_tokens):
@@ -238,7 +304,7 @@ def test_github_models_falls_through_to_next_tier_on_rate_limit(monkeypatch):
 
 def test_github_models_raises_rate_limited_only_when_all_models_are(monkeypatch):
     monkeypatch.setenv("GITHUB_TOKEN", "tok")
-    monkeypatch.setattr(llm, "GITHUB_MODEL_CHAIN", ["a", "b"])
+    monkeypatch.setattr(llm, "_models_for", lambda name: ["a", "b"])
 
     def fake_call(token, model, system, prompt, max_tokens):
         raise llm._RateLimited(1.0)

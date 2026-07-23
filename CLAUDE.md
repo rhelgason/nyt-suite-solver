@@ -43,13 +43,18 @@ genuinely cannot be solved otherwise.
   (`GEMINI_API_KEY`). `daily.yml` grants `permissions: models: read`. If no
   provider is configured or all fail, the solver records an unsolved result rather
   than crashing the daily run.
-- **No single-model lock-in.** Each provider is given a *chain* of models (env
-  overridable, comma-separated: `GROQ_MODEL`, `GITHUB_MODELS_MODEL`, `GEMINI_MODEL`),
-  tried in order via `_try_models`, so a deprecated or removed model falls through
-  to the next with no code change. Each chain lists a preferred model first and a
-  stable/always-available one last (Gemini's ends in the rolling `-latest` alias so
-  it auto-upgrades). Combined with the provider fallback, the LLM only fully fails
-  if every model of every configured provider is down.
+- **No single-model lock-in (dynamic model discovery).** At run time each provider's
+  live catalog is queried (`_discover_*` -> `_rank_models`), filtered to real chat
+  model families, and ranked best-first (reasoning-capable, then larger parameter
+  count, then newer version); `_try_models` then tries them in that order. So as
+  models are added, deprecated, or downgraded, the solver automatically uses the
+  current best available one with no code change -- built to keep working for years.
+  Discovery is best-effort and cached per run: if a catalog can't be reached it
+  falls back to a small static list (`*_STATIC_MODELS`), so it is never worse than a
+  fixed model. Pinning an env var (`GROQ_MODEL` / `GITHUB_MODELS_MODEL` /
+  `GEMINI_MODEL`, comma-separated) overrides discovery. Combined with the provider
+  fallback, the LLM only fully fails if every model of every configured provider is
+  down.
 - These puzzles are lateral/wordplay reasoning, so chains lead with a **reasoning
   model** for quality (GitHub Models' `openai/o4-mini`) and fall back to a
   **standard-tier model** (`openai/gpt-4o-mini`) whose free daily quota is far

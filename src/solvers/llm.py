@@ -41,29 +41,34 @@ MAX_ATTEMPTS = 4
 BACKOFF_SECONDS = 2.0
 RATE_LIMIT_MAX_SLEEP = 65.0  # honor a 429 Retry-After up to about a minute
 
-# Every provider is given a *chain* of models, tried in order, rather than a single
-# pinned model. This is deliberate for an unattended service: if a model is
-# deprecated or removed the call falls through to the next, so we are never locked
-# to one model that could disappear. Each chain lists a preferred (higher-quality)
-# model first and a stable, broadly-available one last, and each is overridable by
-# env (comma-separated) without a code change. Where a provider offers a rolling
-# "latest" alias it sits at the tail so the model also auto-upgrades over time.
-def _model_chain(env_name: str, default: str) -> List[str]:
-    raw = os.environ.get(env_name) or default  # `or` so an empty CI var uses default
-    return [m.strip() for m in raw.split(",") if m.strip()]
-
-
-# GitHub Models: o-series reasoning is best but has a tiny free daily quota, so
-# gpt-4o-mini (standard tier, larger quota) backs it up. Tiers have SEPARATE
-# quotas, so a rate-limit on one still tries the next.
+# Model selection is DYNAMIC so the project keeps working for years as models come
+# and go. At run time each provider's live catalog is queried, the chat models are
+# ranked (reasoning-capable and larger/newer first), and that ranking is what we
+# try in order -- so a model being removed or downgraded just means the next best
+# available model is used, with no code change. Discovery is best-effort: if a
+# catalog cannot be reached we fall back to a small static list, so behavior is
+# never worse than a fixed chain. Pinning an env var (GROQ_MODEL / GEMINI_MODEL /
+# GITHUB_MODELS_MODEL, comma-separated) overrides discovery entirely.
 GITHUB_MODELS_URL = "https://models.github.ai/inference/chat/completions"
-GITHUB_MODEL_CHAIN = _model_chain("GITHUB_MODELS_MODEL", "openai/o4-mini,openai/gpt-4o-mini")
-# Groq: OpenAI-compatible, generous free tier, so it leads the provider order.
+GITHUB_CATALOG_URL = "https://models.github.ai/catalog/models"
 GROQ_URL = "https://api.groq.com/openai/v1/chat/completions"
-GROQ_MODEL_CHAIN = _model_chain("GROQ_MODEL", "llama-3.3-70b-versatile,llama-3.1-8b-instant")
-# Gemini: a specific flash model, then the rolling "latest" alias as an
-# auto-upgrading, deprecation-proof backstop.
-GEMINI_MODEL_CHAIN = _model_chain("GEMINI_MODEL", "gemini-2.0-flash,gemini-flash-latest")
+GROQ_CATALOG_URL = "https://api.groq.com/openai/v1/models"
+GEMINI_BASE = "https://generativelanguage.googleapis.com/v1beta"
+DISCOVERY_TIMEOUT = 20
+
+# Static fallbacks, used only if a catalog can't be reached.
+GITHUB_STATIC_MODELS = ["openai/o4-mini", "openai/gpt-4o-mini"]
+GROQ_STATIC_MODELS = ["llama-3.3-70b-versatile", "llama-3.1-8b-instant"]
+GEMINI_STATIC_MODELS = ["gemini-2.0-flash", "gemini-flash-latest"]
+
+# Ranking inputs. Families keep discovery to real chat model lines; the non-chat
+# and reasoning hints steer scoring. All matched case-insensitively as substrings.
+_GROQ_FAMILIES = ("llama", "qwen", "deepseek", "gpt-oss", "mixtral", "mistral", "gemma", "kimi", "moonshot")
+_GITHUB_FAMILIES = ("openai/", "meta/", "meta-llama", "mistral", "deepseek", "xai", "microsoft", "cohere", "ai21")
+_GEMINI_FAMILIES = ("gemini",)
+_NON_CHAT = ("whisper", "tts", "guard", "embed", "moderation", "transcrib", "playai",
+             "rerank", "-audio", "-image", "image-", "-vision-")
+_REASONING_HINTS = ("gpt-oss", "deepseek", "r1", "qwq", "reason", "think", "o1-", "o3-", "o4-")
 
 
 class LLMError(Exception):
@@ -100,6 +105,100 @@ def _retry_after(resp) -> Optional[float]:
     except (ValueError, AttributeError):
         pass
     return None
+
+
+def _rank_models(ids: List[str], families: tuple) -> List[str]:
+    """Rank a provider's catalog to chat models, best first: reasoning-capable
+    models outrank others, then larger parameter counts, then newer versions.
+    Non-chat models and lines outside ``families`` are dropped."""
+    ranked = []
+    for mid in ids:
+        s = mid.lower()
+        if any(bad in s for bad in _NON_CHAT):
+            continue
+        if families and not any(f in s for f in families):
+            continue
+        score = 0.0
+        if _is_reasoning(mid) or any(r in s for r in _REASONING_HINTS):
+            score += 10000
+        size = re.search(r"(\d+)\s*b(?:[^a-z0-9]|$)", s)  # parameter count, e.g. 70b
+        if size:
+            score += min(int(size.group(1)), 999)
+        version = re.search(r"(\d+)\.(\d+)", s)            # e.g. 3.3, 2.5
+        if version:
+            score += int(version.group(1)) * 5 + int(version.group(2)) * 0.5
+        if any(p in s for p in ("preview", "experimental", "-exp", "beta")):
+            score -= 3  # prefer stable releases when otherwise comparable
+        ranked.append((score, mid))
+    ranked.sort(key=lambda x: (-x[0], x[1]))
+    return [mid for _, mid in ranked]
+
+
+def _discover_groq(key: str) -> List[str]:
+    resp = requests.get(GROQ_CATALOG_URL, headers={"Authorization": f"Bearer {key}"},
+                        timeout=DISCOVERY_TIMEOUT)
+    resp.raise_for_status()
+    ids = [m.get("id", "") for m in resp.json().get("data", []) if m.get("id")]
+    return _rank_models(ids, _GROQ_FAMILIES)
+
+
+def _discover_github(token: str) -> List[str]:
+    resp = requests.get(GITHUB_CATALOG_URL,
+                        headers={"Authorization": f"Bearer {token}", "Accept": "application/vnd.github+json"},
+                        timeout=DISCOVERY_TIMEOUT)
+    resp.raise_for_status()
+    data = resp.json()
+    items = data if isinstance(data, list) else data.get("models", data.get("data", []))
+    ids = [(m.get("id") or m.get("name")) for m in items if isinstance(m, dict)]
+    return _rank_models([i for i in ids if i], _GITHUB_FAMILIES)
+
+
+def _discover_gemini(key: str) -> List[str]:
+    resp = requests.get(f"{GEMINI_BASE}/models", params={"key": key}, timeout=DISCOVERY_TIMEOUT)
+    resp.raise_for_status()
+    ids = []
+    for m in resp.json().get("models", []):
+        methods = m.get("supportedGenerationMethods") or m.get("supported_generation_methods") or []
+        name = (m.get("name") or "").split("/")[-1]
+        if name and (not methods or "generateContent" in methods):
+            ids.append(name)
+    return _rank_models(ids, _GEMINI_FAMILIES)
+
+
+# provider name -> (env override vars, static fallback, discovery callable)
+_PROVIDER_MODELS = {
+    "groq": (("GROQ_MODEL",), GROQ_STATIC_MODELS,
+             lambda: _discover_groq(os.environ.get("GROQ_API_KEY", ""))),
+    "github": (("GITHUB_MODELS_MODEL",), GITHUB_STATIC_MODELS,
+               lambda: _discover_github(os.environ.get("GITHUB_TOKEN") or os.environ.get("GITHUB_MODELS_TOKEN", ""))),
+    "gemini": (("GEMINI_MODEL",), GEMINI_STATIC_MODELS,
+               lambda: _discover_gemini(os.environ.get("GEMINI_API_KEY", ""))),
+}
+_DISCOVERY_CACHE: dict = {}  # provider -> resolved model list (per process)
+
+
+def _models_for(name: str) -> List[str]:
+    """Ordered models to try for a provider: an env override if pinned; otherwise
+    the live-discovered ranking followed by the static fallback (deduped). Cached
+    per process, and any discovery failure degrades to the static list."""
+    env_names, static, discover = _PROVIDER_MODELS[name]
+    for env_name in env_names:
+        raw = os.environ.get(env_name)
+        if raw:
+            pinned = [m.strip() for m in raw.split(",") if m.strip()]
+            if pinned:
+                return pinned  # explicit override -> no discovery
+    if name in _DISCOVERY_CACHE:
+        return _DISCOVERY_CACHE[name]
+    models = list(static)
+    try:
+        discovered = discover()
+        if discovered:
+            models = discovered + [m for m in static if m not in discovered]
+    except Exception:  # noqa: BLE001 - discovery is best-effort; fall back to static
+        pass
+    _DISCOVERY_CACHE[name] = models
+    return models
 
 
 def _github_call(token: str, model: str, system: Optional[str], prompt: str, max_tokens: int) -> str:
@@ -151,7 +250,7 @@ def _github_models(system: Optional[str], prompt: str, max_tokens: int) -> str:
     token = os.environ.get("GITHUB_TOKEN") or os.environ.get("GITHUB_MODELS_TOKEN")
     if not token:
         raise LLMError("GITHUB_TOKEN not set")
-    return _try_models(GITHUB_MODEL_CHAIN,
+    return _try_models(_models_for("github"),
                        lambda m: _github_call(token, m, system, prompt, max_tokens))
 
 
@@ -180,7 +279,7 @@ def _gemini(system: Optional[str], prompt: str, max_tokens: int) -> str:
     key = os.environ.get("GEMINI_API_KEY")
     if not key:
         raise LLMError("GEMINI_API_KEY not set")
-    return _try_models(GEMINI_MODEL_CHAIN,
+    return _try_models(_models_for("gemini"),
                        lambda m: _gemini_call(key, m, system, prompt, max_tokens))
 
 
@@ -206,7 +305,7 @@ def _groq(system: Optional[str], prompt: str, max_tokens: int) -> str:
     key = os.environ.get("GROQ_API_KEY")
     if not key:
         raise LLMError("GROQ_API_KEY not set")
-    return _try_models(GROQ_MODEL_CHAIN,
+    return _try_models(_models_for("groq"),
                        lambda m: _groq_call(key, m, system, prompt, max_tokens))
 
 
