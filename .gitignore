@@ -1,5 +1,9 @@
 .DS_Store
 
+# Local reference material, not part of the project
+how_to_solve_nyt.pdf
+*.pdf
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
