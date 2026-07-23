@@ -85,26 +85,26 @@
         },
         {
             "guess": [
-                "BASEBALL",
-                "DEPLANE",
-                "HANGAR",
-                "RUNWAY"
-            ],
-            "result": "wrong",
-            "connection": "Terms related to aviation and sports",
-            "one_away": false
-        },
-        {
-            "guess": [
-                "APRON",
+                "FELINE",
                 "GLOBE",
                 "MARBLE",
                 "ORANGE"
             ],
             "result": "wrong",
-            "connection": "can be types of spheres",
+            "connection": "types of cats",
+            "one_away": true
+        },
+        {
+            "guess": [
+                "FEBRILE",
+                "FRENETIC",
+                "INTENSE",
+                "JANGLE"
+            ],
+            "result": "wrong",
+            "connection": "All can describe a state of heightened or frantic energy",
             "one_away": true
         }
     ],
-    "solve_time": "0:00:06.652"
+    "solve_time": "0:00:03.515"
 }
