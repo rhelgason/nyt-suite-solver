@@ -40,14 +40,16 @@ MAX_ATTEMPTS = 4
 BACKOFF_SECONDS = 2.0
 RATE_LIMIT_MAX_SLEEP = 65.0  # honor a 429 Retry-After up to about a minute
 
-# Connections and crossword clues are lateral/wordplay reasoning, which the
-# o-series reasoning models do markedly better than gpt-4o. We try a reasoning
-# model first and fall back to gpt-4o if it is unavailable or rate-limited, so
-# quality goes up without risking the run. Override the whole chain with a
-# comma-separated GITHUB_MODELS_MODEL if desired.
+# Connections/crossword are lateral reasoning, which the o-series does best -- but
+# on GitHub Models' FREE tier reasoning models have a tiny daily quota, so we try
+# o4-mini first for quality and fall back to gpt-4o-mini, a standard-tier model
+# with a much larger free daily allowance, so the run still works once the premium
+# quota is spent. Tiers have SEPARATE quotas, so a rate-limit on one model does not
+# imply the next is limited. Override the chain with a comma-separated
+# GITHUB_MODELS_MODEL (e.g. just "openai/gpt-4o-mini" for max reliability).
 GITHUB_MODELS_URL = "https://models.github.ai/inference/chat/completions"
 MODEL_CHAIN = [m.strip() for m in os.environ.get(
-    "GITHUB_MODELS_MODEL", "openai/o4-mini,openai/gpt-4o").split(",") if m.strip()]
+    "GITHUB_MODELS_MODEL", "openai/o4-mini,openai/gpt-4o-mini").split(",") if m.strip()]
 # `or` (not a default arg) so an empty env value from an unset CI variable still
 # falls back to the default instead of becoming an invalid model name
 GEMINI_MODEL = os.environ.get("GEMINI_MODEL") or "gemini-2.0-flash"
@@ -117,15 +119,20 @@ def _github_models(system: Optional[str], prompt: str, max_tokens: int) -> str:
     token = os.environ.get("GITHUB_TOKEN") or os.environ.get("GITHUB_MODELS_TOKEN")
     if not token:
         raise LLMError("GITHUB_TOKEN not set")
-    last_error = None
-    for model in MODEL_CHAIN:  # strongest first, gpt-4o as the safe fallback
+    last_rate_limited = None
+    last_other = None
+    for model in MODEL_CHAIN:  # try each tier; their free quotas are independent
         try:
             return _github_call(token, model, system, prompt, max_tokens)
-        except _RateLimited:
-            raise  # same account -> other models are rate-limited too; let complete() wait
+        except _RateLimited as e:
+            last_rate_limited = e  # this model is throttled -> try the next tier
         except requests.RequestException as e:
-            last_error = e
-    raise last_error if last_error else LLMError("no models configured")
+            last_other = e
+    if last_other is not None:
+        raise last_other
+    if last_rate_limited is not None:  # every model was rate-limited
+        raise last_rate_limited
+    raise LLMError("no models configured")
 
 
 def _gemini(system: Optional[str], prompt: str, max_tokens: int) -> str:

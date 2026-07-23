@@ -42,10 +42,14 @@ genuinely cannot be solved otherwise.
   grants `permissions: models: read`. If no provider is configured or all fail,
   the solver records an unsolved result rather than crashing the daily run.
 - These puzzles are lateral/wordplay reasoning, so the client tries a **reasoning
-  model** first (`openai/o4-mini`) and falls back to `openai/gpt-4o` if it is
-  unavailable or rate-limited (chain is `GITHUB_MODELS_MODEL`, comma-separated).
-  Reasoning models need a larger token budget (hidden reasoning tokens) and reject
-  a custom temperature, which `llm.py` handles automatically.
+  model** first (`openai/o4-mini`) for quality, then falls back to a **standard-tier
+  model** (`openai/gpt-4o-mini`) whose free daily quota is far larger, since the
+  o-series free allowance on GitHub Models is only single digits/day. Tiers have
+  independent quotas, so a rate-limit on one model falls through to the next (chain
+  is `GITHUB_MODELS_MODEL`, comma-separated). Reasoning models need a larger token
+  budget (hidden reasoning tokens) and reject a custom temperature, both handled in
+  `llm.py`. Gemini's free tier is region-gated (some accounts get `limit: 0`), so it
+  is only a viable fallback where eligible or with billing enabled.
 - **Data availability caveat:** for crosswords, only **today's Mini** is freely
   fetchable — every past Mini's content is subscriber-gated (the content endpoint
   returns metadata with the clues/grid stripped), and the full-size Daily/Sunday

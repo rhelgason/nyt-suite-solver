@@ -170,3 +170,32 @@ def test_github_models_falls_back_across_model_chain(monkeypatch):
     monkeypatch.setattr(llm, "_github_call", fake_call)
     assert llm._github_models(None, "hi", 100) == "recovered"
     assert calls == ["openai/o4-mini", "openai/gpt-4o"]
+
+
+def test_github_models_falls_through_to_next_tier_on_rate_limit(monkeypatch):
+    # a rate limit on the premium model must NOT block the standard-tier fallback
+    monkeypatch.setenv("GITHUB_TOKEN", "tok")
+    monkeypatch.setattr(llm, "MODEL_CHAIN", ["openai/o4-mini", "openai/gpt-4o-mini"])
+    calls = []
+
+    def fake_call(token, model, system, prompt, max_tokens):
+        calls.append(model)
+        if model == "openai/o4-mini":
+            raise llm._RateLimited(5.0)
+        return "standard"
+
+    monkeypatch.setattr(llm, "_github_call", fake_call)
+    assert llm._github_models(None, "hi", 100) == "standard"
+    assert calls == ["openai/o4-mini", "openai/gpt-4o-mini"]
+
+
+def test_github_models_raises_rate_limited_only_when_all_models_are(monkeypatch):
+    monkeypatch.setenv("GITHUB_TOKEN", "tok")
+    monkeypatch.setattr(llm, "MODEL_CHAIN", ["a", "b"])
+
+    def fake_call(token, model, system, prompt, max_tokens):
+        raise llm._RateLimited(1.0)
+
+    monkeypatch.setattr(llm, "_github_call", fake_call)
+    with pytest.raises(llm._RateLimited):
+        llm._github_models(None, "hi", 100)
