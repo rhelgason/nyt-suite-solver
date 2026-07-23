@@ -1,3 +1,5 @@
-numpy
-pynput
-requests
+# Upper bounds guard the unattended daily run against a breaking major release of
+# a dependency; bump them deliberately when upgrading.
+numpy>=1.26,<3       # used by the Sudoku solver
+requests>=2.31,<3    # NYT scraping + LLM HTTP calls
+pynput>=1.7,<2       # interactive TUI only (not imported by the headless solvers)

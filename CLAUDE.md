@@ -43,15 +43,23 @@ genuinely cannot be solved otherwise.
   (`GEMINI_API_KEY`). `daily.yml` grants `permissions: models: read`. If no
   provider is configured or all fail, the solver records an unsolved result rather
   than crashing the daily run.
-- These puzzles are lateral/wordplay reasoning, so the client tries a **reasoning
-  model** first (`openai/o4-mini`) for quality, then falls back to a **standard-tier
-  model** (`openai/gpt-4o-mini`) whose free daily quota is far larger, since the
-  o-series free allowance on GitHub Models is only single digits/day. Tiers have
-  independent quotas, so a rate-limit on one model falls through to the next (chain
-  is `GITHUB_MODELS_MODEL`, comma-separated). Reasoning models need a larger token
-  budget (hidden reasoning tokens) and reject a custom temperature, both handled in
-  `llm.py`. Gemini's free tier is region-gated (some accounts get `limit: 0`), so it
-  is only a viable fallback where eligible or with billing enabled.
+- **No single-model lock-in.** Each provider is given a *chain* of models (env
+  overridable, comma-separated: `GROQ_MODEL`, `GITHUB_MODELS_MODEL`, `GEMINI_MODEL`),
+  tried in order via `_try_models`, so a deprecated or removed model falls through
+  to the next with no code change. Each chain lists a preferred model first and a
+  stable/always-available one last (Gemini's ends in the rolling `-latest` alias so
+  it auto-upgrades). Combined with the provider fallback, the LLM only fully fails
+  if every model of every configured provider is down.
+- These puzzles are lateral/wordplay reasoning, so chains lead with a **reasoning
+  model** for quality (GitHub Models' `openai/o4-mini`) and fall back to a
+  **standard-tier model** (`openai/gpt-4o-mini`) whose free daily quota is far
+  larger, since the o-series free allowance on GitHub Models is only single
+  digits/day. Model tiers have independent quotas, so a rate-limit on one falls
+  through to the next. Reasoning models need a larger token budget (hidden reasoning
+  tokens) and reject a custom temperature, both handled in `llm.py`; their
+  `<think>` output is stripped before JSON parsing. Gemini's free tier is
+  region-gated (some accounts get `limit: 0`), so it is only viable where eligible
+  or with billing enabled.
 - **Data availability caveat:** for crosswords, only **today's Mini** is freely
   fetchable — every past Mini's content is subscriber-gated (the content endpoint
   returns metadata with the clues/grid stripped), and the full-size Daily/Sunday
@@ -87,7 +95,20 @@ and `svg_charts.py` standard-library only.
 - `src/main.py`, `src/menus.py`, `src/game_runner.py` — interactive TUI
 - `solutions/<game>/*.json` — logged results (one file per puzzle/day)
 - `tests/` — offline pytest suite (no network; uses fixtures)
-- `.github/workflows/` — `daily.yml` (scheduled solve) + `tests.yml` (CI)
+- `.github/workflows/` — `daily.yml` (scheduled solve), `backfill.yml` (manual
+  dispatch), + `tests.yml` (CI)
+
+## Unattended operation
+This is designed to run untended for long stretches:
+- The daily job commits results every day, which keeps the scheduled workflow from
+  being auto-disabled (GitHub pauses cron workflows after ~60 days with no repo
+  commits). If it ever pauses, re-enable it from the Actions tab.
+- Real breakage surfaces by email: a genuine solve error (e.g. an NYT endpoint
+  change) makes `cli.py` exit non-zero, the daily run goes red, and GitHub notifies
+  the repo owner. An LLM simply not solving a puzzle is recorded, not an error, so
+  it does not raise false alarms.
+- Dependencies are upper-bounded in `requirements.txt`, and LLM model chains fall
+  through on deprecation, so a routine upstream change should not break the run.
 
 ## Working on this repo
 - `make` targets create/use an isolated `.venv` (system Python is externally

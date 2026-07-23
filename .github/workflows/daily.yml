@@ -64,6 +64,7 @@ jobs:
             echo "No new solutions to commit."
           else
             git commit -m "Daily solve: $(date -u +%Y-%m-%d)"
+            git pull --rebase --autostash origin ${{ github.ref_name }}
             git push
           fi
 

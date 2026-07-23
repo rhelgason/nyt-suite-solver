@@ -47,13 +47,30 @@ def test_groq_posts_and_parses(monkeypatch):
     monkeypatch.setattr(llm.requests, "post", fake_post)
     assert llm._groq(None, "hi", 256) == "grouped"
     assert "api.groq.com" in captured["url"]
-    assert captured["model"] == llm.GROQ_MODEL
+    assert captured["model"] == llm.GROQ_MODEL_CHAIN[0]
 
 
 def test_groq_missing_key_raises_llm_error(monkeypatch):
     monkeypatch.delenv("GROQ_API_KEY", raising=False)
     with pytest.raises(llm.LLMError):
         llm._groq(None, "hi", 256)
+
+
+def test_groq_falls_through_its_model_chain(monkeypatch):
+    # a deprecated/removed primary model must fall through to the next in the chain
+    monkeypatch.setenv("GROQ_API_KEY", "tok")
+    monkeypatch.setattr(llm, "GROQ_MODEL_CHAIN", ["big-model", "small-model"])
+    calls = []
+
+    def fake_call(key, model, system, prompt, max_tokens):
+        calls.append(model)
+        if model == "big-model":
+            raise llm.requests.RequestException("model removed")
+        return "ok"
+
+    monkeypatch.setattr(llm, "_groq_call", fake_call)
+    assert llm._groq(None, "hi", 100) == "ok"
+    assert calls == ["big-model", "small-model"]
 
 
 def test_complete_falls_back_to_next_provider(monkeypatch):
@@ -188,7 +205,7 @@ def test_complete_waits_and_retries_on_rate_limit(monkeypatch):
 
 def test_github_models_falls_back_across_model_chain(monkeypatch):
     monkeypatch.setenv("GITHUB_TOKEN", "tok")
-    monkeypatch.setattr(llm, "MODEL_CHAIN", ["openai/o4-mini", "openai/gpt-4o"])
+    monkeypatch.setattr(llm, "GITHUB_MODEL_CHAIN", ["openai/o4-mini", "openai/gpt-4o"])
     calls = []
 
     def fake_call(token, model, system, prompt, max_tokens):
@@ -205,7 +222,7 @@ def test_github_models_falls_back_across_model_chain(monkeypatch):
 def test_github_models_falls_through_to_next_tier_on_rate_limit(monkeypatch):
     # a rate limit on the premium model must NOT block the standard-tier fallback
     monkeypatch.setenv("GITHUB_TOKEN", "tok")
-    monkeypatch.setattr(llm, "MODEL_CHAIN", ["openai/o4-mini", "openai/gpt-4o-mini"])
+    monkeypatch.setattr(llm, "GITHUB_MODEL_CHAIN", ["openai/o4-mini", "openai/gpt-4o-mini"])
     calls = []
 
     def fake_call(token, model, system, prompt, max_tokens):
@@ -221,7 +238,7 @@ def test_github_models_falls_through_to_next_tier_on_rate_limit(monkeypatch):
 
 def test_github_models_raises_rate_limited_only_when_all_models_are(monkeypatch):
     monkeypatch.setenv("GITHUB_TOKEN", "tok")
-    monkeypatch.setattr(llm, "MODEL_CHAIN", ["a", "b"])
+    monkeypatch.setattr(llm, "GITHUB_MODEL_CHAIN", ["a", "b"])
 
     def fake_call(token, model, system, prompt, max_tokens):
         raise llm._RateLimited(1.0)

@@ -41,23 +41,29 @@ MAX_ATTEMPTS = 4
 BACKOFF_SECONDS = 2.0
 RATE_LIMIT_MAX_SLEEP = 65.0  # honor a 429 Retry-After up to about a minute
 
-# Connections/crossword are lateral reasoning, which the o-series does best -- but
-# on GitHub Models' FREE tier reasoning models have a tiny daily quota, so we try
-# o4-mini first for quality and fall back to gpt-4o-mini, a standard-tier model
-# with a much larger free daily allowance, so the run still works once the premium
-# quota is spent. Tiers have SEPARATE quotas, so a rate-limit on one model does not
-# imply the next is limited. Override the chain with a comma-separated
-# GITHUB_MODELS_MODEL (e.g. just "openai/gpt-4o-mini" for max reliability).
+# Every provider is given a *chain* of models, tried in order, rather than a single
+# pinned model. This is deliberate for an unattended service: if a model is
+# deprecated or removed the call falls through to the next, so we are never locked
+# to one model that could disappear. Each chain lists a preferred (higher-quality)
+# model first and a stable, broadly-available one last, and each is overridable by
+# env (comma-separated) without a code change. Where a provider offers a rolling
+# "latest" alias it sits at the tail so the model also auto-upgrades over time.
+def _model_chain(env_name: str, default: str) -> List[str]:
+    raw = os.environ.get(env_name) or default  # `or` so an empty CI var uses default
+    return [m.strip() for m in raw.split(",") if m.strip()]
+
+
+# GitHub Models: o-series reasoning is best but has a tiny free daily quota, so
+# gpt-4o-mini (standard tier, larger quota) backs it up. Tiers have SEPARATE
+# quotas, so a rate-limit on one still tries the next.
 GITHUB_MODELS_URL = "https://models.github.ai/inference/chat/completions"
-MODEL_CHAIN = [m.strip() for m in os.environ.get(
-    "GITHUB_MODELS_MODEL", "openai/o4-mini,openai/gpt-4o-mini").split(",") if m.strip()]
-# `or` (not a default arg) so an empty env value from an unset CI variable still
-# falls back to the default instead of becoming an invalid model name
-GEMINI_MODEL = os.environ.get("GEMINI_MODEL") or "gemini-2.0-flash"
-# Groq: OpenAI-compatible, a genuinely generous free tier, and a strong default
-# model -- the most reliable free option, so it leads the provider order.
+GITHUB_MODEL_CHAIN = _model_chain("GITHUB_MODELS_MODEL", "openai/o4-mini,openai/gpt-4o-mini")
+# Groq: OpenAI-compatible, generous free tier, so it leads the provider order.
 GROQ_URL = "https://api.groq.com/openai/v1/chat/completions"
-GROQ_MODEL = os.environ.get("GROQ_MODEL") or "llama-3.3-70b-versatile"
+GROQ_MODEL_CHAIN = _model_chain("GROQ_MODEL", "llama-3.3-70b-versatile,llama-3.1-8b-instant")
+# Gemini: a specific flash model, then the rolling "latest" alias as an
+# auto-upgrading, deprecation-proof backstop.
+GEMINI_MODEL_CHAIN = _model_chain("GEMINI_MODEL", "gemini-2.0-flash,gemini-flash-latest")
 
 
 class LLMError(Exception):
@@ -120,30 +126,36 @@ def _github_call(token: str, model: str, system: Optional[str], prompt: str, max
     return resp.json()["choices"][0]["message"]["content"]
 
 
-def _github_models(system: Optional[str], prompt: str, max_tokens: int) -> str:
-    token = os.environ.get("GITHUB_TOKEN") or os.environ.get("GITHUB_MODELS_TOKEN")
-    if not token:
-        raise LLMError("GITHUB_TOKEN not set")
+def _try_models(models: List[str], call_one: Callable[[str], str]) -> str:
+    """Run ``call_one(model)`` for each model in order until one succeeds. A
+    rate-limited, deprecated, or unavailable model falls through to the next, so no
+    single model is a hard dependency. Raises the most informative error if all
+    fail (a real error over a bare rate-limit)."""
     last_rate_limited = None
     last_other = None
-    for model in MODEL_CHAIN:  # try each tier; their free quotas are independent
+    for model in models:
         try:
-            return _github_call(token, model, system, prompt, max_tokens)
+            return call_one(model)
         except _RateLimited as e:
-            last_rate_limited = e  # this model is throttled -> try the next tier
+            last_rate_limited = e
         except requests.RequestException as e:
             last_other = e
     if last_other is not None:
         raise last_other
-    if last_rate_limited is not None:  # every model was rate-limited
+    if last_rate_limited is not None:
         raise last_rate_limited
     raise LLMError("no models configured")
 
 
-def _gemini(system: Optional[str], prompt: str, max_tokens: int) -> str:
-    key = os.environ.get("GEMINI_API_KEY")
-    if not key:
-        raise LLMError("GEMINI_API_KEY not set")
+def _github_models(system: Optional[str], prompt: str, max_tokens: int) -> str:
+    token = os.environ.get("GITHUB_TOKEN") or os.environ.get("GITHUB_MODELS_TOKEN")
+    if not token:
+        raise LLMError("GITHUB_TOKEN not set")
+    return _try_models(GITHUB_MODEL_CHAIN,
+                       lambda m: _github_call(token, m, system, prompt, max_tokens))
+
+
+def _gemini_call(key: str, model: str, system: Optional[str], prompt: str, max_tokens: int) -> str:
     body: dict = {
         "contents": [{"parts": [{"text": prompt}]}],
         "generationConfig": {"temperature": 0, "maxOutputTokens": max_tokens},
@@ -151,7 +163,7 @@ def _gemini(system: Optional[str], prompt: str, max_tokens: int) -> str:
     if system:
         body["system_instruction"] = {"parts": [{"text": system}]}
     resp = requests.post(
-        f"https://generativelanguage.googleapis.com/v1beta/models/{GEMINI_MODEL}:generateContent",
+        f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent",
         headers={"Content-Type": "application/json"},
         params={"key": key},
         json=body,
@@ -160,14 +172,19 @@ def _gemini(system: Optional[str], prompt: str, max_tokens: int) -> str:
     if resp.status_code == 429:
         raise _RateLimited(_retry_after(resp), resp.text[:600])
     if not resp.ok:  # surface the body (never the key) so the reason is visible
-        raise requests.HTTPError(f"gemini {GEMINI_MODEL} {resp.status_code}: {resp.text[:300]}")
+        raise requests.HTTPError(f"gemini {model} {resp.status_code}: {resp.text[:300]}")
     return resp.json()["candidates"][0]["content"]["parts"][0]["text"]
 
 
-def _groq(system: Optional[str], prompt: str, max_tokens: int) -> str:
-    key = os.environ.get("GROQ_API_KEY")
+def _gemini(system: Optional[str], prompt: str, max_tokens: int) -> str:
+    key = os.environ.get("GEMINI_API_KEY")
     if not key:
-        raise LLMError("GROQ_API_KEY not set")
+        raise LLMError("GEMINI_API_KEY not set")
+    return _try_models(GEMINI_MODEL_CHAIN,
+                       lambda m: _gemini_call(key, m, system, prompt, max_tokens))
+
+
+def _groq_call(key: str, model: str, system: Optional[str], prompt: str, max_tokens: int) -> str:
     messages = []
     if system:
         messages.append({"role": "system", "content": system})
@@ -175,14 +192,22 @@ def _groq(system: Optional[str], prompt: str, max_tokens: int) -> str:
     resp = requests.post(
         GROQ_URL,
         headers={"Authorization": f"Bearer {key}", "Content-Type": "application/json"},
-        json={"model": GROQ_MODEL, "messages": messages, "temperature": 0, "max_tokens": max_tokens},
+        json={"model": model, "messages": messages, "temperature": 0, "max_tokens": max_tokens},
         timeout=REQUEST_TIMEOUT,
     )
     if resp.status_code == 429:
         raise _RateLimited(_retry_after(resp), resp.text[:600])
     if not resp.ok:  # surface the body (never the key) so the reason is visible
-        raise requests.HTTPError(f"groq {GROQ_MODEL} {resp.status_code}: {resp.text[:300]}")
+        raise requests.HTTPError(f"groq {model} {resp.status_code}: {resp.text[:300]}")
     return resp.json()["choices"][0]["message"]["content"]
+
+
+def _groq(system: Optional[str], prompt: str, max_tokens: int) -> str:
+    key = os.environ.get("GROQ_API_KEY")
+    if not key:
+        raise LLMError("GROQ_API_KEY not set")
+    return _try_models(GROQ_MODEL_CHAIN,
+                       lambda m: _groq_call(key, m, system, prompt, max_tokens))
 
 
 # Provider order: Groq first (generous free tier + strong model), then GitHub
