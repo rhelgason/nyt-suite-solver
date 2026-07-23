@@ -252,8 +252,9 @@ def complete(prompt: str, system: Optional[str] = None, max_tokens: int = 1024) 
 
 def _extract_json(text: str) -> Any:
     """Best-effort JSON parse of an LLM response, tolerating markdown code fences
-    and surrounding prose by falling back to the first balanced {...} or [...]."""
-    text = text.strip()
+    and surrounding prose by falling back to the first balanced {...} or [...].
+    Reasoning models emit a <think>...</think> block first, which is stripped."""
+    text = re.sub(r"<think>.*?</think>", "", text, flags=re.DOTALL).strip()
     fenced = re.search(r"```(?:json)?\s*(.+?)```", text, re.DOTALL)
     if fenced:
         text = fenced.group(1).strip()

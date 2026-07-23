@@ -224,12 +224,13 @@ class MiniCrosswordSolver(BaseSolver):
                     lines.append(f"  {a_id} letter {a_pos + 1} = {d_id} letter {d_pos + 1}")
         return lines
 
-    def _ask_clues(self, patterns: Optional[Dict[str, str]] = None) -> Dict[str, List[str]]:
+    def _ask_clues(self, patterns: Optional[Dict[str, str]] = None,
+                   invalid: Optional[List[str]] = None) -> Dict[str, List[str]]:
         """One batched LLM call for candidate answers to EVERY slot. On revision
         rounds ``patterns`` holds each slot's current letters (from where the
-        Across/Down answers already agree); the model is shown the grid so far and
-        asked to fix answers that do not fit, which is the feedback loop that lets it
-        iterate toward a consistent fill."""
+        Across/Down answers already agree) and ``invalid`` names entries that
+        currently spell non-words; the model is shown the grid so far and asked to
+        fix those, which is the feedback loop that lets it iterate to a real fill."""
         by_id = {s.id: s for s in self.slots}
         lines = [
             "Solve this NYT Mini crossword. Every Across and Down answer must "
@@ -241,12 +242,18 @@ class MiniCrosswordSolver(BaseSolver):
             "",
         ]
         if patterns:  # revision round: show the current grid and the locked letters
-            lines.append("Grid so far ('.' = still empty). Some answers may be wrong; "
-                         "letters shown are fixed by crossings that already agree. Keep "
-                         "those letters and change any answer that conflicts:")
+            lines.append("Grid so far ('.' = still empty). Some answers are wrong; "
+                         "revise them so EVERY across and down entry is a real word or "
+                         "name and all crossings still agree:")
             lines.append("")
             lines.extend(self.grid_rows())
             lines.append("")
+            if invalid:
+                lines.append("These entries currently spell NON-words (a wrong crossing "
+                             "forced them) -- they are the priority to fix:")
+                for item in invalid:
+                    lines.append(f"  {item}")
+                lines.append("")
         for direction, label in (("A", "Across"), ("D", "Down")):
             entries = [s.id for s in self.slots if s.id.startswith(direction)]
             lines.append(f"{label}:")
@@ -290,10 +297,11 @@ class MiniCrosswordSolver(BaseSolver):
         candidates: Dict[str, List[str]] = {}
         self.grid = {}
         previous_signature = None
+        invalid: Optional[List[str]] = None
 
         for round_index in range(MAX_ROUNDS):
             patterns = None if round_index == 0 else {s.id: self._pattern(s) for s in self.slots}
-            fresh = self._ask_clues(patterns)
+            fresh = self._ask_clues(patterns, invalid)
             for sid, words in fresh.items():  # newest answers first so revisions win
                 candidates[sid] = words + [w for w in candidates.get(sid, []) if w not in words]
             self.grid = fill_grid_prefer_llm(self.slots, candidates, dictionary)
@@ -302,9 +310,28 @@ class MiniCrosswordSolver(BaseSolver):
             if signature == previous_signature:
                 break  # a round changed nothing -> converged
             previous_signature = signature
+            invalid = self._invalid_entries(candidates, dictionary)
 
         self.llm_answers = candidates
         self._score()
+
+    def _invalid_entries(self, candidates: Dict[str, List[str]],
+                         dictionary: Dict[int, List[str]]) -> List[str]:
+        """Slots whose current filled entry is a non-word: fully placed, yet not a
+        word the model proposed for it nor in the human wordlist. These are the
+        letter-collisions a wrong crossing produced (e.g. 'BWSL'), so they make the
+        best fix targets for the next revision round."""
+        out = []
+        for slot in self.slots:
+            entry = self._pattern(slot)
+            if "_" in entry:
+                continue
+            if entry in candidates.get(slot.id, []):
+                continue
+            if entry in set(dictionary.get(slot.length, [])):
+                continue
+            out.append(f"{slot.id} = {entry}")
+        return out
 
     def _entry(self, slot: Slot, source: Dict[int, str]) -> str:
         return "".join(source.get(cell, "_") for cell in slot.cells)

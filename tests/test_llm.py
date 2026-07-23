@@ -18,6 +18,11 @@ def test_extract_json_raises_on_garbage():
         llm._extract_json("no json here at all")
 
 
+def test_extract_json_strips_reasoning_think_block():
+    text = '<think>Let me reason... maybe {"wrong": 1}</think>\n{"group": ["A"]}'
+    assert llm._extract_json(text) == {"group": ["A"]}
+
+
 def test_available_reflects_env(monkeypatch):
     for var in ("GROQ_API_KEY", "GITHUB_TOKEN", "GITHUB_MODELS_TOKEN", "GEMINI_API_KEY"):
         monkeypatch.delenv(var, raising=False)

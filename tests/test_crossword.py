@@ -81,6 +81,17 @@ def test_prefer_llm_never_overwrites_correct_answer_for_a_bad_one():
     assert grid[0] == "H" and grid[1] == "I" and grid[2] == "A"  # correct cells kept
 
 
+def test_invalid_entries_flags_only_nonwords():
+    s = MiniCrosswordSolver.__new__(MiniCrosswordSolver)
+    s.slots = build_slots(2, CLUES)
+    s.grid = {0: "H", 1: "I", 2: "X", 3: "T"}  # A2="XT", D1="HX" are non-words; D2="IT" ok
+    candidates = {"A1": ["HI"], "A2": ["AT"], "D1": ["HA"], "D2": ["IT"]}
+    dictionary = {2: ["HI", "AT", "HA", "IT"]}
+    flagged = s._invalid_entries(candidates, dictionary)
+    assert "A2 = XT" in flagged and "D1 = HX" in flagged
+    assert not any(e.startswith("D2") for e in flagged)  # IT is a real candidate
+
+
 def _install(monkeypatch):
     monkeypatch.setattr(mod, "fetch_json",
                         lambda url: LISTING if "puzzles.json" in url else CONTENT)
