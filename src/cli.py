@@ -23,6 +23,7 @@ import time
 import traceback
 
 from menu_options import SudokuDifficultyOptions
+from solvers import llm
 from solvers.connections.ConnectionsSolver import ConnectionsSolver
 from solvers.crossword.MiniCrosswordSolver import MiniCrosswordSolver
 from solvers.letter_boxed.LetterBoxedSolver import LetterBoxedSolver
@@ -224,6 +225,14 @@ def run(argv: Optional[List[str]] = None) -> int:
         except Exception as e:  # noqa: BLE001 - keep going so other games still run
             traceback.print_exc()
             results.append((label, False, str(e)))
+        # a bulk backfill on a throttled quota just wastes time -- bail as soon as
+        # the LLM is rate-limited rather than grinding through every remaining date
+        if args.backfill and llm.was_rate_limited():
+            print(f"\n! Stopping backfill: the LLM provider is rate-limited "
+                  f"(free quota likely exhausted). {len(jobs) - i - 1} date(s) skipped. "
+                  f"Add a GEMINI_API_KEY secret for a much larger free quota, use a "
+                  f"smaller --limit, or try again later.")
+            break
         if args.delay and i < len(jobs) - 1:
             time.sleep(args.delay)
 

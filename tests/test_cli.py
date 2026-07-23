@@ -102,6 +102,24 @@ def test_crossword_backfill_rejected_today_only():
         cli.build_jobs(_args(game="crossword", backfill=True))
 
 
+def test_backfill_aborts_when_rate_limited(monkeypatch, capsys):
+    monkeypatch.setattr(cli, "today_ds", lambda: "2023-06-20")
+
+    class _RateLimitedSolver:
+        def __init__(self, *a, **k):
+            pass
+
+        def solve(self):
+            cli.llm._last_call_rate_limited = True  # simulate the LLM being throttled
+
+    monkeypatch.setattr(cli, "ConnectionsSolver", _RateLimitedSolver)
+    code = cli.run(["--game", "connections", "--backfill", "--limit", "5", "--force"])
+    out = capsys.readouterr().out
+    assert "Stopping backfill" in out
+    assert out.count("connections 2023-06") == 1  # only the first date ran, rest skipped
+    assert code == 0
+
+
 def test_backfill_skips_existing_unless_forced(monkeypatch, tmp_path):
     monkeypatch.setattr(cli, "today_ds", lambda: "2024-03-05")
     monkeypatch.setattr(cli.StrandsSolver, "OUTPUT_DIRECTORY_PATH", str(tmp_path))

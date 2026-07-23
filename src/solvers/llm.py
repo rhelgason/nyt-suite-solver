@@ -135,6 +135,10 @@ def _gemini(system: Optional[str], prompt: str, max_tokens: int) -> str:
 Provider = Callable[[Optional[str], str, int], str]
 PROVIDERS: List[Provider] = [_github_models, _gemini]
 
+# set by complete() when the last failure was a rate limit, so a bulk caller
+# (backfill) can stop early instead of grinding through a throttled quota
+_last_call_rate_limited = False
+
 
 def available() -> bool:
     """True if at least one provider has a credential configured."""
@@ -145,30 +149,48 @@ def available() -> bool:
     )
 
 
+def was_rate_limited() -> bool:
+    """True if the most recent complete() ultimately failed to a rate limit."""
+    return _last_call_rate_limited
+
+
 def complete(prompt: str, system: Optional[str] = None, max_tokens: int = 1024) -> str:
-    """Return a completion for ``prompt``, trying each provider in turn and
-    retrying transient failures with backoff. Raises ``LLMError`` if every
-    provider is unavailable or exhausts its retries."""
+    """Return a completion for ``prompt``. Each round tries every provider in
+    order, so a rate-limited primary falls straight through to the fallback rather
+    than waiting; only if ALL configured providers fail a round do we back off and
+    retry. Raises ``LLMError`` if nothing is configured or every retry is spent."""
+    global _last_call_rate_limited
     errors = []
-    for provider in PROVIDERS:
-        last_error = None
-        for attempt in range(MAX_ATTEMPTS):
+    saw_rate_limit = False
+    for attempt in range(MAX_ATTEMPTS):
+        any_present = False       # at least one provider had a credential this round
+        rate_limited = False
+        retry_after = None
+        for provider in PROVIDERS:
             try:
+                _last_call_rate_limited = False
                 return provider(system, prompt, max_tokens)
             except LLMError as e:
-                last_error = e
-                break  # credential missing -> do not retry this provider
+                errors.append(f"{provider.__name__}: {e}")  # missing credential -> skip
             except _RateLimited as e:
-                last_error = e
-                if attempt < MAX_ATTEMPTS - 1:
-                    wait = e.retry_after if e.retry_after is not None else BACKOFF_SECONDS * (attempt + 1)
-                    time.sleep(min(wait, RATE_LIMIT_MAX_SLEEP))
+                any_present = True
+                rate_limited = saw_rate_limit = True
+                if e.retry_after is not None:
+                    retry_after = e.retry_after
+                errors.append(f"{provider.__name__}: rate limited")
             except (requests.RequestException, KeyError, ValueError, IndexError) as e:
-                last_error = e
-                if attempt < MAX_ATTEMPTS - 1:
-                    time.sleep(BACKOFF_SECONDS * (attempt + 1))
-        errors.append(f"{provider.__name__}: {last_error}")
-    raise LLMError("all providers failed -> " + "; ".join(errors))
+                any_present = True
+                errors.append(f"{provider.__name__}: {e}")
+        if not any_present:
+            break  # nothing configured / all missing credentials -> do not spin
+        if attempt < MAX_ATTEMPTS - 1:
+            if rate_limited:
+                time.sleep(min(retry_after if retry_after is not None
+                               else BACKOFF_SECONDS * (attempt + 1), RATE_LIMIT_MAX_SLEEP))
+            else:
+                time.sleep(BACKOFF_SECONDS * (attempt + 1))
+    _last_call_rate_limited = saw_rate_limit
+    raise LLMError("all providers failed -> " + "; ".join(errors[-len(PROVIDERS):]))
 
 
 def _extract_json(text: str) -> Any:

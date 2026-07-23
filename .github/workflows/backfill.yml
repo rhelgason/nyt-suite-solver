@@ -1,9 +1,12 @@
 name: Backfill
 
-# Manually backfill historical puzzles from the Actions tab. Handy for the LLM
-# games (Connections) where running locally would need a personal token -- here
-# the run uses the free, built-in GitHub Models token and the logs are visible in
-# the run output. Solutions are committed back like the daily job.
+# Manually backfill historical puzzles from the Actions tab. Solutions are
+# committed back like the daily job and the logs are visible in the run output.
+#
+# NOTE: GitHub Models' free tier has a small request budget, so a bulk Connections
+# backfill will hit rate limits fast (the run aborts early rather than grinding).
+# For a real sample, add a free GEMINI_API_KEY repo secret -- its much larger free
+# quota is used as the fallback provider and makes a 30+ day backfill viable.
 
 on:
   workflow_dispatch:

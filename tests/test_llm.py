@@ -97,6 +97,34 @@ def test_github_call_uses_standard_params(monkeypatch):
     assert captured["max_tokens"] == 500 and captured["temperature"] == 0
 
 
+def test_rate_limited_primary_falls_through_without_waiting(monkeypatch):
+    slept = []
+    monkeypatch.setattr(llm.time, "sleep", lambda s: slept.append(s))
+
+    def limited(system, prompt, max_tokens):
+        raise llm._RateLimited(30.0)
+
+    def ok(system, prompt, max_tokens):
+        return "second"
+
+    monkeypatch.setattr(llm, "PROVIDERS", [limited, ok])
+    assert llm.complete("hi") == "second"
+    assert slept == []                 # used the fallback immediately, did not wait
+    assert not llm.was_rate_limited()  # a successful call is not "rate limited"
+
+
+def test_was_rate_limited_set_after_exhaustion(monkeypatch):
+    monkeypatch.setattr(llm.time, "sleep", lambda s: None)
+
+    def limited(system, prompt, max_tokens):
+        raise llm._RateLimited(1.0)
+
+    monkeypatch.setattr(llm, "PROVIDERS", [limited])
+    with pytest.raises(llm.LLMError):
+        llm.complete("hi")
+    assert llm.was_rate_limited()
+
+
 def test_github_call_raises_rate_limited_on_429(monkeypatch):
     def fake_post(url, headers=None, json=None, timeout=None):
         return _FakeResp("", status_code=429, headers={"Retry-After": "12"})
