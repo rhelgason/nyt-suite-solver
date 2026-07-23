@@ -58,64 +58,8 @@
         }
     ],
     "solved": false,
-    "groups_found": 1,
-    "mistakes": 4,
-    "guesses": [
-        {
-            "guess": [
-                "HIVES",
-                "HOLE",
-                "STROKES",
-                "WHITE STRIPES"
-            ],
-            "result": "wrong",
-            "connection": "Rock bands",
-            "one_away": false
-        },
-        {
-            "guess": [
-                "HIVES",
-                "ITCHING",
-                "RASH",
-                "REDNESS"
-            ],
-            "result": "correct",
-            "group": "SYMPTOMS OF AN ALLERGIC REACTION",
-            "connection": "Symptoms of an allergic reaction"
-        },
-        {
-            "guess": [
-                "HOLE",
-                "STROKES",
-                "VINES",
-                "WHITE STRIPES"
-            ],
-            "result": "wrong",
-            "connection": "Rock bands",
-            "one_away": false
-        },
-        {
-            "guess": [
-                "HOLE",
-                "STROKES",
-                "VINES",
-                "WHITE STRIPES"
-            ],
-            "result": "wrong",
-            "connection": "Rock bands",
-            "one_away": false
-        },
-        {
-            "guess": [
-                "HOLE",
-                "STROKES",
-                "VINES",
-                "WHITE STRIPES"
-            ],
-            "result": "wrong",
-            "connection": "Rock bands from the 2000s",
-            "one_away": false
-        }
-    ],
-    "solve_time": "0:00:12.474"
+    "groups_found": 0,
+    "mistakes": 0,
+    "guesses": [],
+    "solve_time": "0:01:58.750"
 }
