@@ -57,9 +57,54 @@
             ]
         }
     ],
-    "solved": false,
-    "groups_found": 0,
+    "solved": true,
+    "groups_found": 4,
     "mistakes": 0,
-    "guesses": [],
-    "solve_time": "0:03:15.973"
+    "guesses": [
+        {
+            "guess": [
+                "BALLAD",
+                "EPIC",
+                "ODE",
+                "VILLANELLE"
+            ],
+            "result": "correct",
+            "group": "KINDS OF POEMS",
+            "connection": "poetic forms"
+        },
+        {
+            "guess": [
+                "CONTINUE",
+                "LAST",
+                "LINGER",
+                "STAY"
+            ],
+            "result": "correct",
+            "group": "PERSIST",
+            "connection": "words meaning to remain or persist"
+        },
+        {
+            "guess": [
+                "HURRICANE",
+                "PAINKILLER",
+                "SCORPION",
+                "ZOMBIE"
+            ],
+            "result": "correct",
+            "group": "TROPICAL DRINKS",
+            "connection": "names of cocktails"
+        },
+        {
+            "guess": [
+                "DREAMS",
+                "NOTHINGS",
+                "PEA",
+                "SPOT"
+            ],
+            "result": "correct",
+            "group": "SWEET ___",
+            "connection": ""
+        }
+    ],
+    "solve_time": "0:00:00.472"
 }

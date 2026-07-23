@@ -57,9 +57,54 @@
             ]
         }
     ],
-    "solved": false,
-    "groups_found": 0,
+    "solved": true,
+    "groups_found": 4,
     "mistakes": 0,
-    "guesses": [],
-    "solve_time": "0:03:15.798"
+    "guesses": [
+        {
+            "guess": [
+                "MISCREANT",
+                "ROGUE",
+                "RUFFIAN",
+                "SCOUNDREL"
+            ],
+            "result": "correct",
+            "group": "OLD TIMEY TROUBLEMAKERS",
+            "connection": "all refer to a dishonest or unscrupulous person"
+        },
+        {
+            "guess": [
+                "CRUSH",
+                "GUZZLE",
+                "INHALE",
+                "SNARF"
+            ],
+            "result": "correct",
+            "group": "CONSUME WITH GUSTO",
+            "connection": "all can mean to swallow or drink quickly"
+        },
+        {
+            "guess": [
+                "CABINET",
+                "CONE",
+                "MAGNET",
+                "WOOFER"
+            ],
+            "result": "correct",
+            "group": "PARTS OF A SPEAKER",
+            "connection": "all related to speaker components"
+        },
+        {
+            "guess": [
+                "EMBARK",
+                "GROOT",
+                "NUDIBRANCH",
+                "STRUNK"
+            ],
+            "result": "correct",
+            "group": "ENDING IN PARTS OF A TREE",
+            "connection": ""
+        }
+    ],
+    "solve_time": "0:00:01.112"
 }

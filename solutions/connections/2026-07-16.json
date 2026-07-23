@@ -59,19 +59,52 @@
     ],
     "solved": false,
     "groups_found": 0,
-    "mistakes": 1,
+    "mistakes": 4,
     "guesses": [
         {
             "guess": [
                 "INK",
+                "JET",
                 "LASER",
-                "NEEDLE",
                 "TONER"
             ],
             "result": "wrong",
-            "connection": "Items related to printers or printing",
+            "connection": "Printer types",
+            "one_away": false
+        },
+        {
+            "guess": [
+                "BULLSEYE",
+                "NEEDLE",
+                "POINT BREAK",
+                "SPOT REMOVER"
+            ],
+            "result": "wrong",
+            "connection": "Terms related to targeting or precision.",
+            "one_away": false
+        },
+        {
+            "guess": [
+                "CHARCOAL",
+                "CLAY MASK",
+                "EYE CREAM",
+                "PEEL"
+            ],
+            "result": "wrong",
+            "connection": "Face mask or skincare ingredients",
+            "one_away": true
+        },
+        {
+            "guess": [
+                "CHARCOAL",
+                "CLAY MASK",
+                "DOT MATRIX",
+                "EYE CREAM"
+            ],
+            "result": "wrong",
+            "connection": "Types of beauty or skincare products (with DOT MATRIX being a play on the concept of beauty in design).",
             "one_away": false
         }
     ],
-    "solve_time": "0:00:18.564"
+    "solve_time": "0:00:10.179"
 }

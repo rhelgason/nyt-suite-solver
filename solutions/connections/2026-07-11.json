@@ -58,53 +58,64 @@
         }
     ],
     "solved": false,
-    "groups_found": 0,
+    "groups_found": 1,
     "mistakes": 4,
     "guesses": [
         {
             "guess": [
-                "SLINKY",
-                "STILTS",
-                "TRAPEZE",
-                "UNICYCLE"
+                "BO PEEP",
+                "JESSIE",
+                "TWIDDLE",
+                "WOODY"
             ],
             "result": "wrong",
-            "connection": "Things associated with a circus or acrobatics",
+            "connection": "Toy Story characters",
             "one_away": true
         },
         {
             "guess": [
-                "BO PEEP",
-                "SLINKY",
-                "STILTS",
-                "TRAPEZE"
-            ],
-            "result": "wrong",
-            "connection": "Things associated with a circus or performance",
-            "one_away": false
-        },
-        {
-            "guess": [
-                "SLINKY",
+                "CANNON",
                 "STILTS",
                 "TRAPEZE",
                 "UNICYCLE"
             ],
-            "result": "wrong",
-            "connection": "Circus or performance equipment",
-            "one_away": true
+            "result": "correct",
+            "group": "CIRCUS EQUIPMENT",
+            "connection": "Circus equipment"
         },
         {
             "guess": [
-                "BO PEEP",
-                "SLINKY",
-                "STILTS",
-                "TRAPEZE"
+                "BOCCE",
+                "FLAT",
+                "GLASSY",
+                "SLINKY"
             ],
             "result": "wrong",
-            "connection": "Toys from the Toy Story franchise",
+            "connection": "Types of surfaces or toys related to surfaces",
             "one_away": false
+        },
+        {
+            "guess": [
+                "AARDVARK",
+                "CALM",
+                "EBBING",
+                "STILL"
+            ],
+            "result": "wrong",
+            "connection": "Words that can describe a state of being or condition.",
+            "one_away": false
+        },
+        {
+            "guess": [
+                "AARDVARK",
+                "CALM",
+                "GLASSY",
+                "STILL"
+            ],
+            "result": "wrong",
+            "connection": "words that can also mean 'not moving' or 'smooth'",
+            "one_away": true
         }
     ],
-    "solve_time": "0:00:25.489"
+    "solve_time": "0:00:06.197"
 }

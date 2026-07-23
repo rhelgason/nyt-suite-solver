@@ -58,8 +58,64 @@
         }
     ],
     "solved": false,
-    "groups_found": 0,
-    "mistakes": 0,
-    "guesses": [],
-    "solve_time": "0:01:30.981"
+    "groups_found": 1,
+    "mistakes": 4,
+    "guesses": [
+        {
+            "guess": [
+                "HIVES",
+                "ITCHING",
+                "RASH",
+                "REDNESS"
+            ],
+            "result": "correct",
+            "group": "SYMPTOMS OF AN ALLERGIC REACTION",
+            "connection": "symptoms of an allergic reaction"
+        },
+        {
+            "guess": [
+                "PAR",
+                "PINS",
+                "SCORE",
+                "STROKES"
+            ],
+            "result": "wrong",
+            "connection": "terms related to the game of golf",
+            "one_away": true
+        },
+        {
+            "guess": [
+                "HOLE",
+                "TWEETS",
+                "VINES",
+                "WHITE STRIPES"
+            ],
+            "result": "wrong",
+            "connection": "types of music or musical references",
+            "one_away": false
+        },
+        {
+            "guess": [
+                "HOOVES",
+                "MANE",
+                "SNAPS",
+                "TAIL"
+            ],
+            "result": "wrong",
+            "connection": "Terms associated with horses.",
+            "one_away": true
+        },
+        {
+            "guess": [
+                "HOOVES",
+                "MANE",
+                "PINS",
+                "TAIL"
+            ],
+            "result": "wrong",
+            "connection": "parts of a horse or related to a horse",
+            "one_away": true
+        }
+    ],
+    "solve_time": "0:00:05.169"
 }

@@ -59,7 +59,52 @@
     ],
     "solved": false,
     "groups_found": 0,
-    "mistakes": 0,
-    "guesses": [],
-    "solve_time": "0:03:15.911"
+    "mistakes": 4,
+    "guesses": [
+        {
+            "guess": [
+                "COURT JESTER",
+                "LOOKING GLASS",
+                "MIME",
+                "TOM-TOM"
+            ],
+            "result": "wrong",
+            "connection": "References to Alice in Wonderland",
+            "one_away": false
+        },
+        {
+            "guess": [
+                "COPYCAT",
+                "COURT JESTER",
+                "MIME",
+                "MOCKINGBIRD"
+            ],
+            "result": "wrong",
+            "connection": "All are terms related to mimicry or imitation",
+            "one_away": true
+        },
+        {
+            "guess": [
+                "COPYCAT",
+                "COURT JESTER",
+                "MIME",
+                "TOM-TOM"
+            ],
+            "result": "wrong",
+            "connection": "All can be types of performers or entertainers",
+            "one_away": false
+        },
+        {
+            "guess": [
+                "T-1000",
+                "TALKIE",
+                "TOM-TOM",
+                "TRACK RECORD"
+            ],
+            "result": "wrong",
+            "connection": "Words starting with 'T' and related to sound or recording",
+            "one_away": false
+        }
+    ],
+    "solve_time": "0:00:03.389"
 }

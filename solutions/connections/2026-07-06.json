@@ -59,7 +59,52 @@
     ],
     "solved": false,
     "groups_found": 0,
-    "mistakes": 0,
-    "guesses": [],
-    "solve_time": "0:03:15.705"
+    "mistakes": 4,
+    "guesses": [
+        {
+            "guess": [
+                "BOMBSHELL",
+                "BUMBLEBEE",
+                "MATCHA",
+                "TINDERBOX"
+            ],
+            "result": "wrong",
+            "connection": "Words associated with 'buzz' or 'explosion' in different contexts.",
+            "one_away": true
+        },
+        {
+            "guess": [
+                "BUMBLEBEE",
+                "MATCHA",
+                "THUNDERBOLT",
+                "TINDERBOX"
+            ],
+            "result": "wrong",
+            "connection": "Words associated with 'buzz' or excitement.",
+            "one_away": true
+        },
+        {
+            "guess": [
+                "BUMBLEBEE",
+                "MATCHA",
+                "SHOCKER",
+                "THUNDERBOLT"
+            ],
+            "result": "wrong",
+            "connection": "All have a type of 'green tea' associated with them, or a similar wordplay: Matcha is a type of green tea, Thunderbolt is a variety of green tea, Bumblebee is not directly related but could be confused with 'Honeybee' which has a 'Green Tea' product, and Shocker could be a stretch with 'Green Tea Shocker' or similar product. However, a more plausible explanation is that they are all names or related to types of 'green' things or have 'green' in their names, with the exception of Shocker which could fit with the others due to wordplay or a product name. A more fitting explanation is that three of these words were in the previous almost-correct guess, and the fourth was swapped in. Given the previous guess was one away, and considering wordplay, the connection might be related to the previous guess's theme, but with a different type of connection, such as all being related to 'electric' or 'shocking' things: Thunderbolt, Shocker, and possibly the others through wordplay or product names.",
+            "one_away": false
+        },
+        {
+            "guess": [
+                "BUMBLEBEE",
+                "GRIND RAIL",
+                "IRON BIRD SEED",
+                "ROCKET SKATES"
+            ],
+            "result": "wrong",
+            "connection": "Types of skates or equipment and a bird seed, possibly related to 'extreme' or action sports, with 'bumblebee' possibly referencing a type of wheel or brand",
+            "one_away": false
+        }
+    ],
+    "solve_time": "0:00:12.169"
 }

@@ -59,30 +59,52 @@
     ],
     "solved": false,
     "groups_found": 0,
-    "mistakes": 2,
+    "mistakes": 4,
     "guesses": [
         {
             "guess": [
                 "BUCKET",
-                "DRAWER",
-                "PUMP",
-                "UMBRELLA"
+                "KISSER",
+                "PUSS",
+                "SMACKDOWN"
             ],
             "result": "wrong",
-            "connection": "Types of objects that can hold or contain things",
+            "connection": "Terms associated with 'kiss' or 'kissing' (KISSER, SMACKDOWN as in a 'smack', BUCKET as in 'bucket list' for romantic experiences, PUSS as in 'puss in boots' often associated with affection).",
+            "one_away": false
+        },
+        {
+            "guess": [
+                "BUCKET",
+                "DRAWER",
+                "MUG",
+                "PUMP"
+            ],
+            "result": "wrong",
+            "connection": "types of holder or container",
             "one_away": true
         },
         {
             "guess": [
                 "BUCKET",
                 "DRAWER",
-                "FIGARO",
-                "UMBRELLA"
+                "GRILL",
+                "MUG"
             ],
             "result": "wrong",
-            "connection": "Types of handles (bucket handle, drawer handle, umbrella handle, Figaro handle in jewelry)",
+            "connection": "Items commonly found in a kitchen or used for cooking.",
             "one_away": true
+        },
+        {
+            "guess": [
+                "BUCKET",
+                "DRAWER",
+                "GRILL",
+                "PUMP"
+            ],
+            "result": "wrong",
+            "connection": "types of shower or things associated with water supply",
+            "one_away": false
         }
     ],
-    "solve_time": "0:00:13.921"
+    "solve_time": "0:00:12.492"
 }

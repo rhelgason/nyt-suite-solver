@@ -63,48 +63,48 @@
     "guesses": [
         {
             "guess": [
-                "BOOMER",
-                "POPSICLE",
+                "ALPHA",
+                "PRIMARY",
                 "SILENT",
                 "STRESSED"
             ],
             "result": "wrong",
-            "connection": "Words that are palindromes or meaningful when reversed (e.g., STRESSED reversed is DESSERTS, SILENT reversed is LISTEN)",
+            "connection": "All can be types of 'beta' counterparts in various contexts, such as alpha/beta testing, primary/secondary education, stressed/unstressed syllables, and silent/beta reading",
             "one_away": false
         },
         {
             "guess": [
-                "BY",
-                "SILENT",
-                "STRESSED",
-                "TIMES"
+                "ALPHA",
+                "BANGKOK",
+                "BOOMER",
+                "X"
             ],
             "result": "wrong",
-            "connection": "Words that can form palindromes or reverse into other meaningful words (e.g., STRESSED reversed is DESSERTS, SILENT reversed is LISTEN)",
+            "connection": "These are all first letters or names of the Greek alphabet in order",
             "one_away": false
         },
         {
             "guess": [
-                "SILENT",
-                "STRESSED",
-                "TIMES",
+                "LEAD",
+                "POWDER",
+                "SHORT",
+                "SOFT"
+            ],
+            "result": "wrong",
+            "connection": "types of pencil",
+            "one_away": false
+        },
+        {
+            "guess": [
+                "BANGKOK",
+                "BOOMER",
+                "X",
                 "●"
             ],
             "result": "wrong",
-            "connection": "Words that are palindromes or reverse to form other words (e.g., STRESSED reversed is DESSERT, SILENT reversed is LISTEN)",
-            "one_away": false
-        },
-        {
-            "guess": [
-                "SILENT",
-                "STRESSED",
-                "TIMES",
-                "●"
-            ],
-            "result": "wrong",
-            "connection": "Words that are palindromes or reverse to form other words (e.g., STRESSED reversed is DESSERT, SILENT reversed is LISTEN, TIMES reversed is SEMIT, ● is a visual palindrome)",
+            "connection": "These words can be related to the concept of a 'generation' with Boomer referring to Baby Boomers, X to Generation X, and ● possibly symbolizing a blank or unknown for a newer generation, while Bangkok could be a red herring or possibly related to a specific cultural context",
             "one_away": false
         }
     ],
-    "solve_time": "0:00:15.724"
+    "solve_time": "0:00:06.953"
 }

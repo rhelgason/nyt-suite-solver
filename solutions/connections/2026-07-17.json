@@ -57,9 +57,87 @@
             ]
         }
     ],
-    "solved": false,
-    "groups_found": 0,
-    "mistakes": 0,
-    "guesses": [],
-    "solve_time": "0:00:08.228"
+    "solved": true,
+    "groups_found": 4,
+    "mistakes": 3,
+    "guesses": [
+        {
+            "guess": [
+                "EPILOGUE",
+                "FAREWELL",
+                "LAST DANCE",
+                "SWAN SONG"
+            ],
+            "result": "correct",
+            "group": "GRAND FINALE",
+            "connection": "terms for a final performance or conclusion"
+        },
+        {
+            "guess": [
+                "CRANE GAME",
+                "PINBALL",
+                "ROBIN HOOD",
+                "TOKENS"
+            ],
+            "result": "wrong",
+            "connection": "associated with arcade or amusement games",
+            "one_away": true
+        },
+        {
+            "guess": [
+                "CRANE GAME",
+                "PINBALL",
+                "ROBIN HOOD",
+                "TICKETS"
+            ],
+            "result": "wrong",
+            "connection": "Games that involve some form of chance or skill.",
+            "one_away": true
+        },
+        {
+            "guess": [
+                "PLOT SPOILER",
+                "SATIRES",
+                "SUITS",
+                "TICKETS"
+            ],
+            "result": "wrong",
+            "connection": "These are all terms related to forms of entertainment or media.",
+            "one_away": false
+        },
+        {
+            "guess": [
+                "CARDINAL DIRECTIONS",
+                "CLASSICAL ELEMENTS",
+                "SEASONS",
+                "SUITS"
+            ],
+            "result": "correct",
+            "group": "FOUR GROUPS OF FOUR",
+            "connection": "sets of four concepts in various domains"
+        },
+        {
+            "guess": [
+                "CRANE GAME",
+                "PINBALL",
+                "TICKETS",
+                "TOKENS"
+            ],
+            "result": "correct",
+            "group": "SEEN IN AN ARCADE",
+            "connection": "amusement park or arcade related items"
+        },
+        {
+            "guess": [
+                "PLOT SPOILER",
+                "ROBIN HOOD",
+                "SATIRES",
+                "TREE TRUNK"
+            ],
+            "result": "correct",
+            "group": "ENDING IN PARTS OF A CAR",
+            "connection": ""
+        }
+    ],
+    "solve_time": "0:00:09.012"
 }

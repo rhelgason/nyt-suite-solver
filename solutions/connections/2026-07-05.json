@@ -57,9 +57,87 @@
             ]
         }
     ],
-    "solved": false,
-    "groups_found": 0,
-    "mistakes": 0,
-    "guesses": [],
-    "solve_time": "0:03:15.874"
+    "solved": true,
+    "groups_found": 4,
+    "mistakes": 3,
+    "guesses": [
+        {
+            "guess": [
+                "CENTURION",
+                "GOLD",
+                "PLATINUM",
+                "TUNGSTEN"
+            ],
+            "result": "wrong",
+            "connection": "Precious or high-value metals, with Centurion possibly referencing a high-value coin",
+            "one_away": true
+        },
+        {
+            "guess": [
+                "HONEY",
+                "NUTS",
+                "OATS",
+                "SEEDS"
+            ],
+            "result": "correct",
+            "group": "GRANOLA INGREDIENTS",
+            "connection": "Types of food or ingredients"
+        },
+        {
+            "guess": [
+                "CARD",
+                "CASH",
+                "CHECK",
+                "WIN"
+            ],
+            "result": "wrong",
+            "connection": "Related to payment or financial transactions",
+            "one_away": true
+        },
+        {
+            "guess": [
+                "CARD",
+                "CASH",
+                "CHECK",
+                "WIRE"
+            ],
+            "result": "correct",
+            "group": "PAYMENT METHODS",
+            "connection": "Types of financial transactions or instruments"
+        },
+        {
+            "guess": [
+                "GOLD",
+                "GREEN",
+                "PLATINUM",
+                "TUNGSTEN"
+            ],
+            "result": "wrong",
+            "connection": "Colors associated with precious metals or elements",
+            "one_away": true
+        },
+        {
+            "guess": [
+                "CENTURION",
+                "GOLD",
+                "GREEN",
+                "PLATINUM"
+            ],
+            "result": "correct",
+            "group": "AMEX CARD TYPES",
+            "connection": "associated with a high military rank or precious metals, with Gold, Green, and Platinum being related to the word 'centurion' through the phrase 'centurion rank' and precious metals"
+        },
+        {
+            "guess": [
+                "TUNGSTEN",
+                "WEST",
+                "WIN",
+                "WITH"
+            ],
+            "result": "correct",
+            "group": "WHAT \"W\" MIGHT STAND FOR",
+            "connection": ""
+        }
+    ],
+    "solve_time": "0:00:06.218"
 }

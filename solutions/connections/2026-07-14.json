@@ -57,9 +57,76 @@
             ]
         }
     ],
-    "solved": false,
-    "groups_found": 0,
-    "mistakes": 0,
-    "guesses": [],
-    "solve_time": "0:00:07.968"
+    "solved": true,
+    "groups_found": 4,
+    "mistakes": 2,
+    "guesses": [
+        {
+            "guess": [
+                "COPY",
+                "CUT",
+                "DELETE",
+                "PASTE"
+            ],
+            "result": "correct",
+            "group": "EDIT MENU OPTIONS",
+            "connection": "common computer editing commands"
+        },
+        {
+            "guess": [
+                "DEAL",
+                "RECYCLING",
+                "SHUFFLE",
+                "U-TURN"
+            ],
+            "result": "wrong",
+            "connection": "no... 'RECYCLING' doesn't fit... actually these are all types of 'card actions' or more specifically, these are all 'card deck manipulations'",
+            "one_away": true
+        },
+        {
+            "guess": [
+                "AGREEMENT",
+                "BARGAIN",
+                "DEAL",
+                "UNDERSTANDING"
+            ],
+            "result": "correct",
+            "group": "CONTRACT",
+            "connection": "all relate to negotiations or mutual consents"
+        },
+        {
+            "guess": [
+                "GROCERY",
+                "LAUNDRY",
+                "PICNIC",
+                "RECYCLING"
+            ],
+            "result": "wrong",
+            "connection": "all can be related to household chores or activities, but more specifically, recycling and laundry are often labeled 'this side up', grocery items are often handled with care, and picnic items might be",
+            "one_away": true
+        },
+        {
+            "guess": [
+                "EASTER",
+                "GROCERY",
+                "LAUNDRY",
+                "PICNIC"
+            ],
+            "result": "correct",
+            "group": "KINDS OF BASKETS",
+            "connection": "common types of baskets"
+        },
+        {
+            "guess": [
+                "RECYCLING",
+                "SHUFFLE",
+                "THIS SIDE UP",
+                "U-TURN"
+            ],
+            "result": "correct",
+            "group": "SYMBOLIZED WITH ARROWS",
+            "connection": ""
+        }
+    ],
+    "solve_time": "0:00:03.346"
 }

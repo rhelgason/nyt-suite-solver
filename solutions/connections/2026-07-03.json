@@ -58,8 +58,75 @@
         }
     ],
     "solved": false,
-    "groups_found": 0,
-    "mistakes": 0,
-    "guesses": [],
-    "solve_time": "0:03:15.693"
+    "groups_found": 2,
+    "mistakes": 4,
+    "guesses": [
+        {
+            "guess": [
+                "BLISS",
+                "FELICITY",
+                "HAPPINESS",
+                "WARM FUZZIES"
+            ],
+            "result": "correct",
+            "group": "POSITIVE FEELINGS",
+            "connection": "Words associated with positive emotions or states of happiness."
+        },
+        {
+            "guess": [
+                "COLD SHOULDER",
+                "DIRTY LOOK",
+                "GOSSIP",
+                "HOT DRINK"
+            ],
+            "result": "wrong",
+            "connection": "Phrases that describe social interactions or behaviors.",
+            "one_away": false
+        },
+        {
+            "guess": [
+                "COOL BEANS",
+                "FAR OUT",
+                "HARD TIME",
+                "RUNAROUND"
+            ],
+            "result": "wrong",
+            "connection": "Phrases that can describe a situation or state of being, often with a casual or slang connotation.",
+            "one_away": false
+        },
+        {
+            "guess": [
+                "GOLF ACCESSORY",
+                "GROOVY",
+                "RIGHT ON",
+                "SHIRT"
+            ],
+            "result": "wrong",
+            "connection": "These are all terms associated with style or fashion.",
+            "one_away": false
+        },
+        {
+            "guess": [
+                "COOL BEANS",
+                "FAR OUT",
+                "GROOVY",
+                "RIGHT ON"
+            ],
+            "result": "correct",
+            "group": "RETRO EXPRESSIONS OF APPROVAL",
+            "connection": "1960s slang phrases"
+        },
+        {
+            "guess": [
+                "COLD SHOULDER",
+                "DIRTY LOOK",
+                "HOT DRINK",
+                "RUNAROUND"
+            ],
+            "result": "wrong",
+            "connection": "idiomatic phrases with distinct meanings",
+            "one_away": true
+        }
+    ],
+    "solve_time": "0:00:13.819"
 }

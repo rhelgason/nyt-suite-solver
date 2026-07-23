@@ -63,48 +63,48 @@
     "guesses": [
         {
             "guess": [
-                "MAD",
-                "NERD",
                 "PARTY",
-                "SPREE"
+                "SLEEP",
+                "SPREE",
+                "STUDY"
             ],
             "result": "wrong",
-            "connection": "Can be preceded by 'House' (House Party, House Nerd, House Mad, House Spree)",
-            "one_away": false
-        },
-        {
-            "guess": [
-                "DOT",
-                "PIP",
-                "PIT",
-                "STONE"
-            ],
-            "result": "wrong",
-            "connection": "Small marks or points",
+            "connection": "types of party (study party, shopping spree, sleep party, party party)",
             "one_away": true
         },
         {
             "guess": [
-                "DOT",
-                "PIP",
+                "PIT",
+                "SAC",
                 "SEED",
                 "STONE"
             ],
             "result": "wrong",
-            "connection": "Small or round objects",
+            "connection": "words related to fruit or plant parts",
             "one_away": true
         },
         {
             "guess": [
                 "DOT",
-                "PIP",
+                "PIT",
                 "SAC",
                 "SEED"
             ],
             "result": "wrong",
-            "connection": "Small or round objects",
+            "connection": "Words that can precede 'fall' (PITfall, SACfall, SEEDfall, DOTfall)",
+            "one_away": false
+        },
+        {
+            "guess": [
+                "MAD",
+                "NERD",
+                "PHO",
+                "STUDY"
+            ],
+            "result": "wrong",
+            "connection": "can be related to a term or concept in Vietnamese culture or language, with 'nerd' sounding like the Vietnamese New Year, 'study' as in studying, 'mad' as in 'ma' in Vietnamese for ghost, and 'pho' as in the popular Vietnamese noodle soup",
             "one_away": false
         }
     ],
-    "solve_time": "0:00:12.075"
+    "solve_time": "0:00:09.778"
 }

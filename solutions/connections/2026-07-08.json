@@ -59,7 +59,52 @@
     ],
     "solved": false,
     "groups_found": 0,
-    "mistakes": 0,
-    "guesses": [],
-    "solve_time": "0:03:15.725"
+    "mistakes": 4,
+    "guesses": [
+        {
+            "guess": [
+                "PICK",
+                "PLOT",
+                "THEME",
+                "THREAD"
+            ],
+            "result": "wrong",
+            "connection": "terms related to storytelling or narrative structure, possibly referencing plot threads, theme, or picking a story",
+            "one_away": true
+        },
+        {
+            "guess": [
+                "PLANE",
+                "PLUCK",
+                "SHAVE",
+                "STRUM"
+            ],
+            "result": "wrong",
+            "connection": "words that can be related to 'plane' as in a flat surface or a tool, with 'pluck' and 'strum' referring to playing a stringed instrument and 'shave' referring to a plane in woodworking",
+            "one_away": false
+        },
+        {
+            "guess": [
+                "PICK",
+                "PLUCK",
+                "SHAVE",
+                "STRUM"
+            ],
+            "result": "wrong",
+            "connection": "words that can be followed by 'at' or have a stringed instrument connotation, but primarily 'to pick/pluck/strum at strings' and 'shave' has a 'pick' at in some contexts but more accurately 'to pick/pluck/strum' are related to strings and 'shave' can be related to a stringed instrument, the 'shave and a haircut' melody, however the most fitting connection is that all can be related to 'strings', whether it be strings on an instrument or a 'shave and a haircut' melody",
+            "one_away": true
+        },
+        {
+            "guess": [
+                "CARDS",
+                "DRIFT",
+                "TAP",
+                "WAX"
+            ],
+            "result": "wrong",
+            "connection": "Words that can precede 'board' (wax board, drift board, cards board, tap board)",
+            "one_away": false
+        }
+    ],
+    "solve_time": "0:00:08.981"
 }

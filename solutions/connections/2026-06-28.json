@@ -59,7 +59,52 @@
     ],
     "solved": false,
     "groups_found": 0,
-    "mistakes": 0,
-    "guesses": [],
-    "solve_time": "0:03:16.301"
+    "mistakes": 4,
+    "guesses": [
+        {
+            "guess": [
+                "CHOICE",
+                "PICK",
+                "SELECT",
+                "START"
+            ],
+            "result": "wrong",
+            "connection": "Words related to making a decision or choosing.",
+            "one_away": false
+        },
+        {
+            "guess": [
+                "CAPO",
+                "FINE",
+                "SLIDE",
+                "STRAP"
+            ],
+            "result": "wrong",
+            "connection": "guitar-related terms",
+            "one_away": true
+        },
+        {
+            "guess": [
+                "CAPO",
+                "PRIME",
+                "SLIDE",
+                "STRAP"
+            ],
+            "result": "wrong",
+            "connection": "guitar-related terms (capo, slide, and strap are guitar accessories; prime can refer to a prime guitar or a prime note in music theory, but more likely it refers to the fact that a guitar string is also called a 'prime')",
+            "one_away": true
+        },
+        {
+            "guess": [
+                "CAPO",
+                "PRIME",
+                "SLIDE",
+                "SURFER"
+            ],
+            "result": "wrong",
+            "connection": "All are terms related to guitar playing or music, with capo and slide being guitar techniques, prime possibly referring to a prime example of a guitar part, and surfer possibly referring to surf rock music",
+            "one_away": false
+        }
+    ],
+    "solve_time": "0:00:06.809"
 }

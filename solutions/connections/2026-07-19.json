@@ -58,7 +58,7 @@
         }
     ],
     "solved": false,
-    "groups_found": 0,
+    "groups_found": 1,
     "mistakes": 4,
     "guesses": [
         {
@@ -69,42 +69,53 @@
                 "STRAIGHT"
             ],
             "result": "wrong",
-            "connection": "Poker hand types",
+            "connection": "Types of poker hands",
             "one_away": false
         },
         {
             "guess": [
-                "FLUSH",
-                "PAIR",
-                "POKER",
-                "STRAIGHT"
+                "BREAKER",
+                "FUSE",
+                "RELAY",
+                "SWITCH"
             ],
-            "result": "wrong",
-            "connection": "Poker hand rankings",
-            "one_away": false
+            "result": "correct",
+            "group": "CIRCUIT COMPONENTS",
+            "connection": "electrical components"
         },
         {
             "guess": [
-                "FLUSH",
-                "PAIR",
-                "POKER",
-                "STRAIGHT"
+                "DRAIN",
+                "LONG",
+                "REFILL",
+                "SWIRL"
             ],
             "result": "wrong",
-            "connection": "Poker hand rankings",
-            "one_away": false
+            "connection": "words related to liquid or flow, potentially in a toilet or similar context",
+            "one_away": true
         },
         {
             "guess": [
-                "FLUSH",
-                "PAIR",
-                "POKER",
-                "STRAIGHT"
+                "DRAIN",
+                "REFILL",
+                "SWIRL",
+                "SYNC"
             ],
             "result": "wrong",
-            "connection": "Poker hands",
-            "one_away": false
+            "connection": "Words related to water flow or synchronization, with 'sync' replacing 'long' to complete the group",
+            "one_away": true
+        },
+        {
+            "guess": [
+                "CONNECT",
+                "DRAIN",
+                "REFILL",
+                "SWIRL"
+            ],
+            "result": "wrong",
+            "connection": "related to water flow or plumbing",
+            "one_away": true
         }
     ],
-    "solve_time": "0:00:15.983"
+    "solve_time": "0:00:06.907"
 }

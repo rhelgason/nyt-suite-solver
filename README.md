@@ -21,7 +21,7 @@ _Auto-generated from `solutions/` · **3969** puzzles solved across 7 games (thr
 <tr><td>Wordle (easy)</td><td>1861</td><td>3.8 guesses</td><td>7.10 s</td></tr>
 <tr><td>Wordle (hard)</td><td>1861</td><td>3.9 guesses</td><td>492 ms</td></tr>
 <tr><td>Strands</td><td>190</td><td>76% words</td><td>65.36 s</td></tr>
-<tr><td>Connections</td><td>32</td><td>0%</td><td>195.99 s</td></tr>
+<tr><td>Connections</td><td>32</td><td>22%</td><td>11.54 s</td></tr>
 <tr><td>Mini Crossword</td><td>2</td><td>57% cells</td><td>9.07 s</td></tr>
 </table>
 </div>

@@ -63,24 +63,24 @@
     "guesses": [
         {
             "guess": [
+                "DEED",
                 "FOXTROT",
-                "HOTEL",
                 "SWING",
-                "YANKEES"
+                "TAP"
             ],
             "result": "wrong",
-            "connection": "NATO phonetic alphabet words",
-            "one_away": false
+            "connection": "types of dance",
+            "one_away": true
         },
         {
             "guess": [
+                "DEED",
+                "FEATURED",
                 "FOXTROT",
-                "HOTEL",
-                "SWING",
-                "YANKEES"
+                "SWING"
             ],
             "result": "wrong",
-            "connection": "NATO phonetic alphabet words",
+            "connection": "Words that can precede 'dance' (deed dance, foxtrot dance, swing dance, featured dance)",
             "one_away": false
         },
         {
@@ -91,7 +91,7 @@
                 "TOKEN"
             ],
             "result": "wrong",
-            "connection": "Things exchanged or used in transactions",
+            "connection": "forms of payment or exchange",
             "one_away": true
         },
         {
@@ -102,9 +102,9 @@
                 "TOKEN"
             ],
             "result": "wrong",
-            "connection": "Things associated with transactions or value",
+            "connection": "Words associated with financial transactions or value.",
             "one_away": true
         }
     ],
-    "solve_time": "0:00:12.468"
+    "solve_time": "0:00:10.984"
 }

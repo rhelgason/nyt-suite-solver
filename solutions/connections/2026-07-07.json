@@ -59,7 +59,52 @@
     ],
     "solved": false,
     "groups_found": 0,
-    "mistakes": 0,
-    "guesses": [],
-    "solve_time": "0:03:15.966"
+    "mistakes": 4,
+    "guesses": [
+        {
+            "guess": [
+                "BERNIE",
+                "COLBERT",
+                "LETTERMAN",
+                "OLIVER"
+            ],
+            "result": "wrong",
+            "connection": "Late-night talk show hosts",
+            "one_away": false
+        },
+        {
+            "guess": [
+                "ALL-AMERICAN",
+                "FRENCH",
+                "JOCK",
+                "TEAM CAPTAIN"
+            ],
+            "result": "wrong",
+            "connection": "Terms related to sports or athleticism.",
+            "one_away": true
+        },
+        {
+            "guess": [
+                "ALL-AMERICAN",
+                "COLBERT",
+                "JOCK",
+                "TEAM CAPTAIN"
+            ],
+            "result": "wrong",
+            "connection": "Terms related to high school or college sports and social status, with Colbert being a reference to Stephen Colbert, who often uses the term 'All-American' and has discussed high school experiences",
+            "one_away": true
+        },
+        {
+            "guess": [
+                "CONSERVATORY",
+                "KITCHEN",
+                "LEMON",
+                "STUDY"
+            ],
+            "result": "wrong",
+            "connection": "types of rooms or areas in a house",
+            "one_away": true
+        }
+    ],
+    "solve_time": "0:00:11.544"
 }

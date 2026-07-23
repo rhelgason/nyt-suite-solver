@@ -59,30 +59,8 @@
     ],
     "solved": false,
     "groups_found": 0,
-    "mistakes": 3,
+    "mistakes": 4,
     "guesses": [
-        {
-            "guess": [
-                "KINESIS",
-                "LYRICS",
-                "MUSIC",
-                "ORCHESTRATION"
-            ],
-            "result": "wrong",
-            "connection": "Elements related to musical composition or performance",
-            "one_away": true
-        },
-        {
-            "guess": [
-                "LYRICS",
-                "MUSIC",
-                "ORCHESTRATION",
-                "PLUGIN"
-            ],
-            "result": "wrong",
-            "connection": "Related to music or audio production",
-            "one_away": true
-        },
         {
             "guess": [
                 "LYRICS",
@@ -91,9 +69,42 @@
                 "PROMPTER"
             ],
             "result": "wrong",
-            "connection": "Related to performing arts or music production",
+            "connection": "terms related to song or musical performance",
             "one_away": true
+        },
+        {
+            "guess": [
+                "LYRICS",
+                "MUSIC",
+                "ORCHESTRATION",
+                "VISION"
+            ],
+            "result": "wrong",
+            "connection": "all related to aspects of a song or musical performance",
+            "one_away": true
+        },
+        {
+            "guess": [
+                "CROP",
+                "GRAM",
+                "PLUGIN",
+                "TUBE"
+            ],
+            "result": "wrong",
+            "connection": "words that can be related to 'crop' as in harvest, or 'tube' and 'gram' as in types of online content, but more likely 'plugin' and 'tube' as in computer hardware, and 'gram' as in a unit of weight for crops, however 'crop' can also mean to trim, and 'tube', 'gram' can be related to online content, and 'plugin' is a computer term, but a more fitting connection is that 'tube' can be a website, 'gram' can be instagram, 'crop' can be a photo editing term, and 'plugin' can be a software extension",
+            "one_away": false
+        },
+        {
+            "guess": [
+                "CROP",
+                "DRIVER",
+                "GRAM",
+                "TUBE"
+            ],
+            "result": "wrong",
+            "connection": "These are all types of 'drivers' or 'drivers' in technology: Tube driver (audio), Gram driver (measurement), Crop driver (agriculture), and Driver (software).",
+            "one_away": false
         }
     ],
-    "solve_time": "0:00:16.847"
+    "solve_time": "0:00:09.023"
 }

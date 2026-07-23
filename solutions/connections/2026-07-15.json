@@ -58,20 +58,64 @@
         }
     ],
     "solved": false,
-    "groups_found": 0,
-    "mistakes": 1,
+    "groups_found": 1,
+    "mistakes": 4,
     "guesses": [
         {
             "guess": [
-                "BAR",
-                "COURT",
-                "RACKET",
-                "TRIBUNAL"
+                "BREATHING",
+                "CORSET",
+                "EXTREME",
+                "WIGGLE"
             ],
             "result": "wrong",
-            "connection": "Legal or judicial terms",
+            "connection": "types of exercise or workout classes",
+            "one_away": false
+        },
+        {
+            "guess": [
+                "BASEBALL GLOVE",
+                "COURT",
+                "FOOTBALL",
+                "RACKET"
+            ],
+            "result": "wrong",
+            "connection": "sports equipment or venues",
+            "one_away": false
+        },
+        {
+            "guess": [
+                "BAR",
+                "BENCH",
+                "COURT",
+                "TRIBUNAL"
+            ],
+            "result": "correct",
+            "group": "TERMS FOR THE LEGAL SYSTEM",
+            "connection": "terms related to a court of law"
+        },
+        {
+            "guess": [
+                "BASEBALL GLOVE",
+                "FOOTBALL",
+                "RACKET",
+                "SHOE"
+            ],
+            "result": "wrong",
+            "connection": "sports equipment",
+            "one_away": true
+        },
+        {
+            "guess": [
+                "ELBOW",
+                "HEAD",
+                "MOTOR",
+                "WIGGLE"
+            ],
+            "result": "wrong",
+            "connection": "Body parts or movements associated with them",
             "one_away": true
         }
     ],
-    "solve_time": "0:00:11.139"
+    "solve_time": "0:00:06.226"
 }

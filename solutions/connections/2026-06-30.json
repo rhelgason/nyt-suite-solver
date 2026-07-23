@@ -58,8 +58,68 @@
         }
     ],
     "solved": false,
-    "groups_found": 0,
-    "mistakes": 0,
-    "guesses": [],
-    "solve_time": "0:03:15.871"
+    "groups_found": 2,
+    "mistakes": 4,
+    "guesses": [
+        {
+            "guess": [
+                "CURL",
+                "LUGE",
+                "SKATE",
+                "SKI"
+            ],
+            "result": "correct",
+            "group": "PARTICIPATE IN SOME WINTER OLYMPICS",
+            "connection": "Winter Olympic sports"
+        },
+        {
+            "guess": [
+                "FENCE",
+                "GATE",
+                "HEDGE",
+                "WALL"
+            ],
+            "result": "correct",
+            "group": "DIVIDING STRUCTURES",
+            "connection": "Types of barriers or enclosures"
+        },
+        {
+            "guess": [
+                "BOTTLE",
+                "BOX",
+                "CAN",
+                "ON TAP"
+            ],
+            "result": "wrong",
+            "connection": "Containers for beverages",
+            "one_away": true
+        },
+        {
+            "guess": [
+                "BREEZE",
+                "NEWSPAPER",
+                "RECRUIT",
+                "SKETCH"
+            ],
+            "result": "wrong",
+            "connection": "Words that can be preceded by 'draft' (draft breeze, draft sketch, draft newspaper, draft recruit)",
+            "one_away": true
+        },
+        {
+            "guess": [],
+            "result": "invalid"
+        },
+        {
+            "guess": [
+                "BREEZE",
+                "NEWSPAPER",
+                "ON TAP",
+                "RECRUIT"
+            ],
+            "result": "wrong",
+            "connection": "can be 'on' something, e.g. on a breeze, on newspaper, on recruit (new), on tap",
+            "one_away": true
+        }
+    ],
+    "solve_time": "0:00:05.056"
 }

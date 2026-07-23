@@ -58,8 +58,31 @@
         }
     ],
     "solved": false,
-    "groups_found": 0,
-    "mistakes": 0,
-    "guesses": [],
-    "solve_time": "0:03:15.917"
+    "groups_found": 1,
+    "mistakes": 1,
+    "guesses": [
+        {
+            "guess": [
+                "CHIP",
+                "CRACKER",
+                "NUT",
+                "PRETZEL"
+            ],
+            "result": "correct",
+            "group": "CRUNCHY SNACK ITEM",
+            "connection": "types of snack foods, often served as finger foods"
+        },
+        {
+            "guess": [
+                "DELL",
+                "GORGE",
+                "HOLLOW",
+                "TANG"
+            ],
+            "result": "wrong",
+            "connection": "geological terms for natural land formations",
+            "one_away": true
+        }
+    ],
+    "solve_time": "0:00:03.057"
 }

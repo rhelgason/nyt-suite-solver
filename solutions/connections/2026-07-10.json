@@ -57,9 +57,76 @@
             ]
         }
     ],
-    "solved": false,
-    "groups_found": 0,
-    "mistakes": 0,
-    "guesses": [],
-    "solve_time": "0:00:07.920"
+    "solved": true,
+    "groups_found": 4,
+    "mistakes": 2,
+    "guesses": [
+        {
+            "guess": [
+                "DEPECHE MODE",
+                "ERASURE",
+                "NEW ORDER",
+                "PET SHOP BOYS"
+            ],
+            "result": "correct",
+            "group": "'80S SYNTH-POP BANDS",
+            "connection": "All are British synth-pop bands from the 1980s."
+        },
+        {
+            "guess": [
+                "DECADENT",
+                "FRESH-BAKED",
+                "MOLTEN",
+                "OUTKAST"
+            ],
+            "result": "wrong",
+            "connection": "All can describe types of 'baked' or 'cooked' items.",
+            "one_away": true
+        },
+        {
+            "guess": [
+                "DECADENT",
+                "FRESH-BAKED",
+                "MOLTEN",
+                "À LA MODE"
+            ],
+            "result": "correct",
+            "group": "DESSERT MENU DESCRIPTORS",
+            "connection": "types of or related to desserts or sweet treats"
+        },
+        {
+            "guess": [
+                "AIRPLANE MODE",
+                "DO NOT DISTURB",
+                "LOCATION SERVICES",
+                "SAFE MODE"
+            ],
+            "result": "wrong",
+            "connection": "modes or settings, often on electronic devices",
+            "one_away": true
+        },
+        {
+            "guess": [
+                "AIRPLANE MODE",
+                "DO NOT DISTURB",
+                "HOTSPOT",
+                "LOCATION SERVICES"
+            ],
+            "result": "correct",
+            "group": "SMARTPHONE SETTINGS",
+            "connection": "phone modes or settings"
+        },
+        {
+            "guess": [
+                "BALL GOWN",
+                "OUTKAST",
+                "SAFE MODE",
+                "STRIKE A POSE"
+            ],
+            "result": "correct",
+            "group": "STARTING WITH BASEBALL CALLS",
+            "connection": ""
+        }
+    ],
+    "solve_time": "0:00:05.555"
 }

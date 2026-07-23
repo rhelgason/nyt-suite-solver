@@ -58,8 +58,64 @@
         }
     ],
     "solved": false,
-    "groups_found": 0,
-    "mistakes": 0,
-    "guesses": [],
-    "solve_time": "0:03:17.481"
+    "groups_found": 1,
+    "mistakes": 4,
+    "guesses": [
+        {
+            "guess": [
+                "GENESIS",
+                "KING CRIMSON",
+                "PINK FLOYD",
+                "RUSH"
+            ],
+            "result": "correct",
+            "group": "PROG BANDS",
+            "connection": "Progressive rock bands"
+        },
+        {
+            "guess": [
+                "CLIFFORD",
+                "DEADPOOL",
+                "HUMPTY DUMPTY",
+                "KOOL-AID MAN"
+            ],
+            "result": "wrong",
+            "connection": "Anthropomorphic characters",
+            "one_away": true
+        },
+        {
+            "guess": [
+                "CHICK FLICK",
+                "HUMPTY DUMPTY",
+                "KOOL-AID MAN",
+                "MR. KRABS"
+            ],
+            "result": "wrong",
+            "connection": "Characters from popular culture",
+            "one_away": false
+        },
+        {
+            "guess": [
+                "HUMPTY DUMPTY",
+                "LUGGAGE",
+                "MONEY",
+                "TOASTER"
+            ],
+            "result": "wrong",
+            "connection": "All have been associated with great falls, drops, or crashes in various contexts",
+            "one_away": true
+        },
+        {
+            "guess": [
+                "CHINA",
+                "HUMPTY DUMPTY",
+                "LUGGAGE",
+                "MONEY"
+            ],
+            "result": "wrong",
+            "connection": "They can all be associated with the concept of something being 'dropped' - Humpty Dumpty had a great fall, luggage can be dropped, money can be dropped, and fine china can be dropped and broken",
+            "one_away": true
+        }
+    ],
+    "solve_time": "0:00:06.368"
 }

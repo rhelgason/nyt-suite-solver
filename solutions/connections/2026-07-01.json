@@ -59,7 +59,52 @@
     ],
     "solved": false,
     "groups_found": 0,
-    "mistakes": 0,
-    "guesses": [],
-    "solve_time": "0:03:15.992"
+    "mistakes": 4,
+    "guesses": [
+        {
+            "guess": [
+                "CHAMPAGNE",
+                "CHICAGO",
+                "CHINA",
+                "COLOGNE"
+            ],
+            "result": "wrong",
+            "connection": "Places with 'CH' in their names, potentially related to perfume/city names",
+            "one_away": true
+        },
+        {
+            "guess": [
+                "CASABLANCA",
+                "CUBA",
+                "MUNICH",
+                "SINGAPORE"
+            ],
+            "result": "wrong",
+            "connection": "Cities or countries that have hosted or been associated with significant international events or conferences",
+            "one_away": false
+        },
+        {
+            "guess": [
+                "FARGO",
+                "INDIANAPOLIS",
+                "LIMERICK",
+                "LONG ISLAND"
+            ],
+            "result": "wrong",
+            "connection": "Cities with names that include a geographical feature (island, polis, etc.)",
+            "one_away": false
+        },
+        {
+            "guess": [
+                "CHINA",
+                "DOMINICAN REPUBLIC",
+                "GUINEA-BISSAU",
+                "NIGERIA"
+            ],
+            "result": "wrong",
+            "connection": "Countries",
+            "one_away": true
+        }
+    ],
+    "solve_time": "0:00:10.518"
 }

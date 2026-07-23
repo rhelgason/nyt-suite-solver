@@ -57,9 +57,76 @@
             ]
         }
     ],
-    "solved": false,
-    "groups_found": 0,
-    "mistakes": 0,
-    "guesses": [],
-    "solve_time": "0:03:15.808"
+    "solved": true,
+    "groups_found": 4,
+    "mistakes": 2,
+    "guesses": [
+        {
+            "guess": [
+                "BILLBOARD",
+                "PITCHFORK",
+                "ROLLING STONE",
+                "VIRGIN"
+            ],
+            "result": "wrong",
+            "connection": "Music magazines",
+            "one_away": true
+        },
+        {
+            "guess": [
+                "BILLBOARD",
+                "PITCHFORK",
+                "ROLLING STONE",
+                "SPIN"
+            ],
+            "result": "correct",
+            "group": "MUSIC PUBLICATIONS",
+            "connection": "Music publications"
+        },
+        {
+            "guess": [
+                "FIREBIRD",
+                "G6",
+                "TRANS AM",
+                "VIRGIN"
+            ],
+            "result": "wrong",
+            "connection": "Car models or brands",
+            "one_away": true
+        },
+        {
+            "guess": [
+                "FIREBIRD",
+                "G6",
+                "GRAND PRIX",
+                "TRANS AM"
+            ],
+            "result": "correct",
+            "group": "PONTIAC MODELS",
+            "connection": "car models"
+        },
+        {
+            "guess": [
+                "NA",
+                "SPIRIT-FREE",
+                "VIRGIN",
+                "ZERO-PROOF"
+            ],
+            "result": "correct",
+            "group": "NON-ALCOHOLIC DESIGNATORS",
+            "connection": "terms related to non-alcoholic or low-alcohol content"
+        },
+        {
+            "guess": [
+                "PERSIAN",
+                "PRAYER",
+                "SHAG",
+                "THROW"
+            ],
+            "result": "correct",
+            "group": "KINDS OF RUGS",
+            "connection": ""
+        }
+    ],
+    "solve_time": "0:00:03.225"
 }

@@ -58,8 +58,64 @@
         }
     ],
     "solved": false,
-    "groups_found": 0,
-    "mistakes": 0,
-    "guesses": [],
-    "solve_time": "0:03:15.903"
+    "groups_found": 1,
+    "mistakes": 4,
+    "guesses": [
+        {
+            "guess": [
+                "BOARDWALK",
+                "CATWALK",
+                "CROSSWALK",
+                "FIREWALK"
+            ],
+            "result": "wrong",
+            "connection": "Types of 'walks' or pathways",
+            "one_away": false
+        },
+        {
+            "guess": [
+                "CATWALK",
+                "COLLECTION",
+                "DESIGNER",
+                "MODEL"
+            ],
+            "result": "correct",
+            "group": "COMPONENTS OF A FASHION SHOW",
+            "connection": "fashion-related terms"
+        },
+        {
+            "guess": [
+                "BOARDWALK",
+                "CROSSWALK",
+                "FIREWALK",
+                "FOXTROT"
+            ],
+            "result": "wrong",
+            "connection": "types of walks",
+            "one_away": false
+        },
+        {
+            "guess": [
+                "BILLIARD BALL",
+                "CREDIT CARD",
+                "DECANTER",
+                "INCOME TAX"
+            ],
+            "result": "wrong",
+            "connection": "Terms associated with financial transactions or items related to money.",
+            "one_away": false
+        },
+        {
+            "guess": [
+                "BARBER POLE",
+                "BILLIARD BALL",
+                "CREDIT CARD",
+                "DECANTER"
+            ],
+            "result": "wrong",
+            "connection": "items with stripes or striped patterns",
+            "one_away": true
+        }
+    ],
+    "solve_time": "0:00:09.199"
 }

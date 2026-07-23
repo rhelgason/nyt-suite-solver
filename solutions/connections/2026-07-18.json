@@ -59,7 +59,52 @@
     ],
     "solved": false,
     "groups_found": 0,
-    "mistakes": 0,
-    "guesses": [],
-    "solve_time": "0:00:07.924"
+    "mistakes": 4,
+    "guesses": [
+        {
+            "guess": [
+                "CARRY",
+                "DOUBLE DRIBBLE",
+                "FLY",
+                "TRAVEL"
+            ],
+            "result": "wrong",
+            "connection": "terms related to basketball moves or actions",
+            "one_away": true
+        },
+        {
+            "guess": [
+                "CARRY",
+                "FLY",
+                "SCORE",
+                "TIME"
+            ],
+            "result": "wrong",
+            "connection": "Words that can precede 'ball' to form common phrases: flyball, carryball, timeball, scoreball.",
+            "one_away": false
+        },
+        {
+            "guess": [
+                "DOUBLE DRIBBLE",
+                "FLY",
+                "GOALTEND",
+                "TRAVEL"
+            ],
+            "result": "wrong",
+            "connection": "terms related to basketball or hockey movements",
+            "one_away": true
+        },
+        {
+            "guess": [
+                "LIVES",
+                "QUIZ",
+                "SCORE",
+                "TIME"
+            ],
+            "result": "wrong",
+            "connection": "terms related to games or video games (quiz is a type of game, score is a common concept in games, time can refer to a time limit, and lives are often a resource in games)",
+            "one_away": true
+        }
+    ],
+    "solve_time": "0:00:07.374"
 }
