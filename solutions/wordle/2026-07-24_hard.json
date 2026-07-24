@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 913,
+    "ds": "2026-07-24",
+    "mode": "hard",
+    "solution": "putty",
+    "guesses": [
+        "tares",
+        "litho",
+        "cutup",
+        "putty"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.100"
+}

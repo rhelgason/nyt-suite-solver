@@ -1,0 +1,70 @@
+{
+    "puzzle_id": 17503,
+    "ds": "2026-07-24",
+    "center": "k",
+    "letters": [
+        "o",
+        "n",
+        "k",
+        "i",
+        "g",
+        "e",
+        "v"
+    ],
+    "pangrams": [
+        "evoking"
+    ],
+    "valid_answers": [
+        "eking",
+        "invoking",
+        "kinking",
+        "knee",
+        "geek",
+        "kneeing",
+        "nook",
+        "kinging",
+        "evoking",
+        "inking",
+        "kook",
+        "viking",
+        "evoke",
+        "invoke",
+        "keno",
+        "kink",
+        "keening",
+        "king",
+        "oink",
+        "keen",
+        "enoki",
+        "ginkgo",
+        "oinking"
+    ],
+    "invalid_answers": [
+        "eikon",
+        "kegging",
+        "keeking",
+        "kookie",
+        "gook",
+        "konking",
+        "gink",
+        "ikon",
+        "keek",
+        "kinin",
+        "konk",
+        "kenning",
+        "koine",
+        "kike",
+        "nookie",
+        "keeve",
+        "gingko",
+        "kine",
+        "kino"
+    ],
+    "missed_answers": [
+        "geeking"
+    ],
+    "solve_time": "0:00:00.086",
+    "score": 63,
+    "percentage": 94.02985074626866,
+    "rank": "GENIUS"
+}

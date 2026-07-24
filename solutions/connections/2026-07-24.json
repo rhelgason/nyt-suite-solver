@@ -1,0 +1,65 @@
+{
+    "puzzle_id": 1223,
+    "ds": "2026-07-24",
+    "words": [
+        "SPARK",
+        "CANTER",
+        "LLAMA",
+        "JOG",
+        "WALK",
+        "YAK",
+        "SINGLE",
+        "NONE",
+        "RAMBLE",
+        "PROMPT",
+        "FRYER",
+        "DRONE",
+        "REFRESH",
+        "STRIKEOUT",
+        "BABBLE",
+        "HOME RUN"
+    ],
+    "categories": [
+        {
+            "title": "TALK AT LENGTH",
+            "words": [
+                "BABBLE",
+                "DRONE",
+                "RAMBLE",
+                "YAK"
+            ]
+        },
+        {
+            "title": "OUTCOMES FOR A BATTER",
+            "words": [
+                "HOME RUN",
+                "SINGLE",
+                "STRIKEOUT",
+                "WALK"
+            ]
+        },
+        {
+            "title": "BRING TO MIND, AS A MEMORY",
+            "words": [
+                "JOG",
+                "PROMPT",
+                "REFRESH",
+                "SPARK"
+            ]
+        },
+        {
+            "title": "HOMOPHONES OF RELIGIOUS ROLES",
+            "words": [
+                "CANTER",
+                "FRYER",
+                "LLAMA",
+                "NONE"
+            ]
+        }
+    ],
+    "solved": false,
+    "groups_found": 0,
+    "mistakes": 0,
+    "guesses": [],
+    "solve_time": "0:00:06.535"
+}

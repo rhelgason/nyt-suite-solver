@@ -1,0 +1,68 @@
+{
+    "puzzle_id": 2789,
+    "ds": "2026-07-24",
+    "sides": [
+        [
+            "a",
+            "p",
+            "d"
+        ],
+        [
+            "r",
+            "c",
+            "e"
+        ],
+        [
+            "l",
+            "m",
+            "u"
+        ],
+        [
+            "b",
+            "o",
+            "k"
+        ]
+    ],
+    "valid_answers": [
+        [
+            "couple",
+            "embarked"
+        ],
+        [
+            "lockable",
+            "empurpled"
+        ],
+        [
+            "mockable",
+            "empurpled"
+        ],
+        [
+            "pockmarked",
+            "double"
+        ],
+        [
+            "pockmarked",
+            "doubled"
+        ],
+        [
+            "pockmarked",
+            "durable"
+        ],
+        [
+            "procurable",
+            "earmarked"
+        ],
+        [
+            "procurable",
+            "embarked"
+        ]
+    ],
+    "invalid_answers": [
+        [
+            "buckramed",
+            "deplorable"
+        ]
+    ],
+    "shortest_answer_length": 2,
+    "solve_time": "0:00:00.177"
+}
