@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 2357,
+    "ds": "2026-07-25",
+    "mode": "easy",
+    "solution": "aloha",
+    "guesses": [
+        "tares",
+        "colin",
+        "aland",
+        "aloha"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:05.603"
+}

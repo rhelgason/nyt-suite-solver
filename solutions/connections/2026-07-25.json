@@ -1,0 +1,65 @@
+{
+    "puzzle_id": 1221,
+    "ds": "2026-07-25",
+    "words": [
+        "STEAK",
+        "LEONE",
+        "PRIMO",
+        "MALL",
+        "MADRE",
+        "MIST",
+        "POKER",
+        "CHOKE",
+        "CLUB",
+        "RAND",
+        "TEAR",
+        "NAIRA",
+        "HIJO",
+        "KWANZA",
+        "WELL",
+        "ABUELA"
+    ],
+    "categories": [
+        {
+            "title": "SPANISH RELATIVES",
+            "words": [
+                "ABUELA",
+                "HIJO",
+                "MADRE",
+                "PRIMO"
+            ]
+        },
+        {
+            "title": "START TO CRY, WITH \"UP\"",
+            "words": [
+                "CHOKE",
+                "MIST",
+                "TEAR",
+                "WELL"
+            ]
+        },
+        {
+            "title": "AFRICAN CURRENCIES",
+            "words": [
+                "KWANZA",
+                "LEONE",
+                "NAIRA",
+                "RAND"
+            ]
+        },
+        {
+            "title": "STRIP ___",
+            "words": [
+                "CLUB",
+                "MALL",
+                "POKER",
+                "STEAK"
+            ]
+        }
+    ],
+    "solved": false,
+    "groups_found": 0,
+    "mistakes": 0,
+    "guesses": [],
+    "solve_time": "0:00:06.553"
+}

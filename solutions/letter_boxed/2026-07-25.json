@@ -1,0 +1,76 @@
+{
+    "puzzle_id": 2790,
+    "ds": "2026-07-25",
+    "sides": [
+        [
+            "n",
+            "g",
+            "v"
+        ],
+        [
+            "a",
+            "t",
+            "o"
+        ],
+        [
+            "i",
+            "s",
+            "l"
+        ],
+        [
+            "y",
+            "h",
+            "u"
+        ]
+    ],
+    "valid_answers": [
+        [
+            "aughts",
+            "synovial"
+        ],
+        [
+            "naughts",
+            "synovial"
+        ],
+        [
+            "noughts",
+            "synovial"
+        ],
+        [
+            "thoughts",
+            "synovial"
+        ]
+    ],
+    "invalid_answers": [
+        [
+            "noughts",
+            "sylvia"
+        ],
+        [
+            "noughts",
+            "sylvian"
+        ],
+        [
+            "oughts",
+            "sylvian"
+        ],
+        [
+            "oughts",
+            "synovial"
+        ],
+        [
+            "sylvian",
+            "nought"
+        ],
+        [
+            "sylvian",
+            "noughts"
+        ],
+        [
+            "thoughts",
+            "sylvian"
+        ]
+    ],
+    "shortest_answer_length": 2,
+    "solve_time": "0:00:00.265"
+}

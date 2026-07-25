@@ -1,0 +1,20 @@
+{
+    "puzzle_id": 1050,
+    "ds": "2026-07-25",
+    "clue": "Frocks and smocks",
+    "theme_words": [
+        "dirndl",
+        "gown",
+        "kimono",
+        "muumuu",
+        "pinafore",
+        "tunic"
+    ],
+    "spangram": "youwearitwell",
+    "solved": true,
+    "theme_words_found": 6,
+    "theme_words_total": 6,
+    "candidates": 5539,
+    "truncated": false,
+    "solve_time": "0:00:35.577"
+}
