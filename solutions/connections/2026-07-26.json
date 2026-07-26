@@ -1,0 +1,65 @@
+{
+    "puzzle_id": 1219,
+    "ds": "2026-07-26",
+    "words": [
+        "SOLID FOOD",
+        "PASTRY CRUST",
+        "ROLLING OVER",
+        "LIQUID SUNSHINE",
+        "PLASMA TV",
+        "SCOTCH MIST",
+        "BLACKBERRY",
+        "GAS STATION",
+        "ROWING BOAT",
+        "FIRST WORDS",
+        "APRIL SHOWERS",
+        "DISCMAN",
+        "WET WEATHER",
+        "CARAPACE",
+        "DVD PLAYER",
+        "CRAWLING"
+    ],
+    "categories": [
+        {
+            "title": "BABY MILESTONES",
+            "words": [
+                "CRAWLING",
+                "FIRST WORDS",
+                "ROLLING OVER",
+                "SOLID FOOD"
+            ]
+        },
+        {
+            "title": "OUTMODED CONSUMER TECH",
+            "words": [
+                "BLACKBERRY",
+                "DISCMAN",
+                "DVD PLAYER",
+                "PLASMA TV"
+            ]
+        },
+        {
+            "title": "EXPRESSIONS FOR RAIN",
+            "words": [
+                "APRIL SHOWERS",
+                "LIQUID SUNSHINE",
+                "SCOTCH MIST",
+                "WET WEATHER"
+            ]
+        },
+        {
+            "title": "WHAT \"SHELL\" MIGHT REFER TO",
+            "words": [
+                "CARAPACE",
+                "GAS STATION",
+                "PASTRY CRUST",
+                "ROWING BOAT"
+            ]
+        }
+    ],
+    "solved": false,
+    "groups_found": 0,
+    "mistakes": 0,
+    "guesses": [],
+    "solve_time": "0:00:06.639"
+}
