@@ -1,0 +1,30 @@
+{
+    "puzzle_id": 2792,
+    "ds": "2026-07-27",
+    "sides": [
+        [
+            "i",
+            "h",
+            "p"
+        ],
+        [
+            "r",
+            "m",
+            "g"
+        ],
+        [
+            "t",
+            "e",
+            "n"
+        ],
+        [
+            "f",
+            "o",
+            "y"
+        ]
+    ],
+    "valid_answers": [],
+    "invalid_answers": [],
+    "shortest_answer_length": 9223372036854775807,
+    "solve_time": "0:00:00.183"
+}

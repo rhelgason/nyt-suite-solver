@@ -1,0 +1,65 @@
+{
+    "puzzle_id": 1220,
+    "ds": "2026-07-27",
+    "words": [
+        "CART",
+        "HORSE",
+        "CARROT",
+        "STICK",
+        "KNITTING NEEDLE",
+        "MAGNIFYING GLASS",
+        "BEAM",
+        "GRAVEYARD",
+        "BELL",
+        "ICICLE",
+        "RINGS",
+        "HEART",
+        "PARADIGM",
+        "STALACTITE",
+        "DOPPLER",
+        "VAULT"
+    ],
+    "categories": [
+        {
+            "title": "GYMNASTICS APPARATUS",
+            "words": [
+                "BEAM",
+                "HORSE",
+                "RINGS",
+                "VAULT"
+            ]
+        },
+        {
+            "title": "LONG TAPERED THINGS",
+            "words": [
+                "CARROT",
+                "ICICLE",
+                "KNITTING NEEDLE",
+                "STALACTITE"
+            ]
+        },
+        {
+            "title": "KINDS OF SHIFTS",
+            "words": [
+                "DOPPLER",
+                "GRAVEYARD",
+                "PARADIGM",
+                "STICK"
+            ]
+        },
+        {
+            "title": "ICONS ON A SHOPPING SITE",
+            "words": [
+                "BELL",
+                "CART",
+                "HEART",
+                "MAGNIFYING GLASS"
+            ]
+        }
+    ],
+    "solved": false,
+    "groups_found": 0,
+    "mistakes": 0,
+    "guesses": [],
+    "solve_time": "0:00:06.484"
+}

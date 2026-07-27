@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 881,
+    "ds": "2026-07-27",
+    "mode": "hard",
+    "solution": "poser",
+    "guesses": [
+        "tares",
+        "shier",
+        "doser",
+        "loser",
+        "poser"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:00.041"
+}

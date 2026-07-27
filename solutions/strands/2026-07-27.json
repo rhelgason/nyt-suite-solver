@@ -1,0 +1,20 @@
+{
+    "puzzle_id": 1052,
+    "ds": "2026-07-27",
+    "clue": "Let the journey begin",
+    "theme_words": [
+        "bench",
+        "counter",
+        "kiosk",
+        "platform",
+        "ticket",
+        "track"
+    ],
+    "spangram": "trainstation",
+    "solved": true,
+    "theme_words_found": 6,
+    "theme_words_total": 6,
+    "candidates": 47,
+    "truncated": false,
+    "solve_time": "0:00:00.253"
+}
