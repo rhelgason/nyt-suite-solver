@@ -1,0 +1,65 @@
+{
+    "puzzle_id": 1227,
+    "ds": "2026-07-28",
+    "words": [
+        "CAPTAIN",
+        "CLARKS",
+        "OTTOMAN",
+        "EMPIRE",
+        "ANNAPOLIS",
+        "BOBSLED",
+        "CAMPER",
+        "DIRECT",
+        "EVEREST",
+        "FUJI",
+        "GALA",
+        "HEAD",
+        "CONVERSE",
+        "LEAD",
+        "HONEYCRISP",
+        "CROCS"
+    ],
+    "categories": [
+        {
+            "title": "COMMAND",
+            "words": [
+                "CAPTAIN",
+                "DIRECT",
+                "HEAD",
+                "LEAD"
+            ]
+        },
+        {
+            "title": "HOW DO YOU LIKE THEM APPLES",
+            "words": [
+                "EMPIRE",
+                "FUJI",
+                "GALA",
+                "HONEYCRISP"
+            ]
+        },
+        {
+            "title": "SHOE BRANDS STARTING WITH \"C\"",
+            "words": [
+                "CAMPER",
+                "CLARKS",
+                "CONVERSE",
+                "CROCS"
+            ]
+        },
+        {
+            "title": "STARTING WITH PALINDROMIC NAMES",
+            "words": [
+                "ANNAPOLIS",
+                "BOBSLED",
+                "EVEREST",
+                "OTTOMAN"
+            ]
+        }
+    ],
+    "solved": false,
+    "groups_found": 0,
+    "mistakes": 0,
+    "guesses": [],
+    "solve_time": "0:00:06.601"
+}

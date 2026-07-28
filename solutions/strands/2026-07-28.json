@@ -1,0 +1,20 @@
+{
+    "puzzle_id": 1055,
+    "ds": "2026-07-28",
+    "clue": "Leave nothing out",
+    "theme_words": [
+        "complete",
+        "entire",
+        "full",
+        "total",
+        "undivided",
+        "whole"
+    ],
+    "spangram": "itsallthere",
+    "solved": false,
+    "theme_words_found": 4,
+    "theme_words_total": 6,
+    "candidates": 66810,
+    "truncated": true,
+    "solve_time": "0:01:05.509"
+}
