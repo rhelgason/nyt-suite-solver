@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 527,
+    "ds": "2026-07-29",
+    "mode": "hard",
+    "solution": "valve",
+    "guesses": [
+        "tares",
+        "macle",
+        "halve",
+        "valve"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.043"
+}

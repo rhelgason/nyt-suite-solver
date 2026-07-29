@@ -1,0 +1,20 @@
+{
+    "puzzle_id": 1056,
+    "ds": "2026-07-29",
+    "clue": "A made man",
+    "theme_words": [
+        "doll",
+        "dummy",
+        "figurine",
+        "mannequin",
+        "puppet",
+        "statue"
+    ],
+    "spangram": "fabricated",
+    "solved": true,
+    "theme_words_found": 6,
+    "theme_words_total": 6,
+    "candidates": 1,
+    "truncated": false,
+    "solve_time": "0:00:00.248"
+}

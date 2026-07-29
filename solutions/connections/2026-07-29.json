@@ -1,0 +1,65 @@
+{
+    "puzzle_id": 1232,
+    "ds": "2026-07-29",
+    "words": [
+        "CORK",
+        "PEARL",
+        "BASIC",
+        "STAPLE",
+        "MID",
+        "WORD",
+        "CHALK",
+        "WHITE",
+        "BLACK",
+        "VANILLA",
+        "GEM",
+        "NAIL",
+        "RIVET",
+        "NUGGET",
+        "SCREW",
+        "PLAIN"
+    ],
+    "categories": [
+        {
+            "title": "FASTENERS",
+            "words": [
+                "NAIL",
+                "RIVET",
+                "SCREW",
+                "STAPLE"
+            ]
+        },
+        {
+            "title": "NONDESCRIPT",
+            "words": [
+                "BASIC",
+                "MID",
+                "PLAIN",
+                "VANILLA"
+            ]
+        },
+        {
+            "title": "UNITS OF WISDOM",
+            "words": [
+                "GEM",
+                "NUGGET",
+                "PEARL",
+                "WORD"
+            ]
+        },
+        {
+            "title": "___BOARDS IN A CLASSROOM",
+            "words": [
+                "BLACK",
+                "CHALK",
+                "CORK",
+                "WHITE"
+            ]
+        }
+    ],
+    "solved": false,
+    "groups_found": 0,
+    "mistakes": 0,
+    "guesses": [],
+    "solve_time": "0:00:06.674"
+}
