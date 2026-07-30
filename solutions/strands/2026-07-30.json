@@ -1,0 +1,21 @@
+{
+    "puzzle_id": 1057,
+    "ds": "2026-07-30",
+    "clue": "Trade names",
+    "theme_words": [
+        "cooper",
+        "joiner",
+        "mason",
+        "potter",
+        "smith",
+        "tanner",
+        "weaver"
+    ],
+    "spangram": "artisans",
+    "solved": true,
+    "theme_words_found": 7,
+    "theme_words_total": 7,
+    "candidates": 11,
+    "truncated": false,
+    "solve_time": "0:00:00.138"
+}

@@ -1,0 +1,65 @@
+{
+    "puzzle_id": 1228,
+    "ds": "2026-07-30",
+    "words": [
+        "JUGGLING",
+        "CARNIVAL",
+        "DOT",
+        "FAIR",
+        "BINGO",
+        "RIGHT",
+        "POOL",
+        "NOSE",
+        "MONEY",
+        "GOOD",
+        "BEER PONG",
+        "CELEBRITY",
+        "VIKING",
+        "MARK",
+        "PRINCESS",
+        "JUST"
+    ],
+    "categories": [
+        {
+            "title": "VIRTUOUS",
+            "words": [
+                "FAIR",
+                "GOOD",
+                "JUST",
+                "RIGHT"
+            ]
+        },
+        {
+            "title": "ACTIVITIES WITH MULTIPLE BALLS",
+            "words": [
+                "BEER PONG",
+                "BINGO",
+                "JUGGLING",
+                "POOL"
+            ]
+        },
+        {
+            "title": "CRUISE LINES",
+            "words": [
+                "CARNIVAL",
+                "CELEBRITY",
+                "PRINCESS",
+                "VIKING"
+            ]
+        },
+        {
+            "title": "ON THE ___, TO MEAN \"PRECISE\"",
+            "words": [
+                "DOT",
+                "MARK",
+                "MONEY",
+                "NOSE"
+            ]
+        }
+    ],
+    "solved": false,
+    "groups_found": 0,
+    "mistakes": 0,
+    "guesses": [],
+    "solve_time": "0:00:06.525"
+}
