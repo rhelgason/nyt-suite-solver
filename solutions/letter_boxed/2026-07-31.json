@@ -1,0 +1,84 @@
+{
+    "puzzle_id": 2795,
+    "ds": "2026-07-31",
+    "sides": [
+        [
+            "l",
+            "w",
+            "i"
+        ],
+        [
+            "e",
+            "o",
+            "n"
+        ],
+        [
+            "r",
+            "d",
+            "p"
+        ],
+        [
+            "v",
+            "a",
+            "t"
+        ]
+    ],
+    "valid_answers": [
+        [
+            "dopant",
+            "televiewer"
+        ],
+        [
+            "operant",
+            "televiewed"
+        ],
+        [
+            "reviewal",
+            "lepidopteran"
+        ],
+        [
+            "viewpoint",
+            "toroidal"
+        ],
+        [
+            "viewpoint",
+            "trainload"
+        ],
+        [
+            "viewpoint",
+            "treadle"
+        ],
+        [
+            "viewpoint",
+            "treadled"
+        ],
+        [
+            "viewpoint",
+            "tripodal"
+        ],
+        [
+            "vowel",
+            "lepidopteran"
+        ]
+    ],
+    "invalid_answers": [
+        [
+            "pivoted",
+            "delawarean"
+        ],
+        [
+            "viewpoint",
+            "treadler"
+        ],
+        [
+            "viewpoint",
+            "tripedal"
+        ],
+        [
+            "wolver",
+            "repainted"
+        ]
+    ],
+    "shortest_answer_length": 2,
+    "solve_time": "0:00:00.769"
+}

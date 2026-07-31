@@ -1,0 +1,20 @@
+{
+    "puzzle_id": 1058,
+    "ds": "2026-07-31",
+    "clue": "Summer sign",
+    "theme_words": [
+        "bold",
+        "bossy",
+        "charming",
+        "dramatic",
+        "generous",
+        "loyal"
+    ],
+    "spangram": "leothelion",
+    "solved": false,
+    "theme_words_found": 3,
+    "theme_words_total": 6,
+    "candidates": 18796,
+    "truncated": true,
+    "solve_time": "0:01:05.301"
+}

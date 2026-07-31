@@ -1,0 +1,17 @@
+{
+    "puzzle_id": 665,
+    "ds": "2026-07-31",
+    "mode": "hard",
+    "solution": "purse",
+    "guesses": [
+        "tares",
+        "servo",
+        "birse",
+        "curse",
+        "nurse",
+        "purse"
+    ],
+    "num_guesses": 6,
+    "solved": true,
+    "solve_time": "0:00:00.041"
+}

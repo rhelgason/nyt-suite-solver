@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 665,
+    "ds": "2026-07-31",
+    "mode": "easy",
+    "solution": "purse",
+    "guesses": [
+        "tares",
+        "vogue",
+        "bacon",
+        "purse"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.440"
+}

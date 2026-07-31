@@ -1,0 +1,65 @@
+{
+    "puzzle_id": 1233,
+    "ds": "2026-07-31",
+    "words": [
+        "MOLD",
+        "SPEAR",
+        "DAPPLE",
+        "PRINCESS",
+        "MUSHROOM",
+        "JOYSTICK",
+        "SLIME",
+        "FUNGUS",
+        "CHEERIOS",
+        "DINOSAUR",
+        "FASHION",
+        "MODEL",
+        "GLEEK",
+        "SHAPE",
+        "PLUMBER",
+        "JDATE"
+    ],
+    "categories": [
+        {
+            "title": "CONSTRUCT",
+            "words": [
+                "FASHION",
+                "MODEL",
+                "MOLD",
+                "SHAPE"
+            ]
+        },
+        {
+            "title": "SUPER MARIO FIGURES",
+            "words": [
+                "DINOSAUR",
+                "MUSHROOM",
+                "PLUMBER",
+                "PRINCESS"
+            ]
+        },
+        {
+            "title": "FRUITS PLUS STARTING LETTER",
+            "words": [
+                "DAPPLE",
+                "JDATE",
+                "SLIME",
+                "SPEAR"
+            ]
+        },
+        {
+            "title": "STARTING WITH MERRIMENTS",
+            "words": [
+                "CHEERIOS",
+                "FUNGUS",
+                "GLEEK",
+                "JOYSTICK"
+            ]
+        }
+    ],
+    "solved": false,
+    "groups_found": 0,
+    "mistakes": 0,
+    "guesses": [],
+    "solve_time": "0:00:06.654"
+}
