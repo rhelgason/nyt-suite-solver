@@ -1,0 +1,65 @@
+{
+    "puzzle_id": 1231,
+    "ds": "2026-08-01",
+    "words": [
+        "WALTZ",
+        "LOAFER",
+        "SHAM",
+        "BORE",
+        "REAM",
+        "BOULEVARD",
+        "SHEET",
+        "BALE",
+        "THROW",
+        "BUNDLE",
+        "JORDAN",
+        "ROLLS-ROYCE",
+        "PHOENIX",
+        "DRILL",
+        "COMFORTER",
+        "COUNTERSINK"
+    ],
+    "categories": [
+        {
+            "title": "BEDDING",
+            "words": [
+                "COMFORTER",
+                "SHAM",
+                "SHEET",
+                "THROW"
+            ]
+        },
+        {
+            "title": "OSCAR-WINNING ACTORS SINCE 2010",
+            "words": [
+                "BALE",
+                "JORDAN",
+                "PHOENIX",
+                "WALTZ"
+            ]
+        },
+        {
+            "title": "PERFORM SOME HOLE MACHINING OPERATIONS",
+            "words": [
+                "BORE",
+                "COUNTERSINK",
+                "DRILL",
+                "REAM"
+            ]
+        },
+        {
+            "title": "STARTING WITH BREAD SHAPES",
+            "words": [
+                "BOULEVARD",
+                "BUNDLE",
+                "LOAFER",
+                "ROLLS-ROYCE"
+            ]
+        }
+    ],
+    "solved": false,
+    "groups_found": 0,
+    "mistakes": 0,
+    "guesses": [],
+    "solve_time": "0:00:06.647"
+}

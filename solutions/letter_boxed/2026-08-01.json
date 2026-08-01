@@ -1,0 +1,88 @@
+{
+    "puzzle_id": 2797,
+    "ds": "2026-08-01",
+    "sides": [
+        [
+            "h",
+            "g",
+            "n"
+        ],
+        [
+            "m",
+            "l",
+            "i"
+        ],
+        [
+            "a",
+            "e",
+            "u"
+        ],
+        [
+            "o",
+            "z",
+            "t"
+        ]
+    ],
+    "valid_answers": [
+        [
+            "alumna",
+            "anthologize"
+        ],
+        [
+            "anthologize",
+            "emolument"
+        ],
+        [
+            "anthologize",
+            "emulate"
+        ],
+        [
+            "anthologize",
+            "emulation"
+        ],
+        [
+            "homogenization",
+            "noumenal"
+        ],
+        [
+            "homogenization",
+            "nounal"
+        ],
+        [
+            "homogenization",
+            "nutlet"
+        ],
+        [
+            "homogenize",
+            "emulate"
+        ],
+        [
+            "homogenize",
+            "emulation"
+        ],
+        [
+            "mazuma",
+            "anthologize"
+        ],
+        [
+            "mezuza",
+            "anthologize"
+        ],
+        [
+            "noumena",
+            "anthologize"
+        ]
+    ],
+    "invalid_answers": [
+        [
+            "humanization",
+            "nonlegal"
+        ],
+        [
+            "montezuma",
+            "anthologize"
+        ]
+    ],
+    "shortest_answer_length": 2,
+    "solve_time": "0:00:00.217"
+}
