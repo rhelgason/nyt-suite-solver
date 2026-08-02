@@ -1,0 +1,65 @@
+{
+    "puzzle_id": 1229,
+    "ds": "2026-08-02",
+    "words": [
+        "LIKE",
+        "AIRPLANE",
+        "VIA",
+        "FLAX",
+        "À LA",
+        "SO",
+        "BY",
+        "DARK",
+        "PER",
+        "LORD",
+        "WELL",
+        "ASEA",
+        "THROUGH",
+        "BEAST",
+        "OLGA",
+        "ACTUALLY"
+    ],
+    "categories": [
+        {
+            "title": "FILLER WORDS",
+            "words": [
+                "ACTUALLY",
+                "LIKE",
+                "SO",
+                "WELL"
+            ]
+        },
+        {
+            "title": "BY MEANS OF",
+            "words": [
+                "BY",
+                "PER",
+                "THROUGH",
+                "VIA"
+            ]
+        },
+        {
+            "title": "___ MODE",
+            "words": [
+                "AIRPLANE",
+                "BEAST",
+                "DARK",
+                "À LA"
+            ]
+        },
+        {
+            "title": "U.S. AIRPORT CODES PLUS STARTING LETTER",
+            "words": [
+                "ASEA",
+                "FLAX",
+                "LORD",
+                "OLGA"
+            ]
+        }
+    ],
+    "solved": false,
+    "groups_found": 0,
+    "mistakes": 0,
+    "guesses": [],
+    "solve_time": "0:00:06.498"
+}
