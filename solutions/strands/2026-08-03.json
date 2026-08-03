@@ -1,0 +1,20 @@
+{
+    "puzzle_id": 1061,
+    "ds": "2026-08-03",
+    "clue": "There's nothing like it",
+    "theme_words": [
+        "exclusive",
+        "only",
+        "singular",
+        "sole",
+        "special",
+        "unique"
+    ],
+    "spangram": "oneofakind",
+    "solved": false,
+    "theme_words_found": 3,
+    "theme_words_total": 6,
+    "candidates": 34491,
+    "truncated": true,
+    "solve_time": "0:01:00.511"
+}

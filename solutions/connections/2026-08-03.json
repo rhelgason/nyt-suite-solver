@@ -1,0 +1,65 @@
+{
+    "puzzle_id": 1230,
+    "ds": "2026-08-03",
+    "words": [
+        "NEEDLESS",
+        "MYRRH",
+        "BACKSTREET",
+        "TEA SET",
+        "NSYNC",
+        "SAGE",
+        "FLY BY",
+        "NAG CHAMPA",
+        "MINT",
+        "BYWAY",
+        "BUG FIX",
+        "RHYTHM",
+        "FOREST",
+        "LANE",
+        "HUNTER",
+        "ALLEY"
+    ],
+    "categories": [
+        {
+            "title": "ROAD LESS TRAVELED",
+            "words": [
+                "ALLEY",
+                "BACKSTREET",
+                "BYWAY",
+                "LANE"
+            ]
+        },
+        {
+            "title": "SHADES OF GREEN",
+            "words": [
+                "FOREST",
+                "HUNTER",
+                "MINT",
+                "SAGE"
+            ]
+        },
+        {
+            "title": "\"Y\" IS THE ONLY VOWEL",
+            "words": [
+                "FLY BY",
+                "MYRRH",
+                "NSYNC",
+                "RHYTHM"
+            ]
+        },
+        {
+            "title": "STARTING WITH SYNONYMS FOR \"PESTER\"",
+            "words": [
+                "BUG FIX",
+                "NAG CHAMPA",
+                "NEEDLESS",
+                "TEA SET"
+            ]
+        }
+    ],
+    "solved": false,
+    "groups_found": 0,
+    "mistakes": 0,
+    "guesses": [],
+    "solve_time": "0:00:06.597"
+}

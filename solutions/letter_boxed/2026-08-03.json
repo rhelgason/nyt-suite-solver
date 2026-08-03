@@ -1,0 +1,35 @@
+{
+    "puzzle_id": 2799,
+    "ds": "2026-08-03",
+    "sides": [
+        [
+            "b",
+            "l",
+            "c"
+        ],
+        [
+            "h",
+            "y",
+            "n"
+        ],
+        [
+            "e",
+            "f",
+            "o"
+        ],
+        [
+            "m",
+            "u",
+            "x"
+        ]
+    ],
+    "valid_answers": [
+        [
+            "honeycomb",
+            "boxful"
+        ]
+    ],
+    "invalid_answers": [],
+    "shortest_answer_length": 2,
+    "solve_time": "0:00:00.100"
+}

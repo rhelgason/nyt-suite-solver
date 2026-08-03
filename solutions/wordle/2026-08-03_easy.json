@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 628,
+    "ds": "2026-08-03",
+    "mode": "easy",
+    "solution": "reply",
+    "guesses": [
+        "tares",
+        "deice",
+        "pylon",
+        "reply"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:02.366"
+}

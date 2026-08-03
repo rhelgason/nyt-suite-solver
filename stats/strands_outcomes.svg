@@ -1,13 +1,13 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="560" height="320" viewBox="0 0 560 320" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="12">
 <rect width="560" height="320" fill="#ffffff"/>
 <text x="280" y="26" text-anchor="middle" font-size="16" font-weight="600" fill="#1a1a1a">Strands Outcomes</text>
-<path d="M 165 178 L 165.0 60.0 A 118 118 0 1 1 118.1 286.3 Z" fill="#16a34a"/>
-<path d="M 165 178 L 118.1 286.3 A 118 118 0 0 1 135.7 63.7 Z" fill="#f59e0b"/>
-<path d="M 165 178 L 135.7 63.7 A 118 118 0 0 1 165.0 60.0 Z" fill="#dc2626"/>
+<path d="M 165 178 L 165.0 60.0 A 118 118 0 1 1 120.1 287.1 Z" fill="#16a34a"/>
+<path d="M 165 178 L 120.1 287.1 A 118 118 0 0 1 135.8 63.7 Z" fill="#f59e0b"/>
+<path d="M 165 178 L 135.8 63.7 A 118 118 0 0 1 165.0 60.0 Z" fill="#dc2626"/>
 <rect x="330" y="85" width="14" height="14" rx="2" fill="#16a34a"/>
 <text x="352" y="96" fill="#333">All theme words: 113 (56%)</text>
 <rect x="330" y="109" width="14" height="14" rx="2" fill="#f59e0b"/>
-<text x="352" y="120" fill="#333">Some theme words: 79 (40%)</text>
+<text x="352" y="120" fill="#333">Some theme words: 80 (40%)</text>
 <rect x="330" y="133" width="14" height="14" rx="2" fill="#dc2626"/>
 <text x="352" y="144" fill="#333">None: 8 (4%)</text>
 </svg>
