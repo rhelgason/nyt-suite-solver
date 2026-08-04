@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 1228,
+    "ds": "2026-08-04",
+    "mode": "easy",
+    "solution": "motif",
+    "guesses": [
+        "tares",
+        "colin",
+        "motif"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:02.792"
+}

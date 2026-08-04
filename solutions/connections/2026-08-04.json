@@ -1,0 +1,65 @@
+{
+    "puzzle_id": 1237,
+    "ds": "2026-08-04",
+    "words": [
+        "CIGARETTE",
+        "PEACE SIGN",
+        "PIANO",
+        "TAXI CAB",
+        "CHEVRON",
+        "UNICYCLE",
+        "PIGEON",
+        "POOL NOODLE",
+        "SEWING MACHINE",
+        "ANGLE BRACKET",
+        "PRETZEL ROD",
+        "BODEGA",
+        "SUBWAY STATION",
+        "FOAM ROLLER",
+        "SWAN BOAT",
+        "GOOSE FORMATION"
+    ],
+    "categories": [
+        {
+            "title": "LONG CYLINDRICAL THINGS",
+            "words": [
+                "CIGARETTE",
+                "FOAM ROLLER",
+                "POOL NOODLE",
+                "PRETZEL ROD"
+            ]
+        },
+        {
+            "title": "ICONIC NYC SIGHTS",
+            "words": [
+                "BODEGA",
+                "PIGEON",
+                "SUBWAY STATION",
+                "TAXI CAB"
+            ]
+        },
+        {
+            "title": "THINGS WITH PEDALS",
+            "words": [
+                "PIANO",
+                "SEWING MACHINE",
+                "SWAN BOAT",
+                "UNICYCLE"
+            ]
+        },
+        {
+            "title": "V-SHAPED THINGS",
+            "words": [
+                "ANGLE BRACKET",
+                "CHEVRON",
+                "GOOSE FORMATION",
+                "PEACE SIGN"
+            ]
+        }
+    ],
+    "solved": false,
+    "groups_found": 0,
+    "mistakes": 0,
+    "guesses": [],
+    "solve_time": "0:00:06.542"
+}
