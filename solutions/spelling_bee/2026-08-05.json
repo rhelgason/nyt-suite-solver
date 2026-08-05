@@ -1,0 +1,57 @@
+{
+    "puzzle_id": 13940,
+    "ds": "2026-08-05",
+    "center": "y",
+    "letters": [
+        "h",
+        "k",
+        "o",
+        "r",
+        "y",
+        "a",
+        "f"
+    ],
+    "pangrams": [
+        "hayfork"
+    ],
+    "valid_answers": [
+        "kayak",
+        "affray",
+        "okay",
+        "ahoy",
+        "foray",
+        "yahoo",
+        "hooray",
+        "hoary",
+        "array",
+        "hayfork",
+        "fray",
+        "kooky",
+        "harry",
+        "oaky",
+        "arroyo",
+        "hooky"
+    ],
+    "invalid_answers": [
+        "ofay",
+        "forky",
+        "kayo",
+        "yaff",
+        "kyar",
+        "raya",
+        "rayah",
+        "kyak",
+        "ayah",
+        "hoya",
+        "horary",
+        "rooky",
+        "orfray"
+    ],
+    "missed_answers": [
+        "yoohoo"
+    ],
+    "solve_time": "0:00:00.089",
+    "score": 40,
+    "percentage": 93.02325581395348,
+    "rank": "GENIUS"
+}

@@ -3,5 +3,5 @@
 <text x="280" y="26" text-anchor="middle" font-size="16" font-weight="600" fill="#1a1a1a">Mini Crossword Pass / Fail</text>
 <circle cx="165" cy="178" r="118" fill="#dc2626"/>
 <rect x="330" y="85" width="14" height="14" rx="2" fill="#dc2626"/>
-<text x="352" y="96" fill="#333">Failed: 14 (100%)</text>
+<text x="352" y="96" fill="#333">Failed: 15 (100%)</text>
 </svg>
