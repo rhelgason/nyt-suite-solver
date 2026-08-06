@@ -1,0 +1,65 @@
+{
+    "puzzle_id": 1234,
+    "ds": "2026-08-06",
+    "words": [
+        "SWIMMING POOL",
+        "TENNIS COURT",
+        "FREEWAY",
+        "HOCKEY RINK",
+        "BARCLAYS CENTER",
+        "COLOSSEUM",
+        "SUPERMARKET",
+        "JACOB'S LADDER",
+        "PANTHEON",
+        "BOWLING ALLEY",
+        "LINCOLN LOGS",
+        "SPANISH STEPS",
+        "ALPHABET BLOCKS",
+        "FISHING BOAT",
+        "TREVI FOUNTAIN",
+        "CUP-AND-BALL"
+    ],
+    "categories": [
+        {
+            "title": "CLASSIC WOODEN TOYS",
+            "words": [
+                "ALPHABET BLOCKS",
+                "CUP-AND-BALL",
+                "JACOB'S LADDER",
+                "LINCOLN LOGS"
+            ]
+        },
+        {
+            "title": "PLACES WITH LANES",
+            "words": [
+                "BOWLING ALLEY",
+                "FREEWAY",
+                "SUPERMARKET",
+                "SWIMMING POOL"
+            ]
+        },
+        {
+            "title": "ICONIC ROMAN LANDMARKS",
+            "words": [
+                "COLOSSEUM",
+                "PANTHEON",
+                "SPANISH STEPS",
+                "TREVI FOUNTAIN"
+            ]
+        },
+        {
+            "title": "PLACES WITH NETS",
+            "words": [
+                "BARCLAYS CENTER",
+                "FISHING BOAT",
+                "HOCKEY RINK",
+                "TENNIS COURT"
+            ]
+        }
+    ],
+    "solved": false,
+    "groups_found": 0,
+    "mistakes": 0,
+    "guesses": [],
+    "solve_time": "0:00:06.787"
+}
