@@ -1,0 +1,18 @@
+{
+    "puzzle_id": 1065,
+    "ds": "2026-08-07",
+    "clue": "Struggling to find the words",
+    "theme_words": [
+        "dingus",
+        "doohickey",
+        "gizmo",
+        "thingamajiggy"
+    ],
+    "spangram": "whatchamacallit",
+    "solved": true,
+    "theme_words_found": 3,
+    "theme_words_total": 4,
+    "candidates": 1,
+    "truncated": false,
+    "solve_time": "0:00:00.105"
+}

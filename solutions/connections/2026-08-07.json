@@ -1,0 +1,65 @@
+{
+    "puzzle_id": 1238,
+    "ds": "2026-08-07",
+    "words": [
+        "JACKPOT",
+        "MOTOR",
+        "SNOW",
+        "JAR",
+        "WICK",
+        "SUNDAE",
+        "RAMBO",
+        "BUTTONS",
+        "TOMATILLO",
+        "SHAFT",
+        "WAX",
+        "BUCKYBALL",
+        "LIQUID NITROGEN",
+        "FRAGRANCE",
+        "CABLES",
+        "REFRIGERATOR"
+    ],
+    "categories": [
+        {
+            "title": "COMPONENTS OF A CANDLE",
+            "words": [
+                "FRAGRANCE",
+                "JAR",
+                "WAX",
+                "WICK"
+            ]
+        },
+        {
+            "title": "COLD THINGS",
+            "words": [
+                "LIQUID NITROGEN",
+                "REFRIGERATOR",
+                "SNOW",
+                "SUNDAE"
+            ]
+        },
+        {
+            "title": "PARTS OF AN ELEVATOR",
+            "words": [
+                "BUTTONS",
+                "CABLES",
+                "MOTOR",
+                "SHAFT"
+            ]
+        },
+        {
+            "title": "STARTING WITH MALE ANIMALS",
+            "words": [
+                "BUCKYBALL",
+                "JACKPOT",
+                "RAMBO",
+                "TOMATILLO"
+            ]
+        }
+    ],
+    "solved": false,
+    "groups_found": 0,
+    "mistakes": 0,
+    "guesses": [],
+    "solve_time": "0:00:06.787"
+}
