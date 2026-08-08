@@ -1,0 +1,20 @@
+{
+    "puzzle_id": 1066,
+    "ds": "2026-08-08",
+    "clue": "It has its ups and downs",
+    "theme_words": [
+        "corkscrew",
+        "cutback",
+        "drop",
+        "loop",
+        "track",
+        "tunnel"
+    ],
+    "spangram": "rollercoaster",
+    "solved": true,
+    "theme_words_found": 6,
+    "theme_words_total": 6,
+    "candidates": 7,
+    "truncated": false,
+    "solve_time": "0:00:00.133"
+}

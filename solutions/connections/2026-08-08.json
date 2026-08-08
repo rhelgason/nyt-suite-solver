@@ -1,0 +1,65 @@
+{
+    "puzzle_id": 1239,
+    "ds": "2026-08-08",
+    "words": [
+        "EASY",
+        "WHOOPEE",
+        "BELT",
+        "GOGGLES",
+        "CUTIE",
+        "PHRASE",
+        "PIN",
+        "COUCH",
+        "HOT DOG",
+        "EFFECTS",
+        "EXPRESS",
+        "RAZOR",
+        "I OWE YOU",
+        "YAHOO",
+        "FRAME",
+        "HURRAH"
+    ],
+    "categories": [
+        {
+            "title": "QUAINT EXPRESSIONS OF EXCITEMENT",
+            "words": [
+                "HOT DOG",
+                "HURRAH",
+                "WHOOPEE",
+                "YAHOO"
+            ]
+        },
+        {
+            "title": "CONVEY",
+            "words": [
+                "COUCH",
+                "EXPRESS",
+                "FRAME",
+                "PHRASE"
+            ]
+        },
+        {
+            "title": "WORDS ABBREVIATED WITH LETTERS AS HOMOPHONES",
+            "words": [
+                "CUTIE",
+                "EASY",
+                "EFFECTS",
+                "I OWE YOU"
+            ]
+        },
+        {
+            "title": "SAFETY ___",
+            "words": [
+                "BELT",
+                "GOGGLES",
+                "PIN",
+                "RAZOR"
+            ]
+        }
+    ],
+    "solved": false,
+    "groups_found": 0,
+    "mistakes": 0,
+    "guesses": [],
+    "solve_time": "0:00:06.654"
+}

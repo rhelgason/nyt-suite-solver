@@ -1,0 +1,35 @@
+{
+    "puzzle_id": 2804,
+    "ds": "2026-08-08",
+    "sides": [
+        [
+            "v",
+            "n",
+            "c"
+        ],
+        [
+            "p",
+            "i",
+            "o"
+        ],
+        [
+            "y",
+            "g",
+            "t"
+        ],
+        [
+            "h",
+            "e",
+            "z"
+        ]
+    ],
+    "valid_answers": [
+        [
+            "vetch",
+            "hypnotizing"
+        ]
+    ],
+    "invalid_answers": [],
+    "shortest_answer_length": 2,
+    "solve_time": "0:00:00.115"
+}
