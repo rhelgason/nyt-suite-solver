@@ -1,0 +1,65 @@
+{
+    "puzzle_id": 1240,
+    "ds": "2026-08-09",
+    "words": [
+        "SHIFT GEARS",
+        "JURY DUTY",
+        "SPACE OPERA",
+        "LABYRINTH",
+        "CAPS FOR SALE",
+        "ESCAPE ROOM",
+        "NEO-NOIR",
+        "COURSE-CORRECT",
+        "BAD DREAM",
+        "BUDDY COP",
+        "CORDUROY",
+        "CHANGE TACK",
+        "MADELINE",
+        "RECALIBRATE",
+        "SPAGHETTI WESTERN",
+        "GOODNIGHT MOON"
+    ],
+    "categories": [
+        {
+            "title": "TAKE A DIFFERENT APPROACH",
+            "words": [
+                "CHANGE TACK",
+                "COURSE-CORRECT",
+                "RECALIBRATE",
+                "SHIFT GEARS"
+            ]
+        },
+        {
+            "title": "CLASSIC CHILDREN'S BOOKS",
+            "words": [
+                "CAPS FOR SALE",
+                "CORDUROY",
+                "GOODNIGHT MOON",
+                "MADELINE"
+            ]
+        },
+        {
+            "title": "MOVIE SUBGENRES",
+            "words": [
+                "BUDDY COP",
+                "NEO-NOIR",
+                "SPACE OPERA",
+                "SPAGHETTI WESTERN"
+            ]
+        },
+        {
+            "title": "THINGS PEOPLE TRY TO GET OUT OF",
+            "words": [
+                "BAD DREAM",
+                "ESCAPE ROOM",
+                "JURY DUTY",
+                "LABYRINTH"
+            ]
+        }
+    ],
+    "solved": false,
+    "groups_found": 0,
+    "mistakes": 0,
+    "guesses": [],
+    "solve_time": "0:00:06.528"
+}

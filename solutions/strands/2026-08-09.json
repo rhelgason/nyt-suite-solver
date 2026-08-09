@@ -1,0 +1,19 @@
+{
+    "puzzle_id": 1067,
+    "ds": "2026-08-09",
+    "clue": "Isn't that a bit much?",
+    "theme_words": [
+        "extravagance",
+        "frills",
+        "indulgence",
+        "luxury",
+        "treat"
+    ],
+    "spangram": "imworthit",
+    "solved": true,
+    "theme_words_found": 5,
+    "theme_words_total": 5,
+    "candidates": 1131,
+    "truncated": false,
+    "solve_time": "0:00:06.116"
+}

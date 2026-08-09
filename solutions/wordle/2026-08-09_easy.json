@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 2371,
+    "ds": "2026-08-09",
+    "mode": "easy",
+    "solution": "clunk",
+    "guesses": [
+        "tares",
+        "colin",
+        "clung",
+        "clunk"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:08.792"
+}

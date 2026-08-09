@@ -1,0 +1,56 @@
+{
+    "puzzle_id": 2805,
+    "ds": "2026-08-09",
+    "sides": [
+        [
+            "n",
+            "e",
+            "c"
+        ],
+        [
+            "t",
+            "b",
+            "y"
+        ],
+        [
+            "i",
+            "u",
+            "r"
+        ],
+        [
+            "f",
+            "a",
+            "l"
+        ]
+    ],
+    "valid_answers": [
+        [
+            "beatific",
+            "culinary"
+        ],
+        [
+            "beautifier",
+            "reluctantly"
+        ],
+        [
+            "fiber",
+            "reluctantly"
+        ],
+        [
+            "intractable",
+            "eyeful"
+        ]
+    ],
+    "invalid_answers": [
+        [
+            "cleanlier",
+            "refutably"
+        ],
+        [
+            "internuclear",
+            "refutably"
+        ]
+    ],
+    "shortest_answer_length": 2,
+    "solve_time": "0:00:00.295"
+}
