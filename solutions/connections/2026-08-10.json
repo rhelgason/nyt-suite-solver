@@ -1,0 +1,65 @@
+{
+    "puzzle_id": 1236,
+    "ds": "2026-08-10",
+    "words": [
+        "BILLY GOAT",
+        "BALANCE DUE",
+        "WILLY-NILLY",
+        "MAIL DELIVERY",
+        "BILL TO",
+        "HELTER-SKELTER",
+        "WILL CALL",
+        "THE DEVIL",
+        "DOCTOR STRANGE",
+        "ORDER NUMBER",
+        "ANY OLD HOW",
+        "MOBILE TICKET",
+        "UNIT PRICE",
+        "COLONEL SANDERS",
+        "PRINT-AT-HOME",
+        "AT RANDOM"
+    ],
+    "categories": [
+        {
+            "title": "HAPHAZARDLY",
+            "words": [
+                "ANY OLD HOW",
+                "AT RANDOM",
+                "HELTER-SKELTER",
+                "WILLY-NILLY"
+            ]
+        },
+        {
+            "title": "WAYS TO RECEIVE EVENT TICKETS",
+            "words": [
+                "MAIL DELIVERY",
+                "MOBILE TICKET",
+                "PRINT-AT-HOME",
+                "WILL CALL"
+            ]
+        },
+        {
+            "title": "SECTIONS ON AN INVOICE",
+            "words": [
+                "BALANCE DUE",
+                "BILL TO",
+                "ORDER NUMBER",
+                "UNIT PRICE"
+            ]
+        },
+        {
+            "title": "FAMOUS GOATEES",
+            "words": [
+                "BILLY GOAT",
+                "COLONEL SANDERS",
+                "DOCTOR STRANGE",
+                "THE DEVIL"
+            ]
+        }
+    ],
+    "solved": false,
+    "groups_found": 0,
+    "mistakes": 0,
+    "guesses": [],
+    "solve_time": "0:00:07.486"
+}

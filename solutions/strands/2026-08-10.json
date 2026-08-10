@@ -1,0 +1,19 @@
+{
+    "puzzle_id": 1068,
+    "ds": "2026-08-10",
+    "clue": "Back it up",
+    "theme_words": [
+        "data",
+        "facts",
+        "figures",
+        "specifics",
+        "statistics"
+    ],
+    "spangram": "proofpositive",
+    "solved": true,
+    "theme_words_found": 5,
+    "theme_words_total": 5,
+    "candidates": 9493,
+    "truncated": false,
+    "solve_time": "0:00:41.900"
+}
