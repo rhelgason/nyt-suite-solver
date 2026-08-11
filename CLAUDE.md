@@ -120,12 +120,22 @@ This is designed to run untended for long stretches:
   managed and rejects `pip install`). `make run`, `make test`, `make setup`.
 - Run tests: `make test` (builds the Sudoku extension, then pytest)
 - Solve headlessly: `.venv/bin/python src/cli.py --game all`
-- Data availability: NYT serves only today's puzzle for Letter Boxed, Sudoku, and
-  the Mini crossword; a ~1-week public archive for Spelling Bee; and full
-  date-addressable history for Wordle, Strands, and Connections. `--backfill`
-  covers Spelling Bee, Wordle, Strands, and Connections; Connections is capped
-  (`--limit`, default 30) since it calls an LLM. The full-size Daily/Sunday
+- Data availability: NYT serves only today's puzzle for Sudoku and the Mini
+  crossword; a ~1-week public archive for Spelling Bee; and full date-addressable
+  history for Wordle, Strands, Connections, and Letter Boxed. `--backfill` covers
+  Spelling Bee, Wordle, Strands, Connections, and Letter Boxed; Connections is
+  capped (`--limit`, default 30) since it calls an LLM. The full-size Daily/Sunday
   crosswords need a subscriber login and are out of scope.
+  - Letter Boxed history lives at `svc/letter-boxed/v1/<YYYY-MM-DD>.json` (back to
+    the `ARCHIVE_EPOCH` of 2019-01-06, puzzle #16), each day carrying its own
+    board-specific `dictionary`, so past days can be scored as well as solved.
+    Today still comes from the HTML page, so the daily path is unchanged. Note
+    the HTML page 404s for past dates — when checking whether a game is
+    backfillable, probe the `svc/*` JSON endpoint, not just the HTML.
+  - A full Letter Boxed backfill is ~2,750 dates and CPU-bound, not quota-bound:
+    most days solve in well under a second, but a board with no 2-word solution
+    falls through to a depth-3 search that can take a minute or more. Use
+    `--limit` to work through it in chunks.
 - LLM games (Connections, Mini) need a provider configured: in CI the workflow's
   `GITHUB_TOKEN` + `models: read` covers it for free; locally, export
   `GITHUB_TOKEN` (a PAT with the Models permission) or `GEMINI_API_KEY`, else

@@ -76,6 +76,29 @@ def test_word_count_pie_svg(tmp_path):
     assert "2 words: 2 (67%)" in svg
 
 
+def test_unsolved_letter_boxed_is_shown_not_averaged(tmp_path):
+    import xml.etree.ElementTree as ET
+
+    from stats import load_game, summarize_letter_boxed, word_count_pie_svg
+
+    root = str(tmp_path)
+    _write(root, "letter_boxed", "2026-01-01.json", {"ds": "2026-01-01", "shortest_answer_length": 2})
+    _write(root, "letter_boxed", "2026-01-02.json", {"ds": "2026-01-02", "shortest_answer_length": None})
+    # an older run recorded sys.maxsize instead of null; it must not be averaged
+    _write(root, "letter_boxed", "2026-01-03.json", {"ds": "2026-01-03", "shortest_answer_length": 2**63 - 1})
+
+    s = summarize_letter_boxed(load_game(root, "letter_boxed"))
+    assert s["count"] == 3
+    assert s["avg_shortest"] == 2.0        # the two unsolved boards are excluded
+    assert s["score_cell"] == "2.0 words"
+    assert s["word_counts"] == {2: 1, "X": 2}
+
+    # mixed int/"X" keys must not blow up the chart's sort
+    svg = word_count_pie_svg(s)
+    ET.fromstring(svg)
+    assert "unsolved: 2 (67%)" in svg
+
+
 def test_summarize_wordle_splits_by_mode(tmp_path):
     import xml.etree.ElementTree as ET
 

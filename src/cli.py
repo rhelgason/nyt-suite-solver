@@ -9,6 +9,7 @@ Examples:
     python src/cli.py --game wordle --backfill --delay 0.5  # full history, politely
     python src/cli.py --game strands --backfill --since 2026-01-01
     python src/cli.py --game connections --backfill --limit 30  # recent sample (LLM)
+    python src/cli.py --game letter-boxed --backfill --limit 50 # archive back to 2019
 
 Exits non-zero if any requested puzzle failed to solve so that scheduled runs
 surface breakage instead of silently skipping a day.
@@ -26,7 +27,7 @@ from menu_options import SudokuDifficultyOptions
 from solvers import llm
 from solvers.connections.ConnectionsSolver import ConnectionsSolver
 from solvers.crossword.MiniCrosswordSolver import MiniCrosswordSolver
-from solvers.letter_boxed.LetterBoxedSolver import LetterBoxedSolver
+from solvers.letter_boxed.LetterBoxedSolver import LetterBoxedSolver, ARCHIVE_EPOCH as LETTER_BOXED_EPOCH
 from solvers.scraping import fetch_game_data
 from solvers.spelling_bee.SpellingBeeSolver import SpellingBeeSolver, BASE_URL as SPELLING_BEE_BASE_URL
 from solvers.strands.StrandsSolver import StrandsSolver
@@ -36,10 +37,10 @@ from solvers.wordle.WordleSolver import WordleSolver
 GAMES = ["letter-boxed", "spelling-bee", "sudoku", "wordle", "strands", "connections", "crossword"]
 DATE_FORMAT = "%Y-%m-%d"
 
-# Letter Boxed, Sudoku and the Mini crossword only expose today's puzzle (every
-# past Mini's content is subscriber-gated); Spelling Bee serves a short archive,
-# and Wordle, Strands and Connections serve their full history.
-TODAY_ONLY_GAMES = {"letter-boxed", "sudoku", "crossword"}
+# Sudoku and the Mini crossword only expose today's puzzle (every past Mini's
+# content is subscriber-gated); Spelling Bee serves a short archive, and Wordle,
+# Strands, Connections and Letter Boxed serve their full history.
+TODAY_ONLY_GAMES = {"sudoku", "crossword"}
 
 # Games with a full date-addressable history and the earliest date NYT serves.
 # Spelling Bee only exposes a rolling ~1-week archive (handled separately).
@@ -47,8 +48,9 @@ HISTORY_EPOCHS = {
     "wordle": "2021-06-19",       # Wordle #1
     "strands": "2024-03-04",      # Strands #1
     "connections": "2023-06-12",  # Connections #1
+    "letter-boxed": LETTER_BOXED_EPOCH,  # puzzle #16; earlier dates 404
 }
-BACKFILL_GAMES = ("spelling-bee", "wordle", "strands", "connections")
+BACKFILL_GAMES = ("spelling-bee", "wordle", "strands", "connections", "letter-boxed")
 
 # Backfill games that call an LLM: capped by default so a run cannot accidentally
 # fire thousands of model requests. Override the cap with --limit.
@@ -108,6 +110,8 @@ def _already_solved(game: str, ds: str) -> bool:
         return os.path.exists(f"{SpellingBeeSolver.OUTPUT_DIRECTORY_PATH}/{ds}.json")
     if game == "connections":
         return os.path.exists(f"{ConnectionsSolver.OUTPUT_DIRECTORY_PATH}/{ds}.json")
+    if game == "letter-boxed":
+        return os.path.exists(f"{LetterBoxedSolver.OUTPUT_DIRECTORY_PATH}/{ds}.json")
     return False
 
 
@@ -147,6 +151,8 @@ def backfill_jobs(game: str, since: Optional[str], force: bool, limit: Optional[
             jobs.append((f"strands {ds}", lambda ds=ds: StrandsSolver(ds).solve()))
         elif game == "connections":
             jobs.append((f"connections {ds}", lambda ds=ds: ConnectionsSolver(ds).solve()))
+        elif game == "letter-boxed":
+            jobs.append((f"letter-boxed {ds}", lambda ds=ds: LetterBoxedSolver(ds).solve()))
     return jobs
 
 
@@ -171,7 +177,7 @@ def build_jobs(args) -> List:
             print(f"! skipping {game} for {ds}: only today's puzzle is available")
             continue
         if game == "letter-boxed":
-            jobs.append((f"letter-boxed {ds}", lambda: LetterBoxedSolver().solve()))
+            jobs.append((f"letter-boxed {ds}", lambda ds=ds: LetterBoxedSolver(ds).solve()))
         elif game == "spelling-bee":
             jobs.append((f"spelling-bee {ds}", lambda ds=ds: SpellingBeeSolver(ds).solve()))
         elif game == "sudoku":
@@ -196,7 +202,8 @@ def run(argv: Optional[List[str]] = None) -> int:
     parser = argparse.ArgumentParser(description="Solve NYT puzzles headlessly.")
     parser.add_argument("--game", choices=GAMES + ["all"], default="all")
     parser.add_argument("--date", type=valid_date, default=None,
-                        help="YYYY-MM-DD (Spelling Bee only; defaults to today)")
+                        help="YYYY-MM-DD (games with an archive; defaults to today). "
+                             f"{', '.join(sorted(TODAY_ONLY_GAMES))} are today-only and are skipped")
     parser.add_argument("--difficulty", choices=["easy", "medium", "hard", "all"], default="all",
                         help="Sudoku difficulty (default: all)")
     parser.add_argument("--backfill", action="store_true",

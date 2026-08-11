@@ -16,7 +16,7 @@ _Auto-generated from `solutions/` · **4159** puzzles solved across 7 games (thr
 <table>
 <tr><th>Game</th><th>Puzzles</th><th>Avg score</th><th>p90 runtime</th></tr>
 <tr><td>Spelling Bee</td><td>30</td><td>97.9%</td><td>107 ms</td></tr>
-<tr><td>Letter Boxed</td><td>22</td><td>1257732550480196608.0 words</td><td>714 ms</td></tr>
+<tr><td>Letter Boxed</td><td>22</td><td>2.1 words</td><td>950 ms</td></tr>
 <tr><td>Sudoku</td><td>66</td><td>100%</td><td>0.32 ms</td></tr>
 <tr><td>Wordle (easy)</td><td>1880</td><td>3.8 guesses</td><td>6.31 s</td></tr>
 <tr><td>Wordle (hard)</td><td>1880</td><td>3.9 guesses</td><td>347 ms</td></tr>
@@ -52,10 +52,16 @@ Letter Boxed puts twelve letters on the four sides of a square and asks you to
 spell a chain of words that uses every letter, where each word begins with the
 previous word's last letter and no two consecutive letters share a side. The
 solver builds a trie of board-legal words from a human wordlist and runs a
-depth-first search for the shortest chain, capped at two words, that covers all
-twelve letters. Candidate solutions are then checked against NYT's accepted
-dictionary. The chart below shows how often the puzzle is solvable in a single
-word versus two.
+depth-first search for the shortest chain that covers all twelve letters.
+Candidate solutions are checked against NYT's accepted dictionary. Because only
+the *shortest* chain is scored, the search is iteratively deepened — it looks for
+a one-word solution, then two, and so on up to four — and stops at the first
+depth that yields an accepted answer. Each extra word multiplies the search space
+by roughly a hundred, so this keeps the common two-word day as fast as it ever
+was while still cracking the rare board that needs a third word. A board the
+wordlist cannot solve within the time budget is recorded as unsolved rather than
+being padded with answers borrowed from NYT. The chart below breaks the boards
+down by how many words their shortest solution needed.
 
 <p align="center"><img src="stats/letter_boxed_words.svg" alt="Letter Boxed words per solution" width="520"></p>
 
@@ -147,7 +153,16 @@ Solve headlessly (all games today, a specific date, or a backfill):
 .venv/bin/python src/cli.py
 .venv/bin/python src/cli.py --game spelling-bee --date 2026-07-20
 .venv/bin/python src/cli.py --game spelling-bee --backfill
+.venv/bin/python src/cli.py --game letter-boxed --backfill --limit 50
 ```
+
+Letter Boxed, Wordle, Strands and Connections have a full date-addressable
+archive; Spelling Bee has a rolling ~1-week window; Sudoku and the Mini are
+today-only. Backfills skip dates already on disk, so they are resumable and safe
+to re-run. The Letter Boxed archive reaches back to 2019 (~2,750 puzzles) and is
+CPU-bound rather than quota-bound — most boards solve in well under a second, but
+one with no two-word solution can take a minute — so `--limit` is the practical
+way to work through it.
 
 Connections and the Mini crossword call an LLM. The client tries providers in
 order and skips any that aren't configured: Groq (`GROQ_API_KEY`, generous free

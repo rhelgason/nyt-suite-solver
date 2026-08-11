@@ -1,23 +1,38 @@
 from datetime import datetime, timedelta
 from display_utils import clear_terminal, MAX_PERCENTAGE, should_update_progress_bar, use_progress_bar
 from solvers.BaseSolver import BaseSolver
-from solvers.scraping import fetch_game_data
+from solvers.scraping import fetch_game_data, fetch_json, PuzzleDataNotFound
 from Spinner import Spinner
 from time import time
 from trie.Trie import Trie
 from typing import Dict, List, Set
 
 import os
-import sys
 
 BASE_URL = "https://www.nytimes.com/puzzles/letter-boxed"
+# Past boards are NOT on the HTML page (a date-suffixed page 404s), but they are
+# served by this date-addressable JSON endpoint in the same shape the page embeds
+# -- crucially including that day's own board-specific `dictionary`, so archived
+# puzzles can be scored as well as solved. Available from ARCHIVE_EPOCH onwards.
+ARCHIVE_URL = "https://www.nytimes.com/svc/letter-boxed/v1/{ds}.json"
+ARCHIVE_EPOCH = "2019-01-06"  # puzzle #16; earlier dates 404
 WORDS_FILE_PATH = "wordlist_small.txt"
 
 NUM_SIDES = 4
 NUM_LETTERS_PER_SIDE = 3
 MIN_LENGTH = 3
-# the max length is actually 5, but we can almost always do better
-MAX_WORDS = 2
+# the max length NYT allows is 5, but we can almost always do better. The search
+# is iteratively deepened (see get_valid_solutions), so raising this ceiling only
+# costs time on the rare days that genuinely need the extra word.
+MAX_WORDS = 4
+# a deep search can find tens of thousands of solutions for one board, which
+# would commit a multi-megabyte file every day. Log a representative sample per
+# word count and keep the true totals alongside it.
+MAX_LOGGED_ANSWERS = 50
+# each extra word multiplies the search space by roughly a hundred, so an
+# unlucky board could search for hours. This runs unattended every day: cap the
+# whole search and log an honest "unsolved" rather than hanging the daily job.
+SEARCH_BUDGET_SECONDS = 300
 
 """
 Scrapes the NYT Letter Boxed puzzle and solves it, all backed
@@ -39,11 +54,27 @@ class LetterBoxedSolver(BaseSolver):
         self.valid_words = Trie()
         self.scrape_puzzle()
 
+    def fetch_puzzle_data(self) -> Dict:
+        """Today's board from the puzzle page, any earlier one from the JSON
+        archive. Today deliberately keeps using the page the daily run has always
+        used, so the unattended path is unchanged."""
+        if self.ds == datetime.today().date().strftime("%Y-%m-%d"):
+            return fetch_game_data(BASE_URL)
+
+        puzzle_data = fetch_json(ARCHIVE_URL.format(ds=self.ds))
+        # never silently solve the wrong day: the archive echoes back the date it
+        # served, so a mismatch means we would be writing bad history
+        if puzzle_data.get("printDate") != self.ds:
+            raise PuzzleDataNotFound(
+                f"Letter Boxed archive returned {puzzle_data.get('printDate')!r} for {self.ds}"
+            )
+        return puzzle_data
+
     def scrape_puzzle(self) -> None:
         fetching_str = f"Fetching puzzle from NYT website..."
         clear_terminal()
         with Spinner(fetching_str):
-            puzzle_data = fetch_game_data(BASE_URL)
+            puzzle_data = self.fetch_puzzle_data()
             self.puzzle_id = puzzle_data['id']
             for side in puzzle_data['sides']:
                 self.letters.append(dict.fromkeys(side.lower()))
@@ -132,18 +163,39 @@ class LetterBoxedSolver(BaseSolver):
                 return i
         return -1
 
+    def is_accepted_answer(self, answer: List[str]) -> bool:
+        """Whether NYT's dictionary accepts every word of a solution. Only these
+        count towards the reported shortest solution."""
+        return all(self.valid_words.contains(word) for word in answer)
+
     def get_valid_solutions(self, start: float) -> None:
-        self.answers = [[] for _ in range(MAX_WORDS)]
-        self.get_valid_solutions_helper([], set(), start)
-    
-    def get_valid_solutions_helper(self, words: List[str], used_letters: Set[str], start: float) -> None:
+        # Iteratively deepen: the score we report is the SHORTEST solution, so
+        # once a board is solved in n words there is nothing to learn from
+        # enumerating its n+1 word solutions -- and plenty to lose, as each extra
+        # word multiplies the search space by roughly a hundred. Searching depth
+        # by depth keeps the common case as fast as a 2-word-only search while
+        # still solving the rare boards that need 3 or 4 words.
+        deadline = start + SEARCH_BUDGET_SECONDS
+        for max_depth in range(1, MAX_WORDS + 1):
+            # a depth-n pass re-finds every shorter solution too, so start clean
+            # rather than accumulating duplicates across passes
+            self.answers = [[] for _ in range(MAX_WORDS)]
+            self.get_valid_solutions_helper([], set(), start, max_depth, deadline)
+            # stop at the first depth NYT would actually accept a solution from;
+            # a board solvable only by words outside their dictionary is not solved
+            if any(self.is_accepted_answer(a) for bucket in self.answers for a in bucket):
+                return
+            if time() > deadline:
+                return
+
+    def get_valid_solutions_helper(self, words: List[str], used_letters: Set[str], start: float, max_depth: int, deadline: float) -> None:
         # if used all letters
         if len(used_letters) == NUM_LETTERS_PER_SIDE * NUM_SIDES:
             self.answers[len(words) - 1].append(words)
             return
-        
+
         # end early if we have more words than best answer
-        if len(words) >= MAX_WORDS:
+        if len(words) >= max_depth:
             return
 
         # recurse on each possible next word
@@ -151,28 +203,32 @@ class LetterBoxedSolver(BaseSolver):
         if next_words is None:
             return
         for i in range(next_words.size):
+            # abandon a runaway search. Checking the two outermost levels bounds
+            # the overrun to a single shallow subtree without paying for a clock
+            # read in the innermost loop
+            if len(words) <= 1 and time() > deadline:
+                return
+
             # update progress bar
             if len(words) == 0 and should_update_progress_bar():
                 progress = int((i / next_words.size) * MAX_PERCENTAGE)
                 use_progress_bar(progress, start, time())
 
             next_word = next_words[i]
-            self.get_valid_solutions_helper(words + [next_word], used_letters | set(next_word), start)
+            self.get_valid_solutions_helper(words + [next_word], used_letters | set(next_word), start, max_depth, deadline)
         
     def write_solved_puzzle(self, start: float, end: float) -> None:
         valid_answers = []
         invalid_answers = []
-        shortest_answer_length = sys.maxsize
+        shortest_answer_length = None
         for answers in self.answers:
             for answer in answers:
-                is_valid = True
-                for word in answer:
-                    if not self.valid_words.contains(word):
-                        is_valid = False
-                        break
-                if is_valid:
+                if self.is_accepted_answer(answer):
                     valid_answers.append(answer)
-                    shortest_answer_length = min(shortest_answer_length, len(answer))
+                    if shortest_answer_length is None:
+                        shortest_answer_length = len(answer)
+                    else:
+                        shortest_answer_length = min(shortest_answer_length, len(answer))
                 else:
                     invalid_answers.append(answer)
 
@@ -180,8 +236,12 @@ class LetterBoxedSolver(BaseSolver):
             "puzzle_id": self.puzzle_id,
             "ds": self.ds,
             "sides": [list(x.keys()) for x in self.letters],
-            "valid_answers": valid_answers,
-            "invalid_answers": invalid_answers,
+            "valid_answers": valid_answers[:MAX_LOGGED_ANSWERS],
+            "invalid_answers": invalid_answers[:MAX_LOGGED_ANSWERS],
+            "num_valid_answers": len(valid_answers),
+            "num_invalid_answers": len(invalid_answers),
+            # null, not a sentinel, when no solution was found: the wordlist is a
+            # realistic human vocabulary, so some boards legitimately go unsolved
             "shortest_answer_length": shortest_answer_length,
             "solve_time": str(timedelta(seconds=end - start))[:-3],
         }

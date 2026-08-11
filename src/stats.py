@@ -99,13 +99,26 @@ def summarize_spelling_bee(records: List[Record]) -> dict:
     }
 
 
+# NYT accepts at most a 5-word Letter Boxed solution, so anything outside 1..5 is
+# not a real word count -- it is a missing value or a sentinel from an older run
+MAX_SOLUTION_WORDS = 5
+
+
 def summarize_letter_boxed(records: List[Record]) -> dict:
     by_ds = _by_date(records)
     dates = sorted(by_ds)
-    shortest = [by_ds[d]["shortest_answer_length"] for d in dates if isinstance(by_ds[d].get("shortest_answer_length"), int)]
-    word_counts: Dict[int, int] = {}
-    for n in shortest:
-        word_counts[n] = word_counts.get(n, 0) + 1
+    # a board with no solution in our wordlist stores null; bucket those as "X"
+    # (as Wordle does for a failed solve) so they stay visible in the chart
+    # without dragging the average solution length around
+    shortest = []
+    word_counts: Dict[object, int] = {}
+    for d in dates:
+        n = by_ds[d].get("shortest_answer_length")
+        if isinstance(n, int) and not isinstance(n, bool) and 1 <= n <= MAX_SOLUTION_WORDS:
+            shortest.append(n)
+            word_counts[n] = word_counts.get(n, 0) + 1
+        else:
+            word_counts["X"] = word_counts.get("X", 0) + 1
     avg_shortest = sum(shortest) / len(shortest) if shortest else None
     return {
         "count": len(dates),
@@ -266,8 +279,10 @@ def score_pie_svg(s: dict) -> Optional[str]:
     return svg_charts.pie_chart("Spelling Bee Score Distribution", slices)
 
 
-# colors for the Letter Boxed words-per-solution pie (fewer words is better)
-WORD_COUNT_COLORS = {1: "#16a34a", 2: "#2563eb", 3: "#f59e0b"}
+# colors for the Letter Boxed words-per-solution pie (fewer words is better),
+# plus grey for "X" -- boards our wordlist could not solve at all
+WORD_COUNT_COLORS = {1: "#16a34a", 2: "#2563eb", 3: "#f59e0b", 4: "#ea580c", 5: "#dc2626"}
+UNSOLVED_COLOR = "#6b7280"
 
 
 def word_count_pie_svg(s: dict) -> Optional[str]:
@@ -275,9 +290,12 @@ def word_count_pie_svg(s: dict) -> Optional[str]:
     if not counts:
         return None
     slices = []
-    for n in sorted(counts):
+    # sort the numeric buckets, then append "X" last (int and str do not compare)
+    for n in sorted(k for k in counts if k != "X"):
         label = f"{n} word" if n == 1 else f"{n} words"
-        slices.append((label, counts[n], WORD_COUNT_COLORS.get(n, "#6b7280")))
+        slices.append((label, counts[n], WORD_COUNT_COLORS.get(n, UNSOLVED_COLOR)))
+    if counts.get("X"):
+        slices.append(("unsolved", counts["X"], UNSOLVED_COLOR))
     return svg_charts.pie_chart("Letter Boxed Words per Solution", slices)
 
 

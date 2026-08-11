@@ -31,10 +31,10 @@ def test_build_jobs_all_today(monkeypatch):
 
 def test_build_jobs_past_date_skips_today_only_games(monkeypatch):
     monkeypatch.setattr(cli, "today_ds", lambda: "2026-01-01")
-    # Letter Boxed and Sudoku have no archive; Spelling Bee and Wordle do
     labels = [label for label, _ in cli.build_jobs(_args(date="2025-12-01"))]
-    # Letter Boxed, Sudoku and the Mini crossword are today-only; the rest have history
+    # only Sudoku and the Mini crossword are today-only; the rest have an archive
     assert labels == [
+        "letter-boxed 2025-12-01",
         "spelling-bee 2025-12-01",
         "wordle easy 2025-12-01",
         "wordle hard 2025-12-01",
@@ -88,6 +88,28 @@ def test_connections_backfill_defaults_to_cap(monkeypatch):
     labels = [l for l, _ in cli.build_jobs(_args(game="connections", backfill=True))]
     assert len(labels) == cli.DEFAULT_LLM_BACKFILL_LIMIT  # capped by default
     assert labels[-1] == "connections 2026-01-01"          # oldest-first, so newest last
+
+
+def test_letter_boxed_backfill_clamped_to_epoch(monkeypatch):
+    monkeypatch.setattr(cli, "today_ds", lambda: "2019-01-08")
+    labels = [l for l, _ in cli.build_jobs(_args(game="letter-boxed", backfill=True, since="2018-01-01"))]
+    # the archive starts at puzzle #16; earlier dates 404, so --since is clamped
+    assert labels == ["letter-boxed 2019-01-06", "letter-boxed 2019-01-07", "letter-boxed 2019-01-08"]
+
+
+def test_letter_boxed_backfill_is_not_llm_capped(monkeypatch):
+    # unlike Connections there is no model quota to protect, so a backfill runs
+    # the full requested range unless --limit says otherwise
+    monkeypatch.setattr(cli, "today_ds", lambda: "2019-02-01")
+    labels = [l for l, _ in cli.build_jobs(_args(game="letter-boxed", backfill=True))]
+    assert len(labels) == 27  # 2019-01-06 .. 2019-02-01 inclusive
+
+
+def test_letter_boxed_accepts_a_past_date(monkeypatch):
+    # it is no longer a today-only game, so --date must not skip it
+    monkeypatch.setattr(cli, "today_ds", lambda: "2026-01-05")
+    labels = [l for l, _ in cli.build_jobs(_args(game="letter-boxed", date="2025-06-01"))]
+    assert labels == ["letter-boxed 2025-06-01"]
 
 
 def test_connections_backfill_respects_limit(monkeypatch):
