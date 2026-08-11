@@ -1,0 +1,20 @@
+{
+    "puzzle_id": 1069,
+    "ds": "2026-08-11",
+    "clue": "Fresh from the market",
+    "theme_words": [
+        "carrot",
+        "corn",
+        "melon",
+        "pepper",
+        "tomato",
+        "zucchini"
+    ],
+    "spangram": "summerharvest",
+    "solved": false,
+    "theme_words_found": 3,
+    "theme_words_total": 6,
+    "candidates": 9294,
+    "truncated": true,
+    "solve_time": "0:01:05.221"
+}

@@ -10,19 +10,19 @@ also be used interactively or headlessly.
 <!-- STATS:START -->
 ## Lifetime results
 
-_Auto-generated from `solutions/` · **4149** puzzles solved across 7 games (through 2026-08-10)._
+_Auto-generated from `solutions/` · **4159** puzzles solved across 7 games (through 2026-08-11)._
 
 <div align="center">
 <table>
 <tr><th>Game</th><th>Puzzles</th><th>Avg score</th><th>p90 runtime</th></tr>
-<tr><td>Spelling Bee</td><td>29</td><td>97.8%</td><td>107 ms</td></tr>
-<tr><td>Letter Boxed</td><td>21</td><td>1317624576693539328.0 words</td><td>714 ms</td></tr>
-<tr><td>Sudoku</td><td>63</td><td>100%</td><td>0.32 ms</td></tr>
-<tr><td>Wordle (easy)</td><td>1879</td><td>3.8 guesses</td><td>7.10 s</td></tr>
-<tr><td>Wordle (hard)</td><td>1879</td><td>3.9 guesses</td><td>492 ms</td></tr>
-<tr><td>Strands</td><td>208</td><td>77% words</td><td>65.36 s</td></tr>
-<tr><td>Connections</td><td>50</td><td>14%</td><td>10.52 s</td></tr>
-<tr><td>Mini Crossword</td><td>20</td><td>6% cells</td><td>5.14 s</td></tr>
+<tr><td>Spelling Bee</td><td>30</td><td>97.9%</td><td>107 ms</td></tr>
+<tr><td>Letter Boxed</td><td>22</td><td>1257732550480196608.0 words</td><td>714 ms</td></tr>
+<tr><td>Sudoku</td><td>66</td><td>100%</td><td>0.32 ms</td></tr>
+<tr><td>Wordle (easy)</td><td>1880</td><td>3.8 guesses</td><td>6.31 s</td></tr>
+<tr><td>Wordle (hard)</td><td>1880</td><td>3.9 guesses</td><td>347 ms</td></tr>
+<tr><td>Strands</td><td>209</td><td>77% words</td><td>65.36 s</td></tr>
+<tr><td>Connections</td><td>51</td><td>14%</td><td>10.52 s</td></tr>
+<tr><td>Mini Crossword</td><td>21</td><td>6% cells</td><td>5.14 s</td></tr>
 </table>
 </div>
 <!-- STATS:END -->

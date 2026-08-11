@@ -1,0 +1,65 @@
+{
+    "puzzle_id": 1242,
+    "ds": "2026-08-11",
+    "words": [
+        "TOAST",
+        "AYE",
+        "BRAVO",
+        "SOLD",
+        "BET",
+        "DONE",
+        "HISTORY",
+        "KNOWS",
+        "HARE",
+        "GOING",
+        "THROUGH",
+        "TWICE",
+        "ONCE",
+        "SUNK",
+        "TUNG",
+        "USA"
+    ],
+    "categories": [
+        {
+            "title": "DOOMED",
+            "words": [
+                "DONE",
+                "SUNK",
+                "THROUGH",
+                "TOAST"
+            ]
+        },
+        {
+            "title": "BASIC CABLE CHANNELS",
+            "words": [
+                "BET",
+                "BRAVO",
+                "HISTORY",
+                "USA"
+            ]
+        },
+        {
+            "title": "WORDS IN AN AUCTIONEER'S CHANT",
+            "words": [
+                "GOING",
+                "ONCE",
+                "SOLD",
+                "TWICE"
+            ]
+        },
+        {
+            "title": "HOMOPHONES OF FACIAL FEATURES",
+            "words": [
+                "AYE",
+                "HARE",
+                "KNOWS",
+                "TUNG"
+            ]
+        }
+    ],
+    "solved": false,
+    "groups_found": 0,
+    "mistakes": 0,
+    "guesses": [],
+    "solve_time": "0:00:06.650"
+}
