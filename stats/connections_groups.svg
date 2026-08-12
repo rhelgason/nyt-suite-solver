@@ -1,16 +1,16 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="560" height="320" viewBox="0 0 560 320" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="12">
 <rect width="560" height="320" fill="#ffffff"/>
 <text x="280" y="26" text-anchor="middle" font-size="16" font-weight="600" fill="#1a1a1a">Connections Groups Found</text>
-<path d="M 165 178 L 165.0 60.0 A 118 118 0 1 1 70.8 249.1 Z" fill="#dc2626"/>
-<path d="M 165 178 L 70.8 249.1 A 118 118 0 0 1 59.4 125.4 Z" fill="#f59e0b"/>
-<path d="M 165 178 L 59.4 125.4 A 118 118 0 0 1 75.4 101.2 Z" fill="#eab308"/>
-<path d="M 165 178 L 75.4 101.2 A 118 118 0 0 1 165.0 60.0 Z" fill="#16a34a"/>
+<path d="M 165 178 L 165.0 60.0 A 118 118 0 1 1 67.9 245.0 Z" fill="#dc2626"/>
+<path d="M 165 178 L 67.9 245.0 A 118 118 0 0 1 60.5 123.2 Z" fill="#f59e0b"/>
+<path d="M 165 178 L 60.5 123.2 A 118 118 0 0 1 76.7 99.8 Z" fill="#eab308"/>
+<path d="M 165 178 L 76.7 99.8 A 118 118 0 0 1 165.0 60.0 Z" fill="#16a34a"/>
 <rect x="330" y="85" width="14" height="14" rx="2" fill="#dc2626"/>
-<text x="352" y="96" fill="#333">0 groups: 33 (65%)</text>
+<text x="352" y="96" fill="#333">0 groups: 34 (65%)</text>
 <rect x="330" y="109" width="14" height="14" rx="2" fill="#f59e0b"/>
-<text x="352" y="120" fill="#333">1 group: 9 (18%)</text>
+<text x="352" y="120" fill="#333">1 group: 9 (17%)</text>
 <rect x="330" y="133" width="14" height="14" rx="2" fill="#eab308"/>
 <text x="352" y="144" fill="#333">2 groups: 2 (4%)</text>
 <rect x="330" y="157" width="14" height="14" rx="2" fill="#16a34a"/>
-<text x="352" y="168" fill="#333">All 4 groups: 7 (14%)</text>
+<text x="352" y="168" fill="#333">All 4 groups: 7 (13%)</text>
 </svg>

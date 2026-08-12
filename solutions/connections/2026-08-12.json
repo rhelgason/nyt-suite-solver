@@ -1,0 +1,65 @@
+{
+    "puzzle_id": 1243,
+    "ds": "2026-08-12",
+    "words": [
+        "LEMON",
+        "TREE",
+        "HARBOR",
+        "FINE PRINT",
+        "GREAT WHITE",
+        "GREEN",
+        "GOODBYE",
+        "NURSE",
+        "BULL",
+        "BING",
+        "FOSTER",
+        "SCOTT",
+        "BENES",
+        "OKAYAMA",
+        "POISON DART",
+        "MAINTAIN"
+    ],
+    "categories": [
+        {
+            "title": "HOLD ONTO, AS A FEELING",
+            "words": [
+                "FOSTER",
+                "HARBOR",
+                "MAINTAIN",
+                "NURSE"
+            ]
+        },
+        {
+            "title": "KINDS OF FROGS",
+            "words": [
+                "BULL",
+                "GREEN",
+                "POISON DART",
+                "TREE"
+            ]
+        },
+        {
+            "title": "NBC SITCOM SURNAMES",
+            "words": [
+                "BENES",
+                "BING",
+                "LEMON",
+                "SCOTT"
+            ]
+        },
+        {
+            "title": "STARTING WITH AFFIRMATIVE RESPONSES",
+            "words": [
+                "FINE PRINT",
+                "GOODBYE",
+                "GREAT WHITE",
+                "OKAYAMA"
+            ]
+        }
+    ],
+    "solved": false,
+    "groups_found": 0,
+    "mistakes": 0,
+    "guesses": [],
+    "solve_time": "0:00:06.655"
+}
