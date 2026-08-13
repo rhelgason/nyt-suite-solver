@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1043,
+    "ds": "2026-08-13",
+    "mode": "easy",
+    "solution": "crash",
+    "guesses": [
+        "tares",
+        "spawn",
+        "brash",
+        "crash"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.447"
+}

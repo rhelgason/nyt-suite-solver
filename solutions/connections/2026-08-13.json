@@ -1,0 +1,65 @@
+{
+    "puzzle_id": 1245,
+    "ds": "2026-08-13",
+    "words": [
+        "COMFORT",
+        "EASE",
+        "SHOULDER",
+        "INCH",
+        "MILES",
+        "CARRY ON",
+        "FEET",
+        "CHECKED BAGS",
+        "CREEP",
+        "TURKEY",
+        "UPGRADE",
+        "MAKE IT",
+        "PERSIST",
+        "EDGE",
+        "LOUNGE",
+        "CONTINUE"
+    ],
+    "categories": [
+        {
+            "title": "PERSEVERE",
+            "words": [
+                "CARRY ON",
+                "CONTINUE",
+                "MAKE IT",
+                "PERSIST"
+            ]
+        },
+        {
+            "title": "MOVE SLOWLY (UP TO)",
+            "words": [
+                "CREEP",
+                "EASE",
+                "EDGE",
+                "INCH"
+            ]
+        },
+        {
+            "title": "AIRLINE STATUS PERKS",
+            "words": [
+                "CHECKED BAGS",
+                "LOUNGE",
+                "MILES",
+                "UPGRADE"
+            ]
+        },
+        {
+            "title": "\"COLD\" THINGS, IN IDIOMS",
+            "words": [
+                "COMFORT",
+                "FEET",
+                "SHOULDER",
+                "TURKEY"
+            ]
+        }
+    ],
+    "solved": false,
+    "groups_found": 0,
+    "mistakes": 0,
+    "guesses": [],
+    "solve_time": "0:00:06.733"
+}
