@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 5159,
+    "ds": "2026-08-14",
+    "mode": "hard",
+    "solution": "geode",
+    "guesses": [
+        "tares",
+        "oldie",
+        "coude",
+        "epode",
+        "geode"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:00.303"
+}

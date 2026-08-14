@@ -1,0 +1,65 @@
+{
+    "puzzle_id": 1248,
+    "ds": "2026-08-14",
+    "words": [
+        "BUMBLEBEE",
+        "BUBBLE",
+        "BASS ALE",
+        "CHARLIE BROWN",
+        "DELTA AIRLINES",
+        "STRAIGHTEDGE",
+        "ECHO CHAMBER",
+        "CITGO",
+        "CAUTION TAPE",
+        "GOOGLE DRIVE",
+        "INDIA INK",
+        "SILO",
+        "DIP PEN",
+        "WOLVERINE",
+        "HIVEMIND",
+        "BRISTOL BOARD"
+    ],
+    "categories": [
+        {
+            "title": "BLACK-AND-YELLOW",
+            "words": [
+                "BUMBLEBEE",
+                "CAUTION TAPE",
+                "CHARLIE BROWN",
+                "WOLVERINE"
+            ]
+        },
+        {
+            "title": "PLACES WHERE EVERYONE THINKS THE SAME WAYS",
+            "words": [
+                "BUBBLE",
+                "ECHO CHAMBER",
+                "HIVEMIND",
+                "SILO"
+            ]
+        },
+        {
+            "title": "COMIC BOOK ARTIST'S TOOLS",
+            "words": [
+                "BRISTOL BOARD",
+                "DIP PEN",
+                "INDIA INK",
+                "STRAIGHTEDGE"
+            ]
+        },
+        {
+            "title": "TRIANGLE LOGOS",
+            "words": [
+                "BASS ALE",
+                "CITGO",
+                "DELTA AIRLINES",
+                "GOOGLE DRIVE"
+            ]
+        }
+    ],
+    "solved": false,
+    "groups_found": 0,
+    "mistakes": 0,
+    "guesses": [],
+    "solve_time": "0:00:06.601"
+}

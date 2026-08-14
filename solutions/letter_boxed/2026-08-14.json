@@ -1,0 +1,69 @@
+{
+    "puzzle_id": 2810,
+    "ds": "2026-08-14",
+    "sides": [
+        [
+            "k",
+            "s",
+            "z"
+        ],
+        [
+            "l",
+            "m",
+            "b"
+        ],
+        [
+            "c",
+            "o",
+            "u"
+        ],
+        [
+            "a",
+            "t",
+            "g"
+        ]
+    ],
+    "valid_answers": [
+        [
+            "backlogs",
+            "smack",
+            "klutz"
+        ],
+        [
+            "bogs",
+            "smack",
+            "klutz"
+        ],
+        [
+            "bogus",
+            "smack",
+            "klutz"
+        ],
+        [
+            "globs",
+            "smack",
+            "klutz"
+        ],
+        [
+            "gobos",
+            "smack",
+            "klutz"
+        ],
+        [
+            "gobs",
+            "smack",
+            "klutz"
+        ]
+    ],
+    "invalid_answers": [
+        [
+            "zulus",
+            "sackbuts",
+            "smog"
+        ]
+    ],
+    "num_valid_answers": 6,
+    "num_invalid_answers": 1,
+    "shortest_answer_length": 3,
+    "solve_time": "0:00:02.289"
+}

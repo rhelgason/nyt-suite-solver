@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 5159,
+    "ds": "2026-08-14",
+    "mode": "easy",
+    "solution": "geode",
+    "guesses": [
+        "tares",
+        "colin",
+        "debye",
+        "geode"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:05.946"
+}
