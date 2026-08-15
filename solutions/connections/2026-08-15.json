@@ -1,0 +1,65 @@
+{
+    "puzzle_id": 1244,
+    "ds": "2026-08-15",
+    "words": [
+        "GRINCH",
+        "BEANSTALK",
+        "STAGE",
+        "LANYARD",
+        "HIGHTAIL",
+        "LEG",
+        "SOUNDTRACK",
+        "HOTFOOT",
+        "BEAT",
+        "STRETCH",
+        "FRIED",
+        "CHAMOMILE",
+        "SPENT",
+        "EYESHADOW",
+        "PHASE",
+        "WORN OUT"
+    ],
+    "categories": [
+        {
+            "title": "EXHAUSTED",
+            "words": [
+                "BEAT",
+                "FRIED",
+                "SPENT",
+                "WORN OUT"
+            ]
+        },
+        {
+            "title": "SEGMENT",
+            "words": [
+                "LEG",
+                "PHASE",
+                "STAGE",
+                "STRETCH"
+            ]
+        },
+        {
+            "title": "ENDING IN UNITS OF LENGTH",
+            "words": [
+                "CHAMOMILE",
+                "GRINCH",
+                "HOTFOOT",
+                "LANYARD"
+            ]
+        },
+        {
+            "title": "ENDING IN SYNONYMS FOR FOLLOW SECRETLY",
+            "words": [
+                "BEANSTALK",
+                "EYESHADOW",
+                "HIGHTAIL",
+                "SOUNDTRACK"
+            ]
+        }
+    ],
+    "solved": false,
+    "groups_found": 0,
+    "mistakes": 0,
+    "guesses": [],
+    "solve_time": "0:00:06.426"
+}

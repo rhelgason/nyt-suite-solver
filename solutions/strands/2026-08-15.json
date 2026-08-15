@@ -1,0 +1,21 @@
+{
+    "puzzle_id": 1073,
+    "ds": "2026-08-15",
+    "clue": "Sacred space",
+    "theme_words": [
+        "altar",
+        "bible",
+        "candles",
+        "hymnal",
+        "lectern",
+        "pews",
+        "pulpit"
+    ],
+    "spangram": "inchurch",
+    "solved": false,
+    "theme_words_found": 3,
+    "theme_words_total": 7,
+    "candidates": 13446,
+    "truncated": true,
+    "solve_time": "0:01:01.362"
+}

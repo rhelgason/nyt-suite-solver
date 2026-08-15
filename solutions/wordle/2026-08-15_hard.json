@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 587,
+    "ds": "2026-08-15",
+    "mode": "hard",
+    "solution": "loose",
+    "guesses": [
+        "tares",
+        "seine",
+        "pulse",
+        "close",
+        "loose"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:00.072"
+}
