@@ -1,0 +1,65 @@
+{
+    "puzzle_id": 1247,
+    "ds": "2026-08-16",
+    "words": [
+        "PARTY",
+        "ACTOR",
+        "HANDY",
+        "GRAND",
+        "UPRIGHT",
+        "HALF",
+        "STEP",
+        "PLAYER",
+        "WISE",
+        "CONCERT",
+        "SET",
+        "AGENT",
+        "SHOW",
+        "GREAT",
+        "FROM NEANDER",
+        "GIG"
+    ],
+    "categories": [
+        {
+            "title": "MUSICAL PERFORMANCE",
+            "words": [
+                "CONCERT",
+                "GIG",
+                "SET",
+                "SHOW"
+            ]
+        },
+        {
+            "title": "PARTICIPANT",
+            "words": [
+                "ACTOR",
+                "AGENT",
+                "PARTY",
+                "PLAYER"
+            ]
+        },
+        {
+            "title": "FAMILY RELATIONSHIP MODIFIERS",
+            "words": [
+                "GRAND",
+                "GREAT",
+                "HALF",
+                "STEP"
+            ]
+        },
+        {
+            "title": "DESCRIPTORS FOR OUR HUMAN ANCESTORS",
+            "words": [
+                "FROM NEANDER",
+                "HANDY",
+                "UPRIGHT",
+                "WISE"
+            ]
+        }
+    ],
+    "solved": false,
+    "groups_found": 0,
+    "mistakes": 0,
+    "guesses": [],
+    "solve_time": "0:00:06.571"
+}
