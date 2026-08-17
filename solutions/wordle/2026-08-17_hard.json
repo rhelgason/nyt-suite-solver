@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 1751,
+    "ds": "2026-08-17",
+    "mode": "hard",
+    "solution": "tribe",
+    "guesses": [
+        "tares",
+        "trine",
+        "tribe"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:00.039"
+}

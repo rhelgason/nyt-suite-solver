@@ -1,0 +1,65 @@
+{
+    "puzzle_id": 1246,
+    "ds": "2026-08-17",
+    "words": [
+        "MACRO",
+        "MEET",
+        "DOLLY",
+        "DOGIE",
+        "ZOOM",
+        "CATTLE",
+        "FISHEYE",
+        "SCRIPT",
+        "WILLIE",
+        "BIRDIE",
+        "PATSY",
+        "FUNCTION",
+        "HUDDLE",
+        "FORMULA",
+        "JOHNNY",
+        "TEAMS"
+    ],
+    "categories": [
+        {
+            "title": "VIDEO CALL PLATFORMS",
+            "words": [
+                "HUDDLE",
+                "MEET",
+                "TEAMS",
+                "ZOOM"
+            ]
+        },
+        {
+            "title": "SPREADSHEET FEATURES",
+            "words": [
+                "FORMULA",
+                "FUNCTION",
+                "MACRO",
+                "SCRIPT"
+            ]
+        },
+        {
+            "title": "FIRST NAMES OF COUNTRY MUSIC LEGENDS",
+            "words": [
+                "DOLLY",
+                "JOHNNY",
+                "PATSY",
+                "WILLIE"
+            ]
+        },
+        {
+            "title": "STARTING WITH PETS",
+            "words": [
+                "BIRDIE",
+                "CATTLE",
+                "DOGIE",
+                "FISHEYE"
+            ]
+        }
+    ],
+    "solved": false,
+    "groups_found": 0,
+    "mistakes": 0,
+    "guesses": [],
+    "solve_time": "0:00:06.477"
+}

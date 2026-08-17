@@ -1,0 +1,21 @@
+{
+    "puzzle_id": 1075,
+    "ds": "2026-08-17",
+    "clue": "On a bender",
+    "theme_words": [
+        "ankle",
+        "elbow",
+        "knee",
+        "knuckle",
+        "neck",
+        "shoulder",
+        "wrist"
+    ],
+    "spangram": "bodyjoints",
+    "solved": false,
+    "theme_words_found": 3,
+    "theme_words_total": 7,
+    "candidates": 15027,
+    "truncated": true,
+    "solve_time": "0:01:00.400"
+}
