@@ -1,0 +1,18 @@
+{
+    "puzzle_id": 24412,
+    "ds": "2026-08-18",
+    "width": 5,
+    "height": 5,
+    "solved": false,
+    "cells_correct": 0,
+    "cells_total": 25,
+    "grid": [
+        ". . . . .",
+        ". . . . .",
+        ". . . . .",
+        ". . . . .",
+        ". . . . ."
+    ],
+    "llm_answers": {},
+    "solve_time": "0:00:04.105"
+}

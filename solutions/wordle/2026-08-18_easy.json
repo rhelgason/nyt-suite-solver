@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 1766,
+    "ds": "2026-08-18",
+    "mode": "easy",
+    "solution": "strip",
+    "guesses": [
+        "tares",
+        "whaup",
+        "strip"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:00.206"
+}
