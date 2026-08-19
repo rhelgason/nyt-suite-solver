@@ -1,0 +1,65 @@
+{
+    "puzzle_id": 1201,
+    "ds": "2026-08-19",
+    "words": [
+        "PICNIC",
+        "BASKET",
+        "BREEZE",
+        "ANTS",
+        "BLANKET",
+        "COCOA",
+        "PICKLE",
+        "FOOT",
+        "SNAP",
+        "BASE",
+        "MASK",
+        "SEOUL",
+        "OBSCURE",
+        "RHEO",
+        "CINCH",
+        "HIDE"
+    ],
+    "categories": [
+        {
+            "title": "PIECE OF CAKE",
+            "words": [
+                "BREEZE",
+                "CINCH",
+                "PICNIC",
+                "SNAP"
+            ]
+        },
+        {
+            "title": "CONCEAL",
+            "words": [
+                "BLANKET",
+                "HIDE",
+                "MASK",
+                "OBSCURE"
+            ]
+        },
+        {
+            "title": "WORDS BEFORE \"BALL\" IN SPORT NAMES",
+            "words": [
+                "BASE",
+                "BASKET",
+                "FOOT",
+                "PICKLE"
+            ]
+        },
+        {
+            "title": "HOMOPHONES OF CGI-ANIMATED FILMS",
+            "words": [
+                "ANTS",
+                "COCOA",
+                "RHEO",
+                "SEOUL"
+            ]
+        }
+    ],
+    "solved": false,
+    "groups_found": 0,
+    "mistakes": 0,
+    "guesses": [],
+    "solve_time": "0:00:06.730"
+}
