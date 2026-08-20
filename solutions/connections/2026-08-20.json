@@ -1,0 +1,65 @@
+{
+    "puzzle_id": 1252,
+    "ds": "2026-08-20",
+    "words": [
+        "TELEPHONE",
+        "APOSTROPHE",
+        "OXFORD",
+        "SERIAL",
+        "HAWAIIAN",
+        "OKINA",
+        "RATCHET",
+        "COMMA",
+        "WHITE",
+        "PIGMENT",
+        "ATOMIC",
+        "DRAGONFLY",
+        "DIAVOLA",
+        "CEDILLA",
+        "MEAT LOVERS",
+        "SOCIAL SECURITY"
+    ],
+    "categories": [
+        {
+            "title": "KINDS OF PIZZA",
+            "words": [
+                "DIAVOLA",
+                "HAWAIIAN",
+                "MEAT LOVERS",
+                "WHITE"
+            ]
+        },
+        {
+            "title": "KINDS OF NUMBERS",
+            "words": [
+                "ATOMIC",
+                "SERIAL",
+                "SOCIAL SECURITY",
+                "TELEPHONE"
+            ]
+        },
+        {
+            "title": "SIMILARLY SHAPED TYPOGRAPHICAL MARKS",
+            "words": [
+                "APOSTROPHE",
+                "CEDILLA",
+                "COMMA",
+                "OKINA"
+            ]
+        },
+        {
+            "title": "STARTING WITH CHINESE ZODIAC ANIMALS",
+            "words": [
+                "DRAGONFLY",
+                "OXFORD",
+                "PIGMENT",
+                "RATCHET"
+            ]
+        }
+    ],
+    "solved": false,
+    "groups_found": 0,
+    "mistakes": 0,
+    "guesses": [],
+    "solve_time": "0:00:06.791"
+}
