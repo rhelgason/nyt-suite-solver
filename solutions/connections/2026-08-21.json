@@ -1,0 +1,65 @@
+{
+    "puzzle_id": 1251,
+    "ds": "2026-08-21",
+    "words": [
+        "WIMPY",
+        "WHILE",
+        "SLEEP",
+        "GENERATION",
+        "LIFETIME",
+        "ACTION",
+        "OXYGEN",
+        "COMEBACK",
+        "SHOWTIME",
+        "KARATE",
+        "SUNDANCE",
+        "PLACES",
+        "WATER",
+        "BLUE MOON",
+        "CURTAIN UP",
+        "NUTRITION"
+    ],
+    "categories": [
+        {
+            "title": "THINGS MOST ANIMALS NEED",
+            "words": [
+                "NUTRITION",
+                "OXYGEN",
+                "SLEEP",
+                "WATER"
+            ]
+        },
+        {
+            "title": "CALLS TO BEGIN A PERFORMANCE",
+            "words": [
+                "ACTION",
+                "CURTAIN UP",
+                "PLACES",
+                "SHOWTIME"
+            ]
+        },
+        {
+            "title": "___ KIDS",
+            "words": [
+                "COMEBACK",
+                "KARATE",
+                "SUNDANCE",
+                "WIMPY"
+            ]
+        },
+        {
+            "title": "ONCE IN A ___",
+            "words": [
+                "BLUE MOON",
+                "GENERATION",
+                "LIFETIME",
+                "WHILE"
+            ]
+        }
+    ],
+    "solved": false,
+    "groups_found": 0,
+    "mistakes": 0,
+    "guesses": [],
+    "solve_time": "0:00:06.600"
+}

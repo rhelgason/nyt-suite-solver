@@ -1,0 +1,57 @@
+{
+    "puzzle_id": 2817,
+    "ds": "2026-08-21",
+    "sides": [
+        [
+            "e",
+            "l",
+            "g"
+        ],
+        [
+            "r",
+            "u",
+            "v"
+        ],
+        [
+            "o",
+            "i",
+            "n"
+        ],
+        [
+            "f",
+            "b",
+            "a"
+        ]
+    ],
+    "valid_answers": [
+        [
+            "forgiven",
+            "nebula"
+        ],
+        [
+            "forgiven",
+            "nebulae"
+        ],
+        [
+            "forgiven",
+            "nebular"
+        ],
+        [
+            "unforgiven",
+            "nebula"
+        ],
+        [
+            "unforgiven",
+            "nebulae"
+        ],
+        [
+            "unforgiven",
+            "nebular"
+        ]
+    ],
+    "invalid_answers": [],
+    "num_valid_answers": 6,
+    "num_invalid_answers": 0,
+    "shortest_answer_length": 2,
+    "solve_time": "0:00:00.191"
+}

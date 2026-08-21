@@ -1,0 +1,64 @@
+{
+    "puzzle_id": 27728,
+    "ds": "2026-08-21",
+    "center": "u",
+    "letters": [
+        "u",
+        "g",
+        "n",
+        "r",
+        "h",
+        "d",
+        "o"
+    ],
+    "pangrams": [
+        "groundhog"
+    ],
+    "valid_answers": [
+        "udon",
+        "unground",
+        "dugong",
+        "dung",
+        "noun",
+        "groundhog",
+        "undo",
+        "round",
+        "dour",
+        "guru",
+        "hour",
+        "drug",
+        "gourd",
+        "unhung",
+        "hung",
+        "rough",
+        "dough",
+        "rung",
+        "unhood",
+        "hound",
+        "ground"
+    ],
+    "invalid_answers": [
+        "hunh",
+        "rudd",
+        "nurd",
+        "grugru",
+        "odour",
+        "unrough",
+        "gundog",
+        "runround",
+        "unround",
+        "durn",
+        "nondrug",
+        "durr",
+        "duro",
+        "honour"
+    ],
+    "missed_answers": [
+        "nunhood",
+        "dunno"
+    ],
+    "solve_time": "0:00:00.093",
+    "score": 50,
+    "percentage": 89.28571428571429,
+    "rank": "GENIUS"
+}

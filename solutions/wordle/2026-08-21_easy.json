@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 4413,
+    "ds": "2026-08-21",
+    "mode": "easy",
+    "solution": "trace",
+    "guesses": [
+        "tares",
+        "chard",
+        "trace"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:00.143"
+}
