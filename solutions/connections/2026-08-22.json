@@ -1,0 +1,110 @@
+{
+    "puzzle_id": 1249,
+    "ds": "2026-08-22",
+    "words": [
+        "BITTER",
+        "SPICE",
+        "MEAN",
+        "WINTER",
+        "HAMMER",
+        "CONE",
+        "PLANE",
+        "JET",
+        "GOLDEN",
+        "SAW",
+        "MIST",
+        "MUSK",
+        "GILMORE",
+        "CHISEL",
+        "WATER",
+        "SHOWER"
+    ],
+    "categories": [
+        {
+            "title": "CARPENTRY TOOLS",
+            "words": [
+                "CHISEL",
+                "HAMMER",
+                "PLANE",
+                "SAW"
+            ]
+        },
+        {
+            "title": "KINDS OF MELON",
+            "words": [
+                "BITTER",
+                "MUSK",
+                "WATER",
+                "WINTER"
+            ]
+        },
+        {
+            "title": "GARDEN HOSE SETTINGS",
+            "words": [
+                "CONE",
+                "JET",
+                "MIST",
+                "SHOWER"
+            ]
+        },
+        {
+            "title": "___ GIRLS OF POP CULTURE",
+            "words": [
+                "GILMORE",
+                "GOLDEN",
+                "MEAN",
+                "SPICE"
+            ]
+        }
+    ],
+    "solved": true,
+    "groups_found": 4,
+    "mistakes": 0,
+    "guesses": [
+        {
+            "guess": [
+                "CHISEL",
+                "HAMMER",
+                "PLANE",
+                "SAW"
+            ],
+            "result": "correct",
+            "group": "CARPENTRY TOOLS",
+            "connection": "hand tools"
+        },
+        {
+            "guess": [
+                "GILMORE",
+                "GOLDEN",
+                "MEAN",
+                "SPICE"
+            ],
+            "result": "correct",
+            "group": "___ GIRLS OF POP CULTURE",
+            "connection": "can be followed by \"Girls\" (Mean Girls, Golden Girls, Spice Girls, Gilmore Girls)"
+        },
+        {
+            "guess": [
+                "BITTER",
+                "MUSK",
+                "WATER",
+                "WINTER"
+            ],
+            "result": "correct",
+            "group": "KINDS OF MELON",
+            "connection": "types of melons (bitter melon, winter melon, watermelon, muskmelon)"
+        },
+        {
+            "guess": [
+                "CONE",
+                "JET",
+                "MIST",
+                "SHOWER"
+            ],
+            "result": "correct",
+            "group": "GARDEN HOSE SETTINGS",
+            "connection": ""
+        }
+    ],
+    "solve_time": "0:00:06.789"
+}

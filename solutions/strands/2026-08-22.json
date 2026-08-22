@@ -1,0 +1,20 @@
+{
+    "puzzle_id": 1079,
+    "ds": "2026-08-22",
+    "clue": "Peak Americana",
+    "theme_words": [
+        "cascade",
+        "green",
+        "rocky",
+        "sawtooth",
+        "smoky",
+        "white"
+    ],
+    "spangram": "mountainrange",
+    "solved": false,
+    "theme_words_found": 3,
+    "theme_words_total": 6,
+    "candidates": 8067,
+    "truncated": true,
+    "solve_time": "0:01:00.386"
+}

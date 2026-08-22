@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1889,
+    "ds": "2026-08-22",
+    "mode": "easy",
+    "solution": "prawn",
+    "guesses": [
+        "tares",
+        "blond",
+        "inarm",
+        "prawn"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:02.605"
+}

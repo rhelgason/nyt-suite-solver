@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1889,
+    "ds": "2026-08-22",
+    "mode": "hard",
+    "solution": "prawn",
+    "guesses": [
+        "tares",
+        "drain",
+        "brawn",
+        "prawn"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.089"
+}
