@@ -1,0 +1,66 @@
+{
+    "puzzle_id": 2818,
+    "ds": "2026-08-23",
+    "sides": [
+        [
+            "f",
+            "w",
+            "r"
+        ],
+        [
+            "e",
+            "o",
+            "l"
+        ],
+        [
+            "t",
+            "n",
+            "b"
+        ],
+        [
+            "a",
+            "y",
+            "u"
+        ]
+    ],
+    "valid_answers": [
+        [
+            "turbofan",
+            "newly"
+        ],
+        [
+            "waterborne",
+            "eyeful"
+        ]
+    ],
+    "invalid_answers": [
+        [
+            "browner",
+            "refutably"
+        ],
+        [
+            "fanwort",
+            "tuneably"
+        ],
+        [
+            "nonowner",
+            "refutably"
+        ],
+        [
+            "owner",
+            "refutably"
+        ],
+        [
+            "tofu",
+            "unwearably"
+        ],
+        [
+            "townwear",
+            "refutably"
+        ]
+    ],
+    "num_valid_answers": 2,
+    "num_invalid_answers": 6,
+    "shortest_answer_length": 2,
+    "solve_time": "0:00:00.204"
+}
