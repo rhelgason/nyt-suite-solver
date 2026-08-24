@@ -1,0 +1,65 @@
+{
+    "puzzle_id": 1250,
+    "ds": "2026-08-24",
+    "words": [
+        "SOLE",
+        "DESERVE",
+        "MAIN",
+        "EYELET",
+        "HEEL",
+        "PRIME",
+        "EX-LOVE",
+        "ARCH",
+        "MULLET",
+        "KAYFABE",
+        "BESET",
+        "PIKE",
+        "FACE",
+        "TANG",
+        "CHIEF",
+        "JOBBER"
+    ],
+    "categories": [
+        {
+            "title": "FISH",
+            "words": [
+                "MULLET",
+                "PIKE",
+                "SOLE",
+                "TANG"
+            ]
+        },
+        {
+            "title": "PRINCIPAL",
+            "words": [
+                "ARCH",
+                "CHIEF",
+                "MAIN",
+                "PRIME"
+            ]
+        },
+        {
+            "title": "PRO-WRESTLING LINGO",
+            "words": [
+                "FACE",
+                "HEEL",
+                "JOBBER",
+                "KAYFABE"
+            ]
+        },
+        {
+            "title": "LETTER HOMOPHONE PLUS TENNIS TERM",
+            "words": [
+                "BESET",
+                "DESERVE",
+                "EX-LOVE",
+                "EYELET"
+            ]
+        }
+    ],
+    "solved": false,
+    "groups_found": 0,
+    "mistakes": 0,
+    "guesses": [],
+    "solve_time": "0:00:06.626"
+}

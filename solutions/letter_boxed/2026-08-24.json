@@ -1,0 +1,58 @@
+{
+    "puzzle_id": 2820,
+    "ds": "2026-08-24",
+    "sides": [
+        [
+            "t",
+            "n",
+            "r"
+        ],
+        [
+            "a",
+            "i",
+            "o"
+        ],
+        [
+            "g",
+            "k",
+            "j"
+        ],
+        [
+            "s",
+            "c",
+            "z"
+        ]
+    ],
+    "valid_answers": [
+        [
+            "jocks",
+            "satirizing"
+        ],
+        [
+            "jocks",
+            "stargazing"
+        ]
+    ],
+    "invalid_answers": [
+        [
+            "jackson",
+            "narcotizing"
+        ],
+        [
+            "jackson",
+            "notarizing"
+        ],
+        [
+            "jockos",
+            "satirizing"
+        ],
+        [
+            "jockos",
+            "stargazing"
+        ]
+    ],
+    "num_valid_answers": 2,
+    "num_invalid_answers": 4,
+    "shortest_answer_length": 2,
+    "solve_time": "0:00:00.635"
+}
