@@ -1,0 +1,65 @@
+{
+    "puzzle_id": 1254,
+    "ds": "2026-08-25",
+    "words": [
+        "SUPERFICIAL",
+        "HYPERSPACE",
+        "HARLEM SHAKE",
+        "LICKETY-SPLIT",
+        "RUNNING MAN",
+        "TRAFFIC CONE",
+        "TIME WARP",
+        "LONG WALK",
+        "ONE-DIMENSIONAL",
+        "PARALLEL UNIVERSE",
+        "GREEN MILE",
+        "INSIDE SCOOP",
+        "COSMETIC",
+        "SHAWSHANK REDEMPTION",
+        "TELEPORTATION",
+        "SKIN-DEEP"
+    ],
+    "categories": [
+        {
+            "title": "SURFACE-LEVEL",
+            "words": [
+                "COSMETIC",
+                "ONE-DIMENSIONAL",
+                "SKIN-DEEP",
+                "SUPERFICIAL"
+            ]
+        },
+        {
+            "title": "SCI-FI PHENOMENA",
+            "words": [
+                "HYPERSPACE",
+                "PARALLEL UNIVERSE",
+                "TELEPORTATION",
+                "TIME WARP"
+            ]
+        },
+        {
+            "title": "STEPHEN KING FILM ADAPTATIONS, WITH \"THE\"",
+            "words": [
+                "GREEN MILE",
+                "LONG WALK",
+                "RUNNING MAN",
+                "SHAWSHANK REDEMPTION"
+            ]
+        },
+        {
+            "title": "ENDING IN ICE CREAM ORDERS",
+            "words": [
+                "HARLEM SHAKE",
+                "INSIDE SCOOP",
+                "LICKETY-SPLIT",
+                "TRAFFIC CONE"
+            ]
+        }
+    ],
+    "solved": false,
+    "groups_found": 0,
+    "mistakes": 0,
+    "guesses": [],
+    "solve_time": "0:00:06.569"
+}

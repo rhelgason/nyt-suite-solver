@@ -1,0 +1,20 @@
+{
+    "puzzle_id": 1080,
+    "ds": "2026-08-25",
+    "clue": "Enjoying nature",
+    "theme_words": [
+        "canteen",
+        "marker",
+        "path",
+        "trailhead",
+        "wildlife",
+        "woods"
+    ],
+    "spangram": "takeahike",
+    "solved": false,
+    "theme_words_found": 2,
+    "theme_words_total": 6,
+    "candidates": 2030,
+    "truncated": true,
+    "solve_time": "0:01:04.440"
+}
