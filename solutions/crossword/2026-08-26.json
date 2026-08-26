@@ -1,0 +1,49 @@
+{
+    "puzzle_id": 24413,
+    "ds": "2026-08-26",
+    "width": 5,
+    "height": 5,
+    "solved": true,
+    "cells_correct": 21,
+    "cells_total": 21,
+    "grid": [
+        "# T I N #",
+        "D O N U T",
+        "O U T R O",
+        "C R E S T",
+        "# # L E O"
+    ],
+    "llm_answers": {
+        "A1": [
+            "TIN"
+        ],
+        "A4": [
+            "DONUT"
+        ],
+        "A6": [
+            "OUTRO"
+        ],
+        "A7": [
+            "CREST"
+        ],
+        "A8": [
+            "LEO"
+        ],
+        "D1": [
+            "TOUR"
+        ],
+        "D2": [
+            "INTEL"
+        ],
+        "D3": [
+            "NURSE"
+        ],
+        "D4": [
+            "DOC"
+        ],
+        "D5": [
+            "TOTO"
+        ]
+    },
+    "solve_time": "0:00:04.902"
+}

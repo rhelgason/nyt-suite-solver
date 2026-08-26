@@ -1,0 +1,20 @@
+{
+    "puzzle_id": 1093,
+    "ds": "2026-08-26",
+    "clue": "All in a day's work",
+    "theme_words": [
+        "assignment",
+        "chore",
+        "duty",
+        "errand",
+        "project",
+        "task"
+    ],
+    "spangram": "partofthejob",
+    "solved": false,
+    "theme_words_found": 4,
+    "theme_words_total": 6,
+    "candidates": 8193,
+    "truncated": true,
+    "solve_time": "0:01:00.458"
+}

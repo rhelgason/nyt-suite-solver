@@ -1,0 +1,65 @@
+{
+    "puzzle_id": 1259,
+    "ds": "2026-08-26",
+    "words": [
+        "PARK",
+        "LIME",
+        "PIANO",
+        "FORTE",
+        "LARGO",
+        "PRESTO",
+        "SIGNATURE",
+        "PAGE",
+        "GIFT",
+        "PHOSPHORUS",
+        "BEHOLD",
+        "CHAIN",
+        "VOILÀ",
+        "TALENT",
+        "SHAZAM",
+        "STRENGTH"
+    ],
+    "categories": [
+        {
+            "title": "\"THERE YOU HAVE IT!\"",
+            "words": [
+                "BEHOLD",
+                "PRESTO",
+                "SHAZAM",
+                "VOILÀ"
+            ]
+        },
+        {
+            "title": "KNACK",
+            "words": [
+                "FORTE",
+                "GIFT",
+                "STRENGTH",
+                "TALENT"
+            ]
+        },
+        {
+            "title": "WHAT \"P\" MIGHT STAND FOR",
+            "words": [
+                "PAGE",
+                "PARK",
+                "PHOSPHORUS",
+                "PIANO"
+            ]
+        },
+        {
+            "title": "KEY ___",
+            "words": [
+                "CHAIN",
+                "LARGO",
+                "LIME",
+                "SIGNATURE"
+            ]
+        }
+    ],
+    "solved": false,
+    "groups_found": 0,
+    "mistakes": 0,
+    "guesses": [],
+    "solve_time": "0:00:06.691"
+}

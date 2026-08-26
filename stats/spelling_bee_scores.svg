@@ -1,16 +1,16 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="560" height="320" viewBox="0 0 560 320" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="12">
 <rect width="560" height="320" fill="#ffffff"/>
 <text x="280" y="26" text-anchor="middle" font-size="16" font-weight="600" fill="#1a1a1a">Spelling Bee Score Distribution</text>
-<path d="M 165 178 L 165.0 60.0 A 118 118 0 0 1 198.2 64.8 Z" fill="#f59e0b"/>
-<path d="M 165 178 L 198.2 64.8 A 118 118 0 0 1 264.3 114.2 Z" fill="#eab308"/>
-<path d="M 165 178 L 264.3 114.2 A 118 118 0 0 1 101.2 277.3 Z" fill="#84cc16"/>
-<path d="M 165 178 L 101.2 277.3 A 118 118 0 0 1 165.0 60.0 Z" fill="#16a34a"/>
+<path d="M 165 178 L 165.0 60.0 A 118 118 0 0 1 213.0 70.2 Z" fill="#f59e0b"/>
+<path d="M 165 178 L 213.0 70.2 A 118 118 0 0 1 271.1 126.3 Z" fill="#eab308"/>
+<path d="M 165 178 L 271.1 126.3 A 118 118 0 0 1 95.6 273.5 Z" fill="#84cc16"/>
+<path d="M 165 178 L 95.6 273.5 A 118 118 0 0 1 165.0 60.0 Z" fill="#16a34a"/>
 <rect x="330" y="85" width="14" height="14" rx="2" fill="#f59e0b"/>
-<text x="352" y="96" fill="#333">80-89: 2 (5%)</text>
+<text x="352" y="96" fill="#333">80-89: 3 (7%)</text>
 <rect x="330" y="109" width="14" height="14" rx="2" fill="#eab308"/>
 <text x="352" y="120" fill="#333">90-94: 5 (11%)</text>
 <rect x="330" y="133" width="14" height="14" rx="2" fill="#84cc16"/>
-<text x="352" y="144" fill="#333">95-99: 19 (43%)</text>
+<text x="352" y="144" fill="#333">95-99: 19 (42%)</text>
 <rect x="330" y="157" width="14" height="14" rx="2" fill="#16a34a"/>
-<text x="352" y="168" fill="#333">100: 18 (41%)</text>
+<text x="352" y="168" fill="#333">100: 18 (40%)</text>
 </svg>

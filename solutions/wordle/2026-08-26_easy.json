@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 5089,
+    "ds": "2026-08-26",
+    "mode": "easy",
+    "solution": "capon",
+    "guesses": [
+        "tares",
+        "lingy",
+        "jupon",
+        "capon"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:02.881"
+}
