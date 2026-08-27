@@ -1,0 +1,65 @@
+{
+    "puzzle_id": 1261,
+    "ds": "2026-08-27",
+    "words": [
+        "PIKACHU",
+        "SPUNK",
+        "NEMO",
+        "DOVE",
+        "MISTY",
+        "SLATE",
+        "LIGHTNING",
+        "ASH",
+        "PEWTER",
+        "BROCK",
+        "EMOTIONAL",
+        "LIVE WIRE",
+        "OVERCOME",
+        "ELECTRIC EEL",
+        "WRAP",
+        "CHOKED UP"
+    ],
+    "categories": [
+        {
+            "title": "ELECTRIC THINGS",
+            "words": [
+                "ELECTRIC EEL",
+                "LIGHTNING",
+                "LIVE WIRE",
+                "PIKACHU"
+            ]
+        },
+        {
+            "title": "MOVED TO TEARS",
+            "words": [
+                "CHOKED UP",
+                "EMOTIONAL",
+                "MISTY",
+                "OVERCOME"
+            ]
+        },
+        {
+            "title": "SHADES OF GRAY",
+            "words": [
+                "ASH",
+                "DOVE",
+                "PEWTER",
+                "SLATE"
+            ]
+        },
+        {
+            "title": "MUSIC GENRE PLUS STARTING LETTER",
+            "words": [
+                "BROCK",
+                "NEMO",
+                "SPUNK",
+                "WRAP"
+            ]
+        }
+    ],
+    "solved": false,
+    "groups_found": 0,
+    "mistakes": 0,
+    "guesses": [],
+    "solve_time": "0:00:06.858"
+}
