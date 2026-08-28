@@ -1,0 +1,65 @@
+{
+    "puzzle_id": 1260,
+    "ds": "2026-08-28",
+    "words": [
+        "MORNING",
+        "SWEET DREAMS",
+        "TOP SPOT",
+        "ERA",
+        "POPS",
+        "NOON",
+        "HOUR",
+        "BRO",
+        "NIGHT",
+        "MOM",
+        "MAXXING",
+        "LINE",
+        "SIS",
+        "REST EASY",
+        "CODED",
+        "SLEEP TIGHT"
+    ],
+    "categories": [
+        {
+            "title": "BEDTIME PARTING WORDS",
+            "words": [
+                "NIGHT",
+                "REST EASY",
+                "SLEEP TIGHT",
+                "SWEET DREAMS"
+            ]
+        },
+        {
+            "title": "PALINDROMES",
+            "words": [
+                "MOM",
+                "NOON",
+                "SIS",
+                "TOP SPOT"
+            ]
+        },
+        {
+            "title": "MODERN ADD-ONS/COMBINING FORMS",
+            "words": [
+                "BRO",
+                "CODED",
+                "ERA",
+                "MAXXING"
+            ]
+        },
+        {
+            "title": "TOP OF THE ___",
+            "words": [
+                "HOUR",
+                "LINE",
+                "MORNING",
+                "POPS"
+            ]
+        }
+    ],
+    "solved": false,
+    "groups_found": 0,
+    "mistakes": 0,
+    "guesses": [],
+    "solve_time": "0:00:06.613"
+}

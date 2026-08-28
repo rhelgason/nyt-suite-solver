@@ -1,0 +1,62 @@
+{
+    "puzzle_id": 21042,
+    "ds": "2026-08-28",
+    "center": "v",
+    "letters": [
+        "t",
+        "d",
+        "v",
+        "l",
+        "a",
+        "y",
+        "i"
+    ],
+    "pangrams": [
+        "validity"
+    ],
+    "valid_answers": [
+        "vivid",
+        "livid",
+        "vital",
+        "validly",
+        "avail",
+        "diva",
+        "villa",
+        "vitally",
+        "divvy",
+        "vitality",
+        "lava",
+        "avid",
+        "avidly",
+        "avidity",
+        "vial",
+        "lividly",
+        "validity",
+        "valid",
+        "lividity",
+        "vividly"
+    ],
+    "invalid_answers": [
+        "lavalava",
+        "davit",
+        "avadavat",
+        "villi",
+        "datival",
+        "additivity",
+        "viva",
+        "tivy",
+        "valval",
+        "davy",
+        "vitta",
+        "vail",
+        "vill",
+        "vita"
+    ],
+    "missed_answers": [
+        "vividity"
+    ],
+    "solve_time": "0:00:00.066",
+    "score": 63,
+    "percentage": 92.64705882352942,
+    "rank": "GENIUS"
+}
