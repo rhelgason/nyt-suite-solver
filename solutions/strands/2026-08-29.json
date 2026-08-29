@@ -1,0 +1,20 @@
+{
+    "puzzle_id": 1095,
+    "ds": "2026-08-29",
+    "clue": "Now we're cooking!",
+    "theme_words": [
+        "bubble",
+        "crackle",
+        "gurgle",
+        "hiss",
+        "sizzle",
+        "splatter"
+    ],
+    "spangram": "soundstasty",
+    "solved": false,
+    "theme_words_found": 3,
+    "theme_words_total": 6,
+    "candidates": 13555,
+    "truncated": true,
+    "solve_time": "0:01:01.241"
+}
