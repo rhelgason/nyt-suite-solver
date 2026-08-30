@@ -1,0 +1,110 @@
+{
+    "puzzle_id": 1256,
+    "ds": "2026-08-30",
+    "words": [
+        "REC CENTER",
+        "ALIAS",
+        "CORKSCREW",
+        "PLAYBOY",
+        "WANTED",
+        "STOPPER",
+        "ENERGIZER",
+        "REWARD",
+        "GYMNASIUM",
+        "CADBURY",
+        "AERATOR",
+        "YMCA",
+        "OUTLAW",
+        "HEALTH CLUB",
+        "TRIX",
+        "DECANTER"
+    ],
+    "categories": [
+        {
+            "title": "EXERCISE FACILITIES",
+            "words": [
+                "GYMNASIUM",
+                "HEALTH CLUB",
+                "REC CENTER",
+                "YMCA"
+            ]
+        },
+        {
+            "title": "WINE ACCESSORIES",
+            "words": [
+                "AERATOR",
+                "CORKSCREW",
+                "DECANTER",
+                "STOPPER"
+            ]
+        },
+        {
+            "title": "BRANDS WITH BUNNY RABBIT MASCOTS",
+            "words": [
+                "CADBURY",
+                "ENERGIZER",
+                "PLAYBOY",
+                "TRIX"
+            ]
+        },
+        {
+            "title": "WORDS ON AN OLD WEST WANTED POSTER",
+            "words": [
+                "ALIAS",
+                "OUTLAW",
+                "REWARD",
+                "WANTED"
+            ]
+        }
+    ],
+    "solved": true,
+    "groups_found": 4,
+    "mistakes": 0,
+    "guesses": [
+        {
+            "guess": [
+                "GYMNASIUM",
+                "HEALTH CLUB",
+                "REC CENTER",
+                "YMCA"
+            ],
+            "result": "correct",
+            "group": "EXERCISE FACILITIES",
+            "connection": "Places for physical exercise / fitness facilities"
+        },
+        {
+            "guess": [
+                "AERATOR",
+                "CORKSCREW",
+                "DECANTER",
+                "STOPPER"
+            ],
+            "result": "correct",
+            "group": "WINE ACCESSORIES",
+            "connection": "Wine/bottle accessories used for opening, sealing, serving, or aerating"
+        },
+        {
+            "guess": [
+                "CADBURY",
+                "ENERGIZER",
+                "PLAYBOY",
+                "TRIX"
+            ],
+            "result": "correct",
+            "group": "BRANDS WITH BUNNY RABBIT MASCOTS",
+            "connection": "Brands whose advertising mascots are rabbits/bunnies"
+        },
+        {
+            "guess": [
+                "ALIAS",
+                "OUTLAW",
+                "REWARD",
+                "WANTED"
+            ],
+            "result": "correct",
+            "group": "WORDS ON AN OLD WEST WANTED POSTER",
+            "connection": ""
+        }
+    ],
+    "solve_time": "0:00:02.593"
+}
