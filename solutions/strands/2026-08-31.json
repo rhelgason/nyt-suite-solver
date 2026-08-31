@@ -1,0 +1,20 @@
+{
+    "puzzle_id": 1098,
+    "ds": "2026-08-31",
+    "clue": "With a little elbow grease",
+    "theme_words": [
+        "bleach",
+        "cleanser",
+        "detergent",
+        "scrub",
+        "soap",
+        "solvent"
+    ],
+    "spangram": "powerwash",
+    "solved": false,
+    "theme_words_found": 3,
+    "theme_words_total": 6,
+    "candidates": 23193,
+    "truncated": true,
+    "solve_time": "0:01:05.182"
+}

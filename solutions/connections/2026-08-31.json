@@ -1,0 +1,65 @@
+{
+    "puzzle_id": 1258,
+    "ds": "2026-08-31",
+    "words": [
+        "SUPER",
+        "CALIPH",
+        "FRAGILE",
+        "LIPSTICK",
+        "SALAD",
+        "HEAVY",
+        "DUST",
+        "POSTER",
+        "PHARAOH",
+        "POKE",
+        "TOOTHPASTE",
+        "KHAN",
+        "PERISHABLE",
+        "TENNIS BALLS",
+        "SHOGUN",
+        "THIS SIDE UP"
+    ],
+    "categories": [
+        {
+            "title": "THINGS THAT COME IN TUBES",
+            "words": [
+                "LIPSTICK",
+                "POSTER",
+                "TENNIS BALLS",
+                "TOOTHPASTE"
+            ]
+        },
+        {
+            "title": "WARNINGS ON A SHIPPING BOX",
+            "words": [
+                "FRAGILE",
+                "HEAVY",
+                "PERISHABLE",
+                "THIS SIDE UP"
+            ]
+        },
+        {
+            "title": "HISTORICAL SOVEREIGN TITLES",
+            "words": [
+                "CALIPH",
+                "KHAN",
+                "PHARAOH",
+                "SHOGUN"
+            ]
+        },
+        {
+            "title": "___ BOWL",
+            "words": [
+                "DUST",
+                "POKE",
+                "SALAD",
+                "SUPER"
+            ]
+        }
+    ],
+    "solved": false,
+    "groups_found": 0,
+    "mistakes": 0,
+    "guesses": [],
+    "solve_time": "0:00:07.094"
+}
