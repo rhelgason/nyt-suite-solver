@@ -1,0 +1,65 @@
+{
+    "puzzle_id": 1257,
+    "ds": "2026-09-01",
+    "words": [
+        "PLANETARIUM",
+        "ARROW",
+        "HOPE DIAMOND",
+        "FOR REAL",
+        "SAM SPADE",
+        "WISHY-WASHY",
+        "MIKE HAMMER",
+        "GOLF CLUB",
+        "CROSS MY HEART",
+        "PICK-UP STICK",
+        "SHERLOCK HOLMES",
+        "AIMEE MANN",
+        "PINKY SWEAR",
+        "HERCULE POIROT",
+        "SPAGHETTO",
+        "ON GOD"
+    ],
+    "categories": [
+        {
+            "title": "\"I PROMISE!\"",
+            "words": [
+                "CROSS MY HEART",
+                "FOR REAL",
+                "ON GOD",
+                "PINKY SWEAR"
+            ]
+        },
+        {
+            "title": "LONG, SKINNY THINGS OFTEN SEEN TOGETHER",
+            "words": [
+                "ARROW",
+                "GOLF CLUB",
+                "PICK-UP STICK",
+                "SPAGHETTO"
+            ]
+        },
+        {
+            "title": "PRIVATE INVESTIGATORS OF FICTION",
+            "words": [
+                "HERCULE POIROT",
+                "MIKE HAMMER",
+                "SAM SPADE",
+                "SHERLOCK HOLMES"
+            ]
+        },
+        {
+            "title": "STARTING WITH WORDS OF INTENTION",
+            "words": [
+                "AIMEE MANN",
+                "HOPE DIAMOND",
+                "PLANETARIUM",
+                "WISHY-WASHY"
+            ]
+        }
+    ],
+    "solved": false,
+    "groups_found": 0,
+    "mistakes": 0,
+    "guesses": [],
+    "solve_time": "0:00:06.591"
+}

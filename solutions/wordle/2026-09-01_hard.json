@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 4774,
+    "ds": "2026-09-01",
+    "mode": "hard",
+    "solution": "remix",
+    "guesses": [
+        "tares",
+        "pride",
+        "renig",
+        "refix",
+        "remix"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:00.062"
+}
