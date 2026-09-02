@@ -1,0 +1,65 @@
+{
+    "puzzle_id": 1273,
+    "ds": "2026-09-02",
+    "words": [
+        "BOW",
+        "WOW",
+        "TOP",
+        "FLOOR",
+        "CORN",
+        "SAUSAGE",
+        "SALTY",
+        "SHEEP",
+        "RESCUE",
+        "ROSIN",
+        "DAZZLE",
+        "PRAIRIE",
+        "SHOULDER REST",
+        "HUNTING",
+        "MUTE",
+        "STUN"
+    ],
+    "categories": [
+        {
+            "title": "FLABBERGAST",
+            "words": [
+                "DAZZLE",
+                "FLOOR",
+                "STUN",
+                "WOW"
+            ]
+        },
+        {
+            "title": "THINGS IN A VIOLIN CASE",
+            "words": [
+                "BOW",
+                "MUTE",
+                "ROSIN",
+                "SHOULDER REST"
+            ]
+        },
+        {
+            "title": "___ DOGS (THAT ARE DOGS)",
+            "words": [
+                "HUNTING",
+                "RESCUE",
+                "SAUSAGE",
+                "SHEEP"
+            ]
+        },
+        {
+            "title": "___ DOGS (THAT AREN'T DOGS)",
+            "words": [
+                "CORN",
+                "PRAIRIE",
+                "SALTY",
+                "TOP"
+            ]
+        }
+    ],
+    "solved": false,
+    "groups_found": 0,
+    "mistakes": 0,
+    "guesses": [],
+    "solve_time": "0:00:06.885"
+}

@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 814,
+    "ds": "2026-09-02",
+    "mode": "easy",
+    "solution": "ruler",
+    "guesses": [
+        "tares",
+        "poind",
+        "elegy",
+        "cruel",
+        "ruler"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:02.474"
+}
