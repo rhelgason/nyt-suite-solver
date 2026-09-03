@@ -1,0 +1,110 @@
+{
+    "puzzle_id": 1278,
+    "ds": "2026-09-03",
+    "words": [
+        "MAX",
+        "MATCHBOX",
+        "MAROON",
+        "AVERAGE",
+        "BLINK",
+        "CARMINE",
+        "SUM",
+        "FLASH",
+        "COUNT",
+        "HEARTBEAT",
+        "CINNABAR",
+        "TONKA",
+        "HOT WHEELS",
+        "VERMILLION",
+        "TRICE",
+        "MICRO MACHINES"
+    ],
+    "categories": [
+        {
+            "title": "TWO SHAKES OF A LAMB'S TAIL",
+            "words": [
+                "BLINK",
+                "FLASH",
+                "HEARTBEAT",
+                "TRICE"
+            ]
+        },
+        {
+            "title": "SHADES OF RED",
+            "words": [
+                "CARMINE",
+                "CINNABAR",
+                "MAROON",
+                "VERMILLION"
+            ]
+        },
+        {
+            "title": "TOY CAR BRANDS",
+            "words": [
+                "HOT WHEELS",
+                "MATCHBOX",
+                "MICRO MACHINES",
+                "TONKA"
+            ]
+        },
+        {
+            "title": "SPREADSHEET FUNCTIONS",
+            "words": [
+                "AVERAGE",
+                "COUNT",
+                "MAX",
+                "SUM"
+            ]
+        }
+    ],
+    "solved": true,
+    "groups_found": 4,
+    "mistakes": 0,
+    "guesses": [
+        {
+            "guess": [
+                "CARMINE",
+                "CINNABAR",
+                "MAROON",
+                "VERMILLION"
+            ],
+            "result": "correct",
+            "group": "SHADES OF RED",
+            "connection": "Shades of red (red pigments)"
+        },
+        {
+            "guess": [
+                "AVERAGE",
+                "COUNT",
+                "MAX",
+                "SUM"
+            ],
+            "result": "correct",
+            "group": "SPREADSHEET FUNCTIONS",
+            "connection": "Statistical aggregation functions"
+        },
+        {
+            "guess": [
+                "HOT WHEELS",
+                "MATCHBOX",
+                "MICRO MACHINES",
+                "TONKA"
+            ],
+            "result": "correct",
+            "group": "TOY CAR BRANDS",
+            "connection": "Brands of toy vehicles"
+        },
+        {
+            "guess": [
+                "BLINK",
+                "FLASH",
+                "HEARTBEAT",
+                "TRICE"
+            ],
+            "result": "correct",
+            "group": "TWO SHAKES OF A LAMB'S TAIL",
+            "connection": ""
+        }
+    ],
+    "solve_time": "0:00:01.809"
+}

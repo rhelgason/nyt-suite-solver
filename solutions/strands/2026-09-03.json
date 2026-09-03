@@ -1,0 +1,22 @@
+{
+    "puzzle_id": 1101,
+    "ds": "2026-09-03",
+    "clue": "Hike!",
+    "theme_words": [
+        "down",
+        "kick",
+        "pass",
+        "play",
+        "rush",
+        "stadium",
+        "tackle",
+        "upright"
+    ],
+    "spangram": "football",
+    "solved": true,
+    "theme_words_found": 8,
+    "theme_words_total": 8,
+    "candidates": 5,
+    "truncated": false,
+    "solve_time": "0:00:00.538"
+}
