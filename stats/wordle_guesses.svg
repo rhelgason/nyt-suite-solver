@@ -23,14 +23,14 @@
 <rect x="361.6" y="178.8" width="31.0" height="169.2" rx="1.5" fill="#a78bfa"/>
 <rect x="396.0" y="220.3" width="31.0" height="127.7" rx="1.5" fill="#7c3aed"/>
 <text x="396.0" y="366.0" text-anchor="middle" fill="#888">4</text>
-<rect x="459.9" y="315.2" width="31.0" height="32.8" rx="1.5" fill="#a78bfa"/>
+<rect x="459.9" y="315.0" width="31.0" height="33.0" rx="1.5" fill="#a78bfa"/>
 <rect x="494.3" y="297.8" width="31.0" height="50.2" rx="1.5" fill="#7c3aed"/>
 <text x="494.3" y="366.0" text-anchor="middle" fill="#888">5</text>
 <rect x="558.2" y="347.1" width="31.0" height="0.9" rx="1.5" fill="#a78bfa"/>
 <rect x="592.6" y="334.3" width="31.0" height="13.7" rx="1.5" fill="#7c3aed"/>
 <text x="592.6" y="366.0" text-anchor="middle" fill="#888">6</text>
 <rect x="656.5" y="347.4" width="31.0" height="0.6" rx="1.5" fill="#a78bfa"/>
-<rect x="690.9" y="341.5" width="31.0" height="6.5" rx="1.5" fill="#7c3aed"/>
+<rect x="690.9" y="341.3" width="31.0" height="6.7" rx="1.5" fill="#7c3aed"/>
 <text x="690.9" y="366.0" text-anchor="middle" fill="#888">X</text>
 <line x1="52" y1="348" x2="740" y2="348" stroke="#bbb"/>
 <line x1="52" y1="44" x2="52" y2="348" stroke="#bbb"/>

@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 1238,
+    "ds": "2026-09-04",
+    "mode": "easy",
+    "solution": "wager",
+    "guesses": [
+        "tares",
+        "glyph",
+        "ceder",
+        "jager",
+        "wager"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:01.136"
+}

@@ -1,0 +1,65 @@
+{
+    "puzzle_id": 1275,
+    "ds": "2026-09-04",
+    "words": [
+        "MOON",
+        "EYE",
+        "PIZZA PIE",
+        "THAT'S",
+        "MORAY",
+        "CANDY CORN",
+        "ORANGE",
+        "OPINE",
+        "BOWLING BALL",
+        "RIBBON",
+        "CAKE DONUT",
+        "CONGER",
+        "CHERRY TOMATO",
+        "STIED",
+        "GULPER",
+        "CRINGY"
+    ],
+    "categories": [
+        {
+            "title": "SPHERICAL THINGS",
+            "words": [
+                "BOWLING BALL",
+                "EYE",
+                "MOON",
+                "ORANGE"
+            ]
+        },
+        {
+            "title": "FOOD WHOSE NAME IS TWO FOODS",
+            "words": [
+                "CAKE DONUT",
+                "CANDY CORN",
+                "CHERRY TOMATO",
+                "PIZZA PIE"
+            ]
+        },
+        {
+            "title": "KINDS OF EELS",
+            "words": [
+                "CONGER",
+                "GULPER",
+                "MORAY",
+                "RIBBON"
+            ]
+        },
+        {
+            "title": "ACCESSORIES INSIDE STARTING AND ENDING LETTERS",
+            "words": [
+                "CRINGY",
+                "OPINE",
+                "STIED",
+                "THAT'S"
+            ]
+        }
+    ],
+    "solved": false,
+    "groups_found": 0,
+    "mistakes": 0,
+    "guesses": [],
+    "solve_time": "0:00:06.846"
+}
