@@ -1,0 +1,49 @@
+{
+    "puzzle_id": 2832,
+    "ds": "2026-09-05",
+    "sides": [
+        [
+            "l",
+            "z",
+            "j"
+        ],
+        [
+            "t",
+            "e",
+            "o"
+        ],
+        [
+            "a",
+            "r",
+            "i"
+        ],
+        [
+            "s",
+            "n",
+            "w"
+        ]
+    ],
+    "valid_answers": [
+        [
+            "jewelers",
+            "sanitization"
+        ],
+        [
+            "jowliest",
+            "tantalizer"
+        ],
+        [
+            "jowliest",
+            "tantalizers"
+        ],
+        [
+            "jowls",
+            "sanitizer"
+        ]
+    ],
+    "invalid_answers": [],
+    "num_valid_answers": 4,
+    "num_invalid_answers": 0,
+    "shortest_answer_length": 2,
+    "solve_time": "0:00:00.664"
+}

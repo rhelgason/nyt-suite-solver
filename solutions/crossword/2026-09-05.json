@@ -1,0 +1,20 @@
+{
+    "puzzle_id": 24404,
+    "ds": "2026-09-05",
+    "width": 7,
+    "height": 7,
+    "solved": true,
+    "cells_correct": 39,
+    "cells_total": 39,
+    "grid": [
+        "A L A S K A #",
+        "C O M M O N #",
+        "L O N E L Y #",
+        "# # E L K # #",
+        "# I S L A N D",
+        "# D I E T E R",
+        "# K A R A T E"
+    ],
+    "llm_answers": {},
+    "solve_time": "0:00:09.640"
+}

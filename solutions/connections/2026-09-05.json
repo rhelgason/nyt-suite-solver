@@ -1,0 +1,65 @@
+{
+    "puzzle_id": 1289,
+    "ds": "2026-09-05",
+    "words": [
+        "SLEEPY",
+        "HONK",
+        "BOBBLE",
+        "GOBBLE",
+        "WARBLE",
+        "COBBLE",
+        "WOBBLE",
+        "TAR",
+        "PI",
+        "HAMMER",
+        "TODDLE",
+        "COO",
+        "SWAY",
+        "JUG",
+        "TORT",
+        "TOTTER"
+    ],
+    "categories": [
+        {
+            "title": "MOVE UNSTEADILY",
+            "words": [
+                "SWAY",
+                "TODDLE",
+                "TOTTER",
+                "WOBBLE"
+            ]
+        },
+        {
+            "title": "BIRD ONOMATOPOEIA",
+            "words": [
+                "COO",
+                "GOBBLE",
+                "HONK",
+                "WARBLE"
+            ]
+        },
+        {
+            "title": "___HEAD",
+            "words": [
+                "BOBBLE",
+                "HAMMER",
+                "JUG",
+                "SLEEPY"
+            ]
+        },
+        {
+            "title": "DESSERTS MINUS LAST LETTER",
+            "words": [
+                "COBBLE",
+                "PI",
+                "TAR",
+                "TORT"
+            ]
+        }
+    ],
+    "solved": false,
+    "groups_found": 0,
+    "mistakes": 0,
+    "guesses": [],
+    "solve_time": "0:00:06.638"
+}
