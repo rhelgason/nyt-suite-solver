@@ -1,0 +1,65 @@
+{
+    "puzzle_id": 1277,
+    "ds": "2026-09-06",
+    "words": [
+        "SAT SCORE",
+        "UPC CODE",
+        "USB PORT",
+        "ATM MACHINE",
+        "CARD SLOT",
+        "BLANK CHECK",
+        "COURT SCRIBE",
+        "PIN NUMBER",
+        "DIRECTOR'S CUT",
+        "OPTICAL DRIVE",
+        "CARTE BLANCHE",
+        "HEADPHONE JACK",
+        "FREE REIGN",
+        "PIZZA SLICE",
+        "LCD DISPLAY",
+        "FULL AUTHORITY"
+    ],
+    "categories": [
+        {
+            "title": "UNRESTRICTED PERMISSION",
+            "words": [
+                "BLANK CHECK",
+                "CARTE BLANCHE",
+                "FREE REIGN",
+                "FULL AUTHORITY"
+            ]
+        },
+        {
+            "title": "PLACES TO INSERT SOMETHING INTO ON A COMPUTER",
+            "words": [
+                "CARD SLOT",
+                "HEADPHONE JACK",
+                "OPTICAL DRIVE",
+                "USB PORT"
+            ]
+        },
+        {
+            "title": "ABBREVIATIONS FOLLOWED BY REDUNDANT WORD",
+            "words": [
+                "ATM MACHINE",
+                "LCD DISPLAY",
+                "PIN NUMBER",
+                "UPC CODE"
+            ]
+        },
+        {
+            "title": "ENDING WITH WAYS TO CARVE A SURFACE",
+            "words": [
+                "COURT SCRIBE",
+                "DIRECTOR'S CUT",
+                "PIZZA SLICE",
+                "SAT SCORE"
+            ]
+        }
+    ],
+    "solved": false,
+    "groups_found": 0,
+    "mistakes": 0,
+    "guesses": [],
+    "solve_time": "0:00:06.756"
+}
