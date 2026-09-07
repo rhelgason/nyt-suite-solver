@@ -1,0 +1,65 @@
+{
+    "puzzle_id": 1262,
+    "ds": "2026-09-07",
+    "words": [
+        "NEEDLES",
+        "TRAMPOLINE",
+        "CHRISTMAS",
+        "CUP",
+        "PLUTONIUM",
+        "TURPENTINE",
+        "YARN",
+        "SCAR TISSUE",
+        "CAR AIR FRESHENER",
+        "STITCH MARKER",
+        "FABRICATION",
+        "HOOK",
+        "TALL TALE",
+        "STRAP",
+        "FISH STORY",
+        "UNDERWIRE"
+    ],
+    "categories": [
+        {
+            "title": "QUITE THE SAGA",
+            "words": [
+                "FABRICATION",
+                "FISH STORY",
+                "TALL TALE",
+                "YARN"
+            ]
+        },
+        {
+            "title": "PARTS OF A BRA",
+            "words": [
+                "CUP",
+                "HOOK",
+                "STRAP",
+                "UNDERWIRE"
+            ]
+        },
+        {
+            "title": "ASSOCIATED WITH PINE TREES",
+            "words": [
+                "CAR AIR FRESHENER",
+                "CHRISTMAS",
+                "NEEDLES",
+                "TURPENTINE"
+            ]
+        },
+        {
+            "title": "STARTING WITH DISNEY CHARACTERS",
+            "words": [
+                "PLUTONIUM",
+                "SCAR TISSUE",
+                "STITCH MARKER",
+                "TRAMPOLINE"
+            ]
+        }
+    ],
+    "solved": false,
+    "groups_found": 0,
+    "mistakes": 0,
+    "guesses": [],
+    "solve_time": "0:00:06.814"
+}

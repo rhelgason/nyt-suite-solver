@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1477,
+    "ds": "2026-09-07",
+    "mode": "hard",
+    "solution": "blind",
+    "guesses": [
+        "tares",
+        "colin",
+        "lungi",
+        "blind"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.336"
+}

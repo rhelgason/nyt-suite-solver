@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1477,
+    "ds": "2026-09-07",
+    "mode": "easy",
+    "solution": "blind",
+    "guesses": [
+        "tares",
+        "colin",
+        "pudgy",
+        "blind"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:04.597"
+}

@@ -1,0 +1,19 @@
+{
+    "puzzle_id": 1105,
+    "ds": "2026-09-07",
+    "clue": "It's a deal!",
+    "theme_words": [
+        "agree",
+        "compromise",
+        "negotiate",
+        "settle",
+        "share"
+    ],
+    "spangram": "meetmehalfway",
+    "solved": false,
+    "theme_words_found": 3,
+    "theme_words_total": 5,
+    "candidates": 10955,
+    "truncated": true,
+    "solve_time": "0:01:05.142"
+}
