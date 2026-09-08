@@ -1,0 +1,49 @@
+{
+    "puzzle_id": 24486,
+    "ds": "2026-09-08",
+    "width": 5,
+    "height": 5,
+    "solved": true,
+    "cells_correct": 21,
+    "cells_total": 21,
+    "grid": [
+        "# F L A G",
+        "A L E X A",
+        "B O G E Y",
+        "B O I L #",
+        "A R T # #"
+    ],
+    "llm_answers": {
+        "A1": [
+            "FLAG"
+        ],
+        "A5": [
+            "ALEXA"
+        ],
+        "A6": [
+            "BOGEY"
+        ],
+        "A7": [
+            "BOIL"
+        ],
+        "A8": [
+            "ART"
+        ],
+        "D1": [
+            "FLOOR"
+        ],
+        "D2": [
+            "LEGIT"
+        ],
+        "D3": [
+            "AXEL"
+        ],
+        "D4": [
+            "GAY"
+        ],
+        "D5": [
+            "ABBA"
+        ]
+    },
+    "solve_time": "0:00:07.622"
+}

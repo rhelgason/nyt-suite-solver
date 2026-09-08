@@ -1,0 +1,65 @@
+{
+    "puzzle_id": 1274,
+    "ds": "2026-09-08",
+    "words": [
+        "PURPLE",
+        "STRIPES",
+        "SKORT",
+        "GLOVES",
+        "CORVETTE",
+        "ARTICHOKE",
+        "DOVES",
+        "MARSH",
+        "SACRED",
+        "BERET",
+        "VIPER",
+        "TWIXT",
+        "SUSPENDERS",
+        "MUSTANG",
+        "TAKE TO",
+        "FIREBIRD"
+    ],
+    "categories": [
+        {
+            "title": "CLASSIC AMERICAN PERFORMANCE CARS",
+            "words": [
+                "CORVETTE",
+                "FIREBIRD",
+                "MUSTANG",
+                "VIPER"
+            ]
+        },
+        {
+            "title": "FEATURES OF A MIME COSTUME",
+            "words": [
+                "BERET",
+                "GLOVES",
+                "STRIPES",
+                "SUSPENDERS"
+            ]
+        },
+        {
+            "title": "___ HEART",
+            "words": [
+                "ARTICHOKE",
+                "PURPLE",
+                "SACRED",
+                "TAKE TO"
+            ]
+        },
+        {
+            "title": "CANDY BARS PLUS A LETTER",
+            "words": [
+                "DOVES",
+                "MARSH",
+                "SKORT",
+                "TWIXT"
+            ]
+        }
+    ],
+    "solved": false,
+    "groups_found": 0,
+    "mistakes": 0,
+    "guesses": [],
+    "solve_time": "0:00:06.722"
+}

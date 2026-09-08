@@ -1,0 +1,20 @@
+{
+    "puzzle_id": 1107,
+    "ds": "2026-09-08",
+    "clue": "It's elementary!",
+    "theme_words": [
+        "cubby",
+        "desk",
+        "easel",
+        "globe",
+        "markers",
+        "whiteboard"
+    ],
+    "spangram": "backtoschool",
+    "solved": false,
+    "theme_words_found": 3,
+    "theme_words_total": 6,
+    "candidates": 3506,
+    "truncated": true,
+    "solve_time": "0:01:01.043"
+}
