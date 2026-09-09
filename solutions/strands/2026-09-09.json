@@ -1,0 +1,20 @@
+{
+    "puzzle_id": 1108,
+    "ds": "2026-09-09",
+    "clue": "Over and out(side)",
+    "theme_words": [
+        "arbor",
+        "bower",
+        "canopy",
+        "gazebo",
+        "pavilion",
+        "pergola"
+    ],
+    "spangram": "sunandshade",
+    "solved": false,
+    "theme_words_found": 4,
+    "theme_words_total": 6,
+    "candidates": 19031,
+    "truncated": true,
+    "solve_time": "0:01:00.917"
+}

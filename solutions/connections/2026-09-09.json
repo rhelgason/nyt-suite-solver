@@ -1,0 +1,110 @@
+{
+    "puzzle_id": 1272,
+    "ds": "2026-09-09",
+    "words": [
+        "INCOMPREHENSIBLE",
+        "ELECTROMAGNETIC",
+        "NANOTECHNOLOGY",
+        "ARACHNOPHOBIA",
+        "MICROBREWERY",
+        "BEWILDERING",
+        "PICOSECOND",
+        "HALLOWEEN",
+        "ESOTERIC",
+        "MINIVAN",
+        "OPAQUE",
+        "BRUTE",
+        "TASK",
+        "SAW",
+        "IT",
+        "G"
+    ],
+    "categories": [
+        {
+            "title": "HARD TO UNDERSTAND",
+            "words": [
+                "BEWILDERING",
+                "ESOTERIC",
+                "INCOMPREHENSIBLE",
+                "OPAQUE"
+            ]
+        },
+        {
+            "title": "WORDS WITH \"SMALL\" PREFIXES",
+            "words": [
+                "MICROBREWERY",
+                "MINIVAN",
+                "NANOTECHNOLOGY",
+                "PICOSECOND"
+            ]
+        },
+        {
+            "title": "HORROR MOVIES",
+            "words": [
+                "ARACHNOPHOBIA",
+                "HALLOWEEN",
+                "IT",
+                "SAW"
+            ]
+        },
+        {
+            "title": "WORDS BEFORE \"FORCE\"",
+            "words": [
+                "BRUTE",
+                "ELECTROMAGNETIC",
+                "G",
+                "TASK"
+            ]
+        }
+    ],
+    "solved": true,
+    "groups_found": 4,
+    "mistakes": 0,
+    "guesses": [
+        {
+            "guess": [
+                "MICROBREWERY",
+                "MINIVAN",
+                "NANOTECHNOLOGY",
+                "PICOSECOND"
+            ],
+            "result": "correct",
+            "group": "WORDS WITH \"SMALL\" PREFIXES",
+            "connection": "Each contains a prefix meaning 'small' (micro, mini, nano, pico)"
+        },
+        {
+            "guess": [
+                "BRUTE",
+                "ELECTROMAGNETIC",
+                "G",
+                "TASK"
+            ],
+            "result": "correct",
+            "group": "WORDS BEFORE \"FORCE\"",
+            "connection": "Each can be followed by the word 'force' (electromagnetic force, brute force, task force, G‑force)"
+        },
+        {
+            "guess": [
+                "ARACHNOPHOBIA",
+                "HALLOWEEN",
+                "IT",
+                "SAW"
+            ],
+            "result": "correct",
+            "group": "HORROR MOVIES",
+            "connection": "All are titles of well‑known horror movies"
+        },
+        {
+            "guess": [
+                "BEWILDERING",
+                "ESOTERIC",
+                "INCOMPREHENSIBLE",
+                "OPAQUE"
+            ],
+            "result": "correct",
+            "group": "HARD TO UNDERSTAND",
+            "connection": ""
+        }
+    ],
+    "solve_time": "0:00:06.146"
+}

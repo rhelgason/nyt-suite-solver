@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1361,
+    "ds": "2026-09-09",
+    "mode": "easy",
+    "solution": "burst",
+    "guesses": [
+        "tares",
+        "whaup",
+        "abaca",
+        "burst"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.305"
+}
