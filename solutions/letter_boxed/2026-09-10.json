@@ -1,0 +1,114 @@
+{
+    "puzzle_id": 2837,
+    "ds": "2026-09-10",
+    "sides": [
+        [
+            "a",
+            "b",
+            "u"
+        ],
+        [
+            "s",
+            "l",
+            "i"
+        ],
+        [
+            "o",
+            "e",
+            "c"
+        ],
+        [
+            "q",
+            "v",
+            "n"
+        ]
+    ],
+    "valid_answers": [
+        [
+            "bivalencies",
+            "sequoia"
+        ],
+        [
+            "bivalencies",
+            "sequoias"
+        ],
+        [
+            "blouse",
+            "equivalencies"
+        ],
+        [
+            "bluenose",
+            "equivalencies"
+        ],
+        [
+            "bole",
+            "equivalencies"
+        ],
+        [
+            "bone",
+            "equivalencies"
+        ],
+        [
+            "boucle",
+            "equivalencies"
+        ],
+        [
+            "boule",
+            "equivalencies"
+        ],
+        [
+            "bovine",
+            "equivalencies"
+        ],
+        [
+            "equivalencies",
+            "snob"
+        ],
+        [
+            "equivalencies",
+            "snobs"
+        ],
+        [
+            "equivalencies",
+            "sobs"
+        ],
+        [
+            "lobe",
+            "equivalencies"
+        ],
+        [
+            "noble",
+            "equivalencies"
+        ],
+        [
+            "obese",
+            "equivalencies"
+        ],
+        [
+            "volcano",
+            "obsequies"
+        ],
+        [
+            "volcano",
+            "obsequious"
+        ]
+    ],
+    "invalid_answers": [
+        [
+            "bosque",
+            "equivalencies"
+        ],
+        [
+            "bouse",
+            "equivalencies"
+        ],
+        [
+            "volcano",
+            "obloquies"
+        ]
+    ],
+    "num_valid_answers": 17,
+    "num_invalid_answers": 3,
+    "shortest_answer_length": 2,
+    "solve_time": "0:00:00.264"
+}
