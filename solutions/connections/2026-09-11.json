@@ -1,0 +1,65 @@
+{
+    "puzzle_id": 1284,
+    "ds": "2026-09-11",
+    "words": [
+        "PROCESS",
+        "LUCK",
+        "JOURNAL",
+        "DIGEST",
+        "EXERCISE",
+        "ABSORB",
+        "PLANNER",
+        "ENVELOPE",
+        "UNPLUG",
+        "AGENDA",
+        "TAKE IN",
+        "BAND",
+        "PHOTOGRAPHER",
+        "MEDITATE",
+        "FLORIST",
+        "LIMITS"
+    ],
+    "categories": [
+        {
+            "title": "PEOPLE HIRED FOR AN EVENT",
+            "words": [
+                "BAND",
+                "FLORIST",
+                "PHOTOGRAPHER",
+                "PLANNER"
+            ]
+        },
+        {
+            "title": "INTERNALIZE",
+            "words": [
+                "ABSORB",
+                "DIGEST",
+                "PROCESS",
+                "TAKE IN"
+            ]
+        },
+        {
+            "title": "WAYS TO PRACTICE SELF-CARE",
+            "words": [
+                "EXERCISE",
+                "JOURNAL",
+                "MEDITATE",
+                "UNPLUG"
+            ]
+        },
+        {
+            "title": "THINGS THAT ARE PUSHED METAPHORICALLY",
+            "words": [
+                "AGENDA",
+                "ENVELOPE",
+                "LIMITS",
+                "LUCK"
+            ]
+        }
+    ],
+    "solved": false,
+    "groups_found": 0,
+    "mistakes": 0,
+    "guesses": [],
+    "solve_time": "0:00:06.727"
+}

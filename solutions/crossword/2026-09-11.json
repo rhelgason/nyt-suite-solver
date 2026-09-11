@@ -1,0 +1,49 @@
+{
+    "puzzle_id": 24502,
+    "ds": "2026-09-11",
+    "width": 5,
+    "height": 5,
+    "solved": true,
+    "cells_correct": 23,
+    "cells_total": 23,
+    "grid": [
+        "R E B U S",
+        "I D A H O",
+        "D E C A F",
+        "S N O U T",
+        "# S N L #"
+    ],
+    "llm_answers": {
+        "A1": [
+            "REBUS"
+        ],
+        "A6": [
+            "IDAHO"
+        ],
+        "A7": [
+            "DECAF"
+        ],
+        "A8": [
+            "SNOUT"
+        ],
+        "A9": [
+            "SNL"
+        ],
+        "D1": [
+            "RIDS"
+        ],
+        "D2": [
+            "EDENS"
+        ],
+        "D3": [
+            "BACON"
+        ],
+        "D4": [
+            "UHAUL"
+        ],
+        "D5": [
+            "SOFT"
+        ]
+    },
+    "solve_time": "0:00:09.889"
+}
