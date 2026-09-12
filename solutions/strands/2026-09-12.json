@@ -1,0 +1,20 @@
+{
+    "puzzle_id": 1112,
+    "ds": "2026-09-12",
+    "clue": "Don't obsess",
+    "theme_words": [
+        "detach",
+        "disengage",
+        "free",
+        "liberate",
+        "release",
+        "unloose"
+    ],
+    "spangram": "letitgo",
+    "solved": false,
+    "theme_words_found": 4,
+    "theme_words_total": 6,
+    "candidates": 43945,
+    "truncated": true,
+    "solve_time": "0:01:05.268"
+}
