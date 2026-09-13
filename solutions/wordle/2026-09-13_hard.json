@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 3156,
+    "ds": "2026-09-13",
+    "mode": "hard",
+    "solution": "focus",
+    "guesses": [
+        "tares",
+        "lions",
+        "kudos",
+        "focus"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.559"
+}

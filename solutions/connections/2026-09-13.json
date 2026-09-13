@@ -1,0 +1,65 @@
+{
+    "puzzle_id": 1287,
+    "ds": "2026-09-13",
+    "words": [
+        "PORRIDGE",
+        "GARFIELD",
+        "DROOPY",
+        "EMPTY",
+        "HEATHCLIFF",
+        "EXCESS",
+        "GRANT",
+        "SLACK",
+        "ODIE",
+        "PARAMOUNT",
+        "SAGGING",
+        "MADISON",
+        "FLACCID",
+        "KEWPIE",
+        "CLEVELAND",
+        "DOUBLESPEAK"
+    ],
+    "categories": [
+        {
+            "title": "LACKING IN FIRMNESS",
+            "words": [
+                "DROOPY",
+                "FLACCID",
+                "SAGGING",
+                "SLACK"
+            ]
+        },
+        {
+            "title": "U.S. PRESIDENTS",
+            "words": [
+                "CLEVELAND",
+                "GARFIELD",
+                "GRANT",
+                "MADISON"
+            ]
+        },
+        {
+            "title": "WORDS THAT SOUND LIKE TWO LETTERS",
+            "words": [
+                "EMPTY",
+                "EXCESS",
+                "KEWPIE",
+                "ODIE"
+            ]
+        },
+        {
+            "title": "ENDING IN ELEVATED LANDFORMS",
+            "words": [
+                "DOUBLESPEAK",
+                "HEATHCLIFF",
+                "PARAMOUNT",
+                "PORRIDGE"
+            ]
+        }
+    ],
+    "solved": false,
+    "groups_found": 0,
+    "mistakes": 0,
+    "guesses": [],
+    "solve_time": "0:00:06.850"
+}
