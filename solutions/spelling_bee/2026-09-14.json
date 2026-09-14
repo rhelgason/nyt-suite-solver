@@ -1,0 +1,66 @@
+{
+    "puzzle_id": 21725,
+    "ds": "2026-09-14",
+    "center": "g",
+    "letters": [
+        "g",
+        "e",
+        "b",
+        "o",
+        "a",
+        "y",
+        "p"
+    ],
+    "pangrams": [
+        "pageboy"
+    ],
+    "valid_answers": [
+        "gabby",
+        "goopy",
+        "ogee",
+        "eggy",
+        "boggy",
+        "gaga",
+        "gooey",
+        "gape",
+        "baggage",
+        "pageboy",
+        "bogey",
+        "goby",
+        "agape",
+        "gage",
+        "apogee",
+        "goop",
+        "baggy",
+        "agog",
+        "page",
+        "yoga"
+    ],
+    "invalid_answers": [
+        "gybe",
+        "agapae",
+        "pogy",
+        "peage",
+        "gogo",
+        "pogey",
+        "gobo",
+        "boogy",
+        "boogey",
+        "gaby",
+        "gappy",
+        "bogy",
+        "yogee",
+        "agee",
+        "gapy",
+        "apagoge",
+        "yegg",
+        "peag"
+    ],
+    "missed_answers": [
+        "pogo"
+    ],
+    "solve_time": "0:00:00.088",
+    "score": 42,
+    "percentage": 97.67441860465115,
+    "rank": "GENIUS"
+}

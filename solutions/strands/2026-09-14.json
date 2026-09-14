@@ -1,0 +1,20 @@
+{
+    "puzzle_id": 1113,
+    "ds": "2026-09-14",
+    "clue": "OH MY GOSH!!",
+    "theme_words": [
+        "exclaim",
+        "freeze",
+        "gasp",
+        "recoil",
+        "shudder",
+        "start"
+    ],
+    "spangram": "thatsshocking",
+    "solved": false,
+    "theme_words_found": 3,
+    "theme_words_total": 6,
+    "candidates": 101537,
+    "truncated": true,
+    "solve_time": "0:01:05.315"
+}

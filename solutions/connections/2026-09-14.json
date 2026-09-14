@@ -1,0 +1,65 @@
+{
+    "puzzle_id": 1288,
+    "ds": "2026-09-14",
+    "words": [
+        "STRAW",
+        "CRAB",
+        "COOT",
+        "LEMON",
+        "BLUE",
+        "CANARY",
+        "TEAL",
+        "RAT",
+        "LOON",
+        "BAG",
+        "WHEAT",
+        "CUTLERY",
+        "SNITCH",
+        "GOOSE",
+        "STIRRER",
+        "STOOLIE"
+    ],
+    "categories": [
+        {
+            "title": "WATERBIRDS",
+            "words": [
+                "COOT",
+                "GOOSE",
+                "LOON",
+                "TEAL"
+            ]
+        },
+        {
+            "title": "INFORMANT",
+            "words": [
+                "CANARY",
+                "RAT",
+                "SNITCH",
+                "STOOLIE"
+            ]
+        },
+        {
+            "title": "COMMON SINGLE-USE PLASTIC ITEMS",
+            "words": [
+                "BAG",
+                "CUTLERY",
+                "STIRRER",
+                "STRAW"
+            ]
+        },
+        {
+            "title": "___GRASS",
+            "words": [
+                "BLUE",
+                "CRAB",
+                "LEMON",
+                "WHEAT"
+            ]
+        }
+    ],
+    "solved": false,
+    "groups_found": 0,
+    "mistakes": 0,
+    "guesses": [],
+    "solve_time": "0:00:06.735"
+}
