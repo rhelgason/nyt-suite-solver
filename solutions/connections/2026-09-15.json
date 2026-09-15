@@ -1,0 +1,65 @@
+{
+    "puzzle_id": 1283,
+    "ds": "2026-09-15",
+    "words": [
+        "PLANT",
+        "COACH",
+        "WHISTLE",
+        "DESSERT",
+        "HANDLE",
+        "CABOOSE",
+        "DECEMBER",
+        "SLEEPER",
+        "DIRECT",
+        "TRAIN",
+        "LID",
+        "ASSET",
+        "SPOUT",
+        "MOLE",
+        "EPILOGUE",
+        "GUIDE"
+    ],
+    "categories": [
+        {
+            "title": "INSTRUCT",
+            "words": [
+                "COACH",
+                "DIRECT",
+                "GUIDE",
+                "TRAIN"
+            ]
+        },
+        {
+            "title": "PARTS OF A WHISTLING KETTLE",
+            "words": [
+                "HANDLE",
+                "LID",
+                "SPOUT",
+                "WHISTLE"
+            ]
+        },
+        {
+            "title": "UNDERCOVER OPERATIVE",
+            "words": [
+                "ASSET",
+                "MOLE",
+                "PLANT",
+                "SLEEPER"
+            ]
+        },
+        {
+            "title": "THINGS THAT APPEAR AT THE END",
+            "words": [
+                "CABOOSE",
+                "DECEMBER",
+                "DESSERT",
+                "EPILOGUE"
+            ]
+        }
+    ],
+    "solved": false,
+    "groups_found": 0,
+    "mistakes": 0,
+    "guesses": [],
+    "solve_time": "0:00:07.615"
+}

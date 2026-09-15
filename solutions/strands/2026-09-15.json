@@ -1,0 +1,22 @@
+{
+    "puzzle_id": 1115,
+    "ds": "2026-09-15",
+    "clue": "If you build it",
+    "theme_words": [
+        "anchor",
+        "bolt",
+        "bracket",
+        "hinge",
+        "joist",
+        "knob",
+        "nail",
+        "screw"
+    ],
+    "spangram": "hardware",
+    "solved": true,
+    "theme_words_found": 8,
+    "theme_words_total": 8,
+    "candidates": 2,
+    "truncated": false,
+    "solve_time": "0:00:00.163"
+}

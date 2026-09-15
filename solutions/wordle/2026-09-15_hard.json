@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 1966,
+    "ds": "2026-09-15",
+    "mode": "hard",
+    "solution": "dealt",
+    "guesses": [
+        "tares",
+        "leant",
+        "dealt"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:00.057"
+}

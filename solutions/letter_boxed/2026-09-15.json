@@ -1,0 +1,94 @@
+{
+    "puzzle_id": 2842,
+    "ds": "2026-09-15",
+    "sides": [
+        [
+            "j",
+            "u",
+            "m"
+        ],
+        [
+            "s",
+            "h",
+            "n"
+        ],
+        [
+            "i",
+            "q",
+            "y"
+        ],
+        [
+            "k",
+            "g",
+            "r"
+        ]
+    ],
+    "valid_answers": [
+        [
+            "high",
+            "hijinks",
+            "squirmy"
+        ],
+        [
+            "hijinks",
+            "sings",
+            "squirmy"
+        ],
+        [
+            "hijinks",
+            "squiring",
+            "gyms"
+        ],
+        [
+            "hijinks",
+            "squirm",
+            "mingy"
+        ],
+        [
+            "hijinks",
+            "squirming",
+            "guys"
+        ],
+        [
+            "hijinks",
+            "squirming",
+            "gyms"
+        ],
+        [
+            "hijinks",
+            "squirming",
+            "gyring"
+        ],
+        [
+            "hijinks",
+            "squirming",
+            "gyrus"
+        ],
+        [
+            "hijinks",
+            "squirms",
+            "syringing"
+        ],
+        [
+            "nigh",
+            "hijinks",
+            "squirmy"
+        ],
+        [
+            "sigh",
+            "hijinks",
+            "squirmy"
+        ]
+    ],
+    "invalid_answers": [
+        [
+            "hijinks",
+            "skys",
+            "squirming"
+        ]
+    ],
+    "num_valid_answers": 11,
+    "num_invalid_answers": 1,
+    "shortest_answer_length": 3,
+    "solve_time": "0:00:00.343"
+}
