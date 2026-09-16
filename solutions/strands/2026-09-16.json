@@ -1,0 +1,20 @@
+{
+    "puzzle_id": 1116,
+    "ds": "2026-09-16",
+    "clue": "Hard not to notice",
+    "theme_words": [
+        "bright",
+        "flashy",
+        "jazzy",
+        "striking",
+        "vibrant",
+        "vivid"
+    ],
+    "spangram": "eyecatching",
+    "solved": false,
+    "theme_words_found": 5,
+    "theme_words_total": 6,
+    "candidates": 15127,
+    "truncated": true,
+    "solve_time": "0:01:00.298"
+}

@@ -1,0 +1,65 @@
+{
+    "puzzle_id": 1295,
+    "ds": "2026-09-16",
+    "words": [
+        "FRANK-N-FURTER",
+        "LATIN",
+        "CLINK",
+        "PENNYWISE",
+        "WADSWORTH",
+        "NICKELODEON",
+        "BORAT",
+        "LONG JOHN SILVER",
+        "ST. VINCENT",
+        "STEAM IRON",
+        "WIDENER",
+        "DIMENSION",
+        "QUARTERBACK",
+        "CARLOS",
+        "MARIGOLD",
+        "BARRETT"
+    ],
+    "categories": [
+        {
+            "title": "ENDING IN METAL ELEMENTS",
+            "words": [
+                "LATIN",
+                "LONG JOHN SILVER",
+                "MARIGOLD",
+                "STEAM IRON"
+            ]
+        },
+        {
+            "title": "STARTING WITH U.S. COINS",
+            "words": [
+                "DIMENSION",
+                "NICKELODEON",
+                "PENNYWISE",
+                "QUARTERBACK"
+            ]
+        },
+        {
+            "title": "POETS' MIDDLE NAMES",
+            "words": [
+                "BARRETT",
+                "CARLOS",
+                "ST. VINCENT",
+                "WADSWORTH"
+            ]
+        },
+        {
+            "title": "SAUSAGES PLUS A LETTER",
+            "words": [
+                "BORAT",
+                "CLINK",
+                "FRANK-N-FURTER",
+                "WIDENER"
+            ]
+        }
+    ],
+    "solved": false,
+    "groups_found": 0,
+    "mistakes": 0,
+    "guesses": [],
+    "solve_time": "0:00:06.731"
+}
