@@ -1,0 +1,65 @@
+{
+    "puzzle_id": 1296,
+    "ds": "2026-09-17",
+    "words": [
+        "SPRING",
+        "SUBWAY STATION",
+        "PRESTIGE",
+        "TRIANGLE",
+        "TAP",
+        "GIVE",
+        "LANGUAGE",
+        "FOUNTAIN",
+        "WELL",
+        "BOUNCE",
+        "SEWER LINE",
+        "HANDLES",
+        "SHEEP DETECTIVES",
+        "MINE SHAFT",
+        "FLEXIBILITY",
+        "WOLVERINE"
+    ],
+    "categories": [
+        {
+            "title": "ELASTICITY",
+            "words": [
+                "BOUNCE",
+                "FLEXIBILITY",
+                "GIVE",
+                "SPRING"
+            ]
+        },
+        {
+            "title": "THINGS THAT ARE UNDERGROUND",
+            "words": [
+                "MINE SHAFT",
+                "SEWER LINE",
+                "SUBWAY STATION",
+                "WELL"
+            ]
+        },
+        {
+            "title": "HUGH JACKMAN MOVIES, WITH \"THE\"",
+            "words": [
+                "FOUNTAIN",
+                "PRESTIGE",
+                "SHEEP DETECTIVES",
+                "WOLVERINE"
+            ]
+        },
+        {
+            "title": "LOVE ___",
+            "words": [
+                "HANDLES",
+                "LANGUAGE",
+                "TAP",
+                "TRIANGLE"
+            ]
+        }
+    ],
+    "solved": false,
+    "groups_found": 0,
+    "mistakes": 0,
+    "guesses": [],
+    "solve_time": "0:00:06.694"
+}
