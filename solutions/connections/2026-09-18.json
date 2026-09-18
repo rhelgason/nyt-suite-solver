@@ -1,0 +1,65 @@
+{
+    "puzzle_id": 1294,
+    "ds": "2026-09-18",
+    "words": [
+        "PILLOW",
+        "CRUISE",
+        "UPPER",
+        "STEP",
+        "FLIGHT",
+        "STAIR",
+        "PLATTER",
+        "LANDING",
+        "ROUND",
+        "STAGE",
+        "TAKEOFF",
+        "MEDLEY",
+        "BRIEF",
+        "BOARDING",
+        "SAMPLER",
+        "PHASE"
+    ],
+    "categories": [
+        {
+            "title": "SEGMENT OF A PROCESS",
+            "words": [
+                "PHASE",
+                "ROUND",
+                "STAGE",
+                "STEP"
+            ]
+        },
+        {
+            "title": "ASSORTMENTS OF FOOD/DRINK",
+            "words": [
+                "FLIGHT",
+                "MEDLEY",
+                "PLATTER",
+                "SAMPLER"
+            ]
+        },
+        {
+            "title": "PARTS OF A FLIGHT",
+            "words": [
+                "BOARDING",
+                "CRUISE",
+                "LANDING",
+                "TAKEOFF"
+            ]
+        },
+        {
+            "title": "___CASE",
+            "words": [
+                "BRIEF",
+                "PILLOW",
+                "STAIR",
+                "UPPER"
+            ]
+        }
+    ],
+    "solved": false,
+    "groups_found": 0,
+    "mistakes": 0,
+    "guesses": [],
+    "solve_time": "0:00:06.822"
+}

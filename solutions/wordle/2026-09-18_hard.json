@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 2228,
+    "ds": "2026-09-18",
+    "mode": "hard",
+    "solution": "snowy",
+    "guesses": [
+        "tares",
+        "spoil",
+        "shook",
+        "snowy"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.083"
+}
