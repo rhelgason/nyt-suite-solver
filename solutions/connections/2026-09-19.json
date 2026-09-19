@@ -1,0 +1,65 @@
+{
+    "puzzle_id": 1299,
+    "ds": "2026-09-19",
+    "words": [
+        "STICK FIGURE",
+        "MINISKIRT",
+        "LOG CABIN",
+        "SUN",
+        "TAN LINE",
+        "BRANCH OUT",
+        "HOUSE",
+        "TWIGGY",
+        "TREE",
+        "MOD",
+        "SIN CITY",
+        "GROW",
+        "COS LETTUCE",
+        "EXPAND",
+        "CARNABY STREET",
+        "DIVERSIFY"
+    ],
+    "categories": [
+        {
+            "title": "WIDEN ONE'S SCOPE",
+            "words": [
+                "BRANCH OUT",
+                "DIVERSIFY",
+                "EXPAND",
+                "GROW"
+            ]
+        },
+        {
+            "title": "FEATURES OF A KID'S DRAWING",
+            "words": [
+                "HOUSE",
+                "STICK FIGURE",
+                "SUN",
+                "TREE"
+            ]
+        },
+        {
+            "title": "ASSOCIATED WITH SWINGING LONDON IN THE 1960S",
+            "words": [
+                "CARNABY STREET",
+                "MINISKIRT",
+                "MOD",
+                "TWIGGY"
+            ]
+        },
+        {
+            "title": "STARTING WITH ABBREVIATED MATH FUNCTIONS",
+            "words": [
+                "COS LETTUCE",
+                "LOG CABIN",
+                "SIN CITY",
+                "TAN LINE"
+            ]
+        }
+    ],
+    "solved": false,
+    "groups_found": 0,
+    "mistakes": 0,
+    "guesses": [],
+    "solve_time": "0:00:06.916"
+}

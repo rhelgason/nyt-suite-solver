@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 5231,
+    "ds": "2026-09-19",
+    "mode": "easy",
+    "solution": "waken",
+    "guesses": [
+        "tares",
+        "lynch",
+        "dawks",
+        "waken"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:01.640"
+}

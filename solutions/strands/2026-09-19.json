@@ -1,0 +1,20 @@
+{
+    "puzzle_id": 1119,
+    "ds": "2026-09-19",
+    "clue": "Shiver me timbers!",
+    "theme_words": [
+        "arrr",
+        "avast",
+        "hearties",
+        "matey",
+        "savvy",
+        "yohoho"
+    ],
+    "spangram": "talklikeapirate",
+    "solved": false,
+    "theme_words_found": 2,
+    "theme_words_total": 6,
+    "candidates": 17970,
+    "truncated": true,
+    "solve_time": "0:01:00.631"
+}

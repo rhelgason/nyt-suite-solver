@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 5231,
+    "ds": "2026-09-19",
+    "mode": "hard",
+    "solution": "waken",
+    "guesses": [
+        "tares",
+        "laden",
+        "maven",
+        "waken"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.059"
+}
