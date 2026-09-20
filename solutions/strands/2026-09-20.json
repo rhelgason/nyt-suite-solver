@@ -1,0 +1,21 @@
+{
+    "puzzle_id": 1120,
+    "ds": "2026-09-20",
+    "clue": "Putting on airs",
+    "theme_words": [
+        "bluster",
+        "boast",
+        "brag",
+        "flex",
+        "gloat",
+        "posture",
+        "strut"
+    ],
+    "spangram": "grandiosity",
+    "solved": true,
+    "theme_words_found": 7,
+    "theme_words_total": 7,
+    "candidates": 395,
+    "truncated": false,
+    "solve_time": "0:00:00.939"
+}

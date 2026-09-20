@@ -1,0 +1,65 @@
+{
+    "puzzle_id": 1298,
+    "ds": "2026-09-20",
+    "words": [
+        "TWILIGHT",
+        "SNOW",
+        "TORTILLA",
+        "SKATE",
+        "DERBY",
+        "FRIED CHICKEN",
+        "COASTER",
+        "HOVER",
+        "BLADE",
+        "BLU-RAY",
+        "BLUEGRASS",
+        "SAND DOLLAR",
+        "NEAR DARK",
+        "BOURBON",
+        "SURF",
+        "SINNERS"
+    ],
+    "categories": [
+        {
+            "title": "ROUND FLAT THINGS",
+            "words": [
+                "BLU-RAY",
+                "COASTER",
+                "SAND DOLLAR",
+                "TORTILLA"
+            ]
+        },
+        {
+            "title": "ASSOCIATED WITH KENTUCKY",
+            "words": [
+                "BLUEGRASS",
+                "BOURBON",
+                "DERBY",
+                "FRIED CHICKEN"
+            ]
+        },
+        {
+            "title": "VAMPIRE MOVIES",
+            "words": [
+                "BLADE",
+                "NEAR DARK",
+                "SINNERS",
+                "TWILIGHT"
+            ]
+        },
+        {
+            "title": "___BOARDS YOU RIDE ON",
+            "words": [
+                "HOVER",
+                "SKATE",
+                "SNOW",
+                "SURF"
+            ]
+        }
+    ],
+    "solved": false,
+    "groups_found": 0,
+    "mistakes": 0,
+    "guesses": [],
+    "solve_time": "0:00:06.671"
+}
