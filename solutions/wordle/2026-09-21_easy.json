@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 4763,
+    "ds": "2026-09-21",
+    "mode": "easy",
+    "solution": "pager",
+    "guesses": [
+        "tares",
+        "glyph",
+        "pager"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:01.051"
+}

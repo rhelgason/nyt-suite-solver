@@ -1,0 +1,65 @@
+{
+    "puzzle_id": 1293,
+    "ds": "2026-09-21",
+    "words": [
+        "COMPOSE",
+        "CHECK",
+        "FLY",
+        "BEET",
+        "BRAH",
+        "WORM",
+        "SPAM",
+        "MATE",
+        "CASTLE",
+        "CHUM",
+        "VIVA",
+        "SENT",
+        "CHOP",
+        "CAPTURE",
+        "DRAFTS",
+        "SPINNER"
+    ],
+    "categories": [
+        {
+            "title": "EMAIL BUTTONS",
+            "words": [
+                "COMPOSE",
+                "DRAFTS",
+                "SENT",
+                "SPAM"
+            ]
+        },
+        {
+            "title": "WAYS TO ATTRACT FISH",
+            "words": [
+                "CHUM",
+                "FLY",
+                "SPINNER",
+                "WORM"
+            ]
+        },
+        {
+            "title": "CHESS VERBS",
+            "words": [
+                "CAPTURE",
+                "CASTLE",
+                "CHECK",
+                "MATE"
+            ]
+        },
+        {
+            "title": "STARTS OF COMPOSERS' NAMES",
+            "words": [
+                "BEET",
+                "BRAH",
+                "CHOP",
+                "VIVA"
+            ]
+        }
+    ],
+    "solved": false,
+    "groups_found": 0,
+    "mistakes": 0,
+    "guesses": [],
+    "solve_time": "0:00:06.907"
+}

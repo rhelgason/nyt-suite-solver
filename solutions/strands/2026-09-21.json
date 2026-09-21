@@ -1,0 +1,19 @@
+{
+    "puzzle_id": 1121,
+    "ds": "2026-09-21",
+    "clue": "It's back!",
+    "theme_words": [
+        "grunge",
+        "lycra",
+        "neon",
+        "scrunchies",
+        "tracksuits"
+    ],
+    "spangram": "ninetiestrend",
+    "solved": false,
+    "theme_words_found": 3,
+    "theme_words_total": 5,
+    "candidates": 50350,
+    "truncated": true,
+    "solve_time": "0:01:03.994"
+}
