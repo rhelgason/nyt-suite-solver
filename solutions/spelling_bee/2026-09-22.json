@@ -1,0 +1,57 @@
+{
+    "puzzle_id": 27770,
+    "ds": "2026-09-22",
+    "center": "n",
+    "letters": [
+        "o",
+        "u",
+        "e",
+        "n",
+        "x",
+        "q",
+        "i"
+    ],
+    "pangrams": [
+        "equinox"
+    ],
+    "valid_answers": [
+        "oxen",
+        "nonunion",
+        "noon",
+        "equine",
+        "equinox",
+        "neon",
+        "none",
+        "nene",
+        "onion",
+        "nine",
+        "queen",
+        "quinine",
+        "ennui",
+        "union",
+        "xenon",
+        "noun",
+        "unique"
+    ],
+    "invalid_answers": [
+        "exon",
+        "nonunique",
+        "exine",
+        "quinin",
+        "nixie",
+        "quin",
+        "quinone",
+        "inion",
+        "nixe",
+        "ionone",
+        "ninon",
+        "quoin"
+    ],
+    "missed_answers": [
+        "innie"
+    ],
+    "solve_time": "0:00:00.075",
+    "score": 43,
+    "percentage": 95.55555555555556,
+    "rank": "GENIUS"
+}

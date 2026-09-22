@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1527,
+    "ds": "2026-09-22",
+    "mode": "easy",
+    "solution": "stoke",
+    "guesses": [
+        "tares",
+        "point",
+        "cloth",
+        "stoke"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.782"
+}

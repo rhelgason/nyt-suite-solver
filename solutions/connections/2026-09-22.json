@@ -1,0 +1,65 @@
+{
+    "puzzle_id": 1307,
+    "ds": "2026-09-22",
+    "words": [
+        "THIS",
+        "THAT",
+        "THE",
+        "OTHER",
+        "CAFE",
+        "PATRON",
+        "AGREE",
+        "ACCENT",
+        "TOUCH",
+        "THOSE",
+        "ROSE",
+        "NEUTRAL",
+        "DETAIL",
+        "DISAGREE",
+        "THESE",
+        "FLOURISH"
+    ],
+    "categories": [
+        {
+            "title": "DEMONSTRATIVES",
+            "words": [
+                "THAT",
+                "THESE",
+                "THIS",
+                "THOSE"
+            ]
+        },
+        {
+            "title": "EMBELLISHMENT",
+            "words": [
+                "ACCENT",
+                "DETAIL",
+                "FLOURISH",
+                "TOUCH"
+            ]
+        },
+        {
+            "title": "OPTIONS ON A MULTIPLE CHOICE SURVEY",
+            "words": [
+                "AGREE",
+                "DISAGREE",
+                "NEUTRAL",
+                "OTHER"
+            ]
+        },
+        {
+            "title": "BEVERAGES WITH ACUTE ACCENTS REMOVED",
+            "words": [
+                "CAFE",
+                "PATRON",
+                "ROSE",
+                "THE"
+            ]
+        }
+    ],
+    "solved": false,
+    "groups_found": 0,
+    "mistakes": 0,
+    "guesses": [],
+    "solve_time": "0:00:06.766"
+}
