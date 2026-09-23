@@ -1,0 +1,19 @@
+{
+    "puzzle_id": 1124,
+    "ds": "2026-09-23",
+    "clue": "Practically paleolithic",
+    "theme_words": [
+        "ancient",
+        "archaic",
+        "bygone",
+        "primeval",
+        "timeworn"
+    ],
+    "spangram": "thatsoldnews",
+    "solved": false,
+    "theme_words_found": 4,
+    "theme_words_total": 5,
+    "candidates": 14089,
+    "truncated": true,
+    "solve_time": "0:01:04.344"
+}

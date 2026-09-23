@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 3166,
+    "ds": "2026-09-23",
+    "mode": "easy",
+    "solution": "forth",
+    "guesses": [
+        "tares",
+        "forby",
+        "forth"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:00.277"
+}
