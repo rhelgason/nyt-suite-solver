@@ -1,0 +1,65 @@
+{
+    "puzzle_id": 1302,
+    "ds": "2026-09-24",
+    "words": [
+        "THE BEAR",
+        "FOAM FINGER",
+        "POGO STICK",
+        "FACE PAINT",
+        "BOBBLEHEAD",
+        "BEER HAT",
+        "UNCLE SAM",
+        "CAPE",
+        "CREATION OF ADAM",
+        "TRAMPOLINE",
+        "FANGS",
+        "BREATHE",
+        "FAKE BLOOD",
+        "I'M WITH STUPID SHIRT",
+        "SNAKES IN A CAN",
+        "HERB TEA"
+    ],
+    "categories": [
+        {
+            "title": "PARTS OF A VAMPIRE COSTUME",
+            "words": [
+                "CAPE",
+                "FACE PAINT",
+                "FAKE BLOOD",
+                "FANGS"
+            ]
+        },
+        {
+            "title": "THINGS WITH SPRING/S",
+            "words": [
+                "BOBBLEHEAD",
+                "POGO STICK",
+                "SNAKES IN A CAN",
+                "TRAMPOLINE"
+            ]
+        },
+        {
+            "title": "FEATURING POINTING",
+            "words": [
+                "CREATION OF ADAM",
+                "FOAM FINGER",
+                "I'M WITH STUPID SHIRT",
+                "UNCLE SAM"
+            ]
+        },
+        {
+            "title": "ANAGRAMS",
+            "words": [
+                "BEER HAT",
+                "BREATHE",
+                "HERB TEA",
+                "THE BEAR"
+            ]
+        }
+    ],
+    "solved": false,
+    "groups_found": 0,
+    "mistakes": 0,
+    "guesses": [],
+    "solve_time": "0:00:06.833"
+}
