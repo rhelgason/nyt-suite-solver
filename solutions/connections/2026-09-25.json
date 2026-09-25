@@ -1,0 +1,65 @@
+{
+    "puzzle_id": 1297,
+    "ds": "2026-09-25",
+    "words": [
+        "RATHER",
+        "BOUGIE",
+        "GENIUS",
+        "SPRING",
+        "BORDER",
+        "RATCHET",
+        "SWANK",
+        "SAVAGE",
+        "CLASSY",
+        "LEVY",
+        "PENDULUM",
+        "FANCY",
+        "ESCAPEMENT",
+        "POSH",
+        "FOAMILY",
+        "AYKROYD"
+    ],
+    "categories": [
+        {
+            "title": "LUXE",
+            "words": [
+                "BOUGIE",
+                "FANCY",
+                "POSH",
+                "SWANK"
+            ]
+        },
+        {
+            "title": "PARTS OF A MECHANICAL CLOCK",
+            "words": [
+                "ESCAPEMENT",
+                "PENDULUM",
+                "RATCHET",
+                "SPRING"
+            ]
+        },
+        {
+            "title": "FAMOUS DANS",
+            "words": [
+                "AYKROYD",
+                "LEVY",
+                "RATHER",
+                "SAVAGE"
+            ]
+        },
+        {
+            "title": "TAXONOMIC RANKS PLUS A LETTER",
+            "words": [
+                "BORDER",
+                "CLASSY",
+                "FOAMILY",
+                "GENIUS"
+            ]
+        }
+    ],
+    "solved": false,
+    "groups_found": 0,
+    "mistakes": 0,
+    "guesses": [],
+    "solve_time": "0:00:06.692"
+}
