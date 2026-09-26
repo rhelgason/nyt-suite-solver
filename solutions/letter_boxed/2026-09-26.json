@@ -1,0 +1,46 @@
+{
+    "puzzle_id": 2853,
+    "ds": "2026-09-26",
+    "sides": [
+        [
+            "e",
+            "o",
+            "c"
+        ],
+        [
+            "f",
+            "i",
+            "p"
+        ],
+        [
+            "y",
+            "n",
+            "a"
+        ],
+        [
+            "d",
+            "g",
+            "h"
+        ]
+    ],
+    "valid_answers": [
+        [
+            "hypnogogic",
+            "chafed"
+        ],
+        [
+            "poached",
+            "defying"
+        ]
+    ],
+    "invalid_answers": [
+        [
+            "hypnoid",
+            "defacing"
+        ]
+    ],
+    "num_valid_answers": 2,
+    "num_invalid_answers": 1,
+    "shortest_answer_length": 2,
+    "solve_time": "0:00:00.108"
+}

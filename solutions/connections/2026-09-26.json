@@ -1,0 +1,65 @@
+{
+    "puzzle_id": 1303,
+    "ds": "2026-09-26",
+    "words": [
+        "MINT",
+        "PRESS",
+        "GRAIN",
+        "BEANS",
+        "STARCH",
+        "CAT",
+        "CUCUMBER",
+        "RINGS",
+        "GUM",
+        "FOLD",
+        "KNOTS",
+        "CUSTOMER",
+        "WASH",
+        "MOUTHWASH",
+        "BURL",
+        "SPRAY"
+    ],
+    "categories": [
+        {
+            "title": "BREATH FRESHENERS",
+            "words": [
+                "GUM",
+                "MINT",
+                "MOUTHWASH",
+                "SPRAY"
+            ]
+        },
+        {
+            "title": "THINGS DONE TO A DRESS SHIRT AT THE LAUNDRY",
+            "words": [
+                "FOLD",
+                "PRESS",
+                "STARCH",
+                "WASH"
+            ]
+        },
+        {
+            "title": "FEATURES OF WOOD",
+            "words": [
+                "BURL",
+                "GRAIN",
+                "KNOTS",
+                "RINGS"
+            ]
+        },
+        {
+            "title": "\"COOL\" THINGS, IN EXPRESSIONS",
+            "words": [
+                "BEANS",
+                "CAT",
+                "CUCUMBER",
+                "CUSTOMER"
+            ]
+        }
+    ],
+    "solved": false,
+    "groups_found": 0,
+    "mistakes": 0,
+    "guesses": [],
+    "solve_time": "0:00:07.503"
+}

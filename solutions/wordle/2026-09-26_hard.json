@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 1498,
+    "ds": "2026-09-26",
+    "mode": "hard",
+    "solution": "elegy",
+    "guesses": [
+        "tares",
+        "oldie",
+        "elegy"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:00.239"
+}
