@@ -1,0 +1,49 @@
+{
+    "puzzle_id": 24546,
+    "ds": "2026-09-27",
+    "width": 5,
+    "height": 5,
+    "solved": true,
+    "cells_correct": 21,
+    "cells_total": 21,
+    "grid": [
+        "# # F I T",
+        "G R A N D",
+        "Y O U R S",
+        "M I N E #",
+        "S L A M #"
+    ],
+    "llm_answers": {
+        "A1": [
+            "FIT"
+        ],
+        "A4": [
+            "GRAND"
+        ],
+        "A6": [
+            "YOURS"
+        ],
+        "A7": [
+            "MINE"
+        ],
+        "A8": [
+            "SLAM"
+        ],
+        "D1": [
+            "FAUNA"
+        ],
+        "D2": [
+            "INREM"
+        ],
+        "D3": [
+            "TDS"
+        ],
+        "D4": [
+            "GYMS"
+        ],
+        "D5": [
+            "ROIL"
+        ]
+    },
+    "solve_time": "0:00:07.986"
+}

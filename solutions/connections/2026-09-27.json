@@ -1,0 +1,65 @@
+{
+    "puzzle_id": 1306,
+    "ds": "2026-09-27",
+    "words": [
+        "WU-TANG",
+        "CARRIER",
+        "HOMING",
+        "BOOTH",
+        "STOOL",
+        "MARBLE",
+        "BBQING",
+        "OPERATOR",
+        "CLAY",
+        "BANQUETTE",
+        "NETWORK",
+        "CHAIR",
+        "LOHAN",
+        "BRONZE",
+        "PROVIDER",
+        "PLASTER"
+    ],
+    "categories": [
+        {
+            "title": "SCULPTURE MEDIA",
+            "words": [
+                "BRONZE",
+                "CLAY",
+                "MARBLE",
+                "PLASTER"
+            ]
+        },
+        {
+            "title": "RESTAURANT SEATING OPTIONS",
+            "words": [
+                "BANQUETTE",
+                "BOOTH",
+                "CHAIR",
+                "STOOL"
+            ]
+        },
+        {
+            "title": "TELECOM",
+            "words": [
+                "CARRIER",
+                "NETWORK",
+                "OPERATOR",
+                "PROVIDER"
+            ]
+        },
+        {
+            "title": "ENDING IN CHINESE DYNASTIES",
+            "words": [
+                "BBQING",
+                "HOMING",
+                "LOHAN",
+                "WU-TANG"
+            ]
+        }
+    ],
+    "solved": false,
+    "groups_found": 0,
+    "mistakes": 0,
+    "guesses": [],
+    "solve_time": "0:00:06.609"
+}

@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1848,
+    "ds": "2026-09-27",
+    "mode": "easy",
+    "solution": "sloop",
+    "guesses": [
+        "tares",
+        "noily",
+        "shool",
+        "sloop"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:01.705"
+}

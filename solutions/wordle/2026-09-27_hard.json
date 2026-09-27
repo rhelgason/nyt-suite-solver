@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 1848,
+    "ds": "2026-09-27",
+    "mode": "hard",
+    "solution": "sloop",
+    "guesses": [
+        "tares",
+        "spoil",
+        "sloop"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:00.059"
+}
