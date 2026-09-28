@@ -1,0 +1,65 @@
+{
+    "puzzle_id": 1305,
+    "ds": "2026-09-28",
+    "words": [
+        "CHIHUAHUA",
+        "LEMON",
+        "VIPER",
+        "BAMBOO",
+        "CELERY",
+        "TABASCO",
+        "ARKANSANS",
+        "DURANGO",
+        "SPRINGING",
+        "CHARGER",
+        "HORSERADISH",
+        "WHEAT",
+        "POSSESSES",
+        "MIGNONETTE",
+        "CORN",
+        "CHALLENGER"
+    ],
+    "categories": [
+        {
+            "title": "THINGS WITH STALKS",
+            "words": [
+                "BAMBOO",
+                "CELERY",
+                "CORN",
+                "WHEAT"
+            ]
+        },
+        {
+            "title": "OYSTER CONDIMENTS",
+            "words": [
+                "HORSERADISH",
+                "LEMON",
+                "MIGNONETTE",
+                "TABASCO"
+            ]
+        },
+        {
+            "title": "DODGE MODELS",
+            "words": [
+                "CHALLENGER",
+                "CHARGER",
+                "DURANGO",
+                "VIPER"
+            ]
+        },
+        {
+            "title": "THREE LETTERS PLUS REPEATED TRIGRAMS",
+            "words": [
+                "ARKANSANS",
+                "CHIHUAHUA",
+                "POSSESSES",
+                "SPRINGING"
+            ]
+        }
+    ],
+    "solved": false,
+    "groups_found": 0,
+    "mistakes": 0,
+    "guesses": [],
+    "solve_time": "0:00:06.669"
+}

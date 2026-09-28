@@ -1,0 +1,21 @@
+{
+    "puzzle_id": 1128,
+    "ds": "2026-09-28",
+    "clue": "A form of art",
+    "theme_words": [
+        "bronze",
+        "clay",
+        "glass",
+        "marble",
+        "soapstone",
+        "steel",
+        "wood"
+    ],
+    "spangram": "sculpture",
+    "solved": true,
+    "theme_words_found": 7,
+    "theme_words_total": 7,
+    "candidates": 7,
+    "truncated": false,
+    "solve_time": "0:00:00.195"
+}

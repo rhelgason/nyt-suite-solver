@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1336,
+    "ds": "2026-09-28",
+    "mode": "easy",
+    "solution": "trunk",
+    "guesses": [
+        "tares",
+        "cholo",
+        "trump",
+        "trunk"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.372"
+}
