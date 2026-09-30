@@ -1,0 +1,49 @@
+{
+    "puzzle_id": 24561,
+    "ds": "2026-09-30",
+    "width": 5,
+    "height": 5,
+    "solved": true,
+    "cells_correct": 25,
+    "cells_total": 25,
+    "grid": [
+        "R S V P S",
+        "A T E U P",
+        "M A N G O",
+        "O C T E T",
+        "S K I T S"
+    ],
+    "llm_answers": {
+        "A1": [
+            "RSVPS"
+        ],
+        "A6": [
+            "ATEUP"
+        ],
+        "A7": [
+            "MANGO"
+        ],
+        "A8": [
+            "OCTET"
+        ],
+        "A9": [
+            "SKITS"
+        ],
+        "D1": [
+            "RAMOS"
+        ],
+        "D2": [
+            "STACK"
+        ],
+        "D3": [
+            "VENTI"
+        ],
+        "D4": [
+            "PUGET"
+        ],
+        "D5": [
+            "SPOTS"
+        ]
+    },
+    "solve_time": "0:00:08.275"
+}

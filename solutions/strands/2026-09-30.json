@@ -1,0 +1,21 @@
+{
+    "puzzle_id": 1131,
+    "ds": "2026-09-30",
+    "clue": "An instrumental destination",
+    "theme_words": [
+        "amplifier",
+        "capo",
+        "drums",
+        "guitar",
+        "piano",
+        "pick",
+        "synth"
+    ],
+    "spangram": "musicstore",
+    "solved": false,
+    "theme_words_found": 4,
+    "theme_words_total": 7,
+    "candidates": 17961,
+    "truncated": true,
+    "solve_time": "0:01:00.370"
+}

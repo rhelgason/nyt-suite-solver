@@ -1,0 +1,65 @@
+{
+    "puzzle_id": 1311,
+    "ds": "2026-09-30",
+    "words": [
+        "TAMBOURINE",
+        "SEPTUM",
+        "DECENT",
+        "BOND",
+        "MARTINI",
+        "OPTION",
+        "NOVELTY",
+        "CASINO",
+        "SPRAY PAINT",
+        "OCTOPUSSY",
+        "DONNIE BRASCO",
+        "FUTURE",
+        "BUGSY",
+        "ETCH A SKETCH",
+        "STOCK",
+        "SCARFACE"
+    ],
+    "categories": [
+        {
+            "title": "SECURITIES",
+            "words": [
+                "BOND",
+                "FUTURE",
+                "OPTION",
+                "STOCK"
+            ]
+        },
+        {
+            "title": "THINGS THAT ARE SHAKEN (NOT STIRRED)",
+            "words": [
+                "ETCH A SKETCH",
+                "MARTINI",
+                "SPRAY PAINT",
+                "TAMBOURINE"
+            ]
+        },
+        {
+            "title": "GANGSTER MOVIES",
+            "words": [
+                "BUGSY",
+                "CASINO",
+                "DONNIE BRASCO",
+                "SCARFACE"
+            ]
+        },
+        {
+            "title": "STARTING WITH MONTH ABBREVIATIONS",
+            "words": [
+                "DECENT",
+                "NOVELTY",
+                "OCTOPUSSY",
+                "SEPTUM"
+            ]
+        }
+    ],
+    "solved": false,
+    "groups_found": 0,
+    "mistakes": 0,
+    "guesses": [],
+    "solve_time": "0:00:06.814"
+}
