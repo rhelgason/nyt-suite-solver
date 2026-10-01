@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 4848,
+    "ds": "2026-10-01",
+    "mode": "easy",
+    "solution": "ritzy",
+    "guesses": [
+        "tares",
+        "fruit",
+        "intro",
+        "ritzy"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.761"
+}

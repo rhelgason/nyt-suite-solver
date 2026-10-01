@@ -1,0 +1,65 @@
+{
+    "puzzle_id": 20201,
+    "ds": "2026-10-01",
+    "center": "h",
+    "letters": [
+        "n",
+        "d",
+        "e",
+        "m",
+        "h",
+        "y",
+        "o"
+    ],
+    "pangrams": [
+        "honeymooned"
+    ],
+    "valid_answers": [
+        "hemmed",
+        "honeyed",
+        "homonym",
+        "homey",
+        "hymn",
+        "hoodoo",
+        "hooey",
+        "homed",
+        "heed",
+        "homonymy",
+        "honed",
+        "heeded",
+        "honey",
+        "home",
+        "honeymooned",
+        "hoed",
+        "heme",
+        "hymen",
+        "hood",
+        "hone",
+        "hooded",
+        "honeymoon"
+    ],
+    "invalid_answers": [
+        "hymned",
+        "hoydened",
+        "homy",
+        "oohed",
+        "hymnody",
+        "nonhome",
+        "yodh",
+        "hodden",
+        "nonheme",
+        "hoodooed",
+        "hoyden",
+        "hoody",
+        "ohed",
+        "heydey",
+        "homo"
+    ],
+    "missed_answers": [
+        "yoohoo"
+    ],
+    "solve_time": "0:00:00.092",
+    "score": 65,
+    "percentage": 95.58823529411765,
+    "rank": "GENIUS"
+}

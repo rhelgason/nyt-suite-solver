@@ -1,0 +1,65 @@
+{
+    "puzzle_id": 1314,
+    "ds": "2026-10-01",
+    "words": [
+        "NATIONAL",
+        "KEN",
+        "NECK",
+        "SHINS",
+        "ACRO",
+        "STICK",
+        "WAIST",
+        "WALKMEN",
+        "SITUATE",
+        "SLEEVE",
+        "CROSS",
+        "PLACE",
+        "SUD",
+        "POSITION",
+        "CHEST",
+        "DECEMBERISTS"
+    ],
+    "categories": [
+        {
+            "title": "PUT",
+            "words": [
+                "PLACE",
+                "POSITION",
+                "SITUATE",
+                "STICK"
+            ]
+        },
+        {
+            "title": "DRESS SHIRT MEASUREMENTS",
+            "words": [
+                "CHEST",
+                "NECK",
+                "SLEEVE",
+                "WAIST"
+            ]
+        },
+        {
+            "title": "2000S INDIE ROCK BANDS, WITH \"THE\"",
+            "words": [
+                "DECEMBERISTS",
+                "NATIONAL",
+                "SHINS",
+                "WALKMEN"
+            ]
+        },
+        {
+            "title": "STARTS OF NYT PRINT PUZZLES",
+            "words": [
+                "ACRO",
+                "CROSS",
+                "KEN",
+                "SUD"
+            ]
+        }
+    ],
+    "solved": false,
+    "groups_found": 0,
+    "mistakes": 0,
+    "guesses": [],
+    "solve_time": "0:00:06.606"
+}
