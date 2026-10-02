@@ -1,0 +1,19 @@
+{
+    "puzzle_id": 1133,
+    "ds": "2026-10-02",
+    "clue": "On the sly ...",
+    "theme_words": [
+        "covert",
+        "devious",
+        "furtive",
+        "shifty",
+        "stealthy"
+    ],
+    "spangram": "sneakingaround",
+    "solved": true,
+    "theme_words_found": 5,
+    "theme_words_total": 5,
+    "candidates": 252,
+    "truncated": false,
+    "solve_time": "0:00:00.210"
+}

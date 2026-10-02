@@ -1,0 +1,65 @@
+{
+    "puzzle_id": 1310,
+    "ds": "2026-10-02",
+    "words": [
+        "LITTLE",
+        "REAL ESTATE",
+        "COMMON",
+        "RING",
+        "INDEX",
+        "FUND",
+        "BANKROLL",
+        "RIB",
+        "STANDARD",
+        "MIDDLE",
+        "STOCK",
+        "SUPPORT",
+        "BACK",
+        "NUMBER",
+        "ROUTINE",
+        "TIME"
+    ],
+    "categories": [
+        {
+            "title": "FINANCE",
+            "words": [
+                "BACK",
+                "BANKROLL",
+                "FUND",
+                "SUPPORT"
+            ]
+        },
+        {
+            "title": "FINGERS",
+            "words": [
+                "INDEX",
+                "LITTLE",
+                "MIDDLE",
+                "RING"
+            ]
+        },
+        {
+            "title": "CUSTOMARY",
+            "words": [
+                "COMMON",
+                "ROUTINE",
+                "STANDARD",
+                "STOCK"
+            ]
+        },
+        {
+            "title": "PRIME ___",
+            "words": [
+                "NUMBER",
+                "REAL ESTATE",
+                "RIB",
+                "TIME"
+            ]
+        }
+    ],
+    "solved": false,
+    "groups_found": 0,
+    "mistakes": 0,
+    "guesses": [],
+    "solve_time": "0:00:06.616"
+}
