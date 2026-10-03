@@ -1,0 +1,65 @@
+{
+    "puzzle_id": 1313,
+    "ds": "2026-10-03",
+    "words": [
+        "WHITNEY HOUSTON",
+        "LINDA HAMILTON",
+        "RIVER PHOENIX",
+        "JOHN DENVER",
+        "GETTY IMAGES",
+        "ELBOW GREASE",
+        "CAN OPENER",
+        "SOMETHING WICKED",
+        "FAT CATS",
+        "HEAD WAITER",
+        "MERV GRIFFIN",
+        "BROAD BEAN",
+        "NY GIANT",
+        "MET HALFWAY",
+        "W.C. FIELDS",
+        "DIET SPRITE"
+    ],
+    "categories": [
+        {
+            "title": "STARTING WITH TERMS FOR \"TOILET\"",
+            "words": [
+                "CAN OPENER",
+                "HEAD WAITER",
+                "JOHN DENVER",
+                "W.C. FIELDS"
+            ]
+        },
+        {
+            "title": "ENDING IN MUSICALS",
+            "words": [
+                "ELBOW GREASE",
+                "FAT CATS",
+                "LINDA HAMILTON",
+                "SOMETHING WICKED"
+            ]
+        },
+        {
+            "title": "STARTING WITH U.S. MUSEUMS",
+            "words": [
+                "BROAD BEAN",
+                "GETTY IMAGES",
+                "MET HALFWAY",
+                "WHITNEY HOUSTON"
+            ]
+        },
+        {
+            "title": "ENDING IN FANTASY CREATURES",
+            "words": [
+                "DIET SPRITE",
+                "MERV GRIFFIN",
+                "NY GIANT",
+                "RIVER PHOENIX"
+            ]
+        }
+    ],
+    "solved": false,
+    "groups_found": 0,
+    "mistakes": 0,
+    "guesses": [],
+    "solve_time": "0:00:06.566"
+}
