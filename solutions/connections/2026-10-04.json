@@ -1,0 +1,65 @@
+{
+    "puzzle_id": 1315,
+    "ds": "2026-10-04",
+    "words": [
+        "WIG",
+        "FILM",
+        "AUCTION",
+        "TABLE",
+        "PADDLE",
+        "COLLAR",
+        "GAVEL",
+        "LOT",
+        "BUNCH",
+        "BALL",
+        "PARTNER",
+        "NET",
+        "ROBE",
+        "HEAP",
+        "TREATMENT",
+        "STACK"
+    ],
+    "categories": [
+        {
+            "title": "CONSIDERABLE AMOUNT",
+            "words": [
+                "BUNCH",
+                "HEAP",
+                "LOT",
+                "STACK"
+            ]
+        },
+        {
+            "title": "TABLE TENNIS NEEDS",
+            "words": [
+                "BALL",
+                "NET",
+                "PADDLE",
+                "TABLE"
+            ]
+        },
+        {
+            "title": "PARTS OF A JUDGE COSTUME",
+            "words": [
+                "COLLAR",
+                "GAVEL",
+                "ROBE",
+                "WIG"
+            ]
+        },
+        {
+            "title": "SILENT ___",
+            "words": [
+                "AUCTION",
+                "FILM",
+                "PARTNER",
+                "TREATMENT"
+            ]
+        }
+    ],
+    "solved": false,
+    "groups_found": 0,
+    "mistakes": 0,
+    "guesses": [],
+    "solve_time": "0:00:06.675"
+}

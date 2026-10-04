@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 1421,
+    "ds": "2026-10-04",
+    "mode": "easy",
+    "solution": "shack",
+    "guesses": [
+        "tares",
+        "milch",
+        "shack"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:01.602"
+}
