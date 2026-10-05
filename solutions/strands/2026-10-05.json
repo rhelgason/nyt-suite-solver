@@ -1,0 +1,20 @@
+{
+    "puzzle_id": 1136,
+    "ds": "2026-10-05",
+    "clue": "Oh well, too bad, such a shame ",
+    "theme_words": [
+        "alas",
+        "boohoo",
+        "bummer",
+        "sorry",
+        "sucks",
+        "unfortunate"
+    ],
+    "spangram": "sadtrombone",
+    "solved": false,
+    "theme_words_found": 3,
+    "theme_words_total": 6,
+    "candidates": 14540,
+    "truncated": true,
+    "solve_time": "0:01:00.902"
+}

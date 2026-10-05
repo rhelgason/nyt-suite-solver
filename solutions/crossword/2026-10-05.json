@@ -1,0 +1,18 @@
+{
+    "puzzle_id": 24587,
+    "ds": "2026-10-05",
+    "width": 5,
+    "height": 5,
+    "solved": true,
+    "cells_correct": 23,
+    "cells_total": 23,
+    "grid": [
+        "# C U B #",
+        "L O S E S",
+        "O M E G A",
+        "G M A I L",
+        "S A I N T"
+    ],
+    "llm_answers": {},
+    "solve_time": "0:00:09.591"
+}

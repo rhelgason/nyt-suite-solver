@@ -1,0 +1,65 @@
+{
+    "puzzle_id": 1309,
+    "ds": "2026-10-05",
+    "words": [
+        "PARENT",
+        "ADVISORY",
+        "EXPLICIT",
+        "CONTENT",
+        "CHESS",
+        "PLEASE",
+        "MESSAGE",
+        "GRAPHIC",
+        "STRONG",
+        "SAPPHIRE",
+        "SUGGESTIVE",
+        "SERENE",
+        "PEACEFUL",
+        "IRONING",
+        "SLOAN",
+        "PLACID"
+    ],
+    "categories": [
+        {
+            "title": "CALM",
+            "words": [
+                "CONTENT",
+                "PEACEFUL",
+                "PLACID",
+                "SERENE"
+            ]
+        },
+        {
+            "title": "ADJECTIVES FOR MATURE CONTENT",
+            "words": [
+                "EXPLICIT",
+                "GRAPHIC",
+                "STRONG",
+                "SUGGESTIVE"
+            ]
+        },
+        {
+            "title": "KINDS OF BOARDS",
+            "words": [
+                "ADVISORY",
+                "CHESS",
+                "IRONING",
+                "MESSAGE"
+            ]
+        },
+        {
+            "title": "ENDING IN WAYS TO TEMPORARILY ACQUIRE",
+            "words": [
+                "PARENT",
+                "PLEASE",
+                "SAPPHIRE",
+                "SLOAN"
+            ]
+        }
+    ],
+    "solved": false,
+    "groups_found": 0,
+    "mistakes": 0,
+    "guesses": [],
+    "solve_time": "0:00:06.804"
+}
