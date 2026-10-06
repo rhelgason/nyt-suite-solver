@@ -1,0 +1,65 @@
+{
+    "puzzle_id": 1316,
+    "ds": "2026-10-06",
+    "words": [
+        "ADIRONDACK",
+        "KNICKKNACK",
+        "CATSKILL",
+        "HOLIDAY",
+        "COMFORT",
+        "BERKSHIRE",
+        "STABILITY",
+        "HAMPTON",
+        "WINDSOR",
+        "MERRILL",
+        "WINGBACK",
+        "DAYS",
+        "CITI",
+        "PIANOFORTE",
+        "EAMES",
+        "GOLDMAN"
+    ],
+    "categories": [
+        {
+            "title": "FINANCIAL FIRMS, FOR SHORT",
+            "words": [
+                "BERKSHIRE",
+                "CITI",
+                "GOLDMAN",
+                "MERRILL"
+            ]
+        },
+        {
+            "title": "KINDS OF CHAIRS",
+            "words": [
+                "ADIRONDACK",
+                "EAMES",
+                "WINDSOR",
+                "WINGBACK"
+            ]
+        },
+        {
+            "title": "___ INN HOTELS",
+            "words": [
+                "COMFORT",
+                "DAYS",
+                "HAMPTON",
+                "HOLIDAY"
+            ]
+        },
+        {
+            "title": "ENDING IN TALENTS",
+            "words": [
+                "CATSKILL",
+                "KNICKKNACK",
+                "PIANOFORTE",
+                "STABILITY"
+            ]
+        }
+    ],
+    "solved": false,
+    "groups_found": 0,
+    "mistakes": 0,
+    "guesses": [],
+    "solve_time": "0:00:06.903"
+}
