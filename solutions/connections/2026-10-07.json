@@ -1,0 +1,65 @@
+{
+    "puzzle_id": 1320,
+    "ds": "2026-10-07",
+    "words": [
+        "MUSICAL",
+        "CINNAMON",
+        "TRIDENT",
+        "HOT DOG",
+        "STICKY",
+        "SQUIRREL",
+        "MONOLOGUE",
+        "PLAY",
+        "BANK",
+        "DICHOTOMY",
+        "HAMBURGER",
+        "STORE",
+        "CHOREOGRAPHY",
+        "STASH",
+        "ORCHESTRATIONS",
+        "TETRACYCLINE"
+    ],
+    "categories": [
+        {
+            "title": "SAVE FOR LATER",
+            "words": [
+                "BANK",
+                "SQUIRREL",
+                "STASH",
+                "STORE"
+            ]
+        },
+        {
+            "title": "KINDS OF BUNS",
+            "words": [
+                "CINNAMON",
+                "HAMBURGER",
+                "HOT DOG",
+                "STICKY"
+            ]
+        },
+        {
+            "title": "GREEK NUMERICAL PREFIXES",
+            "words": [
+                "DICHOTOMY",
+                "MONOLOGUE",
+                "TETRACYCLINE",
+                "TRIDENT"
+            ]
+        },
+        {
+            "title": "BEST ___ TONY AWARDS",
+            "words": [
+                "CHOREOGRAPHY",
+                "MUSICAL",
+                "ORCHESTRATIONS",
+                "PLAY"
+            ]
+        }
+    ],
+    "solved": false,
+    "groups_found": 0,
+    "mistakes": 0,
+    "guesses": [],
+    "solve_time": "0:00:06.692"
+}
