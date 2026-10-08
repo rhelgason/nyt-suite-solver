@@ -1,0 +1,49 @@
+{
+    "puzzle_id": 24595,
+    "ds": "2026-10-08",
+    "width": 5,
+    "height": 5,
+    "solved": true,
+    "cells_correct": 21,
+    "cells_total": 21,
+    "grid": [
+        "# # B A R",
+        "S E R V E",
+        "P L A I N",
+        "A L I S T",
+        "M A N # #"
+    ],
+    "llm_answers": {
+        "A1": [
+            "BAR"
+        ],
+        "A4": [
+            "SERVE"
+        ],
+        "A6": [
+            "PLAIN"
+        ],
+        "A7": [
+            "ALIST"
+        ],
+        "A8": [
+            "MAN"
+        ],
+        "D1": [
+            "BRAIN"
+        ],
+        "D2": [
+            "AVIS"
+        ],
+        "D3": [
+            "RENT"
+        ],
+        "D4": [
+            "SPAM"
+        ],
+        "D5": [
+            "ELLA"
+        ]
+    },
+    "solve_time": "0:00:11.773"
+}
