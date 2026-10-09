@@ -1,0 +1,19 @@
+{
+    "puzzle_id": 1145,
+    "ds": "2026-10-09",
+    "clue": "That can't be right",
+    "theme_words": [
+        "balderdash",
+        "drivel",
+        "hooey",
+        "nonsense",
+        "rubbish"
+    ],
+    "spangram": "unbelievable",
+    "solved": false,
+    "theme_words_found": 3,
+    "theme_words_total": 5,
+    "candidates": 14173,
+    "truncated": true,
+    "solve_time": "0:01:05.109"
+}

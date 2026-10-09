@@ -1,0 +1,50 @@
+{
+    "puzzle_id": 24594,
+    "ds": "2026-10-09",
+    "width": 5,
+    "height": 5,
+    "solved": true,
+    "cells_correct": 21,
+    "cells_total": 21,
+    "grid": [
+        "A B C # #",
+        "C R E A M",
+        "H E A R T",
+        "O A S I S",
+        "O D E # #"
+    ],
+    "llm_answers": {
+        "A1": [
+            "ABC"
+        ],
+        "A4": [
+            "CREAM"
+        ],
+        "A7": [
+            "HEART"
+        ],
+        "A8": [
+            "OASIS"
+        ],
+        "A9": [
+            "ODE"
+        ],
+        "D1": [
+            "ACHOO"
+        ],
+        "D2": [
+            "BREAD"
+        ],
+        "D3": [
+            "CEASE"
+        ],
+        "D5": [
+            "ARI",
+            "NIA"
+        ],
+        "D6": [
+            "MTS"
+        ]
+    },
+    "solve_time": "0:00:08.412"
+}

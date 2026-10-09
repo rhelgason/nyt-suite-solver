@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 3543,
+    "ds": "2026-10-09",
+    "mode": "easy",
+    "solution": "major",
+    "guesses": [
+        "tares",
+        "rindy",
+        "labor",
+        "favor",
+        "major"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:01.015"
+}
