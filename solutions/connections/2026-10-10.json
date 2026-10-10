@@ -1,0 +1,110 @@
+{
+    "puzzle_id": 1318,
+    "ds": "2026-10-10",
+    "words": [
+        "OUTLINE",
+        "SHADOW",
+        "FEED",
+        "FIGURE",
+        "DRAFT",
+        "IMAGINE",
+        "KICK",
+        "NOTIFICATIONS",
+        "GATHER",
+        "NOTES",
+        "UN",
+        "MESSAGES",
+        "BEAT",
+        "SUPPOSE",
+        "PROFILE",
+        "THESIS"
+    ],
+    "categories": [
+        {
+            "title": "USEFUL WHEN WRITING A PAPER",
+            "words": [
+                "DRAFT",
+                "NOTES",
+                "OUTLINE",
+                "THESIS"
+            ]
+        },
+        {
+            "title": "PRESUME",
+            "words": [
+                "FIGURE",
+                "GATHER",
+                "IMAGINE",
+                "SUPPOSE"
+            ]
+        },
+        {
+            "title": "SOCIAL MEDIA SECTIONS",
+            "words": [
+                "FEED",
+                "MESSAGES",
+                "NOTIFICATIONS",
+                "PROFILE"
+            ]
+        },
+        {
+            "title": "___BOXING",
+            "words": [
+                "BEAT",
+                "KICK",
+                "SHADOW",
+                "UN"
+            ]
+        }
+    ],
+    "solved": true,
+    "groups_found": 4,
+    "mistakes": 0,
+    "guesses": [
+        {
+            "guess": [
+                "FEED",
+                "MESSAGES",
+                "NOTIFICATIONS",
+                "PROFILE"
+            ],
+            "result": "correct",
+            "group": "SOCIAL MEDIA SECTIONS",
+            "connection": "Features commonly found on social media platforms (e.g., Facebook)"
+        },
+        {
+            "guess": [
+                "DRAFT",
+                "NOTES",
+                "OUTLINE",
+                "THESIS"
+            ],
+            "result": "correct",
+            "group": "USEFUL WHEN WRITING A PAPER",
+            "connection": "Elements or stages of academic writing"
+        },
+        {
+            "guess": [
+                "BEAT",
+                "KICK",
+                "SHADOW",
+                "UN"
+            ],
+            "result": "correct",
+            "group": "___BOXING",
+            "connection": "Each can be combined with \"box\" to form a verb: kickbox, beatbox, shadowbox, unbox"
+        },
+        {
+            "guess": [
+                "FIGURE",
+                "GATHER",
+                "IMAGINE",
+                "SUPPOSE"
+            ],
+            "result": "correct",
+            "group": "PRESUME",
+            "connection": ""
+        }
+    ],
+    "solve_time": "0:00:06.374"
+}

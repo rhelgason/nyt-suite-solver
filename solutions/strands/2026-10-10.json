@@ -1,0 +1,19 @@
+{
+    "puzzle_id": 1141,
+    "ds": "2026-10-10",
+    "clue": "A slow drizzle",
+    "theme_words": [
+        "grenadine",
+        "honey",
+        "molasses",
+        "syrup",
+        "treacle"
+    ],
+    "spangram": "stickyandsweet",
+    "solved": false,
+    "theme_words_found": 3,
+    "theme_words_total": 5,
+    "candidates": 3504,
+    "truncated": true,
+    "solve_time": "0:01:05.260"
+}

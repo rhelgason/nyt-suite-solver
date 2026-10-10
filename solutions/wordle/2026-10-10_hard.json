@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 4684,
+    "ds": "2026-10-10",
+    "mode": "hard",
+    "solution": "bumpy",
+    "guesses": [
+        "tares",
+        "colin",
+        "pygmy",
+        "bumpy"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.655"
+}
