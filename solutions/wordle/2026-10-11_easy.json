@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 5261,
+    "ds": "2026-10-11",
+    "mode": "easy",
+    "solution": "uncap",
+    "guesses": [
+        "tares",
+        "colin",
+        "nucha",
+        "uncap"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:03.083"
+}

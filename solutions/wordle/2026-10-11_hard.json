@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 5261,
+    "ds": "2026-10-11",
+    "mode": "hard",
+    "solution": "uncap",
+    "guesses": [
+        "tares",
+        "aloin",
+        "uncap"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:00.154"
+}
