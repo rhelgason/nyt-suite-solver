@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 5014,
+    "ds": "2026-10-12",
+    "mode": "easy",
+    "solution": "yodel",
+    "guesses": [
+        "tares",
+        "indol",
+        "model",
+        "yodel"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:02.353"
+}

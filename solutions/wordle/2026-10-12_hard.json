@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 5014,
+    "ds": "2026-10-12",
+    "mode": "hard",
+    "solution": "yodel",
+    "guesses": [
+        "tares",
+        "loden",
+        "model",
+        "yodel"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.102"
+}

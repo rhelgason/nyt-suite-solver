@@ -1,0 +1,65 @@
+{
+    "puzzle_id": 1317,
+    "ds": "2026-10-12",
+    "words": [
+        "CALAMARI",
+        "MANDARIN",
+        "STATE",
+        "ABBREVIATION",
+        "NICKNAME",
+        "HANDLE",
+        "SHAPE",
+        "WEATHER",
+        "CONDITION",
+        "CONTRACTION",
+        "SITUATION",
+        "BEAR",
+        "ALKYLAMIDE",
+        "STAND",
+        "ELISION",
+        "MELAMINE"
+    ],
+    "categories": [
+        {
+            "title": "STATUS",
+            "words": [
+                "CONDITION",
+                "SHAPE",
+                "SITUATION",
+                "STATE"
+            ]
+        },
+        {
+            "title": "TOLERATE",
+            "words": [
+                "BEAR",
+                "HANDLE",
+                "STAND",
+                "WEATHER"
+            ]
+        },
+        {
+            "title": "WORD SHORTENINGS, OFTEN",
+            "words": [
+                "ABBREVIATION",
+                "CONTRACTION",
+                "ELISION",
+                "NICKNAME"
+            ]
+        },
+        {
+            "title": "WORDS MADE USING U.S. POSTAL ABBREVIATIONS",
+            "words": [
+                "ALKYLAMIDE",
+                "CALAMARI",
+                "MANDARIN",
+                "MELAMINE"
+            ]
+        }
+    ],
+    "solved": false,
+    "groups_found": 0,
+    "mistakes": 0,
+    "guesses": [],
+    "solve_time": "0:00:06.867"
+}
