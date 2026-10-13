@@ -1,0 +1,65 @@
+{
+    "puzzle_id": 1321,
+    "ds": "2026-10-13",
+    "words": [
+        "EYE",
+        "LASH",
+        "LIPS",
+        "JACKET",
+        "TIE",
+        "SENSE",
+        "CHANGE",
+        "BELT",
+        "RING",
+        "TASTE",
+        "CUP",
+        "HITCH",
+        "CANNON",
+        "TETHER",
+        "FLAIR",
+        "ENDS"
+    ],
+    "categories": [
+        {
+            "title": "DISCERNMENT",
+            "words": [
+                "EYE",
+                "FLAIR",
+                "SENSE",
+                "TASTE"
+            ]
+        },
+        {
+            "title": "FASTEN",
+            "words": [
+                "HITCH",
+                "LASH",
+                "TETHER",
+                "TIE"
+            ]
+        },
+        {
+            "title": "SPORTS CHAMPIONSHIP PRIZES",
+            "words": [
+                "BELT",
+                "CUP",
+                "JACKET",
+                "RING"
+            ]
+        },
+        {
+            "title": "LOOSE ___",
+            "words": [
+                "CANNON",
+                "CHANGE",
+                "ENDS",
+                "LIPS"
+            ]
+        }
+    ],
+    "solved": false,
+    "groups_found": 0,
+    "mistakes": 0,
+    "guesses": [],
+    "solve_time": "0:00:06.797"
+}

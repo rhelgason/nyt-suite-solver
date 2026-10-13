@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 1308,
+    "ds": "2026-10-13",
+    "mode": "easy",
+    "solution": "wider",
+    "guesses": [
+        "tares",
+        "poind",
+        "ditch",
+        "bedew",
+        "wider"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:02.736"
+}
