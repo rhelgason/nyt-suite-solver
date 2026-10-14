@@ -1,0 +1,65 @@
+{
+    "puzzle_id": 1330,
+    "ds": "2026-10-14",
+    "words": [
+        "FEED",
+        "THING",
+        "SERVE",
+        "SUGGESTION",
+        "FIERY",
+        "FLICKER",
+        "FLASH",
+        "FOMENT",
+        "SMASH",
+        "HULK",
+        "TRACE",
+        "FUMBLE",
+        "SLICE",
+        "WHIFF",
+        "VOLLEY",
+        "PUNISHER"
+    ],
+    "categories": [
+        {
+            "title": "HINT",
+            "words": [
+                "FLICKER",
+                "SUGGESTION",
+                "TRACE",
+                "WHIFF"
+            ]
+        },
+        {
+            "title": "TENNIS SHOTS",
+            "words": [
+                "SERVE",
+                "SLICE",
+                "SMASH",
+                "VOLLEY"
+            ]
+        },
+        {
+            "title": "SUPERHEROES, WITH \"THE\"",
+            "words": [
+                "FLASH",
+                "HULK",
+                "PUNISHER",
+                "THING"
+            ]
+        },
+        {
+            "title": "STARTING WITH \"FEE, FI, FO, FUM\"",
+            "words": [
+                "FEED",
+                "FIERY",
+                "FOMENT",
+                "FUMBLE"
+            ]
+        }
+    ],
+    "solved": false,
+    "groups_found": 0,
+    "mistakes": 0,
+    "guesses": [],
+    "solve_time": "0:00:06.946"
+}

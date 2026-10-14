@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 2392,
+    "ds": "2026-10-14",
+    "mode": "hard",
+    "solution": "psych",
+    "guesses": [
+        "tares",
+        "spoil",
+        "gypsy",
+        "psych"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.062"
+}
