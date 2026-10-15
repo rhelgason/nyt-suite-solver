@@ -1,0 +1,81 @@
+{
+    "puzzle_id": 2872,
+    "ds": "2026-10-15",
+    "sides": [
+        [
+            "f",
+            "s",
+            "t"
+        ],
+        [
+            "i",
+            "e",
+            "u"
+        ],
+        [
+            "o",
+            "h",
+            "k"
+        ],
+        [
+            "v",
+            "c",
+            "r"
+        ]
+    ],
+    "valid_answers": [
+        [
+            "feverous",
+            "schtick"
+        ],
+        [
+            "feverous",
+            "schticks"
+        ],
+        [
+            "feverous",
+            "shtick"
+        ],
+        [
+            "feverous",
+            "shticks"
+        ],
+        [
+            "vociferous",
+            "schtick"
+        ],
+        [
+            "vociferous",
+            "schticks"
+        ],
+        [
+            "vociferous",
+            "shtick"
+        ],
+        [
+            "vociferous",
+            "shticks"
+        ],
+        [
+            "vociferous",
+            "sketch"
+        ],
+        [
+            "vociferous",
+            "sketcher"
+        ],
+        [
+            "vociferous",
+            "sketchers"
+        ],
+        [
+            "vociferous",
+            "sketches"
+        ]
+    ],
+    "invalid_answers": [],
+    "num_valid_answers": 12,
+    "num_invalid_answers": 0,
+    "shortest_answer_length": 2,
+    "solve_time": "0:00:00.609"
+}

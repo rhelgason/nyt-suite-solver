@@ -1,0 +1,65 @@
+{
+    "puzzle_id": 1326,
+    "ds": "2026-10-15",
+    "words": [
+        "SMOKE",
+        "BASKET",
+        "DRY",
+        "FOOT",
+        "VOLLEY",
+        "CANNON",
+        "RUN",
+        "PICKLE",
+        "BASE",
+        "GOAL",
+        "FORGE",
+        "FOUNDATION",
+        "CURE",
+        "RACINE",
+        "BOTTOM",
+        "TOUCHDOWN"
+    ],
+    "categories": [
+        {
+            "title": "WAYS TO PRESERVE FOOD",
+            "words": [
+                "CURE",
+                "DRY",
+                "PICKLE",
+                "SMOKE"
+            ]
+        },
+        {
+            "title": "THINGS YOU CAN SCORE IN SPORTS",
+            "words": [
+                "BASKET",
+                "GOAL",
+                "RUN",
+                "TOUCHDOWN"
+            ]
+        },
+        {
+            "title": "LOWEST PART",
+            "words": [
+                "BASE",
+                "BOTTOM",
+                "FOOT",
+                "FOUNDATION"
+            ]
+        },
+        {
+            "title": "LOW LANDFORMS WITH A LETTER CHANGED",
+            "words": [
+                "CANNON",
+                "FORGE",
+                "RACINE",
+                "VOLLEY"
+            ]
+        }
+    ],
+    "solved": false,
+    "groups_found": 0,
+    "mistakes": 0,
+    "guesses": [],
+    "solve_time": "0:00:06.657"
+}
