@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1267,
+    "ds": "2026-10-17",
+    "mode": "hard",
+    "solution": "gaffe",
+    "guesses": [
+        "tares",
+        "macle",
+        "fadge",
+        "gaffe"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.046"
+}

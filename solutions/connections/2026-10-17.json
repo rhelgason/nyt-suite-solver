@@ -1,0 +1,110 @@
+{
+    "puzzle_id": 1329,
+    "ds": "2026-10-17",
+    "words": [
+        "BREA",
+        "KING",
+        "SNAP",
+        "PING",
+        "STILL",
+        "PAZ",
+        "SNOW",
+        "SHOT",
+        "BOHÈME",
+        "FIDDLER",
+        "ALERT",
+        "PRINT",
+        "CHIME",
+        "SCALA",
+        "HERMIT",
+        "DING"
+    ],
+    "categories": [
+        {
+            "title": "DIGITAL NOTIFICATIONS",
+            "words": [
+                "ALERT",
+                "CHIME",
+                "DING",
+                "PING"
+            ]
+        },
+        {
+            "title": "PHOTO",
+            "words": [
+                "PRINT",
+                "SHOT",
+                "SNAP",
+                "STILL"
+            ]
+        },
+        {
+            "title": "KINDS OF CRABS",
+            "words": [
+                "FIDDLER",
+                "HERMIT",
+                "KING",
+                "SNOW"
+            ]
+        },
+        {
+            "title": "LA ___",
+            "words": [
+                "BOHÈME",
+                "BREA",
+                "PAZ",
+                "SCALA"
+            ]
+        }
+    ],
+    "solved": true,
+    "groups_found": 4,
+    "mistakes": 0,
+    "guesses": [
+        {
+            "guess": [
+                "BOHÈME",
+                "BREA",
+                "PAZ",
+                "SCALA"
+            ],
+            "result": "correct",
+            "group": "LA ___",
+            "connection": "Each forms a well‑known name when prefixed with \"La\" (La Brea, La Paz, La Scala, La Bohème)."
+        },
+        {
+            "guess": [
+                "FIDDLER",
+                "HERMIT",
+                "KING",
+                "SNOW"
+            ],
+            "result": "correct",
+            "group": "KINDS OF CRABS",
+            "connection": "Each is a type of crab (king crab, fiddler crab, hermit crab, snow crab)."
+        },
+        {
+            "guess": [
+                "PRINT",
+                "SHOT",
+                "SNAP",
+                "STILL"
+            ],
+            "result": "correct",
+            "group": "PHOTO",
+            "connection": "All are terms related to photography (snap, snapshot; shot; still image; print)."
+        },
+        {
+            "guess": [
+                "ALERT",
+                "CHIME",
+                "DING",
+                "PING"
+            ],
+            "result": "correct",
+            "group": "DIGITAL NOTIFICATIONS",
+            "connection": ""
+        }
+    ],
+    "solve_time": "0:00:04.355"
+}

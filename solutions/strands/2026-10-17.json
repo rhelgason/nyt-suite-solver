@@ -1,0 +1,20 @@
+{
+    "puzzle_id": 1151,
+    "ds": "2026-10-17",
+    "clue": " Quite the crush",
+    "theme_words": [
+        "babble",
+        "blush",
+        "fidget",
+        "giggle",
+        "perspire",
+        "stumble"
+    ],
+    "spangram": "fallinlove",
+    "solved": false,
+    "theme_words_found": 3,
+    "theme_words_total": 6,
+    "candidates": 60812,
+    "truncated": true,
+    "solve_time": "0:01:01.862"
+}
