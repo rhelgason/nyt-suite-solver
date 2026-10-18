@@ -1,0 +1,65 @@
+{
+    "puzzle_id": 1333,
+    "ds": "2026-10-18",
+    "words": [
+        "ANGEL",
+        "BUTTER",
+        "HAZEL",
+        "DEODORANT",
+        "COCO",
+        "DYNAMITE",
+        "MISTER",
+        "FOGERTY",
+        "CHEST",
+        "INCENSE",
+        "VAPORETTO",
+        "BUREAU",
+        "OBSESSION",
+        "TRUNK",
+        "OPIUM",
+        "WARDROBE"
+    ],
+    "categories": [
+        {
+            "title": "PLACES TO STORE CLOTHES",
+            "words": [
+                "BUREAU",
+                "CHEST",
+                "TRUNK",
+                "WARDROBE"
+            ]
+        },
+        {
+            "title": "THINGS THAT COME IN STICKS",
+            "words": [
+                "BUTTER",
+                "DEODORANT",
+                "DYNAMITE",
+                "INCENSE"
+            ]
+        },
+        {
+            "title": "FAMOUS PERFUMES",
+            "words": [
+                "ANGEL",
+                "COCO",
+                "OBSESSION",
+                "OPIUM"
+            ]
+        },
+        {
+            "title": "STARTING WITH THINGS THAT CLOUD THE AIR",
+            "words": [
+                "FOGERTY",
+                "HAZEL",
+                "MISTER",
+                "VAPORETTO"
+            ]
+        }
+    ],
+    "solved": false,
+    "groups_found": 0,
+    "mistakes": 0,
+    "guesses": [],
+    "solve_time": "0:00:07.067"
+}
