@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 4253,
+    "ds": "2026-10-19",
+    "mode": "easy",
+    "solution": "stink",
+    "guesses": [
+        "tares",
+        "shout",
+        "linky",
+        "stink"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.997"
+}

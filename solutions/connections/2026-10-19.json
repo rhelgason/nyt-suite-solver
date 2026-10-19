@@ -1,0 +1,65 @@
+{
+    "puzzle_id": 1327,
+    "ds": "2026-10-19",
+    "words": [
+        "MOHAWK",
+        "MUFFIN",
+        "HOT AIR",
+        "BALLOON",
+        "RAVE",
+        "WIND",
+        "FLURRY",
+        "STEAM",
+        "GAS",
+        "RIB",
+        "FUME",
+        "ALIBIS",
+        "BOIL",
+        "BLATHER",
+        "ESCROW",
+        "NUGGETS"
+    ],
+    "categories": [
+        {
+            "title": "SEETHE",
+            "words": [
+                "BOIL",
+                "FUME",
+                "RAVE",
+                "STEAM"
+            ]
+        },
+        {
+            "title": "ALL TALK",
+            "words": [
+                "BLATHER",
+                "GAS",
+                "HOT AIR",
+                "WIND"
+            ]
+        },
+        {
+            "title": "\"MC\" THINGS AT MCDONALD'S",
+            "words": [
+                "FLURRY",
+                "MUFFIN",
+                "NUGGETS",
+                "RIB"
+            ]
+        },
+        {
+            "title": "ENDING IN BIRDS",
+            "words": [
+                "ALIBIS",
+                "BALLOON",
+                "ESCROW",
+                "MOHAWK"
+            ]
+        }
+    ],
+    "solved": false,
+    "groups_found": 0,
+    "mistakes": 0,
+    "guesses": [],
+    "solve_time": "0:00:06.844"
+}

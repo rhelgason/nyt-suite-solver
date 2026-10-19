@@ -1,0 +1,21 @@
+{
+    "puzzle_id": 1153,
+    "ds": "2026-10-19",
+    "clue": "It's all Greek to me",
+    "theme_words": [
+        "deity",
+        "dryad",
+        "fates",
+        "furies",
+        "muses",
+        "nymph",
+        "satyr"
+    ],
+    "spangram": "mythological",
+    "solved": true,
+    "theme_words_found": 7,
+    "theme_words_total": 7,
+    "candidates": 6,
+    "truncated": false,
+    "solve_time": "0:00:00.182"
+}
