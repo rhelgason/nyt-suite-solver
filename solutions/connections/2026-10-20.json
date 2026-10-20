@@ -1,0 +1,65 @@
+{
+    "puzzle_id": 1328,
+    "ds": "2026-10-20",
+    "words": [
+        "CHEVRON",
+        "DOCK",
+        "BELL",
+        "PENCIL",
+        "POODLE",
+        "WRAP",
+        "MINI",
+        "MINION",
+        "WALRUS",
+        "PUPPET",
+        "CLOSE",
+        "HORSESHOE",
+        "ARIAL",
+        "STOP",
+        "STOOGE",
+        "END"
+    ],
+    "categories": [
+        {
+            "title": "FINISH",
+            "words": [
+                "CLOSE",
+                "END",
+                "STOP",
+                "WRAP"
+            ]
+        },
+        {
+            "title": "LACKEY",
+            "words": [
+                "MINION",
+                "POODLE",
+                "PUPPET",
+                "STOOGE"
+            ]
+        },
+        {
+            "title": "MUSTACHES",
+            "words": [
+                "CHEVRON",
+                "HORSESHOE",
+                "PENCIL",
+                "WALRUS"
+            ]
+        },
+        {
+            "title": "HOMOPHONES OF DISNEY CHARACTERS",
+            "words": [
+                "ARIAL",
+                "BELL",
+                "DOCK",
+                "MINI"
+            ]
+        }
+    ],
+    "solved": false,
+    "groups_found": 0,
+    "mistakes": 0,
+    "guesses": [],
+    "solve_time": "0:00:06.720"
+}

@@ -1,0 +1,53 @@
+{
+    "puzzle_id": 24073,
+    "ds": "2026-10-20",
+    "center": "h",
+    "letters": [
+        "h",
+        "m",
+        "n",
+        "c",
+        "i",
+        "k",
+        "u"
+    ],
+    "pangrams": [
+        "munchkin"
+    ],
+    "valid_answers": [
+        "hunch",
+        "inch",
+        "munchkin",
+        "chichi",
+        "chic",
+        "hick",
+        "chick",
+        "much",
+        "chuck",
+        "munch",
+        "chum",
+        "kimchi",
+        "cinch",
+        "hunk",
+        "chin",
+        "chunk"
+    ],
+    "invalid_answers": [
+        "unchic",
+        "huck",
+        "chink",
+        "chinch",
+        "humic",
+        "hunh",
+        "numchuck",
+        "huic"
+    ],
+    "missed_answers": [
+        "nunchuk",
+        "nunchuck"
+    ],
+    "solve_time": "0:00:00.048",
+    "score": 37,
+    "percentage": 80.43478260869566,
+    "rank": "GENIUS"
+}
