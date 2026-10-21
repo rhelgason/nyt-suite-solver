@@ -1,0 +1,110 @@
+{
+    "puzzle_id": 1335,
+    "ds": "2026-10-21",
+    "words": [
+        "ENGLISH HORN",
+        "LEAPFROG",
+        "ALPHA DOG",
+        "SWEETBREAD",
+        "HOT POTATO",
+        "MANTIS SHRIMP",
+        "SUNFLOWERS",
+        "BIG CHEESE",
+        "AMERICAN GOTHIC",
+        "GRAPE-NUTS",
+        "CAMPBELL'S SOUP CAN",
+        "DUCK DUCK GOOSE",
+        "TOP BANANA",
+        "THE SCREAM",
+        "MUSICAL CHAIRS",
+        "HEAVYWEIGHT"
+    ],
+    "categories": [
+        {
+            "title": "CLASSIC CHILDREN'S GAMES",
+            "words": [
+                "DUCK DUCK GOOSE",
+                "HOT POTATO",
+                "LEAPFROG",
+                "MUSICAL CHAIRS"
+            ]
+        },
+        {
+            "title": "IMPORTANT PERSON",
+            "words": [
+                "ALPHA DOG",
+                "BIG CHEESE",
+                "HEAVYWEIGHT",
+                "TOP BANANA"
+            ]
+        },
+        {
+            "title": "FAMOUS PAINTINGS",
+            "words": [
+                "AMERICAN GOTHIC",
+                "CAMPBELL'S SOUP CAN",
+                "SUNFLOWERS",
+                "THE SCREAM"
+            ]
+        },
+        {
+            "title": "DOUBLE MISNOMERS (NEITHER WORD IS AN ACCURATE DESCRIPTION)",
+            "words": [
+                "ENGLISH HORN",
+                "GRAPE-NUTS",
+                "MANTIS SHRIMP",
+                "SWEETBREAD"
+            ]
+        }
+    ],
+    "solved": true,
+    "groups_found": 4,
+    "mistakes": 0,
+    "guesses": [
+        {
+            "guess": [
+                "AMERICAN GOTHIC",
+                "CAMPBELL'S SOUP CAN",
+                "SUNFLOWERS",
+                "THE SCREAM"
+            ],
+            "result": "correct",
+            "group": "FAMOUS PAINTINGS",
+            "connection": "Famous paintings"
+        },
+        {
+            "guess": [
+                "DUCK DUCK GOOSE",
+                "HOT POTATO",
+                "LEAPFROG",
+                "MUSICAL CHAIRS"
+            ],
+            "result": "correct",
+            "group": "CLASSIC CHILDREN'S GAMES",
+            "connection": "Children's games"
+        },
+        {
+            "guess": [
+                "ALPHA DOG",
+                "BIG CHEESE",
+                "HEAVYWEIGHT",
+                "TOP BANANA"
+            ],
+            "result": "correct",
+            "group": "IMPORTANT PERSON",
+            "connection": "Slang for a person of importance or leadership"
+        },
+        {
+            "guess": [
+                "ENGLISH HORN",
+                "GRAPE-NUTS",
+                "MANTIS SHRIMP",
+                "SWEETBREAD"
+            ],
+            "result": "correct",
+            "group": "DOUBLE MISNOMERS (NEITHER WORD IS AN ACCURATE DESCRIPTION)",
+            "connection": ""
+        }
+    ],
+    "solve_time": "0:00:03.304"
+}

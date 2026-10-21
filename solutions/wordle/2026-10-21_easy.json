@@ -1,0 +1,17 @@
+{
+    "puzzle_id": 1938,
+    "ds": "2026-10-21",
+    "mode": "easy",
+    "solution": "penny",
+    "guesses": [
+        "tares",
+        "colin",
+        "benne",
+        "awful",
+        "jenny",
+        "penny"
+    ],
+    "num_guesses": 6,
+    "solved": true,
+    "solve_time": "0:00:05.440"
+}
