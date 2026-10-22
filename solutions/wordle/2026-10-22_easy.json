@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 662,
+    "ds": "2026-10-22",
+    "mode": "easy",
+    "solution": "reset",
+    "guesses": [
+        "tares",
+        "ester",
+        "reset"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:00.054"
+}

@@ -1,0 +1,65 @@
+{
+    "puzzle_id": 1336,
+    "ds": "2026-10-22",
+    "words": [
+        "MOBILE",
+        "COMFORT",
+        "BLANK",
+        "SAFETY",
+        "RELIEF",
+        "GRIP",
+        "END",
+        "BUST",
+        "HANDLE",
+        "TACKLE",
+        "PILL",
+        "KNOB",
+        "SHE",
+        "GUARD",
+        "HILT",
+        "STATUE"
+    ],
+    "categories": [
+        {
+            "title": "PARTS TO BE GRASPED",
+            "words": [
+                "GRIP",
+                "HANDLE",
+                "HILT",
+                "KNOB"
+            ]
+        },
+        {
+            "title": "KINDS OF SCULPTURES",
+            "words": [
+                "BUST",
+                "MOBILE",
+                "RELIEF",
+                "STATUE"
+            ]
+        },
+        {
+            "title": "AMERICAN FOOTBALL POSITIONS",
+            "words": [
+                "END",
+                "GUARD",
+                "SAFETY",
+                "TACKLE"
+            ]
+        },
+        {
+            "title": "STARTS OF BEDDING",
+            "words": [
+                "BLANK",
+                "COMFORT",
+                "PILL",
+                "SHE"
+            ]
+        }
+    ],
+    "solved": false,
+    "groups_found": 0,
+    "mistakes": 0,
+    "guesses": [],
+    "solve_time": "0:00:06.671"
+}
