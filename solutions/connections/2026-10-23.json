@@ -1,0 +1,65 @@
+{
+    "puzzle_id": 1339,
+    "ds": "2026-10-23",
+    "words": [
+        "EXTENSION",
+        "LOVE",
+        "DIRECT",
+        "POWER",
+        "SPINAL",
+        "VOCAL",
+        "DRIVER",
+        "DISTANCE",
+        "PHONE",
+        "TIME",
+        "UPDATE",
+        "OPEN",
+        "FRANK",
+        "FORCE",
+        "DOUBLE",
+        "PLUGIN"
+    ],
+    "categories": [
+        {
+            "title": "FORTHRIGHT",
+            "words": [
+                "DIRECT",
+                "FRANK",
+                "OPEN",
+                "VOCAL"
+            ]
+        },
+        {
+            "title": "THINGS YOU INSTALL ON A COMPUTER",
+            "words": [
+                "DRIVER",
+                "EXTENSION",
+                "PLUGIN",
+                "UPDATE"
+            ]
+        },
+        {
+            "title": "QUANTITIES IN A FORMULA FOR POWER",
+            "words": [
+                "DISTANCE",
+                "FORCE",
+                "POWER",
+                "TIME"
+            ]
+        },
+        {
+            "title": "___ TAP",
+            "words": [
+                "DOUBLE",
+                "LOVE",
+                "PHONE",
+                "SPINAL"
+            ]
+        }
+    ],
+    "solved": false,
+    "groups_found": 0,
+    "mistakes": 0,
+    "guesses": [],
+    "solve_time": "0:00:06.733"
+}

@@ -1,0 +1,53 @@
+{
+    "puzzle_id": 2879,
+    "ds": "2026-10-23",
+    "sides": [
+        [
+            "a",
+            "r",
+            "c"
+        ],
+        [
+            "i",
+            "g",
+            "t"
+        ],
+        [
+            "z",
+            "e",
+            "h"
+        ],
+        [
+            "b",
+            "u",
+            "n"
+        ]
+    ],
+    "valid_answers": [
+        [
+            "batching",
+            "gauzier"
+        ],
+        [
+            "chateau",
+            "urbanizing"
+        ],
+        [
+            "chintzier",
+            "rutabaga"
+        ],
+        [
+            "turbinate",
+            "ethicizing"
+        ],
+        [
+            "urbane",
+            "ethicizing"
+        ]
+    ],
+    "invalid_answers": [],
+    "num_valid_answers": 5,
+    "num_invalid_answers": 0,
+    "shortest_answer_length": 2,
+    "solve_time": "0:00:00.226"
+}
