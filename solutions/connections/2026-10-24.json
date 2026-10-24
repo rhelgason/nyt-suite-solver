@@ -1,0 +1,110 @@
+{
+    "puzzle_id": 1338,
+    "ds": "2026-10-24",
+    "words": [
+        "COMIC",
+        "SALAD",
+        "BACON",
+        "SPARKLER",
+        "POPSICLE",
+        "POP-UP",
+        "CANDY",
+        "HOBBY HORSE",
+        "BANNER",
+        "PINWHEEL",
+        "SPACE",
+        "FILM",
+        "INTERSTITIAL",
+        "SPORTS",
+        "MÖBIUS",
+        "OVERLAY"
+    ],
+    "categories": [
+        {
+            "title": "KINDS OF STRIPS",
+            "words": [
+                "BACON",
+                "COMIC",
+                "FILM",
+                "MÖBIUS"
+            ]
+        },
+        {
+            "title": "THINGS ON STICKS",
+            "words": [
+                "HOBBY HORSE",
+                "PINWHEEL",
+                "POPSICLE",
+                "SPARKLER"
+            ]
+        },
+        {
+            "title": "ONLINE AD FORMATS",
+            "words": [
+                "BANNER",
+                "INTERSTITIAL",
+                "OVERLAY",
+                "POP-UP"
+            ]
+        },
+        {
+            "title": "___ BAR",
+            "words": [
+                "CANDY",
+                "SALAD",
+                "SPACE",
+                "SPORTS"
+            ]
+        }
+    ],
+    "solved": true,
+    "groups_found": 4,
+    "mistakes": 0,
+    "guesses": [
+        {
+            "guess": [
+                "CANDY",
+                "SALAD",
+                "SPACE",
+                "SPORTS"
+            ],
+            "result": "correct",
+            "group": "___ BAR",
+            "connection": "Each can be followed by the word “bar” (salad bar, candy bar, sports bar, space bar)."
+        },
+        {
+            "guess": [
+                "BANNER",
+                "INTERSTITIAL",
+                "OVERLAY",
+                "POP-UP"
+            ],
+            "result": "correct",
+            "group": "ONLINE AD FORMATS",
+            "connection": "All are types of online advertisements."
+        },
+        {
+            "guess": [
+                "BACON",
+                "COMIC",
+                "FILM",
+                "MÖBIUS"
+            ],
+            "result": "correct",
+            "group": "KINDS OF STRIPS",
+            "connection": "Each can be followed by the word “strip” (comic strip, film strip, bacon strip, Möbius strip)."
+        },
+        {
+            "guess": [
+                "HOBBY HORSE",
+                "PINWHEEL",
+                "POPSICLE",
+                "SPARKLER"
+            ],
+            "result": "correct",
+            "group": "THINGS ON STICKS",
+            "connection": ""
+        }
+    ],
+    "solve_time": "0:00:06.175"
+}

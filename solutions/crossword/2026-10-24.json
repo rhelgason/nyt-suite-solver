@@ -1,0 +1,63 @@
+{
+    "puzzle_id": 24631,
+    "ds": "2026-10-24",
+    "width": 7,
+    "height": 7,
+    "solved": true,
+    "cells_correct": 37,
+    "cells_total": 37,
+    "grid": [
+        "# # M L B # #",
+        "# P R I U S #",
+        "P A C K R A T",
+        "A T L A N T A",
+        "T H E B E A N",
+        "# S A L T Y #",
+        "# # N E T # #"
+    ],
+    "llm_answers": {
+        "A1": [
+            "MLB"
+        ],
+        "A4": [
+            "PRIUS"
+        ],
+        "A6": [
+            "PACKRAT"
+        ],
+        "A8": [
+            "ATLANTA"
+        ],
+        "A9": [
+            "THEBEAN"
+        ],
+        "A10": [
+            "SALTY"
+        ],
+        "A11": [
+            "NET"
+        ],
+        "D1": [
+            "MRCLEAN"
+        ],
+        "D2": [
+            "LIKABLE"
+        ],
+        "D3": [
+            "BURNETT"
+        ],
+        "D4": [
+            "PATHS"
+        ],
+        "D5": [
+            "SATAY"
+        ],
+        "D6": [
+            "PAT"
+        ],
+        "D7": [
+            "TAN"
+        ]
+    },
+    "solve_time": "0:00:10.044"
+}

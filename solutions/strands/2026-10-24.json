@@ -1,0 +1,21 @@
+{
+    "puzzle_id": 1159,
+    "ds": "2026-10-24",
+    "clue": "Re-fresh-ing",
+    "theme_words": [
+        "basket",
+        "detergent",
+        "dryer",
+        "iron",
+        "rack",
+        "sink",
+        "washer"
+    ],
+    "spangram": "laundryday",
+    "solved": false,
+    "theme_words_found": 6,
+    "theme_words_total": 7,
+    "candidates": 13012,
+    "truncated": true,
+    "solve_time": "0:01:05.124"
+}
