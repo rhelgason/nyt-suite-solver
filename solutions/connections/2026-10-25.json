@@ -1,0 +1,65 @@
+{
+    "puzzle_id": 1343,
+    "ds": "2026-10-25",
+    "words": [
+        "GLOW STICK",
+        "WAGON WHEEL",
+        "POCKET",
+        "FOOTBALL",
+        "THUMB",
+        "ELBOW",
+        "SWIFT",
+        "FINGERS",
+        "SHELL",
+        "PALM",
+        "RUBBER BAND",
+        "BOW TIE",
+        "SAWYER",
+        "SWIPE",
+        "RIPLEY",
+        "BOOST"
+    ],
+    "categories": [
+        {
+            "title": "STEAL",
+            "words": [
+                "BOOST",
+                "PALM",
+                "POCKET",
+                "SWIPE"
+            ]
+        },
+        {
+            "title": "PASTA SHAPES",
+            "words": [
+                "BOW TIE",
+                "ELBOW",
+                "SHELL",
+                "WAGON WHEEL"
+            ]
+        },
+        {
+            "title": "FICTIONAL TOMS",
+            "words": [
+                "RIPLEY",
+                "SAWYER",
+                "SWIFT",
+                "THUMB"
+            ]
+        },
+        {
+            "title": "THINGS THAT CAN BE SNAPPED",
+            "words": [
+                "FINGERS",
+                "FOOTBALL",
+                "GLOW STICK",
+                "RUBBER BAND"
+            ]
+        }
+    ],
+    "solved": false,
+    "groups_found": 0,
+    "mistakes": 0,
+    "guesses": [],
+    "solve_time": "0:00:06.598"
+}
