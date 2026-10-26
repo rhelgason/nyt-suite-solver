@@ -1,0 +1,18 @@
+{
+    "puzzle_id": 24668,
+    "ds": "2026-10-26",
+    "width": 6,
+    "height": 5,
+    "solved": true,
+    "cells_correct": 28,
+    "cells_total": 28,
+    "grid": [
+        "C R U N C H",
+        "H O H O H O",
+        "A V A T A R",
+        "N E U R O N",
+        "# # L E S S"
+    ],
+    "llm_answers": {},
+    "solve_time": "0:00:10.535"
+}

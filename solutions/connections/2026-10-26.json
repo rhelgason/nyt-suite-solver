@@ -1,0 +1,65 @@
+{
+    "puzzle_id": 1331,
+    "ds": "2026-10-26",
+    "words": [
+        "WELCOME",
+        "HALLOWEEK",
+        "CHILLING",
+        "TOY",
+        "YOGA",
+        "JAWN",
+        "SPORTING",
+        "PRAYER",
+        "PSYCHS",
+        "HOUND",
+        "MANAGING",
+        "WRESTLING",
+        "SAME OLD",
+        "HOSTED",
+        "HERDING",
+        "NOT BAD"
+    ],
+    "categories": [
+        {
+            "title": "RESPONSES TO \"HOW ARE YOU?\"",
+            "words": [
+                "CHILLING",
+                "MANAGING",
+                "NOT BAD",
+                "SAME OLD"
+            ]
+        },
+        {
+            "title": "KINDS OF MATS",
+            "words": [
+                "PRAYER",
+                "WELCOME",
+                "WRESTLING",
+                "YOGA"
+            ]
+        },
+        {
+            "title": "AKC DOG BREED GROUPS",
+            "words": [
+                "HERDING",
+                "HOUND",
+                "SPORTING",
+                "TOY"
+            ]
+        },
+        {
+            "title": "HORROR MOVIES WITH LAST LETTER CHANGED",
+            "words": [
+                "HALLOWEEK",
+                "HOSTED",
+                "JAWN",
+                "PSYCHS"
+            ]
+        }
+    ],
+    "solved": false,
+    "groups_found": 0,
+    "mistakes": 0,
+    "guesses": [],
+    "solve_time": "0:00:06.999"
+}

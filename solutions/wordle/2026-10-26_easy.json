@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 921,
+    "ds": "2026-10-26",
+    "mode": "easy",
+    "solution": "geeky",
+    "guesses": [
+        "tares",
+        "colin",
+        "dumpy",
+        "beefy",
+        "geeky"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:03.998"
+}
