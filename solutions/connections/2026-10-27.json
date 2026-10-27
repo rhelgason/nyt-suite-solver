@@ -1,0 +1,65 @@
+{
+    "puzzle_id": 1341,
+    "ds": "2026-10-27",
+    "words": [
+        "TACO",
+        "PEPPER",
+        "DRUM",
+        "JAR",
+        "TINKER",
+        "TOWER",
+        "FIDDLE",
+        "JINGLE",
+        "LIBERTY",
+        "CANAL",
+        "TRIFLE",
+        "DIVING",
+        "ANVIL",
+        "BOTTOMS",
+        "STIRRUP",
+        "MEDDLE"
+    ],
+    "categories": [
+        {
+            "title": "MESS (WITH)",
+            "words": [
+                "FIDDLE",
+                "MEDDLE",
+                "TINKER",
+                "TRIFLE"
+            ]
+        },
+        {
+            "title": "PARTS OF THE EAR",
+            "words": [
+                "ANVIL",
+                "CANAL",
+                "DRUM",
+                "STIRRUP"
+            ]
+        },
+        {
+            "title": "___ BELL",
+            "words": [
+                "DIVING",
+                "JINGLE",
+                "LIBERTY",
+                "TACO"
+            ]
+        },
+        {
+            "title": "BELL ___",
+            "words": [
+                "BOTTOMS",
+                "JAR",
+                "PEPPER",
+                "TOWER"
+            ]
+        }
+    ],
+    "solved": false,
+    "groups_found": 0,
+    "mistakes": 0,
+    "guesses": [],
+    "solve_time": "0:00:06.648"
+}

@@ -1,0 +1,62 @@
+{
+    "puzzle_id": 2884,
+    "ds": "2026-10-27",
+    "sides": [
+        [
+            "c",
+            "d",
+            "i"
+        ],
+        [
+            "u",
+            "f",
+            "t"
+        ],
+        [
+            "r",
+            "m",
+            "a"
+        ],
+        [
+            "b",
+            "e",
+            "o"
+        ]
+    ],
+    "valid_answers": [
+        [
+            "bacterium",
+            "mortified"
+        ],
+        [
+            "breadfruit",
+            "tomcat"
+        ],
+        [
+            "catacomb",
+            "breadfruit"
+        ],
+        [
+            "comb",
+            "breadfruit"
+        ],
+        [
+            "imbrued",
+            "defacto"
+        ]
+    ],
+    "invalid_answers": [
+        [
+            "comforted",
+            "daubier"
+        ],
+        [
+            "recomb",
+            "breadfruit"
+        ]
+    ],
+    "num_valid_answers": 5,
+    "num_invalid_answers": 2,
+    "shortest_answer_length": 2,
+    "solve_time": "0:00:00.292"
+}

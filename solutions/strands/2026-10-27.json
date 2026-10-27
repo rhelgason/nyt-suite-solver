@@ -1,0 +1,20 @@
+{
+    "puzzle_id": 1174,
+    "ds": "2026-10-27",
+    "clue": "Who ya gonna call?",
+    "theme_words": [
+        "ants",
+        "cockroaches",
+        "mice",
+        "rats",
+        "termites",
+        "ticks"
+    ],
+    "spangram": "exterminator",
+    "solved": true,
+    "theme_words_found": 6,
+    "theme_words_total": 6,
+    "candidates": 1008,
+    "truncated": false,
+    "solve_time": "0:00:01.940"
+}
