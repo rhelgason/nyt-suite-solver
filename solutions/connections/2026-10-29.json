@@ -1,0 +1,110 @@
+{
+    "puzzle_id": 1340,
+    "ds": "2026-10-29",
+    "words": [
+        "TUXEDO",
+        "TRAFFIC LIGHT",
+        "ROMAN",
+        "EMPEROR",
+        "PARKING METER",
+        "CANDY CORN",
+        "NEAPOLITAN",
+        "PIGGY BANK",
+        "TYPEWRITER",
+        "WISHING WELL",
+        "GOTHIC",
+        "ANTARCTICA",
+        "CALICO",
+        "WADDLE",
+        "SANS",
+        "PAYPHONE"
+    ],
+    "categories": [
+        {
+            "title": "THINGS YOU PUT COINS INTO",
+            "words": [
+                "PARKING METER",
+                "PAYPHONE",
+                "PIGGY BANK",
+                "WISHING WELL"
+            ]
+        },
+        {
+            "title": "ASSOCIATED WITH PENGUINS",
+            "words": [
+                "ANTARCTICA",
+                "EMPEROR",
+                "TUXEDO",
+                "WADDLE"
+            ]
+        },
+        {
+            "title": "ENDS OF FAMOUS FONTS",
+            "words": [
+                "GOTHIC",
+                "ROMAN",
+                "SANS",
+                "TYPEWRITER"
+            ]
+        },
+        {
+            "title": "THINGS THAT FEATURE THREE COLORS",
+            "words": [
+                "CALICO",
+                "CANDY CORN",
+                "NEAPOLITAN",
+                "TRAFFIC LIGHT"
+            ]
+        }
+    ],
+    "solved": true,
+    "groups_found": 4,
+    "mistakes": 0,
+    "guesses": [
+        {
+            "guess": [
+                "GOTHIC",
+                "ROMAN",
+                "SANS",
+                "TYPEWRITER"
+            ],
+            "result": "correct",
+            "group": "ENDS OF FAMOUS FONTS",
+            "connection": "All are names of typeface/font styles"
+        },
+        {
+            "guess": [
+                "ANTARCTICA",
+                "EMPEROR",
+                "TUXEDO",
+                "WADDLE"
+            ],
+            "result": "correct",
+            "group": "ASSOCIATED WITH PENGUINS",
+            "connection": "All are associated with penguins (species, habitat, appearance, gait)"
+        },
+        {
+            "guess": [
+                "PARKING METER",
+                "PAYPHONE",
+                "PIGGY BANK",
+                "WISHING WELL"
+            ],
+            "result": "correct",
+            "group": "THINGS YOU PUT COINS INTO",
+            "connection": "All are traditionally coin‑related or coin‑operated devices"
+        },
+        {
+            "guess": [
+                "CALICO",
+                "CANDY CORN",
+                "NEAPOLITAN",
+                "TRAFFIC LIGHT"
+            ],
+            "result": "correct",
+            "group": "THINGS THAT FEATURE THREE COLORS",
+            "connection": ""
+        }
+    ],
+    "solve_time": "0:00:04.755"
+}
