@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 672,
+    "ds": "2026-10-30",
+    "mode": "easy",
+    "solution": "slide",
+    "guesses": [
+        "tares",
+        "seine",
+        "plack",
+        "slide"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:02.106"
+}

@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 672,
+    "ds": "2026-10-30",
+    "mode": "hard",
+    "solution": "slide",
+    "guesses": [
+        "tares",
+        "seine",
+        "slipe",
+        "slice",
+        "slide"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:00.069"
+}
