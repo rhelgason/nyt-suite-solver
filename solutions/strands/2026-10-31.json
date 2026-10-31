@@ -1,0 +1,20 @@
+{
+    "puzzle_id": 1167,
+    "ds": "2026-10-31",
+    "clue": "It's in the bag",
+    "theme_words": [
+        "apple",
+        "candy",
+        "fangs",
+        "ring",
+        "sticker",
+        "toothbrush"
+    ],
+    "spangram": "trickortreat",
+    "solved": false,
+    "theme_words_found": 5,
+    "theme_words_total": 6,
+    "candidates": 2605,
+    "truncated": true,
+    "solve_time": "0:01:00.496"
+}
