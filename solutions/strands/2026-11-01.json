@@ -1,0 +1,21 @@
+{
+    "puzzle_id": 1168,
+    "ds": "2026-11-01",
+    "clue": "For the rest of the day",
+    "theme_words": [
+        "catnap",
+        "doze",
+        "drowse",
+        "siesta",
+        "sleep",
+        "slumber",
+        "snooze"
+    ],
+    "spangram": "zzzzzzzz",
+    "solved": false,
+    "theme_words_found": 3,
+    "theme_words_total": 7,
+    "candidates": 21030,
+    "truncated": true,
+    "solve_time": "0:01:00.231"
+}

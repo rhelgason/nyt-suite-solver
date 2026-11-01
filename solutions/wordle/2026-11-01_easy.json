@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1730,
+    "ds": "2026-11-01",
+    "mode": "easy",
+    "solution": "viper",
+    "guesses": [
+        "tares",
+        "poind",
+        "arrow",
+        "viper"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:03.274"
+}

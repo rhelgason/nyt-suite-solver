@@ -1,0 +1,65 @@
+{
+    "puzzle_id": 1342,
+    "ds": "2026-11-01",
+    "words": [
+        "HEAD",
+        "TRIPPING",
+        "CANINE",
+        "LOVER",
+        "DOGGY",
+        "SELF",
+        "MATURATED",
+        "PUPPY",
+        "HOUND",
+        "INCISOR",
+        "BROTHERLY",
+        "BICUSPID",
+        "UNREQUITED",
+        "TRENCHED",
+        "MOLAR",
+        "FIEND"
+    ],
+    "categories": [
+        {
+            "title": "KINDS OF TEETH",
+            "words": [
+                "BICUSPID",
+                "CANINE",
+                "INCISOR",
+                "MOLAR"
+            ]
+        },
+        {
+            "title": "KINDS OF LOVE",
+            "words": [
+                "BROTHERLY",
+                "PUPPY",
+                "SELF",
+                "UNREQUITED"
+            ]
+        },
+        {
+            "title": "ENTHUSIAST",
+            "words": [
+                "FIEND",
+                "HEAD",
+                "HOUND",
+                "LOVER"
+            ]
+        },
+        {
+            "title": "SYNONYMS FOR \"SOAKED\" WITH FIRST LETTER CHANGED",
+            "words": [
+                "DOGGY",
+                "MATURATED",
+                "TRENCHED",
+                "TRIPPING"
+            ]
+        }
+    ],
+    "solved": false,
+    "groups_found": 0,
+    "mistakes": 0,
+    "guesses": [],
+    "solve_time": "0:00:06.650"
+}
