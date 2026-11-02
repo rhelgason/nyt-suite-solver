@@ -1,0 +1,21 @@
+{
+    "puzzle_id": 1170,
+    "ds": "2026-11-02",
+    "clue": "High and mighty",
+    "theme_words": [
+        "cliff",
+        "glacier",
+        "peak",
+        "ridge",
+        "saddle",
+        "snow",
+        "summit"
+    ],
+    "spangram": "mountaintop",
+    "solved": true,
+    "theme_words_found": 7,
+    "theme_words_total": 7,
+    "candidates": 3,
+    "truncated": false,
+    "solve_time": "0:00:00.219"
+}
