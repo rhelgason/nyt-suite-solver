@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1031,
+    "ds": "2026-11-03",
+    "mode": "hard",
+    "solution": "pouch",
+    "guesses": [
+        "tares",
+        "colin",
+        "mooch",
+        "pouch"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.625"
+}
