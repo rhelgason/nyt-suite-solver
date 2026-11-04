@@ -1,0 +1,17 @@
+{
+    "puzzle_id": 1835,
+    "ds": "2026-11-04",
+    "mode": "hard",
+    "solution": "nutty",
+    "guesses": [
+        "tares",
+        "litho",
+        "cutup",
+        "butty",
+        "gutty",
+        "jutty"
+    ],
+    "num_guesses": null,
+    "solved": false,
+    "solve_time": "0:00:00.066"
+}

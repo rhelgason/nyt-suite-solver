@@ -1,0 +1,19 @@
+{
+    "puzzle_id": 1172,
+    "ds": "2026-11-04",
+    "clue": "Getting the job done",
+    "theme_words": [
+        "labor",
+        "people",
+        "personnel",
+        "staff",
+        "workforce"
+    ],
+    "spangram": "humanresources",
+    "solved": false,
+    "theme_words_found": 4,
+    "theme_words_total": 5,
+    "candidates": 25984,
+    "truncated": true,
+    "solve_time": "0:01:01.320"
+}
