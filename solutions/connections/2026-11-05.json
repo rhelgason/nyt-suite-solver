@@ -1,0 +1,65 @@
+{
+    "puzzle_id": 1353,
+    "ds": "2026-11-05",
+    "words": [
+        "RAINDROP",
+        "ROSE",
+        "WHISKER",
+        "KITTEN",
+        "GIG",
+        "PEAR",
+        "SPIKE",
+        "NARCISSUS",
+        "WEDGE",
+        "RUN",
+        "LOTUS",
+        "UVULA",
+        "BRANDO",
+        "ANEMONE",
+        "SPEEDBAG",
+        "PLATFORM"
+    ],
+    "categories": [
+        {
+            "title": "KINDS OF HEELS",
+            "words": [
+                "KITTEN",
+                "PLATFORM",
+                "SPIKE",
+                "WEDGE"
+            ]
+        },
+        {
+            "title": "FLOWERS",
+            "words": [
+                "ANEMONE",
+                "LOTUS",
+                "NARCISSUS",
+                "ROSE"
+            ]
+        },
+        {
+            "title": "TEARDROP-SHAPED THINGS",
+            "words": [
+                "PEAR",
+                "RAINDROP",
+                "SPEEDBAG",
+                "UVULA"
+            ]
+        },
+        {
+            "title": "LIQUORS WITH LAST LETTERS CHANGED",
+            "words": [
+                "BRANDO",
+                "GIG",
+                "RUN",
+                "WHISKER"
+            ]
+        }
+    ],
+    "solved": false,
+    "groups_found": 0,
+    "mistakes": 0,
+    "guesses": [],
+    "solve_time": "0:00:06.639"
+}

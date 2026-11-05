@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 5270,
+    "ds": "2026-11-05",
+    "mode": "hard",
+    "solution": "parch",
+    "guesses": [
+        "tares",
+        "carom",
+        "baric",
+        "larch",
+        "parch"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:00.044"
+}
