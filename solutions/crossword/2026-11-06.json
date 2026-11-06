@@ -1,0 +1,54 @@
+{
+    "puzzle_id": 24695,
+    "ds": "2026-11-06",
+    "width": 6,
+    "height": 5,
+    "solved": true,
+    "cells_correct": 23,
+    "cells_total": 23,
+    "grid": [
+        "# # S U E D",
+        "# F O R C E",
+        "C A R B O N",
+        "A R E A # #",
+        "B E R N # #"
+    ],
+    "llm_answers": {
+        "A1": [
+            "SUED"
+        ],
+        "A5": [
+            "FORCE"
+        ],
+        "A6": [
+            "CARBON"
+        ],
+        "A7": [
+            "AREA"
+        ],
+        "A8": [
+            "BERN"
+        ],
+        "D1": [
+            "SORER"
+        ],
+        "D2": [
+            "URBAN"
+        ],
+        "D3": [
+            "ECO",
+            "ENV"
+        ],
+        "D4": [
+            "DEN"
+        ],
+        "D5": [
+            "FARE",
+            "COST"
+        ],
+        "D6": [
+            "CAB"
+        ]
+    },
+    "solve_time": "0:00:09.129"
+}

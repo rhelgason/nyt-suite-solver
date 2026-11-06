@@ -1,0 +1,21 @@
+{
+    "puzzle_id": 1182,
+    "ds": "2026-11-06",
+    "clue": "Autumn walk in the woods",
+    "theme_words": [
+        "acorn",
+        "branch",
+        "husk",
+        "leaves",
+        "moss",
+        "pinecone",
+        "twig"
+    ],
+    "spangram": "forestfloor",
+    "solved": true,
+    "theme_words_found": 7,
+    "theme_words_total": 7,
+    "candidates": 51,
+    "truncated": false,
+    "solve_time": "0:00:00.515"
+}
