@@ -1,0 +1,65 @@
+{
+    "puzzle_id": 1351,
+    "ds": "2026-11-08",
+    "words": [
+        "CUT",
+        "LEAK",
+        "CONTEXT",
+        "CARAT",
+        "BUILT",
+        "BLOWOUT",
+        "CLARITY",
+        "CHARRED",
+        "COLOR",
+        "KORN",
+        "INSIGHT",
+        "EXTENSIONS",
+        "RIPPED",
+        "TRIM",
+        "JACKED",
+        "PERSPECTIVE"
+    ],
+    "categories": [
+        {
+            "title": "MUSCULAR",
+            "words": [
+                "BUILT",
+                "CUT",
+                "JACKED",
+                "RIPPED"
+            ]
+        },
+        {
+            "title": "HAIR SALON SERVICES",
+            "words": [
+                "BLOWOUT",
+                "COLOR",
+                "EXTENSIONS",
+                "TRIM"
+            ]
+        },
+        {
+            "title": "THINGS THAT HELP MAKE SENSE OF A SITUATION",
+            "words": [
+                "CLARITY",
+                "CONTEXT",
+                "INSIGHT",
+                "PERSPECTIVE"
+            ]
+        },
+        {
+            "title": "VEGETABLE HOMOPHONES",
+            "words": [
+                "CARAT",
+                "CHARRED",
+                "KORN",
+                "LEAK"
+            ]
+        }
+    ],
+    "solved": false,
+    "groups_found": 0,
+    "mistakes": 0,
+    "guesses": [],
+    "solve_time": "0:00:06.479"
+}
