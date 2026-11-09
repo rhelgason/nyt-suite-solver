@@ -1,0 +1,65 @@
+{
+    "puzzle_id": 1366,
+    "ds": "2026-11-09",
+    "words": [
+        "STEAK KNIFE",
+        "CARD SHARK",
+        "CON JOB",
+        "BOOTCUT",
+        "NAVY SEAL",
+        "SHELL GAME",
+        "MINT LEAF",
+        "GAMMA RAY",
+        "TAPE DISPENSER",
+        "LOW-RISE",
+        "FUN SPONGE",
+        "RIP-OFF",
+        "SKINNY",
+        "FLIMFLAM",
+        "GRAPEFRUIT SPOON",
+        "DISTRESSED"
+    ],
+    "categories": [
+        {
+            "title": "DECEITFUL SCHEME",
+            "words": [
+                "CON JOB",
+                "FLIMFLAM",
+                "RIP-OFF",
+                "SHELL GAME"
+            ]
+        },
+        {
+            "title": "JEANS DESCRIPTORS",
+            "words": [
+                "BOOTCUT",
+                "DISTRESSED",
+                "LOW-RISE",
+                "SKINNY"
+            ]
+        },
+        {
+            "title": "THINGS WITH SERRATED EDGES",
+            "words": [
+                "GRAPEFRUIT SPOON",
+                "MINT LEAF",
+                "STEAK KNIFE",
+                "TAPE DISPENSER"
+            ]
+        },
+        {
+            "title": "ENDING IN SEA CREATURES",
+            "words": [
+                "CARD SHARK",
+                "FUN SPONGE",
+                "GAMMA RAY",
+                "NAVY SEAL"
+            ]
+        }
+    ],
+    "solved": false,
+    "groups_found": 0,
+    "mistakes": 0,
+    "guesses": [],
+    "solve_time": "0:00:06.877"
+}
