@@ -1,0 +1,65 @@
+{
+    "puzzle_id": 1361,
+    "ds": "2026-11-10",
+    "words": [
+        "ABRACADABRA",
+        "ONOMATOPOEIA",
+        "APOTHECARY",
+        "FOOFARAW",
+        "OXYMORON",
+        "PROTOZOOLOGY",
+        "HULLABALOO",
+        "HABERDASHER",
+        "BEEKEEPER",
+        "SCRIVENER",
+        "HYPERBOLE",
+        "BROUHAHA",
+        "WAINWRIGHT",
+        "KERFUFFLE",
+        "INVISIBILITY",
+        "METONYMY"
+    ],
+    "categories": [
+        {
+            "title": "HUBBUB",
+            "words": [
+                "BROUHAHA",
+                "FOOFARAW",
+                "HULLABALOO",
+                "KERFUFFLE"
+            ]
+        },
+        {
+            "title": "LITERARY DEVICES",
+            "words": [
+                "HYPERBOLE",
+                "METONYMY",
+                "ONOMATOPOEIA",
+                "OXYMORON"
+            ]
+        },
+        {
+            "title": "OLD-TIMEY OCCUPATIONS",
+            "words": [
+                "APOTHECARY",
+                "HABERDASHER",
+                "SCRIVENER",
+                "WAINWRIGHT"
+            ]
+        },
+        {
+            "title": "WORDS WITH FIVE OF ONE VOWEL",
+            "words": [
+                "ABRACADABRA",
+                "BEEKEEPER",
+                "INVISIBILITY",
+                "PROTOZOOLOGY"
+            ]
+        }
+    ],
+    "solved": false,
+    "groups_found": 0,
+    "mistakes": 0,
+    "guesses": [],
+    "solve_time": "0:00:06.757"
+}
