@@ -1,0 +1,60 @@
+{
+    "puzzle_id": 13592,
+    "ds": "2026-11-11",
+    "center": "v",
+    "letters": [
+        "i",
+        "c",
+        "u",
+        "d",
+        "t",
+        "e",
+        "v"
+    ],
+    "pangrams": [
+        "deductive",
+        "eductive"
+    ],
+    "valid_answers": [
+        "civic",
+        "device",
+        "evict",
+        "divided",
+        "vice",
+        "evicted",
+        "dive",
+        "civet",
+        "vetted",
+        "detective",
+        "deceive",
+        "vied",
+        "deceived",
+        "duvet",
+        "dived",
+        "deductive",
+        "evictee",
+        "ivied",
+        "divvied",
+        "vivid",
+        "divide"
+    ],
+    "invalid_answers": [
+        "cuvee",
+        "vive",
+        "eductive",
+        "viced",
+        "cuvette",
+        "vidette",
+        "uveitic",
+        "evite",
+        "evited",
+        "vide",
+        "civie",
+        "vedette"
+    ],
+    "missed_answers": [],
+    "solve_time": "0:00:00.073",
+    "score": 70,
+    "percentage": 100.0,
+    "rank": "QUEEN_BEE"
+}

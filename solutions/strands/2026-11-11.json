@@ -1,0 +1,20 @@
+{
+    "puzzle_id": 1179,
+    "ds": "2026-11-11",
+    "clue": "Work it out",
+    "theme_words": [
+        "biceps",
+        "hamstrings",
+        "lats",
+        "obliques",
+        "pecs",
+        "quads"
+    ],
+    "spangram": "musclegroup",
+    "solved": true,
+    "theme_words_found": 6,
+    "theme_words_total": 6,
+    "candidates": 2399,
+    "truncated": false,
+    "solve_time": "0:00:01.403"
+}

@@ -1,0 +1,65 @@
+{
+    "puzzle_id": 1354,
+    "ds": "2026-11-11",
+    "words": [
+        "SHREDDER",
+        "HERBAL",
+        "PATOOT",
+        "WHOOPIE CUSHION",
+        "GREEN",
+        "FOLK",
+        "BUBBLE",
+        "ROUGH",
+        "AFTERNOON",
+        "RHEOSTATS",
+        "TRADITIONAL",
+        "TIRE",
+        "SAND TRAP",
+        "HOLISTIC",
+        "AIR MATTRESS",
+        "TEE BOX"
+    ],
+    "categories": [
+        {
+            "title": "KINDS OF MEDICINE",
+            "words": [
+                "FOLK",
+                "HERBAL",
+                "HOLISTIC",
+                "TRADITIONAL"
+            ]
+        },
+        {
+            "title": "PARTS OF A GOLF COURSE",
+            "words": [
+                "GREEN",
+                "ROUGH",
+                "SAND TRAP",
+                "TEE BOX"
+            ]
+        },
+        {
+            "title": "THINGS FILLED WITH AIR",
+            "words": [
+                "AIR MATTRESS",
+                "BUBBLE",
+                "TIRE",
+                "WHOOPIE CUSHION"
+            ]
+        },
+        {
+            "title": "ENDING IN PALINDROMES",
+            "words": [
+                "AFTERNOON",
+                "PATOOT",
+                "RHEOSTATS",
+                "SHREDDER"
+            ]
+        }
+    ],
+    "solved": false,
+    "groups_found": 0,
+    "mistakes": 0,
+    "guesses": [],
+    "solve_time": "0:00:06.803"
+}

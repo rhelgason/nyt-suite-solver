@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 810,
+    "ds": "2026-11-11",
+    "mode": "hard",
+    "solution": "bless",
+    "guesses": [
+        "tares",
+        "lends",
+        "fleys",
+        "bless"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.092"
+}
