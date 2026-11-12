@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 5201,
+    "ds": "2026-11-12",
+    "mode": "easy",
+    "solution": "karat",
+    "guesses": [
+        "tares",
+        "chapt",
+        "karat"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:00.088"
+}

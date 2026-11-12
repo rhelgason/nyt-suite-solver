@@ -1,0 +1,65 @@
+{
+    "puzzle_id": 1352,
+    "ds": "2026-11-12",
+    "words": [
+        "GREAT SCOTT",
+        "ROCKY ROAD",
+        "YOU'RE TOAST",
+        "FLUX CAPACITOR",
+        "MOONLIGHT SONATA",
+        "JIMINY CRICKET",
+        "MARTY MCFLY",
+        "COMEDY ROAST",
+        "DOC BROWN",
+        "CHANGE PURSE",
+        "ARCTIC CHAR",
+        "GOOD HEAVENS",
+        "SHIFT DRESS",
+        "GLADIATOR SANDALS",
+        "HOLY SMOKES",
+        "SWING SET"
+    ],
+    "categories": [
+        {
+            "title": "\"GADZOOKS!\"",
+            "words": [
+                "GOOD HEAVENS",
+                "GREAT SCOTT",
+                "HOLY SMOKES",
+                "JIMINY CRICKET"
+            ]
+        },
+        {
+            "title": "STARTING WITH VARIATIONS",
+            "words": [
+                "CHANGE PURSE",
+                "FLUX CAPACITOR",
+                "SHIFT DRESS",
+                "SWING SET"
+            ]
+        },
+        {
+            "title": "ENDING IN WAYS TO COOK THINGS",
+            "words": [
+                "ARCTIC CHAR",
+                "COMEDY ROAST",
+                "DOC BROWN",
+                "YOU'RE TOAST"
+            ]
+        },
+        {
+            "title": "STARTING WITH BEST PICTURE OSCAR WINNERS",
+            "words": [
+                "GLADIATOR SANDALS",
+                "MARTY MCFLY",
+                "MOONLIGHT SONATA",
+                "ROCKY ROAD"
+            ]
+        }
+    ],
+    "solved": false,
+    "groups_found": 0,
+    "mistakes": 0,
+    "guesses": [],
+    "solve_time": "0:00:06.766"
+}
