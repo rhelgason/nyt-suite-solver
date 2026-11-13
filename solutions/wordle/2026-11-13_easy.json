@@ -1,0 +1,16 @@
+{
+    "puzzle_id": 4745,
+    "ds": "2026-11-13",
+    "mode": "easy",
+    "solution": "moxie",
+    "guesses": [
+        "tares",
+        "colin",
+        "gyved",
+        "homie",
+        "moxie"
+    ],
+    "num_guesses": 5,
+    "solved": true,
+    "solve_time": "0:00:05.885"
+}
