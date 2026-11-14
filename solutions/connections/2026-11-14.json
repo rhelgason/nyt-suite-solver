@@ -1,0 +1,65 @@
+{
+    "puzzle_id": 1348,
+    "ds": "2026-11-14",
+    "words": [
+        "COMPLEX",
+        "CHESS",
+        "BATTLE",
+        "ADVANCED",
+        "MARRIAGE",
+        "PROGRESSIVE",
+        "CENTER",
+        "MOTTLE",
+        "GO",
+        "FACILITY",
+        "MODERN",
+        "OTHELLO",
+        "TRIB",
+        "STRATEGO",
+        "CAMPUS",
+        "FOREMOST"
+    ],
+    "categories": [
+        {
+            "title": "CUTTING-EDGE",
+            "words": [
+                "ADVANCED",
+                "FOREMOST",
+                "MODERN",
+                "PROGRESSIVE"
+            ]
+        },
+        {
+            "title": "LOCATIONS FOR AN INSTITUTION",
+            "words": [
+                "CAMPUS",
+                "CENTER",
+                "COMPLEX",
+                "FACILITY"
+            ]
+        },
+        {
+            "title": "STRATEGY BOARD GAMES",
+            "words": [
+                "CHESS",
+                "GO",
+                "OTHELLO",
+                "STRATEGO"
+            ]
+        },
+        {
+            "title": "BABY GEAR WITH FIRST LETTER CHANGED",
+            "words": [
+                "BATTLE",
+                "MARRIAGE",
+                "MOTTLE",
+                "TRIB"
+            ]
+        }
+    ],
+    "solved": false,
+    "groups_found": 0,
+    "mistakes": 0,
+    "guesses": [],
+    "solve_time": "0:00:06.543"
+}
