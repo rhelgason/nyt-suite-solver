@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 4790,
+    "ds": "2026-11-15",
+    "mode": "easy",
+    "solution": "snark",
+    "guesses": [
+        "tares",
+        "spawn",
+        "afoul",
+        "snark"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.330"
+}
