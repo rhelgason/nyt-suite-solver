@@ -1,0 +1,41 @@
+{
+    "puzzle_id": 2904,
+    "ds": "2026-11-16",
+    "sides": [
+        [
+            "a",
+            "i",
+            "e"
+        ],
+        [
+            "q",
+            "p",
+            "c"
+        ],
+        [
+            "o",
+            "u",
+            "t"
+        ],
+        [
+            "l",
+            "y",
+            "x"
+        ]
+    ],
+    "valid_answers": [
+        [
+            "expel",
+            "loquacity"
+        ],
+        [
+            "pixel",
+            "loquacity"
+        ]
+    ],
+    "invalid_answers": [],
+    "num_valid_answers": 2,
+    "num_invalid_answers": 0,
+    "shortest_answer_length": 2,
+    "solve_time": "0:00:00.137"
+}

@@ -1,0 +1,49 @@
+{
+    "puzzle_id": 24729,
+    "ds": "2026-11-16",
+    "width": 5,
+    "height": 5,
+    "solved": true,
+    "cells_correct": 21,
+    "cells_total": 21,
+    "grid": [
+        "A H A # #",
+        "C A G E S",
+        "D I R T Y",
+        "C L E A N",
+        "# # E S C"
+    ],
+    "llm_answers": {
+        "A1": [
+            "AHA"
+        ],
+        "A4": [
+            "CAGES"
+        ],
+        "A7": [
+            "DIRTY"
+        ],
+        "A8": [
+            "CLEAN"
+        ],
+        "A9": [
+            "ESC"
+        ],
+        "D1": [
+            "ACDC"
+        ],
+        "D2": [
+            "HAIL"
+        ],
+        "D3": [
+            "AGREE"
+        ],
+        "D5": [
+            "ETAS"
+        ],
+        "D6": [
+            "SYNC"
+        ]
+    },
+    "solve_time": "0:00:06.288"
+}

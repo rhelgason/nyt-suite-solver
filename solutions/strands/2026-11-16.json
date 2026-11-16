@@ -1,0 +1,20 @@
+{
+    "puzzle_id": 1186,
+    "ds": "2026-11-16",
+    "clue": "What's the big idea?",
+    "theme_words": [
+        "bloat",
+        "enlarge",
+        "expand",
+        "grow",
+        "inflate",
+        "surge"
+    ],
+    "spangram": "thatsjustswell",
+    "solved": false,
+    "theme_words_found": 2,
+    "theme_words_total": 6,
+    "candidates": 6,
+    "truncated": true,
+    "solve_time": "0:01:05.253"
+}

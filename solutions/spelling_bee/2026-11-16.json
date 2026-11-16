@@ -1,0 +1,64 @@
+{
+    "puzzle_id": 10584,
+    "ds": "2026-11-16",
+    "center": "c",
+    "letters": [
+        "a",
+        "i",
+        "p",
+        "v",
+        "c",
+        "r",
+        "y"
+    ],
+    "pangrams": [
+        "privacy"
+    ],
+    "valid_answers": [
+        "pricy",
+        "racy",
+        "vicar",
+        "carry",
+        "carp",
+        "papacy",
+        "caviar",
+        "pica",
+        "acacia",
+        "circa",
+        "crappy",
+        "priapic",
+        "crap",
+        "piracy",
+        "privacy",
+        "cirri",
+        "carpi",
+        "civic"
+    ],
+    "invalid_answers": [
+        "capricci",
+        "ricrac",
+        "pyric",
+        "cavy",
+        "civvy",
+        "picric",
+        "pyic",
+        "caca",
+        "paca",
+        "capric",
+        "pacy",
+        "acari",
+        "caracara",
+        "picara",
+        "paprica",
+        "carr"
+    ],
+    "missed_answers": [
+        "capri",
+        "cava",
+        "acai"
+    ],
+    "solve_time": "0:00:00.092",
+    "score": 48,
+    "percentage": 92.3076923076923,
+    "rank": "GENIUS"
+}

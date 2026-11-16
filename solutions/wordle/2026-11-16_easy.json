@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 911,
+    "ds": "2026-11-16",
+    "mode": "easy",
+    "solution": "drawl",
+    "guesses": [
+        "tares",
+        "blond",
+        "drail",
+        "drawl"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:02.482"
+}
