@@ -1,0 +1,65 @@
+{
+    "puzzle_id": 1362,
+    "ds": "2026-11-17",
+    "words": [
+        "KINGPIN",
+        "BLACKBIRD",
+        "FLOCK",
+        "AIRPLANE",
+        "COME TOGETHER",
+        "THEM",
+        "PIE",
+        "VALLEY",
+        "PENNY LANE",
+        "RYE",
+        "HELP",
+        "GATHER",
+        "SHAZAM",
+        "MASKED BALL",
+        "ASSEMBLE",
+        "SIXPENCE"
+    ],
+    "categories": [
+        {
+            "title": "CONVENE",
+            "words": [
+                "ASSEMBLE",
+                "COME TOGETHER",
+                "FLOCK",
+                "GATHER"
+            ]
+        },
+        {
+            "title": "THINGS IN \"SING A SONG OF SIXPENCE\"",
+            "words": [
+                "BLACKBIRD",
+                "PIE",
+                "RYE",
+                "SIXPENCE"
+            ]
+        },
+        {
+            "title": "FILMS WITH \"!\" IN THE TITLE",
+            "words": [
+                "AIRPLANE",
+                "HELP",
+                "SHAZAM",
+                "THEM"
+            ]
+        },
+        {
+            "title": "ENDING IN BOWLING TERMS",
+            "words": [
+                "KINGPIN",
+                "MASKED BALL",
+                "PENNY LANE",
+                "VALLEY"
+            ]
+        }
+    ],
+    "solved": false,
+    "groups_found": 0,
+    "mistakes": 0,
+    "guesses": [],
+    "solve_time": "0:00:06.677"
+}

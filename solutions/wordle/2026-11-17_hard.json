@@ -1,0 +1,14 @@
+{
+    "puzzle_id": 1085,
+    "ds": "2026-11-17",
+    "mode": "hard",
+    "solution": "roast",
+    "guesses": [
+        "tares",
+        "scart",
+        "roast"
+    ],
+    "num_guesses": 3,
+    "solved": true,
+    "solve_time": "0:00:00.026"
+}
