@@ -1,0 +1,49 @@
+{
+    "puzzle_id": 24711,
+    "ds": "2026-11-19",
+    "width": 5,
+    "height": 5,
+    "solved": true,
+    "cells_correct": 25,
+    "cells_total": 25,
+    "grid": [
+        "S H I F T",
+        "C E L L O",
+        "A L L O W",
+        "B E G U N",
+        "S N O R E"
+    ],
+    "llm_answers": {
+        "A1": [
+            "SHIFT"
+        ],
+        "A6": [
+            "CELLO"
+        ],
+        "A7": [
+            "ALLOW"
+        ],
+        "A8": [
+            "BEGUN"
+        ],
+        "A9": [
+            "SNORE"
+        ],
+        "D1": [
+            "SCABS"
+        ],
+        "D2": [
+            "HELEN"
+        ],
+        "D3": [
+            "ILLGO"
+        ],
+        "D4": [
+            "FLOUR"
+        ],
+        "D5": [
+            "TOWNE"
+        ]
+    },
+    "solve_time": "0:00:09.770"
+}

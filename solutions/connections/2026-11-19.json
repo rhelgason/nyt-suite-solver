@@ -1,0 +1,65 @@
+{
+    "puzzle_id": 1373,
+    "ds": "2026-11-19",
+    "words": [
+        "UNDERGROUND",
+        "TUNNEL",
+        "CORD",
+        "CORK",
+        "SWITCH",
+        "EINSTEIN",
+        "HOTSHOT",
+        "BORE",
+        "SAP",
+        "PLUG",
+        "WOOD",
+        "HOUSING",
+        "DIG",
+        "GALANGAL",
+        "RESIN",
+        "BURROW"
+    ],
+    "categories": [
+        {
+            "title": "MAKE A HOLE IN THE GROUND",
+            "words": [
+                "BORE",
+                "BURROW",
+                "DIG",
+                "TUNNEL"
+            ]
+        },
+        {
+            "title": "MATERIALS OBTAINED FROM TREES",
+            "words": [
+                "CORK",
+                "RESIN",
+                "SAP",
+                "WOOD"
+            ]
+        },
+        {
+            "title": "PARTS OF AN ELECTRICAL APPLIANCE",
+            "words": [
+                "CORD",
+                "HOUSING",
+                "PLUG",
+                "SWITCH"
+            ]
+        },
+        {
+            "title": "START AND END WITH THE SAME THREE LETTERS",
+            "words": [
+                "EINSTEIN",
+                "GALANGAL",
+                "HOTSHOT",
+                "UNDERGROUND"
+            ]
+        }
+    ],
+    "solved": false,
+    "groups_found": 0,
+    "mistakes": 0,
+    "guesses": [],
+    "solve_time": "0:00:06.901"
+}

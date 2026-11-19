@@ -1,0 +1,20 @@
+{
+    "puzzle_id": 1189,
+    "ds": "2026-11-19",
+    "clue": "Quite bright",
+    "theme_words": [
+        "astute",
+        "clever",
+        "intelligent",
+        "savvy",
+        "shrewd",
+        "smart"
+    ],
+    "spangram": "ontheball",
+    "solved": false,
+    "theme_words_found": 3,
+    "theme_words_total": 6,
+    "candidates": 72036,
+    "truncated": true,
+    "solve_time": "0:01:04.216"
+}
