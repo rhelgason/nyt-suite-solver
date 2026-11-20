@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1227,
+    "ds": "2026-11-20",
+    "mode": "easy",
+    "solution": "arose",
+    "guesses": [
+        "tares",
+        "swipe",
+        "erase",
+        "arose"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.426"
+}

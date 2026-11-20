@@ -1,0 +1,65 @@
+{
+    "puzzle_id": 1364,
+    "ds": "2026-11-20",
+    "words": [
+        "BEAST",
+        "SPOT",
+        "CANDELABRA",
+        "TOY",
+        "TEACUP",
+        "COWSLIP",
+        "POCKET",
+        "CLOCK",
+        "REGISTER",
+        "DIPHTHONG",
+        "WIZARD",
+        "CATCH",
+        "MINIATURE",
+        "ACE",
+        "STUTTGARTER",
+        "MAVEN"
+    ],
+    "categories": [
+        {
+            "title": "PERSON WHO EXCELS AT SOMETHING",
+            "words": [
+                "ACE",
+                "BEAST",
+                "MAVEN",
+                "WIZARD"
+            ]
+        },
+        {
+            "title": "NOTICE",
+            "words": [
+                "CATCH",
+                "CLOCK",
+                "REGISTER",
+                "SPOT"
+            ]
+        },
+        {
+            "title": "DESCRIPTORS FOR SMALL ANIMALS",
+            "words": [
+                "MINIATURE",
+                "POCKET",
+                "TEACUP",
+                "TOY"
+            ]
+        },
+        {
+            "title": "ENDING IN LINGERIE",
+            "words": [
+                "CANDELABRA",
+                "COWSLIP",
+                "DIPHTHONG",
+                "STUTTGARTER"
+            ]
+        }
+    ],
+    "solved": false,
+    "groups_found": 0,
+    "mistakes": 0,
+    "guesses": [],
+    "solve_time": "0:00:06.793"
+}
