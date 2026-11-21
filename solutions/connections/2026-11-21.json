@@ -1,0 +1,65 @@
+{
+    "puzzle_id": 1371,
+    "ds": "2026-11-21",
+    "words": [
+        "BREATH",
+        "BUTTER",
+        "FOOL",
+        "SATISFACTION",
+        "COURTESY",
+        "HORSES",
+        "OWN",
+        "DEVIL",
+        "SUGAR",
+        "TONGUE",
+        "EMPRESS",
+        "WAIT TIME",
+        "HELPFULNESS",
+        "BLACK AND WHITE",
+        "HIEROPHANT",
+        "GIRL SCOUT"
+    ],
+    "categories": [
+        {
+            "title": "KINDS OF COOKIES",
+            "words": [
+                "BLACK AND WHITE",
+                "BUTTER",
+                "GIRL SCOUT",
+                "SUGAR"
+            ]
+        },
+        {
+            "title": "THINGS RATED IN A CUSTOMER SURVEY",
+            "words": [
+                "COURTESY",
+                "HELPFULNESS",
+                "SATISFACTION",
+                "WAIT TIME"
+            ]
+        },
+        {
+            "title": "TAROT CARDS, WITH \"THE\"",
+            "words": [
+                "DEVIL",
+                "EMPRESS",
+                "FOOL",
+                "HIEROPHANT"
+            ]
+        },
+        {
+            "title": "HOLD YOUR ___",
+            "words": [
+                "BREATH",
+                "HORSES",
+                "OWN",
+                "TONGUE"
+            ]
+        }
+    ],
+    "solved": false,
+    "groups_found": 0,
+    "mistakes": 0,
+    "guesses": [],
+    "solve_time": "0:00:06.660"
+}
