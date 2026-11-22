@@ -1,0 +1,65 @@
+{
+    "puzzle_id": 1370,
+    "ds": "2026-11-22",
+    "words": [
+        "EYE",
+        "WHY",
+        "TEA",
+        "HEE",
+        "GEE",
+        "SEA",
+        "SAY",
+        "WEE",
+        "EWE",
+        "SLEW",
+        "WELL",
+        "GUM",
+        "BATH",
+        "HOST",
+        "WRAP",
+        "MASS"
+    ],
+    "categories": [
+        {
+            "title": "MULTITUDE",
+            "words": [
+                "HOST",
+                "MASS",
+                "SEA",
+                "SLEW"
+            ]
+        },
+        {
+            "title": "INTERJECTIONS BEFORE A REACTION",
+            "words": [
+                "GEE",
+                "SAY",
+                "WELL",
+                "WHY"
+            ]
+        },
+        {
+            "title": "BUBBLE ___",
+            "words": [
+                "BATH",
+                "GUM",
+                "TEA",
+                "WRAP"
+            ]
+        },
+        {
+            "title": "HOMOPHONES OF PRONOUNS",
+            "words": [
+                "EWE",
+                "EYE",
+                "HEE",
+                "WEE"
+            ]
+        }
+    ],
+    "solved": false,
+    "groups_found": 0,
+    "mistakes": 0,
+    "guesses": [],
+    "solve_time": "0:00:06.752"
+}

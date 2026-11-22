@@ -1,0 +1,49 @@
+{
+    "puzzle_id": 24756,
+    "ds": "2026-11-22",
+    "width": 5,
+    "height": 5,
+    "solved": true,
+    "cells_correct": 21,
+    "cells_total": 21,
+    "grid": [
+        "# I F S O",
+        "# V I E W",
+        "F I N A L",
+        "D E E R #",
+        "A D D S #"
+    ],
+    "llm_answers": {
+        "A1": [
+            "IFSO"
+        ],
+        "A5": [
+            "VIEW"
+        ],
+        "A6": [
+            "FINAL"
+        ],
+        "A7": [
+            "DEER"
+        ],
+        "A8": [
+            "ADDS"
+        ],
+        "D1": [
+            "IVIED"
+        ],
+        "D2": [
+            "FINED"
+        ],
+        "D3": [
+            "SEARS"
+        ],
+        "D4": [
+            "OWL"
+        ],
+        "D6": [
+            "FDA"
+        ]
+    },
+    "solve_time": "0:00:08.221"
+}
