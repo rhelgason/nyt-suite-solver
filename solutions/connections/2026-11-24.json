@@ -1,0 +1,65 @@
+{
+    "puzzle_id": 1374,
+    "ds": "2026-11-24",
+    "words": [
+        "PLAYGROUND",
+        "PAPER FAN",
+        "BIG BOX STORE",
+        "CRATER",
+        "ACCORDION",
+        "MOUNTAIN",
+        "TROMBONE",
+        "LINK",
+        "TANK",
+        "CUPCAKE LINER",
+        "AMINO ACID",
+        "MICROSCOPE",
+        "FIREPLACE BELLOWS",
+        "NOSEDIVE",
+        "POWERPOINT DECK",
+        "BOTTOM OUT"
+    ],
+    "categories": [
+        {
+            "title": "DROP DRAMATICALLY",
+            "words": [
+                "BOTTOM OUT",
+                "CRATER",
+                "NOSEDIVE",
+                "TANK"
+            ]
+        },
+        {
+            "title": "THINGS WITH PLEATED FOLDS",
+            "words": [
+                "ACCORDION",
+                "CUPCAKE LINER",
+                "FIREPLACE BELLOWS",
+                "PAPER FAN"
+            ]
+        },
+        {
+            "title": "THINGS WITH SLIDES",
+            "words": [
+                "MICROSCOPE",
+                "PLAYGROUND",
+                "POWERPOINT DECK",
+                "TROMBONE"
+            ]
+        },
+        {
+            "title": "THINGS THAT FORM CHAINS",
+            "words": [
+                "AMINO ACID",
+                "BIG BOX STORE",
+                "LINK",
+                "MOUNTAIN"
+            ]
+        }
+    ],
+    "solved": false,
+    "groups_found": 0,
+    "mistakes": 0,
+    "guesses": [],
+    "solve_time": "0:00:06.727"
+}

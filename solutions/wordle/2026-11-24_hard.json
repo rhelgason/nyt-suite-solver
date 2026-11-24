@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 1202,
+    "ds": "2026-11-24",
+    "mode": "hard",
+    "solution": "sneer",
+    "guesses": [
+        "tares",
+        "shier",
+        "sewer",
+        "sneer"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.028"
+}
