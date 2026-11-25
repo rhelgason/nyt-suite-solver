@@ -1,0 +1,15 @@
+{
+    "puzzle_id": 4189,
+    "ds": "2026-11-25",
+    "mode": "hard",
+    "solution": "spicy",
+    "guesses": [
+        "tares",
+        "spoil",
+        "spick",
+        "spicy"
+    ],
+    "num_guesses": 4,
+    "solved": true,
+    "solve_time": "0:00:00.073"
+}

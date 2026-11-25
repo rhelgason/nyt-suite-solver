@@ -1,0 +1,55 @@
+{
+    "puzzle_id": 27645,
+    "ds": "2026-11-25",
+    "center": "i",
+    "letters": [
+        "n",
+        "i",
+        "u",
+        "p",
+        "b",
+        "k",
+        "m"
+    ],
+    "pangrams": [
+        "bumpkin"
+    ],
+    "valid_answers": [
+        "bumpkin",
+        "unkink",
+        "bikini",
+        "pippin",
+        "pink",
+        "nubbin",
+        "nimbi",
+        "kink",
+        "pumpkin",
+        "mini",
+        "unpin",
+        "minimum",
+        "pimp",
+        "minim",
+        "pinup",
+        "mink"
+    ],
+    "invalid_answers": [
+        "minikin",
+        "punkin",
+        "unununium",
+        "pipkin",
+        "bibb",
+        "kinin",
+        "impi",
+        "kibbi",
+        "bumkin",
+        "minium",
+        "muni",
+        "piki",
+        "ununbium"
+    ],
+    "missed_answers": [],
+    "solve_time": "0:00:00.071",
+    "score": 44,
+    "percentage": 100.0,
+    "rank": "QUEEN_BEE"
+}

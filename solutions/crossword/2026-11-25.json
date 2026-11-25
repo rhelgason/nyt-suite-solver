@@ -1,0 +1,18 @@
+{
+    "puzzle_id": 24706,
+    "ds": "2026-11-25",
+    "width": 5,
+    "height": 5,
+    "solved": true,
+    "cells_correct": 21,
+    "cells_total": 21,
+    "grid": [
+        "M A C S #",
+        "C R A P S",
+        "S C R A P",
+        "# H B C U",
+        "# # O E R"
+    ],
+    "llm_answers": {},
+    "solve_time": "0:00:07.980"
+}

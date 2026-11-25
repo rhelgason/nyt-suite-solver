@@ -1,0 +1,65 @@
+{
+    "puzzle_id": 1372,
+    "ds": "2026-11-25",
+    "words": [
+        "EAGLE",
+        "PILE",
+        "HALF-PIPE",
+        "DIMENSIONS",
+        "OLLIE",
+        "SHOULDER",
+        "WEAVE",
+        "NECK PILLOW",
+        "RAMP",
+        "PARABOLA",
+        "OODLE",
+        "MEDIAN",
+        "HORSESHOE",
+        "MATERIAL",
+        "LANE",
+        "OBERMAN"
+    ],
+    "categories": [
+        {
+            "title": "PARTS OF A FREEWAY",
+            "words": [
+                "LANE",
+                "MEDIAN",
+                "RAMP",
+                "SHOULDER"
+            ]
+        },
+        {
+            "title": "U-SHAPED THINGS",
+            "words": [
+                "HALF-PIPE",
+                "HORSESHOE",
+                "NECK PILLOW",
+                "PARABOLA"
+            ]
+        },
+        {
+            "title": "RUG SPECIFICATIONS",
+            "words": [
+                "DIMENSIONS",
+                "MATERIAL",
+                "PILE",
+                "WEAVE"
+            ]
+        },
+        {
+            "title": "DOGS BREEDS MINUS FIRST LETTER",
+            "words": [
+                "EAGLE",
+                "OBERMAN",
+                "OLLIE",
+                "OODLE"
+            ]
+        }
+    ],
+    "solved": false,
+    "groups_found": 0,
+    "mistakes": 0,
+    "guesses": [],
+    "solve_time": "0:00:06.693"
+}
