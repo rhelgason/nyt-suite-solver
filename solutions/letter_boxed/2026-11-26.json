@@ -1,0 +1,54 @@
+{
+    "puzzle_id": 2914,
+    "ds": "2026-11-26",
+    "sides": [
+        [
+            "s",
+            "w",
+            "e"
+        ],
+        [
+            "o",
+            "a",
+            "i"
+        ],
+        [
+            "b",
+            "k",
+            "n"
+        ],
+        [
+            "p",
+            "h",
+            "m"
+        ]
+    ],
+    "valid_answers": [
+        [
+            "beaks",
+            "showmanship"
+        ],
+        [
+            "kebabs",
+            "showmanship"
+        ],
+        [
+            "mawkish",
+            "hipbone"
+        ]
+    ],
+    "invalid_answers": [
+        [
+            "ikebanas",
+            "showmanship"
+        ],
+        [
+            "kebobs",
+            "showmanship"
+        ]
+    ],
+    "num_valid_answers": 3,
+    "num_invalid_answers": 2,
+    "shortest_answer_length": 2,
+    "solve_time": "0:00:00.294"
+}

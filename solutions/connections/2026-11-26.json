@@ -1,0 +1,65 @@
+{
+    "puzzle_id": 1382,
+    "ds": "2026-11-26",
+    "words": [
+        "BEER",
+        "BOTTLE OF CHAMPAGNE",
+        "BUBBLEGUM",
+        "BOWLING",
+        "POPCORN",
+        "CARNATION",
+        "WHEELIE",
+        "DONUTS",
+        "BLUSH",
+        "COMPACT",
+        "TELEVISION",
+        "MANUAL",
+        "HYBRID",
+        "CORAL",
+        "THE QUESTION",
+        "CONVERTIBLE"
+    ],
+    "categories": [
+        {
+            "title": "SHADES OF PINK",
+            "words": [
+                "BLUSH",
+                "BUBBLEGUM",
+                "CARNATION",
+                "CORAL"
+            ]
+        },
+        {
+            "title": "KINDS OF CARS",
+            "words": [
+                "COMPACT",
+                "CONVERTIBLE",
+                "HYBRID",
+                "MANUAL"
+            ]
+        },
+        {
+            "title": "THINGS HOMER SIMPSON LIKES",
+            "words": [
+                "BEER",
+                "BOWLING",
+                "DONUTS",
+                "TELEVISION"
+            ]
+        },
+        {
+            "title": "THINGS THAT ARE POPPED",
+            "words": [
+                "BOTTLE OF CHAMPAGNE",
+                "POPCORN",
+                "THE QUESTION",
+                "WHEELIE"
+            ]
+        }
+    ],
+    "solved": false,
+    "groups_found": 0,
+    "mistakes": 0,
+    "guesses": [],
+    "solve_time": "0:00:06.646"
+}
