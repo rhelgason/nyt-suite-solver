@@ -1,0 +1,21 @@
+{
+    "puzzle_id": 1198,
+    "ds": "2026-11-27",
+    "clue": "Take your leave",
+    "theme_words": [
+        "break",
+        "hiatus",
+        "holiday",
+        "pause",
+        "recess",
+        "rest",
+        "vacation"
+    ],
+    "spangram": "timeoff",
+    "solved": false,
+    "theme_words_found": 3,
+    "theme_words_total": 7,
+    "candidates": 38129,
+    "truncated": true,
+    "solve_time": "0:01:05.296"
+}

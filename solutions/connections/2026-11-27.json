@@ -1,0 +1,65 @@
+{
+    "puzzle_id": 1383,
+    "ds": "2026-11-27",
+    "words": [
+        "ALICE WALKER",
+        "QUEEN",
+        "MISTLETOE",
+        "KISS",
+        "PRINCE",
+        "MONARCH",
+        "BRUSH",
+        "CAMISOLE",
+        "SKIM",
+        "ROYALTY",
+        "VIXEN",
+        "PINWHEEL",
+        "PEAHEN",
+        "GRAZE",
+        "LEOPARDESS",
+        "FLOWERY LANGUAGE"
+    ],
+    "categories": [
+        {
+            "title": "TOUCH LIGHTLY",
+            "words": [
+                "BRUSH",
+                "GRAZE",
+                "KISS",
+                "SKIM"
+            ]
+        },
+        {
+            "title": "FEMALE ANIMALS",
+            "words": [
+                "LEOPARDESS",
+                "PEAHEN",
+                "QUEEN",
+                "VIXEN"
+            ]
+        },
+        {
+            "title": "ENDING IN PARTS OF THE FOOT",
+            "words": [
+                "CAMISOLE",
+                "MISTLETOE",
+                "MONARCH",
+                "PINWHEEL"
+            ]
+        },
+        {
+            "title": "ASSOCIATED WITH THE COLOR PURPLE",
+            "words": [
+                "ALICE WALKER",
+                "FLOWERY LANGUAGE",
+                "PRINCE",
+                "ROYALTY"
+            ]
+        }
+    ],
+    "solved": false,
+    "groups_found": 0,
+    "mistakes": 0,
+    "guesses": [],
+    "solve_time": "0:00:06.651"
+}
