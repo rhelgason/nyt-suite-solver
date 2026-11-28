@@ -1,0 +1,65 @@
+{
+    "puzzle_id": 1379,
+    "ds": "2026-11-28",
+    "words": [
+        "FOOD",
+        "FUDGE",
+        "CHERRY",
+        "HEM",
+        "DARN",
+        "SKIRT",
+        "NUTS",
+        "BAR",
+        "MUSIC",
+        "BELL",
+        "MATE",
+        "BORDER",
+        "BLAST",
+        "PATCH",
+        "RIM",
+        "SEVEN"
+    ],
+    "categories": [
+        {
+            "title": "MILD OATHS",
+            "words": [
+                "BLAST",
+                "DARN",
+                "FUDGE",
+                "NUTS"
+            ]
+        },
+        {
+            "title": "EDGE",
+            "words": [
+                "BORDER",
+                "HEM",
+                "RIM",
+                "SKIRT"
+            ]
+        },
+        {
+            "title": "SYMBOLS ON A SLOT MACHINE",
+            "words": [
+                "BAR",
+                "BELL",
+                "CHERRY",
+                "SEVEN"
+            ]
+        },
+        {
+            "title": "SOUL ___",
+            "words": [
+                "FOOD",
+                "MATE",
+                "MUSIC",
+                "PATCH"
+            ]
+        }
+    ],
+    "solved": false,
+    "groups_found": 0,
+    "mistakes": 0,
+    "guesses": [],
+    "solve_time": "0:00:06.567"
+}
